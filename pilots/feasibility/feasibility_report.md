@@ -88,6 +88,21 @@ Three pilot tests were conducted to validate the core thesis design before commi
 | Judge model (70B class) | ✓ Sufficient — structured output, differentiated scores |
 | Free tier viable for pilots | ✓ All tests ran on Groq free tier (~45K tokens total) |
 
+## Cross-Check Against Exposé
+
+**Aligned:** Reply-target model (agents name opponent's claim before responding), reframing strategy structure matches exposé example (lines 368–376), 7 evaluation dimensions on 1–5 scale, judge model stronger than agent model, Mindestlohn topic used, RAG confirmed necessary.
+
+**Acceptable gaps for feasibility (to address in Phase 4):**
+
+- Only 2 of 6 parties tested (CDU/CSU, SPD) — sufficient for validation; full 6-party test in Pilot Testing
+- Only 3–4 rounds instead of 10 — enough to prove evolution; full length in Pilot Testing
+- Only one agent model tested (llama-3.1-8b) — model comparison is Phase 4 per exposé: "Final selection will be made after comparative pilot tests"
+- Moderator addressed 2 agents by name — 6-party version must address all agents simultaneously (exposé line 409)
+
+**Action item for Phase 2 (Design):**
+
+- Moderator intervention prompt is missing element 5 from the exposé's required structure (lines 349–355): *"Where appropriate, a warning not to flatten legitimate party differences."* This must be added to all moderator prompt templates during design phase.
+
 ## No Design Changes Required
 
 The system architecture described in the exposé is realizable with current LLMs. Proceed to Phase 1 (Literature Review) and Phase 2 (Design) as planned.
