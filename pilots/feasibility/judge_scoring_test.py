@@ -47,6 +47,8 @@ API_KEY = os.getenv("GROQ_API_KEY")
 # API_BASE = "https://api.openai.com/v1"
 # API_KEY = os.getenv("OPENAI_API_KEY")
 
+NUM_RERUNS = 3  # Score each turn this many times to test intra-judge consistency
+
 # --- Judge System Prompt ---
 JUDGE_SYSTEM_PROMPT = """You are an impartial discourse quality judge evaluating political debate exchanges.
 
@@ -137,7 +139,8 @@ Score this turn on all 7 dimensions. Respond with ONLY valid JSON."""
 
 def score_turn(client, turn_text, agent_name, round_num, phase, context_turns):
     """Have the judge score a single debate turn."""
-    user_prompt = build_judge_prompt(turn_text, agent_name, round_num, phase, context_turns)
+    user_prompt = build_judge_prompt(
+        turn_text, agent_name, round_num, phase, context_turns)
 
     response = client.chat.completions.create(
         model=JUDGE_MODEL,
@@ -170,7 +173,8 @@ def score_turn(client, turn_text, agent_name, round_num, phase, context_turns):
 def load_transcript():
     """Load the most recent moderator intervention transcript."""
     output_dir = Path(__file__).parent / "outputs"
-    transcripts = sorted(output_dir.glob("moderator_test_*.json"), reverse=True)
+    transcripts = sorted(output_dir.glob(
+        "moderator_test_*.json"), reverse=True)
 
     if not transcripts:
         raise FileNotFoundError(
@@ -185,7 +189,7 @@ def load_transcript():
 
 
 def run_judge_test():
-    """Score all turns in a debate transcript using the LLM judge."""
+    """Score all turns in a debate transcript using the LLM judge, with reruns for consistency."""
     client = create_client()
     transcript = load_transcript()
 
@@ -193,9 +197,10 @@ def run_judge_test():
     print("FEASIBILITY TEST: LLM-as-a-Judge Scoring")
     print(f"Judge Model: {JUDGE_MODEL}")
     print(f"Scoring transcript with {len(transcript['rounds'])} rounds")
+    print(f"Reruns per turn: {NUM_RERUNS}")
     print("=" * 70)
 
-    all_scores = []
+    all_scores = []  # Each entry has a "reruns" list
     total_tokens = 0
     parse_errors = 0
     context_turns = []  # Accumulate turns for context
@@ -212,38 +217,49 @@ def run_judge_test():
             agent = turn["agent"]
             text = turn["text"]
 
-            print(f"\n  Scoring [{agent}]...", end=" ")
+            print(f"\n  Scoring [{agent}] x{NUM_RERUNS}...", end=" ")
 
-            result, tokens, error = score_turn(
-                client, text, agent, round_num, phase, context_turns
-            )
-            total_tokens += tokens
+            rerun_results = []
+            for run_idx in range(NUM_RERUNS):
+                result, tokens, error = score_turn(
+                    client, text, agent, round_num, phase, context_turns
+                )
+                total_tokens += tokens
 
-            if error:
-                print(f"❌ {error}")
-                parse_errors += 1
-                score_entry = {
-                    "round": round_num,
-                    "phase": phase,
-                    "agent": agent,
-                    "error": error,
-                }
+                if error:
+                    parse_errors += 1
+                    rerun_results.append({"error": error})
+                else:
+                    rerun_results.append(result["scores"])
+
+            # Report summary for this turn
+            valid_runs = [r for r in rerun_results if isinstance(
+                r, dict) and "error" not in r]
+            if valid_runs:
+                # Compute mean scores across reruns
+                dimensions = list(valid_runs[0].keys())
+                mean_scores = {}
+                for dim in dimensions:
+                    vals = [r[dim] for r in valid_runs]
+                    mean_scores[dim] = sum(vals) / len(vals)
+
+                avg = sum(mean_scores.values()) / len(mean_scores)
+                print(f"✓ avg={avg:.1f}  ", end="")
+
+                # Show per-run scores compactly
+                for i, r in enumerate(valid_runs):
+                    scores_str = "/".join(str(r[d]) for d in dimensions)
+                    print(f"run{i+1}=[{scores_str}] ", end="")
+                print()
             else:
-                scores = result["scores"]
-                avg = sum(scores.values()) / len(scores)
-                print(f"✓ avg={avg:.1f}  "
-                      f"[civ={scores['civility']} rel={scores['relevance']} "
-                      f"log={scores['logical_consistency']} arg={scores['argument_strength']} "
-                      f"doc={scores['document_grounding']} res={scores['responsiveness']} "
-                      f"sta={scores['stance_differentiation']}]")
+                print(f"❌ All {NUM_RERUNS} runs failed to parse")
 
-                score_entry = {
-                    "round": round_num,
-                    "phase": phase,
-                    "agent": agent,
-                    "scores": scores,
-                    "reasoning": result.get("reasoning", {}),
-                }
+            score_entry = {
+                "round": round_num,
+                "phase": phase,
+                "agent": agent,
+                "reruns": rerun_results,
+            }
 
             all_scores.append(score_entry)
             context_turns.append({"agent": agent, "text": text})
@@ -252,58 +268,116 @@ def run_judge_test():
     print(f"\n{'=' * 70}")
     print("SCORING COMPLETE")
     print(f"Total judge tokens: {total_tokens}")
-    print(f"Parse errors: {parse_errors}/{len(all_scores)}")
+    print(f"Parse errors: {parse_errors}/{len(all_scores) * NUM_RERUNS}")
     print(f"{'=' * 70}")
-
-    # Compute averages by phase
-    pre_scores = [s for s in all_scores if s.get("phase") == "pre-intervention" and "scores" in s]
-    post_scores = [s for s in all_scores if s.get("phase") == "post-intervention" and "scores" in s]
 
     dimensions = ["civility", "relevance", "logical_consistency", "argument_strength",
                   "document_grounding", "responsiveness", "stance_differentiation"]
 
-    if pre_scores and post_scores:
+    # ── CONSISTENCY ANALYSIS ──
+    print(f"\n{'─' * 70}")
+    print(f"INTRA-JUDGE CONSISTENCY (across {NUM_RERUNS} reruns per turn)")
+    print(f"{'─' * 70}")
+
+    total_comparisons = 0
+    exact_matches = 0
+    within_one_matches = 0
+    max_deviations = {dim: 0 for dim in dimensions}
+
+    for entry in all_scores:
+        valid_runs = [r for r in entry["reruns"]
+                      if isinstance(r, dict) and "error" not in r]
+        if len(valid_runs) < 2:
+            continue
+
+        for dim in dimensions:
+            vals = [r[dim] for r in valid_runs]
+            deviation = max(vals) - min(vals)
+            max_deviations[dim] = max(max_deviations[dim], deviation)
+
+            # Pairwise comparisons
+            for i in range(len(vals)):
+                for j in range(i + 1, len(vals)):
+                    total_comparisons += 1
+                    if vals[i] == vals[j]:
+                        exact_matches += 1
+                        within_one_matches += 1
+                    elif abs(vals[i] - vals[j]) <= 1:
+                        within_one_matches += 1
+
+    if total_comparisons > 0:
+        print(
+            f"\n  Exact agreement:  {exact_matches}/{total_comparisons} ({100*exact_matches/total_comparisons:.0f}%)")
+        print(
+            f"  Within ±1:       {within_one_matches}/{total_comparisons} ({100*within_one_matches/total_comparisons:.0f}%)")
+        print(f"\n  Max deviation per dimension:")
+        for dim in dimensions:
+            status = "✓" if max_deviations[dim] <= 1 else "⚠"
+            print(f"    {status} {dim:<25} max Δ = {max_deviations[dim]}")
+
+    # ── PHASE COMPARISON (using mean of reruns) ──
+    def get_mean_scores(entry):
+        valid = [r for r in entry["reruns"]
+                 if isinstance(r, dict) and "error" not in r]
+        if not valid:
+            return None
+        return {dim: sum(r[dim] for r in valid) / len(valid) for dim in dimensions}
+
+    pre_entries = [e for e in all_scores if e["phase"] == "pre-intervention"]
+    post_entries = [e for e in all_scores if e["phase"] == "post-intervention"]
+    pre_means = [get_mean_scores(e) for e in pre_entries if get_mean_scores(e)]
+    post_means = [get_mean_scores(e)
+                  for e in post_entries if get_mean_scores(e)]
+
+    if pre_means and post_means:
         print(f"\n{'─' * 70}")
-        print("DIMENSION AVERAGES: Pre-Intervention vs Post-Intervention")
+        print("DIMENSION AVERAGES: Pre-Intervention vs Post-Intervention (mean of reruns)")
         print(f"{'─' * 70}")
         print(f"{'Dimension':<25} {'Pre':>6} {'Post':>6} {'Delta':>7}")
         print(f"{'─' * 25} {'─' * 6} {'─' * 6} {'─' * 7}")
 
         for dim in dimensions:
-            pre_avg = sum(s["scores"][dim] for s in pre_scores) / len(pre_scores)
-            post_avg = sum(s["scores"][dim] for s in post_scores) / len(post_scores)
+            pre_avg = sum(s[dim] for s in pre_means) / len(pre_means)
+            post_avg = sum(s[dim] for s in post_means) / len(post_means)
             delta = post_avg - pre_avg
             arrow = "↑" if delta > 0 else "↓" if delta < 0 else "="
-            print(f"{dim:<25} {pre_avg:>5.1f}  {post_avg:>5.1f}  {delta:>+5.1f} {arrow}")
+            print(
+                f"{dim:<25} {pre_avg:>5.1f}  {post_avg:>5.1f}  {delta:>+5.1f} {arrow}")
 
-    # Compute averages by agent
-    cdu_scores = [s for s in all_scores if s.get("agent") == "CDU/CSU" and "scores" in s]
-    spd_scores = [s for s in all_scores if s.get("agent") == "SPD" and "scores" in s]
+    # ── AGENT COMPARISON ──
+    cdu_entries = [e for e in all_scores if e["agent"] == "CDU/CSU"]
+    spd_entries = [e for e in all_scores if e["agent"] == "SPD"]
+    cdu_means = [get_mean_scores(e) for e in cdu_entries if get_mean_scores(e)]
+    spd_means = [get_mean_scores(e) for e in spd_entries if get_mean_scores(e)]
 
-    if cdu_scores and spd_scores:
+    if cdu_means and spd_means:
         print(f"\n{'─' * 70}")
-        print("DIMENSION AVERAGES: CDU/CSU vs SPD")
+        print("DIMENSION AVERAGES: CDU/CSU vs SPD (mean of reruns)")
         print(f"{'─' * 70}")
         print(f"{'Dimension':<25} {'CDU':>6} {'SPD':>6}")
         print(f"{'─' * 25} {'─' * 6} {'─' * 6}")
 
         for dim in dimensions:
-            cdu_avg = sum(s["scores"][dim] for s in cdu_scores) / len(cdu_scores)
-            spd_avg = sum(s["scores"][dim] for s in spd_scores) / len(spd_scores)
+            cdu_avg = sum(s[dim] for s in cdu_means) / len(cdu_means)
+            spd_avg = sum(s[dim] for s in spd_means) / len(spd_means)
             print(f"{dim:<25} {cdu_avg:>5.1f}  {spd_avg:>5.1f}")
 
     # Save results
     output_dir = Path(__file__).parent / "outputs"
     output_dir.mkdir(exist_ok=True)
-    output_file = output_dir / f"judge_scores_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+    output_file = output_dir / \
+        f"judge_scores_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
 
     results = {
         "metadata": {
             "timestamp": datetime.now().isoformat(),
             "judge_model": JUDGE_MODEL,
             "source_transcript": str(sorted(output_dir.glob("moderator_test_*.json"), reverse=True)[0].name),
+            "num_reruns": NUM_RERUNS,
             "total_tokens": total_tokens,
             "parse_errors": parse_errors,
+            "exact_agreement_pct": round(100 * exact_matches / total_comparisons, 1) if total_comparisons > 0 else None,
+            "within_one_pct": round(100 * within_one_matches / total_comparisons, 1) if total_comparisons > 0 else None,
         },
         "scores": all_scores,
     }
@@ -319,7 +393,8 @@ def run_judge_test():
     print(f"{'─' * 70}")
     print()
     print("1. VALID JSON: Did the judge produce parseable JSON for all turns?")
-    print(f"   → {len(all_scores) - parse_errors}/{len(all_scores)} successful parses")
+    print(
+        f"   → {len(all_scores) - parse_errors}/{len(all_scores)} successful parses")
     print()
     print("2. SCORE DIFFERENTIATION: Are scores different across dimensions?")
     print("   (If all 5s everywhere, the judge isn't discriminating)")

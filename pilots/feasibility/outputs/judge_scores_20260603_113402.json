@@ -1,0 +1,286 @@
+{
+  "metadata": {
+    "timestamp": "2026-06-03T11:34:02.018549",
+    "judge_model": "llama-3.3-70b-versatile",
+    "source_transcript": "moderator_test_20260603_110429.json",
+    "num_reruns": 3,
+    "total_tokens": 34184,
+    "parse_errors": 0,
+    "exact_agreement_pct": 98.8,
+    "within_one_pct": 100.0
+  },
+  "scores": [
+    {
+      "round": 1,
+      "phase": "pre-intervention",
+      "agent": "CDU/CSU",
+      "reruns": [
+        {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        },
+        {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        },
+        {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "phase": "pre-intervention",
+      "agent": "SPD",
+      "reruns": [
+        {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 5,
+          "document_grounding": 5,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        },
+        {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 5,
+          "document_grounding": 5,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        },
+        {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 5,
+          "document_grounding": 5,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "phase": "pre-intervention",
+      "agent": "CDU/CSU",
+      "reruns": [
+        {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        },
+        {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        },
+        {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "phase": "pre-intervention",
+      "agent": "SPD",
+      "reruns": [
+        {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 5,
+          "document_grounding": 5,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        },
+        {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 5,
+          "document_grounding": 5,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        },
+        {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 5,
+          "document_grounding": 4,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "phase": "post-intervention",
+      "agent": "CDU/CSU",
+      "reruns": [
+        {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        },
+        {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        },
+        {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "phase": "post-intervention",
+      "agent": "SPD",
+      "reruns": [
+        {
+          "civility": 5,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 3,
+          "document_grounding": 5,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        },
+        {
+          "civility": 5,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 3,
+          "document_grounding": 5,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        },
+        {
+          "civility": 5,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 3,
+          "document_grounding": 5,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "phase": "post-intervention",
+      "agent": "CDU/CSU",
+      "reruns": [
+        {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        },
+        {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        },
+        {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "phase": "post-intervention",
+      "agent": "SPD",
+      "reruns": [
+        {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        },
+        {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        },
+        {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        }
+      ]
+    }
+  ]
+}
