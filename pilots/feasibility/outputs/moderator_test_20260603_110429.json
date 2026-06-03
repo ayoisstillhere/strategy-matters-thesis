@@ -1,0 +1,86 @@
+{
+  "metadata": {
+    "timestamp": "2026-06-03T11:03:59.144750",
+    "model": "llama-3.1-8b-instant",
+    "topic": "The current federal minimum wage in Germany is €12.82/hour. Should it be raised to €15/hour?",
+    "rounds_before_intervention": 2,
+    "rounds_after_intervention": 2,
+    "strategy": "reframing",
+    "agents": [
+      "CDU/CSU",
+      "SPD"
+    ],
+    "total_tokens": 6992
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "phase": "pre-intervention",
+      "turns": [
+        {
+          "agent": "CDU/CSU",
+          "text": "As the CDU/CSU representative, I firmly believe that raising the minimum wage to €15/hour would have unintended consequences for Germany's economy, particularly in economically weaker regions.\n\nResponding to the SPD's claim that a higher minimum wage would boost consumer spending and stimulate economic growth, I argue that such a significant increase would lead to higher production costs, resulting in job losses and reduced competitiveness for German businesses, especially small and medium enterprises (Mittelstand). This would ultimately undermine the very economic growth the SPD claims to support.",
+          "tokens": 445
+        },
+        {
+          "agent": "SPD",
+          "text": "I'd like to address the CDU/CSU's claim that a higher minimum wage would lead to job losses and reduced competitiveness for German businesses. Specifically, I argue that this position misrepresents the relationship between wages and competitiveness. Studies have shown that countries with higher minimum wages tend to have more productive and competitive economies, as workers are able to invest in their skills and contribute to innovation.",
+          "tokens": 501
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "phase": "pre-intervention",
+      "turns": [
+        {
+          "agent": "CDU/CSU",
+          "text": "[CDU/CSU]: I disagree with the SPD's assertion that higher minimum wages lead to more productive economies. In fact, the SPD's own claim that workers can invest in their skills and contribute to innovation due to higher wages misrepresents the complexity of this issue. \n\nSpecifically, I'd like to challenge the SPD's reliance on studies, citing the example of Denmark, where the minimum wage is significantly higher than Germany's and has led to higher unemployment rates among low-skilled workers, particularly in the eastern Länder.",
+          "tokens": 653
+        },
+        {
+          "agent": "SPD",
+          "text": "Responding to the CDU/CSU's claim that Denmark's high minimum wage led to higher unemployment rates among low-skilled workers, I argue that this example is misleading. The Danish model is unique due to its high taxes and strong social safety net, which allow for a higher minimum wage without disproportionately harming low-skilled workers. In contrast, Germany's current social welfare system is fragmented and insufficient to protect those who would be most vulnerable to a lower minimum wage.",
+          "tokens": 724
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "phase": "post-intervention",
+      "turns": [
+        {
+          "agent": "CDU/CSU",
+          "text": "[CDU/CSU]: I'd like to directly address the SPD's claim that past minimum wage increases did not harm eastern German economic growth. While it is true that economic growth in eastern Germany has been positive in recent years, I would argue that this is largely due to EU funds and government investments in infrastructure and education, rather than minimum wage increases.",
+          "tokens": 1030
+        },
+        {
+          "agent": "SPD",
+          "text": "[SPD]: Responding to the CDU/CSU's claim that EU funds and government investments, rather than minimum wage increases, drove economic growth in eastern Germany, I'd like to challenge the assumption that the effects of minimum wage increases are solely economic. History has shown that a living wage is a matter of social justice and dignity, and the SPD has fought tirelessly for fair wages and workers' rights.",
+          "tokens": 1090
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "phase": "post-intervention",
+      "turns": [
+        {
+          "agent": "CDU/CSU",
+          "text": "[CDU/CSU]: [CDU/CSU]: While I understand the SPD's commitment to social justice and dignity, I must respectfully disagree that the effects of minimum wage increases are solely a matter of social policy. As the Chair of the Mindestlohnkommission, Wolfgang Schäuble, has stated, the commission's data-driven approach ensures that wage increases are based on economic realities, rather than political ideology or ideological dogma.",
+          "tokens": 1225
+        },
+        {
+          "agent": "SPD",
+          "text": "[SPD]: [SPD]: I'd like to directly address the CDU/CSU's concern about the independence and data-driven approach of the Mindestlohnkommission. While I agree that data should inform wage-setting, I am concerned that the commission's narrow focus on economic indicators overlooks the human impact of low wages. The commission's chair, Wolfgang Schäuble, may have stated that the approach is based on economic realities, but I believe that the state has a responsibility to ensure living wages that take into account the dignity and well-being of all workers, not just their productivity.",
+          "tokens": 1324
+        }
+      ]
+    }
+  ],
+  "intervention": {
+    "after_round": 2,
+    "strategy": "reframing",
+    "text": "[MODERATOR INTERVENTION — Reframing]:\nThe discussion so far has focused on competing claims about regional economic effects.\n\nCDU/CSU has argued that a €15 minimum wage risks job losses in economically weaker eastern Länder and that the Mindestlohnkommission's data-driven process should be preserved.\n\nSPD has argued that higher wages reduce poverty and inequality and that economic growth in eastern Germany has not been harmed by past minimum wage increases.\n\nFor the next round, each party should DIRECTLY ADDRESS the STRONGEST argument made by the opposing party:\n- CDU/CSU: Address the SPD's claim that past minimum wage increases did not harm eastern German economic growth.\n- SPD: Address the CDU/CSU's concern about the Mindestlohnkommission's independence and data-driven wage-setting.\n\nDo not repeat your previous points. Engage specifically with the argument assigned to you."
+  }
+}

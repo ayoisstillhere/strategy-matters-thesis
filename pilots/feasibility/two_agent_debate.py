@@ -87,7 +87,7 @@ def create_client():
             f"Looking for .env at: {Path(__file__).resolve().parents[2] / '.env'}"
         )
     # return OpenAI(base_url=API_BASE, api_key=API_KEY)
-    # Use custom httpx client to bypass SSL verification (TU Dresden network proxy)
+    # Use custom httpx client to bypass SSL verification (TU Dresden/Work network proxy)
     http_client = httpx.Client(verify=False)
     return OpenAI(base_url=API_BASE, api_key=API_KEY, http_client=http_client)
 
