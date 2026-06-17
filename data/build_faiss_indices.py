@@ -30,7 +30,7 @@ WAHLOMAT_PATH = DATA_DIR / "wahlomat" / "wahlomat_2025.json"
 EMBEDDINGS_DIR = DATA_DIR / "embeddings"
 EMBEDDINGS_DIR.mkdir(parents=True, exist_ok=True)
 
-EMBEDDING_MODEL = "all-MiniLM-L6-v2"
+EMBEDDING_MODEL = "paraphrase-multilingual-MiniLM-L12-v2"
 BATCH_SIZE = 128
 
 # Party key mapping: chunk filename stems → canonical keys
