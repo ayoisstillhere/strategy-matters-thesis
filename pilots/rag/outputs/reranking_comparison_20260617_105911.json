@@ -1,0 +1,1028 @@
+{
+  "metadata": {
+    "timestamp": "2026-06-17T10:59:11.926351",
+    "bi_encoder": "all-MiniLM-L6-v2",
+    "cross_encoder": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "initial_top_k": 15,
+    "rerank_top_n": 3,
+    "num_reruns": 3
+  },
+  "summary": {
+    "mean_cosine_latency_ms": 264.09,
+    "mean_crossencoder_latency_ms": 426.21,
+    "speedup_factor": 1.61,
+    "mean_jaccard_overlap": 0.142,
+    "exact_agreement_count": 0,
+    "total_comparisons": 24
+  },
+  "results": [
+    {
+      "topic": "Mindestlohn",
+      "party": "afd_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          3,
+          0,
+          1
+        ],
+        "top_scores": [
+          0.35143738985061646,
+          0.34462156891822815,
+          0.3352324366569519
+        ],
+        "top_texts": [
+          "nelle Grundlage, die seine zwingende verfassungsrechtliche Voraus-\nsetzung wäre. Die EU geriert sich als Bundesstaat – und nicht mehr als\nStaatenbund souveräner Nationalstaaten. Die Geschäftsgrundlage",
+          "gebiet mit 20 sehr unterschiedlichen Volkswirtschaften eine Fehl-\nkonstruktion und kann in dieser Form weder ökonomisch noch sozial\nfunktionieren. Erwirtschaften muss wieder vor Umverteilen kommen.\nNu",
+          "18 SOZIALE MARKTWIRTSCHAFT UND GESUNDHEIT\nDie desolate Situation im deutschen Rentensystem\nDas deutsche Rentenniveau ist mit nur 53 % des letzten Nettogehalts\nnach Eurostat eines der niedrigsten in We"
+        ],
+        "mean_latency_ms": 241.04
+      },
+      "cross_encoder": {
+        "top_indices": [
+          11,
+          5,
+          7
+        ],
+        "top_scores": [
+          -3.8290042877197266,
+          -4.494248867034912,
+          -4.498012065887451
+        ],
+        "top_texts": [
+          "INHALTSVERZEICHNIS 5\nZeit für Sicherheit\nÄUSSERE SICHERHEIT 86\nAußenpolitik muss Realpolitik in deutschem Interesse sein 86\nVerteidigungspolitik – Wiederherstellung der Wehrfähigkeit Deutschlands 88\nZ",
+          "Hinzu kommt, dass die Erbschaftsteuer Fehlanreize im Hinblick auf\nden nachhaltigen Umgang mit erwirtschaftetem Vermögen beim\nÜbergang zur nächsten Generation setzt. Im Erbfall kann sie zur\nVeräußerung",
+          "Erhöhung Sparerpauschbetrag 60\nWÄHRUNGSPOLITIK – DAS EURO-SYSTEM SCHEITERT 61\nZurück zu Recht, Wohlstand und sozialem Frieden 61\nDeutschland muss aus dem Euro-System austreten 61\nAbsicherung gegen die"
+        ],
+        "mean_latency_ms": 313.35
+      },
+      "jaccard_overlap": 0.0
+    },
+    {
+      "topic": "Mindestlohn",
+      "party": "cdu_csu_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          6
+        ],
+        "top_scores": [
+          0.3360527753829956,
+          0.31496745347976685,
+          0.2856578826904297
+        ],
+        "top_texts": [
+          "standort leistungsfähiger zu machen und das Euro-Währungssystem stabil zu halten.\nDeutschland muss als größte Volkswirtschaft der Euro-Zone deren Stabilitätsanker bleiben.\n• Geldwertstabilität wahren,",
+          "erreicht werden, es darf keine Benachteiligung einzelner Regionen geben. Wir brauchen\nauch eine große Portion Pragmatismus bei heimischer Erzeugung und internationalen\nWasserstoffpartnerschaften. Der ",
+          "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeitszeit für alle Beschäftigten festgelegt werden. — Position: disagree. Die Sozialpartnerschaft, die Ta"
+        ],
+        "mean_latency_ms": 223.75
+      },
+      "cross_encoder": {
+        "top_indices": [
+          4,
+          13,
+          10
+        ],
+        "top_scores": [
+          -3.7493557929992676,
+          -3.962031841278076,
+          -4.368237018585205
+        ],
+        "top_texts": [
+          "Herausgeber\nCDU-Bundesgeschäftsstelle | Kampagne und Mobilisierung\nKlingelhöferstraße 8 | 10785 Berlin | Telefon 030 22070-0\nwww.cdu.de/kontakt | 1/1224 | Bestell-Nummer: H-503",
+          "am Markt teilnehmen darf. Auf diesen neuen Märkten setzen sich die besten Anbieter\ndurch.\nBei Energieinnovationen Spitze sein\nUnsere Energieforschung ist weltweit Spitze. Wir setzen auf Zukunftstechno",
+          "[Wahl-O-Mat] Nationale Währung: Der Euro soll in Deutschland durch eine nationale Währung ersetzt werden. — Position: disagree. Eine einheitliche Währung macht Geschäfte und Investitionen in der Euroz"
+        ],
+        "mean_latency_ms": 493.45
+      },
+      "jaccard_overlap": 0.0
+    },
+    {
+      "topic": "Mindestlohn",
+      "party": "fdp_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          10
+        ],
+        "top_scores": [
+          0.32157278060913086,
+          0.3103679418563843,
+          0.2945895195007324
+        ],
+        "top_texts": [
+          "Lohnabstandsgebot, also dass es Menschen mit Erwerbsarbeit deutlich besser gehen muss als mit\nTransfereinkommen, und stellen sicher, dass sich Arbeit lohnt. Um zusätzliche Arbeitsanreize zu\nschaffen, ",
+          "mehr Investitionen und Innovationen in Deutschland möglich macht.\nFür eine faire Besteuerung\nWer von seiner eigenen Hände Arbeit lebt, wird in Deutschland hoch besteuert. Der Anreiz,\nzusätzliche Arbei",
+          "Entsendung von Arbeitnehmern innerhalb der EU wollen wir deutlich einfacher und digitaler\nmachen (z.B. A1-Bescheinigung).\nOb Freie Berufe, Handwerk, Kultur- und Kreativwirtschaft oder Dienstleistungsb"
+        ],
+        "mean_latency_ms": 232.12
+      },
+      "cross_encoder": {
+        "top_indices": [
+          3,
+          11,
+          1
+        ],
+        "top_scores": [
+          -4.37799072265625,
+          -4.508683681488037,
+          -4.521430969238281
+        ],
+        "top_texts": [
+          "[Wahl-O-Mat] Nationale Währung: Der Euro soll in Deutschland durch eine nationale Währung ersetzt werden. — Position: disagree. Wir Freie Demokraten bekennen uns zur europäischen Wirtschafts- und Währ",
+          "indem sie leichter Zugang zu Kapital erhält.\nEine enge deutsch-französische Zusammenarbeit ist entscheidend für die Einheit und\nHandlungsfähigkeit der gesamten EU. Auch wollen wir erweiterte Formate w",
+          "mehr Investitionen und Innovationen in Deutschland möglich macht.\nFür eine faire Besteuerung\nWer von seiner eigenen Hände Arbeit lebt, wird in Deutschland hoch besteuert. Der Anreiz,\nzusätzliche Arbei"
+        ],
+        "mean_latency_ms": 451.86
+      },
+      "jaccard_overlap": 0.2
+    },
+    {
+      "topic": "Mindestlohn",
+      "party": "gruene_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          1,
+          2,
+          5
+        ],
+        "top_scores": [
+          0.33276093006134033,
+          0.33180898427963257,
+          0.3308751583099365
+        ],
+        "top_texts": [
+          "sozialen Umstände abhängen darf. Es Faire Löhne verlangen nach einem fairen\ngilt für Menschen, die unverschuldet ihre Mindestlohn, damit Leistung auch an-\nArbeit verlieren. Und es gilt für eine sozial",
+          "Die Erinnerung an die Opfer von rechter zu finanzieren. Allein zum Erhalt und zur\nGewalt und gruppenbezogener Menschen- Sanierung der kommunalen Infrastruk-\nfeindlichkeit wie beispielsweise in Hanau t",
+          "49 Euro sicherzustellen. Insbesondere bei man leicht überall vorankommt, wollen\nJobtickets sehen wir noch Potenziale. Darü- wir uns für einen einfachen, anbieterüber-\nber hinaus begrüßen wir es, wenn "
+        ],
+        "mean_latency_ms": 236.51
+      },
+      "cross_encoder": {
+        "top_indices": [
+          0,
+          4,
+          12
+        ],
+        "top_scores": [
+          -4.539238452911377,
+          -4.73781156539917,
+          -4.7966814041137695
+        ],
+        "top_texts": [
+          "[Wahl-O-Mat] Nationale Währung: Der Euro soll in Deutschland durch eine nationale Währung ersetzt werden. — Position: disagree. Der Euro macht uns stärker und vieles leichter: das Reisen, das Einkaufe",
+          "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro erhöht werden. — Position: agree. Faire Löhne verlangen nach einem fairen Mindestlohn, damit Leistu",
+          "kommen verwirklicht worden sind. Gerade ist, wollen wir die Förderung der zivilen\nin Deutschland, im Herzen Europas, ist das Seenotrettung fortführen. Der Kriminali-\nMiteinander mit unseren Nachbarn A"
+        ],
+        "mean_latency_ms": 333.56
+      },
+      "jaccard_overlap": 0.0
+    },
+    {
+      "topic": "Mindestlohn",
+      "party": "linke_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          3
+        ],
+        "top_scores": [
+          0.412418931722641,
+          0.3757363557815552,
+          0.3617982864379883
+        ],
+        "top_texts": [
+          "einmalige Vermögens abgabe, die die Reichsten unserer Das gilt auch für Reparaturdienstleistungen und\nGesellschaft einmalig belastet� Mit unserem Konzept Demontage, damit Reparatur und Wiedernutzung\nw",
+          "60 Prozent des mittleren Einkommens (Medianlohn). Das sungsgesetz muss die Beweislast bei den beteiligten\nwären schon 2025 etwa 15 Euro� Um die Europäische Unternehmen liegen� Leiharbeit darf nicht zu",
+          "▪ Alle zu versteuernden Einkommen unter 16�800 Euro im ausgenommen� So sind die auf das Einkommen einer\nJahr bleiben steuerfrei – das entspricht der Höhe durchschnittlichen Familie erhobenen Steuersät"
+        ],
+        "mean_latency_ms": 241.71
+      },
+      "cross_encoder": {
+        "top_indices": [
+          14,
+          0,
+          11
+        ],
+        "top_scores": [
+          -3.8842177391052246,
+          -4.29277229309082,
+          -4.429262161254883
+        ],
+        "top_texts": [
+          "Verwaltungssitz in Deutschland erstreckt werden, auch Gute Absicherung bei Erwerbslosigkeit\nauf diejenigen in ausländischer oder europäischer\nRechtsform� Wird gegen diese Verpflichtung verstoßen, Im O",
+          "einmalige Vermögens abgabe, die die Reichsten unserer Das gilt auch für Reparaturdienstleistungen und\nGesellschaft einmalig belastet� Mit unserem Konzept Demontage, damit Reparatur und Wiedernutzung\nw",
+          "Tiere� Wir wollen sie einschränken� Zusätzlich fordern eine ökologische Katastrophe und befördert Gentrifi-\nwir Werbeverbote für besonders klimaschädliche zierung – wir wollen das verbieten� Ein Abris"
+        ],
+        "mean_latency_ms": 357.19
+      },
+      "jaccard_overlap": 0.2
+    },
+    {
+      "topic": "Mindestlohn",
+      "party": "spd_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          5
+        ],
+        "top_scores": [
+          0.32469838857650757,
+          0.30621182918548584,
+          0.29818183183670044
+        ],
+        "top_texts": [
+          "Mehr für Dich. Besser für Deutschland.\nRegierungsprogramm der SPD für die Bundestagswahl 2025\nUnser Ziel ist ein Recht auf Weiterbildung und beruflichen Neustart in allen Lebensphasen.\nBerufsbilder so",
+          "spürbar zu senken. Alle jungen Menschen im 17. Lebensjahr sollen daher einen MobilitätsPass mit 500\nEuro Guthaben, etwa für Führerscheinkosten, Bahntickets oder Fahrräder, erhalten. Zudem wollen wir\nA",
+          "und entbürokratisieren. Wir wollen eine systematische Verbesserung der Kommunalfinanzen\nerreichen. Über den Deutschlandfonds wollen wir kommunale Wohnungsbaugesellschaften,\nEnergieversorger und Verkeh"
+        ],
+        "mean_latency_ms": 240.33
+      },
+      "cross_encoder": {
+        "top_indices": [
+          11,
+          14,
+          9
+        ],
+        "top_scores": [
+          -3.2834200859069824,
+          -4.322815895080566,
+          -4.835919380187988
+        ],
+        "top_texts": [
+          "[Wahl-O-Mat] Nationale Währung: Der Euro soll in Deutschland durch eine nationale Währung ersetzt werden. — Position: disagree. Ein Austritt Deutschlands aus der Währungsunion würde der Exportnation D",
+          "[Wahl-O-Mat] Anwerbung von Fachkräften: Deutschland soll weiterhin die Anwerbung von Fachkräften aus dem Ausland fördern. — Position: agree. Deutschland profitiert seit langem davon, dass wir ein Einw",
+          "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro erhöht werden. — Position: agree. Die SPD hat den gesetzlichen Mindestlohn eingeführt. Die Höhe des"
+        ],
+        "mean_latency_ms": 516.37
+      },
+      "jaccard_overlap": 0.0
+    },
+    {
+      "topic": "Rentenpolitik",
+      "party": "afd_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          8,
+          2,
+          0
+        ],
+        "top_scores": [
+          0.3208875060081482,
+          0.3125278949737549,
+          0.311461865901947
+        ],
+        "top_texts": [
+          "nationaler Ebene\nDie EU maßt sich vertragswidrig an – entgegen dem expliziten Wort-\nlaut der EU-Verträge – eigene Schulden aufzunehmen, was zulasten\nkünftiger Generationen geht. Dabei werden die Mitte",
+          "Erhöhung Sparerpauschbetrag 60\nWÄHRUNGSPOLITIK – DAS EURO-SYSTEM SCHEITERT 61\nZurück zu Recht, Wohlstand und sozialem Frieden 61\nDeutschland muss aus dem Euro-System austreten 61\nAbsicherung gegen die",
+          "alternative Medien und Hinweisgeber zur Offenlegung regierungs-\namtlichen Unrechts und seiner Hintergründe, beispielsweise wie bei\nden RKI-Protokollen offengelegt oder bei der Analyse des Corona-\nKris"
+        ],
+        "mean_latency_ms": 243.26
+      },
+      "cross_encoder": {
+        "top_indices": [
+          3,
+          14,
+          2
+        ],
+        "top_scores": [
+          -5.290659427642822,
+          -5.347582817077637,
+          -5.4626312255859375
+        ],
+        "top_texts": [
+          "INHALTSVERZEICHNIS 5\nZeit für Sicherheit\nÄUSSERE SICHERHEIT 86\nAußenpolitik muss Realpolitik in deutschem Interesse sein 86\nVerteidigungspolitik – Wiederherstellung der Wehrfähigkeit Deutschlands 88\nZ",
+          "Zuwanderung wieder national regeln 102\nAsylparadies Deutschland schließen 103\nÖkonomische Anreize senken 105\nDeutschland braucht eine umfassende Rückführungsoffensive 106\nIntegration 108\nDie deutsche ",
+          "Erhöhung Sparerpauschbetrag 60\nWÄHRUNGSPOLITIK – DAS EURO-SYSTEM SCHEITERT 61\nZurück zu Recht, Wohlstand und sozialem Frieden 61\nDeutschland muss aus dem Euro-System austreten 61\nAbsicherung gegen die"
+        ],
+        "mean_latency_ms": 337.81
+      },
+      "jaccard_overlap": 0.2
+    },
+    {
+      "topic": "Rentenpolitik",
+      "party": "cdu_csu_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          1,
+          2,
+          0
+        ],
+        "top_scores": [
+          0.2929181456565857,
+          0.2925766706466675,
+          0.29099521040916443
+        ],
+        "top_texts": [
+          "leben“ siedeln wir künftig im Bundesinnenministerium an.\n• Rechtsextremismus die Rote Karte zeigen. Rechtsextremisten, Reichsbürger und soge-\nnannte Selbstverwalter delegitimieren unseren Staat und se",
+          "Regime in Deutschland ist für uns ein Auftrag für Gegenwart und Zukunft. Zugleich er-\nweitern wir den Erinnerungsansatz um die Geschichte des Kolonialismus.\n• SED-Diktatur weiter aufarbeiten. Dazu wol",
+          "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeitszeit für alle Beschäftigten festgelegt werden. — Position: disagree. Die Sozialpartnerschaft, die Ta"
+        ],
+        "mean_latency_ms": 251.66
+      },
+      "cross_encoder": {
+        "top_indices": [
+          13,
+          7,
+          0
+        ],
+        "top_scores": [
+          -5.486478328704834,
+          -5.768136978149414,
+          -6.11336088180542
+        ],
+        "top_texts": [
+          "Wirtschaft mit gut bezahlten Arbeitsplätzen. Wir sorgen dafür, dass sich unsere hervorra-\ngende Forschungslandschaft wieder mehr auszahlt. Wir stärken Hochschulen und For-\nschungseinrichtungen, Startu",
+          "[Wahl-O-Mat] Arbeitserlaubnis für Asylsuchende: Asylsuchende sollen in Deutschland sofort nach ihrer Antragstellung eine Arbeitserlaubnis erhalten. — Position: disagree. Asylsuchende dürfen in Deutsch",
+          "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeitszeit für alle Beschäftigten festgelegt werden. — Position: disagree. Die Sozialpartnerschaft, die Ta"
+        ],
+        "mean_latency_ms": 521.44
+      },
+      "jaccard_overlap": 0.2
+    },
+    {
+      "topic": "Rentenpolitik",
+      "party": "fdp_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          2
+        ],
+        "top_scores": [
+          0.3257562816143036,
+          0.32484835386276245,
+          0.29383236169815063
+        ],
+        "top_texts": [
+          "für die Bundesländer. Nachhaltige und priorisierende Haushalte schaffen Generationengerechtigkeit,\nweil Lasten nicht auf künftige Generationen übertragen werden. Nur so sichern wir die finanziellen\nHa",
+          "Entscheidung bleibt. Beide Eltern sollten berechtigt und verpflichtet sein, sowohl für den Unterhalt\nals auch für die Betreuung mit einem substantiellen Anteil zu sorgen. Die Rechte der Großeltern im\n",
+          "Das Programm der Freien\nDemokraten zur Bundestagswahl\n2025\n(vorbehaltlich abschließender redaktioneller Bearbeitung)\n1"
+        ],
+        "mean_latency_ms": 250.79
+      },
+      "cross_encoder": {
+        "top_indices": [
+          8,
+          7,
+          2
+        ],
+        "top_scores": [
+          -5.6585283279418945,
+          -5.877663612365723,
+          -6.054051399230957
+        ],
+        "top_texts": [
+          "b. Für kluge Außenpolitik im Zeitalter systemischer Rivalität ........................................................... 47\nc. Deutschland und Israel .................................................",
+          "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeitszeit für alle Beschäftigten festgelegt werden. — Position: disagree. In Deutschland existieren kolle",
+          "Das Programm der Freien\nDemokraten zur Bundestagswahl\n2025\n(vorbehaltlich abschließender redaktioneller Bearbeitung)\n1"
+        ],
+        "mean_latency_ms": 480.0
+      },
+      "jaccard_overlap": 0.2
+    },
+    {
+      "topic": "Rentenpolitik",
+      "party": "gruene_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          2
+        ],
+        "top_scores": [
+          0.39934760332107544,
+          0.35193002223968506,
+          0.30060064792633057
+        ],
+        "top_texts": [
+          "schäftigte zu erreichen und die Persönlich- ge Arbeit: Dieser Slogan wird Wirklichkeit,\nkeitsrechte effektiv zu schützen. Die Unter- wenn Frauen ihr Recht auf gleiche Bezah-\nnehmensmitbestimmung wolle",
+          "Deshalb wollen wir die EU erweitern, um\nunsere Nachbarschaft zu stabilisieren und\nFrieden, Freiheit und Wohlstand in ganz\nEuropa zu festigen. Um positive Anreize\nzu setzen für Kandidatenländer, die ec",
+          "möchten endlich etwas erreichen. Deswe-\nFür ein gerechtes Steuersystem gen fokussieren wir uns auf folgende Maß-\nnahmen: eine Reform der Erbschaftssteuer\nDeutschland ist ein wohlhabendes Land. hin zu "
+        ],
+        "mean_latency_ms": 273.26
+      },
+      "cross_encoder": {
+        "top_indices": [
+          9,
+          8,
+          2
+        ],
+        "top_scores": [
+          -6.252277374267578,
+          -6.435922622680664,
+          -6.617446422576904
+        ],
+        "top_texts": [
+          "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeitszeit für alle Beschäftigten festgelegt werden. — Position: disagree. Die Sicherheit und der Gesundhe",
+          "Für einen starken Verbraucherschutz 31\nB. Ein modernes und digitales Land 32\nFür einen Staat, der für die Menschen funktioniert 32\nFür eine serviceorientierte Verwaltung 33\nFür eine schnelle und umfas",
+          "möchten endlich etwas erreichen. Deswe-\nFür ein gerechtes Steuersystem gen fokussieren wir uns auf folgende Maß-\nnahmen: eine Reform der Erbschaftssteuer\nDeutschland ist ein wohlhabendes Land. hin zu "
+        ],
+        "mean_latency_ms": 396.36
+      },
+      "jaccard_overlap": 0.2
+    },
+    {
+      "topic": "Rentenpolitik",
+      "party": "linke_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          2
+        ],
+        "top_scores": [
+          0.367046594619751,
+          0.36291348934173584,
+          0.34401142597198486
+        ],
+        "top_texts": [
+          "Awareness-Konzepte zum Schutz vor sexualisierter der Lobbyist*innen einschränken\nGewalt zum Einsatz kommen müssen�\nIm Bundestagswahlkampf 2021 erhielten die Parteien über\n▪ Sonderstrafrecht stoppen! D",
+          "einmalige Vermögens abgabe, die die Reichsten unserer Das gilt auch für Reparaturdienstleistungen und\nGesellschaft einmalig belastet� Mit unserem Konzept Demontage, damit Reparatur und Wiedernutzung\nw",
+          "ebenso Reformen der EU27� solche, die neoliberale Strukturanpassungen erzwingen�\n▪ Wir wollen, dass das Europäische Parlament endlich das Für uns ist klar: Wir stehen bedingungslos an der Seite der\nvo"
+        ],
+        "mean_latency_ms": 257.58
+      },
+      "cross_encoder": {
+        "top_indices": [
+          6,
+          3,
+          10
+        ],
+        "top_scores": [
+          -4.96608304977417,
+          -5.931013107299805,
+          -5.940441131591797
+        ],
+        "top_texts": [
+          "Schlupflöcher für die Reichen schließen: Erbschaft- und Schenkungssteuer � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �11\nKonzerne gerecht an den Kosten beteiligen, Spekulant*inne",
+          "Verwaltungssitz in Deutschland erstreckt werden, auch Gute Absicherung bei Erwerbslosigkeit\nauf diejenigen in ausländischer oder europäischer\nRechtsform� Wird gegen diese Verpflichtung verstoßen, Im O",
+          "Wohnungslose, Saison- und Wanderarbeiter*innen und\nEs gibt in Deutschland ungefähr 600 000 wohnungslose geflüchtete Menschen regulärer Wohnraum bereitsteht,\nMenschen. Das EU-Parlament fordert die Absc"
+        ],
+        "mean_latency_ms": 365.54
+      },
+      "jaccard_overlap": 0.0
+    },
+    {
+      "topic": "Rentenpolitik",
+      "party": "spd_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          4
+        ],
+        "top_scores": [
+          0.35247427225112915,
+          0.35115352272987366,
+          0.30001527070999146
+        ],
+        "top_texts": [
+          "privates Kapital mobilisiert werden. Große institutionelle Anleger wie zum Beispiel Versicherungen\noder Pensionskassen können so ebenfalls in diese Unternehmen und Einrichtungen investieren. Das\nstell",
+          "Besonders in herausfordernden Zeiten ist die Sichtbarkeit der Polizei von erheblicher Bedeutung. Auch\ndafür wollen wir den Personalaufbau bei den Sicherheitsbehörden konsequent fortsetzen und sichern\n",
+          "[Wahl-O-Mat] Projekte gegen Rechtsextremismus: Der Bund soll Projekte gegen Rechtsextremismus verstärkt fördern. — Position: agree. Eine lebendige Zivilgesellschaft ist das Rückgrat unserer Demokratie"
+        ],
+        "mean_latency_ms": 255.94
+      },
+      "cross_encoder": {
+        "top_indices": [
+          0,
+          2,
+          10
+        ],
+        "top_scores": [
+          -5.226785182952881,
+          -6.570878028869629,
+          -6.869699001312256
+        ],
+        "top_texts": [
+          "privates Kapital mobilisiert werden. Große institutionelle Anleger wie zum Beispiel Versicherungen\noder Pensionskassen können so ebenfalls in diese Unternehmen und Einrichtungen investieren. Das\nstell",
+          "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeitszeit für alle Beschäftigten festgelegt werden. — Position: neutral. Die SPD unterstützt branchenspez",
+          "und entbürokratisieren. Wir wollen eine systematische Verbesserung der Kommunalfinanzen\nerreichen. Über den Deutschlandfonds wollen wir kommunale Wohnungsbaugesellschaften,\nEnergieversorger und Verkeh"
+        ],
+        "mean_latency_ms": 633.34
+      },
+      "jaccard_overlap": 0.2
+    },
+    {
+      "topic": "Sozialpolitik",
+      "party": "afd_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          5
+        ],
+        "top_scores": [
+          0.3153284192085266,
+          0.2920316159725189,
+          0.28249847888946533
+        ],
+        "top_texts": [
+          "gebiet mit 20 sehr unterschiedlichen Volkswirtschaften eine Fehl-\nkonstruktion und kann in dieser Form weder ökonomisch noch sozial\nfunktionieren. Erwirtschaften muss wieder vor Umverteilen kommen.\nNu",
+          "72 LANDWIRTSCHAFT, UMWELT UND KLIMA\nReine Luft und sauberes Wasser, gesunde und verantwortungsbe-\nwusst erzeugte Lebensmittel sowie naturnahe Lebensräume sind\nlebenswichtige Allgemeingüter, deren Schu",
+          "mission dafür genutzt, die Transformation der EU zu einem supra-\nnationalen Bundesstaat weiter voranzutreiben, unterstützt vom\nEuropäischen Gerichtshof und einer selbstherrlichen Bürokratie.\nWir erleb"
+        ],
+        "mean_latency_ms": 262.66
+      },
+      "cross_encoder": {
+        "top_indices": [
+          2,
+          4,
+          8
+        ],
+        "top_scores": [
+          -3.0908732414245605,
+          -3.456387519836426,
+          -3.9935169219970703
+        ],
+        "top_texts": [
+          "ZEIT FÜR\nWOHLSTAND\nSOZIALE MARKTWIRTSCHAFT\nUND GESUNDHEIT",
+          "den Vorgaben der Politik nicht mehr zu bewältigen. Viele Betriebe\ngeben auf oder suchen neue Chancen im Ausland.\nDie immense Steuer- und Abgabenlast führt in Teilbereichen der\nWirtschaft vermehrt zu S",
+          "Menschen durch Geburt oder Stand ungleich und in ihrer recht-\nlichen Selbstbestimmung beschränkt waren, bis hin zum Extrem\nder Rechtlosigkeit in Form von Leibeigenschaft oder Sklaverei. Erst\ndie chris"
+        ],
+        "mean_latency_ms": 356.2
+      },
+      "jaccard_overlap": 0.0
+    },
+    {
+      "topic": "Sozialpolitik",
+      "party": "cdu_csu_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          2
+        ],
+        "top_scores": [
+          0.294824481010437,
+          0.28069233894348145,
+          0.2781151533126831
+        ],
+        "top_texts": [
+          "Regime in Deutschland ist für uns ein Auftrag für Gegenwart und Zukunft. Zugleich er-\nweitern wir den Erinnerungsansatz um die Geschichte des Kolonialismus.\n• SED-Diktatur weiter aufarbeiten. Dazu wol",
+          "[Wahl-O-Mat] Volksentscheide: In Deutschland soll es auf Bundesebene Volksentscheide geben können. — Position: disagree. Wir stehen zur repräsentativen Demokratie. Die Bürgerinnen und Bürger wählen ih",
+          "- LANGFASSUNG -\nI. Für ein Deutschland, auf das wir\nwieder stolz sein können\nUnsere Bundesrepublik Deutschland ist eine großartige Erfolgsgeschichte: Wiederaufbau,\nWirtschaftswunder und Weltmeistertit"
+        ],
+        "mean_latency_ms": 289.31
+      },
+      "cross_encoder": {
+        "top_indices": [
+          6,
+          2,
+          4
+        ],
+        "top_scores": [
+          -4.123153209686279,
+          -4.3004865646362305,
+          -4.3753132820129395
+        ],
+        "top_texts": [
+          "[Wahl-O-Mat] Energieintensive Unternehmen: Energieintensive Unternehmen sollen vom Staat einen finanziellen Ausgleich für ihre Stromkosten erhalten. — Position: agree. CDU und CSU wollen die Rahmenbed",
+          "- LANGFASSUNG -\nI. Für ein Deutschland, auf das wir\nwieder stolz sein können\nUnsere Bundesrepublik Deutschland ist eine großartige Erfolgsgeschichte: Wiederaufbau,\nWirtschaftswunder und Weltmeistertit",
+          "von der Werteordnung der EU entfernt und ihr daher nicht beitreten kann.\n• Partnerschaften und Kooperationen mit Nachbarstaaten stärken. Das gilt insbesondere\nfür die Länder des Europäischen Wirtschaf"
+        ],
+        "mean_latency_ms": 388.58
+      },
+      "jaccard_overlap": 0.2
+    },
+    {
+      "topic": "Sozialpolitik",
+      "party": "fdp_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          3,
+          2
+        ],
+        "top_scores": [
+          0.3033488988876343,
+          0.2878796458244324,
+          0.2849460244178772
+        ],
+        "top_texts": [
+          "Sozial-Taxonomie lehnen wir strikt ab. Auf EU-Ebene braucht es ein System verbindlicher Erfassung\nvon Bürokratiekosten, um ehrgeizige und messbare Ziele für den Bürokratieabbau vorzugeben.\nb. Ein Steu",
+          "Interessen Deutschlands und der EU priorisiert werden. Bei Strafverschärfungen gegen LSBTIQ-\nMenschen und Menschenrechtsverteidiger und dem Abbau von Frauenrechten wollen wir die\nEntwicklungszusammena",
+          "mehr Investitionen und Innovationen in Deutschland möglich macht.\nFür eine faire Besteuerung\nWer von seiner eigenen Hände Arbeit lebt, wird in Deutschland hoch besteuert. Der Anreiz,\nzusätzliche Arbei"
+        ],
+        "mean_latency_ms": 289.53
+      },
+      "cross_encoder": {
+        "top_indices": [
+          12,
+          9,
+          8
+        ],
+        "top_scores": [
+          -3.37300968170166,
+          -3.823507785797119,
+          -3.9992218017578125
+        ],
+        "top_texts": [
+          "Das Programm der Freien\nDemokraten zur Bundestagswahl\n2025\n(vorbehaltlich abschließender redaktioneller Bearbeitung)\n1",
+          "[Wahl-O-Mat] Zweite Staatsbürgerschaft: In Deutschland soll es weiterhin generell möglich sein, neben der deutschen eine zweite Staatsbürgerschaft zu haben. — Position: agree. Die FDP hat erreicht, da",
+          "[Wahl-O-Mat] Volksentscheide: In Deutschland soll es auf Bundesebene Volksentscheide geben können. — Position: disagree. Unser Land ist eine parlamentarische Demokratie. Wir wollen den Deutschen Bunde"
+        ],
+        "mean_latency_ms": 351.39
+      },
+      "jaccard_overlap": 0.0
+    },
+    {
+      "topic": "Sozialpolitik",
+      "party": "gruene_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          1,
+          0,
+          4
+        ],
+        "top_scores": [
+          0.323419988155365,
+          0.30907198786735535,
+          0.3019414246082306
+        ],
+        "top_texts": [
+          "[Wahl-O-Mat] Nationale Währung: Der Euro soll in Deutschland durch eine nationale Währung ersetzt werden. — Position: disagree. Der Euro macht uns stärker und vieles leichter: das Reisen, das Einkaufe",
+          "möchten endlich etwas erreichen. Deswe-\nFür ein gerechtes Steuersystem gen fokussieren wir uns auf folgende Maß-\nnahmen: eine Reform der Erbschaftssteuer\nDeutschland ist ein wohlhabendes Land. hin zu ",
+          "[Wahl-O-Mat] Zweite Staatsbürgerschaft: In Deutschland soll es weiterhin generell möglich sein, neben der deutschen eine zweite Staatsbürgerschaft zu haben. — Position: agree. In einer zusammenwachsen"
+        ],
+        "mean_latency_ms": 270.62
+      },
+      "cross_encoder": {
+        "top_indices": [
+          4,
+          14,
+          0
+        ],
+        "top_scores": [
+          -3.6698384284973145,
+          -4.120003700256348,
+          -4.331090927124023
+        ],
+        "top_texts": [
+          "[Wahl-O-Mat] Zweite Staatsbürgerschaft: In Deutschland soll es weiterhin generell möglich sein, neben der deutschen eine zweite Staatsbürgerschaft zu haben. — Position: agree. In einer zusammenwachsen",
+          "[Wahl-O-Mat] Ehrenamt: Ehrenamtliche Tätigkeiten sollen auf die zukünftige Rente angerechnet werden. — Position: agree. Viele Millionen Menschen engagieren sich in Deutschland ehrenamtlich, etwa in de",
+          "möchten endlich etwas erreichen. Deswe-\nFür ein gerechtes Steuersystem gen fokussieren wir uns auf folgende Maß-\nnahmen: eine Reform der Erbschaftssteuer\nDeutschland ist ein wohlhabendes Land. hin zu "
+        ],
+        "mean_latency_ms": 348.41
+      },
+      "jaccard_overlap": 0.5
+    },
+    {
+      "topic": "Sozialpolitik",
+      "party": "linke_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          5,
+          1
+        ],
+        "top_scores": [
+          0.2803277373313904,
+          0.27998238801956177,
+          0.26990842819213867
+        ],
+        "top_texts": [
+          "ebenso Reformen der EU27� solche, die neoliberale Strukturanpassungen erzwingen�\n▪ Wir wollen, dass das Europäische Parlament endlich das Für uns ist klar: Wir stehen bedingungslos an der Seite der\nvo",
+          "Schlupflöcher für die Reichen schließen: Erbschaft- und Schenkungssteuer � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �11\nKonzerne gerecht an den Kosten beteiligen, Spekulant*inne",
+          "systematisch aufgearbeitet werden� Die Strafverfol- ermöglichen�\ngungsbehörden und Finanzämter müssen personell und\ntechnisch in die Lage versetzt werden, Steuerhinter- ▪ Den allergrößten Teil der Inv"
+        ],
+        "mean_latency_ms": 269.92
+      },
+      "cross_encoder": {
+        "top_indices": [
+          5,
+          6,
+          11
+        ],
+        "top_scores": [
+          -3.445446491241455,
+          -3.956239938735962,
+          -4.07645845413208
+        ],
+        "top_texts": [
+          "Schlupflöcher für die Reichen schließen: Erbschaft- und Schenkungssteuer � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �11\nKonzerne gerecht an den Kosten beteiligen, Spekulant*inne",
+          "[Wahl-O-Mat] Nationale Währung: Der Euro soll in Deutschland durch eine nationale Währung ersetzt werden. — Position: disagree. Der Euro als gemeinsame europäische Währung ist nicht das Problem, sonde",
+          "für verschiedene Probleme entwickeln, wollen wir unter- gerecht sein: Die Polizei muss ansprechbar sein und\nstützen, stärken und fördern� deeskalierend auftreten� Obdachlosen und Suchtabhän-\ngigen ist"
+        ],
+        "mean_latency_ms": 374.14
+      },
+      "jaccard_overlap": 0.2
+    },
+    {
+      "topic": "Sozialpolitik",
+      "party": "spd_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          2
+        ],
+        "top_scores": [
+          0.33833837509155273,
+          0.3156329095363617,
+          0.29670947790145874
+        ],
+        "top_texts": [
+          "Mehrwertsteuer auf Lebensmittel sowie wirksamen Regeln für bezahlbares Wohnen.\n• Wir investieren weiter in Schienen, Brücken und digitale Netze.\n• Wir unterstützen unsere Unternehmen und ihre Beschäft",
+          "Mehr für Dich. Besser für Deutschland.\nRegierungsprogramm der SPD für die Bundestagswahl 2025\nDen Mindestlohn haben wir auf zunächst 12 Euro erhöht – das bedeutet mehr Einkommen und\nmehr Sicherheit fü",
+          "miteinander verbindet. Wir gestalten einen Aufschwung, der bei allen Menschen ankommt. Dafür\ninvestieren wir in die Zukunft – in Bildung, Innovation, Digitalisierung und Klimaschutz. Wir sorgen\ndafür,"
+        ],
+        "mean_latency_ms": 283.2
+      },
+      "cross_encoder": {
+        "top_indices": [
+          3,
+          10,
+          11
+        ],
+        "top_scores": [
+          -3.5245628356933594,
+          -4.207399368286133,
+          -4.4094038009643555
+        ],
+        "top_texts": [
+          "[Wahl-O-Mat] Nationale Währung: Der Euro soll in Deutschland durch eine nationale Währung ersetzt werden. — Position: disagree. Ein Austritt Deutschlands aus der Währungsunion würde der Exportnation D",
+          "[Wahl-O-Mat] Anwerbung von Fachkräften: Deutschland soll weiterhin die Anwerbung von Fachkräften aus dem Ausland fördern. — Position: agree. Deutschland profitiert seit langem davon, dass wir ein Einw",
+          "[Wahl-O-Mat] Zweite Staatsbürgerschaft: In Deutschland soll es weiterhin generell möglich sein, neben der deutschen eine zweite Staatsbürgerschaft zu haben. — Position: agree. Wir haben mit dem modern"
+        ],
+        "mean_latency_ms": 398.87
+      },
+      "jaccard_overlap": 0.0
+    },
+    {
+      "topic": "Migrationspolitik",
+      "party": "afd_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          3,
+          1
+        ],
+        "top_scores": [
+          0.45433756709098816,
+          0.38041698932647705,
+          0.37081611156463623
+        ],
+        "top_texts": [
+          "Zuwanderung wieder national regeln 102\nAsylparadies Deutschland schließen 103\nÖkonomische Anreize senken 105\nDeutschland braucht eine umfassende Rückführungsoffensive 106\nIntegration 108\nDie deutsche ",
+          "darf. Kontrollen und damit verbundene Zurückweisungen an der\nGrenze müssen als selbstverständliches Recht souveräner Staaten\naufgefasst werden.\nDie AfD wird eine deutliche Kehrtwende in der bisherigen",
+          "90 ÄUSSERE SICHERHEIT\nDeutschland in Europa und der Welt\nWir begrüßen die Entwicklung hin zu einer multipolaren Welt, wollen\ndabei ihre Chancen nutzen sowie ihre Risiken minimieren.\nDie Vereinten Nati"
+        ],
+        "mean_latency_ms": 274.33
+      },
+      "cross_encoder": {
+        "top_indices": [
+          4,
+          14,
+          5
+        ],
+        "top_scores": [
+          -4.18003511428833,
+          -5.147512435913086,
+          -5.262844085693359
+        ],
+        "top_texts": [
+          " Aufkündigung von UN-Migrations- und UN-Flüchtlingspakt\n Anstoßen sowohl einer Reform der Genfer Flüchtlingskonvention\n(GFK) als auch der Europäischen Menschenrechtskonvention (EMRK)\nmit dem Ziel de",
+          "einbarung des Bundesamts für Migration und Flüchtlinge (BAMF)\nmit den Kirchen\nDiesen Kurswechsel werden wir – nach dem Syrien-Urteil des OVG\nMünster vom Juli 2024 (Urt. V. 16.07.2024, Az 14A 2847/19.a",
+          "106 ASYL- UND MIGRATIONSPOLITIK\nDEUTSCHLAND BRAUCHT EINE UMFASSENDE\nRÜCKFÜHRUNGSOFFENSIVE\nDas deutsche Rückführungsversagen ist nicht länger hinnehmbar.\nDas gilt sowohl für Abschiebungen ins Herkunfts"
+        ],
+        "mean_latency_ms": 363.06
+      },
+      "jaccard_overlap": 0.0
+    },
+    {
+      "topic": "Migrationspolitik",
+      "party": "cdu_csu_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          3
+        ],
+        "top_scores": [
+          0.4042419493198395,
+          0.3564005494117737,
+          0.350413978099823
+        ],
+        "top_texts": [
+          "[Wahl-O-Mat] Arbeitserlaubnis für Asylsuchende: Asylsuchende sollen in Deutschland sofort nach ihrer Antragstellung eine Arbeitserlaubnis erhalten. — Position: disagree. Asylsuchende dürfen in Deutsch",
+          "rückgewinnen. Wir wollen die illegale Migration stoppen und die humanitären Aufnahmen\nauf ein Maß beschränken, das die Möglichkeiten Deutschlands nicht länger überfordert.\nUnser nationales Asylsystem ",
+          "oder Sabotage besser zu schützen, bedarf es einer nationalen Strategie. Diese muss wirk-\nsame Maßnahmen zum Bestandsschutz, zur Erarbeitung von Notfallplänen und zur Si-\ncherung des Betriebsablaufs fü"
+        ],
+        "mean_latency_ms": 293.87
+      },
+      "cross_encoder": {
+        "top_indices": [
+          0,
+          9,
+          1
+        ],
+        "top_scores": [
+          -5.270230293273926,
+          -6.032958984375,
+          -6.113482475280762
+        ],
+        "top_texts": [
+          "[Wahl-O-Mat] Arbeitserlaubnis für Asylsuchende: Asylsuchende sollen in Deutschland sofort nach ihrer Antragstellung eine Arbeitserlaubnis erhalten. — Position: disagree. Asylsuchende dürfen in Deutsch",
+          "Herausgeber\nCDU-Bundesgeschäftsstelle | Kampagne und Mobilisierung\nKlingelhöferstraße 8 | 10785 Berlin | Telefon 030 22070-0\nwww.cdu.de/kontakt | 1/1224 | Bestell-Nummer: H-503",
+          "rückgewinnen. Wir wollen die illegale Migration stoppen und die humanitären Aufnahmen\nauf ein Maß beschränken, das die Möglichkeiten Deutschlands nicht länger überfordert.\nUnser nationales Asylsystem "
+        ],
+        "mean_latency_ms": 565.89
+      },
+      "jaccard_overlap": 0.5
+    },
+    {
+      "topic": "Migrationspolitik",
+      "party": "fdp_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          1,
+          0,
+          2
+        ],
+        "top_scores": [
+          0.32547727227211,
+          0.3165889084339142,
+          0.29128292202949524
+        ],
+        "top_texts": [
+          "Das Programm der Freien\nDemokraten zur Bundestagswahl\n2025\n(vorbehaltlich abschließender redaktioneller Bearbeitung)\n1",
+          "auszuschöpfen.\nWir wollen gemeinsam mit unseren europäischen Partnern für mehr Ordnung und Kontrolle in der\nMigrationspolitik sorgen. Die Rolle von FRONTEX beim Schutz der Außengrenzen sowie bei der\nB",
+          "[Wahl-O-Mat] Abweisung Asylsuchender: Asylsuchende, die über einen anderen EU-Staat eingereist sind, sollen an den deutschen Grenzen abgewiesen werden. — Position: agree. Menschen, die von vornherein "
+        ],
+        "mean_latency_ms": 289.74
+      },
+      "cross_encoder": {
+        "top_indices": [
+          1,
+          8,
+          10
+        ],
+        "top_scores": [
+          -5.176145076751709,
+          -5.660357475280762,
+          -6.30482292175293
+        ],
+        "top_texts": [
+          "Das Programm der Freien\nDemokraten zur Bundestagswahl\n2025\n(vorbehaltlich abschließender redaktioneller Bearbeitung)\n1",
+          "sind tiefgreifende und strukturelle Reformen notwendig. Wir brauchen Wachstum und bessere\nAngebotsbedingungen, damit das Land nicht in Pessimismus und Verteilungskämpfe abrutscht.\nDeutschland kann wie",
+          "hat die Geschichte unseres Landes immer wieder gezeigt: Die Wirtschaftsordnung der Sozialen\nMarktwirtschaft hat dem westlichen Teil unseres Landes nach dem Zweiten Weltkrieg einen\nbeispiellosen wirtsc"
+        ],
+        "mean_latency_ms": 521.49
+      },
+      "jaccard_overlap": 0.2
+    },
+    {
+      "topic": "Migrationspolitik",
+      "party": "gruene_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          1,
+          0,
+          2
+        ],
+        "top_scores": [
+          0.30599111318588257,
+          0.3052864074707031,
+          0.30117422342300415
+        ],
+        "top_texts": [
+          "In Zukunft soll ein Teil der Abgeordne- gislatur zu einer Reformlegislatur machen.\nten über transnationale Listen gewählt Dafür soll das Pri1nzip der E4instimmigkeit 3\nwerden. Bürger*innen sollen brei",
+          "Für die Unterstützung von freiwilligem Engagement 111\nFür Sport, der verbindet 112\nFür eine handlungsfähige Justiz in unserem Rechtsstaat 113\nFür digitale Bürger*innenrechte 114\nFür eine vielfältige G",
+          "Denn niemand steht über dem Völkerrecht unkompliziert unterstützen. Dazu gehören\n– es gilt überall. In enger Abstimmung mit auch Schutzprogramme für verfolgte Men-\nunseren internationalen Partnern set"
+        ],
+        "mean_latency_ms": 283.99
+      },
+      "cross_encoder": {
+        "top_indices": [
+          1,
+          4,
+          6
+        ],
+        "top_scores": [
+          -5.3916497230529785,
+          -6.106734275817871,
+          -6.261507511138916
+        ],
+        "top_texts": [
+          "In Zukunft soll ein Teil der Abgeordne- gislatur zu einer Reformlegislatur machen.\nten über transnationale Listen gewählt Dafür soll das Pri1nzip der E4instimmigkeit 3\nwerden. Bürger*innen sollen brei",
+          "wir ein wirtschaftlich starkes Land sind. haben für uns Priorität. Wir schlagen für\nDie Schuldenbremse in ihrer aktuellen investive Ausgaben eine Reform der Schul-\nForm verhindert Investitionen und an",
+          "dert von Deutschland und der EU, ihr\nDie regelbasierte internationale Ordnung Engagement diplomatisch, finanziell und\nist das Fundament unseres Friedens. Die personell weiter zu verstärken. Mittel für"
+        ],
+        "mean_latency_ms": 384.4
+      },
+      "jaccard_overlap": 0.2
+    },
+    {
+      "topic": "Migrationspolitik",
+      "party": "linke_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          2,
+          1
+        ],
+        "top_scores": [
+          0.34307998418807983,
+          0.3177865743637085,
+          0.3144069314002991
+        ],
+        "top_texts": [
+          "von Klima- und Umweltfolgeschäden sowie Armut als haltsstatus ein reguläres Strafverfahren im Inland\nFluchtgründe und eine entsprechende humanitäre erhalten und gegebenenfalls Haftstrafen im Inland\nVi",
+          "Migrant*innen wollen wir durch ein Demokratieförder- Auch Migration aus sozialen und wirtschaftlichen Motiven\ngesetz stärken und endlich dauerhaft fördern ist ein legitimes individuelles Bedürfnis� Be",
+          "▪ Daher braucht es Aufenthalts- und Arbeitserlaubnisse gesamten öffentlichen Dienst� Die Zuständigkeit für\nunabhängig von Beschäftigungsdauer und Arbeitgeber Migration und Integration muss dem Bundesi"
+        ],
+        "mean_latency_ms": 290.67
+      },
+      "cross_encoder": {
+        "top_indices": [
+          5,
+          11,
+          3
+        ],
+        "top_scores": [
+          -5.237159729003906,
+          -5.923079490661621,
+          -5.971822738647461
+        ],
+        "top_texts": [
+          "ebenso Reformen der EU27� solche, die neoliberale Strukturanpassungen erzwingen�\n▪ Wir wollen, dass das Europäische Parlament endlich das Für uns ist klar: Wir stehen bedingungslos an der Seite der\nvo",
+          "Schlupflöcher für die Reichen schließen: Erbschaft- und Schenkungssteuer � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �11\nKonzerne gerecht an den Kosten beteiligen, Spekulant*inne",
+          "gerechte und offene Gesellschaft, in der gleiche Teilhabe Grenzen sterben� Wir wollen sichere, legale Einreisemög-\nselbstverständlich ist� lichkeiten in die EU� Das entzieht Schleppern die\nGeschäftsgr"
+        ],
+        "mean_latency_ms": 381.11
+      },
+      "jaccard_overlap": 0.0
+    },
+    {
+      "topic": "Migrationspolitik",
+      "party": "spd_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          3
+        ],
+        "top_scores": [
+          0.33164340257644653,
+          0.32935136556625366,
+          0.2841796875
+        ],
+        "top_texts": [
+          "Wir werden durch mehr Zentralisierung, Digitalisierung und Entbürokratisierung die\nAnkunftsstrukturen optimieren, um Verfahren zu beschleunigen und klare Perspektiven zu\nschaffen. Dazu stärken wir die",
+          "Mehr für Dich. Besser für Deutschland.\nRegierungsprogramm der SPD für die Bundestagswahl 2025\nDen Mindestlohn haben wir auf zunächst 12 Euro erhöht – das bedeutet mehr Einkommen und\nmehr Sicherheit fü",
+          "insbesondere bei Straftätern. Die Externalisierung von Asylverfahren lehnen wir ab. Schutzsuchende\nmüssen Zugang zu fairen und rechtsstaatlichen Verfahren in der EU erhalten.\nWir wollen Fluchtursachen"
+        ],
+        "mean_latency_ms": 292.3
+      },
+      "cross_encoder": {
+        "top_indices": [
+          6,
+          1,
+          2
+        ],
+        "top_scores": [
+          -4.587223052978516,
+          -5.236184597015381,
+          -5.35263729095459
+        ],
+        "top_texts": [
+          "Mehr für Dich. Besser für Deutschland.\nRegierungsprogramm der SPD für die Bundestagswahl 2025\nUnsere internationale Verantwortung in der Zeitenwende\nDie SPD steht für einen verantwortungsbewussten und",
+          "Mehr für Dich. Besser für Deutschland.\nRegierungsprogramm der SPD für die Bundestagswahl 2025\nDen Mindestlohn haben wir auf zunächst 12 Euro erhöht – das bedeutet mehr Einkommen und\nmehr Sicherheit fü",
+          "Reform der Schuldenregel, um auch den Ländern mehr finanziellen Spielraum zu verschaffen. Darüber\nhinaus wollen wir die höchsten Vermögen in unserem Land bei der Finanzierung der Gemeinschaft\nstärker "
+        ],
+        "mean_latency_ms": 595.2
+      },
+      "jaccard_overlap": 0.2
+    }
+  ]
+}

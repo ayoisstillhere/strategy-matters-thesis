@@ -1,0 +1,1028 @@
+{
+  "metadata": {
+    "timestamp": "2026-06-17T11:04:36.420095",
+    "bi_encoder": "paraphrase-multilingual-MiniLM-L12-v2",
+    "cross_encoder": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "initial_top_k": 15,
+    "rerank_top_n": 3,
+    "num_reruns": 3
+  },
+  "summary": {
+    "mean_cosine_latency_ms": 302.52,
+    "mean_crossencoder_latency_ms": 399.12,
+    "speedup_factor": 1.32,
+    "mean_jaccard_overlap": 0.112,
+    "exact_agreement_count": 0,
+    "total_comparisons": 24
+  },
+  "results": [
+    {
+      "topic": "Mindestlohn",
+      "party": "afd_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          2
+        ],
+        "top_scores": [
+          0.6545090079307556,
+          0.6483414769172668,
+          0.6269274353981018
+        ],
+        "top_texts": [
+          "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro erhöht werden. — Position: neutral. Die Entscheidung über den Mindestlohn obliegt ausschließlich de",
+          "18 SOZIALE MARKTWIRTSCHAFT UND GESUNDHEIT\nDie desolate Situation im deutschen Rentensystem\nDas deutsche Rentenniveau ist mit nur 53 % des letzten Nettogehalts\nnach Eurostat eines der niedrigsten in We",
+          "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeitszeit für alle Beschäftigten festgelegt werden. — Position: disagree. Deutschland gehört zu den Lände"
+        ],
+        "mean_latency_ms": 255.63
+      },
+      "cross_encoder": {
+        "top_indices": [
+          7,
+          9,
+          2
+        ],
+        "top_scores": [
+          -3.5887908935546875,
+          -4.083893299102783,
+          -4.203094959259033
+        ],
+        "top_texts": [
+          "belasten, werden einseitig bevorzugt. Wir fordern eine ersatzlose\nAbschaffung der CO₂-Abgaben.\nArbeit muss sich lohnen – Niedriglohnsektor und\nMittelstand entlasten\nDie Inflation ist für viele Mensche",
+          "[Wahl-O-Mat] Arbeitserlaubnis für Asylsuchende: Asylsuchende sollen in Deutschland sofort nach ihrer Antragstellung eine Arbeitserlaubnis erhalten. — Position: disagree. Eine Arbeitserlaubnis im laufe",
+          "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeitszeit für alle Beschäftigten festgelegt werden. — Position: disagree. Deutschland gehört zu den Lände"
+        ],
+        "mean_latency_ms": 336.26
+      },
+      "jaccard_overlap": 0.2
+    },
+    {
+      "topic": "Mindestlohn",
+      "party": "cdu_csu_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          2
+        ],
+        "top_scores": [
+          0.6942827701568604,
+          0.6167382001876831,
+          0.5899372696876526
+        ],
+        "top_texts": [
+          "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro erhöht werden. — Position: neutral. CDU und CSU haben 2014 den gesetzlichen Mindestlohn eingeführt.",
+          "helfen wir den Berechtigten und vermeiden Mehrfachleistungen.\nTarifpartnerschaft, Mitbestimmung und Lohnuntergrenze stärken\nDie Sozialpartnerschaft zwischen Arbeitgebern und Gewerkschaften hat Deutsch",
+          "[Wahl-O-Mat] Anhebung des Spitzensteuersatzes: Bei der Besteuerung von Einkommen soll der Spitzensteuersatz angehoben werden. — Position: disagree. Bürger und Unternehmen zahlen in Deutschland zu hohe"
+        ],
+        "mean_latency_ms": 251.28
+      },
+      "cross_encoder": {
+        "top_indices": [
+          6,
+          3,
+          7
+        ],
+        "top_scores": [
+          -4.06596040725708,
+          -4.107813835144043,
+          -4.230660438537598
+        ],
+        "top_texts": [
+          "lung dafür ein, dass die deutsche Wirtschaft deutlich stärker von staatlich finanzierten\nEntwicklungsprojekten profitiert.\n• ZZusammen ist man stärker. Wir schließen neue Energie- und Rohstoffpartners",
+          "[Wahl-O-Mat] Arbeitserlaubnis für Asylsuchende: Asylsuchende sollen in Deutschland sofort nach ihrer Antragstellung eine Arbeitserlaubnis erhalten. — Position: disagree. Asylsuchende dürfen in Deutsch",
+          "die Steuererhöhungen von morgen.\n• Wir schützen deutsche Sparer. Allen Formen einer Haftung Deutschlands für Schulden\nanderer EU-Staaten erteilen wir eine klare Absage.\n• Wir wollen Planungs- und Gene"
+        ],
+        "mean_latency_ms": 514.88
+      },
+      "jaccard_overlap": 0.0
+    },
+    {
+      "topic": "Mindestlohn",
+      "party": "fdp_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          4
+        ],
+        "top_scores": [
+          0.6684358716011047,
+          0.6060984134674072,
+          0.5633518099784851
+        ],
+        "top_texts": [
+          "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro erhöht werden. — Position: disagree. Löhne und Gehälter werden in der sozialen Marktwirtschaft zwis",
+          "erst möglich machen.\nArbeit muss sich stärker lohnen\nMillionen Menschen in Deutschland gehen jeden Tag ihrer Arbeit nach und tragen ihren Teil zum\nErfolg unseres Landes bei. Zur Wirklichkeit gehört ab",
+          "mehr Investitionen und Innovationen in Deutschland möglich macht.\nFür eine faire Besteuerung\nWer von seiner eigenen Hände Arbeit lebt, wird in Deutschland hoch besteuert. Der Anreiz,\nzusätzliche Arbei"
+        ],
+        "mean_latency_ms": 282.7
+      },
+      "cross_encoder": {
+        "top_indices": [
+          4,
+          5,
+          2
+        ],
+        "top_scores": [
+          -4.521431922912598,
+          -4.526419162750244,
+          -4.6341705322265625
+        ],
+        "top_texts": [
+          "mehr Investitionen und Innovationen in Deutschland möglich macht.\nFür eine faire Besteuerung\nWer von seiner eigenen Hände Arbeit lebt, wird in Deutschland hoch besteuert. Der Anreiz,\nzusätzliche Arbei",
+          "[Wahl-O-Mat] Anwerbung von Fachkräften: Deutschland soll weiterhin die Anwerbung von Fachkräften aus dem Ausland fördern. — Position: agree. Deutschland hat einen Arbeitskräftemangel. Daher ist es wic",
+          "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeitszeit für alle Beschäftigten festgelegt werden. — Position: disagree. In Deutschland existieren kolle"
+        ],
+        "mean_latency_ms": 372.54
+      },
+      "jaccard_overlap": 0.2
+    },
+    {
+      "topic": "Mindestlohn",
+      "party": "gruene_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          2,
+          1
+        ],
+        "top_scores": [
+          0.7185508012771606,
+          0.5418521761894226,
+          0.5331152081489563
+        ],
+        "top_texts": [
+          "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro erhöht werden. — Position: agree. Faire Löhne verlangen nach einem fairen Mindestlohn, damit Leistu",
+          "[Wahl-O-Mat] Anwerbung von Fachkräften: Deutschland soll weiterhin die Anwerbung von Fachkräften aus dem Ausland fördern. — Position: agree. Der Mangel an Arbeits- und Fachkräften ist eine der größten",
+          "sozialen Umstände abhängen darf. Es Faire Löhne verlangen nach einem fairen\ngilt für Menschen, die unverschuldet ihre Mindestlohn, damit Leistung auch an-\nArbeit verlieren. Und es gilt für eine sozial"
+        ],
+        "mean_latency_ms": 274.54
+      },
+      "cross_encoder": {
+        "top_indices": [
+          10,
+          2,
+          7
+        ],
+        "top_scores": [
+          -3.9433979988098145,
+          -4.170665740966797,
+          -4.318735122680664
+        ],
+        "top_texts": [
+          "eine behindertengerechte Wohnung finden? umgelegt werden. Die Vermietung möb-\nWir wollen, dass Menschen in Deutschland lierter Wohnungen muss s6treng regulier9t\nbezahlbaren Wohnraum finden und sich ke",
+          "[Wahl-O-Mat] Anwerbung von Fachkräften: Deutschland soll weiterhin die Anwerbung von Fachkräften aus dem Ausland fördern. — Position: agree. Der Mangel an Arbeits- und Fachkräften ist eine der größten",
+          "besitzer*innen geschützt werden. Deutschlandfonds und senken die Strom-\nsteuer auf das europäische Minimum. Wir\nA. Eine starke werden verstärkt Maßnahmen zur Stei-\ngerung der Energieeffizienz unterstü"
+        ],
+        "mean_latency_ms": 388.81
+      },
+      "jaccard_overlap": 0.2
+    },
+    {
+      "topic": "Mindestlohn",
+      "party": "linke_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          1,
+          0,
+          2
+        ],
+        "top_scores": [
+          0.7311301827430725,
+          0.7266906499862671,
+          0.7058442831039429
+        ],
+        "top_texts": [
+          "über den Monat kommt – in Ostdeutschland fast jede*r werden wir deutlich enger begrenzen, spätestens der\nVierte� Laut EU soll der gesetzliche Mindestlohn dritte Arbeitsvertrag beim selben Arbeitgeber ",
+          "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro erhöht werden. — Position: agree. Der Lohn muss für ein Leben in Würde reichen. Laut EU soll der ge",
+          "aufgebaut� Der Ausverkauf durch die Treuhand wirkt aber muss auch zwischen Ost und West gelten! Der gesetz-\nimmer noch nach: Von wenigen Leuchtturmregionen liche Mindestlohn muss hoch auf mindestens 1"
+        ],
+        "mean_latency_ms": 273.71
+      },
+      "cross_encoder": {
+        "top_indices": [
+          7,
+          3,
+          10
+        ],
+        "top_scores": [
+          -3.8842201232910156,
+          -4.481263160705566,
+          -4.692324161529541
+        ],
+        "top_texts": [
+          "Verwaltungssitz in Deutschland erstreckt werden, auch Gute Absicherung bei Erwerbslosigkeit\nauf diejenigen in ausländischer oder europäischer\nRechtsform� Wird gegen diese Verpflichtung verstoßen, Im O",
+          "[Wahl-O-Mat] Anhebung des Spitzensteuersatzes: Bei der Besteuerung von Einkommen soll der Spitzensteuersatz angehoben werden. — Position: agree. Der Spitzensteuersatz in Deutschland ist im europäische",
+          "Deutschland Strom- und Gassperren verhängt, sogar im muss es wieder erschwinglich werden, die Grund-\nWinter� Das ist menschenunwürdig� Strom- und bedürfnisse zu decken� Die Löhne müssen steigen, damit"
+        ],
+        "mean_latency_ms": 382.64
+      },
+      "jaccard_overlap": 0.0
+    },
+    {
+      "topic": "Mindestlohn",
+      "party": "spd_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          2
+        ],
+        "top_scores": [
+          0.8089621067047119,
+          0.7956470251083374,
+          0.6547918915748596
+        ],
+        "top_texts": [
+          "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro erhöht werden. — Position: agree. Die SPD hat den gesetzlichen Mindestlohn eingeführt. Die Höhe des",
+          "dafür sorgen, dass dieses europäische Recht von der Mindestlohnkommission künftig berücksichtigt\nwird. Dementsprechend muss der Mindestlohn spätestens ab 2026 bei 15 Euro liegen.\nGerade in Ostdeutschl",
+          "Mehr für Dich. Besser für Deutschland.\nRegierungsprogramm der SPD für die Bundestagswahl 2025\nDen Mindestlohn haben wir auf zunächst 12 Euro erhöht – das bedeutet mehr Einkommen und\nmehr Sicherheit fü"
+        ],
+        "mean_latency_ms": 297.91
+      },
+      "cross_encoder": {
+        "top_indices": [
+          13,
+          11,
+          5
+        ],
+        "top_scores": [
+          -4.122156143188477,
+          -4.1424150466918945,
+          -4.32281494140625
+        ],
+        "top_texts": [
+          "Mehrwertsteuer auf Lebensmittel sowie wirksamen Regeln für bezahlbares Wohnen.\n• Wir investieren weiter in Schienen, Brücken und digitale Netze.\n• Wir unterstützen unsere Unternehmen und ihre Beschäft",
+          "[Wahl-O-Mat] Arbeitserlaubnis für Asylsuchende: Asylsuchende sollen in Deutschland sofort nach ihrer Antragstellung eine Arbeitserlaubnis erhalten. — Position: agree. Die SPD hat dafür gesorgt, dass A",
+          "[Wahl-O-Mat] Anwerbung von Fachkräften: Deutschland soll weiterhin die Anwerbung von Fachkräften aus dem Ausland fördern. — Position: agree. Deutschland profitiert seit langem davon, dass wir ein Einw"
+        ],
+        "mean_latency_ms": 413.27
+      },
+      "jaccard_overlap": 0.0
+    },
+    {
+      "topic": "Rentenpolitik",
+      "party": "afd_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          2
+        ],
+        "top_scores": [
+          0.7742350101470947,
+          0.7168350219726562,
+          0.7163152694702148
+        ],
+        "top_texts": [
+          "wieder einen finanziell gesicherten Lebensabend erarbeiten können.\nWir halten es dabei für zwingend erforderlich, auch unseren derzei-\ntigen Senioren, die in einem langen Arbeitsleben unser Land und\nu",
+          "18 SOZIALE MARKTWIRTSCHAFT UND GESUNDHEIT\nDie desolate Situation im deutschen Rentensystem\nDas deutsche Rentenniveau ist mit nur 53 % des letzten Nettogehalts\nnach Eurostat eines der niedrigsten in We",
+          "und Urgroßeltern soll gefördert werden.\nDemografische Wende für Deutschlands Zukunft\nDie Geburtenrate liegt in Deutschland seit Mitte der 1970er Jahre\nweit unterhalb des Niveaus zur Bestandserhaltung."
+        ],
+        "mean_latency_ms": 275.69
+      },
+      "cross_encoder": {
+        "top_indices": [
+          5,
+          2,
+          14
+        ],
+        "top_scores": [
+          -4.811883926391602,
+          -6.518828868865967,
+          -6.598423004150391
+        ],
+        "top_texts": [
+          "6.672 Euro erhöhen und an die Geringfügigkeitsgrenze koppeln,\num den Menschen in Deutschland, vor allem dem Mittelstand, die\nMöglichkeit zu geben, ihr Vermögen sicher und steueroptimiert\naufzubauen. M",
+          "und Urgroßeltern soll gefördert werden.\nDemografische Wende für Deutschlands Zukunft\nDie Geburtenrate liegt in Deutschland seit Mitte der 1970er Jahre\nweit unterhalb des Niveaus zur Bestandserhaltung.",
+          "Bevölkerungswachstum, Überforderung der Staatsfinanzen, signifi-\nkant ansteigende Kriminalität, Gefährdung der sozialen Sicherungs-\nsysteme und des Wohnungsmarktes.\nWährend einige unserer europäischen"
+        ],
+        "mean_latency_ms": 358.98
+      },
+      "jaccard_overlap": 0.2
+    },
+    {
+      "topic": "Rentenpolitik",
+      "party": "cdu_csu_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          1,
+          2,
+          7
+        ],
+        "top_scores": [
+          0.6532691717147827,
+          0.6334128379821777,
+          0.6181206107139587
+        ],
+        "top_texts": [
+          "lich oberhalb der Grundsicherung im Alter liegen. Mit der Union wird es keine Renten-\nkürzungen geben. Unser Ziel: ein durch wirtschaftliches Wachstum garantiertes stabiles\nRentenniveau und weiterhin ",
+          "dungsfindung in der unabhängigen Mindestlohnkommission. Wir wollen keine Mindest-\nlohnentscheidung im Deutschen Bundestag. Das ist Ausdruck unseres Respekts gegen-\nüber Sozialpartnerschaft und Tarifau",
+          "zinisch-technische Fortschritt und steigende Kosten stellen unsere Gesellschaft vor große\nHerausforderungen. Sie erfordern strukturelle Anpassungen auch in der Gesundheits- und\nPflegeversorgung. Uns g"
+        ],
+        "mean_latency_ms": 278.73
+      },
+      "cross_encoder": {
+        "top_indices": [
+          11,
+          7,
+          10
+        ],
+        "top_scores": [
+          -5.548063278198242,
+          -6.958037376403809,
+          -7.239123344421387
+        ],
+        "top_texts": [
+          "lung dafür ein, dass die deutsche Wirtschaft deutlich stärker von staatlich finanzierten\nEntwicklungsprojekten profitiert.\n• ZZusammen ist man stärker. Wir schließen neue Energie- und Rohstoffpartners",
+          "zinisch-technische Fortschritt und steigende Kosten stellen unsere Gesellschaft vor große\nHerausforderungen. Sie erfordern strukturelle Anpassungen auch in der Gesundheits- und\nPflegeversorgung. Uns g",
+          "[Wahl-O-Mat] Anhebung des Spitzensteuersatzes: Bei der Besteuerung von Einkommen soll der Spitzensteuersatz angehoben werden. — Position: disagree. Bürger und Unternehmen zahlen in Deutschland zu hohe"
+        ],
+        "mean_latency_ms": 403.76
+      },
+      "jaccard_overlap": 0.2
+    },
+    {
+      "topic": "Rentenpolitik",
+      "party": "fdp_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          4
+        ],
+        "top_scores": [
+          0.6785598993301392,
+          0.6547482013702393,
+          0.6394873857498169
+        ],
+        "top_texts": [
+          "für die Bundesländer. Nachhaltige und priorisierende Haushalte schaffen Generationengerechtigkeit,\nweil Lasten nicht auf künftige Generationen übertragen werden. Nur so sichern wir die finanziellen\nHa",
+          "Für flexible, finanzierbare und steigende Renten\nWir Freie Demokraten stehen für einen wirklich flexiblen Renteneintritt. Die Menschen sollen nach\nschwedischem Vorbild künftig selbst entscheiden, wann",
+          "erst möglich machen.\nArbeit muss sich stärker lohnen\nMillionen Menschen in Deutschland gehen jeden Tag ihrer Arbeit nach und tragen ihren Teil zum\nErfolg unseres Landes bei. Zur Wirklichkeit gehört ab"
+        ],
+        "mean_latency_ms": 279.56
+      },
+      "cross_encoder": {
+        "top_indices": [
+          0,
+          3,
+          10
+        ],
+        "top_scores": [
+          -6.088964462280273,
+          -6.246559143066406,
+          -6.295066833496094
+        ],
+        "top_texts": [
+          "für die Bundesländer. Nachhaltige und priorisierende Haushalte schaffen Generationengerechtigkeit,\nweil Lasten nicht auf künftige Generationen übertragen werden. Nur so sichern wir die finanziellen\nHa",
+          "mehr Investitionen und Innovationen in Deutschland möglich macht.\nFür eine faire Besteuerung\nWer von seiner eigenen Hände Arbeit lebt, wird in Deutschland hoch besteuert. Der Anreiz,\nzusätzliche Arbei",
+          "sind tiefgreifende und strukturelle Reformen notwendig. Wir brauchen Wachstum und bessere\nAngebotsbedingungen, damit das Land nicht in Pessimismus und Verteilungskämpfe abrutscht.\nDeutschland kann wie"
+        ],
+        "mean_latency_ms": 401.05
+      },
+      "jaccard_overlap": 0.2
+    },
+    {
+      "topic": "Rentenpolitik",
+      "party": "gruene_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          1,
+          0,
+          10
+        ],
+        "top_scores": [
+          0.6761821508407593,
+          0.6731200814247131,
+          0.6382005214691162
+        ],
+        "top_texts": [
+          "Steuererklärung über die Deutschland-App überfällige Reform nicht erfolgreich. Auch\nabzugeben. Zudem befreien wir Millio- wenn wir wissen, dass eine ganzheitliche\nnen Rentner*innen von der Steuererklä",
+          "Beitragsstabilität in der Sozialversicherung, grafische Wandel verstärkt die Arbeits-\num den Anstieg der Lohnnebenkosten zu kräftelücke. Daher müssen wir für ältere\nbegrenzen. Um Menschen in ganz Euro",
+          "wie dem DigitalPakt Alter sorgen wir dafür, für Zuwendung und Aufklärung haben. Sol-\ndass Ältere lange selbstbestimmt und aktiv che Symptome der Überforderung machen\nam gesellschaftlichen Leben teilne"
+        ],
+        "mean_latency_ms": 278.69
+      },
+      "cross_encoder": {
+        "top_indices": [
+          12,
+          3,
+          0
+        ],
+        "top_scores": [
+          -5.837697982788086,
+          -6.617445945739746,
+          -7.163004398345947
+        ],
+        "top_texts": [
+          "[Wahl-O-Mat] Anwerbung von Fachkräften: Deutschland soll weiterhin die Anwerbung von Fachkräften aus dem Ausland fördern. — Position: agree. Der Mangel an Arbeits- und Fachkräften ist eine der größten",
+          "möchten endlich etwas erreichen. Deswe-\nFür ein gerechtes Steuersystem gen fokussieren wir uns auf folgende Maß-\nnahmen: eine Reform der Erbschaftssteuer\nDeutschland ist ein wohlhabendes Land. hin zu ",
+          "Beitragsstabilität in der Sozialversicherung, grafische Wandel verstärkt die Arbeits-\num den Anstieg der Lohnnebenkosten zu kräftelücke. Daher müssen wir für ältere\nbegrenzen. Um Menschen in ganz Euro"
+        ],
+        "mean_latency_ms": 420.61
+      },
+      "jaccard_overlap": 0.2
+    },
+    {
+      "topic": "Rentenpolitik",
+      "party": "linke_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          7
+        ],
+        "top_scores": [
+          0.7046036720275879,
+          0.6854623556137085,
+          0.621171236038208
+        ],
+        "top_texts": [
+          "deutlich seltener vertreten, daran hat die Ampel-Regierung 2030 fortgeführt werden oder bis zu dem Zeitpunkt, an\nnichts geändert� Ostdeutsche leisten so viel wie alle dem die Durchschnittslöhne im ers",
+          "volkswirtschaftlich vernünftig� brauchen Krankenversicherung, Rente und Schutz bei\nArbeitslosigkeit� Auch im Fall von Soloselbstständigen\nmüssen Auftraggeber*innen Sozialversicherungsbei-\nSchluss mit ",
+          "Wir wollen 20 Milliarden Euro im Jahr in gemeinnützigen notwendig und spart den Mieter*innen Heizkosten�\nWohnraum investieren� Aktuell hätten mehr als 11 Millionen\nMieter*innenhaushalte in Deutschland"
+        ],
+        "mean_latency_ms": 299.14
+      },
+      "cross_encoder": {
+        "top_indices": [
+          9,
+          13,
+          12
+        ],
+        "top_scores": [
+          -5.931011199951172,
+          -6.192190170288086,
+          -6.488622665405273
+        ],
+        "top_texts": [
+          "Verwaltungssitz in Deutschland erstreckt werden, auch Gute Absicherung bei Erwerbslosigkeit\nauf diejenigen in ausländischer oder europäischer\nRechtsform� Wird gegen diese Verpflichtung verstoßen, Im O",
+          "derung nach wie vor auf besondere Weise in vielen Fort- und Weiterbildungen inklusiv ausgerichtet sind und\nLebensbereichen benachteiligt sind� 2023 wurde inklusive Bildung bis ins hohe Alter möglich i",
+          "[Wahl-O-Mat] Anhebung des Spitzensteuersatzes: Bei der Besteuerung von Einkommen soll der Spitzensteuersatz angehoben werden. — Position: agree. Der Spitzensteuersatz in Deutschland ist im europäische"
+        ],
+        "mean_latency_ms": 391.83
+      },
+      "jaccard_overlap": 0.0
+    },
+    {
+      "topic": "Rentenpolitik",
+      "party": "spd_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          4,
+          5,
+          1
+        ],
+        "top_scores": [
+          0.6256453990936279,
+          0.6196703910827637,
+          0.6008616089820862
+        ],
+        "top_texts": [
+          "und entbürokratisieren. Wir wollen eine systematische Verbesserung der Kommunalfinanzen\nerreichen. Über den Deutschlandfonds wollen wir kommunale Wohnungsbaugesellschaften,\nEnergieversorger und Verkeh",
+          "Kaufkraft sinkt und Wohnen immer teurer wird?\n• Sorgen wir jetzt für stabile Renten, für gute Gesundheit und Pflege, für intakte Schulen und\nKitas? Oder setzen wir ausgerechnet da den Rotstift an?\n• S",
+          "dafür sorgen, dass dieses europäische Recht von der Mindestlohnkommission künftig berücksichtigt\nwird. Dementsprechend muss der Mindestlohn spätestens ab 2026 bei 15 Euro liegen.\nGerade in Ostdeutschl"
+        ],
+        "mean_latency_ms": 309.94
+      },
+      "cross_encoder": {
+        "top_indices": [
+          14,
+          12,
+          6
+        ],
+        "top_scores": [
+          -6.469142436981201,
+          -6.503532409667969,
+          -6.670178413391113
+        ],
+        "top_texts": [
+          "einsetzen und die Kaufkraft der Menschen stärken.\nWas unser Programm stark macht und wo wir uns jetzt unterscheiden im Meer der Wahlkampf-\nFloskeln: Bei der SPD steckt hinter jedem einzelnen Programmp",
+          "Mehr für Dich. Besser für Deutschland.\nRegierungsprogramm der SPD für die Bundestagswahl 2025\nEinbeziehung von jungen Gebrauchten sowie Leasingmodellen helfen wir auch Menschen mit\ngeringeren Einkomme",
+          "Mehr für Dich. Besser für Deutschland.\nRegierungsprogramm der SPD für die Bundestagswahl 2025\nEin neuer Aufschwung für Deutschland\nViele Menschen machen sich derzeit Sorgen um die Wirtschaft in unsere"
+        ],
+        "mean_latency_ms": 390.15
+      },
+      "jaccard_overlap": 0.0
+    },
+    {
+      "topic": "Sozialpolitik",
+      "party": "afd_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          1,
+          0,
+          4
+        ],
+        "top_scores": [
+          0.6715348958969116,
+          0.6695782542228699,
+          0.6576858162879944
+        ],
+        "top_texts": [
+          "höhungen und zusätzlichen Schulden. Wir setzen uns für eine Abkehr\nvon übermäßiger Besteuerung und im Gegenzug für Ausgabendisziplin\nein, um die Privathaushalte und unsere Unternehmen zu stärken sowie",
+          "54 FINANZEN UND STEUERN\nDer Staat erhebt Steuern auch mit dem Ziel, durch gezielte öffent-\nliche Investitionen und staatliche Verwaltung die Sicherheit der\nMenschen zu gewährleisten und die Lebensverh",
+          "rungsseitigen steuerfinanzierten Öffentlichkeitsarbeit auf wichtige\nInformationen, die nicht bereits durch Medien oder auf sonstige\nWeise zu beziehen sind.\nSTEUERRECHT STARK VEREINFACHEN\nDas deutsche "
+        ],
+        "mean_latency_ms": 299.23
+      },
+      "cross_encoder": {
+        "top_indices": [
+          2,
+          13,
+          11
+        ],
+        "top_scores": [
+          -3.791146993637085,
+          -3.8498332500457764,
+          -4.209970474243164
+        ],
+        "top_texts": [
+          "6.672 Euro erhöhen und an die Geringfügigkeitsgrenze koppeln,\num den Menschen in Deutschland, vor allem dem Mittelstand, die\nMöglichkeit zu geben, ihr Vermögen sicher und steueroptimiert\naufzubauen. M",
+          "belasten, werden einseitig bevorzugt. Wir fordern eine ersatzlose\nAbschaffung der CO₂-Abgaben.\nArbeit muss sich lohnen – Niedriglohnsektor und\nMittelstand entlasten\nDie Inflation ist für viele Mensche",
+          "sich hieraus Chancen für die deutsche Wirtschaft ergeben, wollen\nwir diese nutzen.\nJegliche Entwicklungshilfe an China ist mit sofortiger Wirkung ein-\nzustellen.\nHandelspolitik – Deutschland muss wirt"
+        ],
+        "mean_latency_ms": 381.03
+      },
+      "jaccard_overlap": 0.0
+    },
+    {
+      "topic": "Sozialpolitik",
+      "party": "cdu_csu_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          2
+        ],
+        "top_scores": [
+          0.7182254791259766,
+          0.6972436904907227,
+          0.6248276829719543
+        ],
+        "top_texts": [
+          "[Wahl-O-Mat] Anhebung des Spitzensteuersatzes: Bei der Besteuerung von Einkommen soll der Spitzensteuersatz angehoben werden. — Position: disagree. Bürger und Unternehmen zahlen in Deutschland zu hohe",
+          "Resilienz der Wirtschaft stärken.\nFreien Handel und Exporte unterstützen.\nWir handeln.\nSteuerlast verringern\nDeutschland ist für Unternehmen ein Hochsteuerland. Ein erfolgreicher und gefragter\nWirtsch",
+          "lohnt und zugleich denen die Hand gereicht wird, die auf Hilfe angewiesen sind.\nWir stehen zur Sozialen Marktwirtschaft, wir stehen zu Wettbewerb, Wachstum und Wohl-\nstand. Für uns ist klar: „Wohlstan"
+        ],
+        "mean_latency_ms": 373.78
+      },
+      "cross_encoder": {
+        "top_indices": [
+          3,
+          10,
+          14
+        ],
+        "top_scores": [
+          -3.655905246734619,
+          -4.551852226257324,
+          -4.7375593185424805
+        ],
+        "top_texts": [
+          "lung dafür ein, dass die deutsche Wirtschaft deutlich stärker von staatlich finanzierten\nEntwicklungsprojekten profitiert.\n• ZZusammen ist man stärker. Wir schließen neue Energie- und Rohstoffpartners",
+          "zinisch-technische Fortschritt und steigende Kosten stellen unsere Gesellschaft vor große\nHerausforderungen. Sie erfordern strukturelle Anpassungen auch in der Gesundheits- und\nPflegeversorgung. Uns g",
+          "Wirtschaft schrumpft, unsere Industrie ist international unter Druck, die Infrastruktur zum\nTeil marode. Die Arbeitslosigkeit steigt, die sozialen Sicherungssysteme sind in Schieflage.\nPopulisten und "
+        ],
+        "mean_latency_ms": 396.26
+      },
+      "jaccard_overlap": 0.0
+    },
+    {
+      "topic": "Sozialpolitik",
+      "party": "fdp_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          3
+        ],
+        "top_scores": [
+          0.6876999735832214,
+          0.6547865867614746,
+          0.6489378213882446
+        ],
+        "top_texts": [
+          "mehr Investitionen und Innovationen in Deutschland möglich macht.\nFür eine faire Besteuerung\nWer von seiner eigenen Hände Arbeit lebt, wird in Deutschland hoch besteuert. Der Anreiz,\nzusätzliche Arbei",
+          "erst möglich machen.\nArbeit muss sich stärker lohnen\nMillionen Menschen in Deutschland gehen jeden Tag ihrer Arbeit nach und tragen ihren Teil zum\nErfolg unseres Landes bei. Zur Wirklichkeit gehört ab",
+          "Sozial-Taxonomie lehnen wir strikt ab. Auf EU-Ebene braucht es ein System verbindlicher Erfassung\nvon Bürokratiekosten, um ehrgeizige und messbare Ziele für den Bürokratieabbau vorzugeben.\nb. Ein Steu"
+        ],
+        "mean_latency_ms": 315.53
+      },
+      "cross_encoder": {
+        "top_indices": [
+          6,
+          2,
+          10
+        ],
+        "top_scores": [
+          -4.074454307556152,
+          -4.340851783752441,
+          -4.461982250213623
+        ],
+        "top_texts": [
+          "1990 ist es noch nicht flächendeckend gelungen, eine mit den westdeutschen Bundesländern\nvergleichbare Wirtschaftskraft zu erzeugen. Auch die Vermögenssituation unterscheidet sich\nerheblich. Deshalb s",
+          "sind tiefgreifende und strukturelle Reformen notwendig. Wir brauchen Wachstum und bessere\nAngebotsbedingungen, damit das Land nicht in Pessimismus und Verteilungskämpfe abrutscht.\nDeutschland kann wie",
+          "für die Bundesländer. Nachhaltige und priorisierende Haushalte schaffen Generationengerechtigkeit,\nweil Lasten nicht auf künftige Generationen übertragen werden. Nur so sichern wir die finanziellen\nHa"
+        ],
+        "mean_latency_ms": 394.4
+      },
+      "jaccard_overlap": 0.0
+    },
+    {
+      "topic": "Sozialpolitik",
+      "party": "gruene_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          2,
+          1
+        ],
+        "top_scores": [
+          0.7217900156974792,
+          0.6022343635559082,
+          0.5972250699996948
+        ],
+        "top_texts": [
+          "möchten endlich etwas erreichen. Deswe-\nFür ein gerechtes Steuersystem gen fokussieren wir uns auf folgende Maß-\nnahmen: eine Reform der Erbschaftssteuer\nDeutschland ist ein wohlhabendes Land. hin zu ",
+          "Stecker ermöglicht. Den gleichen Weg müs- Deutschland ist von früheren Regierungen\nsen wir in allen Bereichen gehen. Mit dem jahrelang auf Verschleiß gefahren worden.\nPraxischeck haben wir dafür ein p",
+          "Steuererklärung über die Deutschland-App überfällige Reform nicht erfolgreich. Auch\nabzugeben. Zudem befreien wir Millio- wenn wir wissen, dass eine ganzheitliche\nnen Rentner*innen von der Steuererklä"
+        ],
+        "mean_latency_ms": 313.4
+      },
+      "cross_encoder": {
+        "top_indices": [
+          14,
+          0,
+          3
+        ],
+        "top_scores": [
+          -3.959320068359375,
+          -4.331092834472656,
+          -4.521906852722168
+        ],
+        "top_texts": [
+          "werden. Für die anstehende Neugestaltung licher Attraktivität gewinnen.\nab 2027 gilt für uns: öffentliche Gelder für\nöffentliche Leistungen. Für die Tierhalter in Deutschland braucht\nes eine Antwort a",
+          "möchten endlich etwas erreichen. Deswe-\nFür ein gerechtes Steuersystem gen fokussieren wir uns auf folgende Maß-\nnahmen: eine Reform der Erbschaftssteuer\nDeutschland ist ein wohlhabendes Land. hin zu ",
+          "Instruments des Reallabors unkompliziert aufgegangen, dass das reichste Prozent der\nausprobieren und daraus lernen. Deutschen mittlerweile mehr Vermögen\nbesitzt als 90 Prozent der Gesellschaft zu-\nWir"
+        ],
+        "mean_latency_ms": 409.99
+      },
+      "jaccard_overlap": 0.2
+    },
+    {
+      "topic": "Sozialpolitik",
+      "party": "linke_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          2
+        ],
+        "top_scores": [
+          0.7113305330276489,
+          0.7107861638069153,
+          0.6838862895965576
+        ],
+        "top_texts": [
+          "Wirt schaft� Das macht die Reichen reicher – und die Mieter*innen umgelegt werden darf� Wenn die\nmächtiger� Die Besteuerung von Einkommen greift in Vermögensteuer eingeführt ist, wird die Grundsteuer\n",
+          "[Wahl-O-Mat] Anhebung des Spitzensteuersatzes: Bei der Besteuerung von Einkommen soll der Spitzensteuersatz angehoben werden. — Position: agree. Der Spitzensteuersatz in Deutschland ist im europäische",
+          "25 Prozent besteuert (Kapitalertragsteuer). Ein Schlag schuld kann über 20 Jahre gestreckt werden und auch\nins Gesicht für alle Menschen, die diese Gesellschaft in Form von öffentlichen Unternehmens a"
+        ],
+        "mean_latency_ms": 321.86
+      },
+      "cross_encoder": {
+        "top_indices": [
+          5,
+          10,
+          14
+        ],
+        "top_scores": [
+          -4.252048492431641,
+          -4.482492446899414,
+          -4.574845314025879
+        ],
+        "top_texts": [
+          "deutlich seltener vertreten, daran hat die Ampel-Regierung 2030 fortgeführt werden oder bis zu dem Zeitpunkt, an\nnichts geändert� Ostdeutsche leisten so viel wie alle dem die Durchschnittslöhne im ers",
+          "volkswirtschaftlich vernünftig� brauchen Krankenversicherung, Rente und Schutz bei\nArbeitslosigkeit� Auch im Fall von Soloselbstständigen\nmüssen Auftraggeber*innen Sozialversicherungsbei-\nSchluss mit ",
+          "und Profitverschiebung vorzugehen, setzen wir uns finanziell entlastet�\nauch für die Erhöhung des globalen Mindeststeuer-\nsatzes auf 25 Prozent ein� Die Bemessungsgrundlage Geschätzte jährliche Mehrei"
+        ],
+        "mean_latency_ms": 375.19
+      },
+      "jaccard_overlap": 0.0
+    },
+    {
+      "topic": "Sozialpolitik",
+      "party": "spd_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          2
+        ],
+        "top_scores": [
+          0.6973264813423157,
+          0.6484289169311523,
+          0.6325654983520508
+        ],
+        "top_texts": [
+          "Kapitalgesellschaften und Bezieher von Kapitalerträgen dazu. Wir stellen sicher, dass der Kreis der\nbetroffenen Steuerpflichtigen nicht größer wird und nicht mehr Bürgerinnen und Bürger als heute den\n",
+          "die Bildungspolitik liegt. Es ist daher unser Ziel, dass die Länder die aufgrund unserer Reformen\nerzielten Mehreinnahmen für die dringend erforderliche Stärkung und Modernisierung des\nBildungssystems",
+          "Mehrwertsteuer auf Lebensmittel sowie wirksamen Regeln für bezahlbares Wohnen.\n• Wir investieren weiter in Schienen, Brücken und digitale Netze.\n• Wir unterstützen unsere Unternehmen und ihre Beschäft"
+        ],
+        "mean_latency_ms": 325.73
+      },
+      "cross_encoder": {
+        "top_indices": [
+          1,
+          10,
+          5
+        ],
+        "top_scores": [
+          -4.458327770233154,
+          -4.7298784255981445,
+          -4.744489669799805
+        ],
+        "top_texts": [
+          "die Bildungspolitik liegt. Es ist daher unser Ziel, dass die Länder die aufgrund unserer Reformen\nerzielten Mehreinnahmen für die dringend erforderliche Stärkung und Modernisierung des\nBildungssystems",
+          "mit besonderen Herausforderungen gezielt unterstützen. Durch Investitionen in Infrastruktur\nund die Stärkung lokaler Stärken fördern wir wirtschaftliche Dynamik und soziale Stabilität. Die\nländlichen ",
+          "und entbürokratisieren. Wir wollen eine systematische Verbesserung der Kommunalfinanzen\nerreichen. Über den Deutschlandfonds wollen wir kommunale Wohnungsbaugesellschaften,\nEnergieversorger und Verkeh"
+        ],
+        "mean_latency_ms": 410.95
+      },
+      "jaccard_overlap": 0.2
+    },
+    {
+      "topic": "Migrationspolitik",
+      "party": "afd_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          1,
+          0,
+          2
+        ],
+        "top_scores": [
+          0.7513824105262756,
+          0.7371491193771362,
+          0.7264592051506042
+        ],
+        "top_texts": [
+          "Zuwanderung wieder national regeln 102\nAsylparadies Deutschland schließen 103\nÖkonomische Anreize senken 105\nDeutschland braucht eine umfassende Rückführungsoffensive 106\nIntegration 108\nDie deutsche ",
+          "beachten. Zudem war die Massenmigration in die EU seit 2015 bei\nRatifizierung des EU-Vertrages 1993 nicht vorhersehbar.\nSomit ist die Geschäftsgrundlage der europäischen Asylregelung ent-\nfallen, wesh",
+          "Zuwanderung aus fremden Zivilisationen löst kein wirtschaftliches\nProblem Deutschlands, sondern schafft zusätzliche Probleme: Ein\nerheblicher Teil der Zuwanderer, die in den letzten Jahren nach\nDeutsc"
+        ],
+        "mean_latency_ms": 310.88
+      },
+      "cross_encoder": {
+        "top_indices": [
+          1,
+          6,
+          3
+        ],
+        "top_scores": [
+          -5.279045104980469,
+          -5.655121803283691,
+          -6.094725131988525
+        ],
+        "top_texts": [
+          "Zuwanderung wieder national regeln 102\nAsylparadies Deutschland schließen 103\nÖkonomische Anreize senken 105\nDeutschland braucht eine umfassende Rückführungsoffensive 106\nIntegration 108\nDie deutsche ",
+          "100 ASYL- UND MIGRATIONSPOLITIK\nIn den vergangenen Jahrzehnten wurden die politischen Rahmen-\nbedingungen in Deutschland so ausgestaltet, dass das Land zum\nHauptanziehungspunkt insbesondere für Armuts",
+          "Bevölkerungswachstum, Überforderung der Staatsfinanzen, signifi-\nkant ansteigende Kriminalität, Gefährdung der sozialen Sicherungs-\nsysteme und des Wohnungsmarktes.\nWährend einige unserer europäischen"
+        ],
+        "mean_latency_ms": 386.77
+      },
+      "jaccard_overlap": 0.2
+    },
+    {
+      "topic": "Migrationspolitik",
+      "party": "cdu_csu_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          5,
+          1
+        ],
+        "top_scores": [
+          0.8092491626739502,
+          0.7726944088935852,
+          0.7434357404708862
+        ],
+        "top_texts": [
+          "rückgewinnen. Wir wollen die illegale Migration stoppen und die humanitären Aufnahmen\nauf ein Maß beschränken, das die Möglichkeiten Deutschlands nicht länger überfordert.\nUnser nationales Asylsystem ",
+          "unsere Kinder und Jugendlichen dem Drogenkonsum und der Sucht aus.\nIllegale Migration stoppen\nUnser Land braucht eine grundsätzliche Wende in der Migrationspolitik. Der Zuzug ist zu\nviel und nicht meh",
+          "Zu unserer humanitären Verantwortung stehen\nDauerhaft können wir unser Ziel nur durch einen grundlegenden Wandel des europäischen\nAsylrechts erreichen. Wir stoßen deshalb einen Reformprozess in der EU"
+        ],
+        "mean_latency_ms": 330.99
+      },
+      "cross_encoder": {
+        "top_indices": [
+          3,
+          0,
+          13
+        ],
+        "top_scores": [
+          -5.270228385925293,
+          -6.113482475280762,
+          -6.117196559906006
+        ],
+        "top_texts": [
+          "[Wahl-O-Mat] Arbeitserlaubnis für Asylsuchende: Asylsuchende sollen in Deutschland sofort nach ihrer Antragstellung eine Arbeitserlaubnis erhalten. — Position: disagree. Asylsuchende dürfen in Deutsch",
+          "rückgewinnen. Wir wollen die illegale Migration stoppen und die humanitären Aufnahmen\nauf ein Maß beschränken, das die Möglichkeiten Deutschlands nicht länger überfordert.\nUnser nationales Asylsystem ",
+          "ler und Spätaussiedler sowie deutsche Minderheiten wieder im Bundesinnenministe-\nrium zusammen und stärken das Amt des Beauftragten für Aussiedlerfragen und natio-\nnale Minderheiten. Wir fördern weite"
+        ],
+        "mean_latency_ms": 394.69
+      },
+      "jaccard_overlap": 0.2
+    },
+    {
+      "topic": "Migrationspolitik",
+      "party": "fdp_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          2
+        ],
+        "top_scores": [
+          0.8156592845916748,
+          0.7469234466552734,
+          0.7163175344467163
+        ],
+        "top_texts": [
+          "allem die Kommunen durch den anhaltend hohen Zuzug in das deutsche Asylsystem derart\nüberlastet, dass Integration nur schwer stattfinden kann. Es braucht zügige Verfahren und klare\nEntscheidungen im B",
+          "[Wahl-O-Mat] Abweisung Asylsuchender: Asylsuchende, die über einen anderen EU-Staat eingereist sind, sollen an den deutschen Grenzen abgewiesen werden. — Position: agree. Menschen, die von vornherein ",
+          "behindern, sollen ebenfalls Sozialleistungen gestrichen werden. Für gut integrierte Schutzsuchende\nmuss es die Möglichkeit eines Spurwechsels zur Einwanderung in den Arbeitsmarkt geben, wenn sie\nso qu"
+        ],
+        "mean_latency_ms": 337.45
+      },
+      "cross_encoder": {
+        "top_indices": [
+          11,
+          1,
+          0
+        ],
+        "top_scores": [
+          -5.618992805480957,
+          -6.4422101974487305,
+          -6.466025352478027
+        ],
+        "top_texts": [
+          "[Wahl-O-Mat] Zweite Staatsbürgerschaft: In Deutschland soll es weiterhin generell möglich sein, neben der deutschen eine zweite Staatsbürgerschaft zu haben. — Position: agree. Die FDP hat erreicht, da",
+          "[Wahl-O-Mat] Abweisung Asylsuchender: Asylsuchende, die über einen anderen EU-Staat eingereist sind, sollen an den deutschen Grenzen abgewiesen werden. — Position: agree. Menschen, die von vornherein ",
+          "allem die Kommunen durch den anhaltend hohen Zuzug in das deutsche Asylsystem derart\nüberlastet, dass Integration nur schwer stattfinden kann. Es braucht zügige Verfahren und klare\nEntscheidungen im B"
+        ],
+        "mean_latency_ms": 403.7
+      },
+      "jaccard_overlap": 0.5
+    },
+    {
+      "topic": "Migrationspolitik",
+      "party": "gruene_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          2
+        ],
+        "top_scores": [
+          0.7526180744171143,
+          0.7141047716140747,
+          0.6628546714782715
+        ],
+        "top_texts": [
+          "weisungsgebot gelten immer und überall. Migration und insbesondere zirkuläre Mig-\nDer Asylantrag von Menschen, die in der ration entstehenden wertvollen Verbindun-\nEU ankommen oder bereits hier sind, ",
+          "[Wahl-O-Mat] Abweisung Asylsuchender: Asylsuchende, die über einen anderen EU-Staat eingereist sind, sollen an den deutschen Grenzen abgewiesen werden. — Position: disagree. Wir setzen auf europäische",
+          "gute Perspektiven bekommen und ihre in eine Schutzlücke geraten. Perspekti-\nQualifikationen einbringen können. Die An- visch brauchen sie einen völkerrechtlichen\nerkennung ausländischer Abschlüsse und"
+        ],
+        "mean_latency_ms": 324.7
+      },
+      "cross_encoder": {
+        "top_indices": [
+          11,
+          10,
+          5
+        ],
+        "top_scores": [
+          -6.263834476470947,
+          -6.300333499908447,
+          -6.417221546173096
+        ],
+        "top_texts": [
+          "setz hinausgehenden Regelungen unseres nennahverkehrs (ÖPNV) zu vergünstigen.\nSpendenkodex an. Wir werden die Zugänge zum freiwilligen\nEngagement auch für Menschen mit ge-\nFür die Unterstützung von ri",
+          "[Wahl-O-Mat] Anwerbung von Fachkräften: Deutschland soll weiterhin die Anwerbung von Fachkräften aus dem Ausland fördern. — Position: agree. Der Mangel an Arbeits- und Fachkräften ist eine der größten",
+          "[Wahl-O-Mat] Arbeitserlaubnis für Asylsuchende: Asylsuchende sollen in Deutschland sofort nach ihrer Antragstellung eine Arbeitserlaubnis erhalten. — Position: agree. Der stärkste Motor für Integratio"
+        ],
+        "mean_latency_ms": 408.7
+      },
+      "jaccard_overlap": 0.0
+    },
+    {
+      "topic": "Migrationspolitik",
+      "party": "linke_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          1,
+          7
+        ],
+        "top_scores": [
+          0.7285315990447998,
+          0.7186890244483948,
+          0.6356604099273682
+        ],
+        "top_texts": [
+          "[Wahl-O-Mat] Abweisung Asylsuchender: Asylsuchende, die über einen anderen EU-Staat eingereist sind, sollen an den deutschen Grenzen abgewiesen werden. — Position: disagree. Wir halten es nicht für re",
+          "Verwaltung, Jugend- und Kulturzentren (Kapitel 12). zu Asylverfahren und Rechtsschutz muss für Asylsu-\nchende auch an den EU- Außengrenzen sichergestellt\n▪ Wir fordern, dass alle Geflüchteten ab dem T",
+          "Ebenen für alle langfristig in Deutschland lebenden ▪ Wir fordern die Schaffung eine*s Beauftragten für musli-\nMenschen. Alle hier geborenen Kinder und Jugendlichen misches Leben und Maßnahmen gegen a"
+        ],
+        "mean_latency_ms": 318.64
+      },
+      "cross_encoder": {
+        "top_indices": [
+          12,
+          2,
+          4
+        ],
+        "top_scores": [
+          -4.518934726715088,
+          -4.763950347900391,
+          -5.412621974945068
+        ],
+        "top_texts": [
+          "derung nach wie vor auf besondere Weise in vielen Fort- und Weiterbildungen inklusiv ausgerichtet sind und\nLebensbereichen benachteiligt sind� 2023 wurde inklusive Bildung bis ins hohe Alter möglich i",
+          "Wohnungslose, Saison- und Wanderarbeiter*innen und\nEs gibt in Deutschland ungefähr 600 000 wohnungslose geflüchtete Menschen regulärer Wohnraum bereitsteht,\nMenschen. Das EU-Parlament fordert die Absc",
+          "Verwaltungssitz in Deutschland erstreckt werden, auch Gute Absicherung bei Erwerbslosigkeit\nauf diejenigen in ausländischer oder europäischer\nRechtsform� Wird gegen diese Verpflichtung verstoßen, Im O"
+        ],
+        "mean_latency_ms": 403.42
+      },
+      "jaccard_overlap": 0.0
+    },
+    {
+      "topic": "Migrationspolitik",
+      "party": "spd_2025",
+      "initial_pool_size": 15,
+      "cosine": {
+        "top_indices": [
+          0,
+          4,
+          2
+        ],
+        "top_scores": [
+          0.7027783393859863,
+          0.6690794825553894,
+          0.6658803820610046
+        ],
+        "top_texts": [
+          "[Wahl-O-Mat] Abweisung Asylsuchender: Asylsuchende, die über einen anderen EU-Staat eingereist sind, sollen an den deutschen Grenzen abgewiesen werden. — Position: disagree. Wir halten uns an europäis",
+          "und Arbeit eröffnen und vor Ort die Aufnahme von Geflüchteten unterstützen. Diese Abkommen\nsollen klare und faire Regelungen für die Einreise nach Deutschland und Europa schaffen und\ngleichzeitig die ",
+          "an veralteten Vorstellungen gefährdet die Union so den sozialen Frieden und stellt sich gegen eine\nmoderne Gesellschaft, die auf Zusammenhalt, Vielfalt und Chancengerechtigkeit basiert. Dagegen\nüberpr"
+        ],
+        "mean_latency_ms": 330.68
+      },
+      "cross_encoder": {
+        "top_indices": [
+          8,
+          10,
+          5
+        ],
+        "top_scores": [
+          -5.096152305603027,
+          -5.236184120178223,
+          -5.422450542449951
+        ],
+        "top_texts": [
+          "Mehr für Dich. Besser für Deutschland.\nRegierungsprogramm der SPD für die Bundestagswahl 2025\nWir wollen das Fachkräfteeinwanderungsgesetz unbürokratisch umsetzen und beständig\nweiterentwickeln, damit",
+          "Mehr für Dich. Besser für Deutschland.\nRegierungsprogramm der SPD für die Bundestagswahl 2025\nDen Mindestlohn haben wir auf zunächst 12 Euro erhöht – das bedeutet mehr Einkommen und\nmehr Sicherheit fü",
+          "[Wahl-O-Mat] Anwerbung von Fachkräften: Deutschland soll weiterhin die Anwerbung von Fachkräften aus dem Ausland fördern. — Position: agree. Deutschland profitiert seit langem davon, dass wir ein Einw"
+        ],
+        "mean_latency_ms": 439.02
+      },
+      "jaccard_overlap": 0.0
+    }
+  ]
+}
