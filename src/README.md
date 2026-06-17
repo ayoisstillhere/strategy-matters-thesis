@@ -7,7 +7,8 @@ This folder contains the main implementation of the AI-moderated multi-agent deb
 - `prompts/moderator_prompts.py` — Moderator base prompt + 4 strategy variants + user prompt template
 - `prompts/judge_prompts.py` — Evaluation judge (7-dim rubrics) + trigger-check judge prompts
 - `trigger_check.py` — Two-stage trigger pipeline (rule-based + LLM judge confirmation + silent control)
-- `rag_pipeline.py` — Per-turn RAG retrieval + re-ranking (cosine or cross-encoder, configurable)
+- `rag_pipeline.py` — Per-turn RAG retrieval + re-ranking (cosine, multilingual bi-encoder)
+- `country_config.py` — CountryConfig abstraction (Germany production + Netherlands placeholder)
 
 **Will contain:**
 - Debate orchestration engine (round-robin turn management, state machine)
