@@ -195,45 +195,32 @@ def get_germany_config(data_dir: Optional[Path] = None) -> CountryConfig:
         ),
     ]
 
+    # Import canonical framing prompts from experiment config
+    from src.experiment_config import FRAMING_PROMPTS
+
     topics = [
         DebateTopic(
             id="mindestlohn",
             title="Mindestlohn",
-            framing_prompt=(
-                "The current federal minimum wage in Germany is €12.82/hour. "
-                "Discuss whether it should be raised to €15/hour, considering "
-                "effects on workers, businesses, and regional economic differences."
-            ),
+            framing_prompt=FRAMING_PROMPTS["mindestlohn"],
             topic_type="empirical",
         ),
         DebateTopic(
             id="rentenpolitik",
             title="Rentenpolitik",
-            framing_prompt=(
-                "Germany's statutory pension system faces demographic pressure with "
-                "fewer contributors per retiree. Discuss whether the retirement age "
-                "should be raised, benefits adjusted, or contributions increased."
-            ),
+            framing_prompt=FRAMING_PROMPTS["rentenpolitik"],
             topic_type="empirical",
         ),
         DebateTopic(
             id="migrationspolitik",
             title="Migrationspolitik",
-            framing_prompt=(
-                "Germany received over 300,000 asylum applications in 2023. "
-                "Discuss how the country should reform its migration and asylum "
-                "policy, balancing humanitarian obligations with integration capacity."
-            ),
+            framing_prompt=FRAMING_PROMPTS["migrationspolitik"],
             topic_type="values-driven",
         ),
         DebateTopic(
             id="sozialpolitik",
             title="Sozialpolitik / Vermögensungleichheit",
-            framing_prompt=(
-                "Wealth inequality in Germany has risen over the past decade, with "
-                "the top 10% holding over 60% of net wealth. Discuss whether the "
-                "government should implement a wealth tax or expand redistribution."
-            ),
+            framing_prompt=FRAMING_PROMPTS["sozialpolitik"],
             topic_type="values-driven",
         ),
     ]

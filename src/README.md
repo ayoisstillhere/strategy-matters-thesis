@@ -9,6 +9,7 @@ This folder contains the main implementation of the AI-moderated multi-agent deb
 - `trigger_check.py` — Two-stage trigger pipeline (rule-based + LLM judge confirmation + silent control)
 - `rag_pipeline.py` — Per-turn RAG retrieval + re-ranking (cosine, multilingual bi-encoder)
 - `country_config.py` — CountryConfig abstraction (Germany production + Netherlands placeholder)
+- `experiment_config.py` — 4 framing prompts, 8 condition specs, nudge text, Habermas prompt, random message pool
 
 **Will contain:**
 - Debate orchestration engine (round-robin turn management, state machine)
