@@ -1,0 +1,828 @@
+{
+  "summary": {
+    "single_run_wall_clock_s": 819.6,
+    "single_run_wall_clock_min": 13.7,
+    "breakdown_s": {
+      "agent_calls": 590.8,
+      "judge_calls": 205.2,
+      "trigger_calls": 15.2,
+      "moderator_calls": 8.3
+    },
+    "total_api_calls": 132,
+    "total_input_tokens": 99160,
+    "total_output_tokens": 23092,
+    "total_tokens": 122252,
+    "extrapolation_160_runs": {
+      "estimated_hours": 36.4,
+      "estimated_cost_groq_paid": {
+        "8b_input": 0.49,
+        "8b_output": 0.09,
+        "70b_input": 3.59,
+        "70b_output": 2.02,
+        "total_usd": 6.19
+      }
+    }
+  },
+  "raw_calls": {
+    "agent_calls": [
+      {
+        "call": 1,
+        "latency_s": 0.628,
+        "input_tokens": 1018,
+        "output_tokens": 95
+      },
+      {
+        "call": 2,
+        "latency_s": 0.36,
+        "input_tokens": 1018,
+        "output_tokens": 114
+      },
+      {
+        "call": 3,
+        "latency_s": 0.344,
+        "input_tokens": 1018,
+        "output_tokens": 101
+      },
+      {
+        "call": 4,
+        "latency_s": 0.303,
+        "input_tokens": 1018,
+        "output_tokens": 119
+      },
+      {
+        "call": 5,
+        "latency_s": 0.279,
+        "input_tokens": 1018,
+        "output_tokens": 105
+      },
+      {
+        "call": 6,
+        "latency_s": 0.344,
+        "input_tokens": 1018,
+        "output_tokens": 102
+      },
+      {
+        "call": 7,
+        "latency_s": 9.391,
+        "input_tokens": 1018,
+        "output_tokens": 105
+      },
+      {
+        "call": 8,
+        "latency_s": 11.396,
+        "input_tokens": 1018,
+        "output_tokens": 100
+      },
+      {
+        "call": 9,
+        "latency_s": 11.413,
+        "input_tokens": 1018,
+        "output_tokens": 137
+      },
+      {
+        "call": 10,
+        "latency_s": 11.377,
+        "input_tokens": 1018,
+        "output_tokens": 94
+      },
+      {
+        "call": 11,
+        "latency_s": 11.506,
+        "input_tokens": 1018,
+        "output_tokens": 113
+      },
+      {
+        "call": 12,
+        "latency_s": 11.417,
+        "input_tokens": 1018,
+        "output_tokens": 112
+      },
+      {
+        "call": 13,
+        "latency_s": 11.453,
+        "input_tokens": 1018,
+        "output_tokens": 137
+      },
+      {
+        "call": 14,
+        "latency_s": 11.603,
+        "input_tokens": 1018,
+        "output_tokens": 132
+      },
+      {
+        "call": 15,
+        "latency_s": 11.502,
+        "input_tokens": 1018,
+        "output_tokens": 126
+      },
+      {
+        "call": 16,
+        "latency_s": 11.559,
+        "input_tokens": 1018,
+        "output_tokens": 131
+      },
+      {
+        "call": 17,
+        "latency_s": 11.495,
+        "input_tokens": 1018,
+        "output_tokens": 92
+      },
+      {
+        "call": 18,
+        "latency_s": 10.561,
+        "input_tokens": 1018,
+        "output_tokens": 150
+      },
+      {
+        "call": 19,
+        "latency_s": 11.505,
+        "input_tokens": 1018,
+        "output_tokens": 120
+      },
+      {
+        "call": 20,
+        "latency_s": 11.445,
+        "input_tokens": 1018,
+        "output_tokens": 124
+      },
+      {
+        "call": 21,
+        "latency_s": 11.503,
+        "input_tokens": 1018,
+        "output_tokens": 150
+      },
+      {
+        "call": 22,
+        "latency_s": 12.52,
+        "input_tokens": 1018,
+        "output_tokens": 124
+      },
+      {
+        "call": 23,
+        "latency_s": 11.431,
+        "input_tokens": 1018,
+        "output_tokens": 150
+      },
+      {
+        "call": 24,
+        "latency_s": 11.436,
+        "input_tokens": 1018,
+        "output_tokens": 100
+      },
+      {
+        "call": 25,
+        "latency_s": 11.509,
+        "input_tokens": 1018,
+        "output_tokens": 113
+      },
+      {
+        "call": 26,
+        "latency_s": 10.412,
+        "input_tokens": 1018,
+        "output_tokens": 93
+      },
+      {
+        "call": 27,
+        "latency_s": 11.465,
+        "input_tokens": 1018,
+        "output_tokens": 142
+      },
+      {
+        "call": 28,
+        "latency_s": 11.416,
+        "input_tokens": 1018,
+        "output_tokens": 111
+      },
+      {
+        "call": 29,
+        "latency_s": 11.362,
+        "input_tokens": 1018,
+        "output_tokens": 93
+      },
+      {
+        "call": 30,
+        "latency_s": 11.521,
+        "input_tokens": 1018,
+        "output_tokens": 114
+      },
+      {
+        "call": 31,
+        "latency_s": 11.399,
+        "input_tokens": 1018,
+        "output_tokens": 104
+      },
+      {
+        "call": 32,
+        "latency_s": 11.391,
+        "input_tokens": 1018,
+        "output_tokens": 110
+      },
+      {
+        "call": 33,
+        "latency_s": 10.56,
+        "input_tokens": 1018,
+        "output_tokens": 123
+      },
+      {
+        "call": 34,
+        "latency_s": 11.427,
+        "input_tokens": 1018,
+        "output_tokens": 118
+      },
+      {
+        "call": 35,
+        "latency_s": 6.448,
+        "input_tokens": 1018,
+        "output_tokens": 118
+      },
+      {
+        "call": 36,
+        "latency_s": 11.439,
+        "input_tokens": 1018,
+        "output_tokens": 122
+      },
+      {
+        "call": 37,
+        "latency_s": 11.376,
+        "input_tokens": 1018,
+        "output_tokens": 92
+      },
+      {
+        "call": 38,
+        "latency_s": 10.381,
+        "input_tokens": 1018,
+        "output_tokens": 122
+      },
+      {
+        "call": 39,
+        "latency_s": 11.44,
+        "input_tokens": 1018,
+        "output_tokens": 138
+      },
+      {
+        "call": 40,
+        "latency_s": 12.67,
+        "input_tokens": 1018,
+        "output_tokens": 150
+      },
+      {
+        "call": 41,
+        "latency_s": 11.479,
+        "input_tokens": 1018,
+        "output_tokens": 128
+      },
+      {
+        "call": 42,
+        "latency_s": 11.414,
+        "input_tokens": 1018,
+        "output_tokens": 124
+      },
+      {
+        "call": 43,
+        "latency_s": 11.404,
+        "input_tokens": 1018,
+        "output_tokens": 121
+      },
+      {
+        "call": 44,
+        "latency_s": 11.339,
+        "input_tokens": 1018,
+        "output_tokens": 88
+      },
+      {
+        "call": 45,
+        "latency_s": 11.429,
+        "input_tokens": 1018,
+        "output_tokens": 134
+      },
+      {
+        "call": 46,
+        "latency_s": 11.443,
+        "input_tokens": 1018,
+        "output_tokens": 121
+      },
+      {
+        "call": 47,
+        "latency_s": 11.398,
+        "input_tokens": 1018,
+        "output_tokens": 117
+      },
+      {
+        "call": 48,
+        "latency_s": 11.536,
+        "input_tokens": 1018,
+        "output_tokens": 135
+      },
+      {
+        "call": 49,
+        "latency_s": 6.429,
+        "input_tokens": 1018,
+        "output_tokens": 93
+      },
+      {
+        "call": 50,
+        "latency_s": 10.655,
+        "input_tokens": 1018,
+        "output_tokens": 138
+      },
+      {
+        "call": 51,
+        "latency_s": 6.487,
+        "input_tokens": 1018,
+        "output_tokens": 142
+      },
+      {
+        "call": 52,
+        "latency_s": 12.068,
+        "input_tokens": 1018,
+        "output_tokens": 131
+      },
+      {
+        "call": 53,
+        "latency_s": 11.392,
+        "input_tokens": 1018,
+        "output_tokens": 128
+      },
+      {
+        "call": 54,
+        "latency_s": 6.536,
+        "input_tokens": 1018,
+        "output_tokens": 142
+      },
+      {
+        "call": 55,
+        "latency_s": 5.529,
+        "input_tokens": 1018,
+        "output_tokens": 109
+      },
+      {
+        "call": 56,
+        "latency_s": 11.392,
+        "input_tokens": 1018,
+        "output_tokens": 111
+      },
+      {
+        "call": 57,
+        "latency_s": 11.551,
+        "input_tokens": 1018,
+        "output_tokens": 135
+      },
+      {
+        "call": 58,
+        "latency_s": 11.322,
+        "input_tokens": 1018,
+        "output_tokens": 79
+      },
+      {
+        "call": 59,
+        "latency_s": 11.57,
+        "input_tokens": 1018,
+        "output_tokens": 125
+      },
+      {
+        "call": 60,
+        "latency_s": 11.466,
+        "input_tokens": 1018,
+        "output_tokens": 115
+      }
+    ],
+    "judge_calls": [
+      {
+        "call": 1,
+        "latency_s": 1.005,
+        "input_tokens": 567,
+        "output_tokens": 331
+      },
+      {
+        "call": 2,
+        "latency_s": 0.91,
+        "input_tokens": 567,
+        "output_tokens": 318
+      },
+      {
+        "call": 3,
+        "latency_s": 0.871,
+        "input_tokens": 567,
+        "output_tokens": 290
+      },
+      {
+        "call": 4,
+        "latency_s": 0.246,
+        "input_tokens": 567,
+        "output_tokens": 67
+      },
+      {
+        "call": 5,
+        "latency_s": 0.945,
+        "input_tokens": 567,
+        "output_tokens": 306
+      },
+      {
+        "call": 6,
+        "latency_s": 0.244,
+        "input_tokens": 567,
+        "output_tokens": 67
+      },
+      {
+        "call": 7,
+        "latency_s": 0.989,
+        "input_tokens": 567,
+        "output_tokens": 323
+      },
+      {
+        "call": 8,
+        "latency_s": 1.247,
+        "input_tokens": 567,
+        "output_tokens": 366
+      },
+      {
+        "call": 9,
+        "latency_s": 0.791,
+        "input_tokens": 567,
+        "output_tokens": 268
+      },
+      {
+        "call": 10,
+        "latency_s": 1.027,
+        "input_tokens": 567,
+        "output_tokens": 339
+      },
+      {
+        "call": 11,
+        "latency_s": 1.225,
+        "input_tokens": 567,
+        "output_tokens": 359
+      },
+      {
+        "call": 12,
+        "latency_s": 0.906,
+        "input_tokens": 567,
+        "output_tokens": 293
+      },
+      {
+        "call": 13,
+        "latency_s": 2.093,
+        "input_tokens": 567,
+        "output_tokens": 335
+      },
+      {
+        "call": 14,
+        "latency_s": 4.337,
+        "input_tokens": 567,
+        "output_tokens": 67
+      },
+      {
+        "call": 15,
+        "latency_s": 3.291,
+        "input_tokens": 567,
+        "output_tokens": 67
+      },
+      {
+        "call": 16,
+        "latency_s": 2.303,
+        "input_tokens": 567,
+        "output_tokens": 67
+      },
+      {
+        "call": 17,
+        "latency_s": 3.287,
+        "input_tokens": 567,
+        "output_tokens": 67
+      },
+      {
+        "call": 18,
+        "latency_s": 4.087,
+        "input_tokens": 567,
+        "output_tokens": 335
+      },
+      {
+        "call": 19,
+        "latency_s": 4.971,
+        "input_tokens": 567,
+        "output_tokens": 310
+      },
+      {
+        "call": 20,
+        "latency_s": 4.292,
+        "input_tokens": 567,
+        "output_tokens": 400
+      },
+      {
+        "call": 21,
+        "latency_s": 5.033,
+        "input_tokens": 567,
+        "output_tokens": 327
+      },
+      {
+        "call": 22,
+        "latency_s": 4.13,
+        "input_tokens": 567,
+        "output_tokens": 339
+      },
+      {
+        "call": 23,
+        "latency_s": 5.138,
+        "input_tokens": 567,
+        "output_tokens": 294
+      },
+      {
+        "call": 24,
+        "latency_s": 4.048,
+        "input_tokens": 567,
+        "output_tokens": 308
+      },
+      {
+        "call": 25,
+        "latency_s": 3.464,
+        "input_tokens": 567,
+        "output_tokens": 67
+      },
+      {
+        "call": 26,
+        "latency_s": 3.893,
+        "input_tokens": 567,
+        "output_tokens": 277
+      },
+      {
+        "call": 27,
+        "latency_s": 4.4,
+        "input_tokens": 567,
+        "output_tokens": 337
+      },
+      {
+        "call": 28,
+        "latency_s": 3.891,
+        "input_tokens": 567,
+        "output_tokens": 281
+      },
+      {
+        "call": 29,
+        "latency_s": 5.01,
+        "input_tokens": 567,
+        "output_tokens": 314
+      },
+      {
+        "call": 30,
+        "latency_s": 3.295,
+        "input_tokens": 567,
+        "output_tokens": 67
+      },
+      {
+        "call": 31,
+        "latency_s": 3.324,
+        "input_tokens": 567,
+        "output_tokens": 67
+      },
+      {
+        "call": 32,
+        "latency_s": 4.099,
+        "input_tokens": 567,
+        "output_tokens": 317
+      },
+      {
+        "call": 33,
+        "latency_s": 4.09,
+        "input_tokens": 567,
+        "output_tokens": 311
+      },
+      {
+        "call": 34,
+        "latency_s": 3.305,
+        "input_tokens": 567,
+        "output_tokens": 67
+      },
+      {
+        "call": 35,
+        "latency_s": 3.922,
+        "input_tokens": 567,
+        "output_tokens": 276
+      },
+      {
+        "call": 36,
+        "latency_s": 3.811,
+        "input_tokens": 567,
+        "output_tokens": 253
+      },
+      {
+        "call": 37,
+        "latency_s": 5.099,
+        "input_tokens": 567,
+        "output_tokens": 321
+      },
+      {
+        "call": 38,
+        "latency_s": 3.858,
+        "input_tokens": 567,
+        "output_tokens": 254
+      },
+      {
+        "call": 39,
+        "latency_s": 4.014,
+        "input_tokens": 567,
+        "output_tokens": 301
+      },
+      {
+        "call": 40,
+        "latency_s": 4.285,
+        "input_tokens": 567,
+        "output_tokens": 67
+      },
+      {
+        "call": 41,
+        "latency_s": 3.494,
+        "input_tokens": 567,
+        "output_tokens": 390
+      },
+      {
+        "call": 42,
+        "latency_s": 4.957,
+        "input_tokens": 567,
+        "output_tokens": 292
+      },
+      {
+        "call": 43,
+        "latency_s": 3.903,
+        "input_tokens": 567,
+        "output_tokens": 260
+      },
+      {
+        "call": 44,
+        "latency_s": 5.11,
+        "input_tokens": 567,
+        "output_tokens": 315
+      },
+      {
+        "call": 45,
+        "latency_s": 3.917,
+        "input_tokens": 567,
+        "output_tokens": 277
+      },
+      {
+        "call": 46,
+        "latency_s": 4.151,
+        "input_tokens": 567,
+        "output_tokens": 312
+      },
+      {
+        "call": 47,
+        "latency_s": 4.257,
+        "input_tokens": 567,
+        "output_tokens": 400
+      },
+      {
+        "call": 48,
+        "latency_s": 4.29,
+        "input_tokens": 567,
+        "output_tokens": 67
+      },
+      {
+        "call": 49,
+        "latency_s": 3.283,
+        "input_tokens": 567,
+        "output_tokens": 67
+      },
+      {
+        "call": 50,
+        "latency_s": 4.159,
+        "input_tokens": 567,
+        "output_tokens": 349
+      },
+      {
+        "call": 51,
+        "latency_s": 3.924,
+        "input_tokens": 567,
+        "output_tokens": 294
+      },
+      {
+        "call": 52,
+        "latency_s": 4.975,
+        "input_tokens": 567,
+        "output_tokens": 319
+      },
+      {
+        "call": 53,
+        "latency_s": 4.034,
+        "input_tokens": 567,
+        "output_tokens": 275
+      },
+      {
+        "call": 54,
+        "latency_s": 4.216,
+        "input_tokens": 567,
+        "output_tokens": 339
+      },
+      {
+        "call": 55,
+        "latency_s": 5.017,
+        "input_tokens": 567,
+        "output_tokens": 315
+      },
+      {
+        "call": 56,
+        "latency_s": 3.933,
+        "input_tokens": 567,
+        "output_tokens": 304
+      },
+      {
+        "call": 57,
+        "latency_s": 3.982,
+        "input_tokens": 567,
+        "output_tokens": 310
+      },
+      {
+        "call": 58,
+        "latency_s": 6.17,
+        "input_tokens": 567,
+        "output_tokens": 321
+      },
+      {
+        "call": 59,
+        "latency_s": 2.287,
+        "input_tokens": 567,
+        "output_tokens": 67
+      },
+      {
+        "call": 60,
+        "latency_s": 3.998,
+        "input_tokens": 567,
+        "output_tokens": 311
+      }
+    ],
+    "trigger_calls": [
+      {
+        "call": 1,
+        "latency_s": 1.231,
+        "input_tokens": 292,
+        "output_tokens": 22
+      },
+      {
+        "call": 2,
+        "latency_s": 1.216,
+        "input_tokens": 292,
+        "output_tokens": 22
+      },
+      {
+        "call": 3,
+        "latency_s": 2.227,
+        "input_tokens": 292,
+        "output_tokens": 22
+      },
+      {
+        "call": 4,
+        "latency_s": 1.214,
+        "input_tokens": 292,
+        "output_tokens": 22
+      },
+      {
+        "call": 5,
+        "latency_s": 1.221,
+        "input_tokens": 292,
+        "output_tokens": 22
+      },
+      {
+        "call": 6,
+        "latency_s": 2.226,
+        "input_tokens": 292,
+        "output_tokens": 22
+      },
+      {
+        "call": 7,
+        "latency_s": 1.213,
+        "input_tokens": 292,
+        "output_tokens": 22
+      },
+      {
+        "call": 8,
+        "latency_s": 2.232,
+        "input_tokens": 292,
+        "output_tokens": 22
+      },
+      {
+        "call": 9,
+        "latency_s": 1.222,
+        "input_tokens": 292,
+        "output_tokens": 22
+      },
+      {
+        "call": 10,
+        "latency_s": 1.23,
+        "input_tokens": 292,
+        "output_tokens": 22
+      }
+    ],
+    "moderator_calls": [
+      {
+        "call": 1,
+        "latency_s": 3.552,
+        "input_tokens": 570,
+        "output_tokens": 170
+      },
+      {
+        "call": 2,
+        "latency_s": 4.732,
+        "input_tokens": 570,
+        "output_tokens": 186
+      }
+    ]
+  }
+}
