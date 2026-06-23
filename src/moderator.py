@@ -116,9 +116,10 @@ class Moderator:
         )
 
         # Extract intervention text from JSON
-        intervention_text = ""
         if resp.parsed_json:
             intervention_text = resp.parsed_json.get("intervention_text", resp.text)
+        else:
+            intervention_text = resp.text
 
         event = InterventionEvent(
             intervention_id=str(uuid.uuid4()),
@@ -179,11 +180,16 @@ class Moderator:
         )
 
         # Extract instruction for next round as intervention text
-        intervention_text = ""
         if resp.parsed_json:
             intervention_text = resp.parsed_json.get(
                 "instruction_for_next_round",
                 resp.parsed_json.get("consensus_statement", resp.text),
+            )
+        else:
+            # JSON parse failed — use raw LLM output as intervention text
+            intervention_text = resp.text
+            logger.warning(
+                f"[Round {round_number}] Habermas JSON parse failed, using raw text"
             )
 
         event = InterventionEvent(

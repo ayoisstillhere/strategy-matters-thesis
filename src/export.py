@@ -35,15 +35,18 @@ def save_run_json(run: DebateRun, output_dir: Path) -> Path:
     """Save a single debate run as a JSON file.
 
     Directory structure:
-        output_dir / {condition_id} / {topic_id} / run_{N}.json
+        output_dir / {condition_id} / {topic_id} / run_{N}_{timestamp}.json
 
     Returns:
         Path to the saved JSON file.
     """
+    from datetime import datetime, timezone
+
     run_dir = output_dir / run.config.condition_id / run.config.topic_id
     run_dir.mkdir(parents=True, exist_ok=True)
 
-    filename = f"run_{run.config.run_number:02d}.json"
+    ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+    filename = f"run_{run.config.run_number:02d}_{ts}.json"
     path = run_dir / filename
 
     data = run.model_dump(mode="json")

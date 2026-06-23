@@ -21,6 +21,7 @@ from __future__ import annotations
 import json
 import logging
 import os
+import re
 import time
 from dataclasses import dataclass
 from typing import Optional
@@ -37,8 +38,9 @@ logger = logging.getLogger(__name__)
 AGENT_MODEL = "llama-3.1-8b-instant"
 JUDGE_MODEL = "llama-3.3-70b-versatile"
 
-DEFAULT_MAX_RETRIES = 5
+DEFAULT_MAX_RETRIES = 8
 DEFAULT_RETRY_BASE_DELAY = 2.0  # seconds, exponential backoff
+MAX_RATE_LIMIT_WAIT = 600  # 10 minutes max wait for daily limits
 
 
 # ---------------------------------------------------------------------------
@@ -152,7 +154,13 @@ class LLMClient:
                 is_server_error = "500" in error_str or "503" in error_str
 
                 if (is_rate_limit or is_server_error) and attempt < self.max_retries:
-                    delay = self.retry_base_delay * (2 ** (attempt - 1))
+                    # Try to parse Groq's suggested wait time
+                    parsed_wait = self._parse_retry_after(str(e))
+                    if parsed_wait and parsed_wait <= MAX_RATE_LIMIT_WAIT:
+                        delay = parsed_wait + 1  # +1s buffer
+                    else:
+                        delay = self.retry_base_delay * (2 ** (attempt - 1))
+
                     logger.warning(
                         f"LLM call failed (attempt {attempt}/{self.max_retries}): "
                         f"{type(e).__name__}. Retrying in {delay:.1f}s..."
@@ -164,6 +172,25 @@ class LLMClient:
 
         # Should not reach here, but just in case
         raise RuntimeError("LLM call exhausted all retries")
+
+    @staticmethod
+    def _parse_retry_after(error_msg: str) -> Optional[float]:
+        """Parse wait time from Groq error message.
+
+        Handles formats like:
+            'Please try again in 22m27.84s'
+            'Please try again in 4.5s'
+            'Please try again in 1m0s'
+        """
+        match = re.search(
+            r"try again in\s+(?:(\d+)m)?(\d+(?:\.\d+)?)s",
+            error_msg,
+        )
+        if match:
+            minutes = int(match.group(1) or 0)
+            seconds = float(match.group(2))
+            return minutes * 60 + seconds
+        return None
 
     @staticmethod
     def _parse_json(text: str) -> Optional[dict]:
