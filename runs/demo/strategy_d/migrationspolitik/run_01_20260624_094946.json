@@ -1,0 +1,940 @@
+{
+  "run_id": "2c134377-8ce4-4235-b0cf-1c44de7db509",
+  "config": {
+    "topic_id": "migrationspolitik",
+    "topic_type": "values-driven",
+    "framing_prompt": "Germany received approximately 330,000 first-time asylum applications in 2023, the highest number since 2016. Municipalities report strain on housing, schools, and administrative capacity, while labour market data shows persistent shortages in healthcare, skilled trades, and IT. Discuss how Germany should reform its migration and asylum policy, addressing the balance between humanitarian obligations under international law, integration capacity, and labour market needs. Ground your arguments in your party's documented positions.",
+    "condition_id": "strategy_d",
+    "condition_label": "Common-Ground",
+    "condition_type": "strategy",
+    "run_number": 1,
+    "agent_model": "llama-3.1-8b-instant",
+    "judge_model": "llama-3.3-70b-versatile",
+    "moderator_model": "llama-3.3-70b-versatile",
+    "num_rounds": 5,
+    "num_agents": 6,
+    "max_interventions": 3,
+    "silent_control_rate": 0.2,
+    "turn_order": [
+      "CDU/CSU",
+      "SPD",
+      "Bündnis 90/Die Grünen",
+      "FDP",
+      "Die Linke",
+      "AfD"
+    ],
+    "has_moderator_agent": true,
+    "uses_trigger": true,
+    "trigger_strategy": "common-ground",
+    "nudge_text": ""
+  },
+  "turns": [
+    {
+      "turn_id": "20ad9c93-591c-4c6c-9a8a-a97d695992d0",
+      "round_number": 1,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "**CDU/CSU-Position zur Asyl- und Migrationspolitik**\n\nBezüglich der Argumentation der Grünen, dass Deutschland seine humanitären Verpflichtungen gegenüber Flüchtlingen durch eine weitgehende Öffnung der Grenzen erfüllen kann, möchten wir darauf hinweisen, dass die Belastung unserer Kommunen und die knappen Ressourcen unseres Bildungssystems nicht ausgelassen werden können. Eine umfassende Reform der Migrations- und Asylpolitik ist daher unerlässlich, um die Integration von Flüchtlingen und die Deckung von Arbeitsplatzbedarf in Schlüsselsektoren wie Gesundheit, Handwerk und IT zu ermöglichen. Wir setzen uns daher für eine geregelte Zuwanderung ausländischer Fachkräfte ein, um die demografischen Herausforderungen und die Arbeitsplatzmärkte in Deutschland zu st",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 2,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, avoiding personal attacks or inflammatory language, thus scoring a 4 for civility. It critiques the opposing position respectfully, focusing on policy rather than making personal attacks.",
+        "relevance": "The turn is clearly on-topic, addressing the debate question of migrationspolitik directly and discussing the need for a comprehensive reform of migration and asylum policy, which aligns well with the topic.",
+        "logical_consistency": "The argument presented is coherent, connecting the need for migration policy reform with the integration of refugees and the coverage of labor market needs in key sectors, demonstrating a logical flow of ideas.",
+        "argument_strength": "The turn provides well-supported claims, reasoning that a regulated immigration of foreign skilled workers is necessary to address demographic challenges and labor market needs, offering a clear mechanism for addressing the issue.",
+        "document_grounding": "Although specific party documents are not referenced, the position outlined aligns with known CDU/CSU stances on migration and labor market policies, suggesting a grounding in the party's documented positions.",
+        "responsiveness": "Since this is the first turn, there are no preceding arguments to respond to, which is why the score for responsiveness is 2, indicating a generic acknowledgment of potential opposing views without direct engagement.",
+        "stance_differentiation": "The turn clearly reflects the CDU/CSU's distinct position on migration policy, emphasizing the need for a regulated approach to address both humanitarian and economic needs, which differentiates it from other parties."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 2679,
+      "token_count_output": 595,
+      "latency_s": 2.403,
+      "timestamp": "2026-06-24T09:48:33.448003Z"
+    },
+    {
+      "turn_id": "b2c86d61-de3b-45a3-aa53-ef0959047487",
+      "round_number": 1,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "**Regelung der Migrations- und Asylpolitik**\n\nBezüglich der Argumentation der CDU/CSU, dass eine umfassende Reform der Migrations- und Asylpolitik erforderlich ist, um die Integration von Flüchtlingen und die Deckung von Arbeitsplatzbedarf zu ermöglichen, stimmen wir in der Notwendigkeit einer Reform überein. Allerdings lehnen wir eine \"geregelte Zuwanderung ausländischer Fachkräfte\" als Lösung ablehnend ab, da sie die humanitären Verpflichtungen Deutschlands gegenüber Flüchtlingen nicht ausreichend berücksichtigt. Statt der Förderung von Fachkräften ausländischer Herkunft, die bereits in Deutschland leben, sollten wir uns auf die Integration der Flüchtlinge und die Förderung ihrer Qualifikationen konzentrieren. Dies kann durch die",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques the CDU/CSU's policy position without personal attacks, and engages in respectful disagreement, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and responds to the preceding speaker's argument, making it highly relevant and deserving of a 5.",
+        "logical_consistency": "The argument is coherent and logically structured, presenting a clear alternative to the CDU/CSU's proposal, but does not delve into exceptionally rigorous or innovative reasoning, hence a 4.",
+        "argument_strength": "The turn provides a clear rationale for its position, emphasizing the importance of integrating existing refugees and promoting their qualifications, which supports its claim with specific reasoning, warranting a 4.",
+        "document_grounding": "While the turn aligns with general social democratic values on migration and integration, it does not directly reference specific SPD policy documents or known positions, thus scoring a 4 for document grounding.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's argument, naming the party and specifically addressing their proposal for regulated immigration of foreign skilled workers, demonstrating high responsiveness and earning a 5.",
+        "stance_differentiation": "The SPD's position is clearly distinguishable from the CDU/CSU's, emphasizing humanitarian obligations and the integration of existing refugees, but the language and values expressed, while distinct, do not uniquely set the SPD apart from other potential left-leaning parties, resulting in a 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 3131,
+      "token_count_output": 602,
+      "latency_s": 2.242,
+      "timestamp": "2026-06-24T09:48:35.717966Z"
+    },
+    {
+      "turn_id": "ed5b963b-2f48-4fcd-b6b1-48ebf189673b",
+      "round_number": 1,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "**Bündnis 90/Die Grünen** (Runde 1): **Reform der Migrations- und Asylpolitik**\n\nBezüglich der Argumentation der SPD, dass die Förderung von Fachkräften ausländischer Herkunft, die bereits in Deutschland leben, Vorrang haben sollte, stimmen wir in der Notwendigkeit der Förderung von Qualifikationen und Integration überein. Allerdings glauben wir, dass dies nicht auf Kosten der humanitären Verpflichtungen Deutschlands gegenüber Flüchtlingen gehen darf. Wir müssen ein System schaffen, das Flüchtlinge bereits bei der Einreise unterstützt und ihnen hilft, ihre Qualifikationen zu nutzen. Dazu sollten wir den Zugang zu Bildung, Ausbildung und dem Arbeitsmarkt erleichtern. Wir setzen uns für eine schnelle Anerkennung von Qualifikationen ein und für die",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without attacking parties, which aligns with a score of 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of migrationspolitik and directly engages with the preceding arguments, making it highly relevant and deserving of a score of 5.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, although it could be strengthened with more specific examples or evidence, warranting a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and identified mechanisms for supporting refugees and integrating them into the workforce, earning a score of 4 for argument strength.",
+        "document_grounding": "The turn aligns with Bündnis 90/Die Grünen's known positions on migrationspolitik, emphasizing humanitarian obligations and the importance of integration, which suggests a strong document grounding and a score of 4.",
+        "responsiveness": "The turn directly engages with the SPD's argument, naming the party and addressing their claim about prioritizing the integration of existing foreign skilled workers, demonstrating high responsiveness and deserving a score of 5.",
+        "stance_differentiation": "The turn clearly reflects Bündnis 90/Die Grünen's distinct position on migrationspolitik, emphasizing both humanitarian obligations and the need for effective integration policies, which is recognizable as their party's stance and warrants a score of 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 3577,
+      "token_count_output": 593,
+      "latency_s": 1.993,
+      "timestamp": "2026-06-24T09:48:37.966049Z"
+    },
+    {
+      "turn_id": "b7607e03-620b-4a7d-b3e6-b6d6e26701c0",
+      "round_number": 1,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "**FDP (Freie Demokratische Partei) - Runde 1: Reform der Migrations- und Asylpolitik**\n\nBezüglich der Argumentation der CDU/CSU, dass eine geregelte Zuwanderung ausländischer Fachkräfte erforderlich ist, um die demografischen Herausforderungen und die Arbeitsplatzmärkte in Deutschland zu stärken, teilen wir zwar die Notwendigkeit einer Reform, lehnen aber eine strikte Regulierung der Zuwanderung ab. Die FDP setzt sich für eine flexible und marktorientierte Zuwanderung ein, die es deutschen Unternehmen ermöglicht, die Fachkräfte zu beschäftigen, die sie benötigen. Dazu müssen die Rahmenbedingungen für die Zuwanderung von Fachkräften deutlich verbessert und die bürokratischen Hürden abgesenkt werden. So können wir",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques policies without attacking parties directly, and thus scores a 4 for civility. Phrases like 'teilen wir zwar die Notwendigkeit einer Reform' indicate a respectful engagement with opposing views.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and advances the discussion by proposing a flexible and marktorientierte Zuwanderung, earning a score of 4 for relevance.",
+        "logical_consistency": "The argument is internally consistent, advocating for a market-oriented approach to immigration as a solution to demographic challenges and labor market needs, which warrants a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the need to improve framework conditions and reduce bureaucratic hurdles for the immigration of skilled workers, resulting in a score of 4 for argument strength.",
+        "document_grounding": "While the turn generally aligns with the FDP's known direction on economic and immigration policies, it does not directly reference specific party documents or programs, leading to a score of 3 for document grounding.",
+        "responsiveness": "The FDP directly engages with the CDU/CSU's argument regarding the need for regulated immigration of foreign skilled workers, responding to the specific claim and explaining why a flexible approach is preferred, which merits a score of 4 for responsiveness.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity, using phrases like 'flexible und marktorientierte Zuwanderung' that reflect the FDP's economic liberal stance, distinguishing it from other parties, and thus scores a 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 4010,
+      "token_count_output": 630,
+      "latency_s": 2.172,
+      "timestamp": "2026-06-24T09:48:39.962292Z"
+    },
+    {
+      "turn_id": "0f183621-069e-417c-87dc-24b900a0f2ef",
+      "round_number": 1,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "**Die Linke (Runde 1): Reform der Migrations- und Asylpolitik**\n\nBezüglich der Argumentation der CDU/CSU, dass eine geregelte Zuwanderung ausländischer Fachkräfte erforderlich ist, um die demografischen Herausforderungen und die Arbeitsplatzmärkte in Deutschland zu stärken, müssen wir auf die wahren Ursachen der Arbeitsplatzmangel hinweisen. Die CDU/CSU will uns glauben machen, dass wir Fachkräfte ausländischer Herkunft benötigen, um die Arbeitsplätze zu decken, aber in Wirklichkeit werden die Arbeitsplätze in Deutschland durch die Politik der Großen Koalition und der CDU/CSU selbst geschaffen, die zu einer prekären Arbeitswelt und einer Ausbeutung von Arbeitnehmern führt. Wir setzen uns daher für eine umfass",
+      "scores": {
+        "civility": 3,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone without personal attacks, but uses phrases like 'will uns glauben machen' that could be seen as slightly confrontational, thus scoring 3 for civility.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and responds to the CDU/CSU's argument, making it clearly relevant and scoring 4.",
+        "logical_consistency": "The argument is coherent and logically structured, criticizing the CDU/CSU's stance and presenting an alternative perspective, thus scoring 4 for logical consistency.",
+        "argument_strength": "The turn provides a clear and well-supported argument against the CDU/CSU's position, highlighting the role of their policies in creating precarious work conditions, which strengthens the argument and scores 4.",
+        "document_grounding": "While the turn reflects general left-wing positions on labor and migration, it does not directly reference specific party documents or known positions, scoring 3 for document grounding.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's argument, addressing their claim about the need for foreign skilled workers and providing a counterargument, thus scoring 4 for responsiveness.",
+        "stance_differentiation": "The turn clearly reflects Die Linke's distinct stance on labor rights and migration, differentiating itself from other parties, especially the CDU/CSU, and scoring 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 4461,
+      "token_count_output": 578,
+      "latency_s": 3.107,
+      "timestamp": "2026-06-24T09:48:42.173004Z"
+    },
+    {
+      "turn_id": "c98c3fc9-15c6-47b7-8ebe-56db63946b31",
+      "round_number": 1,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "**AfD (Alternative für Deutschland) - Runde 1: Reform der Migrations- und Asylpolitik**\n\nBezüglich der Argumentation der CDU/CSU, dass eine geregelte Zuwanderung ausländischer Fachkräfte erforderlich ist, um die demografischen Herausforderungen und die Arbeitsplatzmärkte in Deutschland zu stärken, möchten wir darauf hinweisen, dass diese Position die tatsächlichen Bedürfnisse Deutschlands nicht berücksichtigt. Die CDU/CSU will uns glauben machen, dass wir Fachkräfte ausländischer Herkunft benötigen, aber in Wirklichkeit ist die Hauptursache der Arbeitsplatzmangel die fehlende Anreiz für die deutsche Bevölkerung, sich in diesen Berufen zu qualifizieren und zu arbeiten. Wir sollten daher nicht die Zuwanderung von Fachkrä",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 3,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone without personal attacks or inflammatory language, thus scoring a 4 for civility. It critiques the CDU/CSU's position without being dismissive or aggressive.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and engages with the preceding argument by CDU/CSU, making it relevant and scoring a 4.",
+        "logical_consistency": "The argument presented is generally coherent but lacks detailed logical structure, thus scoring a 3 for logical consistency. It questions the need for foreign skilled workers but doesn't fully elaborate on the alternative solutions.",
+        "argument_strength": "The turn provides some reasoning for its claims, such as questioning the main cause of labor shortages, but lacks concrete evidence or mechanisms to support its argument, resulting in a score of 3 for argument strength.",
+        "document_grounding": "Without specific references to AfD's documented positions or policies, the turn scores a 3 for document grounding. It aligns with general right-wing populist stances on migration but doesn't explicitly ground its claims in party documents.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's argument about the need for skilled foreign workers, making it responsive and scoring a 4. It addresses the preceding argument and offers a counterpoint.",
+        "stance_differentiation": "The turn clearly reflects a distinct party identity, differentiating itself from CDU/CSU and other parties by its skepticism towards foreign skilled worker immigration, thus scoring a 4 for stance differentiation. It presents a unique perspective on the issue."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 4883,
+      "token_count_output": 614,
+      "latency_s": 2.088,
+      "timestamp": "2026-06-24T09:48:45.249173Z"
+    },
+    {
+      "turn_id": "92704a2b-d1f2-4a81-9943-7300b69fdbab",
+      "round_number": 2,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "**CDU/CSU (Runde 2):** **Regulierung der Migrations- und Asylpolitik**\n\nBezüglich der Argumentation von Die Linke, dass die CDU/CSU die wahren Ursachen der Arbeitsplatzmangel ignoriere und die Fachkräftezufuhr ausländischer Herkunft als Lösung anbiete, möchten wir darauf hinweisen, dass die Schaffung von Arbeitsplätzen in Deutschland nicht nur durch die Politik der Großen Koalition und der CDU/CSU selbst, sondern auch durch die Wirtschaftskrise und die demografischen Herausforderungen beeinflusst wird. Die Förderung der Zuwanderung von Fachkräften ausländischer Herkunft ist daher ein notwendiger Schritt, um die Arbeitsplatzmärkte in Deutschland zu stärken. Wir setzen uns für eine geregelte Z",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, addressing opposing views without personal attacks or inflammatory language, thus scoring a 4 for being respectful and professional throughout.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and responds to preceding arguments, making it clearly on-topic and relevant to the discussion.",
+        "logical_consistency": "The argument presented is coherent and logically structured, connecting the need for regulated immigration of skilled workers to the strengthening of labor markets in Germany, thus demonstrating internal consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, referencing the impact of economic crises and demographic challenges on labor markets, which strengthens its argument.",
+        "document_grounding": "The position reflected in the turn aligns with the CDU/CSU's known stance on migrationspolitik, emphasizing the need for a regulated approach to immigration, thus grounding the argument in the party's documented positions.",
+        "responsiveness": "The turn directly engages with the argument made by Die Linke, addressing their critique of the CDU/CSU's stance on labor market needs and immigration, demonstrating a clear response to the preceding speaker's arguments.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity, reflecting the CDU/CSU's specific values and priorities regarding migrationspolitik, making it unmistakably aligned with the party's known positions."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 5226,
+      "token_count_output": 570,
+      "latency_s": 2.214,
+      "timestamp": "2026-06-24T09:48:47.421343Z"
+    },
+    {
+      "turn_id": "f0a9a1d7-e2ac-4b4c-82a7-5a86396f825e",
+      "round_number": 2,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "**SPD (Runde 2)**\n\nBezüglich der Argumentation der CDU/CSU, dass die Förderung der Zuwanderung von Fachkräften ausländischer Herkunft ein notwendiger Schritt ist, um die Arbeitsplatzmärkte in Deutschland zu stärken, stimmen wir in der Notwendigkeit einer Stärkung der Arbeitsplatzmärkte zu. Allerdings müssen wir uns bewusst sein, dass die Zuwanderung von Fachkräften nicht als Ersatz für die eigene Bildungspolitik und die Förderung von Qualifikationen in Deutschland dienen kann. Die CDU/CSU möchte uns glauben machen, dass die Lösung für die Arbeitsplatzmangel auf der Zuwanderung von Fachkräften ausländischer Herkunft liegt, aber wir müssen uns auf die eigene Bildungspolitik und die Förder",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques the CDU/CSU's position without personal attacks, and engages in respectful disagreement, which warrants a score of 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and responds to the CDU/CSU's argument, making it clearly relevant to the discussion.",
+        "logical_consistency": "The argument presented is coherent and logically consistent, as it challenges the CDU/CSU's focus on foreign skilled workers and instead emphasizes the importance of domestic education policy and qualification promotion.",
+        "argument_strength": "The turn provides a well-supported claim by arguing that relying on foreign skilled workers should not replace domestic education and qualification efforts, demonstrating a strong argument.",
+        "document_grounding": "While the turn generally aligns with the SPD's known positions on education and labor market policies, it does not directly reference specific party documents or programs, hence a score of 3 for document grounding.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's preceding argument, addressing their point about the necessity of foreign skilled workers for strengthening the labor market, which shows a high level of responsiveness.",
+        "stance_differentiation": "The turn clearly maintains a distinct SPD position by emphasizing the importance of domestic education policy and the promotion of qualifications within Germany, differentiating itself from the CDU/CSU's stance."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 5684,
+      "token_count_output": 578,
+      "latency_s": 2.104,
+      "timestamp": "2026-06-24T09:48:49.652042Z"
+    },
+    {
+      "turn_id": "f08fb9f8-96ff-4c3e-9f69-e9270353467d",
+      "round_number": 2,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "**Bündnis 90/Die Grünen (Runde 2)**\n\nBezüglich der Argumentation der CDU/CSU, dass die Förderung der Zuwanderung von Fachkräften ausländischer Herkunft ein notwendiger Schritt ist, um die Arbeitsplatzmärkte in Deutschland zu stärken, stimmen wir in der Notwendigkeit einer Stärkung der Arbeitsplatzmärkte zu. Allerdings glauben wir, dass dies nur dann gelingen kann, wenn wir auch die humanitären Verpflichtungen Deutschlands gegenüber Flüchtlingen berücksichtigen und ein System schaffen, das Flüchtlinge bereits bei der Einreise unterstützt und ihnen hilft, ihre Qualifikationen zu nutzen. Dazu sollten wir den Zugang zu Bildung, Ausbildung und dem Arbeitsmarkt erleichtern. Wir setzen uns auch für eine schnelle Anerk",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without attacking parties directly, which aligns with a score of 4 for being professional and respectful.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by highlighting the importance of considering humanitarian obligations towards refugees, making it relevant and focused.",
+        "logical_consistency": "The argument is internally consistent, connecting the need for a strong labor market with the necessity of supporting refugees in utilizing their qualifications, demonstrating a clear logical structure.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the need to facilitate access to education, training, and the labor market for refugees, which strengthens the argument.",
+        "document_grounding": "The argument reflects documented positions of Bündnis 90/Die Grünen, such as emphasizing the importance of humanitarian obligations and the integration of refugees, aligning with their known policy stances.",
+        "responsiveness": "The turn directly engages with the preceding argument by the CDU/CSU, responding to their claim about the necessity of fostering the immigration of foreign skilled workers by emphasizing the need to also support refugees, showing clear responsiveness.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity and ideological position, recognizable as Bündnis 90/Die Grünen's stance on migrationspolitik, emphasizing both economic and humanitarian aspects."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 6131,
+      "token_count_output": 579,
+      "latency_s": 2.27,
+      "timestamp": "2026-06-24T09:48:51.662191Z"
+    },
+    {
+      "turn_id": "26216aad-de40-457a-abd4-3860676aed69",
+      "round_number": 2,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "**[FDP]** (Runde 2): **FDP (Freie Demokratische Partei) - Runde 2: Reform der Migrations- und Asylpolitik**\n\nBezüglich der Argumentation der SPD, dass die Zuwanderung von Fachkräften nicht als Ersatz für die eigene Bildungspolitik und die Förderung von Qualifikationen in Deutschland dienen kann, stimmen wir in der Notwendigkeit einer Stärkung der eigener Bildungspolitik zu. Die FDP setzt sich jedoch für eine pragmatische und marktorientierte Lösung ein, die es deutschen Unternehmen ermöglicht, die Fachkräfte zu beschäftigen, die sie benötigen. Dazu müssen die Rahmenbedingungen für die Zuwanderung von Fachkräften deutlich verbessert und die bürokratischen Hürden abgesenkt werden. Wir sollten uns",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without attacking parties directly, which aligns with a score of 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and engages with the preceding argument, making it clearly relevant and deserving of a score of 4.",
+        "logical_consistency": "The argument presented is coherent and logically consistent, advocating for a marktorientierte Lösung without contradictions, which warrants a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning about improving Rahmenbedingungen for Fachkräfte, supporting a score of 4 for argument strength.",
+        "document_grounding": "The FDP's position reflects their known stance on migrationspolitik, emphasizing marktorientierte Lösungen and the improvement of conditions for Fachkräfte, which aligns with a score of 4.",
+        "responsiveness": "The turn directly engages with the SPD's preceding argument, responding to their concerns about Bildungspolitik and Qualifikationen, earning a score of 4 for responsiveness.",
+        "stance_differentiation": "The FDP clearly maintains its distinct party identity, emphasizing pragmatische and marktorientierte solutions that differentiate it from other parties, supporting a score of 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 6564,
+      "token_count_output": 563,
+      "latency_s": 1.91,
+      "timestamp": "2026-06-24T09:48:53.908788Z"
+    },
+    {
+      "turn_id": "f6d7c5fd-5309-427f-b3b8-658bbb511bde",
+      "round_number": 2,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "**Die Linke (Runde 2)**\n\nBezüglich der Argumentation der CDU/CSU, dass die Förderung der Zuwanderung von Fachkräften ausländischer Herkunft ein notwendiger Schritt ist, um die Arbeitsplatzmärkte in Deutschland zu stärken, müssen wir uns an die wahren Ursachen des Arbeitsplatzmangels erinnern. Die Politik der Großen Koalition und der CDU/CSU selbst hat zu einer prekären Arbeitswelt und einer Ausbeutung von Arbeitnehmern geführt. Wir setzen uns daher für eine umfassende Reform der Arbeitsmarktpolitik ein, die die Rechte der Arbeitnehmer stärkt und eine faire Verteilung der Arbeitsplätze sicherstellt.\n\nIndem wir die Zuwanderung von Fachkräften ausländischer Herkunft priorisieren, verfechten",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiquing policies without personal attacks, thus scoring 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and its relation to the labor market, making it relevant and scoring 4.",
+        "logical_consistency": "The argument is coherent, linking the cause of labor shortages to the policies of the Große Koalition and CDU/CSU, and proposing a reform as a solution, which earns a score of 4.",
+        "argument_strength": "The turn provides a clear argument against prioritizing the immigration of foreign skilled workers and for reforming labor market policies, supporting its claims with a critique of current policies, thus scoring 4.",
+        "document_grounding": "While the turn aligns with Die Linke's general stance on labor rights and critique of neoliberal policies, it does not directly reference specific party documents or programs, resulting in a score of 3.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's argument about the necessity of immigration for labor market strengthening, countering with an alternative perspective, which demonstrates strong responsiveness and earns a score of 4.",
+        "stance_differentiation": "The turn clearly distinguishes Die Linke's position from others, particularly the CDU/CSU, by emphasizing the need for labor market reform and the protection of workers' rights, thus scoring 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 7015,
+      "token_count_output": 587,
+      "latency_s": 2.261,
+      "timestamp": "2026-06-24T09:48:55.967031Z"
+    },
+    {
+      "turn_id": "ae02f4ee-fa4e-439e-8e2a-676c4e56aa72",
+      "round_number": 2,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "**AfD (Alternative für Deutschland) - Runde 2: Reform der Migrations- und Asylpolitik**\n\nBezüglich der Argumentation der FDP, dass die Förderung der Zuwanderung von Fachkräften eine pragmatische und marktorientierte Lösung ist, stimmen wir nicht überein. Die FDP will uns glauben machen, dass die Lösung für die Arbeitsplatzmangel auf der Zuwanderung von Fachkräften ausländischer Herkunft liegt, aber wir sollten uns bewusst sein, dass dies die tatsächlichen Bedürfnisse Deutschlands nicht berücksichtigt. Die Hauptursache der Arbeitsplatzmangel ist die fehlende Anreiz für die deutsche Bevölkerung, sich in diesen Berufen zu qualifizieren und zu arbeiten. Wir sollten daher nicht die Zuwanderung von Fachkräften ausländischer",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques the FDP's position without personal attacks, and avoids inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and responds to the FDP's argument, making it clearly relevant and deserving of a score of 4.",
+        "logical_consistency": "The argument presented is coherent and logically consistent, as it critiques the FDP's stance on Zuwanderung von Fachkräften and presents an alternative perspective on the cause of Arbeitsplatzmangel, thus scoring a 4.",
+        "argument_strength": "The turn provides a clear and reasoned argument against the FDP's position, offering an alternative explanation for Arbeitsplatzmangel, which strengthens its argument and warrants a score of 4.",
+        "document_grounding": "While the turn reflects the AfD's general stance on migrationspolitik, it does not directly reference or ground its claims in specific party documents or known positions, hence a score of 3 for document grounding.",
+        "responsiveness": "The turn directly engages with the FDP's argument, naming the party and addressing its specific claim about the Zuwanderung von Fachkräften, demonstrating exceptional responsiveness and earning a score of 5.",
+        "stance_differentiation": "The turn unmistakably reflects the AfD's distinct position on migrationspolitik, using party-specific reasoning and vocabulary that differentiates it from other parties, thus deserving a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 7437,
+      "token_count_output": 601,
+      "latency_s": 2.315,
+      "timestamp": "2026-06-24T09:48:58.142932Z"
+    },
+    {
+      "turn_id": "73ece1fd-aed4-4a3b-93b1-0b0999f82ccb",
+      "round_number": 3,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "**[CDU/CSU]** (Runde 3): **Bezüglich der Argumentation der AfD, dass die Hauptursache des Arbeitsplatzmangels die fehlende Anreiz für die deutsche Bevölkerung, sich in diesen Berufen zu qualifizieren und zu arbeiten, liegt, möchten wir darauf hinweisen, dass die CDU/CSU bereits Maßnahmen ergriffen hat, um die Qualifizierung und die Beschäftigung in Deutschland zu fördern.** Die Förderung der beruflichen Bildung und die Schaffung von dualen Ausbildungsplätzen sind nur zwei Beispiele für unsere Bemühungen, die deutsche Bevölkerung zu qualifizieren und zu beschäftigen. Allerdings ist es auch wichtig, die Zuwanderung von Fachkräften ausländischer Herkunft zu fördern, um die",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, addressing the AfD's argument without personal attacks or inflammatory language, thus scoring a 4 for being professional and respectful throughout.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and responds to the AfD's preceding argument, making it clearly relevant and focused, thus scoring a 4.",
+        "logical_consistency": "The argument is coherent and logically consistent, presenting a clear position on the need for both domestic qualification measures and the fostering of foreign skilled worker immigration, scoring a 4 for its internal consistency.",
+        "argument_strength": "The turn provides some evidence of the CDU/CSU's efforts to promote vocational training and create dual education positions, strengthening its argument, thus scoring a 4 for well-supported claims.",
+        "document_grounding": "The turn reflects the CDU/CSU's known positions on promoting vocational education and dual training, aligning with their documented policies, thus scoring a 4 for clearly reflecting documented party positions.",
+        "responsiveness": "The turn directly engages with the AfD's specific argument about the primary cause of labor shortages, naming the party and addressing their claim, thus scoring a 5 for exemplary responsiveness.",
+        "stance_differentiation": "The turn clearly maintains the CDU/CSU's distinct party identity, emphasizing their unique approach to balancing domestic qualification with foreign skilled worker immigration, thus scoring a 4 for being clearly identifiable as the CDU/CSU's position."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 7780,
+      "token_count_output": 593,
+      "latency_s": 2.5580000000000003,
+      "timestamp": "2026-06-24T09:49:00.455942Z"
+    },
+    {
+      "turn_id": "a028d420-f612-4580-a928-2a490a5d17b2",
+      "round_number": 3,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "**SPD** (Runde 3)\n\nBezüglich der Argumentation der CDU/CSU, dass die Förderung der beruflichen Bildung und die Schaffung von dualen Ausbildungsplätzen bereits Maßnahmen sind, um die Qualifizierung und die Beschäftigung in Deutschland zu fördern, stimmen wir in der Notwendigkeit der Förderung der beruflichen Bildung zu. Allerdings glauben wir, dass diese Maßnahmen nicht ausreichen, um die demografischen Herausforderungen und die Arbeitsplatzmärkte in Deutschland zu stärken. Wir müssen uns auch auf die Zuwanderung von Fachkräften ausländischer Herkunft konzentrieren, die bereits in Deutschland leben und die Qualifikationen haben, die unsere Wirtschaft benötigt. Dazu müssen wir die Rahmenbedingungen für die Zuwanderung von Fachkr",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques policies without attacking parties directly, and shows respect for opposing views, which aligns with a score of 4 for being professional and respectful throughout.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and advances the discussion by focusing on the need for both fostering domestic qualifications and considering the integration of foreign skilled workers, making it clearly on-topic and relevant.",
+        "logical_consistency": "The argument is coherent, connecting the need for skilled workers with the necessity of both domestic education policies and the integration of already present foreign skilled workers, demonstrating a clear logical structure.",
+        "argument_strength": "The turn provides well-supported claims, emphasizing the importance of both domestic qualification and the integration of foreign skilled workers, offering a balanced approach that strengthens the argument.",
+        "document_grounding": "The turn reflects the SPD's known positions on migration and education, emphasizing the need for a balanced approach that includes both domestic education policies and the integration of foreign skilled workers, aligning with the party's documented stances.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's preceding argument, addressing their points about fostering domestic qualifications and dual training positions, and provides a clear counterpoint by emphasizing the necessity of also integrating foreign skilled workers, demonstrating exceptional responsiveness.",
+        "stance_differentiation": "The turn clearly identifies the SPD's position, distinguishing it from the CDU/CSU's stance by emphasizing the importance of integrating foreign skilled workers already in Germany, while also highlighting the party's commitment to domestic education and training, thus maintaining a distinct party identity."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 8024,
+      "token_count_output": 618,
+      "latency_s": 2.633,
+      "timestamp": "2026-06-24T09:49:03.121619Z"
+    },
+    {
+      "turn_id": "1c6f198d-bf1e-4fb4-a252-ac4f74389298",
+      "round_number": 3,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "**Bündnis 90/Die Grünen (Runde 3)**\n\nBezüglich der Argumentation der CDU/CSU, dass die Förderung der beruflichen Bildung und die Schaffung von dualen Ausbildungsplätzen bereits wichtige Schritte sind, um die Qualifizierung und die Beschäftigung in Deutschland zu fördern, stimmen wir in der Notwendigkeit der Förderung der beruflichen Bildung zu. Allerdings glauben wir, dass diese Maßnahmen nicht ausreichen, um die demografischen Herausforderungen und die Arbeitsplatzmärkte in Deutschland zu stärken. Wir müssen auch die humanitären Verpflichtungen Deutschlands gegenüber Flüchtlingen berücksichtigen und ein System schaffen, das Flüchtlinge bereits bei der Einreise unterstützt und ihnen hilft, ihre Qualifikationen zu nutzen.\n\nWir",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by highlighting the need to consider both demographic challenges and humanitarian obligations, making it relevant and deserving of a score of 4.",
+        "logical_consistency": "The argument is internally consistent, connecting the need for berufliche Bildung with the necessity of supporting refugees in utilizing their qualifications, demonstrating logical consistency and thus a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning about the importance of addressing both economic and humanitarian aspects of migration policy, warranting a score of 4 for argument strength.",
+        "document_grounding": "The argument reflects documented positions of Bündnis 90/Die Grünen, such as the emphasis on both environmental and social justice, which suggests a strong connection to the party's known programme content, hence a score of 4.",
+        "responsiveness": "The turn directly engages with the preceding speaker's (CDU/CSU) arguments about berufliche Bildung and dualen Ausbildungsplätzen, responding to specific claims and thus demonstrating responsiveness worthy of a score of 4.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity and ideological position, emphasizing the importance of humanitarian obligations towards refugees and the need for a comprehensive approach to migration, which is unmistakably aligned with Bündnis 90/Die Grünen's stance, deserving a score of 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 8261,
+      "token_count_output": 625,
+      "latency_s": 2.5780000000000003,
+      "timestamp": "2026-06-24T09:49:05.639105Z"
+    },
+    {
+      "turn_id": "6da52eb9-2ecd-4c43-b3dc-699914cba9da",
+      "round_number": 3,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "**[FDP]** (Runde 3): **FDP (Freie Demokratische Partei) - Runde 3: Reform der Migrations- und Asylpolitik**\n\nBezüglich der Argumentation der SPD, dass die Förderung der Zuwanderung von Fachkräften ausländischer Herkunft bereits in Deutschland lebend notwendig ist, um die Qualifikationen zu nutzen, die unsere Wirtschaft benötigt, stimmen wir in der Notwendigkeit der Förderung der Zuwanderung zu. Die FDP setzt sich jedoch auch für eine pragmatische und marktorientierte Lösung ein, die es deutschen Unternehmen ermöglicht, die Fachkräfte zu beschäftigen, die sie benötigen. Dazu müssen die Rahmenbedingungen für die Zuwanderung von Fachkräften deutlich verbessert und die bürokratischen Hürden abgesenkt",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without targeting parties as entities, which aligns with a score of 4 for being professional and respectful.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by engaging with the SPD's argument, making it relevant and deserving of a score of 4.",
+        "logical_consistency": "The argument presented is internally consistent, with the FDP's position on a pragmatische and marktorientierte Lösung for the Zuwanderung of Fachkräfte being clearly stated and logically connected to the need for improved Rahmenbedingungen, thus scoring 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the need to improve Rahmenbedingungen for the Zuwanderung of Fachkräfte, which strengthens the argument and warrants a score of 4.",
+        "document_grounding": "The turn reflects the FDP's known position on migrationspolitik, aligning with their documented stance on the need for a marktorientierte Lösung, thus scoring 4 for being clearly anchored in the party's programme content.",
+        "responsiveness": "The turn directly engages with the SPD's preceding argument regarding the Zuwanderung of Fachkräfte already living in Germany, demonstrating a clear response to the specific claim made, which merits a score of 4.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity and ideological position, with the FDP's emphasis on a pragmatische and marktorientierte Lösung distinguishing it from other parties, thus scoring 4 for unmistakable differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 8476,
+      "token_count_output": 637,
+      "latency_s": 2.564,
+      "timestamp": "2026-06-24T09:49:08.285156Z"
+    },
+    {
+      "turn_id": "e0544998-b26f-4949-bd30-981c55ce6a2b",
+      "round_number": 3,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "**Die Linke (Runde 3)**\n\nBezüglich der Argumentation der FDP, dass die Förderung der Zuwanderung von Fachkräften ausländischer Herkunft notwendig ist, um die Qualifikationen zu nutzen, die unsere Wirtschaft benötigt, müssen wir uns an die wahren Ursachen des Arbeitsplatzmangels erinnern. Die FDP will uns glauben machen, dass die Lösung für die Arbeitsplatzmangel auf der Zuwanderung von Fachkräften ausländischer Herkunft liegt, aber in Wirklichkeit ist die Politik der Großen Koalition und der FDP selbst verantwortlich für die prekäre Arbeitswelt und die Ausbeutung von Arbeitnehmern. Wir setzen uns daher für eine umfassende Reform der Arbeitsmarktpolitik ein, die die Rechte der Arbeitnehmer stärkt und eine faire V",
+      "scores": {
+        "civility": 3,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone without personal attacks or inflammatory language, meeting the basic expectations for civility in a debate.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and responds to the FDP's argument, staying relevant to the discussion.",
+        "logical_consistency": "The argument is coherent and logically consistent, criticizing the FDP's position and presenting an alternative perspective on the causes of Arbeitsplatzmangel.",
+        "argument_strength": "The turn provides a clear and well-supported argument, citing the impact of the Große Koalition and FDP's policies on the Arbeitswelt and Arbeitnehmer, strengthening its claim.",
+        "document_grounding": "The turn aligns with Die Linke's known positions on Arbeitsmarktpolitik and the need for a comprehensive reform to protect Arbeitnehmer rights, reflecting the party's documented stance.",
+        "responsiveness": "The turn directly engages with the FDP's argument, addressing their perspective on the Zuwanderung of Fachkräfte and presenting a counterargument, demonstrating responsiveness to the preceding turn.",
+        "stance_differentiation": "The turn unmistakably reflects Die Linke's distinct ideological position, emphasizing the need for a comprehensive reform of Arbeitsmarktpolitik to protect Arbeitnehmer rights and criticizing the FDP's market-oriented approach."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 8716,
+      "token_count_output": 560,
+      "latency_s": 2.293,
+      "timestamp": "2026-06-24T09:49:10.888810Z"
+    },
+    {
+      "turn_id": "67580e1a-1cf6-497d-a051-68de35f3eabb",
+      "round_number": 3,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "**AfD (Alternative für Deutschland) - Runde 3: Reform der Migrations- und Asylpolitik**\n\nBezüglich der Argumentation der SPD, dass die Förderung der Zuwanderung von Fachkräften ausländischer Herkunft bereits in Deutschland lebend notwendig ist, um die Qualifikationen zu nutzen, die unsere Wirtschaft benötigt, stimmen wir nicht überein. Die SPD will uns glauben machen, dass die Lösung für die Arbeitsplatzmangel auf der Zuwanderung von Fachkräften ausländischer Herkunft liegt, aber wir sollten uns bewusst sein, dass dies die tatsächlichen Bedürfnisse Deutschlands nicht berücksichtigt. Die Hauptursache der Arbeitsplatzmangel ist die fehlende Anreiz für die deutsche Bevölkerung, sich in diesen Berufen zu qualifizieren und zu arbeiten",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 3,
+        "document_grounding": 3,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone and avoids personal attacks or inflammatory language, but does not go out of its way to acknowledge the legitimacy of opposing perspectives, thus scoring a 4.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and engages with the preceding argument, making it clearly relevant and thus scoring a 4.",
+        "logical_consistency": "The argument presented is coherent and does not contain obvious contradictions, making it logically consistent and thus scoring a 4.",
+        "argument_strength": "The turn provides some reasoning but lacks specific evidence or mechanisms to support its claims, making the argument strength merely adequate at a 3.",
+        "document_grounding": "The turn does not explicitly reference the party's documented positions, making it difficult to assess its faithfulness to these positions, thus scoring a 3.",
+        "responsiveness": "The turn directly engages with the preceding speaker's argument, specifically addressing the SPD's position on the necessity of fostering the immigration of skilled workers already living in Germany, thus scoring a 4.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity and ideological position, differentiating itself from the SPD's stance, thus scoring a 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 8926,
+      "token_count_output": 538,
+      "latency_s": 2.356,
+      "timestamp": "2026-06-24T09:49:13.122088Z"
+    },
+    {
+      "turn_id": "f5ffda3c-37c4-4e00-bf9c-a8513408894a",
+      "round_number": 4,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "**[CDU/CSU]** (Runde 4): **Bezüglich der Argumentation von Die Linke, dass die FDP die Hauptursache des Arbeitsplatzmangels ignoriere und die Zuwanderung von Fachkräften ausländischer Herkunft als Lösung anbiete, möchten wir darauf hinweisen, dass die CDU/CSU bereits Maßnahmen ergriffen hat, um die Qualifizierung und die Beschäftigung in Deutschland zu fördern.** Wir haben die berufliche Bildung und die Schaffung von dualen Ausbildungsplätzen gefördert, um die deutsche Bevölkerung zu qualifizieren und zu beschäftigen. Allerdings ist es auch wichtig, die Zuwanderung von Fachkräften ausländischer Herkunft zu fördern, um die demografischen Herausforderungen und die Arbeits",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, addressing opposing views without personal attacks or inflammatory language, thus scoring a 4 for being professional and respectful throughout.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and engages with preceding arguments, making it clearly relevant and focused, hence a score of 4.",
+        "logical_consistency": "The argument is coherent, connecting the need for qualified workers with both domestic education policies and the importance of foreign skilled worker immigration, earning a score of 4 for its logical structure.",
+        "argument_strength": "The turn provides a clear rationale for why both domestic qualification measures and foreign skilled worker immigration are necessary, supporting its claims with the context of demographic challenges, thus scoring a 4 for well-supported claims.",
+        "document_grounding": "The CDU/CSU's known positions on promoting vocational training and dual education tracks are reflected, aligning with their documented policies, which warrants a score of 4 for clearly reflecting documented party positions.",
+        "responsiveness": "The turn directly engages with Die Linke's argument, addressing their critique of the FDP's stance on skilled worker immigration, demonstrating a clear response to the preceding speaker's specific arguments, hence a score of 4.",
+        "stance_differentiation": "The turn clearly maintains a distinct CDU/CSU party identity, emphasizing both the promotion of domestic vocational training and the necessity of skilled worker immigration, which is recognizable as part of their political agenda, thus scoring a 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 9060,
+      "token_count_output": 595,
+      "latency_s": 2.856,
+      "timestamp": "2026-06-24T09:49:15.526425Z"
+    },
+    {
+      "turn_id": "bfd64f9b-cdff-461e-8e46-f771dffabfbe",
+      "round_number": 4,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "Bezüglich der Argumentation der CDU/CSU, dass die Förderung der beruflichen Bildung und die Schaffung von dualen Ausbildungsplätzen bereits wichtige Schritte sind, um die Qualifizierung und die Beschäftigung in Deutschland zu fördern, stimmen wir in der Notwendigkeit der Förderung der beruflichen Bildung zu. Allerdings glauben wir, dass dies nur einen Teil der Lösung darstellt. Wir müssen uns auch auf die Zuwanderung von Fachkräften ausländischer Herkunft konzentrieren, die bereits in Deutschland leben und die Qualifikationen haben, die unsere Wirtschaft benötigt. Dazu müssen wir die Rahmenbedingungen für die Zuwanderung von Fachkräften deutlich verbessern und die bürokratischen Hürden abbauen. Wir setzen uns auch für die Förderung der Integration von Fl",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without personal attacks or inflammatory language, thus scoring a 4 for being professional and respectful.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by focusing on the need for improved conditions for the immigration of skilled workers, making it a 4 for being clearly on-topic and focused.",
+        "logical_consistency": "The argument is internally consistent, connecting the need for skilled workers with the necessity to improve immigration conditions and integrate those already in Germany, which demonstrates a clear logical structure and earns a 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning about the need to improve conditions for skilled worker immigration and to integrate those already in Germany, making it a 4 for being well-supported.",
+        "document_grounding": "The argument reflects the SPD's known positions on immigration and integration, aligning with their documented policies and thus scoring a 4 for clearly reflecting documented party positions.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's argument about promoting vocational training and dual education, responding to their specific claims and advancing the discussion, which earns a 4 for identifying and engaging with a specific opposing claim.",
+        "stance_differentiation": "The turn clearly maintains a distinct SPD identity and ideological position, emphasizing the importance of integrating immigrants and improving conditions for skilled workers, which is recognizable as an SPD stance and scores a 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 9305,
+      "token_count_output": 596,
+      "latency_s": 2.678,
+      "timestamp": "2026-06-24T09:49:18.414210Z"
+    },
+    {
+      "turn_id": "fd228598-f313-42ed-b324-3cd18242b08c",
+      "round_number": 4,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "**Bündnis 90/Die Grünen (Runde 4)**\n\nBezüglich der Argumentation der CDU/CSU, dass die Förderung der beruflichen Bildung und die Schaffung von dualen Ausbildungsplätzen bereits wichtige Schritte sind, um die Qualifizierung und die Beschäftigung in Deutschland zu fördern, stimmen wir in der Notwendigkeit der Förderung der beruflichen Bildung zu. Allerdings glauben wir, dass dies nur einen Teil der Lösung darstellt. Wir müssen auch die humanitären Verpflichtungen Deutschlands gegenüber Flüchtlingen berücksichtigen und ein System schaffen, das Flüchtlinge bereits bei der Einreise unterstützt und ihnen hilft, ihre Qualifikationen zu nutzen.\n\nWir setzen uns daher für eine schnelle Anerkennung von Qualifikationen ein und für die För",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without attacking parties directly, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by highlighting the importance of considering humanitarian obligations towards refugees, making it relevant and deserving of a score of 4.",
+        "logical_consistency": "The argument is internally consistent, connecting the need for berufliche Bildung with the necessity of supporting refugees in utilizing their qualifications, demonstrating logical consistency and thus a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the need for a system to support refugees in utilizing their qualifications, which strengthens the argument and warrants a score of 4.",
+        "document_grounding": "The turn reflects documented party positions of Bündnis 90/Die Grünen, such as emphasizing humanitarian obligations and the importance of integrating refugees into the workforce, aligning with their known policies and thus scoring 4.",
+        "responsiveness": "The turn directly engages with the preceding speaker's arguments, specifically addressing the CDU/CSU's points on berufliche Bildung and dualen Ausbildungsplätzen, and offers a distinct perspective, which demonstrates responsiveness and earns a score of 4.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity, emphasizing the importance of humanitarian considerations and the integration of refugees, which are hallmark positions of Bündnis 90/Die Grünen, thereby scoring 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 9538,
+      "token_count_output": 614,
+      "latency_s": 2.425,
+      "timestamp": "2026-06-24T09:49:21.093353Z"
+    },
+    {
+      "turn_id": "5e441e29-bd18-4ce8-9e0b-493b775f176a",
+      "round_number": 4,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "**[FDP]** (Runde 4): **FDP (Freie Demokratische Partei) - Runde 4: Reform der Migrations- und Asylpolitik**\n\nBezüglich der Argumentation der SPD, dass die Förderung der Zuwanderung von Fachkräften ausländischer Herkunft bereits in Deutschland lebend notwendig ist, um die Qualifikationen zu nutzen, die unsere Wirtschaft benötigt, stimmen wir überein. Die FDP setzt sich jedoch auch für eine pragmatische und marktorientierte Lösung ein, die es deutschen Unternehmen ermöglicht, die Fachkräfte zu beschäftigen, die sie benötigen. Dazu müssen die Rahmenbedingungen für die Zuwanderung von Fachkräften deutlich verbessert und die bürokratischen Hürden abgesenkt werden.\n\nWir sollten uns nicht auf die Zuwanderung",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, with no personal attacks or inflammatory language, thus scoring a 4 for being respectful throughout.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and stays focused on the issue of Fachkräfte migration, scoring a 4 for clear relevance.",
+        "logical_consistency": "The argument presented is coherent and logically consistent, with a clear structure connecting premises to conclusions, thus scoring a 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and references to the need for improving conditions for Fachkräfte migration, scoring a 4 for strong argumentation.",
+        "document_grounding": "The turn aligns with the FDP's known positions on migrationspolitik, reflecting a commitment to pragmatische and marktorientierte Lösungen, thus scoring a 4.",
+        "responsiveness": "The turn directly engages with the preceding speaker's (SPD) arguments, addressing their points and presenting a counter or complementary perspective, scoring a 4 for responsiveness.",
+        "stance_differentiation": "The turn clearly maintains a distinct FDP party identity, using party-specific values and priorities, thus scoring a 4 for strong stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 9753,
+      "token_count_output": 540,
+      "latency_s": 2.667,
+      "timestamp": "2026-06-24T09:49:23.668769Z"
+    },
+    {
+      "turn_id": "b981b36c-a49a-46dc-8731-3b9947b7df30",
+      "round_number": 4,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "**Die Linke (Runde 4)**\n\nBezüglich der Argumentation der SPD, dass die Förderung der Zuwanderung von Fachkräften ausländischer Herkunft bereits in Deutschland lebend notwendig ist, um die Qualifikationen zu nutzen, die unsere Wirtschaft benötigt, stimmen wir überein. Allerdings müssen wir uns auch an die wahren Ursachen des Arbeitsplatzmangels erinnern. Die Politik der Großen Koalition und der SPD selbst hat zu einer prekären Arbeitswelt und einer Ausbeutung von Arbeitnehmern geführt.\n\nWir setzen uns daher für eine umfassende Reform der Arbeitsmarktpolitik ein, die die Rechte der Arbeitnehmer stärkt und eine faire Verteilung der Arbeitsplätze sicherstellt. Dazu müssen wir die Mindestlohnpolitik stärken, die Arbeitszeitverk",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques policies without personal attacks, and does not use inflammatory language, thus scoring a 4 for being professional and respectful throughout.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and the discussion on Arbeitsplatzmangel, staying focused on the issue at hand, which warrants a score of 4 for clearly addressing the debate question.",
+        "logical_consistency": "The argument is coherent, connecting the need for Arbeitsmarktpolitik reform to the issues of prekäre Arbeitswelt and Ausbeutung von Arbeitnehmern, earning a 4 for internal consistency with a clear logical structure.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning about the need for a umfassende Reform der Arbeitsmarktpolitik, thus scoring a 4 for well-supported claims with specific reasoning.",
+        "document_grounding": "The argument aligns with Die Linke's known positions on Arbeitsmarktpolitik and sozialer Gerechtigkeit, reflecting a strong connection to the party's documented stances, which justifies a score of 4.",
+        "responsiveness": "The turn directly engages with the SPD's argument regarding the Zuwanderung von Fachkräften, addressing their points and offering a counter perspective, deserving a 4 for identifying and engaging with a specific opposing claim.",
+        "stance_differentiation": "The turn unmistakably reflects Die Linke's distinct ideological position, emphasizing the need for a strong Mindestlohnpolitik and faire Verteilung der Arbeitsplätze, which is unmistakably distinct from other parties, thus scoring a 5 for being unmistakably distinct."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 9993,
+      "token_count_output": 637,
+      "latency_s": 2.525,
+      "timestamp": "2026-06-24T09:49:26.213509Z"
+    },
+    {
+      "turn_id": "7f505982-cfad-4d73-ad5e-ae8d39c99616",
+      "round_number": 4,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "**AfD (Alternative für Deutschland) - Runde 4: Reform der Migrations- und Asylpolitik**\n\nBezüglich der Argumentation von Bündnis 90/Die Grünen, dass die Förderung der beruflichen Bildung und die Schaffung von dualen Ausbildungsplätzen nur einen Teil der Lösung darstellen und die humanitären Verpflichtungen Deutschlands gegenüber Flüchtlingen berücksichtigt werden müssen, stimmen wir nicht überein. Wir glauben, dass die humanitären Verpflichtungen Deutschlands gegenüber Flüchtlingen nicht auf Kosten der Integration der deutschen Bevölkerung gehen dürfen. Es ist wichtig, die Interessen der deutschen Bürgerinnen und Bürger zu schützen und sicherzustellen, dass die Integration von Flüchtlingen nicht zur Belastung unserer Infrastruktur, Bildungssysteme und Arbeitsmär",
+      "scores": {
+        "civility": 3,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone without direct insults or inflammatory language, meeting the basic expectations for civility in a debate.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and engages with the preceding argument, making it clearly relevant to the discussion.",
+        "logical_consistency": "The argument is generally coherent but lacks rigorous logical structure, relying on assertions about the importance of protecting German citizens' interests without fully exploring the implications.",
+        "argument_strength": "The turn presents a clear position but relies on general claims about the need to protect German interests without providing specific evidence or mechanisms to support its argument.",
+        "document_grounding": "The turn aligns with the AfD's known positions on migration and integration, reflecting a clear connection to the party's documented stances.",
+        "responsiveness": "The turn directly engages with the preceding argument from Bündnis 90/Die Grünen, addressing their points about humanitarian obligations and integration.",
+        "stance_differentiation": "The turn unmistakably reflects the AfD's distinctive stance on migration, emphasizing the protection of German citizens' interests and the potential burdens of integration, which is a hallmark of the party's rhetoric and policy positions."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 10203,
+      "token_count_output": 534,
+      "latency_s": 2.6079999999999997,
+      "timestamp": "2026-06-24T09:49:28.865534Z"
+    },
+    {
+      "turn_id": "e38753e8-bfee-419e-9440-cc7f59159c44",
+      "round_number": 5,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "**[CDU/CSU]** (Runde 5): **Bezüglich der Argumentation von Die Linke, dass die Politik der Großen Koalition und die SPD selbst zu einer prekären Arbeitswelt und einer Ausbeutung von Arbeitnehmern geführt haben, möchten wir darauf hinweisen, dass die CDU/CSU bereits Maßnahmen ergriffen hat, um die Arbeitsmarktbedingungen zu verbessern und die Rechte der Arbeitnehmer zu stärken.** Die Mindestlohnpolitik und die Stärkung der Tarifautonomie sind nur zwei Beispiele für unsere Bemühungen, eine faire und sichere Arbeitswelt zu schaffen. Allerdings müssen wir auch die Zuwanderung von Fachkräften ausländischer Herkunft fördern, um die demografischen Herausforderungen und die Arbeitsplatzmärkte in Deutschland",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, addressing opposing views without personal attacks or inflammatory language, thus scoring a 4 for being professional and respectful throughout.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and its impact on the labor market, making it clearly relevant and focused, hence a score of 4.",
+        "logical_consistency": "The argument is internally consistent, connecting the improvement of working conditions and the promotion of skilled worker immigration as solutions to demographic challenges, warranting a score of 4.",
+        "argument_strength": "The turn provides specific examples like the Mindestlohnpolitik and Tarifautonomie to support its claims, making the argument well-supported and thus deserving a score of 4.",
+        "document_grounding": "The CDU/CSU's known positions on labor market policies and immigration are reflected, indicating a strong connection to the party's documented stances, hence a score of 4.",
+        "responsiveness": "The turn directly engages with Die Linke's argument about the causes of precarious working conditions, responding to specific claims and thus scoring 4 for responsiveness.",
+        "stance_differentiation": "The turn clearly reflects the CDU/CSU's distinct position on labor market and immigration policies, differentiating itself from other parties like Die Linke, and thus deserves a score of 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 10335,
+      "token_count_output": 567,
+      "latency_s": 2.492,
+      "timestamp": "2026-06-24T09:49:31.362654Z"
+    },
+    {
+      "turn_id": "4daf8a1c-dff4-4cc5-9b43-c7228c74d577",
+      "round_number": 5,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "**SPD (Runde 5)**\n\nBezüglich der Argumentation der CDU/CSU, dass sie bereits Maßnahmen ergriffen habe, um die Arbeitsmarktbedingungen zu verbessern und die Rechte der Arbeitnehmer zu stärken, stimmen wir in der Notwendigkeit der Verbesserung der Arbeitsmarktbedingungen zu. Allerdings glauben wir, dass dies nur einen Teil der Lösung darstellt. Wir müssen uns auch auf die Zuwanderung von Fachkräften ausländischer Herkunft konzentrieren, die bereits in Deutschland leben und die Qualifikationen haben, die unsere Wirtschaft benötigt.\n\nDazu müssen wir die Rahmenbedingungen für die Zuwanderung von Fachkräften deutlich verbessern und die bürokratischen Hürden abbauen. Wir setzen uns auch für die Förderung der Integration von Flüchtlingen ein,",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without attacking parties directly, which aligns with a score of 4 for being professional and respectful.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by focusing on the Zuwanderung of Fachkräften, making it relevant and deserving of a score of 4.",
+        "logical_consistency": "The argument is internally consistent, connecting the need for improved Arbeitsmarktbedingungen with the necessity of Zuwanderung von Fachkräften, demonstrating logical flow and earning a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning about the need to improve Rahmenbedingungen for Zuwanderung and to foster Integration von Flüchtlingen, supporting a score of 4 for argument strength.",
+        "document_grounding": "The argument reflects documented SPD positions on migrationspolitik, such as the emphasis on integrating Flüchtlinge and improving conditions for Zuwanderung, which suggests a strong connection to party documents and warrants a score of 4.",
+        "responsiveness": "The turn directly engages with the preceding CDU/CSU argument, addressing their claims about Arbeitsmarktbedingungen and integrating a response to their stance, demonstrating responsiveness and deserving a score of 4.",
+        "stance_differentiation": "The turn clearly maintains a distinct SPD identity, emphasizing the party's priorities on Zuwanderung and Integration, and differentiates itself from other parties' stances, supporting a score of 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 10579,
+      "token_count_output": 618,
+      "latency_s": 2.634,
+      "timestamp": "2026-06-24T09:49:33.950146Z"
+    },
+    {
+      "turn_id": "d4e8a40c-c5cf-4464-8e27-7ae62977b9e8",
+      "round_number": 5,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "Bezüglich der Argumentation der CDU/CSU, dass sie bereits Maßnahmen ergriffen habe, um die Arbeitsmarktbedingungen zu verbessern und die Rechte der Arbeitnehmer zu stärken, stimmen wir in der Notwendigkeit der Verbesserung der Arbeitsmarktbedingungen zu. Allerdings glauben wir, dass dies nur einen Teil der Lösung darstellt. Wir müssen auch die humanitären Verpflichtungen Deutschlands gegenüber Flüchtlingen berücksichtigen und ein System schaffen, das Flüchtlinge bereits bei der Einreise unterstützt und ihnen hilft, ihre Qualifikationen zu nutzen.\n\nWir setzen uns daher für eine schnelle Anerkennung von Qualifikationen ein und für die Förderung der Integration von Flüchtlingen. Dazu müssen wir die Zugangsbedingungen zu Bildung, Ausbildung und dem Arbeitsmarkt erleicht",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without attacking parties directly, which aligns with a score of 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and advances the discussion by focusing on the integration of Flüchtlingen, making it clearly relevant with a score of 4.",
+        "logical_consistency": "The argument is internally consistent, connecting the need for improved Arbeitsmarktbedingungen with the necessity of supporting Flüchtlingen, demonstrating logical consistency and earning a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the need for a schnelle Anerkennung von Qualifikationen, which strengthens the argument and warrants a score of 4.",
+        "document_grounding": "The turn reflects documented party positions of Bündnis 90/Die Grünen, such as the emphasis on humanitären Verpflichtungen and the support for Flüchtlinge, aligning with a score of 4 for document grounding.",
+        "responsiveness": "The turn directly engages with the preceding argument of the CDU/CSU, responding to their claims about improving Arbeitsmarktbedingungen and integrating Flüchtlinge, which demonstrates strong responsiveness and merits a score of 4.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity, emphasizing the importance of humanitäre Verpflichtungen and the integration of Flüchtlinge, which is unmistakably aligned with Bündnis 90/Die Grünen's stance and warrants a score of 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 10814,
+      "token_count_output": 628,
+      "latency_s": 2.394,
+      "timestamp": "2026-06-24T09:49:36.502420Z"
+    },
+    {
+      "turn_id": "a78a507b-5a15-4e39-84b1-4d0be87468de",
+      "round_number": 5,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "Bezüglich der Argumentation der CDU/CSU, dass sie bereits Maßnahmen ergriffen habe, um die Arbeitsmarktbedingungen zu verbessern und die Rechte der Arbeitnehmer zu stärken, stimmen wir in der Notwendigkeit der Verbesserung der Arbeitsmarktbedingungen zu. Allerdings glauben wir, dass dies nur einen Teil der Lösung darstellt. Die FDP setzt sich jedoch für eine pragmatische und marktorientierte Lösung ein, die es deutschen Unternehmen ermöglicht, die Fachkräfte zu beschäftigen, die sie benötigen. Dazu müssen die Rahmenbedingungen für die Zuwanderung von Fachkräften deutlich verbessert und die bürokratischen Hürden abgesenkt werden.\n\nDarüber hinaus müssen wir uns auch auf die Förderung der Qualifikationen und der Integration von Flüchtlingen konzentrier",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without personal attacks or inflammatory language, which aligns with a score of 4 for being professional and respectful.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by focusing on the improvement of working conditions and the integration of skilled workers, which is relevant and focused.",
+        "logical_consistency": "The argument presented is internally consistent, with a clear logical structure connecting premises to conclusions, and the FDP's position on market-oriented solutions is logically coherent.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and identified mechanisms for improving the framework for skilled worker immigration, which demonstrates a strong argument.",
+        "document_grounding": "The turn reflects the FDP's documented positions on migrationspolitik, such as the need for a market-oriented approach to immigration and the importance of integrating skilled workers, which indicates a strong connection to the party's programme.",
+        "responsiveness": "The turn directly engages with the preceding speaker's (CDU/CSU) specific arguments, responding to their claims about improving working conditions and integrating skilled workers, which shows a clear engagement with the opposing view.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity and ideological position, with the FDP's emphasis on market-oriented solutions and the integration of skilled workers distinguishing it from other parties, which demonstrates a clear stance."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 11027,
+      "token_count_output": 586,
+      "latency_s": 2.583,
+      "timestamp": "2026-06-24T09:49:38.966150Z"
+    },
+    {
+      "turn_id": "467ee450-1061-4f1c-a67f-d219c36e020c",
+      "round_number": 5,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Bezüglich der Argumentation der FDP, dass die Förderung der Zuwanderung von Fachkräften ausländischer Herkunft notwendig ist, um die Qualifikationen zu nutzen, die unsere Wirtschaft benötigt, stimmen wir in der Notwendigkeit der Förderung der Zuwanderung zu. Allerdings müssen wir uns auch an die wahren Ursachen des Arbeitsplatzmangels erinnern. Die Politik der Großen Koalition und der FDP selbst hat zu einer prekären Arbeitswelt und einer Ausbeutung von Arbeitnehmern geführt.\n\nWir setzen uns daher für eine umfassende Reform der Arbeitsmarktpolitik ein, die die Rechte der Arbeitnehmer stärkt und eine faire Verteilung der Arbeitsplätze sicherstellt. Dazu müssen wir die Mindestlohnpolitik stärken, die Arbeitszeitverkürzung fö",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques policies without personal attacks, and avoids inflammatory language, thus scoring a 4 for being professional and respectful throughout.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and its relation to the labor market, making it highly relevant and thus scoring a 5.",
+        "logical_consistency": "The argument is generally coherent, connecting the need for labor market reform to the issues of worker exploitation and precarious work conditions, but lacks a rigorous logical chain, scoring a 4.",
+        "argument_strength": "The turn provides some reasoning and evidence for its claims, such as the need to strengthen minimum wage policy and reduce working hours, but could be stronger with more specific data or mechanisms, scoring a 4.",
+        "document_grounding": "The turn aligns with Die Linke's known positions on labor rights and social justice, reflecting their party programme, but does not directly reference specific documents, scoring a 4.",
+        "responsiveness": "The turn directly engages with the FDP's argument about the necessity of fostering immigration of skilled workers, addressing their points and offering a counter perspective, thus scoring a 5 for responsiveness.",
+        "stance_differentiation": "The turn clearly distinguishes Die Linke's position from others, emphasizing the need for comprehensive labor market reform and the protection of workers' rights, making it unmistakably distinct, thus scoring a 5."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 11265,
+      "token_count_output": 579,
+      "latency_s": 2.7800000000000002,
+      "timestamp": "2026-06-24T09:49:41.525454Z"
+    },
+    {
+      "turn_id": "b1aa552a-557d-44da-9bf2-174869572415",
+      "round_number": 5,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "**AfD: Alternative für Deutschland - Runde 5: Reform der Migrations- und Asylpolitik**\n\nBezüglich der Argumentation von Bündnis 90/Die Grünen, dass die humanitären Verpflichtungen Deutschlands gegenüber Flüchtlingen berücksichtigt werden müssen, stimmen wir in der Notwendigkeit der Berücksichtigung der humanitären Verpflichtungen zu. Allerdings glauben wir, dass dies nicht auf Kosten der Sicherheit und der Souveränität Deutschlands gehen dürfen. Die Integration von Flüchtlingen sollte daher sorgfältig geplant und durchgeführt werden, um sicherzustellen, dass sie die Ressourcen und die Infrastruktur unseres Landes nicht überfordern.\n\nWir setzen uns daher für eine strenge Kontrolle der Einreise von Flüchtlingen ein, um sicherzustellen, dass nur diejen",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, avoiding personal attacks or inflammatory language, thus scoring a 4 for civility. The language used is respectful, even when disagreeing with other parties' arguments.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and responds to preceding arguments, making it relevant to the discussion and scoring a 4.",
+        "logical_consistency": "The argument presented is coherent and logically consistent, as it connects the need for controlled immigration with the protection of national security and sovereignty, earning a score of 4.",
+        "argument_strength": "The turn provides a clear argument but lacks specific evidence or detailed mechanisms to support its claims about the integration of refugees, resulting in an adequate score of 3 for argument strength.",
+        "document_grounding": "The turn aligns with the AfD's known positions on migration and asylum policy, reflecting a clear connection to the party's documented stances and scoring a 4 for document grounding.",
+        "responsiveness": "The turn directly engages with the argument presented by Bündnis 90/Die Grünen, demonstrating a clear response to the preceding speaker's specific arguments and scoring a 4 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the AfD's distinct position on migration policy, emphasizing the need for strict control and prioritizing national security, which is a hallmark of the party's stance and thus scores a 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 11472,
+      "token_count_output": 585,
+      "latency_s": 2.681,
+      "timestamp": "2026-06-24T09:49:44.471868Z"
+    }
+  ],
+  "interventions": [],
+  "round_summaries": [],
+  "total_tokens_input": 234325,
+  "total_tokens_output": 17740,
+  "total_latency_s": 73.38,
+  "started_at": "2026-06-24T09:48:33.448003Z",
+  "finished_at": "2026-06-24T09:49:46.223006Z"
+}

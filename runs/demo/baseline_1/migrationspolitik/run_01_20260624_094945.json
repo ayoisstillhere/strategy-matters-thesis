@@ -1,0 +1,940 @@
+{
+  "run_id": "3beb8311-75c7-4cc0-9e35-79a4f2e237c4",
+  "config": {
+    "topic_id": "migrationspolitik",
+    "topic_type": "values-driven",
+    "framing_prompt": "Germany received approximately 330,000 first-time asylum applications in 2023, the highest number since 2016. Municipalities report strain on housing, schools, and administrative capacity, while labour market data shows persistent shortages in healthcare, skilled trades, and IT. Discuss how Germany should reform its migration and asylum policy, addressing the balance between humanitarian obligations under international law, integration capacity, and labour market needs. Ground your arguments in your party's documented positions.",
+    "condition_id": "baseline_1",
+    "condition_label": "None",
+    "condition_type": "baseline",
+    "run_number": 1,
+    "agent_model": "llama-3.1-8b-instant",
+    "judge_model": "llama-3.3-70b-versatile",
+    "moderator_model": "",
+    "num_rounds": 5,
+    "num_agents": 6,
+    "max_interventions": 3,
+    "silent_control_rate": 0.2,
+    "turn_order": [
+      "CDU/CSU",
+      "SPD",
+      "Bündnis 90/Die Grünen",
+      "FDP",
+      "Die Linke",
+      "AfD"
+    ],
+    "has_moderator_agent": false,
+    "uses_trigger": false,
+    "trigger_strategy": null,
+    "nudge_text": ""
+  },
+  "turns": [
+    {
+      "turn_id": "bd8971ea-fcdf-4b77-8591-eb553f6bb605",
+      "round_number": 1,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "Bezüglich der These der Grünen, dass ein liberaleres Asylrecht und stärkere Einwanderungszahlen die wirtschaftlichen Herausforderungen Deutschlands lösen könnten, ist unsere Partei überzeugt, dass ein solches Vorgehen die bestehenden Integrationsdefizite verschärfen würde. Wir benötigen eine effizientere, effektivere und transparentere Asylverfahrens, das die individuellen Schicksale der Asylsuchenden berücksichtigt, ohne gleichzeitig die Integrationsfähigkeit der Gesellschaft zu überlasten. Ein wichtiger Schritt hierfür wäre die Einführung von Abschiebungsabsprachen mit anderen Ländern, um eine Rückkehr von Asylabgelehnten zu ermöglichen und die Belastung der Aufnahmecapazität der Bundesrepublik zu reduzieren.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiquing the policy stance of the Grünen without resorting to personal attacks or inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik, specifically discussing asylum law and integration, making it highly relevant and deserving of a 5.",
+        "logical_consistency": "The argument is coherent, suggesting that a more liberal asylum policy could exacerbate integration deficits and proposing more efficient asylum procedures as a solution, which demonstrates logical consistency and earns a 4.",
+        "argument_strength": "The turn provides a clear reasoning for its stance, including the potential for integration deficits and the need for more efficient procedures, supporting its claims with a plausible mechanism, thus scoring a 4 for argument strength.",
+        "document_grounding": "Although not directly referencing specific party documents, the turn's emphasis on efficient asylum procedures and integration aligns with typical CDU/CSU positions, suggesting a grounding in party policy and warranting a 4.",
+        "responsiveness": "Given this is the first turn, there are no preceding arguments to respond to, making it challenging to score high on responsiveness; hence, it receives a 3 as it sets the stage for the debate.",
+        "stance_differentiation": "The turn clearly articulates a distinct CDU/CSU position on migrationspolitik, emphasizing the need for efficient asylum procedures and consideration of societal integration capacity, which is unmistakably distinct from other parties, earning a 5."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 2672,
+      "token_count_output": 595,
+      "latency_s": 2.263,
+      "timestamp": "2026-06-24T09:48:33.428099Z"
+    },
+    {
+      "turn_id": "84e068cc-b878-47a5-8f66-cd3bf66f770d",
+      "round_number": 1,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "## SPD (Round 1):\nAngesichts der These der CDU/CSU, dass ein liberaleres Asylrecht die bestehenden Integrationsdefizite verschärfen würde, ist unsere Partei der Überzeugung, dass ein solches Vorgehen die Integration und die Einbindung der Geflüchteten in die Gesellschaft gerade nicht behindern würde. Vielmehr müssen wir die Integrationsfähigkeit der Gesellschaft stärken, indem wir die Möglichkeiten für die berufliche und soziale Integration von Geflüchteten erweitern. Dazu gehört die Einführung von Sprachkursen, die Bereitstellung von Bildungs- und Weiterbildungsmöglichkeiten sowie die Unterstützung bei der Eingliederung in den Arbeitsmarkt. Wir müssen auch die Zusammenarbeit mit anderen Ländern stärken, um die gemeinsame Asylpolitik zu verbessern und die Belastung der Auf",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing the CDU/CSU's policy stance without attacking the party directly, which aligns with a score of 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of migrationspolitik and directly engages with the preceding speaker's argument, making it highly relevant and deserving of a score of 5.",
+        "logical_consistency": "The argument is generally coherent, suggesting that strengthening integration capabilities through various measures would not hinder but rather support the integration of refugees, which is logically consistent and warrants a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the introduction of language courses and job training, to enhance refugee integration, which supports a score of 4 for argument strength.",
+        "document_grounding": "The SPD's emphasis on enhancing integration opportunities for refugees aligns with their documented positions on social and economic integration, suggesting a strong grounding in party policy and thus a score of 4.",
+        "responsiveness": "The turn directly addresses and engages with the CDU/CSU's argument regarding the potential negative impact of a more liberal asylum policy on integration, demonstrating high responsiveness and earning a score of 5.",
+        "stance_differentiation": "The SPD clearly differentiates its stance by emphasizing the importance of strengthening societal integration capabilities and cooperation with other countries, which is recognizable as an SPD position and merits a score of 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 3115,
+      "token_count_output": 593,
+      "latency_s": 2.249,
+      "timestamp": "2026-06-24T09:48:35.544410Z"
+    },
+    {
+      "turn_id": "83fcb290-efa8-4dd3-a9d3-68dce2a1f1c1",
+      "round_number": 1,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "## Bündnis 90/Die Grünen (Round 1)\nBezüglich der These der CDU/CSU, dass ein liberaleres Asylrecht und stärkere Einwanderungszahlen die bestehenden Integrationsdefizite verschärfen würden, stimmen wir nicht zu. Wir sind der Ansicht, dass ein menschenrechtsbasiertes Asylsystem und eine faire Einwanderungspolitik nicht nur eine moralische Notwendigkeit sind, sondern auch eine wirtschaftliche Chance für Deutschland. Durch die Einführung eines modernen Asylgesetzes, das die individuellen Schicksale der Asylsuchenden berücksichtigt, können wir die Integrationsfähigkeit der Gesellschaft stärken und gleichzeitig unsere wirtschaftlichen Herausforderungen annehmen. Wir unterstützen die Einführung von Sprachkursen, Bildungs- und Weiterbildungsmöglich",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing the CDU/CSU's position without personal attacks or inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of migrationspolitik, directly addressing the CDU/CSU's claims and advancing the discussion with specific proposals, earning a score of 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, connecting the introduction of a modern Asylgesetz with the strengthening of societal integration capabilities and addressing economic challenges, though it could be more detailed in its logical chain, resulting in a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the introduction of a modern Asylgesetz and support for Sprachkursen, Bildungs- und Weiterbildungsmöglichkeiten, but could benefit from more concrete evidence or data, thus scoring 4 for argument strength.",
+        "document_grounding": "The turn aligns with Bündnis 90/Die Grünen's known positions on migrationspolitik, emphasizing a menschenrechtsbasiertes Asylsystem and faire Einwanderungspolitik, but does not directly reference specific party documents, leading to a score of 4 for document grounding.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's specific arguments, naming the party and addressing their claims about Integrationsdefizite, thus scoring 4 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects Bündnis 90/Die Grünen's distinct party identity and ideological position, using party-specific values and priorities such as a menschenrechtsbasiertes Asylsystem, earning a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 3562,
+      "token_count_output": 669,
+      "latency_s": 2.148,
+      "timestamp": "2026-06-24T09:48:37.731112Z"
+    },
+    {
+      "turn_id": "5e25dff1-5384-42de-a9c9-024eb7f15085",
+      "round_number": 1,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "**[FDP]** (Round 1): Bezüglich der Forderung der SPD, die Integrationsfähigkeit der Gesellschaft zu stärken, indem man die Möglichkeiten für die berufliche und soziale Integration von Geflüchteten erweitert, stimmen wir in Teilen zu. Allerdings muss man auch die wirtschaftlichen Auswirkungen berücksichtigen. Wir glauben, dass die Einführung von Sprachkursen, Bildungs- und Weiterbildungsmöglichkeiten sowie die Unterstützung bei der Eingliederung in den Arbeitsmarkt wichtig sind, aber auch, dass sie nicht kostenlos und zentral verantwortet werden sollten. Stattdessen sollten wir die Möglichkeiten für private Initiative und Selbsthilfe für Geflüchtete erweitern, um ihre Integration zu unterstützen und gleichzeitig die Belastung der Steuerzahler zu reduzieren.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques policies without attacking parties, and shows respect for opposing views, which aligns with a score of 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and engages with the SPD's proposal, making it clearly relevant and deserving of a score of 4.",
+        "logical_consistency": "The argument is coherent and logically structured, presenting a clear position on integrating refugees while considering economic impacts, thus scoring 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning about the importance of private initiative in refugee integration, earning a score of 4 for argument strength.",
+        "document_grounding": "While the turn generally aligns with liberal economic principles often associated with the FDP, it lacks direct references to the party's documented positions, resulting in a score of 3 for document grounding.",
+        "responsiveness": "The FDP directly engages with the SPD's argument, addressing their proposal for enhancing integration capabilities, which demonstrates strong responsiveness and warrants a score of 4.",
+        "stance_differentiation": "The turn clearly reflects the FDP's liberal and economically conservative stance, emphasizing private initiative and reduced state involvement, making it unmistakably distinct and deserving of a score of 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 3988,
+      "token_count_output": 555,
+      "latency_s": 2.032,
+      "timestamp": "2026-06-24T09:48:39.985249Z"
+    },
+    {
+      "turn_id": "7300c9aa-d434-40f4-a077-e8da574abd0c",
+      "round_number": 1,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "**Die Linke (Runde 1)**\nBezüglich der These der CDU/CSU, dass die Einführung von Abschiebungsabsprachen mit anderen Ländern eine effiziente Lösung für die Asylkrise darstellt, sind wir bei Die Linke skeptisch. Wir sind der Meinung, dass dies lediglich einen Weg darstellt, die Verantwortung für die Asylsuchenden auf andere Länder zu übertragen, ohne dass dies die tatsächliche Integration der Asylsuchenden in die Gesellschaft verbessert. Stattdessen sollten wir uns auf die Stärkung der Integrationsfähigkeit der Gesellschaft konzentrieren, indem wir die Möglichkeiten für die berufliche und soziale Integration von Geflüchteten erweitern, wie es die SPD vorschlägt. Wir unterstützen die Einführung von Sprachkursen, Bildungs-",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques the CDU/CSU's position without personal attacks, and engages in respectful disagreement, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and engages with the CDU/CSU's proposal on Abschiebungsabsprachen, making it clearly relevant and deserving of a 4.",
+        "logical_consistency": "The argument is coherent and logically structured, starting with a critique of the CDU/CSU's proposal and then presenting an alternative focus on integration, which warrants a score of 4.",
+        "argument_strength": "The turn provides a clear reasoning for why Abschiebungsabsprachen might not be an effective solution and suggests an alternative approach focused on integration, supported by mentioning the expansion of opportunities for professional and social integration, thus scoring a 4.",
+        "document_grounding": "While the turn aligns with general left-wing positions on migration, it does not directly reference Die Linke's documented positions or specific party programs, hence a score of 3 for document grounding.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's argument regarding Abschiebungsabsprachen and also references the SPD's suggestion on integration, demonstrating a clear responsiveness to preceding arguments and earning a 4.",
+        "stance_differentiation": "The turn clearly reflects Die Linke's distinct stance on migrationspolitik, emphasizing the importance of integration over Abschiebungsabsprachen and supporting the expansion of opportunities for Geflüchtete, which differentiates it from other parties and warrants a score of 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 4433,
+      "token_count_output": 630,
+      "latency_s": 2.286,
+      "timestamp": "2026-06-24T09:48:42.013260Z"
+    },
+    {
+      "turn_id": "35b35ae1-7f01-4ee4-875f-ebb2d336bf46",
+      "round_number": 1,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "**Alternative für Deutschland (Round 1)**\n\nBezüglich der These der CDU/CSU, dass eine effizientere Asylverfahrensleitung die individuellen Schicksale der Asylsuchenden berücksichtigen sollte, ohne die Integrationsfähigkeit der Gesellschaft zu überlasten, stimmen wir nicht vollständig zu. Wir halten es für gefährlich, die Zahl der Asylabkommen mit anderen Ländern zu erhöhen, ohne die eigentlichen Ursachen der Flucht und die Sicherheit der Grenzen zu adressieren. Die Bundesrepublik Deutschland sollte sich weigern, die Belastung der Aufnahmecapazität der Bundesrepublik zu übernehmen, indem sie Abschiebungsabsprachen mit Ländern eingeht, die nicht in der Lage sind, Asylsuchende sicher aufzunehmen.\n\nStattdessen sollte Deutschland seine Grenzen sch",
+      "scores": {
+        "civility": 3,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone without personal attacks or inflammatory language, meeting the basic expectations for civility in a debate.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and engages with the preceding arguments, particularly those of the CDU/CSU, making it clearly relevant to the discussion.",
+        "logical_consistency": "The argument presented is generally coherent but lacks detailed logical structure, relying on a straightforward opposition to increasing asylum agreements without fully articulating the underlying reasoning or evidence.",
+        "argument_strength": "The turn provides some reasoning for its position, such as the concern over border security and the capability of other countries to safely receive asylum seekers, but it does not offer compelling evidence or detailed mechanisms to support its claims.",
+        "document_grounding": "The argument aligns with the AfD's known positions on migrationspolitik, emphasizing border security and skepticism towards asylum agreements, indicating a clear grounding in the party's documented stances.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's argument regarding efficient asylum procedures and the integration of asylum seekers, demonstrating a clear response to the preceding discussion.",
+        "stance_differentiation": "The turn unmistakably reflects the AfD's distinct ideological position on migrationspolitik, emphasizing the need for secure borders and expressing skepticism towards asylum agreements, which differentiates it sharply from other parties in the debate."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 4853,
+      "token_count_output": 574,
+      "latency_s": 2.545,
+      "timestamp": "2026-06-24T09:48:44.367352Z"
+    },
+    {
+      "turn_id": "9228aa9b-4506-4d8e-80e8-1f3eb7e86e75",
+      "round_number": 2,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "**[CDU/CSU]** (Round 2):\nBezüglich der These der AfD, dass Deutschland seine Grenzen schließen und sich weigern sollte, Abschiebungsabsprachen mit Ländern einzugehen, die nicht in der Lage sind, Asylsuchende sicher aufzunehmen, ist unsere Partei der Überzeugung, dass dies nicht nur eine unverantwortliche Haltung wäre, sondern auch die Bundesrepublik Deutschland international isolieren würde. Wir müssen ein anderes Vorgehen wählen, das die individuellen Schicksale der Asylsuchenden berücksichtigt, ohne gleichzeitig die Integrationsfähigkeit der Gesellschaft zu überlasten. Dazu gehört die Einführung von Abschiebungsabsprachen mit anderen Ländern, um eine Rückkehr von Asylabgelehnten zu ermöglichen und die Belastung der Aufnahmecapazität",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques the AfD's position without personal attacks, and uses respectful language, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and engages with the AfD's preceding argument, making it highly relevant and scoring a 4.",
+        "logical_consistency": "The argument is coherent and logically structured, presenting a clear alternative to the AfD's proposal and explaining why it is preferable, thus scoring a 4 for logical consistency.",
+        "argument_strength": "The turn provides a well-supported claim with specific reasoning, arguing that the AfD's approach would isolate Germany internationally and instead proposes a more balanced approach, scoring a 4 for argument strength.",
+        "document_grounding": "The turn reflects the CDU/CSU's known position on migrationspolitik, emphasizing the need for a balanced approach that considers both the individual cases of asylum seekers and the integration capacity of society, thus scoring a 4 for document grounding.",
+        "responsiveness": "The turn directly engages with the AfD's specific argument from the preceding turn, addressing their proposal to close borders and reject abschiebungsabsprachen, and provides a clear counterargument, thus scoring a 5 for responsiveness.",
+        "stance_differentiation": "The turn clearly maintains a distinct CDU/CSU party identity and ideological position, differentiating itself from the AfD's stance and reiterating its commitment to a balanced migrationspolitik, thus scoring a 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 5196,
+      "token_count_output": 606,
+      "latency_s": 2.145,
+      "timestamp": "2026-06-24T09:48:46.826512Z"
+    },
+    {
+      "turn_id": "2b3d1874-9062-4129-9a74-2d317d88a265",
+      "round_number": 2,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "**SPD (Round 2)**\n\nBezüglich der These der CDU/CSU, dass die Einführung von Abschiebungsabsprachen mit anderen Ländern eine effiziente Lösung für die Asylkrise darstellt, sind wir bei der SPD der Überzeugung, dass diese Maßnahme nur eine Notlösung darstellt und nicht die tatsächliche Integrationsfähigkeit der Gesellschaft stärkt. Wir müssen uns auf die Stärkung der Integrationsfähigkeit der Gesellschaft konzentrieren, indem wir die Möglichkeiten für die berufliche und soziale Integration von Geflüchteten erweitern, wie es unsere Partei bereits vorgeschlagen hat. Dazu gehört die Einführung von Sprachkursen, die Bereitstellung von Bildungs- und Weiterbildungsmöglichkeiten sowie die Unterstützung bei der Eingliederung in",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing the CDU/CSU's policy without attacking the party directly.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and engages with the CDU/CSU's proposal on Abschiebungsabsprachen.",
+        "logical_consistency": "The argument is coherent and logically structured, presenting a clear alternative to the CDU/CSU's approach by focusing on integration measures.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the importance of Sprachkursen and Bildungs- und Weiterbildungsmöglichkeiten for integration.",
+        "document_grounding": "The SPD's position reflects their documented emphasis on social and economic integration, aligning with their known party programme content.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's specific argument regarding Abschiebungsabsprachen, offering a distinct alternative approach.",
+        "stance_differentiation": "The SPD clearly maintains its distinct party identity and ideological position, emphasizing integration and social support, which differentiates it from other parties like the CDU/CSU."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 5654,
+      "token_count_output": 532,
+      "latency_s": 1.718,
+      "timestamp": "2026-06-24T09:48:48.940980Z"
+    },
+    {
+      "turn_id": "3ff01269-6b08-4028-a92b-c5441ac65e27",
+      "round_number": 2,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "Bezüglich der These der SPD, dass die Einführung von Abschiebungsabsprachen mit anderen Ländern nur eine Notlösung darstellt und nicht die tatsächliche Integrationsfähigkeit der Gesellschaft stärkt, stimmen wir zu. Wir sind der Ansicht, dass eine menschenrechtsbasierte Asylpolitik und faire Einwanderungszahlen nicht nur eine moralische Notwendigkeit sind, sondern auch eine wirtschaftliche Chance für Deutschland. Die Einführung eines modernen Asylgesetzes, das die individuellen Schicksale der Asylsuchenden berücksichtigt, kann die Integrationsfähigkeit der Gesellschaft stärken und gleichzeitig unsere wirtschaftlichen Herausforderungen annehmen. Wir unterstützen die Einführung von Sprachkursen, Bildungs- und Weiterbildungsmöglichkeiten sowie die Unterstützung bei der Einglieder",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and engages with the preceding speaker's arguments, making it clearly relevant and deserving of a score of 4.",
+        "logical_consistency": "The argument presented is coherent and logically structured, connecting the introduction of a modern asylum law with the strengthening of societal integration capabilities, thus warranting a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the potential for a modern asylum law to strengthen integration and address economic challenges, which supports a score of 4 for argument strength.",
+        "document_grounding": "The turn reflects documented positions of Bündnis 90/Die Grünen, such as supporting a human rights-based asylum policy and fair immigration numbers, aligning with their known programme content and thus deserving a score of 4.",
+        "responsiveness": "The turn directly engages with the SPD's argument regarding Abschiebungsabsprachen, clearly addressing and responding to the preceding speaker's specific claims, which merits a score of 4 for responsiveness.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity and ideological position, using party-specific values and priorities such as a 'menschenrechtsbasierte Asylpolitik,' which is unmistakably aligned with Bündnis 90/Die Grünen's stance, warranting a score of 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 6102,
+      "token_count_output": 617,
+      "latency_s": 2.112,
+      "timestamp": "2026-06-24T09:48:50.713899Z"
+    },
+    {
+      "turn_id": "195aabe9-0e7f-4ae9-b0ed-d53f451b3715",
+      "round_number": 2,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "**[FDP]** (Round 2):\nBezüglich der These der SPD, dass die Einführung von Abschiebungsabsprachen mit anderen Ländern nur eine Notlösung darstellt und nicht die tatsächliche Integrationsfähigkeit der Gesellschaft stärkt, möchten wir ergänzen, dass auch die Notwendigkeit, die Integrationsfähigkeit der Gesellschaft zu stärken, nicht von der Einführung von Abschiebungsabsprachen unabhängig ist. Wir müssen jedoch auch die wirtschaftlichen Auswirkungen berücksichtigen. Die Einführung von Abschiebungsabsprachen kann zwar die Belastung der Aufnahmecapazität der Bundesrepublik reduzieren, aber auch die Kosten für die Integration von Geflüchteten senken. Wir glauben, dass die Einführung von Sprachkursen, Bildungs-",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques policies without attacking parties, and does not use inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and engages with the preceding speaker's arguments, making it relevant and scoring a 4.",
+        "logical_consistency": "The argument is coherent and logically structured, considering both the need to strengthen integration capabilities and the economic implications, hence a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning about the economic effects of introducing Abschiebungsabsprachen and integrating refugees, warranting a score of 4.",
+        "document_grounding": "While the turn generally aligns with the FDP's known positions on migration and integration, it does not directly reference specific party documents or programs, resulting in a score of 3.",
+        "responsiveness": "The turn directly engages with the SPD's argument about Abschiebungsabsprachen being only a temporary solution and not strengthening integration capabilities, thus scoring a 4 for responsiveness.",
+        "stance_differentiation": "The turn clearly reflects the FDP's distinct stance on balancing economic considerations with integration efforts, differentiating it from other parties, and scoring a 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 6532,
+      "token_count_output": 552,
+      "latency_s": 2.021,
+      "timestamp": "2026-06-24T09:48:52.914254Z"
+    },
+    {
+      "turn_id": "90326291-a8b1-4c17-b3de-609a76576fd4",
+      "round_number": 2,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Bezüglich der These der CDU/CSU, dass die Einführung von Abschiebungsabsprachen mit anderen Ländern die individuellen Schicksale der Asylsuchenden berücksichtigen und die Integrationsfähigkeit der Gesellschaft nicht überlasten würde, sind wir bei Die Linke skeptisch. Wir glauben, dass dies lediglich einen Weg darstellt, die Verantwortung für die Asylsuchenden auf andere Länder zu übertragen, ohne dass dies die tatsächliche Integration der Asylsuchenden in die Gesellschaft verbessert. Stattdessen sollten wir uns auf die Stärkung der Integrationsfähigkeit der Gesellschaft konzentrieren, indem wir die Möglichkeiten für die berufliche und soziale Integration von Geflüchteten erweitern, wie es die SPD vorschlägt. Wir unterstützen die Einführung von Sprachkursen",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 5,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques the CDU/CSU's position without personal attacks, and does not use inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and engages with the CDU/CSU's proposal on Abschiebungsabsprachen, making it clearly relevant and scoring a 4.",
+        "logical_consistency": "The argument presented is coherent and logically consistent, as it critiques the CDU/CSU's approach and suggests an alternative focus on integration, thus scoring a 4.",
+        "argument_strength": "The turn provides a clear argument against the CDU/CSU's proposal and in favor of enhancing integration capabilities, but could be stronger with more specific evidence or mechanisms, scoring a 4.",
+        "document_grounding": "While the turn aligns with Die Linke's general stance on migrationspolitik, it does not directly reference specific party documents or programs, thus scoring a 3 for document grounding.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's specific argument about Abschiebungsabsprachen, naming the party and addressing their claim, which demonstrates a high level of responsiveness and scores a 5.",
+        "stance_differentiation": "The turn clearly reflects Die Linke's distinct position on migrationspolitik, emphasizing the importance of integration over Abschiebungsabsprachen, and thus scores a 4 for maintaining a recognizable party identity."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 6982,
+      "token_count_output": 601,
+      "latency_s": 2.225,
+      "timestamp": "2026-06-24T09:48:54.873913Z"
+    },
+    {
+      "turn_id": "11a3e30c-e20f-4b48-aae5-1bea21311bf4",
+      "round_number": 2,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "**Alternative für Deutschland (Round 2)**\n\nBezüglich der These der SPD, dass die Einführung von Abschiebungsabsprachen mit anderen Ländern nur eine Notlösung darstellt und nicht die tatsächliche Integrationsfähigkeit der Gesellschaft stärkt, stimmen wir wiederum nicht vollständig zu. Uns erscheint es jedoch einleuchtend, dass die Einführung von Abschiebungsabsprachen eine Notwendigkeit darstellt, um die Belastung der Aufnahmecapazität der Bundesrepublik zu reduzieren. Wir sind jedoch der Meinung, dass dies nicht die einzige Lösung ist. Die Bundesrepublik Deutschland sollte sich auch auf die Stärkung ihrer eigenen Grenzen konzentrieren, um die Fluchtursachen zu adressieren und die Sicherheit der Grenzen zu gewährleisten. Darüber hinaus sollten",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone throughout, critiquing policies without personal attacks, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and engages with the preceding speaker's arguments, making it relevant and scoring a 4.",
+        "logical_consistency": "The argument presented is coherent and logically structured, with a clear connection between the need for Abschiebungsabsprachen and the importance of strengthening Germany's borders, thus scoring a 4 for logical consistency.",
+        "argument_strength": "The turn provides a well-supported claim with specific reasoning, arguing that Abschiebungsabsprachen are necessary but not the only solution, and emphasizing the need to address Fluchtursachen and secure borders, which strengthens the argument and scores a 4.",
+        "document_grounding": "While the turn generally aligns with the AfD's known positions on migrationspolitik, it does not directly reference or ground its claims in specific party documents or programs, thus scoring a 3 for document grounding.",
+        "responsiveness": "The turn directly engages with the SPD's argument regarding Abschiebungsabsprachen, responding to their claim and providing an alternative perspective, which demonstrates strong responsiveness and scores a 4.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity and ideological position, emphasizing the importance of border security and the need for a multifaceted approach to migrationspolitik, which is unmistakably aligned with the AfD's stance and scores a 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 7401,
+      "token_count_output": 606,
+      "latency_s": 2.465,
+      "timestamp": "2026-06-24T09:48:57.184186Z"
+    },
+    {
+      "turn_id": "688e3169-f089-4c42-9ce5-9621a8c2cf4a",
+      "round_number": 3,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "**[CDU/CSU]** (Round 3):\nBezüglich der These der AfD, dass die Bundesrepublik Deutschland sich auf die Stärkung ihrer eigenen Grenzen konzentrieren sollte, um die Fluchtursachen zu adressieren und die Sicherheit der Grenzen zu gewährleisten, stimmen wir zu. Eine starke Grenzsicherung ist unerlässlich, um die Sicherheit der Bürger zu gewährleisten. Wir müssen jedoch auch die Menschenrechte und die internationale Verantwortung der Bundesrepublik Deutschland berücksichtigen. Die Einführung von Abschiebungsabsprachen mit anderen Ländern ist ein wichtiger Schritt, um die Belastung der Aufnahmecapazität der Bundesrepublik zu reduzieren und die Rückkehr von Asylabgelehnten zu ermöglichen. Wir müssen jedoch auch sicherstellen, dass diese Abspr",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without attacking parties directly, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and engages with the preceding arguments, making it relevant to the discussion.",
+        "logical_consistency": "The argument presented is coherent and logically consistent, as it connects the need for strong border security with the importance of considering human rights and international responsibility.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the importance of Abschiebungsabsprachen for reducing the burden on the federal republic's capacity, which strengthens the argument.",
+        "document_grounding": "The turn reflects the CDU/CSU's known positions on migrationspolitik, such as the emphasis on strong border security and the use of Abschiebungsabsprachen, indicating a strong connection to the party's documented stance.",
+        "responsiveness": "The turn directly engages with the AfD's argument about strengthening Germany's borders, showing a clear response to the preceding speaker's specific claims.",
+        "stance_differentiation": "The turn clearly maintains a distinct CDU/CSU party identity, using party-specific reasoning and priorities, such as the balance between border security and human rights, which differentiates it from other parties."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 7744,
+      "token_count_output": 568,
+      "latency_s": 2.097,
+      "timestamp": "2026-06-24T09:48:59.588824Z"
+    },
+    {
+      "turn_id": "2394c4cb-ca38-4229-96db-d57efef88a45",
+      "round_number": 3,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "## SPD (Runde 3)\n\nBezüglich der These der CDU/CSU, dass die Einführung von Abschiebungsabsprachen mit anderen Ländern eine wichtige Maßnahme ist, um die Belastung der Aufnahmecapazität der Bundesrepublik zu reduzieren, sind wir bei der SPD skeptisch. Wir glauben, dass dies nur eine Notlösung darstellt und nicht die tatsächliche Integrationsfähigkeit der Gesellschaft stärkt. Stattdessen sollten wir uns auf die Stärkung der Integrationsfähigkeit der Gesellschaft konzentrieren, indem wir die Möglichkeiten für die berufliche und soziale Integration von Geflüchteten erweitern, wie es unsere Partei bereits vorgeschlagen hat. Dazu gehört die Einführung von Sprachkursen, die Bereitstellung von Bildungs- und Weiterbildung",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques the CDU/CSU's position without personal attacks, and uses respectful language, thus scoring a 4 for being professional and respectful throughout.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and engages with the CDU/CSU's proposal on Abschiebungsabsprachen, making it clearly relevant and focused on the topic, scoring a 4.",
+        "logical_consistency": "The argument presented is coherent and logically consistent, as it critiques the CDU/CSU's proposal and offers an alternative approach to integration, thus scoring a 4 for internal consistency.",
+        "argument_strength": "The turn provides a well-supported claim with specific reasoning, referencing the party's previously suggested measures for integration, such as Sprachkursen and Bildungs- und Weiterbildungsmöglichkeiten, scoring a 4 for providing compelling arguments.",
+        "document_grounding": "The turn reflects the SPD's documented positions on migrationspolitik, emphasizing the importance of integrating Geflüchtete into society through education and job training, thus scoring a 4 for being clearly anchored in the party's programme content.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's argument, naming the specific party and claim being addressed, and explains why the SPD's approach to integration is preferable, scoring a 4 for directly responding to the preceding argument.",
+        "stance_differentiation": "The turn clearly maintains a distinct SPD identity and ideological position, emphasizing the party's commitment to social integration and education as key components of migrationspolitik, thus scoring a 4 for unmistakably representing the SPD's stance."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 7998,
+      "token_count_output": 634,
+      "latency_s": 2.418,
+      "timestamp": "2026-06-24T09:49:01.715417Z"
+    },
+    {
+      "turn_id": "18d505e2-ba99-4fc3-ad1a-7436281e575a",
+      "round_number": 3,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "Bezüglich der These der CDU/CSU, dass eine starke Grenzsicherung unerlässlich ist, um die Sicherheit der Bürger zu gewährleisten, stimmen wir nicht vollständig zu. Wir sind der Ansicht, dass eine solche Politik nicht nur die Menschenrechte und die internationale Verantwortung der Bundesrepublik Deutschland missachtet, sondern auch die wirtschaftlichen und sozialen Herausforderungen Deutschlands nicht löst. Stattdessen sollten wir uns auf die Stärkung der Integrationsfähigkeit der Gesellschaft konzentrieren, indem wir die Möglichkeiten für die berufliche und soziale Integration von Geflüchteten erweitern. Dazu gehört die Einführung von Sprachkursen, die Bereitstellung von Bildungs- und Weiterbildungsmöglichkeiten sowie die Unterstützung bei der Eingliederung in den Arbeitsmarkt",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques the CDU/CSU's position without personal attacks, and uses respectful language, thus scoring a 4 for being professional and respectful throughout.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and responds to the CDU/CSU's previous statement, making it clearly on-topic and relevant to the discussion.",
+        "logical_consistency": "The argument presented is coherent and logically consistent, as it critiques the CDU/CSU's stance on strong border security and instead advocates for strengthening integration capabilities, thus demonstrating a clear and logical structure.",
+        "argument_strength": "The turn provides a well-supported claim with specific reasoning, arguing that a strong border security policy misses the point of addressing economic and social challenges, and instead proposes concrete measures like language courses and job market integration, making the argument strong and well-supported.",
+        "document_grounding": "The turn reflects the party's known position on migrationspolitik, emphasizing the importance of integration and human rights, which aligns with Bündnis 90/Die Grünen's documented stances, thus demonstrating a clear connection to the party's programme.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's preceding argument, naming the specific party and claim being addressed, and provides a clear counterargument, thus demonstrating a high level of responsiveness.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity, using party-specific values and priorities, such as emphasizing human rights and social integration, which distinguishes it from other parties, thus demonstrating a clear and distinct stance."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 8234,
+      "token_count_output": 620,
+      "latency_s": 2.421,
+      "timestamp": "2026-06-24T09:49:04.137244Z"
+    },
+    {
+      "turn_id": "5fb9d9a5-3b38-4e58-9d37-b4cd460e5f4b",
+      "round_number": 3,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "**[FDP]** (Round 3):\nBezüglich der These der SPD, dass die Einführung von Abschiebungsabsprachen mit anderen Ländern nur eine Notlösung darstellt und nicht die tatsächliche Integrationsfähigkeit der Gesellschaft stärkt, stimmen wir zu, dass die Integration von Geflüchteten ein wichtiger Aspekt ist. Wir glauben jedoch, dass die Einführung von Abschiebungsabsprachen ein notwendiger Schritt ist, um die Belastung der Aufnahmecapazität der Bundesrepublik zu reduzieren. Wir müssen jedoch auch sicherstellen, dass die Kosten für die Integration von Geflüchteten gesenkt werden, indem wir die Möglichkeiten für private Initiative und Selbsthilfe für Geflüchtete erweitern. Dazu gehört die Unterstützung von Vereinen und Organisationen, die sich für die Integration von Gef",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without attacking parties directly, which aligns with a score of 4.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and engages with the preceding speaker's argument, making it clearly relevant and deserving of a score of 4.",
+        "logical_consistency": "The argument is internally consistent, connecting the need for Abschiebungsabsprachen with the goal of reducing the burden on the Bundesrepublik's capacity, thus scoring 4.",
+        "argument_strength": "The turn provides well-supported claims, suggesting that reducing costs for integration through private initiative is a viable strategy, which warrants a score of 4.",
+        "document_grounding": "While the turn generally aligns with the FDP's known positions on migration, it lacks direct references to specific party programme content, hence a score of 3.",
+        "responsiveness": "The turn directly engages with the SPD's argument regarding Abschiebungsabsprachen, demonstrating a clear response to the preceding speaker, which merits a score of 4.",
+        "stance_differentiation": "The turn clearly reflects the FDP's distinct stance on migrationspolitik, emphasizing the role of private initiative and cost reduction, thus scoring 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 8446,
+      "token_count_output": 555,
+      "latency_s": 2.071,
+      "timestamp": "2026-06-24T09:49:06.623429Z"
+    },
+    {
+      "turn_id": "785b6785-e93f-4aa7-bd1d-291982ff2ddd",
+      "round_number": 3,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "**Die Linke (Runde 3)**\n\nBezüglich der These der CDU/CSU, dass die Einführung von Abschiebungsabsprachen mit anderen Ländern eine wichtige Maßnahme ist, um die Belastung der Aufnahmecapazität der Bundesrepublik zu reduzieren, sind wir bei Die Linke skeptisch. Wir glauben, dass dies nicht nur eine Notlösung darstellt, sondern auch eine weitere Verschiebung der Verantwortung für die Asylsuchenden auf andere Länder bedeutet. Stattdessen sollten wir uns auf die Stärkung der Integrationsfähigkeit der Gesellschaft konzentrieren, indem wir die Möglichkeiten für die berufliche und soziale Integration von Geflüchteten erweitern, wie es die SPD vorschlägt. Wir unterstützen die Einführung von Sprachkursen, die Bereit",
+      "scores": {
+        "civility": 3,
+        "relevance": 3,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 3,
+        "responsiveness": 3,
+        "stance_differentiation": 3
+      },
+      "justifications": {
+        "civility": "",
+        "relevance": "",
+        "logical_consistency": "",
+        "argument_strength": "",
+        "document_grounding": "",
+        "responsiveness": "",
+        "stance_differentiation": ""
+      },
+      "rag_passages_used": [],
+      "token_count_input": 8692,
+      "token_count_output": 700,
+      "latency_s": 2.402,
+      "timestamp": "2026-06-24T09:49:08.647990Z"
+    },
+    {
+      "turn_id": "ce7cc515-b047-4973-9c6c-0db651b67e0d",
+      "round_number": 3,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "**Alternative für Deutschland (Round 3)**\n\nBezüglich der These der Grünen, die Menschenrechte und die internationale Verantwortung Deutschlands missachten, indem sie die Stärkung der Integrationsfähigkeit der Gesellschaft nicht priorisieren, ist unsere Partei der Überzeugung, dass diese Haltung die Interessen der deutschen Bürger nicht vertritt. Die Bundesrepublik Deutschland sollte sich auf die Schaffung von Arbeitsplätzen und die Verbesserung der Lebensbedingungen für alle Bürger konzentrieren, nicht darauf, Menschen aus anderen Ländern zu integrieren, die oft aus völlig anderen kulturellen und sozialen Hintergründen kommen. Wir glauben, dass die Einführung von Sprachkursen und Bildungsangeboten für Geflüchtete wichtig ist, aber auch, dass dies nur ein Teil einer umfassenderen Integrations",
+      "scores": {
+        "civility": 2,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn uses phrases that could be seen as dismissive or slightly aggressive towards the integration of people from different cultural backgrounds, which lowers the civility score.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and stays focused on the issue of integration and the priorities of the German government.",
+        "logical_consistency": "The argument is generally coherent but lacks a clear logical structure connecting all premises to conclusions, making it merely adequate in terms of logical consistency.",
+        "argument_strength": "The turn provides some reasoning for its claims but relies on general assertions about the interests of German citizens without providing specific evidence or mechanisms, making the argument strength merely adequate.",
+        "document_grounding": "The turn reflects the AfD's known positions on migration and integration, aligning with their documented stances, thus scoring well on document grounding.",
+        "responsiveness": "The turn directly engages with the preceding argument made by the Grünen, addressing their points about human rights and international responsibility, showing a good level of responsiveness.",
+        "stance_differentiation": "The turn unmistakably represents the AfD's distinct ideological position, using language and priorities that are uniquely identifiable with the party, thus scoring exceptionally on stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 8903,
+      "token_count_output": 538,
+      "latency_s": 2.516,
+      "timestamp": "2026-06-24T09:49:11.225459Z"
+    },
+    {
+      "turn_id": "059f0919-572d-4751-90cb-b2c0c2a9dafd",
+      "round_number": 4,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "**[CDU/CSU]** (Round 4):\n\nBezüglich der These der AfD, dass die Bundesrepublik Deutschland sich auf die Schaffung von Arbeitsplätzen und die Verbesserung der Lebensbedingungen für alle Bürger konzentrieren sollte, stimmen wir zu. Die Schaffung von Arbeitsplätzen ist jedoch nicht nur ein Ziel der Bundesrepublik Deutschland, sondern auch ein wichtiger Aspekt der Integrationspolitik. Wir müssen sicherstellen, dass Geflüchtete in die Lage versetzt werden, sich auf dem Arbeitsmarkt zu integrieren und ihre Fähigkeiten und Kompetenzen zu nutzen. Dazu gehört die Einführung von Sprachkursen, die Bereitstellung von Bildungs- und Weiterbildungsmöglichkeiten sowie die Unterstützung bei der Eingliederung in den Arbeitsmarkt. Wir müssen jedoch auch sicherstellen, dass dies nicht zu einer Über",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by focusing on the integration of refugees into the workforce, making it relevant and deserving of a score of 4.",
+        "logical_consistency": "The argument presented is internally consistent, connecting the need for job creation and improved living conditions with the integration of refugees, thus demonstrating logical consistency and warranting a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the importance of language courses and job training for refugees, which strengthens the argument and justifies a score of 4.",
+        "document_grounding": "The turn reflects documented party positions, such as the emphasis on integration and job market inclusion, which is consistent with the CDU/CSU's known policies and earns a score of 4.",
+        "responsiveness": "The turn directly engages with the preceding speaker's arguments, specifically addressing the AfD's stance on job creation and integration, and thus demonstrates strong responsiveness deserving of a score of 4.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity and ideological position, emphasizing the importance of integration and workforce inclusion in a manner unique to the CDU/CSU, which warrants a score of 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 9037,
+      "token_count_output": 592,
+      "latency_s": 2.739,
+      "timestamp": "2026-06-24T09:49:13.719723Z"
+    },
+    {
+      "turn_id": "3083ebbb-dd5b-4521-8357-597087b686d7",
+      "round_number": 4,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "## SPD (Runde 4)\n\nBezüglich der These der CDU/CSU, dass die Schaffung von Arbeitsplätzen ein wichtiger Aspekt der Integrationspolitik ist, stimmen wir zu. Wir müssen jedoch auch sicherstellen, dass Geflüchtete in die Lage versetzt werden, sich auf dem Arbeitsmarkt zu integrieren und ihre Fähigkeiten und Kompetenzen zu nutzen. Dazu gehört die Einführung von Sprachkursen, die Bereitstellung von Bildungs- und Weiterbildungsmöglichkeiten sowie die Unterstützung bei der Eingliederung in den Arbeitsmarkt. Wir glauben jedoch, dass dies nicht nur ein Ziel der Bundesrepublik Deutschland, sondern auch ein wichtiger Aspekt der europäischen Integrationspolitik ist. Wir sollten uns gemeinsam mit anderen europäischen Ländern auf die Stärkung der Integrationsfähigkeit der Gesellschaft",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by focusing on the integration of refugees into the workforce, making it relevant and deserving of a score of 4.",
+        "logical_consistency": "The argument presented is internally consistent, with a clear logical structure connecting premises to conclusions, such as the importance of integrating refugees into the workforce and the need for European cooperation, which warrants a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the necessity of language courses, education, and job training for refugees, which strengthens the argument and justifies a score of 4.",
+        "document_grounding": "The turn reflects documented SPD positions, such as the emphasis on integrating refugees into the workforce and the importance of European cooperation, which suggests a strong connection to the party's known policies and earns a score of 4.",
+        "responsiveness": "The turn directly engages with the preceding speaker's (CDU/CSU) specific arguments, such as the importance of job creation for integration, and responds thoughtfully, which demonstrates responsiveness and merits a score of 4.",
+        "stance_differentiation": "The turn clearly maintains a distinct SPD identity and ideological position, emphasizing the importance of social integration and European cooperation, which differentiates it from other parties and warrants a score of 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 9282,
+      "token_count_output": 607,
+      "latency_s": 2.433,
+      "timestamp": "2026-06-24T09:49:16.373164Z"
+    },
+    {
+      "turn_id": "1e5046e7-7f7b-4ab2-971b-321292ab33ad",
+      "round_number": 4,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "**[Bündnis 90/Die Grünen]** (Round 4): Bezüglich der These der CDU/CSU, dass die Schaffung von Arbeitsplätzen ein wichtiger Aspekt der Integrationspolitik ist, stimmen wir nicht vollständig zu. Wir sind der Ansicht, dass die Schaffung von Arbeitsplätzen ein wichtiger Aspekt ist, aber nicht der einzige. Wir müssen auch sicherstellen, dass Geflüchtete in die Lage versetzt werden, sich auf dem Arbeitsmarkt zu integrieren und ihre Fähigkeiten und Kompetenzen zu nutzen. Dazu gehört die Einführung von Sprachkursen, die Bereitstellung von Bildungs- und Weiterbildungsmöglichkeiten sowie die Unterstützung bei der Eingliederung in den Arbeitsmarkt. Wir müssen jedoch auch sicherstellen, dass dies nicht zu einer Überlastung der Sozialleistungen und der Geme",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques policies without attacking parties directly, and shows respect for opposing views, which aligns with a score of 4 for being professional and respectful throughout.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and integrates the discussion on Arbeitsplätzen and Integrationspolitik, making it clearly on-topic and relevant to the discussion.",
+        "logical_consistency": "The argument is coherent, with a clear logical structure connecting premises to conclusions, and acknowledges multiple aspects of the issue, such as the importance of both Arbeitsplätzen and social integration.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and mechanisms, such as the introduction of Sprachkursen and Bildungs- und Weiterbildungsmöglichkeiten, to support the argument for effective integration.",
+        "document_grounding": "The turn reflects documented party positions of Bündnis 90/Die Grünen, emphasizing the importance of social and economic integration of refugees, which is consistent with their known policies and values.",
+        "responsiveness": "The turn directly engages with the preceding speaker's (CDU/CSU) specific arguments about the importance of Arbeitsplätzen, responding to the actual argument made and providing a nuanced view that includes but is not limited to job creation.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity and ideological position, emphasizing the comprehensive approach to integration that includes social, economic, and educational aspects, characteristic of Bündnis 90/Die Grünen's stance."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 9517,
+      "token_count_output": 609,
+      "latency_s": 2.755,
+      "timestamp": "2026-06-24T09:49:18.858281Z"
+    },
+    {
+      "turn_id": "c4b6118e-5461-4d62-b2aa-40539109d2e8",
+      "round_number": 4,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "**[FDP]** (Runde 4): Bezüglich der These der SPD, dass die Schaffung von Arbeitsplätzen ein wichtiger Aspekt der europäischen Integrationspolitik ist, stimmen wir zu. Wir sollten uns gemeinsam mit anderen europäischen Ländern auf die Stärkung der Integrationsfähigkeit der Gesellschaft konzentrieren. Allerdings glauben wir, dass dies nicht nur durch die Einführung von Sprachkursen, Bildungs- und Weiterbildungsmöglichkeiten sowie die Unterstützung bei der Eingliederung in den Arbeitsmarkt erfolgen sollte, sondern auch durch die Förderung von privaten Initiativen und Selbsthilfemöglichkeiten für Geflüchtete. Wir sollten die Möglichkeiten für private Organisationen und Vereine erweitern, die sich für die Integration von Geflüchteten einsetzen, um die Belastung der öffent",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by introducing the idea of promoting private initiatives for refugee integration, making it relevant and deserving of a score of 4.",
+        "logical_consistency": "The argument is internally consistent, connecting the idea of integrating refugees with the promotion of private initiatives and self-help opportunities, demonstrating logical consistency and warranting a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning about the benefits of private initiatives for refugee integration, which strengthens the argument and justifies a score of 4.",
+        "document_grounding": "While the turn generally aligns with the FDP's known positions on promoting private sector involvement in social issues, it lacks direct references to specific party documents or programs, resulting in a score of 3 for document grounding.",
+        "responsiveness": "The turn directly engages with the preceding speaker's (SPD) argument about the importance of creating jobs as part of European integration policy, making it highly responsive and deserving of a score of 4.",
+        "stance_differentiation": "The turn clearly maintains a distinct FDP identity by emphasizing the role of private initiatives and self-help in refugee integration, a stance that differentiates it from other parties and warrants a score of 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 9733,
+      "token_count_output": 593,
+      "latency_s": 2.776,
+      "timestamp": "2026-06-24T09:49:21.580492Z"
+    },
+    {
+      "turn_id": "5b5b2226-96e6-4618-8120-fbd807a21813",
+      "round_number": 4,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "**Die Linke (Runde 4)**\n\nBezüglich der These der CDU/CSU, dass die Schaffung von Arbeitsplätzen ein wichtiger Aspekt der Integrationspolitik ist, stimmen wir zu. Wir müssen jedoch auch sicherstellen, dass Geflüchtete in die Lage versetzt werden, sich auf dem Arbeitsmarkt zu integrieren und ihre Fähigkeiten und Kompetenzen zu nutzen. Dazu gehört die Einführung von Sprachkursen, die Bereitstellung von Bildungs- und Weiterbildungsmöglichkeiten sowie die Unterstützung bei der Eingliederung in den Arbeitsmarkt.\n\nWir sind jedoch der Meinung, dass die CDU/CSU ihre Prioritäten falsch setzt, indem sie die Einführung von Abschiebungsabsprachen mit anderen Ländern als wichtigste Maßnahme sieht. Dies ist nicht nur eine Notlösung, sondern",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques policies without personal attacks, and does not use inflammatory language, thus scoring a 4 for being respectful throughout.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and the discussion on integrationspolitik, making it highly relevant and thus scoring a 5.",
+        "logical_consistency": "The argument is generally coherent, with a clear structure connecting premises to conclusions, but lacks rigorous logical chains, thus scoring a 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and referenced evidence, such as the importance of Sprachkursen and Bildungs- und Weiterbildungsmöglichkeiten, thus scoring a 4.",
+        "document_grounding": "The turn aligns with Die Linke's known positions on migrationspolitik, such as criticizing Abschiebungsabsprachen and supporting integration measures, thus scoring a 4.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's argument, naming the specific party and claim being addressed, and explains precisely where and why its position differs, thus scoring a 5.",
+        "stance_differentiation": "The turn unmistakably reflects Die Linke's distinct party identity and ideological position, using party-specific values and priorities, thus scoring a 5."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 9974,
+      "token_count_output": 562,
+      "latency_s": 2.2199999999999998,
+      "timestamp": "2026-06-24T09:49:24.370572Z"
+    },
+    {
+      "turn_id": "dfc0baf3-4daa-42ca-84de-835304ff41e1",
+      "round_number": 4,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "**Alternative für Deutschland (Runde 4)**\n\nBezüglich der These der Grünen, dass die Schaffung von Arbeitsplätzen nicht der einzige Aspekt der Integrationspolitik ist, stimmen wir nicht vollständig zu. Wir glauben, dass die Schaffung von Arbeitsplätzen für Geflüchtete ein wichtiger Schritt ist, um ihre Integration in die Gesellschaft zu fördern. Es ist jedoch auch wichtig, die Grenzen Deutschlands zu schützen und sicherzustellen, dass die Integration von Geflüchteten nicht zu einer Überlastung der sozialen Sicherheitssysteme führt. Wir sind der Meinung, dass die Bundesrepublik Deutschland ihre eigenen Interessen und Prioritäten nicht vergessen darf, wenn sie Integrationspolitik betreibt.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 3,
+        "document_grounding": 3,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone and avoids personal attacks or inflammatory language, but does express disagreement with the Greens' position, thus scoring a 4 for being professional and respectful throughout.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and integrates the discussion of job creation for refugees, making it clearly on-topic and relevant to the current debate context, thus scoring a 4.",
+        "logical_consistency": "The argument is coherent and logically consistent, as it connects the importance of job creation for refugees with the need to protect Germany's borders and social security systems, scoring a 4 for its clear logical structure.",
+        "argument_strength": "The turn provides some reasoning for its claims, such as the importance of protecting Germany's interests, but lacks specific evidence or detailed mechanisms to support its arguments, thus scoring a 3 for having some reasoning but lacking concrete evidence.",
+        "document_grounding": "The turn generally aligns with the AfD's known positions on migration policy but does not directly reference specific party documents or commitments, thus scoring a 3 for general alignment without explicit grounding.",
+        "responsiveness": "The turn directly engages with the preceding argument made by the Greens, addressing their stance on job creation and integration, thus scoring a 4 for identifying and engaging with a specific opposing claim.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity and ideological position, emphasizing the importance of protecting Germany's interests and borders, which is unmistakably aligned with the AfD's stance, thus scoring a 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 10159,
+      "token_count_output": 582,
+      "latency_s": 2.957,
+      "timestamp": "2026-06-24T09:49:26.844247Z"
+    },
+    {
+      "turn_id": "7086eacb-c1b0-40e7-8355-3be4477f153a",
+      "round_number": 5,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "**[CDU/CSU]** (Round 5):\nBezüglich der These der AfD, dass die Bundesrepublik Deutschland ihre eigenen Interessen und Prioritäten nicht vergessen darf, wenn sie Integrationspolitik betreibt, stimmen wir zu. Wir müssen jedoch auch sicherstellen, dass die Integration von Geflüchteten nicht nur auf die Schaffung von Arbeitsplätzen beschränkt ist, sondern auch auf die Stärkung der Integrationsfähigkeit der Gesellschaft und die Förderung von sozialer Cohäsion. Dazu gehört die Einführung von Sprachkursen, die Bereitstellung von Bildungs- und Weiterbildungsmöglichkeiten sowie die Unterstützung bei der Eingliederung in den Arbeitsmarkt. Wir müssen jedoch auch sicherstellen, dass dies nicht zu einer Überlastung der Sozialleistungen und der Gemeinschaften führt.\n\nWir sind der",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without attacking parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate question and advances the discussion on migrationspolitik, staying within the scope of the topic, which warrants a score of 4 for relevance.",
+        "logical_consistency": "The argument presented is internally consistent, with a clear logical structure connecting premises to conclusions, although it may not anticipate all potential objections, thus scoring 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and identified mechanisms for integration, such as language courses and job training, which supports a score of 4 for argument strength.",
+        "document_grounding": "The turn reflects documented party positions, such as the emphasis on integration and social cohesion, which is consistent with the CDU/CSU's known policies, thereby scoring 4 for document grounding.",
+        "responsiveness": "The turn directly engages with the preceding speaker's (AfD) specific arguments, addressing their concerns about national interests and integration, which demonstrates a strong level of responsiveness and earns a score of 4.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity and ideological position, emphasizing the importance of social cohesion and balanced integration policies, which is unmistakably CDU/CSU, thus scoring 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 10265,
+      "token_count_output": 585,
+      "latency_s": 2.458,
+      "timestamp": "2026-06-24T09:49:29.528510Z"
+    },
+    {
+      "turn_id": "7bffe9a8-906e-44ef-a9c1-643c98811a4d",
+      "round_number": 5,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "**[SPD]** (Runde 5)\n\nBezüglich der These der CDU/CSU, dass die Integration von Geflüchteten nicht nur auf die Schaffung von Arbeitsplätzen beschränkt ist, sondern auch auf die Stärkung der Integrationsfähigkeit der Gesellschaft und die Förderung von sozialer Cohäsion, stimmen wir zu. Wir müssen jedoch auch sicherstellen, dass die Bundesrepublik Deutschland ihre internationale Verantwortung einhält und die Menschenrechte von Asylsuchenden respektiert. Dazu gehört die Einführung von Sprachkursen, die Bereitstellung von Bildungs- und Weiterbildungsmöglichkeiten sowie die Unterstützung bei der Eingliederung in den Arbeitsmarkt.\n\nWir sind jedoch der Meinung, dass die CDU/CSU ihre Prioritäten falsch setzt, indem sie die Einführung von Abschie",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques the CDU/CSU's priorities without personal attacks, and acknowledges the importance of respecting human rights, demonstrating a respectful and civil approach to the debate.",
+        "relevance": "The turn directly addresses the topic of migrationspolitik and the integration of refugees, staying focused on the debate question and advancing the discussion on the importance of social cohesion and human rights.",
+        "logical_consistency": "The argument is coherent, connecting the need for integration measures like language courses and job training with the goal of strengthening social cohesion, and logically critiques the CDU/CSU's priorities.",
+        "argument_strength": "The turn presents a well-supported claim that integration should not be limited to job creation but also include social cohesion and human rights, using specific measures like language courses and education as evidence.",
+        "document_grounding": "The argument reflects the SPD's known positions on migration policy, emphasizing the importance of integration and human rights, which aligns with their documented party programme and public statements.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's argument, responding to their claim about integration and job creation, and critiques their priorities in a targeted manner.",
+        "stance_differentiation": "The SPD clearly distinguishes its position from that of the CDU/CSU, emphasizing the importance of human rights and social cohesion in integration policy, which is a distinctive aspect of the SPD's approach to migrationspolitik."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 10509,
+      "token_count_output": 587,
+      "latency_s": 3.5869999999999997,
+      "timestamp": "2026-06-24T09:49:33.116054Z"
+    },
+    {
+      "turn_id": "e8ae13f7-d445-40df-ab53-dea1ffb6f787",
+      "round_number": 5,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "**[Bündnis 90/Die Grünen]** (Round 5): Bezüglich der These der CDU/CSU, dass die Integration von Geflüchteten nicht nur auf die Schaffung von Arbeitsplätzen beschränkt ist, sondern auch auf die Stärkung der Integrationsfähigkeit der Gesellschaft und die Förderung von sozialer Cohäsion, stimmen wir nicht vollständig zu. Wir sind der Ansicht, dass die Stärkung der Integrationsfähigkeit der Gesellschaft ein wichtiger Aspekt ist, aber nicht der einzige. Wir müssen auch sicherstellen, dass die Integration von Geflüchteten nicht zu einer Überlastung der Sozialleistungen und der Gemeinschaften führt.\n\nDie CDU/CSU spricht zwar über die Förderung von sozialer Cohäsion, aber sie ignoriert die Tatsache, dass die Bundesrepub",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques the CDU/CSU's position without personal attacks, and uses respectful language, thus scoring a 4 for being professional and respectful throughout.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and engages with the preceding speaker's arguments, making it highly relevant and deserving of a 5.",
+        "logical_consistency": "The argument is generally coherent, but there's a minor logical gap in fully explaining how the integration of refugees wouldn't lead to an overload of social services without providing specific solutions, hence a score of 4.",
+        "argument_strength": "The turn provides some reasoning and evidence for its claims, such as the importance of not overloading social services, but could be stronger with more specific examples or data, resulting in a score of 4.",
+        "document_grounding": "The turn reflects the party's known positions on migrationspolitik, emphasizing the importance of integration and social cohesion, but doesn't directly reference specific party documents, thus a score of 4.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's specific arguments, naming the party and addressing their claims about social cohesion, which demonstrates a high level of responsiveness and earns a 5.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity, using language and priorities unique to Bündnis 90/Die Grünen, such as emphasizing the importance of social cohesion and integration, thus scoring a 5 for unmistakable distinctness."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 10745,
+      "token_count_output": 603,
+      "latency_s": 2.643,
+      "timestamp": "2026-06-24T09:49:35.632376Z"
+    },
+    {
+      "turn_id": "4e464782-2ac2-47d1-89d2-ce0f06900d7a",
+      "round_number": 5,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "**[FDP]** (Runde 5): Bezüglich der These der SPD, dass die Bundesrepublik Deutschland ihre internationale Verantwortung einhält und die Menschenrechte von Asylsuchenden respektiert, stimmen wir zu. Wir müssen jedoch auch sicherstellen, dass die Integration von Geflüchteten nicht zu einer Überlastung der Sozialleistungen und der Gemeinschaften führt. Dazu gehört die Einführung von Sprachkursen, die Bereitstellung von Bildungs- und Weiterbildungsmöglichkeiten sowie die Unterstützung bei der Eingliederung in den Arbeitsmarkt. Wir glauben jedoch, dass die FDP ihre eigenen Vorschläge zum Abbau bürokratischer Hürden und zur Förderung von privaten Initiativen und Selbsthilfemöglichkeiten für Geflüchtete in den Vordergrund stellen muss, um die Integration von Gef",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without personal attacks or inflammatory language, thus scoring a 4 for being professional and respectful.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and advances the discussion by mentioning specific measures like Sprachkursen and Bildungs- und Weiterbildungsmöglichkeiten, scoring a 4 for clear relevance.",
+        "logical_consistency": "The argument is internally consistent, connecting the need for integration measures with the goal of preventing Überlastung der Sozialleistungen, demonstrating a clear logical structure, hence a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the importance of Sprachkursen and the role of private Initiativen, earning a score of 4 for strong argumentation.",
+        "document_grounding": "While the turn generally aligns with the FDP's known positions on migration and integration, it does not directly reference specific party documents or programs, thus scoring a 3 for adequate but not exceptional grounding.",
+        "responsiveness": "The turn directly engages with the SPD's preceding argument regarding international Verantwortung and Menschenrechte, demonstrating a clear response to the opposing claim, which warrants a score of 4.",
+        "stance_differentiation": "The turn clearly maintains a distinct FDP identity by emphasizing the reduction of bürokratischer Hürden and the promotion of private Initiativen, distinguishing itself from other parties, hence a score of 4 for clear differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 10961,
+      "token_count_output": 612,
+      "latency_s": 2.698,
+      "timestamp": "2026-06-24T09:49:38.375003Z"
+    },
+    {
+      "turn_id": "335fb334-a98c-4fe7-a1ff-9e04e741748b",
+      "round_number": 5,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "**Die Linke** (Runde 5):\nBezüglich der These der CDU/CSU, dass die Integration von Geflüchteten nicht nur auf die Schaffung von Arbeitsplätzen beschränkt ist, sondern auch auf die Stärkung der Integrationsfähigkeit der Gesellschaft und die Förderung von sozialer Cohäsion, stimmen wir zu. Wir müssen jedoch auch sicherstellen, dass die Bundesrepublik Deutschland ihre internationale Verantwortung einhält und die Menschenrechte von Asylsuchenden respektiert. Dazu gehört die Einführung von Sprachkursen, die Bereitstellung von Bildungs- und Weiterbildungsmöglichkeiten sowie die Unterstützung bei der Eingliederung in den Arbeitsmarkt.\n\nWir sind jedoch der Meinung, dass die CDU/CSU ihre Prioritäten falsch setzt, indem sie die Einführung von Abschie",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "Die Linke's turn maintains a professional tone, critiques the CDU/CSU's priorities without personal attacks, and thus scores a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and engages with the preceding speaker's arguments, making it highly relevant and scoring a 5.",
+        "logical_consistency": "The argument is coherent and logically consistent, with a clear structure connecting premises to conclusions, but lacks exceptional rigor, scoring a 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and references to policy measures like Sprachkursen, but does not present exceptionally compelling evidence, scoring a 4.",
+        "document_grounding": "Die Linke's position aligns with their known party stance on migrationspolitik, emphasizing international Verantwortung and Menschenrechte, but does not directly reference specific party documents, scoring a 4.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's argument, naming the party and addressing their claim about Integrationsfähigkeit, demonstrating high responsiveness and scoring a 5.",
+        "stance_differentiation": "Die Linke clearly distinguishes its position from the CDU/CSU, emphasizing its unique perspective on migrationspolitik and the importance of Menschenrechte, scoring a 5 for unmistakable party identity."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 11201,
+      "token_count_output": 572,
+      "latency_s": 2.527,
+      "timestamp": "2026-06-24T09:49:41.026911Z"
+    },
+    {
+      "turn_id": "e209c085-1cf9-4923-806d-d2fb78bd1078",
+      "round_number": 5,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "**Alternative für Deutschland (Runde 5)**\n\nBezüglich der These der Grünen, dass die Stärkung der Integrationsfähigkeit der Gesellschaft ein wichtiger Aspekt ist, aber nicht der einzige, stimmen wir zu. Wir sind der Meinung, dass die Bundesrepublik Deutschland ihre eigenen Interessen und Prioritäten nicht vergessen darf, wenn sie Integrationspolitik betreibt. Die Schaffung von Arbeitsplätzen für Geflüchtete ist ein wichtiger Schritt, um ihre Integration in die Gesellschaft zu fördern, aber wir müssen auch sicherstellen, dass die Integration von Geflüchteten nicht zu einer Überlastung der sozialen Sicherheitssysteme führt.\n\nWir fordern die Bundesregierung auf, die Integration von Geflüchteten zu priorisieren, indem sie die Einführung von Sprachkursen, die Bereitstellung von Bildungs- und Weiter",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, avoiding personal attacks or inflammatory language, thus scoring a 4 for civility. The language used is respectful, even when disagreeing with other parties.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and integrates previous discussion points, making it highly relevant and scoring a 4.",
+        "logical_consistency": "The argument presented is coherent and logically consistent, with a clear structure that connects premises to conclusions, thus scoring a 4 for logical consistency.",
+        "argument_strength": "The turn provides some reasoning and evidence for its claims, such as the importance of integrating refugees into the workforce, but lacks specific, compelling evidence or detailed mechanisms, scoring a 3 for argument strength.",
+        "document_grounding": "The turn reflects the AfD's known positions on migration policy, emphasizing the need to prioritize Germany's interests and ensure that integration does not overload social systems, scoring a 4 for document grounding.",
+        "responsiveness": "The turn engages directly with previous arguments, particularly those from the Grünen, and responds to their points about the importance of societal integration capacity, scoring a 4 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably represents the AfD's distinct ideological position, emphasizing national interests, the importance of not overloading social systems, and a cautious approach to integration, scoring a 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 11411,
+      "token_count_output": 575,
+      "latency_s": 2.623,
+      "timestamp": "2026-06-24T09:49:43.590344Z"
+    }
+  ],
+  "interventions": [],
+  "round_summaries": [],
+  "total_tokens_input": 233301,
+  "total_tokens_output": 17824,
+  "total_latency_s": 72.55,
+  "started_at": "2026-06-24T09:48:33.428099Z",
+  "finished_at": "2026-06-24T09:49:45.391862Z"
+}
