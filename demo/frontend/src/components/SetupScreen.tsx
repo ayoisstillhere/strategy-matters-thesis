@@ -11,6 +11,7 @@ export default function SetupScreen() {
   const [conditions, setConditions] = useState<ConditionConfig[]>([]);
   const [selectedTopic, setSelectedTopic] = useState("");
   const [selectedCondition, setSelectedCondition] = useState("");
+  const [conditionTab, setConditionTab] = useState<"baseline" | "strategy">("baseline");
   const [numRounds, setNumRounds] = useState(10);
   const [language, setLanguage] = useState<"de" | "en">("de");
   const [loading, setLoading] = useState(false);
@@ -99,51 +100,77 @@ export default function SetupScreen() {
           </div>
         </section>
 
-        {/* Condition Selection */}
+        {/* Condition Selection — mutually exclusive tabs */}
         <section>
           <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">
-            Strategy / Condition
+            Experimental Condition
           </h2>
+          <p className="text-xs text-gray-400 mb-4">
+            Choose <strong>one</strong> condition. Baselines and strategies are independent — pick one or the other.
+          </p>
 
-          {/* Baselines */}
-          <p className="text-xs text-gray-400 mb-2 uppercase">Baselines</p>
-          <div className="grid grid-cols-2 gap-2 mb-4">
-            {baselines.map((c) => (
-              <button
-                key={c.id}
-                onClick={() => setSelectedCondition(c.id)}
-                className={`p-3 rounded-lg border text-left transition-all ${
-                  selectedCondition === c.id
-                    ? "border-gray-900 dark:border-white bg-gray-50 dark:bg-gray-700 ring-1 ring-gray-900 dark:ring-white"
-                    : "border-gray-200 dark:border-gray-600 hover:border-gray-400"
-                }`}
-              >
-                <span className="font-medium text-sm">{c.label}</span>
-                <span className="block text-xs text-gray-500 mt-0.5">{c.id.replace("_", " ")}</span>
-              </button>
-            ))}
+          {/* Tab bar */}
+          <div className="flex border-b border-gray-200 dark:border-gray-700 mb-4">
+            <button
+              onClick={() => { setConditionTab("baseline"); setSelectedCondition(""); }}
+              className={`px-4 py-2 text-sm font-medium border-b-2 transition-colors ${
+                conditionTab === "baseline"
+                  ? "border-gray-900 dark:border-white text-gray-900 dark:text-white"
+                  : "border-transparent text-gray-400 hover:text-gray-600"
+              }`}
+            >
+              Baselines ({baselines.length})
+            </button>
+            <button
+              onClick={() => { setConditionTab("strategy"); setSelectedCondition(""); }}
+              className={`px-4 py-2 text-sm font-medium border-b-2 transition-colors ${
+                conditionTab === "strategy"
+                  ? "border-gray-900 dark:border-white text-gray-900 dark:text-white"
+                  : "border-transparent text-gray-400 hover:text-gray-600"
+              }`}
+            >
+              Strategies ({strategies.length})
+            </button>
           </div>
 
-          {/* Strategies */}
-          <p className="text-xs text-gray-400 mb-2 uppercase">Strategies</p>
+          {/* Condition cards */}
           <div className="grid grid-cols-2 gap-2">
-            {strategies.map((c) => (
+            {(conditionTab === "baseline" ? baselines : strategies).map((c) => (
               <button
                 key={c.id}
                 onClick={() => setSelectedCondition(c.id)}
                 className={`p-3 rounded-lg border text-left transition-all ${
                   selectedCondition === c.id
-                    ? "border-gray-900 dark:border-white bg-gray-50 dark:bg-gray-700 ring-1 ring-gray-900 dark:ring-white"
+                    ? conditionTab === "baseline"
+                      ? "border-gray-900 dark:border-white bg-gray-50 dark:bg-gray-700 ring-1 ring-gray-900 dark:ring-white"
+                      : "border-blue-600 bg-blue-50 dark:bg-blue-900/30 ring-1 ring-blue-600"
                     : "border-gray-200 dark:border-gray-600 hover:border-gray-400"
                 }`}
               >
-                <span className="font-medium text-sm">{c.label}</span>
+                <div className="flex items-center gap-2">
+                  <span className="font-medium text-sm">{c.label}</span>
+                  <span className={`text-[10px] px-1.5 py-0.5 rounded-full font-medium ${
+                    conditionTab === "baseline"
+                      ? "bg-gray-100 text-gray-500"
+                      : "bg-blue-100 text-blue-700"
+                  }`}>
+                    {conditionTab === "baseline" ? "BASELINE" : "STRATEGY"}
+                  </span>
+                </div>
                 <span className="block text-xs text-gray-500 mt-0.5">
-                  {c.id.replace("_", " ")}
+                  {c.description || c.id.replace(/_/g, " ")}
                 </span>
               </button>
             ))}
           </div>
+
+          {/* Selection indicator */}
+          {selectedCondition && (
+            <div className="mt-3 text-xs text-gray-500">
+              Selected: <span className="font-medium text-gray-900 dark:text-white">{selectedCondition.replace(/_/g, " ")}</span>
+              {" "}({conditionTab})
+            </div>
+          )}
         </section>
 
         {/* Settings row */}

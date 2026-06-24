@@ -67,6 +67,7 @@ export interface ConditionConfig {
   id: string;
   label: string;
   type: string;
+  description?: string;
   has_moderator: boolean;
   uses_trigger: boolean;
   trigger_strategy: string | null;

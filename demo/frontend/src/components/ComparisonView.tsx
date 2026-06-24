@@ -4,9 +4,57 @@ import { getConditions, getTopics, startDebate } from "../api";
 import { useDebate } from "../hooks/useDebate";
 import TurnCard from "./TurnCard";
 import InterventionCard from "./InterventionCard";
+// ScorePanel used inline via MiniProgress
 import type { ConditionConfig, TopicConfig } from "../types";
-import { TOPIC_LABELS } from "../constants";
+import { TOPIC_LABELS, DIMENSIONS, getScoreBarColor } from "../constants";
 import { ArrowLeft, Play } from "lucide-react";
+
+function MiniProgress({ info, roundSummaries }: { info: any; roundSummaries: any[] }) {
+  const progress = info
+    ? Math.round((info.current_round / info.total_rounds) * 100)
+    : 0;
+  const latestSummary = roundSummaries[roundSummaries.length - 1] ?? null;
+
+  return (
+    <div className="mb-4 px-2 space-y-2">
+      {/* Progress bar */}
+      <div className="flex items-center justify-between text-xs text-gray-500">
+        <span>Round {info?.current_round ?? 0}/{info?.total_rounds ?? "?"}</span>
+        <span className={`px-1.5 py-0.5 rounded text-xs font-medium ${
+          info?.status === "running" ? "bg-green-100 text-green-700" :
+          info?.status === "completed" ? "bg-gray-100 text-gray-600" : "bg-yellow-100 text-yellow-700"
+        }`}>
+          {info?.status?.toUpperCase() ?? "—"}
+        </span>
+      </div>
+      <div className="w-full h-1.5 bg-gray-200 rounded-full overflow-hidden">
+        <div className="h-full bg-blue-500 rounded-full transition-all" style={{ width: `${progress}%` }} />
+      </div>
+      {/* Mini scores */}
+      {latestSummary?.scores && (
+        <div className="grid grid-cols-2 gap-1 mt-2">
+          {DIMENSIONS.slice(0, 4).map((dim) => {
+            const score = latestSummary.scores[dim.key] ?? 0;
+            return (
+              <div key={dim.key} className="flex items-center gap-1">
+                <span className="text-[10px] text-gray-500 w-8 truncate">{dim.abbrev}</span>
+                <div className="flex-1 h-1 bg-gray-200 rounded-full overflow-hidden">
+                  <div className={`h-full rounded-full ${getScoreBarColor(score)}`} style={{ width: `${(score/5)*100}%` }} />
+                </div>
+                <span className="text-[10px] text-gray-600">{score > 0 ? score.toFixed(1) : "—"}</span>
+              </div>
+            );
+          })}
+        </div>
+      )}
+      {info && (
+        <div className="text-[10px] text-gray-400">
+          Interventions: {info.intervention_count ?? 0}
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function ComparisonView() {
   const navigate = useNavigate();
@@ -15,6 +63,8 @@ export default function ComparisonView() {
   const [selectedTopic, setSelectedTopic] = useState("");
   const [conditionA, setConditionA] = useState("");
   const [conditionB, setConditionB] = useState("");
+  const [numRounds, setNumRounds] = useState(5);
+  const [language, setLanguage] = useState<"de" | "en">("de");
   const [debateIdA, setDebateIdA] = useState<string | null>(null);
   const [debateIdB, setDebateIdB] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
@@ -32,8 +82,8 @@ export default function ComparisonView() {
     setLoading(true);
     try {
       const [a, b] = await Promise.all([
-        startDebate({ topic_id: selectedTopic, condition_id: conditionA, num_rounds: 5, language: "de" }),
-        startDebate({ topic_id: selectedTopic, condition_id: conditionB, num_rounds: 5, language: "de" }),
+        startDebate({ topic_id: selectedTopic, condition_id: conditionA, num_rounds: numRounds, language }),
+        startDebate({ topic_id: selectedTopic, condition_id: conditionB, num_rounds: numRounds, language }),
       ]);
       setDebateIdA(a.debate_id);
       setDebateIdB(b.debate_id);
@@ -45,6 +95,7 @@ export default function ComparisonView() {
   };
 
   const started = debateIdA !== null && debateIdB !== null;
+  const topicLabel = TOPIC_LABELS[selectedTopic];
 
   return (
     <div className="h-screen flex flex-col">
@@ -59,7 +110,7 @@ export default function ComparisonView() {
           </h1>
         </div>
         {!started && (
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-2">
             <select
               value={selectedTopic}
               onChange={(e) => setSelectedTopic(e.target.value)}
@@ -78,9 +129,16 @@ export default function ComparisonView() {
               className="text-sm border border-gray-300 rounded px-2 py-1"
             >
               <option value="">Condition A...</option>
-              {conditions.map((c) => (
-                <option key={c.id} value={c.id}>{c.label} ({c.id})</option>
-              ))}
+              <optgroup label="Baselines">
+                {conditions.filter(c => c.type === "baseline").map((c) => (
+                  <option key={c.id} value={c.id}>{c.label}</option>
+                ))}
+              </optgroup>
+              <optgroup label="Strategies">
+                {conditions.filter(c => c.type === "strategy").map((c) => (
+                  <option key={c.id} value={c.id}>{c.label}</option>
+                ))}
+              </optgroup>
             </select>
             <select
               value={conditionB}
@@ -88,9 +146,33 @@ export default function ComparisonView() {
               className="text-sm border border-gray-300 rounded px-2 py-1"
             >
               <option value="">Condition B...</option>
-              {conditions.map((c) => (
-                <option key={c.id} value={c.id}>{c.label} ({c.id})</option>
+              <optgroup label="Baselines">
+                {conditions.filter(c => c.type === "baseline").map((c) => (
+                  <option key={c.id} value={c.id}>{c.label}</option>
+                ))}
+              </optgroup>
+              <optgroup label="Strategies">
+                {conditions.filter(c => c.type === "strategy").map((c) => (
+                  <option key={c.id} value={c.id}>{c.label}</option>
+                ))}
+              </optgroup>
+            </select>
+            <select
+              value={numRounds}
+              onChange={(e) => setNumRounds(Number(e.target.value))}
+              className="text-sm border border-gray-300 rounded px-2 py-1"
+            >
+              {[3, 5, 7, 10].map((n) => (
+                <option key={n} value={n}>{n} rounds</option>
               ))}
+            </select>
+            <select
+              value={language}
+              onChange={(e) => setLanguage(e.target.value as "de" | "en")}
+              className="text-sm border border-gray-300 rounded px-2 py-1"
+            >
+              <option value="de">Deutsch</option>
+              <option value="en">English</option>
             </select>
             <button
               onClick={handleStartBoth}
@@ -107,52 +189,72 @@ export default function ComparisonView() {
       {started ? (
         <div className="flex-1 flex overflow-hidden">
           {/* Panel A */}
-          <div className="flex-1 overflow-y-auto border-r border-gray-200 dark:border-gray-700 px-4 py-4">
-            <div className="text-center mb-4">
+          <div className="flex-1 flex flex-col overflow-hidden border-r border-gray-200 dark:border-gray-700">
+            <div className="text-center py-2 border-b border-gray-100">
               <span className="text-xs font-medium bg-blue-100 text-blue-700 px-2 py-1 rounded-full">
                 A: {debateA.info?.condition_label ?? conditionA}
               </span>
             </div>
-            <div className="space-y-3 max-w-xl mx-auto">
-              {debateA.timeline.map((item) => {
-                if (item.type === "round_start") {
-                  return (
-                    <div key={`a-r-${item.roundNumber}`} className="flex items-center gap-2 my-4">
-                      <div className="flex-1 h-px bg-gray-200" />
-                      <span className="text-xs text-gray-400">Round {item.roundNumber}</span>
-                      <div className="flex-1 h-px bg-gray-200" />
-                    </div>
-                  );
-                }
-                if (item.type === "turn") return <TurnCard key={item.data.turn_id} turn={item.data} />;
-                if (item.type === "intervention") return <InterventionCard key={item.data.intervention_id} intervention={item.data} />;
-                return null;
-              })}
+            <MiniProgress info={debateA.info} roundSummaries={debateA.roundSummaries} />
+            <div className="flex-1 overflow-y-auto px-4 pb-4">
+              {/* Topic framing */}
+              {topicLabel && (
+                <div className="mb-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
+                  <p className="text-xs font-semibold text-blue-700 dark:text-blue-300 uppercase mb-1">Debate Question</p>
+                  <p className="text-sm text-blue-900 dark:text-blue-100">{topicLabel.title}</p>
+                </div>
+              )}
+              <div className="space-y-3 max-w-xl mx-auto">
+                {debateA.timeline.map((item) => {
+                  if (item.type === "round_start") {
+                    return (
+                      <div key={`a-r-${item.roundNumber}`} className="flex items-center gap-2 my-4">
+                        <div className="flex-1 h-px bg-gray-200" />
+                        <span className="text-xs text-gray-400">Round {item.roundNumber}</span>
+                        <div className="flex-1 h-px bg-gray-200" />
+                      </div>
+                    );
+                  }
+                  if (item.type === "turn") return <TurnCard key={item.data.turn_id} turn={item.data} />;
+                  if (item.type === "intervention") return <InterventionCard key={item.data.intervention_id} intervention={item.data} />;
+                  return null;
+                })}
+              </div>
             </div>
           </div>
 
           {/* Panel B */}
-          <div className="flex-1 overflow-y-auto px-4 py-4">
-            <div className="text-center mb-4">
+          <div className="flex-1 flex flex-col overflow-hidden">
+            <div className="text-center py-2 border-b border-gray-100">
               <span className="text-xs font-medium bg-green-100 text-green-700 px-2 py-1 rounded-full">
                 B: {debateB.info?.condition_label ?? conditionB}
               </span>
             </div>
-            <div className="space-y-3 max-w-xl mx-auto">
-              {debateB.timeline.map((item) => {
-                if (item.type === "round_start") {
-                  return (
-                    <div key={`b-r-${item.roundNumber}`} className="flex items-center gap-2 my-4">
-                      <div className="flex-1 h-px bg-gray-200" />
-                      <span className="text-xs text-gray-400">Round {item.roundNumber}</span>
-                      <div className="flex-1 h-px bg-gray-200" />
-                    </div>
-                  );
-                }
-                if (item.type === "turn") return <TurnCard key={item.data.turn_id} turn={item.data} />;
-                if (item.type === "intervention") return <InterventionCard key={item.data.intervention_id} intervention={item.data} />;
-                return null;
-              })}
+            <MiniProgress info={debateB.info} roundSummaries={debateB.roundSummaries} />
+            <div className="flex-1 overflow-y-auto px-4 pb-4">
+              {/* Topic framing */}
+              {topicLabel && (
+                <div className="mb-4 p-3 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800">
+                  <p className="text-xs font-semibold text-green-700 dark:text-green-300 uppercase mb-1">Debate Question</p>
+                  <p className="text-sm text-green-900 dark:text-green-100">{topicLabel.title}</p>
+                </div>
+              )}
+              <div className="space-y-3 max-w-xl mx-auto">
+                {debateB.timeline.map((item) => {
+                  if (item.type === "round_start") {
+                    return (
+                      <div key={`b-r-${item.roundNumber}`} className="flex items-center gap-2 my-4">
+                        <div className="flex-1 h-px bg-gray-200" />
+                        <span className="text-xs text-gray-400">Round {item.roundNumber}</span>
+                        <div className="flex-1 h-px bg-gray-200" />
+                      </div>
+                    );
+                  }
+                  if (item.type === "turn") return <TurnCard key={item.data.turn_id} turn={item.data} />;
+                  if (item.type === "intervention") return <InterventionCard key={item.data.intervention_id} intervention={item.data} />;
+                  return null;
+                })}
+              </div>
             </div>
           </div>
         </div>

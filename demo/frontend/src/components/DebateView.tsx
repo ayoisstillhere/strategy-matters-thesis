@@ -117,6 +117,17 @@ export default function DebateView() {
             </div>
           )}
 
+          {/* Topic framing card */}
+          {topicLabel && (
+            <div className="max-w-3xl mx-auto mb-4 p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg border border-indigo-200 dark:border-indigo-800">
+              <p className="text-xs font-semibold text-indigo-700 dark:text-indigo-300 uppercase mb-1">Debate Question</p>
+              <p className="text-base text-indigo-900 dark:text-indigo-100 font-medium">{topicLabel.title}</p>
+              {topicLabel.subtitle && (
+                <p className="text-sm text-indigo-700 dark:text-indigo-300 mt-1">{topicLabel.subtitle}</p>
+              )}
+            </div>
+          )}
+
           {/* Timeline */}
           <div className="max-w-3xl mx-auto space-y-4">
             {timeline.map((item, idx) => {
