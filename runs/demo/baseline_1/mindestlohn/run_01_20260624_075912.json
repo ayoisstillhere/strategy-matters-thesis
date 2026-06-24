@@ -1,0 +1,400 @@
+{
+  "run_id": "65f2e174-f294-42c2-b486-fad005115600",
+  "config": {
+    "topic_id": "mindestlohn",
+    "topic_type": "empirical",
+    "framing_prompt": "The German federal minimum wage currently stands at €12.82 per hour, set by the independent Mindestlohnkommission. Several parties have proposed raising it to €15 per hour by 2026, while others argue the commission's independence must not be overridden by political targets. Discuss whether the minimum wage should be raised to €15, considering the effects on low-wage workers, small and medium-sized businesses, and regional economic differences between western and eastern Germany. Ground your arguments in your party's documented positions.",
+    "condition_id": "baseline_1",
+    "condition_label": "None",
+    "condition_type": "baseline",
+    "run_number": 1,
+    "agent_model": "llama-3.1-8b-instant",
+    "judge_model": "llama-3.3-70b-versatile",
+    "moderator_model": "",
+    "num_rounds": 2,
+    "num_agents": 6,
+    "max_interventions": 3,
+    "silent_control_rate": 0.2,
+    "turn_order": [
+      "CDU/CSU",
+      "SPD",
+      "Bündnis 90/Die Grünen",
+      "FDP",
+      "Die Linke",
+      "AfD"
+    ],
+    "has_moderator_agent": false,
+    "uses_trigger": false,
+    "trigger_strategy": null,
+    "nudge_text": ""
+  },
+  "turns": [
+    {
+      "turn_id": "b6517bb6-645e-400a-b4af-b062d034b051",
+      "round_number": 1,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "Regarding the SPD's argument that raising the minimum wage to €15 per hour by 2026 would significantly improve the lives of low-wage workers, we must consider the broader implications for small and medium-sized businesses, which are the backbone of the German Mittelstand. A one-size-fits-all approach to minimum wage increases could lead to job losses, particularly in regions with already high labor costs. Our party's commitment to a social market economy demands that we balance the need to protect low-wage workers with the necessity of preserving employment opportunities.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 2,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, avoiding personal attacks or inflammatory language, thus scoring a 4 for civility. It critiques the SPD's argument respectfully, focusing on policy implications rather than making personal attacks.",
+        "relevance": "The turn is clearly relevant to the debate topic of the minimum wage, addressing potential consequences of raising it, which earns it a score of 4 for relevance. It directly engages with the policy issue at hand.",
+        "logical_consistency": "The argument presented is logically consistent, discussing the potential impact of a minimum wage increase on small and medium-sized businesses and the need for balance, thus scoring a 4 for logical consistency. It presents a coherent viewpoint without self-contradiction.",
+        "argument_strength": "The turn provides a well-supported claim with specific reasoning about the potential effects on the Mittelstand, which warrants a score of 4 for argument strength. It outlines a clear mechanism (job losses due to increased labor costs) and considers the broader economic context.",
+        "document_grounding": "Given the CDU/CSU's known commitment to a social market economy, this turn aligns well with documented party positions, scoring a 4 for document grounding. It reflects the party's emphasis on balancing social protection with economic viability.",
+        "responsiveness": "Since this is the first turn and there are no preceding arguments to respond to, the turn scores a 2 for responsiveness. It does not engage with any specific claims from other parties because there are none to address at this point.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity, emphasizing the importance of the Mittelstand and the social market economy, which is characteristic of the CDU/CSU's stance, thus scoring a 4 for stance differentiation. It uses party-specific values and priorities to frame its argument."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 2574,
+      "token_count_output": 571,
+      "latency_s": 2.325,
+      "timestamp": "2026-06-24T07:58:48.311923Z"
+    },
+    {
+      "turn_id": "448981cc-63e2-4bea-a250-d293eab61905",
+      "round_number": 1,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "Regarding the CDU/CSU's claim that raising the minimum wage to €15 per hour by 2026 would lead to job losses in small and medium-sized businesses, particularly in regions with already high labor costs, I must respectfully disagree. As the party that has long championed the interests of workers and their families, we believe that a higher minimum wage is not only a matter of social justice but also an economic imperative. A higher minimum wage would lead to increased consumer spending, as low-wage workers would finally have enough money to invest in the economy, creating a ripple effect that benefits businesses and the economy as a whole. Furthermore, our party's commitment to a strong welfare state and robust social safety nets would ensure that workers who lose their jobs due to the transition to a higher minimum wage would receive support and training to help them find new employment.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, addressing the opposing party's claim without resorting to personal attacks or inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of minimum wage, directly addressing the CDU/CSU's claim and advancing the discussion with a clear argument, which warrants a score of 5 for relevance.",
+        "logical_consistency": "The argument presented is coherent and logically structured, connecting the premise of a higher minimum wage to the conclusion of increased consumer spending and economic benefits, although it could be strengthened with more empirical evidence, resulting in a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning about the economic benefits of a higher minimum wage, including increased consumer spending, but could be further strengthened with concrete data or studies, thus scoring a 4 for argument strength.",
+        "document_grounding": "The argument reflects the SPD's known commitment to social justice and a strong welfare state, aligning with their documented positions, but does not directly reference specific party programme content, leading to a score of 4 for document grounding.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's specific argument about job losses in small and medium-sized businesses, providing a clear and detailed response that addresses the opposing claim, which merits a score of 5 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the SPD's distinct party identity and ideological position, emphasizing social justice, the importance of a strong welfare state, and the economic benefits of a higher minimum wage, making it clearly distinguishable from other parties, thus scoring a 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 2903,
+      "token_count_output": 616,
+      "latency_s": 1.986,
+      "timestamp": "2026-06-24T07:58:50.619559Z"
+    },
+    {
+      "turn_id": "37028687-a006-4035-8da9-f09b9ddbcdee",
+      "round_number": 1,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "**[Bündnis 90/Die Grünen]** (Round 1):  Regarding the CDU/CSU's assertion that raising the minimum wage to €15 per hour by 2026 would harm small and medium-sized businesses, particularly in regions with high labor costs, I'd like to highlight the urgency of addressing the climate crisis and its disproportionate impact on low-wage workers. As our party's programme emphasizes, the ecological transition must be socially just. A higher minimum wage would not only improve the lives of low-wage workers but also incentivize businesses to adopt more sustainable practices and reduce their ecological footprint. This, in turn, would create new economic opportunities and jobs in the green sector, which is critical for Germany's future competitiveness. We must prioritize a just transition that benefits both workers and the environment.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing the CDU/CSU's position without personal attacks or inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of the minimum wage, connecting it to the party's broader ecological and social justice goals, making it relevant and deserving of a 4.",
+        "logical_consistency": "The argument is internally consistent, linking the minimum wage increase to sustainable practices and the creation of green sector jobs, demonstrating a clear logical structure and earning a 4.",
+        "argument_strength": "The turn provides well-supported claims, arguing that a higher minimum wage would incentivize sustainable practices and create new economic opportunities, thus scoring a 4 for argument strength.",
+        "document_grounding": "The argument aligns with Bündnis 90/Die Grünen's known positions on social justice and ecological transition, reflecting their documented programme content and warranting a 4.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's argument about the impact on small and medium-sized businesses, offering a counter perspective that connects to the party's ecological and social goals, deserving a 4 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects Bündnis 90/Die Grünen's unique blend of ecological and social justice priorities, using distinctive framing and vocabulary that no other party would use, thus scoring a 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 3281,
+      "token_count_output": 556,
+      "latency_s": 2.115,
+      "timestamp": "2026-06-24T07:58:52.748647Z"
+    },
+    {
+      "turn_id": "b5f64901-d3ee-47e8-a8b2-8cf0acd0050c",
+      "round_number": 1,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "**[FDP]** (Round 1): Regarding the SPD's argument that a higher minimum wage would lead to increased consumer spending and benefit the economy as a whole, I must note that this argument oversimplifies the complex dynamics of labor markets and economic growth. Our party's approach to economic policy is grounded in the principle of individual freedom and the promotion of competition, not the assumption that state intervention can drive economic growth. The experience of European countries with similar minimum wage policies shows that they often lead to unintended consequences, such as reduced employment and increased informality. What low-wage workers truly need is access to better education and training opportunities, not a higher minimum wage that could stifle innovation and job creation.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques the SPD's argument without personal attacks, and uses respectful language, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of minimum wage, engaging with the SPD's argument and providing a counterpoint, making it highly relevant and deserving of a 5.",
+        "logical_consistency": "The argument is coherent, starting with a critique of the SPD's oversimplification and then presenting an alternative view based on the FDP's principles, but it could be strengthened by more explicit connections between the critique and the proposed solution, thus scoring a 4.",
+        "argument_strength": "The turn provides a well-supported claim with specific reasoning, referencing the experience of European countries and the potential for unintended consequences, which strengthens its argument, scoring a 4.",
+        "document_grounding": "The turn reflects the FDP's documented positions on individual freedom, competition, and skepticism towards state intervention in the economy, aligning with their known programme content, thus scoring a 4.",
+        "responsiveness": "The turn directly engages with the SPD's specific argument about increased consumer spending, naming the party and addressing their claim, which demonstrates high responsiveness and earns a 5.",
+        "stance_differentiation": "The turn unmistakably represents the FDP's distinct ideological position, emphasizing individual freedom, competition, and skepticism towards state intervention, making it clearly distinguishable from other parties, thus scoring a 5."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 3617,
+      "token_count_output": 533,
+      "latency_s": 1.9120000000000001,
+      "timestamp": "2026-06-24T07:58:54.705635Z"
+    },
+    {
+      "turn_id": "80d95b7a-05fc-4ed3-915c-145723c25ac1",
+      "round_number": 1,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "**Regarding the FDP's claim that state intervention through a higher minimum wage would lead to unintended consequences, such as reduced employment and increased informality, I strongly disagree.**\n\nDie Linke has long argued that the current economic system, driven by the interests of capital, perpetuates poverty, inequality, and exploitation. A higher minimum wage is not a panacea, but it is a crucial step towards addressing the structural issues inherent in the capitalist system. The FDP's focus on individual freedom and competition ignores the reality of precarious work, low wages, and the erosion of workers' rights. By prioritizing corporate interests over people's needs, the FDP's policies would only exacerbate the problems we face.\n\n**Die Linke's programme emphasizes the need for a fundamental transformation of the economic system, including the introduction of a wealth tax and a public investment programme to create millions of new jobs in sustainable sectors. A higher minimum wage is a key component of this transformation, as it would give workers the",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiquing the FDP's policies without resorting to personal attacks or inflammatory language, thus scoring a 4 for being professional and respectful throughout.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage and its implications, engaging with the FDP's argument and advancing the discussion with specific policy proposals, making it a 5 for being precisely targeted and deepening the discussion.",
+        "logical_consistency": "The argument is generally coherent, connecting the need for a higher minimum wage to the broader critique of the capitalist system and the need for economic transformation, but it could be strengthened by more explicit links between these elements, thus a 4.",
+        "argument_strength": "The turn presents compelling arguments, grounding its claims in a critique of the capitalist system and the need for structural change, and offering specific policy alternatives like a wealth tax and public investment programme, which earns it a 5 for being well-supported and acknowledging the complexity of the issue.",
+        "document_grounding": "The turn clearly reflects Die Linke's documented positions, emphasizing the need for a fundamental transformation of the economic system and highlighting specific policy commitments like the introduction of a wealth tax, thus a 5 for being directly anchored in verifiable party programme content.",
+        "responsiveness": "The turn directly engages with the FDP's specific argument about the potential negative consequences of a higher minimum wage, addressing their claim and providing a counterargument based on Die Linke's alternative economic vision, making it a 5 for naming the specific party and claim being addressed and engaging with the strongest version of the argument.",
+        "stance_differentiation": "The turn unmistakably reflects Die Linke's distinct ideological position, using party-specific vocabulary and framing conventions that differentiate it sharply from other parties, particularly in its emphasis on the need for a fundamental transformation of the capitalist system, thus a 5 for being unmistakably distinct."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 4009,
+      "token_count_output": 681,
+      "latency_s": 2.258,
+      "timestamp": "2026-06-24T07:58:56.776027Z"
+    },
+    {
+      "turn_id": "2dd9b0c5-3e89-4f43-954e-80caee37af73",
+      "round_number": 1,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "**Regarding the SPD's argument that raising the minimum wage to €15 per hour by 2026 would significantly improve the lives of low-wage workers, I must emphasize that our party's primary concern is the preservation of German jobs and the competitiveness of our economy.**\n\nA higher minimum wage would lead to increased labor costs for small and medium-sized businesses, which are already struggling to compete with global corporations. This could result in job losses, particularly in regions where the economy is already fragile. Our party's programme emphasizes the importance of protecting the Mittelstand, which is the backbone of our economy and the primary employer of low-wage workers.\n\n**We cannot afford to implement a one-size-fits-all approach to minimum wage increases that would disproportionately harm these businesses and the workers they employ. Instead, we need to focus on creating a more competitive economy that allows businesses to thrive and create new jobs, rather than relying on state intervention to artificially inflate wages.**\n\nThis requires a more nuanced approach that takes into account",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques the SPD's policy without personal attacks, and avoids inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of minimum wage and its potential impact on the economy and jobs, making it clearly relevant and deserving of a 4.",
+        "logical_consistency": "The argument that a higher minimum wage could lead to job losses in small and medium-sized businesses due to increased labor costs is logically consistent and well-structured, warranting a score of 4.",
+        "argument_strength": "The turn provides a clear reasoning mechanism (increased labor costs leading to job losses) and references the importance of protecting the Mittelstand, which strengthens its argument and earns a 4.",
+        "document_grounding": "The emphasis on protecting the Mittelstand and promoting a competitive economy aligns with the AfD's known positions, suggesting a strong connection to their documented programme and thus a score of 4.",
+        "responsiveness": "The turn directly engages with the SPD's argument regarding the minimum wage, addressing their claim and providing a counterargument, which demonstrates a good level of responsiveness and merits a 4.",
+        "stance_differentiation": "The AfD's focus on preserving German jobs, competitiveness, and the importance of the Mittelstand clearly distinguishes their position from other parties, such as the SPD and the Greens, and thus deserves a score of 4 for maintaining a distinct party identity."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 4431,
+      "token_count_output": 593,
+      "latency_s": 2.182,
+      "timestamp": "2026-06-24T07:58:58.978804Z"
+    },
+    {
+      "turn_id": "e37b5c8b-adbe-4978-a781-a2ce5541aceb",
+      "round_number": 2,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "**[CDU/CSU]** (Round 2): Regarding Die Linke's argument that a higher minimum wage is a crucial step towards addressing the structural issues inherent in the capitalist system and that our party's policies would only exacerbate the problems, I must respectfully disagree. Our party's commitment to a social market economy demands that we balance the need to protect low-wage workers with the necessity of preserving employment opportunities and promoting economic growth. While we acknowledge the need for a more equitable distribution of wealth, a higher minimum wage must not be implemented at the expense of the Mittelstand and regional economic differences.\n\nMoreover, our party's programme emphasizes the importance of targeted welfare and social policy measures to support low-wage workers, rather than relying on a one-size-fits-all approach to minimum wage increases. We believe that education and training opportunities, as advocated by the FDP, are essential to empowering workers and promoting social mobility. A more nuanced approach that combines social responsibility with economic competence is necessary to address",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, addressing opposing views without personal attacks or inflammatory language, thus scoring a 4 for being professional and respectful.",
+        "relevance": "The turn clearly addresses the debate topic of minimum wage, engaging with preceding arguments and advancing the discussion, which aligns with a score of 4 for being clearly on-topic with focused argumentation.",
+        "logical_consistency": "The argument is internally consistent, balancing the need to protect low-wage workers with the necessity of preserving employment opportunities, demonstrating a clear logical structure, hence a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, referencing the importance of targeted welfare and social policy measures, and combining social responsibility with economic competence, which warrants a score of 4 for well-supported claims.",
+        "document_grounding": "The turn reflects documented party positions, emphasizing the commitment to a social market economy and the importance of preserving employment opportunities, aligning with the party's known programme content, thus scoring a 4.",
+        "responsiveness": "The turn directly engages with Die Linke's argument, addressing the claim that a higher minimum wage is crucial for addressing structural issues in the capitalist system, and provides a clear response, earning a score of 4 for identifying and engaging with a specific opposing claim.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity, using party-specific values and priorities, such as the commitment to a social market economy and the importance of the Mittelstand, which is recognizable as the CDU/CSU's stance, hence a score of 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 4774,
+      "token_count_output": 619,
+      "latency_s": 2.034,
+      "timestamp": "2026-06-24T07:59:01.098295Z"
+    },
+    {
+      "turn_id": "f2bedcb9-75d7-4fcf-9f0b-d4f9bfff7885",
+      "round_number": 2,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "## SPD (Round 2)\nRegarding the CDU/CSU's claim that our party's commitment to a higher minimum wage would lead to a one-size-fits-all approach that disproportionately harms small and medium-sized businesses in regions with high labor costs, I must emphasize that our party has consistently advocated for a differentiated approach that takes regional economic differences into account. As our party's programme outlines, we propose a minimum wage of €15 per hour, but with a regional adjustment mechanism to ensure that businesses in regions with high labor costs are not disproportionately affected. This approach would allow for a more nuanced implementation of the minimum wage, taking into account the specific needs of different regions and industries.\n\nMoreover, our party's commitment to a strong welfare state and robust social safety nets would ensure that workers who lose their jobs due to the transition to a higher minimum wage would receive support and training to help them find new employment. This approach is not only socially just but also economically sound, as it would prevent the kind",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, addressing opposing views without personal attacks or inflammatory language, thus scoring a 4 for being professional and respectful.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage and its implications, providing a clear and focused argument that advances the discussion, thus scoring a 5 for being precisely targeted.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, although it could be strengthened by addressing potential counterarguments more explicitly, thus scoring a 4.",
+        "argument_strength": "The turn provides compelling arguments with specific evidence and clear causal mechanisms, such as the proposed regional adjustment mechanism, and acknowledges potential limitations, thus scoring a 5 for being well-supported.",
+        "document_grounding": "The turn is directly anchored in the SPD's documented positions, referencing the party's programme and commitment to a strong welfare state, thus scoring a 5 for being verifiably grounded.",
+        "responsiveness": "The turn engages directly with the CDU/CSU's specific arguments, naming the party and addressing their claims about the potential harm to small and medium-sized businesses, thus scoring a 5 for directly addressing opposing views.",
+        "stance_differentiation": "The turn unmistakably reflects the SPD's distinct party identity and ideological position, emphasizing social justice, a strong welfare state, and a nuanced approach to economic policy, thus scoring a 5 for being unmistakably distinct."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 5233,
+      "token_count_output": 590,
+      "latency_s": 1.9090000000000003,
+      "timestamp": "2026-06-24T07:59:03.196531Z"
+    },
+    {
+      "turn_id": "7a0ba146-1539-431d-aac3-6359b6395359",
+      "round_number": 2,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "**Bündnis 90/Die Grünen (Round 2)**\n\nRegarding the SPD's argument that a regional adjustment mechanism for the minimum wage would ensure that businesses in regions with high labor costs are not disproportionately affected, I'd like to emphasize the importance of combining this approach with a more comprehensive strategy for supporting small and medium-sized businesses in regions with high labor costs. Our party's programme highlights the need for targeted investments in regional development, such as infrastructure, education, and training, to create new economic opportunities and jobs.\n\nFurthermore, a higher minimum wage is not just an economic imperative but also an ecological one. By incentivizing businesses to adopt more sustainable practices and reduce their ecological footprint, we can create new economic opportunities and jobs in the green sector, which is critical for Germany's future competitiveness. This approach would not only benefit low-wage workers but also contribute to a more sustainable and equitable economy.\n\nIn light of the climate crisis, we must prioritize a just transition that benefits both workers and the",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 5,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, acknowledging the legitimacy of opposing perspectives while firmly disagreeing, as seen in the phrase 'I'd like to emphasize the importance of combining this approach with a more comprehensive strategy'.",
+        "relevance": "The turn directly addresses the debate topic of minimum wage and its implications, staying focused on the issue and advancing the discussion with specific proposals, such as 'targeted investments in regional development'.",
+        "logical_consistency": "The argument is internally coherent, with a clear logical structure connecting premises to conclusions, as evident in the connection between a higher minimum wage, sustainable practices, and new economic opportunities.",
+        "argument_strength": "The turn presents compelling arguments with specific evidence and clear causal mechanisms, such as the link between a higher minimum wage and the adoption of more sustainable practices, demonstrating a strong argument.",
+        "document_grounding": "The turn is directly anchored in verifiable party programme content, using specific party commitments as evidence, such as the emphasis on 'a just transition that benefits both workers and the environment'.",
+        "responsiveness": "The turn identifies and engages with specific opposing claims, responding to the actual argument made by the SPD regarding regional adjustment mechanisms, and explains precisely where and why its position differs.",
+        "stance_differentiation": "The turn unmistakably reflects the party's distinct ideological position, using party-specific vocabulary and framing conventions, such as the emphasis on 'ecological footprint' and 'just transition', which is unique to Bündnis 90/Die Grünen."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 5679,
+      "token_count_output": 601,
+      "latency_s": 2.09,
+      "timestamp": "2026-06-24T07:59:05.065137Z"
+    },
+    {
+      "turn_id": "4fba921a-522d-40f6-afb0-80f660688eb5",
+      "round_number": 2,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "**[FDP]** (Round 2): Regarding the SPD's proposal for a regional adjustment mechanism for the minimum wage, I must express skepticism about the efficacy of such a mechanism. While it may seem like a nuanced approach, it would still involve state-driven price fixing, which can lead to unintended consequences like reduced employment and increased informality. Our party's commitment to individual freedom and the promotion of competition demands that we avoid such measures.\n\nMoreover, the SPD's emphasis on a strong welfare state and social safety nets is laudable, but it ignores the root cause of the problem: a lack of economic incentives and opportunities for low-wage workers. By focusing on state-driven solutions, the SPD is missing the opportunity to empower workers through education and training, as advocated by our party. This approach would not only benefit low-wage workers but also promote social mobility and reduce poverty.\n\nIn light of the climate crisis and regional economic differences, we must prioritize a more comprehensive strategy for supporting small and medium-sized businesses",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques policies without personal attacks, and does not use inflammatory language, thus scoring a 4 for being professional and respectful throughout.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage and engages with the SPD's proposal for a regional adjustment mechanism, making it highly relevant and deserving of a 5.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, but may contain minor gaps in reasoning, thus scoring a 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and references to potential consequences of state-driven price fixing, earning a 4 for its argument strength.",
+        "document_grounding": "The turn reflects the FDP's known positions on individual freedom, competition, and education, aligning with their documented programme, thus scoring a 4.",
+        "responsiveness": "The turn directly engages with the SPD's specific argument and proposal, naming the party and addressing their claims directly, which merits a 5 for its responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the FDP's distinct ideological position, using party-specific vocabulary and framing conventions, making it deserving of a 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 6112,
+      "token_count_output": 548,
+      "latency_s": 2.22,
+      "timestamp": "2026-06-24T07:59:07.245219Z"
+    },
+    {
+      "turn_id": "12753bad-536c-40f9-bed6-dc9917da6030",
+      "round_number": 2,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Regarding the FDP's skepticism about the regional adjustment mechanism for the minimum wage, I must emphasize that this approach is not about state-driven price fixing, but rather about recognizing the economic reality of regional differences. Our party's programme emphasizes the need for a more equitable distribution of wealth, and a regional adjustment mechanism would allow for a more nuanced implementation of the minimum wage, taking into account the specific needs of different regions and industries.\n\nMoreover, the FDP's focus on individual freedom and competition ignores the reality of precarious work, low wages, and the erosion of workers' rights. By prioritizing corporate interests over people's needs, the FDP's policies would only exacerbate the problems we face. A higher minimum wage, combined with targeted support for small and medium-sized businesses in regions with high labor costs, is a crucial step towards addressing the structural issues inherent in the capitalist system.\n\nAs our party's programme outlines, we propose a public investment programme to create millions of new jobs in sustainable sectors, including",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiquing the FDP's policies without resorting to personal attacks or inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of minimum wage and its implementation, making it highly relevant to the discussion, thus scoring a 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, but there are minor logical gaps, such as not fully addressing potential counterarguments, thus scoring a 4 for logical consistency.",
+        "argument_strength": "The turn presents compelling arguments, supported by the party's programme and emphasizing the need for a more equitable distribution of wealth, thus scoring a 5 for argument strength.",
+        "document_grounding": "The turn is clearly anchored in Die Linke's documented positions, referencing the party's programme and its proposals for a public investment programme, thus scoring a 5 for document grounding.",
+        "responsiveness": "The turn directly engages with the FDP's preceding argument, addressing their skepticism about the regional adjustment mechanism and providing a clear counterargument, thus scoring a 5 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects Die Linke's party identity and ideological position, emphasizing the need for a more equitable distribution of wealth and prioritizing people's needs over corporate interests, thus scoring a 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 6564,
+      "token_count_output": 571,
+      "latency_s": 1.842,
+      "timestamp": "2026-06-24T07:59:09.452071Z"
+    },
+    {
+      "turn_id": "306d071a-27de-4402-8298-80e7e436846a",
+      "round_number": 2,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "**[AfD]** (Round 2): Regarding the SPD's proposal for a regional adjustment mechanism for the minimum wage, I must emphasize that our party's primary concern is the preservation of German jobs and the competitiveness of our economy. While the SPD's intention may be to protect small and medium-sized businesses in regions with high labor costs, their approach would still lead to increased labor costs and potentially harm these very businesses.\n\nOur party's programme emphasizes the importance of protecting the Mittelstand, which is the backbone of our economy and the primary employer of low-wage workers. Instead of implementing a regional adjustment mechanism, we need to focus on creating a more competitive economy that allows businesses to thrive and create new jobs, rather than relying on state intervention to artificially inflate wages.\n\nMoreover, the SPD's proposal ignores the root cause of regional economic differences: the lack of investment in infrastructure, education, and training in these regions. Our party's programme proposes targeted investments in regional development to create new economic opportunities and jobs",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques the SPD's proposal without personal attacks, and focuses on policy arguments, which aligns with a score of 4 for civility.",
+        "relevance": "The turn directly addresses the SPD's proposal for a regional adjustment mechanism for the minimum wage and stays focused on the topic, earning a score of 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, but there's a minor leap in logic when connecting the lack of investment in infrastructure, education, and training to the SPD's proposal, which warrants a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides some reasoning and evidence, such as the potential harm to small and medium-sized businesses, but could be stronger with more specific data or examples, resulting in a score of 4 for argument strength.",
+        "document_grounding": "The turn reflects the AfD's known position on protecting the Mittelstand and promoting a competitive economy, which is in line with their party programme, earning a score of 4 for document grounding.",
+        "responsiveness": "The turn directly engages with the SPD's specific proposal and addresses the preceding argument, demonstrating a high level of responsiveness and earning a score of 5.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity and ideological position, emphasizing the AfD's commitment to protecting German jobs and the competitiveness of the economy, which warrants a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 6985,
+      "token_count_output": 592,
+      "latency_s": 2.049,
+      "timestamp": "2026-06-24T07:59:11.231301Z"
+    }
+  ],
+  "interventions": [],
+  "round_summaries": [],
+  "total_tokens_input": 56162,
+  "total_tokens_output": 7071,
+  "total_latency_s": 24.92,
+  "started_at": "2026-06-24T07:58:48.311923Z",
+  "finished_at": "2026-06-24T07:59:12.757939Z"
+}

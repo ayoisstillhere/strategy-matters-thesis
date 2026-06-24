@@ -89,6 +89,7 @@ class DebateEngine:
         num_rounds: int = 10,
         max_interventions: int = 3,
         silent_control_rate: float = 0.20,
+        language: str = "en",
     ):
         self.topic_id = topic_id
         self.framing_prompt = framing_prompt
@@ -102,6 +103,7 @@ class DebateEngine:
         self.num_rounds = num_rounds
         self.max_interventions = max_interventions
         self.silent_control_rate = silent_control_rate
+        self.language = language
 
         # Load condition spec
         self.condition = CONDITIONS[condition_id]
@@ -135,6 +137,7 @@ class DebateEngine:
                 rag_pipeline=self.rag_pipeline,
                 model=self.agent_model,
                 nudge_text=nudge,
+                language=self.language,
             )
         return agents
 
@@ -163,28 +166,7 @@ class DebateEngine:
 
         finished_at = datetime.now(timezone.utc)
 
-        # Build config snapshot
-        config = DebateRunConfig(
-            topic_id=self.topic_id,
-            topic_type=self.topic_type,
-            framing_prompt=self.framing_prompt,
-            condition_id=self.condition_id,
-            condition_label=self.condition.label,
-            condition_type=self.condition.condition_type.value,
-            run_number=self.run_number,
-            agent_model=self.agent_model,
-            judge_model=self.judge_model,
-            moderator_model=self.judge_model if self.condition.has_moderator_agent else "",
-            num_rounds=self.num_rounds,
-            num_agents=len(self.turn_order),
-            max_interventions=self.max_interventions,
-            silent_control_rate=self.silent_control_rate,
-            turn_order=list(self.turn_order),
-            has_moderator_agent=self.condition.has_moderator_agent,
-            uses_trigger=self.condition.uses_trigger,
-            trigger_strategy=self.condition.trigger_strategy,
-            nudge_text=NUDGE_INSTRUCTION if self.condition_id == "baseline_2" else "",
-        )
+        config = self._build_config()
 
         # Compute totals
         total_in = sum(t.token_count_input for t in self.transcript)
@@ -215,6 +197,34 @@ class DebateEngine:
             f"tokens={total_in + total_out:,} ==="
         )
         return result
+
+    # ------------------------------------------------------------------
+    # Config builder
+    # ------------------------------------------------------------------
+
+    def _build_config(self) -> DebateRunConfig:
+        """Build a DebateRunConfig snapshot from current engine state."""
+        return DebateRunConfig(
+            topic_id=self.topic_id,
+            topic_type=self.topic_type,
+            framing_prompt=self.framing_prompt,
+            condition_id=self.condition_id,
+            condition_label=self.condition.label,
+            condition_type=self.condition.condition_type.value,
+            run_number=self.run_number,
+            agent_model=self.agent_model,
+            judge_model=self.judge_model,
+            moderator_model=self.judge_model if self.condition.has_moderator_agent else "",
+            num_rounds=self.num_rounds,
+            num_agents=len(self.turn_order),
+            max_interventions=self.max_interventions,
+            silent_control_rate=self.silent_control_rate,
+            turn_order=list(self.turn_order),
+            has_moderator_agent=self.condition.has_moderator_agent,
+            uses_trigger=self.condition.uses_trigger,
+            trigger_strategy=self.condition.trigger_strategy,
+            nudge_text=NUDGE_INSTRUCTION if self.condition_id == "baseline_2" else "",
+        )
 
     # ------------------------------------------------------------------
     # Round execution

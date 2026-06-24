@@ -60,6 +60,7 @@ class PoliticalAgent:
         rag_pipeline: Optional[RAGPipeline] = None,
         model: str = AGENT_MODEL,
         nudge_text: str = "",
+        language: str = "en",
         max_tokens: int = 200,
         temperature: float = 0.7,
     ):
@@ -67,13 +68,19 @@ class PoliticalAgent:
         self.llm_client = llm_client
         self.rag_pipeline = rag_pipeline
         self.model = model
+        self.language = language
         self.max_tokens = max_tokens
         self.temperature = temperature
 
-        # Build system prompt (persona + rules + optional nudge)
+        # Build system prompt (persona + rules + optional nudge + language)
         self.system_prompt = get_system_prompt(party)
         if nudge_text:
             self.system_prompt += f"\n{nudge_text}\n"
+        if language == "de":
+            self.system_prompt += (
+                "\n\n**IMPORTANT: You MUST write your entire response in German "
+                "(Deutsch). All debate contributions must be in German.**\n"
+            )
 
     def generate_turn(
         self,

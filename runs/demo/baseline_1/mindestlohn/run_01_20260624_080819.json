@@ -1,0 +1,400 @@
+{
+  "run_id": "4472def1-921d-497b-a995-4e8d9b73448f",
+  "config": {
+    "topic_id": "mindestlohn",
+    "topic_type": "empirical",
+    "framing_prompt": "The German federal minimum wage currently stands at €12.82 per hour, set by the independent Mindestlohnkommission. Several parties have proposed raising it to €15 per hour by 2026, while others argue the commission's independence must not be overridden by political targets. Discuss whether the minimum wage should be raised to €15, considering the effects on low-wage workers, small and medium-sized businesses, and regional economic differences between western and eastern Germany. Ground your arguments in your party's documented positions.",
+    "condition_id": "baseline_1",
+    "condition_label": "None",
+    "condition_type": "baseline",
+    "run_number": 1,
+    "agent_model": "llama-3.1-8b-instant",
+    "judge_model": "llama-3.3-70b-versatile",
+    "moderator_model": "",
+    "num_rounds": 2,
+    "num_agents": 6,
+    "max_interventions": 3,
+    "silent_control_rate": 0.2,
+    "turn_order": [
+      "CDU/CSU",
+      "SPD",
+      "Bündnis 90/Die Grünen",
+      "FDP",
+      "Die Linke",
+      "AfD"
+    ],
+    "has_moderator_agent": false,
+    "uses_trigger": false,
+    "trigger_strategy": null,
+    "nudge_text": ""
+  },
+  "turns": [
+    {
+      "turn_id": "11f03284-32c2-4e7e-8969-988fc328cadf",
+      "round_number": 1,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "**CDU/CSU-Position zu einem erhöhten Mindestlohn**\n\nBetrifft die Forderung der Grünen und der SPD nach einem Mindestlohn von 15 Euro pro Stunde bis 2026. Wir teilen zwar die Absicht, den Lebensstandard der Beschäftigten zu verbessern, aber unsere Erfahrung lehrt uns, dass ein Mindestlohn nur dann wirksam ist, wenn die Wirtschaftsfähigkeit der Unternehmen berücksichtigt wird. Eine unkontrollierte Erhöhung des Mindestlohns kann zu Arbeitsplatzverlusten bei kleinen und mittelständischen Unternehmen führen, die in Deutschland oft die Motor der Wirtschaft sind. Wir vertrauen daher der Arbeit der unabhängigen Mindestlohnkommission, die die Interessen von Beschäftigten und Unternehmen ausgleicht.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 2,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, avoiding personal attacks or inflammatory language, thus scoring a 4 for civility. It critiques the opposing position respectfully, focusing on the policy rather than making personal attacks.",
+        "relevance": "The turn is precisely targeted at the debate topic of the mindestlohn, directly addressing the issue and its implications, which warrants a score of 5 for relevance.",
+        "logical_consistency": "The argument is coherent, suggesting that an uncontrolled increase in the minimum wage could lead to job losses, especially in small and medium-sized enterprises, which is a logical and consistent argument, scoring 4 for logical consistency.",
+        "argument_strength": "The turn provides a reasoned argument against a sudden increase in the minimum wage, citing potential negative effects on small and medium-sized businesses, thus scoring 4 for argument strength. It could be stronger with more specific evidence or data.",
+        "document_grounding": "The mention of trusting the work of the independent Mindestlohnkommission suggests an alignment with the CDU/CSU's known positions on balancing economic and social policies, scoring 4 for document grounding. However, without direct reference to specific party documents, it doesn't reach a 5.",
+        "responsiveness": "Since this is the first turn, there are no preceding arguments to respond to, which is why it scores 2 for responsiveness. The turn does acknowledge the position of other parties (Grünen and SPD) but in a generic manner without engaging deeply.",
+        "stance_differentiation": "The turn clearly reflects the CDU/CSU's stance on economic policy, emphasizing the importance of considering the economic viability of businesses, which is distinct from the positions of the Grünen and SPD, scoring 4 for stance differentiation. It could be more distinctive with specific ideological markers or unique policy proposals."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 2674,
+      "token_count_output": 647,
+      "latency_s": 2.675,
+      "timestamp": "2026-06-24T08:07:53.816152Z"
+    },
+    {
+      "turn_id": "420d1f3d-76b7-42bb-bb5d-3497a1353204",
+      "round_number": 1,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "**Betrifft die CDU/CSU-Position zu einem erhöhten Mindestlohn**\n\nWir im SPD unterstützen die Forderung nach einem Mindestlohn in Höhe von 15 Euro pro Stunde, um den Lebensstandard der Beschäftigten zu verbessern. Die CDU/CSU spricht von unkontrollierter Erhöhung, aber die Unabhängigkeit der Mindestlohnkommission garantiert, dass die Interessen von Beschäftigten und Unternehmen ausreichend berücksichtigt werden. Wir fordern stattdessen eine realistische Erhöhung des Mindestlohns, die die wirtschaftliche Entwicklung Deutschlands berücksichtigt. Dies kann durch einen schrittweisen Anstieg des Mindestlohns erreicht werden, um den kleinen und mittelständischen Unternehmen Zeit zu geben, sich an die neuen Bedingungen anzupassen. Außerdem",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, addressing the opposing party's position without resorting to personal attacks or inflammatory language, thus scoring a 4 for being respectful throughout.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage, engaging with the CDU/CSU's position and advancing the discussion with a clear proposal for a stepwise increase, making it precisely targeted and thus scoring a 5.",
+        "logical_consistency": "The argument is coherent, suggesting a stepwise increase in the minimum wage to balance economic development and the needs of small and medium-sized enterprises, but it could be strengthened by more detailed explanations of the adjustment process, hence a score of 4.",
+        "argument_strength": "The turn provides a well-supported claim with specific reasoning about the need for a realistic increase in the minimum wage, considering the economic development of Germany, and offers a mechanism (stepwise increase) to mitigate potential negative effects, thus scoring a 4.",
+        "document_grounding": "The SPD's position on the minimum wage aligns with their known party stance, advocating for an increase to improve the standard of living for workers, but without direct reference to specific party documents or programs, it scores a 4.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's argument, addressing their concerns about uncontrolled increases in the minimum wage and the role of the independent Minimum Wage Commission, thus scoring a 5 for naming the specific party and claim being addressed.",
+        "stance_differentiation": "The SPD clearly maintains its distinct party identity by advocating for a higher minimum wage and considering the economic impact on small and medium-sized enterprises, using party-specific values and priorities, hence a score of 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 3110,
+      "token_count_output": 644,
+      "latency_s": 2.322,
+      "timestamp": "2026-06-24T08:07:56.281056Z"
+    },
+    {
+      "turn_id": "9d5f4e59-500b-458d-ab57-45269c90df8f",
+      "round_number": 1,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "**Bündnis 90/Die Grünen** (Round 1): **Betrifft die Forderung der SPD und der CDU/CSU nach einem Mindestlohn von 15 Euro pro Stunde**\n\nWir stimmen der Notwendigkeit einer Erhöhung des Mindestlohns zu, um den Lebensstandard der Beschäftigten zu verbessern und die wachsende Armut in Deutschland zu bekämpfen. Die Grünen haben immer betont, dass der Mindestlohn ein wichtiger Schritt zur Bekämpfung der Armut und zur Förderung von Wachstum und Beschäftigung ist. Wir unterstützen daher die Forderung nach einem Mindestlohn von 15 Euro pro Stunde, aber nicht ohne eine realistische Berücksichtigung der wirtschaftlichen Auswirkungen auf die kleinen und mittelständischen Unternehmen. Wir müssen uns jedoch nicht von der Angst vor",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without attacking parties directly, which aligns with a score of 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of the Mindestlohn, addressing the specific issue of raising it to 15 Euro pro Stunde and its implications, thus scoring 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, supporting the need for a Mindestlohn increase while considering economic impacts, but lacks a detailed logical structure, hence a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning about the importance of the Mindestlohn for combating poverty and promoting growth, though it could be stronger with more concrete evidence, resulting in a score of 4.",
+        "document_grounding": "The turn reflects documented positions of Bündnis 90/Die Grünen on social and economic issues, such as combating poverty and supporting sustainable growth, which suggests a score of 4 for document grounding.",
+        "responsiveness": "The turn engages with the preceding arguments from CDU/CSU and SPD, addressing their concerns about the economic impact on small and medium-sized enterprises, thus scoring 4 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the distinct ideological position of Bündnis 90/Die Grünen, emphasizing social justice, economic sustainability, and the importance of a living wage, which merits a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 3557,
+      "token_count_output": 603,
+      "latency_s": 2.03,
+      "timestamp": "2026-06-24T08:07:58.623444Z"
+    },
+    {
+      "turn_id": "54c94777-fed4-4cb1-95e0-ca056e33c9a8",
+      "round_number": 1,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "**[FDP]** (Runde 1): **Betrifft die Forderung der SPD und der Grünen nach einem Mindestlohn von 15 Euro pro Stunde**\n\nWir im FDP teilen die Besorgnis der Grünen und der SPD um die wachsende Armut in Deutschland, aber wir glauben, dass ein Mindestlohn von 15 Euro pro Stunde nicht die richtige Antwort ist. Eine solche Erhöhung würde nicht nur zu Arbeitsplatzverlusten bei kleinen und mittelständischen Unternehmen führen, sondern auch die Wettbewerbsfähigkeit der deutschen Wirtschaft gefährden. Wir brauchen eine Politik, die Unternehmen entlastet und sie in die Lage versetzt, neue Arbeitsplätze zu schaffen. Dazu gehört es, Steuern zu senken, Bürokratie abzubauen und nicht, den Mindestlohn weiter zu erhöhen",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques policies without personal attacks, and does not use inflammatory language, thus scoring a 4 for being professional and respectful throughout.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage, engaging with the specific proposal of a 15 Euro per hour minimum wage, making it precisely targeted and advancing the discussion.",
+        "logical_consistency": "The argument is generally coherent, suggesting that a high minimum wage could lead to job losses and decreased competitiveness, but it lacks detailed logical steps or empirical evidence to fully support its claims, hence a score of 4.",
+        "argument_strength": "The turn provides some reasoning for its position, such as the potential for job losses and impact on competitiveness, but it could be strengthened with specific evidence or mechanisms, thus scoring a 4.",
+        "document_grounding": "While the turn reflects general principles that might align with the FDP's known positions on economic policy, such as reducing taxes and bureaucracy, it does not directly reference or ground its claims in specific FDP policy documents or commitments, resulting in a score of 3.",
+        "responsiveness": "The turn engages with the preceding arguments, specifically addressing the proposals from the SPD and the Greens, and provides a counterargument, demonstrating a clear response to the opposing positions, hence a score of 4.",
+        "stance_differentiation": "The turn clearly maintains a distinct FDP identity, emphasizing the importance of reducing taxes, cutting bureaucracy, and promoting business competitiveness, which are hallmark positions of the FDP, making it unmistakably distinct and thus scoring a 5."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 3990,
+      "token_count_output": 617,
+      "latency_s": 2.205,
+      "timestamp": "2026-06-24T08:08:00.602993Z"
+    },
+    {
+      "turn_id": "cf93cc45-ade2-47a5-9ca5-b057e4158bdb",
+      "round_number": 1,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "**[Die Linke]** (Runde 1): **Betrifft die Forderung der SPD und der Grünen nach einem Mindestlohn von 15 Euro pro Stunde**\n\nDie Argumente der SPD und der Grünen, dass ein Mindestlohn von 15 Euro pro Stunde den Lebensstandard der Beschäftigten verbessern würde, sind zwar willkommen, aber sie verfehlen die Wurzel des Problems. Die wachsende Armut und die Prekarität in Deutschland sind keine Folge eines zu niedrigen Mindestlohns, sondern vielmehr des kapitalistischen Systems selbst, das Prekarität und Ausbeutung fördert. Die Forderung nach einem Mindestlohn von 15 Euro pro Stunde ist ein Schritt in die richtige Richtung, aber wir müssen uns nicht von der Angst vor Arbeitsplatzverlusten bei kleinen und mittelständischen Unternehmen eingesch",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques policies without personal attacks, and does not use inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of the Mindestlohn and its potential effects, making it clearly relevant and deserving of a score of 4.",
+        "logical_consistency": "The argument that the capitalist system fosters precarity and exploitation, and thus a higher minimum wage is only a partial solution, is logically consistent within the turn, warranting a score of 4.",
+        "argument_strength": "The turn provides a clear reasoning for why a higher minimum wage, while beneficial, does not address the root cause of poverty and precarity, supporting a score of 4 for argument strength.",
+        "document_grounding": "While the turn reflects general positions that could be associated with Die Linke, such as critiquing capitalism, it does not directly reference specific party documents or known positions, thus scoring a 3 for document grounding.",
+        "responsiveness": "The turn engages with the arguments of other parties, specifically mentioning the SPD and the Grünen, and responds to their claims about the minimum wage, earning a score of 4 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects Die Linke's distinct ideological position, emphasizing the critique of capitalism and the need for more profound systemic change, which is unmistakably distinct from other parties, thus deserving a score of 5."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 4441,
+      "token_count_output": 591,
+      "latency_s": 2.1550000000000002,
+      "timestamp": "2026-06-24T08:08:02.974665Z"
+    },
+    {
+      "turn_id": "48d70d50-2a4e-46c7-8a00-5f204cd466cb",
+      "round_number": 1,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "**AfD (Runde 1): Betrifft die Forderung der SPD, der Grünen und der FDP nach einem Mindestlohn von 15 Euro pro Stunde**\n\nDie SPD, die Grünen und die FDP fordern eine Erhöhung des Mindestlohns auf 15 Euro pro Stunde, um den Lebensstandard der Beschäftigten zu verbessern. Wir im AfD teilen zwar die Absicht, die Lebensbedingungen der Bürger zu verbessern, aber wir glauben, dass diese Erhöhung zu weiteren Arbeitsplatzverlusten bei kleineren und mittelständischen Unternehmen führen wird. Wir müssen uns nicht von der Angst vor Arbeitsplatzverlusten eingeschüchtert fühlen, sondern müssen die wahren Ursachen der Ungleichheit und der Armut in Deutschland ansprechen. Die wachsende Armut und die Prekarität in Deutschland sind eine",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 3,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, avoiding personal attacks or inflammatory language, thus scoring a 4 for civility. The language used is respectful, even when disagreeing with other parties' positions.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage, engaging with the proposals of other parties, which makes it clearly relevant and deserving of a score of 4.",
+        "logical_consistency": "The argument presented is generally coherent, suggesting that an increase in the minimum wage could lead to job losses in smaller and medium-sized enterprises. However, it lacks a rigorous logical chain, hence a score of 3 for logical consistency.",
+        "argument_strength": "The turn provides some reasoning for its claims, such as the potential for job losses, but it does not offer specific evidence or detailed mechanisms to support its arguments, resulting in a score of 3 for argument strength.",
+        "document_grounding": "Without specific references to the AfD's documented positions or policies, the turn scores a 3 for document grounding. It aligns with general conservative or right-wing stances on economic issues but lacks direct anchoring in party documents.",
+        "responsiveness": "The turn engages directly with the arguments of other parties, such as the SPD, the Greens, and the FDP, concerning the minimum wage, which demonstrates a good level of responsiveness and earns a score of 4.",
+        "stance_differentiation": "The turn clearly reflects a distinct party identity, differentiating itself from other parties by its stance on the minimum wage and its concerns about job losses, thus scoring a 4 for stance differentiation. It uses party-specific reasoning and priorities."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 4863,
+      "token_count_output": 626,
+      "latency_s": 2.261,
+      "timestamp": "2026-06-24T08:08:05.034932Z"
+    },
+    {
+      "turn_id": "550c7516-e84b-4c9a-b68d-9832d4422b94",
+      "round_number": 2,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "**[CDU/CSU]** (Runde 2): **Betrifft die Forderung der SPD, der Grünen und der FDP nach einem Mindestlohn von 15 Euro pro Stunde**\n\nBetrifft die Forderung der SPD, der Grünen und der FDP nach einem Mindestlohn von 15 Euro pro Stunde. Wir teilen zwar die Besorgnis um die wachsende Armut in Deutschland, aber unsere Erfahrung lehrt uns, dass ein Mindestlohn nur dann wirksam ist, wenn die wirtschaftlichen Auswirkungen auf kleine und mittelständische Unternehmen berücksichtigt werden. Eine unkontrollierte Erhöhung des Mindestlohns kann zu Arbeitsplatzverlusten führen, wie unsere Wirtschaftswissenschaftler berechnet haben. Wir brauchen eine Politik, die Unternehmen entlastet und sie in die Lage versetzt, neue Arbeits",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, avoiding personal attacks or inflammatory language, thus scoring a 4 for civility. It critiques policies without targeting parties directly.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage, staying focused on the issue at hand and advancing the discussion, which warrants a score of 4 for relevance.",
+        "logical_consistency": "The argument presented is coherent and logically structured, connecting the potential negative economic impacts of a minimum wage increase to the need for considering small and medium-sized enterprises, earning a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides a well-supported claim with specific reasoning about the potential consequences of an uncontrolled minimum wage increase, including the reference to calculations by economic scientists, thus scoring a 4 for argument strength.",
+        "document_grounding": "While the turn generally aligns with the CDU/CSU's known positions on economic policy and the minimum wage, it does not directly reference specific documented party positions or programs, resulting in a score of 3 for document grounding.",
+        "responsiveness": "The turn acknowledges the preceding arguments regarding the minimum wage but does not directly engage with the specific claims made by other parties, leading to a score of 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly reflects the CDU/CSU's distinct stance on the minimum wage, emphasizing the importance of considering the economic impact on small and medium-sized enterprises, which is a recognizable party position, thus scoring a 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 5206,
+      "token_count_output": 604,
+      "latency_s": 1.963,
+      "timestamp": "2026-06-24T08:08:07.268023Z"
+    },
+    {
+      "turn_id": "556bd487-b702-4738-8ab2-eb56fa8295cb",
+      "round_number": 2,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "**[SPD]** (Runde 2): **Betrifft die CDU/CSU-Position zu einem erhöhten Mindestlohn**\n\nBetrifft die Forderung der Grünen und der FDP, die CDU/CSU-Position zu einem erhöhten Mindestlohn zu unterstützen. Wir im SPD möchten darauf hinweisen, dass die Unabhängigkeit der Mindestlohnkommission garantiert, dass die Interessen von Beschäftigten und Unternehmen ausreichend berücksichtigt werden. Die Forderungen der Grünen und der FDP nach einem realistischen Anstieg des Mindestlohns sind zwar willkommen, aber wir müssen uns nicht von der Angst vor Arbeitsplatzverlusten bei kleinen und mittelständischen Unternehmen eingeschüchtert fühlen. Eine realistische Erhöhung des Mindestlohns kann durch einen schrittwe",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques policies without attacking parties directly, and avoids inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage and engages with preceding arguments, making it clearly relevant and deserving of a 4.",
+        "logical_consistency": "The argument is coherent and logically structured, with a clear connection between the premise of the Mindestlohnkommission's role and the conclusion about the feasibility of a realistic minimum wage increase, warranting a 4.",
+        "argument_strength": "The turn provides a well-supported claim with specific reasoning about the role of the Mindestlohnkommission and the potential for a stepwise increase in the minimum wage, thus scoring a 4 for argument strength.",
+        "document_grounding": "While the turn generally aligns with the SPD's known positions, it does not directly reference or quote from the party's documented positions (e.g., Bundestagswahlprogramm), resulting in a score of 3 for document grounding.",
+        "responsiveness": "The turn directly engages with the preceding arguments from the CDU/CSU, Grünen, and FDP, addressing their concerns and positions on the minimum wage, which earns it a 4 for responsiveness.",
+        "stance_differentiation": "The turn clearly maintains a distinct SPD party identity by emphasizing the importance of a realistic minimum wage increase and referencing the role of the Mindestlohnkommission, distinguishing it from other parties' positions and thus scoring a 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 5664,
+      "token_count_output": 607,
+      "latency_s": 2.169,
+      "timestamp": "2026-06-24T08:08:09.234001Z"
+    },
+    {
+      "turn_id": "1603ca6d-fa0d-4923-827b-1ee44920007b",
+      "round_number": 2,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "**[Bündnis 90/Die Grünen]** (Round 2): **Betrifft die Forderung der CDU/CSU nach unkontrollierter Erhöhung des Mindestlohns**\n\nBetrifft die Forderung der CDU/CSU nach einer unkontrollierten Erhöhung des Mindestlohns, die angeblich die wirtschaftlichen Auswirkungen auf kleine und mittelständische Unternehmen berücksichtigen soll. Wir in Bündnis 90/Die Grünen bezweifeln jedoch, dass eine solche Politik tatsächlich die wirtschaftlichen Auswirkungen berücksichtigt. Die Grünen haben immer betont, dass ein Mindestlohn ein wichtiger Schritt zur Bekämpfung der Armut und zur Förderung von Wachstum und Beschäftigung ist. Eine unkontrollierte Erhöhung des Min",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiquing the CDU/CSU's position without personal attacks, but does not go out of its way to acknowledge the legitimacy of opposing views, thus scoring a 4.",
+        "relevance": "The turn directly addresses the debate topic of the Mindestlohn and engages with the preceding speaker's arguments, making it highly relevant to the discussion.",
+        "logical_consistency": "The argument is coherent and follows a logical structure, questioning the CDU/CSU's stance on uncontrolled Mindestlohn increase, but does not provide exceptionally rigorous logical chains or anticipatory responses to potential counterarguments.",
+        "argument_strength": "The turn provides a clear argument against the CDU/CSU's position, emphasizing the importance of the Mindestlohn in combating poverty and promoting growth, but lacks specific evidence or detailed mechanisms to support its claims fully.",
+        "document_grounding": "The turn reflects the party's known position on the Mindestlohn, emphasizing its importance in combating poverty, but does not directly reference specific party documents or programs to ground its claims.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's preceding argument, addressing their concerns about the economic impact on small and medium-sized enterprises, demonstrating a high level of responsiveness.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity, using language and priorities that are unmistakably those of Bündnis 90/Die Grünen, emphasizing the Mindestlohn as a tool for social and economic improvement."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 6111,
+      "token_count_output": 609,
+      "latency_s": 2.174,
+      "timestamp": "2026-06-24T08:08:11.431116Z"
+    },
+    {
+      "turn_id": "45a84216-b3c2-4a09-9b48-c2e961f6d34b",
+      "round_number": 2,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "**Betrifft die Forderung der SPD, der Grünen und der CDU/CSU nach einem Mindestlohn von 15 Euro pro Stunde**\n\nDie Forderung nach einem Mindestlohn von 15 Euro pro Stunde ist ein klassisches Beispiel für die Politik der Symbolpolitik. Sie klingt gut, aber letztendlich tut sie nichts für die Menschen, die sie am meisten benötigen. Wir im FDP glauben, dass wir eine bessere Alternative haben: eine Politik, die Unternehmen entlastet und sie in die Lage versetzt, neue Arbeitsplätze zu schaffen. Wir müssen die Steuern senken, die Bürokratie abbauen und die kleinen und mittelständischen Unternehmen unterstützen, damit sie wachsen und neue Arbeitsplätze schaffen können. Ein Mindestlohn von 15 Euro pro Stunde würde diese Unternehmen nur noch mehr belasten und Arbeitsplatzver",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, avoiding personal attacks or inflammatory language, thus scoring a 4 for civility. The language used is respectful, even when disagreeing with other parties' positions.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage, discussing the potential impact of a 15 Euro per hour minimum wage and offering an alternative policy, making it relevant and scoring a 4.",
+        "logical_consistency": "The argument presented is generally coherent but lacks detailed logical steps or empirical evidence to strongly support its claims, hence a score of 3 for logical consistency.",
+        "argument_strength": "The turn provides some reasoning for its position, such as the potential for job losses and the need to support small and medium-sized enterprises, but it does not offer robust evidence or detailed mechanisms, resulting in a score of 3 for argument strength.",
+        "document_grounding": "The FDP's stance on reducing taxes, cutting bureaucracy, and supporting small and medium-sized enterprises is consistent with their known party positions, thus scoring a 4 for document grounding.",
+        "responsiveness": "The turn acknowledges the opposing positions (e.g., the SPD, the Greens, and the CDU/CSU's support for a 15 Euro minimum wage) but does not directly engage with the specific arguments made by these parties in the preceding turns, leading to a score of 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly and unmistakably reflects the FDP's distinct ideological position, emphasizing the importance of reducing taxes, cutting bureaucracy, and supporting businesses to create jobs, which is a hallmark of the FDP's economic policy, thus scoring a 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 6544,
+      "token_count_output": 636,
+      "latency_s": 2.502,
+      "timestamp": "2026-06-24T08:08:13.673158Z"
+    },
+    {
+      "turn_id": "79ebad72-6f25-4381-8a4a-6ce85aa383b8",
+      "round_number": 2,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "**[Die Linke]** (Runde 2): **Betrifft die Forderung der CDU/CSU, der SPD und der FDP nach einem Mindestlohn von 15 Euro pro Stunde**\n\nBetrifft die Forderung der CDU/CSU, der SPD und der FDP nach einem Mindestlohn von 15 Euro pro Stunde. Wir in Die Linke müssen uns fragen, ob diese Politik die tatsächlichen Ursachen der Armut und der Prekarität in Deutschland anspricht. Die wachsende Armut und die Prekarität sind keine Folge eines zu niedrigen Mindestlohns, sondern vielmehr des kapitalistischen Systems selbst, das Prekarität und Ausbeutung fördert. Die Forderung nach einem Mindestlohn von 15 Euro pro Stunde ist ein Schritt in die richtige Richtung, aber wir müssen",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques policies without personal attacks, and does not use inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage, making it clearly relevant and focused on the issue at hand, hence a score of 4.",
+        "logical_consistency": "The argument is coherent and logically consistent in its critique of the capitalist system and the implications for minimum wage policies, warranting a score of 4.",
+        "argument_strength": "The turn presents a well-supported argument that challenges the root causes of poverty and precarious work, offering a distinct perspective that strengthens its argument, thus a score of 4.",
+        "document_grounding": "While the turn reflects the general stance of Die Linke, it does not directly reference specific party documents or programs, leading to a score of 3 for document grounding.",
+        "responsiveness": "The turn responds to the general debate context but does not directly engage with the specific arguments of the preceding speakers, resulting in a score of 3 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the ideological position of Die Linke, distinct from other parties, particularly in its critique of the capitalist system and its approach to addressing poverty and precarious work, earning a score of 5."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 6995,
+      "token_count_output": 561,
+      "latency_s": 2.0700000000000003,
+      "timestamp": "2026-06-24T08:08:16.146854Z"
+    },
+    {
+      "turn_id": "fc9b2b68-0167-469f-a424-055c74e9a3a5",
+      "round_number": 2,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "**AfD (Runde 2): Betrifft die Forderung der SPD, der Grünen und der CDU/CSU nach einem Mindestlohn von 15 Euro pro Stunde**\n\nBetrifft die Forderung der SPD, der Grünen und der CDU/CSU nach einem Mindestlohn von 15 Euro pro Stunde. Wir im AfD haben immer betont, dass die wirtschaftliche Situation in Deutschland durch die Politik der Altparteien verschlechtert wurde. Die Erhöhung des Mindestlohns auf 15 Euro pro Stunde würde nicht nur zu Arbeitsplatzverlusten bei kleinen und mittelständischen Unternehmen führen, sondern auch die Wettbewerbsfähigkeit der deutschen Wirtschaft gefährden. Wir müssen uns nicht von der Angst vor Arbeitsplatzverlusten eingeschüchtert fühlen, sondern müssen die wahren Ursachen der Ungleichheit",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 3,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone throughout, critiquing policies without personal attacks, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage, staying focused on the issue at hand, which warrants a score of 4 for relevance.",
+        "logical_consistency": "The argument is generally coherent but lacks rigorous logical structure, making it a 3 for logical consistency.",
+        "argument_strength": "The turn provides some reasoning but relies on general claims about economic impact without specific evidence, resulting in a 3 for argument strength.",
+        "document_grounding": "The turn does not explicitly reference the AfD's documented positions, so it scores a 3 for document grounding, assuming general alignment with known party stances.",
+        "responsiveness": "The turn acknowledges the opposing positions but does not directly engage with the strongest versions of the arguments made by other parties, thus scoring a 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly reflects the AfD's distinct position on the minimum wage, using party-specific reasoning and priorities, which earns a 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 7417,
+      "token_count_output": 523,
+      "latency_s": 2.01,
+      "timestamp": "2026-06-24T08:08:18.268998Z"
+    }
+  ],
+  "interventions": [],
+  "round_summaries": [],
+  "total_tokens_input": 60572,
+  "total_tokens_output": 7268,
+  "total_latency_s": 26.54,
+  "started_at": "2026-06-24T08:07:53.816152Z",
+  "finished_at": "2026-06-24T08:08:19.687469Z"
+}
