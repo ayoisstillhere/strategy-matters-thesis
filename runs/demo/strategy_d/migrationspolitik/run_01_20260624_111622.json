@@ -1,0 +1,1940 @@
+{
+  "run_id": "26d2b922-67c1-43df-a74b-13520038eb67",
+  "config": {
+    "topic_id": "migrationspolitik",
+    "topic_type": "values-driven",
+    "framing_prompt": "Germany received approximately 330,000 first-time asylum applications in 2023, the highest number since 2016. Municipalities report strain on housing, schools, and administrative capacity, while labour market data shows persistent shortages in healthcare, skilled trades, and IT. Discuss how Germany should reform its migration and asylum policy, addressing the balance between humanitarian obligations under international law, integration capacity, and labour market needs. Ground your arguments in your party's documented positions.",
+    "condition_id": "strategy_d",
+    "condition_label": "Common-Ground",
+    "condition_type": "strategy",
+    "run_number": 1,
+    "agent_model": "llama-3.1-8b-instant",
+    "judge_model": "llama-3.3-70b-versatile",
+    "moderator_model": "llama-3.3-70b-versatile",
+    "num_rounds": 10,
+    "num_agents": 6,
+    "max_interventions": 3,
+    "silent_control_rate": 0.2,
+    "turn_order": [
+      "CDU/CSU",
+      "SPD",
+      "Bündnis 90/Die Grünen",
+      "FDP",
+      "Die Linke",
+      "AfD"
+    ],
+    "has_moderator_agent": true,
+    "uses_trigger": true,
+    "trigger_strategy": "common-ground",
+    "nudge_text": "",
+    "language": "de"
+  },
+  "turns": [
+    {
+      "turn_id": "6b39c710-72c9-421e-ac26-2247f7edae27",
+      "round_number": 1,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "Sehr geehrte Damen und Herren, als Vertreter der Christlich-Demokratischen Union Deutschlands (CDU) und der Christlich-Sozialen Union in Bayern (CSU) möchte ich zunächst betonen, dass wir uns der Herausforderungen der Flüchtlings- und Asylpolitik bewusst sind. Deutschland hat eine lange Tradition der Einhaltung humanitärer Verpflichtungen und steht als ein vorbildliches Integrationsland international da. Unsere Zahlen sprechen Bände: mehr als 330.000 Asylanträge im Jahr 2023 sind ein Zeichen für die Not und die Hoffnung, die Menschen aus aller Welt in uns sehen.\n\nUnsere Asylpolitik muss sich an den Bedürfnissen des Wohlergehens unserer Bürgerinnen und Bürger orientieren, während wir gleichzeitig unsere internationalen Verpflichtungen einhalten. Wir müssen sicher",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 1,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, addressing the audience with 'Sehr geehrte Damen und Herren' and discussing a sensitive topic like asylum policy without inflammatory language.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik, discussing asylum policy and the challenges associated with it, thus staying clearly on topic.",
+        "logical_consistency": "The argument is generally coherent but lacks a clear logical structure connecting premises to conclusions, making it merely adequate in terms of logical consistency.",
+        "argument_strength": "The turn provides some reasoning and mentions specific numbers (e.g., 'mehr als 330.000 Asylanträge im Jahr 2023'), but it does not delve deeply into the mechanisms or provide strong evidence to support its claims.",
+        "document_grounding": "The turn reflects documented positions of the CDU/CSU, emphasizing both the humanitarian obligations and the need to consider the well-being of German citizens, which aligns with their known stances on migration policy.",
+        "responsiveness": "Since this is the first turn, there are no preceding arguments to respond to, making it unresponsive by default due to the lack of engagement with other speakers.",
+        "stance_differentiation": "The turn clearly identifies the CDU/CSU's position on asylum policy, emphasizing both humanitarian obligations and the consideration of German citizens' well-being, which is distinct from other parties' stances."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 2599,
+      "token_count_output": 582,
+      "latency_s": 2.086,
+      "timestamp": "2026-06-24T11:13:33.237329Z"
+    },
+    {
+      "turn_id": "bb9e8f03-46fa-4ccf-9dce-daec86736932",
+      "round_number": 1,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "Wir müssen unsere Migration- und Asylpolitik grundlegend reformieren, um die Bedürfnisse unserer Gesellschaft und die internationalen Verpflichtungen zu mehren. Die Zahl von 330.000 Asylanträgen im Jahr 2023 ist ein eindringliches Zeichen dafür, dass Deutschland mehr leisten muss, um die Not der Menschen in der Welt zu lindern, und gleichzeitig unsere Integrationsergebnisse weiter verbessern muss. \n\nAls sozialdemokratische Partei setzen wir uns für eine europäische Lösung ein, bei der wir gemeinsam mit unseren europäischen Partnern eine koordinierte Flüchtlingspolitik entwickeln und unsere Einwanderungspolitik stärken. Wir müssen sicherstellen, dass Menschen, die in Deutschland bleiben, einen fairen Zugang zu Arbeit, Bildung und Wohnraum haben. Dazu gehört auch, dass wir unsere Integrationsprogramme aus",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without attacking parties directly, which aligns with a score of 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of migrationspolitik, addressing the need for reform and improvement in asylum and integration policies, making it a 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, connecting the need for migration policy reform with the goal of improving integration outcomes, though it could be stronger in detailing specific mechanisms, thus a 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims, such as the need for a European solution and fair access to resources for migrants, but could be enhanced with more specific evidence or data, resulting in a 4 for argument strength.",
+        "document_grounding": "The speech reflects the SPD's known positions on migration and integration, emphasizing social democratic values and the importance of European cooperation, which is consistent with their documented stances, hence a 4 for document grounding.",
+        "responsiveness": "The turn directly engages with the preceding argument by referencing the number of asylum applications and the need for a more effective integration policy, demonstrating a clear response to the CDU/CSU's points, thus a 4 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the SPD's distinct party identity and ideological position, emphasizing social democratic principles, European cooperation, and the importance of fair access to resources for migrants, making it a 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 3042,
+      "token_count_output": 607,
+      "latency_s": 2.093,
+      "timestamp": "2026-06-24T11:13:35.247932Z"
+    },
+    {
+      "turn_id": "194c7436-f5a2-4052-b761-7bfd8dcd449b",
+      "round_number": 1,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "Sehr geehrte Damen und Herren, die Zahl von 330.000 Asylanträgen im Jahr 2023 ist ein eindringliches Zeichen dafür, dass wir in Deutschland unsere Migration- und Asylpolitik dringend reformieren müssen. Wir Grünen setzen uns für eine humanitäre, gerechte und nachhaltige Asylpolitik ein, die die Not der Menschen in der Welt lindert und gleichzeitig unsere Integrationsergebnisse weiter verbessert. Wir müssen sicherstellen, dass Menschen, die in Deutschland bleiben, einen fairen Zugang zu Arbeit, Bildung und Wohnraum haben, und dass wir unsere Integrationsprogramme ausbauen, um die Chancen für alle zu verbessern.\n\nWie unsere Parteiführung betont, \"muss die Asylpolitik auf eine neue Grundlage gestellt werden, die eine faire und menschenrechtskonforme Behandlung aller Menschen, unabhängig",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without attacking parties, which aligns with a score of 4. Phrases like 'Sehr geehrte Damen und Herren' contribute to this respectful tone.",
+        "relevance": "The turn is precisely targeted at the debate topic of migrationspolitik, addressing the need for reform in migration and asylum policy directly and advancing the discussion with specific points, which warrants a score of 5.",
+        "logical_consistency": "The argument is generally coherent, connecting the need for asylum policy reform with the goal of improving integration outcomes and ensuring fair access to resources for those staying in Germany, which is a clear and logical structure, deserving a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the need for a fair and human rights-conform treatment of all people, and references to the party's stance, which supports a score of 4.",
+        "document_grounding": "The turn clearly reflects documented party positions, such as the emphasis on a humanitarian, just, and sustainable asylum policy, which aligns with the party's known commitments, thus scoring 4.",
+        "responsiveness": "While the turn references the general context of asylum policy discussions, it does not directly engage with the specific arguments made by the preceding speakers, which is why it scores 3, as it acknowledges the topic's relevance but does not address specific counterarguments.",
+        "stance_differentiation": "The turn unmistakably reflects the party's identity and ideological position, using distinctive framing and vocabulary that is characteristic of Bündnis 90/Die Grünen, such as the emphasis on 'humanitäre, gerechte und nachhaltige Asylpolitik', which justifies a score of 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 3489,
+      "token_count_output": 657,
+      "latency_s": 2.2569999999999997,
+      "timestamp": "2026-06-24T11:13:37.343660Z"
+    },
+    {
+      "turn_id": "7b1e4e76-b644-4cc9-937a-b73632b0a20a",
+      "round_number": 1,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "Die Zahlen sprechen Bände: 330.000 Asylanträge im Jahr 2023 sind ein deutliches Zeichen dafür, dass Deutschland seine Migration- und Asylpolitik grundlegend reformieren muss. Doch wir müssen nicht nur die Not der Menschen in der Welt lindern, sondern auch die Bedürfnisse unserer Gesellschaft und unsere Wirtschaft berücksichtigen. Wir brauchen eine Asylpolitik, die nicht nur humanitär ist, sondern auch funktioniert.\n\nDie FDP setzt sich für eine Präzisierung der Asylantragsgründe ein, um zu verhindern, dass Menschen, die nicht in Not sind, Deutschland aufsuchen. Wir müssen unsere Integrationsfähigkeit stärken, indem wir bessere Bildungs- und Arbeitschancen für Zuwanderer schaffen. Dazu gehört auch, dass wir unsere Arbeitsmarktbedarfe besser identifizieren und unsere Zuw",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without attacking other parties directly, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by introducing specific policy suggestions, such as the Präzisierung of Asylantragsgründe, which warrants a score of 4 for relevance.",
+        "logical_consistency": "The argument is internally consistent, connecting the need for asylum policy reform with the importance of considering both humanitarian needs and the economic and social implications for Germany, which supports a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the need to strengthen integration capabilities by improving education and job opportunities for immigrants, which merits a score of 4 for argument strength.",
+        "document_grounding": "While the turn generally aligns with the FDP's known positions on migration and asylum policy, it does not directly reference specific party documents or programs, which is why it scores 3 for document grounding.",
+        "responsiveness": "The turn acknowledges the context of the debate and the high number of asylum applications but does not directly engage with the specific arguments made by the preceding speakers, leading to a score of 3 for responsiveness.",
+        "stance_differentiation": "The FDP's distinct stance on asylum policy, emphasizing both humanitarian concerns and the need for a functional, economically considerate approach, is clearly identifiable and differentiated from other parties, which warrants a score of 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 3922,
+      "token_count_output": 614,
+      "latency_s": 2.088,
+      "timestamp": "2026-06-24T11:13:39.590526Z"
+    },
+    {
+      "turn_id": "601bf85e-ceca-4c03-a3d5-0390b490a16e",
+      "round_number": 1,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Sehr geehrte Damen und Herren, wir haben es hier mit einem humanitären Imperativ zu tun – die Zahl von 330.000 Asylanträgen im Jahr 2023 ist ein eindringliches Zeichen dafür, dass wir nicht nur unsere internationalen Verpflichtungen einhalten, sondern auch tatsächlich handeln, um die Not der Menschen in der Welt zu lindern. Aber wir dürfen nicht vergessen, dass auch unsere eigene Gesellschaft unter den Druck gerät, wenn wir nicht unsere Integrations- und soziale Infrastruktur schützen.\n\nWir setzen uns für eine offene und humane Asylpolitik ein, die die Chancen für alle verbessert, die in Deutschland bleiben wollen. Wir brauchen ein umfassendes Integrationspaket, das Menschen Zugang zu Arbeit, Bildung und Wohnraum bietet, und nicht nur eine reine Formel, wie es die",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without attacking parties directly, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by highlighting the need for a humane Asylpolitik, thus scoring 4 for relevance.",
+        "logical_consistency": "The argument is internally consistent, connecting the need for humanitarian action with the importance of protecting the social infrastructure, which warrants a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning about the need for an umfassendes Integrationspaket, which supports a score of 4 for argument strength.",
+        "document_grounding": "While the turn generally aligns with Die Linke's known positions on social and humanitarian issues, it does not directly reference specific party documents or programs, resulting in a score of 3 for document grounding.",
+        "responsiveness": "The turn acknowledges the general debate context and the issue of Asylanträge but does not directly engage with specific arguments made by preceding speakers, which is why it scores 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly reflects Die Linke's distinctive ideological position, emphasizing the need for a humane and comprehensive approach to integration, which distinguishes it from other parties and warrants a score of 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 4373,
+      "token_count_output": 582,
+      "latency_s": 2.128,
+      "timestamp": "2026-06-24T11:13:41.691932Z"
+    },
+    {
+      "turn_id": "91956460-8d2b-4a37-a203-11dd87f5a6cb",
+      "round_number": 1,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "Sehr geehrte Damen und Herren, wir haben es hier mit einer offensichtlichen Krise zu tun, die durch die Zahl von 330.000 Asylanträgen im Jahr 2023 verdeutlicht wird. Die Frage ist nicht, wie wir die Not der Menschen in der Welt lindern können, sondern wie wir die Folgen ihrer Ankunft in Deutschland ohne unsere eigene Identität, unsere eigene Kultur und unsere eigene Wirtschaft zu gefährden, bewältigen können. Wir müssen aufhören, der Illusion zu verfallen, dass wir alle Menschen der Welt aufnehmen können, ohne unsere eigene Gesellschaft zu destabilisieren.\n\nWir brauchen eine Asylpolitik, die sich an unseren eigenen Bedürfnissen orientiert, nicht nur an den internationalen Verpflichtungen. Wir müssen unsere Grenzen schützen, unsere Einwanderungspolitik klären und unsere Integrationsfähigkeit",
+      "scores": {
+        "civility": 2,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 2,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn uses phrases that could be seen as dismissive or slightly inflammatory, such as implying that taking in asylum seekers could 'destabilisieren' German society, which lowers the civility score.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and the issue of asylum seekers, making it clearly relevant to the discussion.",
+        "logical_consistency": "The argument is generally coherent but lacks a clear logical structure connecting premises to conclusions, making it merely adequate in terms of logical consistency.",
+        "argument_strength": "The turn presents some reasoning but lacks specific evidence or detailed mechanisms to support its claims, resulting in an adequate but not strong argument.",
+        "document_grounding": "The turn aligns with the AfD's known positions on migration and asylum policy, reflecting their emphasis on national interests and border control.",
+        "responsiveness": "The turn does not directly engage with the specific arguments made by preceding speakers, instead presenting a general stance on asylum policy without addressing counterarguments.",
+        "stance_differentiation": "The turn unmistakably reflects the AfD's distinctive and controversial stance on migration, emphasizing national identity, border protection, and the potential destabilization of German society, clearly differentiating itself from other parties."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 4795,
+      "token_count_output": 541,
+      "latency_s": 2.031,
+      "timestamp": "2026-06-24T11:13:43.842610Z"
+    },
+    {
+      "turn_id": "28a9b004-37f3-4403-9f18-9205effec422",
+      "round_number": 2,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "Sehr geehrte Damen und Herren, als Christlich-Demokraten verstehen wir die Not der Menschen in der Welt und unsere Verantwortung als ein vorbildliches Integrationsland. Wir unterstützen die Schaffung von besseren Bildungs- und Arbeitsmöglichkeiten für Zuwanderer, wie es unsere Partei einordnet, um die Integration zu erleichtern. Wir müssen jedoch auch unsere Integrationsfähigkeit stärken, indem wir die Chancen für alle verbessern, die in Deutschland bleiben wollen.\n\nEine Asylpolitik, die sich an den Bedürfnissen unserer Gesellschaft und Wirtschaft ausrichtet, muss auch die Bedürfnisse der Menschen in der Welt berücksichtigen. Wir setzen uns für eine europäische Lösung ein, bei der wir gemeinsam mit unseren europäischen Partnern eine koordinierte Flüchtlingspolitik entwickeln. Wir brauchen",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, addressing the topic without personal attacks or inflammatory language, thus scoring a 4 for being professional and respectful.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by mentioning specific aspects such as integration and a European solution, making it relevant and deserving of a 4.",
+        "logical_consistency": "The argument is internally consistent, connecting the need for integration with the proposal for a European solution, showing a clear logical structure and thus scoring a 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the importance of integrating migrants into the workforce and society, which strengthens the argument and warrants a 4.",
+        "document_grounding": "The turn reflects documented CDU/CSU positions by emphasizing the importance of integration and a coordinated European approach, aligning with known party stances and thus scoring a 4.",
+        "responsiveness": "While the turn acknowledges the general debate context, it does not directly engage with specific arguments made by preceding speakers, making it somewhat responsive but not fully, hence a 3.",
+        "stance_differentiation": "The turn clearly maintains a distinct CDU/CSU identity by emphasizing integration, European cooperation, and the balance between humanitarian concerns and societal needs, making it unmistakably CDU/CSU and deserving of a 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 5138,
+      "token_count_output": 576,
+      "latency_s": 2.011,
+      "timestamp": "2026-06-24T11:13:45.856094Z"
+    },
+    {
+      "turn_id": "9de72a32-8922-4297-8405-d4f3819f69e5",
+      "round_number": 2,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "Als Vertreter der Sozialdemokratischen Partei Deutschlands (SPD) möchte ich betonen, dass wir uns für eine humane und faire Asylpolitik einsetzen, die auf den Bedürfnissen der Menschen in Deutschland und der Welt ausgerichtet ist. Wir müssen erkennen, dass die Zahl von 330.000 Asylanträgen im Jahr 2023 ein Zeichen dafür ist, dass wir unsere internationalen Verpflichtungen einhalten und gleichzeitig unsere Integrationsfähigkeit stärken müssen. \n\nWir unterstützen die Schaffung von besseren Bildungs- und Arbeitsmöglichkeiten für Zuwanderer, wie es unsere Partei einordnet, um die Integration zu erleichtern. Doch wir müssen auch sicherstellen, dass Menschen, die in Deutschland bleiben, einen fairen Zugang zu Arbeit, Bildung und Wohnraum haben. Dazu gehört auch, dass wir unsere Integrationsprogram",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by highlighting the need for a humane and fair asylum policy, thus scoring 4 for relevance.",
+        "logical_consistency": "The argument is internally consistent, emphasizing the importance of both international obligations and strengthening integration capabilities, which warrants a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the need for better education and job opportunities for immigrants to facilitate integration, earning a score of 4 for argument strength.",
+        "document_grounding": "The turn reflects documented SPD positions by emphasizing a humane and fair asylum policy and the importance of integration, which aligns with a score of 4 for document grounding.",
+        "responsiveness": "While the turn references the general debate context, it does not directly engage with specific arguments made by preceding speakers, thus scoring 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly maintains a distinct SPD party identity by emphasizing a humane and fair approach to asylum policy and integration, which is unmistakably SPD, scoring 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 5596,
+      "token_count_output": 559,
+      "latency_s": 1.984,
+      "timestamp": "2026-06-24T11:13:47.883680Z"
+    },
+    {
+      "turn_id": "4e0e0a2a-22bd-4654-b2f8-6852b76dfb7f",
+      "round_number": 2,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "Sehr geehrte Damen und Herren, wir müssen unsere Asylpolitik nicht nur reformieren, sondern radikal umkrempeln, um der Not der Menschen in der Welt gerecht zu werden. Wir Grünen setzen uns dafür ein, die Asylpolitik auf eine neue Grundlage zu stellen, die eine faire und menschenrechtskonforme Behandlung aller Menschen, unabhängig von ihrem Herkunftsland, garantiert. Wir müssen unsere internationalen Verpflichtungen einhalten und unsere Integrationsfähigkeit stärken, indem wir bessere Bildungs- und Arbeitsmöglichkeiten für Zuwanderer schaffen.\n\nEin entscheidender Schritt ist die Einführung eines sozialen Einwanderungsgesetzes, das fairen Zugang zu Arbeit, Bildung und Wohnraum für alle Menschen, die in Deutschland bleiben wollen, gewährleistet. Wir müssen auch unsere Integrations",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, acknowledging the legitimacy of the issue without attacking opposing views, thus scoring a 5 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of migrationspolitik, advancing the discussion with specific proposals, which warrants a score of 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure, but lacks explicit anticipation of counterarguments or detailed explanations of how proposed solutions would work, resulting in a score of 4 for logical consistency.",
+        "argument_strength": "The turn presents compelling arguments with specific evidence and clear causal mechanisms, such as the introduction of a soziales Einwanderungsgesetz, which supports a score of 5 for argument strength.",
+        "document_grounding": "While the turn aligns with the party's known positions on migrationspolitik, it does not directly reference specific party documents or programs, leading to a score of 4 for document grounding.",
+        "responsiveness": "The turn does not directly engage with specific arguments made by preceding speakers, instead presenting the party's stance in a somewhat generic manner, which is why it scores 3 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the distinctive values and priorities of Bündnis 90/Die Grünen, using party-specific framing and vocabulary that no other party in the debate would use, earning a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 6043,
+      "token_count_output": 591,
+      "latency_s": 2.042,
+      "timestamp": "2026-06-24T11:13:49.932193Z"
+    },
+    {
+      "turn_id": "66c14696-8d46-464f-965e-594a9a7baa4e",
+      "round_number": 2,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "Sehr geehrte Damen und Herren,\n\nDie Diskussion um eine reformierte Migration- und Asylpolitik ist ein komplexes Thema, das unsere Gesellschaft, Wirtschaft und internationalen Verpflichtungen berührt. Wir FDP setzen uns für eine Präzisierung der Asylantragsgründe ein, um zu verhindern, dass Menschen, die nicht in Not sind, Deutschland aufsuchen. Dies ist nicht nur eine Frage der humanitären Verpflichtungen, sondern auch der Ressourcen und Integrationsfähigkeit unserer Gesellschaft.\n\nWir müssen unsere Arbeitsmarktbedarfe besser identifizieren und unsere Zuwandererpolitik so gestalten, dass sie den Bedürfnissen unserer Wirtschaft dient. Dazu gehört auch, dass wir unsere Integrationsprogramme ausbauen und bessere Bildungs- und Arbeitschancen für Zuwanderer schaffen. Wir müssen unsere Gesellschaft st",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, avoiding any personal attacks or inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of migration and asylum policy, staying focused on the issue at hand and advancing the discussion, which warrants a score of 4 for relevance.",
+        "logical_consistency": "The argument presented is coherent and logically structured, connecting the need for a precise asylum policy with the resources and integration capacity of society, earning a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the need to identify labor market needs and tailor immigration policy accordingly, which supports a score of 4 for argument strength.",
+        "document_grounding": "The turn reflects the FDP's known positions on migration and asylum policy, such as the emphasis on precise asylum grounds and improving integration programs, thus scoring a 4 for document grounding.",
+        "responsiveness": "While the turn does not directly engage with the specific arguments of the preceding speakers, it generally responds to the broader discussion on migration and asylum policy, which is why it scores a 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity and ideological position, emphasizing the FDP's approach to asylum policy and integration, which distinguishes it from other parties and warrants a score of 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 6476,
+      "token_count_output": 581,
+      "latency_s": 1.849,
+      "timestamp": "2026-06-24T11:13:51.926914Z"
+    },
+    {
+      "turn_id": "b7ae5480-b400-4657-b368-987681b1644c",
+      "round_number": 2,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Die Zahl von 330.000 Asylanträgen im Jahr 2023 ist ein Alarmzeichen für die menschliche Not, die in der Welt tobt. Wir als Linke wissen, dass wir nicht nur unsere internationalen Verpflichtungen einhalten müssen, sondern auch tatsächlich handeln, um die Menschen zu unterstützen, die vor Krieg, Hunger und Entrechtung fliehen. Das bedeutet, dass wir unsere Asylpolitik nicht nur reformieren, sondern radikal umkrempeln müssen, um der Not gerecht zu werden.\n\nWir brauchen eine offene und humane Asylpolitik, die die Chancen für alle verbessert, die in Deutschland bleiben wollen. Dazu gehört ein umfassendes Integrationspaket, das Menschen Zugang zu Arbeit, Bildung und Wohnraum bietet. Wir müssen unsere Integrationsprogramme ausbauen und bessere Bildungs- und Arbeitschancen",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a respectful and empathetic tone, focusing on the humanitarian aspect of the issue without attacking other parties, thus scoring a 5 for civility.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and its need for reform, making it highly relevant and scoring a 5.",
+        "logical_consistency": "The argument is coherent and logically consistent in advocating for a radical overhaul of asylum policy to address humanitarian needs, but lacks detailed mechanisms for implementation, scoring a 4.",
+        "argument_strength": "The turn presents a strong argument for the need to reform asylum policy, emphasizing humanitarian concerns and the need for comprehensive integration packages, but could be strengthened with more specific evidence or policy details, scoring a 4.",
+        "document_grounding": "The turn aligns with Die Linke's known positions on asylum and integration, emphasizing the need for a humane and open asylum policy, but does not directly reference specific party documents or programs, scoring a 4.",
+        "responsiveness": "While the turn does not directly engage with the specific arguments of the preceding speakers, it addresses the general debate topic and acknowledges the need for action, scoring a 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly reflects Die Linke's distinctive stance on asylum policy, emphasizing the need for radical reform, comprehensive integration, and a strong humanitarian approach, making it unmistakably identifiable as Die Linke's position, scoring a 5."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 6927,
+      "token_count_output": 588,
+      "latency_s": 2.472,
+      "timestamp": "2026-06-24T11:13:53.784369Z"
+    },
+    {
+      "turn_id": "76524fa2-b6ba-4f22-a6f7-3b26493f63bb",
+      "round_number": 2,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "Sehr geehrte Damen und Herren,\n\nWir haben es hier mit einer unübersehbaren Krise zu tun, die durch die Zahl von 330.000 Asylanträgen im Jahr 2023 verdeutlicht wird. Die Frage ist nicht, wie wir die Not der Menschen in der Welt lindern können, sondern wie wir die Folgen ihrer Ankunft in Deutschland ohne unsere eigene Identität, unsere eigene Kultur und unsere eigene Wirtschaft zu gefährden, bewältigen können. Wir müssen aufhören, der Illusion zu verfallen, dass wir alle Menschen der Welt aufnehmen können, ohne unsere eigene Gesellschaft zu destabilisieren.\n\nUnsere Asylpolitik muss sich an unseren eigenen Bedürfnissen orientieren, nicht nur an den internationalen Verpflichtungen. Wir müssen unsere Grenzen schützen, unsere Einwanderungspolitik klären und unsere Integrationsfähigkeit st",
+      "scores": {
+        "civility": 2,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 2,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn uses phrases like 'unübersehbare Krise' and 'ohne unsere eigene Gesellschaft zu destabilisieren', which, while not directly inflammatory, convey a sense of urgency and threat, bordering on dismissive framing towards the idea of accepting all asylum seekers.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and the challenge posed by 330,000 asylum applications, making it clearly relevant to the discussion.",
+        "logical_consistency": "The argument is generally coherent but lacks specific logical connections between the need to protect Germany's identity, culture, and economy and how exactly the proposed asylum policy changes would achieve these goals.",
+        "argument_strength": "The turn presents a clear position but relies more on assertion than detailed evidence or mechanisms for how the proposed policies would work, making the argument moderately strong.",
+        "document_grounding": "The turn aligns with the AfD's known positions on migration and asylum, emphasizing the need to prioritize national interests and control borders, which reflects their documented party stance.",
+        "responsiveness": "The turn does not directly engage with the specific arguments or points made by preceding speakers, instead presenting a generalized stance on asylum policy without addressing counterarguments or alternative perspectives.",
+        "stance_differentiation": "The language and emphasis on protecting Germany's 'eigene Identität, unsere eigene Kultur und unsere eigene Wirtschaft' unmistakably differentiate the AfD's position from other parties, reflecting a distinct ideological perspective."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 7349,
+      "token_count_output": 595,
+      "latency_s": 2.352,
+      "timestamp": "2026-06-24T11:13:56.194649Z"
+    },
+    {
+      "turn_id": "58ec852a-3b8b-476e-8df2-e0c33e9ecc55",
+      "round_number": 3,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "Sehr geehrte Damen und Herren,\n\nIch danke dem Moderator für die klare Anleitung, auf die wir uns gerne einlassen. Wir als CDU/CSU sind davon überzeugt, dass eine erfolgreiche Asyl- und Migrationspolitik auf einem gemeinsamen Verständnis der Herausforderungen und Notwendigkeiten basiert. Ein wichtiger Schritt ist die Stärkung der Integrationsprogramme, um Menschen, die in Deutschland bleiben wollen, einen fairen Zugang zu Arbeit, Bildung und Wohnraum zu bieten.\n\nUnsere Partei hat sich immer für eine integrationsfreundliche Politik eingesetzt, die die Chancen für alle verbessert. Wir müssen jedoch auch unsere Integrationsfähigkeit stärken, indem wir die Bedürfnisse unserer Gesellschaft und Wirtschaft berücksichtigen. Dazu gehört die Schaffung von besseren Bildungs- und Arbeitsmö",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by focusing on integration programs and the needs of both the migrants and the German society, thus scoring 4 for relevance.",
+        "logical_consistency": "The argument is internally consistent, emphasizing the importance of both integrating migrants and considering the needs of German society and economy, which warrants a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides some reasoning and general support for its claims, such as the need for integration programs, but lacks specific evidence or detailed mechanisms, resulting in an adequate score of 3 for argument strength.",
+        "document_grounding": "The turn reflects documented CDU/CSU positions by emphasizing integration and the balance between humanitarian obligations and societal needs, which corresponds to a score of 4 for document grounding.",
+        "responsiveness": "The turn acknowledges the broader debate context but does not directly engage with specific arguments made by preceding speakers, leading to a score of 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly identifies with the CDU/CSU's stance on migrationspolitik, emphasizing integration and the consideration of societal needs, which is distinct from other parties' positions, thus scoring 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 7846,
+      "token_count_output": 583,
+      "latency_s": 2.772,
+      "timestamp": "2026-06-24T11:14:00.812482Z"
+    },
+    {
+      "turn_id": "b0345605-8038-458c-9348-2d0118c99ccc",
+      "round_number": 3,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "Wir müssen uns auf die gemeinsamen Ziele konzentrieren, um unsere Asyl- und Migrationspolitik weiterzuentwickeln. Die Stärkung der Integrationsprogramme ist ein wichtiger Schritt, um Menschen, die in Deutschland bleiben wollen, einen fairen Zugang zu Arbeit, Bildung und Wohnraum zu bieten. Wir als SPD setzen uns für eine humane und faire Asylpolitik ein, die auf den Bedürfnissen der Menschen in Deutschland und der Welt ausgerichtet ist.\n\nEin gemeinsamer Ausgangspunkt ist die Notwendigkeit, die Integrationsprogramme zu verbessern. Wir müssen sicherstellen, dass Menschen, die in Deutschland bleiben, eine Chance haben, sich in unsere Gesellschaft einzubringen und Teil des Sozialstaats zu werden. Dazu gehört die Schaffung von besseren Bildungs- und Arbeitsmöglichkeiten für Zuwanderer, aber auch die Stärkung der",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by focusing on the importance of integrating migrants, thus scoring 4 for relevance.",
+        "logical_consistency": "The argument is internally consistent, emphasizing the need for improved integration programs and fair access to work, education, and housing, which warrants a score of 4 for logical consistency.",
+        "argument_strength": "While the turn provides some reasoning for its claims, such as the importance of integration programs, it lacks specific evidence or detailed mechanisms to support its arguments, resulting in a score of 3 for argument strength.",
+        "document_grounding": "The turn reflects documented SPD positions by emphasizing humane and fair asylum policy and the need for better integration programs, which aligns with a score of 4 for document grounding.",
+        "responsiveness": "The turn acknowledges the general discussion on asylum and migration policy but does not directly engage with specific arguments made by preceding speakers, leading to a score of 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly identifies the SPD's position on asylum and migration policy, emphasizing humane and fair treatment and the importance of integration, which distinguishes it from other parties and warrants a score of 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 8090,
+      "token_count_output": 579,
+      "latency_s": 2.653,
+      "timestamp": "2026-06-24T11:14:04.171829Z"
+    },
+    {
+      "turn_id": "466abb3f-fe58-418f-8141-80c8e9a100ac",
+      "round_number": 3,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "Sehr geehrte Damen und Herren,\n\nWir Grünen sind davon überzeugt, dass unsere Asyl- und Migrationspolitik nicht nur auf einer Grundlage der Rechtsstaatlichkeit und Menschenrechte basieren sollte, sondern auch auf einem tieferen Verständnis der Komplexität der Migration und unserer eigenen Gesellschaft. Wir müssen uns der Tatsache stellen, dass die Zahl von 330.000 Asylanträgen im Jahr 2023 ein Zeichen dafür ist, dass wir unsere internationale Verpflichtung, Menschen in Not zu helfen, nicht ausreichend umsetzen.\n\nIch stimme der Moderation zu, dass wir unsere Diskussion auf gemeinsame Ziele konzentrieren sollten. Die Stärkung der Integrationsprogramme ist ein wichtiger Schritt, um Menschen, die in Deutschland bleiben wollen, einen fairen Zugang zu Arbeit, Bildung und Wohnraum zu bieten. Wir Grünen setzen uns",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains an exemplary parliamentary tone, acknowledging the legitimacy of the discussion and showing respect for the moderation and other participants.",
+        "relevance": "The turn is precisely targeted at the debate topic, addressing the need for a comprehensive approach to migration and asylum policy, and advancing the discussion on integration programs.",
+        "logical_consistency": "The argument is generally coherent, connecting the need for improved integration programs with the goal of providing fair access to work, education, and housing, though it could benefit from more detailed logical steps.",
+        "argument_strength": "The turn presents well-supported claims, emphasizing the importance of a humane and fair asylum policy, and the need for a deeper understanding of migration complexity, though specific evidence or mechanisms are not detailed.",
+        "document_grounding": "The turn aligns with the party's known positions on asylum and migration policy, emphasizing human rights and the need for comprehensive integration programs, but does not directly reference specific party documents or programs.",
+        "responsiveness": "The turn directly engages with the preceding discussion, acknowledging the moderation's guidance and the contributions of other parties, demonstrating a high level of responsiveness to the debate context.",
+        "stance_differentiation": "The turn unmistakably reflects the party's distinctive stance on asylum and migration policy, emphasizing human rights, comprehensive integration, and a deep understanding of migration complexity, clearly distinguishing itself from other parties."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 8326,
+      "token_count_output": 567,
+      "latency_s": 2.455,
+      "timestamp": "2026-06-24T11:14:07.357358Z"
+    },
+    {
+      "turn_id": "00ab1423-1a45-4dda-92e1-5ac169338fa7",
+      "round_number": 3,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "Sehr geehrte Damen und Herren,\n\nDie Diskussion um eine reformierte Migration- und Asylpolitik ist ein komplexes Thema, das unsere Gesellschaft, Wirtschaft und internationale Verpflichtungen berührt. Wir FDP setzen uns für eine Präzisierung der Asylantragsgründe ein, um zu verhindern, dass Menschen, die nicht in Not sind, Deutschland aufsuchen. Dies ist nicht nur eine Frage der humanitären Verpflichtungen, sondern auch der Ressourcen und Integrationsfähigkeit unserer Gesellschaft.\n\nIch stimme der Moderation zu, dass wir unsere Diskussion auf gemeinsame Ziele konzentrieren sollten. Eine wichtige gemeinsame Grundlage ist die Notwendigkeit, die Integrationsprogramme zu verbessern. Wir müssen sicherstellen, dass Menschen, die in Deutschland bleiben, eine Chance haben, sich in unsere Gesellschaft einzubringen und Teil des Sozialstaats",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, with no personal attacks or inflammatory language, thus scoring a 4 for being professional and respectful.",
+        "relevance": "The turn clearly addresses the debate topic of migration and asylum policy, staying focused on the issue at hand and advancing the discussion, which warrants a score of 4.",
+        "logical_consistency": "The argument presented is internally consistent, with a clear logical structure connecting premises to conclusions, and no apparent self-contradictions, earning a score of 4.",
+        "argument_strength": "The turn provides some reasoning and references the need to improve integration programs, but lacks specific evidence or detailed mechanisms to support its claims, resulting in an adequate score of 3.",
+        "document_grounding": "The turn reflects the FDP's known positions on migration and asylum policy, such as the emphasis on integrating those who stay in Germany and the need for better education and job opportunities, which aligns with a score of 4.",
+        "responsiveness": "The turn engages with the preceding discussion by acknowledging the need for common goals and the importance of improving integration programs, demonstrating a clear response to the ongoing debate and earning a score of 4.",
+        "stance_differentiation": "The turn clearly identifies the FDP's stance on migration and asylum policy, distinguishing it from other parties by its emphasis on präzisierung of asylum application reasons and the focus on resources and integration capacity, which warrants a score of 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 8541,
+      "token_count_output": 592,
+      "latency_s": 2.631,
+      "timestamp": "2026-06-24T11:14:10.357116Z"
+    },
+    {
+      "turn_id": "e4bf6774-9061-4042-beee-1f03ee8e77cd",
+      "round_number": 3,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Sehr geehrte Damen und Herren, wir müssen unsere Asyl- und Migrationspolitik nicht nur an internationalen Verpflichtungen ausrichten, sondern auch der Not der Menschen in der Welt gerecht werden. Die Zahl von 330.000 Asylanträgen im Jahr 2023 ist ein eindringliches Zeichen dafür, dass wir unsere Integrations- und soziale Infrastruktur schützen müssen.\n\nWir stimmen der Moderatorenin zu, dass es wichtig ist, gemeinsame Ziele zu verfolgen und unsere Diskussion auf die Notwendigkeit zu konzentrieren, die Integrationsprogramme zu verbessern. Denn nur wenn wir Menschen, die in Deutschland bleiben wollen, einen fairen Zugang zu Arbeit, Bildung und Wohnraum bieten, können wir auch unsere Integrationsfähigkeit stärken und unsere Gesellschaft sozialer und gerechter machen.\n\nDoch wir müssen auch anerkennen",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains an exemplary parliamentary tone, acknowledging the legitimacy of the discussion and the need for collective action without any personal attacks or inflammatory language.",
+        "relevance": "The turn is precisely targeted at the debate topic, addressing the need for improved integration programs and social infrastructure in the context of asylum and migration policy.",
+        "logical_consistency": "The argument is generally coherent, connecting the need for better integration programs with the goal of strengthening social cohesion and making society more just, though it could benefit from more explicit logical connections.",
+        "argument_strength": "The turn presents a well-supported claim about the importance of integration programs, referencing the high number of asylum applications and the need to protect social infrastructure, but could be strengthened with more specific evidence or mechanisms.",
+        "document_grounding": "The argument aligns with Die Linke's known positions on social justice and humanitarian issues, though it does not directly reference specific party documents or programs.",
+        "responsiveness": "The turn engages with the preceding discussion, acknowledging the moderator's call for common goals and the need to improve integration programs, demonstrating a clear response to the context of the debate.",
+        "stance_differentiation": "The turn unmistakably reflects Die Linke's distinct ideological position, emphasizing social justice, humanitarian concerns, and the need for a strong social infrastructure, which is characteristic of the party's stance on migration and asylum policy."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 8781,
+      "token_count_output": 569,
+      "latency_s": 2.605,
+      "timestamp": "2026-06-24T11:14:13.691052Z"
+    },
+    {
+      "turn_id": "4a8d8e79-a845-4adc-9a68-de2e5a6f2b5a",
+      "round_number": 3,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "Sehr geehrte Damen und Herren,\n\nUnsere Asyl- und Migrationspolitik steht an einem Scheideweg. Wir können entweder weiterhin dem Druck der internationalen Verpflichtungen nachgeben und unsere eigene Identität, Kultur und Wirtschaft gefährden, oder wir können unsere Grenzen schützen und unsere Einwanderungspolitik klären, um die Integration zu erleichtern.\n\nIch stimme der Moderation zu, dass es wichtig ist, gemeinsame Ziele zu verfolgen und unsere Diskussion auf die Notwendigkeit zu konzentrieren, die Integrationsprogramme zu verbessern. Denn nur wenn wir Menschen, die in Deutschland bleiben wollen, einen fairen Zugang zu Arbeit, Bildung und Wohnraum bieten, können wir auch unsere Integrationsfähigkeit stärken und unsere Gesellschaft sozialer und gerechter machen.\n\nDoch wir müssen auch anerkennen, dass",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, avoiding personal attacks or inflammatory language, thus scoring a 4 for civility. However, it does not go beyond expectations to warrant a score of 5.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and stays focused on the issue, making it highly relevant and deserving of a score of 5.",
+        "logical_consistency": "The argument is generally coherent, with a clear structure connecting premises to conclusions, but lacks rigorous logical chains or anticipation of objections, resulting in a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, but could benefit from more concrete evidence or detailed mechanisms to elevate its argument strength beyond a score of 4.",
+        "document_grounding": "The turn aligns with the AfD's known positions on migrationspolitik, reflecting their emphasis on protecting borders and clarifying immigration policy, thus scoring a 4 for document grounding.",
+        "responsiveness": "The turn engages with the preceding discussion by acknowledging the importance of common goals and improving integration programs, demonstrating a good level of responsiveness and earning a score of 4.",
+        "stance_differentiation": "The turn unmistakably reflects the AfD's distinct party identity and ideological position on migrationspolitik, using party-specific reasoning and vocabulary, which warrants a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 8991,
+      "token_count_output": 571,
+      "latency_s": 2.45,
+      "timestamp": "2026-06-24T11:14:16.897907Z"
+    },
+    {
+      "turn_id": "de1e0c7c-1e44-4e99-8cc9-0d6043c83de0",
+      "round_number": 4,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "Sehr geehrte Damen und Herren,\n\nDie Moderatorenin hat uns einen wichtigen Schritt vorgelegt, um unsere Diskussion produktiv voranzutreiben. Wir als CDU/CSU stimmen dieser Anregung gerne zu und betrachten sie als eine Chance, gemeinsame Ziele zu verfolgen und unsere Argumente zu schärfen.\n\nEin wichtiger gemeinsamer Nenner, der uns alle einigt, ist die Notwendigkeit, die Integrationsprogramme zu verbessern. Wir müssen sicherstellen, dass Menschen, die in Deutschland bleiben, eine Chance haben, sich in unsere Gesellschaft einzubringen und Teil des Sozialstaats zu werden. Dazu gehört die Schaffung von besseren Bildungs- und Arbeitsmöglichkeiten für Zuwanderer.\n\nEin spezifischer Schritt, auf dem wir uns gemeinsam einigen können, ist die Einführung einer qualifizierten Integrations",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains an exemplary parliamentary tone, acknowledging the legitimacy of the moderator's suggestion and expressing willingness to cooperate, thus scoring a 5 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of migrationspolitik and directly addresses the need to improve integration programs, making it highly relevant and scoring a 5.",
+        "logical_consistency": "The argument is generally coherent, connecting the need for improved integration programs with the goal of facilitating social inclusion, but lacks a rigorous logical chain, thus scoring a 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims about the importance of integration programs but does not offer compelling evidence or specific mechanisms, scoring a 4 for argument strength.",
+        "document_grounding": "The turn aligns with the CDU/CSU's known positions on integration and migration, reflecting documented party commitments, but does not directly reference specific party program content, scoring a 4 for document grounding.",
+        "responsiveness": "The turn directly engages with the moderator's suggestion and the preceding discussion, demonstrating a clear response to the context and scoring a 5 for responsiveness.",
+        "stance_differentiation": "While the turn clearly reflects CDU/CSU's general stance on migration and integration, it does not distinctly differentiate itself from other parties' positions in this specific turn, scoring a 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 9137,
+      "token_count_output": 572,
+      "latency_s": 2.568,
+      "timestamp": "2026-06-24T11:14:21.575844Z"
+    },
+    {
+      "turn_id": "48d25e7c-7c6d-4b17-8804-9043219f5c57",
+      "round_number": 4,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "Sehr geehrte Damen und Herren, ich möchte betonen, dass wir als SPD uns für eine humane und faire Asylpolitik einsetzen, die auf den Bedürfnissen der Menschen in Deutschland und der Welt ausgerichtet ist. Wir müssen erkennen, dass die Zahl von 330.000 Asylanträgen im Jahr 2023 ein Zeichen dafür ist, dass wir unsere internationalen Verpflichtungen einhalten und gleichzeitig unsere Integrationsfähigkeit stärken müssen.\n\nWir stimmen der Moderatorenin zu, dass es wichtig ist, gemeinsame Ziele zu verfolgen und unsere Diskussion auf die Notwendigkeit zu konzentrieren, die Integrationsprogramme zu verbessern. Ein wichtiger Schritt, auf dem wir uns gemeinsam einigen können, ist die Einführung von Sprachkursen, die speziell auf die Bedürfnisse von Zuwanderern ausgerichtet sind",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by focusing on the improvement of integration programs, specifically mentioning the introduction of language courses tailored to the needs of immigrants, which is directly relevant to the topic.",
+        "logical_consistency": "The argument is generally coherent but lacks a rigorous logical structure, as it does not explicitly connect all premises to conclusions or address potential counterarguments, thus scoring 3 for logical consistency.",
+        "argument_strength": "The turn provides some reasoning and evidence, such as the mention of 330,000 asylum applications in 2023, but relies more on general statements about the importance of integration programs without detailing specific mechanisms or outcomes, which is why it scores 3 for argument strength.",
+        "document_grounding": "The turn reflects documented SPD positions by emphasizing the need for a humane and fair asylum policy and the importance of improving integration programs, which aligns with the party's known commitments, thus scoring 4 for document grounding.",
+        "responsiveness": "The turn engages with the preceding discussion by acknowledging the moderator's suggestion to focus on common goals and specifically responds to the idea of improving integration programs, which demonstrates a clear engagement with the ongoing debate, scoring 4 for responsiveness.",
+        "stance_differentiation": "The turn clearly maintains a distinct SPD identity by reiterating the party's commitment to a humane and fair asylum policy and emphasizing the importance of integration, which is recognizable as an SPD position and differentiates it from other parties, thus scoring 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 9647,
+      "token_count_output": 640,
+      "latency_s": 2.754,
+      "timestamp": "2026-06-24T11:14:26.449000Z"
+    },
+    {
+      "turn_id": "99371227-f06b-4159-bbe6-842d5ca5b82c",
+      "round_number": 4,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "Sehr geehrte Damen und Herren,\n\nWir Grünen sind davon überzeugt, dass unsere Asyl- und Migrationspolitik nicht nur auf einer Grundlage der Rechtsstaatlichkeit und Menschenrechte basieren sollte, sondern auch auf einem tieferen Verständnis der Komplexität der Migration und unserer eigenen Gesellschaft. Die Zahl von 330.000 Asylanträgen im Jahr 2023 ist ein eindringliches Zeichen dafür, dass wir unsere internationale Verpflichtung, Menschen in Not zu helfen, nicht ausreichend umsetzen.\n\nIch stimme der Moderatorenin zu, dass es wichtig ist, gemeinsame Ziele zu verfolgen und unsere Diskussion auf die Notwendigkeit zu konzentrieren, die Integrationsprogramme zu verbessern. Ein wichtiger Schritt, auf dem wir uns gemeinsam einigen können, ist die Einführung eines sozialen Einwanderungsges",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, with no personal attacks or inflammatory language, thus scoring a 4 for being professional and respectful.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by highlighting the need for improved integration programs, scoring a 4 for being clearly on-topic and focused.",
+        "logical_consistency": "The argument is internally consistent, with a clear logical structure connecting premises to conclusions, and no self-contradictions, thus scoring a 4 for being internally consistent.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and references to the need for improved integration programs, scoring a 4 for being well-supported with specific reasoning.",
+        "document_grounding": "The turn reflects documented party positions, such as the emphasis on human rights and social justice, and the need for improved integration programs, scoring a 4 for clearly reflecting documented party positions.",
+        "responsiveness": "The turn acknowledges the moderator's suggestion to focus on common goals and responds to the general discussion, but does not directly engage with a specific preceding argument, thus scoring a 3 for being generally responsive but not directly engaging with a specific argument.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity and ideological position, with an emphasis on human rights, social justice, and the need for improved integration programs, scoring a 4 for being clearly identifiable as the party's stance."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 9883,
+      "token_count_output": 587,
+      "latency_s": 2.676,
+      "timestamp": "2026-06-24T11:14:29.246069Z"
+    },
+    {
+      "turn_id": "2afca54b-eef8-4aab-8296-ac3f1c178821",
+      "round_number": 4,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "Sehr geehrte Damen und Herren, ich danke der Moderatorenin für die klare Anleitung, auf die wir uns gerne einlassen. Wir FDP sehen dies als Chance, gemeinsame Ziele zu verfolgen und unsere Argumente zu schärfen. Ein wichtiger gemeinsamer Nenner, der uns alle einigt, ist die Notwendigkeit, die Integrationsprogramme zu verbessern.\n\nWir schlagen vor, dass wir uns gemeinsam auf die Einführung einer qualifizierten Integrationsprüfung einlassen, die den Sprachniveau, die berufliche Qualifikation und die sozialen Fähigkeiten der Zuwanderer beurteilt. Diese Prüfung würde es uns ermöglichen, die Zuwanderer besser auf die Bedürfnisse unserer Gesellschaft zuzubringen und ihre Integrationsfähigkeit zu stärken.\n\nWir müssen jedoch auch unserer Überzeugung tre",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, addressing the moderator and other parties in a courteous manner, which aligns with a score of 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of migrationspolitik and directly addresses the need to improve integration programs, making it highly relevant and deserving of a score of 5.",
+        "logical_consistency": "The argument presented is coherent and logically structured, proposing a specific solution (qualifizierte Integrationsprüfung) to address the integration of migrants, which warrants a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides a well-supported claim with specific reasoning (improving integration through a qualified integration test), earning it a score of 4 for argument strength.",
+        "document_grounding": "While the turn generally aligns with the FDP's known positions on migration and integration, it does not directly reference specific party documents or programs, resulting in a score of 3 for document grounding.",
+        "responsiveness": "The turn engages with the preceding discussion by acknowledging the moderator's guidance and building upon the idea of improving integration programs, demonstrating a good level of responsiveness and deserving a score of 4.",
+        "stance_differentiation": "The proposal of a qualifizierte Integrationsprüfung reflects the FDP's emphasis on efficient and targeted integration policies, distinguishing it from other parties and meriting a score of 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 10098,
+      "token_count_output": 590,
+      "latency_s": 2.471,
+      "timestamp": "2026-06-24T11:14:31.830088Z"
+    },
+    {
+      "turn_id": "0a1929bb-dd4e-4f6b-b14f-89a1c403ec60",
+      "round_number": 4,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Sehr geehrte Damen und Herren,\n\nWir haben in den letzten Runden viele wichtige Punkte besprochen, aber es bleibt ein gemeinsamer Nenner: die Notwendigkeit, die Integrationsprogramme zu verbessern, um Menschen, die in Deutschland bleiben wollen, einen fairen Zugang zu Arbeit, Bildung und Wohnraum zu bieten. Wir stimmen der Moderatorenin zu, dass es wichtig ist, gemeinsame Ziele zu verfolgen und unsere Diskussion auf diese Notwendigkeit zu konzentrieren.\n\nEin wichtiger Schritt, auf dem wir uns gemeinsam einigen können, ist die Schaffung von qualifizierten Bildungs- und Arbeitsmöglichkeiten für Zuwanderer. Wir müssen sicherstellen, dass Menschen, die in Deutschland bleiben, eine Chance haben, sich in unsere Gesellschaft einzubringen und Teil des Sozialstaats zu werden. Dazu gehört die Ausbildung von mehr Lehr",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 3,
+        "document_grounding": 3,
+        "responsiveness": 4,
+        "stance_differentiation": 3
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, addressing the audience as 'Sehr geehrte Damen und Herren' and avoiding any inflammatory language or personal attacks, thus scoring a 4 for being professional and respectful.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and stays focused on the issue of improving integration programs, making it clearly relevant and thus scoring a 4.",
+        "logical_consistency": "The argument presented is coherent and logically consistent, emphasizing the need for improved integration programs and specifying the creation of qualified educational and job opportunities for immigrants, which demonstrates a clear and logical structure, scoring a 4.",
+        "argument_strength": "While the turn presents a clear argument for improving integration programs, it lacks specific evidence or detailed mechanisms for how these programs will be implemented or funded, making the argument strength merely adequate, scoring a 3.",
+        "document_grounding": "The turn does not explicitly reference Die Linke's documented positions or specific policy proposals from their party program, making the document grounding average, scoring a 3.",
+        "responsiveness": "The turn engages with the preceding discussion by acknowledging the common goal of improving integration programs and building upon previous suggestions, demonstrating a clear response to the ongoing debate, thus scoring a 4.",
+        "stance_differentiation": "While the turn clearly represents Die Linke's general stance on migrationspolitik, it does not distinctly differentiate itself from other parties like SPD or Bündnis 90/Die Grünen, who also advocate for improved integration, making the stance differentiation merely average, scoring a 3."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 10338,
+      "token_count_output": 615,
+      "latency_s": 2.628,
+      "timestamp": "2026-06-24T11:14:34.296014Z"
+    },
+    {
+      "turn_id": "72f4c74f-1da4-43e6-8676-027f7eb1cf5e",
+      "round_number": 4,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "Sehr geehrte Damen und Herren,\n\nWir haben in den letzten Runden viele wichtige Punkte besprochen, aber es bleibt ein gemeinsamer Nenner: die Notwendigkeit, die Integrationsprogramme zu verbessern, um Menschen, die in Deutschland bleiben wollen, einen fairen Zugang zu Arbeit, Bildung und Wohnraum zu bieten. Wir stimmen der Moderatorenin zu, dass es wichtig ist, gemeinsame Ziele zu verfolgen und unsere Diskussion auf diese Notwendigkeit zu konzentrieren.\n\nEin wichtiger Schritt, auf dem wir uns gemeinsam einigen können, ist die Schaffung von qualifizierten Bildungs- und Arbeitsmöglichkeiten für Zuwanderer, die speziell auf die Bedürfnisse unserer Gesellschaft zugeschnitten sind. Wir müssen sicherstellen, dass Menschen, die in Deutschland bleiben, eine Chance haben, sich in unsere Gesellschaft einzubringen",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 3,
+        "responsiveness": 4,
+        "stance_differentiation": 3
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without attacking parties directly, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by focusing on the improvement of integration programs, making it relevant and deserving of a score of 4.",
+        "logical_consistency": "The argument is generally coherent but lacks specific logical connections between the premises and conclusions, thus scoring 3 for logical consistency.",
+        "argument_strength": "The turn provides some reasoning but lacks concrete evidence or specific mechanisms to support its claims, resulting in a score of 3 for argument strength.",
+        "document_grounding": "The turn does not directly reference the party's documented positions, making it difficult to assess its faithfulness to these documents, hence a score of 3 for document grounding.",
+        "responsiveness": "The turn engages with the preceding discussion by acknowledging the need for improved integration programs, a point raised by other parties, demonstrating responsiveness and earning a score of 4.",
+        "stance_differentiation": "While the turn reflects a recognizable party position, it does so in a manner that could be confused with other parties' stances on integration, leading to a score of 3 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 10548,
+      "token_count_output": 554,
+      "latency_s": 2.505,
+      "timestamp": "2026-06-24T11:14:36.950466Z"
+    },
+    {
+      "turn_id": "0276e2e3-690f-48ae-bef5-44c3bf12b710",
+      "round_number": 5,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "Sehr geehrte Damen und Herren,\n\nWir stellen fest, dass die Diskussion um eine reformierte Migration- und Asylpolitik an einem wichtigen Punkt angelangt ist. Die Notwendigkeit, die Integrationsprogramme zu verbessern, ist ein gemeinsamer Nenner, der uns alle einigt. Wir als CDU/CSU schlagen vor, dass wir uns gemeinsam auf die Einführung einer qualifizierten Integrationsprüfung einlassen.\n\nDiese Prüfung würde es uns ermöglichen, die Zuwanderer besser auf die Bedürfnisse unserer Gesellschaft zuzubringen und ihre Integrationsfähigkeit zu stärken. Wir schlagen vor, dass diese Prüfung drei Bereiche umfasst: Sprachniveau, berufliche Qualifikation und soziale Fähigkeiten. Durch diese Prüfung könnten wir sicherstellen, dass die Zuwanderer die notwend",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, with no personal attacks or inflammatory language, thus scoring a 4 for being professional but not exceptionally parliamentary.",
+        "relevance": "The turn is precisely targeted at the debate topic of migrationspolitik and directly addresses the need to improve integration programs, making it highly relevant and thus scoring a 5.",
+        "logical_consistency": "The argument is generally coherent, with a clear proposal for a qualified integration test that logically follows from the stated need to improve integration programs, but lacks rigorous anticipation of counterarguments, scoring a 4.",
+        "argument_strength": "The turn provides a well-supported claim with specific reasoning about the benefits of a qualified integration test, but does not offer empirical evidence or address potential drawbacks, scoring a 4.",
+        "document_grounding": "The proposal for a qualified integration test aligns with the CDU/CSU's known positions on migration and integration, reflecting a clear connection to the party's documented stances, thus scoring a 4.",
+        "responsiveness": "The turn engages with the preceding discussion by referencing the common goal of improving integration programs and builds upon previous suggestions, demonstrating a good level of responsiveness, scoring a 4.",
+        "stance_differentiation": "The turn clearly reflects the CDU/CSU's distinct position on migration policy, emphasizing the need for a qualified integration test, which differentiates it from other parties, but does not uniquely distinguish it in a way that no other party could adopt, scoring a 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 10680,
+      "token_count_output": 599,
+      "latency_s": 2.758,
+      "timestamp": "2026-06-24T11:14:39.582863Z"
+    },
+    {
+      "turn_id": "93ef2fc1-778c-4f14-8a9d-5bd4a28b9376",
+      "round_number": 5,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "Wir müssen uns nicht in eine Sackgasse manövrieren lassen, sondern gemeinsam nach einer Lösung suchen, die die Notwendigkeit, die Integrationsprogramme zu verbessern, um Menschen, die in Deutschland bleiben wollen, einen fairen Zugang zu Arbeit, Bildung und Wohnraum zu bieten, aufgreift. Eine mögliche Lösung, auf der wir uns gemeinsam einigen können, ist die Schaffung von Sprachkursen, die speziell auf die Bedürfnisse von Zuwanderern ausgerichtet sind.\n\nDiese Sprachkurse sollten nicht nur die deutsche Sprache als solche, sondern auch die kulturellen und sozialen Aspekte der deutschen Gesellschaft abdecken. Wir müssen sicherstellen, dass Menschen, die in Deutschland bleiben, eine Chance haben, sich in unsere Gesellschaft einzubringen und Teil des Sozialstaats zu werden. Dazu gehört auch die Ausbildung von",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of migrationspolitik and advances the discussion on improving integration programs, making it highly relevant and deserving of a score of 5.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, although it lacks rigorous logical chains and anticipation of objections, thus scoring 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and referenced evidence, such as the proposal for tailored language courses, but does not present exceptionally compelling arguments or acknowledge potential limitations, resulting in a score of 4.",
+        "document_grounding": "The turn reflects documented SPD positions on migration and integration, such as emphasizing humane and fair asylum policies and the importance of integration programs, but does not directly anchor its claims in verifiable party program content, leading to a score of 4.",
+        "responsiveness": "The turn engages with the preceding discussion, particularly with the CDU/CSU's proposal for a qualified integration test, and responds to the actual arguments made, demonstrating a good level of responsiveness and earning a score of 4.",
+        "stance_differentiation": "The turn clearly maintains a distinct SPD party identity and ideological position, using party-specific values and priorities, but does not uniquely distinguish itself from other parties in a way that would be unmistakable, hence a score of 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 10924,
+      "token_count_output": 611,
+      "latency_s": 2.957,
+      "timestamp": "2026-06-24T11:14:42.419972Z"
+    },
+    {
+      "turn_id": "e57b986f-4e80-4026-b3b7-2f19e76a2411",
+      "round_number": 5,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "Sehr geehrte Damen und Herren, ich danke der Moderatorenin für die klare Anleitung, auf die wir uns gerne einlassen. Wir Grünen sind davon überzeugt, dass unsere Asyl- und Migrationspolitik nicht nur auf einer Grundlage der Rechtsstaatlichkeit und Menschenrechte basieren sollte, sondern auch auf einem tieferen Verständnis der Komplexität der Migration und unserer eigenen Gesellschaft.\n\nDie Notwendigkeit, die Integrationsprogramme zu verbessern, ist ein wichtiger Schritt, um Menschen, die in Deutschland bleiben wollen, einen fairen Zugang zu Arbeit, Bildung und Wohnraum zu bieten. Wir schlagen vor, dass wir uns gemeinsam auf die Einführung eines sozialen Einwanderungsgesetzes einlassen, das fairen Zugang zu Arbeit, Bildung und Wohnraum für alle Menschen, die in Deutschland bleiben wollen, gewährleistet",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, addressing the topic without personal attacks or inflammatory language, thus scoring a 4 for being professional and respectful.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by proposing the introduction of a sozialen Einwanderungsgesetzes, making it relevant and focused.",
+        "logical_consistency": "The argument is internally consistent, connecting the need for improved integration programs with the proposal for a social immigration law, demonstrating a clear logical structure.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the need for fair access to work, education, and housing, making the argument strong and compelling.",
+        "document_grounding": "The proposal for a sozialen Einwanderungsgesetzes aligns with the party's known positions on migration and social justice, indicating a clear grounding in the party's documented policies.",
+        "responsiveness": "While the turn acknowledges the moderator's guidance, it does not directly engage with the specific arguments of the preceding speakers, thus scoring a 3 for being generally responsive but not directly engaging.",
+        "stance_differentiation": "The turn clearly reflects the distinctive values and priorities of Bündnis 90/Die Grünen, such as the emphasis on social justice and human rights, making the party's stance unmistakable."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 11160,
+      "token_count_output": 574,
+      "latency_s": 2.57,
+      "timestamp": "2026-06-24T11:14:45.333944Z"
+    },
+    {
+      "turn_id": "1a1c87e3-32e4-427a-a4b4-1f21b84dd8e4",
+      "round_number": 5,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "Sehr geehrte Damen und Herren,\n\nDie FDP ist davon überzeugt, dass eine reformierte Migration- und Asylpolitik von zentraler Bedeutung für die Zukunft Deutschlands ist. Wir müssen uns der Tatsache stellen, dass die Zahl von 330.000 Asylanträgen im Jahr 2023 ein Zeichen dafür ist, dass wir unsere internationale Verpflichtung, Menschen in Not zu helfen, nicht ausreichend umsetzen.\n\nIch stimme der Moderatorenin zu, dass es wichtig ist, gemeinsame Ziele zu verfolgen und unsere Diskussion auf die Notwendigkeit zu konzentrieren, die Integrationsprogramme zu verbessern. Ein wichtiger Schritt, auf dem wir uns gemeinsam einigen können, ist die Einführung einer qualifizierten Integrationsprüfung, die den Sprachniveau, die berufliche Qualifikation und die sozialen Fäh",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without attacking parties or individuals, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by focusing on the improvement of integration programs, making it relevant and deserving of a score of 4.",
+        "logical_consistency": "The argument presented is internally consistent, with a clear logical structure connecting premises to conclusions, such as the need for improved integration programs due to the high number of asylum applications, which warrants a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the introduction of a qualified integration test, and references the high number of asylum applications as evidence, making the argument strong and deserving of a score of 4.",
+        "document_grounding": "The turn reflects documented FDP positions by emphasizing the need for a qualified integration test and focusing on improving integration programs, which is in line with the party's known policies and thus scores 4.",
+        "responsiveness": "While the turn acknowledges the moderator's guidance and the general discussion, it does not directly engage with the specific arguments of the preceding speakers in a detailed manner, which is why it scores 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly maintains a distinct FDP party identity by emphasizing the need for a qualified integration test and focusing on the improvement of integration programs, which differentiates it from other parties and warrants a score of 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 11375,
+      "token_count_output": 606,
+      "latency_s": 3.0999999999999996,
+      "timestamp": "2026-06-24T11:14:48.157811Z"
+    },
+    {
+      "turn_id": "203f61ee-a93c-4e83-b6e8-7d7d6beec02f",
+      "round_number": 5,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Sehr geehrte Damen und Herren,\n\nWir müssen unsere Asyl- und Migrationspolitik nicht nur an internationalen Verpflichtungen ausrichten, sondern auch der Not der Menschen in der Welt gerecht werden. Die Zahl von 330.000 Asylanträgen im Jahr 2023 ist ein eindringliches Zeichen dafür, dass wir unsere Integrations- und soziale Infrastruktur schützen müssen.\n\nIch stimme der Moderatorenin zu, dass es wichtig ist, gemeinsame Ziele zu verfolgen und unsere Diskussion auf die Notwendigkeit zu konzentrieren, die Integrationsprogramme zu verbessern. Ein wichtiger Schritt, auf dem wir uns gemeinsam einigen können, ist die Schaffung von qualifizierten Bildungs- und Arbeitsmöglichkeiten für Zuwanderer, die speziell auf die Bedürfnisse unserer Gesellschaft zugeschnitten sind.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 3,
+        "responsiveness": 3,
+        "stance_differentiation": 3
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by focusing on improving integration programs, which warrants a score of 4 for relevance.",
+        "logical_consistency": "The argument is generally coherent but lacks a clear logical structure connecting premises to conclusions, which is why it scores 3 for logical consistency.",
+        "argument_strength": "The turn provides some reasoning but lacks specific evidence or mechanisms to support its claims, resulting in a score of 3 for argument strength.",
+        "document_grounding": "The turn generally aligns with Die Linke's known positions but does not directly reference specific party documents or commitments, leading to a score of 3 for document grounding.",
+        "responsiveness": "The turn acknowledges the moderator's suggestion and engages with the general discussion but does not directly address specific arguments made by other parties, which is why it scores 3 for responsiveness.",
+        "stance_differentiation": "The turn reflects Die Linke's perspective but does not distinctly differentiate itself from other parties in terms of unique reasoning, vocabulary, or priorities, resulting in a score of 3 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 11614,
+      "token_count_output": 555,
+      "latency_s": 2.46,
+      "timestamp": "2026-06-24T11:14:50.956015Z"
+    },
+    {
+      "turn_id": "11d60a8f-f916-4bc7-9f1c-8a1d34a7ee9e",
+      "round_number": 5,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "Sehr geehrte Damen und Herren,\n\nDie Moderatorenin hat uns eine wichtige Anregung gegeben, um unsere Diskussion voranzutreiben. Wir als AfD stimmen ihrer Anleitung gerne zu und betrachten sie als eine Chance, gemeinsame Ziele zu verfolgen und unsere Argumente zu schärfen.\n\nEin wichtiger Schritt, auf dem wir uns gemeinsam einigen können, ist die Schaffung von qualifizierten Bildungs- und Arbeitsmöglichkeiten für Zuwanderer, die speziell auf die Bedürfnisse unserer Gesellschaft zugeschnitten sind. Wir müssen sicherstellen, dass Menschen, die in Deutschland bleiben, eine Chance haben, sich in unsere Gesellschaft einzubringen und Teil des Sozialstaats zu werden.\n\nWir schlagen vor, dass wir uns gemeinsam auf die Einführung eines Integrationsprogramms einlassen, das speziell auf die Bedürfn",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 3,
+        "responsiveness": 3,
+        "stance_differentiation": 3
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, with no personal attacks or inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and stays focused on the issue of improving integration programs, earning a score of 4 for relevance.",
+        "logical_consistency": "The argument is generally coherent but lacks specific logical connections between the proposed integration program and its expected outcomes, resulting in a score of 3 for logical consistency.",
+        "argument_strength": "The turn provides some reasoning for the proposed integration program but lacks concrete evidence or detailed mechanisms, leading to a score of 3 for argument strength.",
+        "document_grounding": "The turn does not explicitly reference the AfD's documented positions, making it difficult to assess its faithfulness to the party's known stances, thus scoring 3 for document grounding.",
+        "responsiveness": "The turn acknowledges the moderator's guidance and engages with the general discussion but does not directly address specific arguments made by other parties, resulting in a score of 3 for responsiveness.",
+        "stance_differentiation": "While the turn reflects a general conservative stance, it does not distinctly differentiate the AfD's position from other parties, particularly in terms of unique policy proposals or ideological underpinnings, leading to a score of 3 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 11823,
+      "token_count_output": 566,
+      "latency_s": 2.528,
+      "timestamp": "2026-06-24T11:14:53.475132Z"
+    },
+    {
+      "turn_id": "abd277d5-c339-48c9-89a9-27d1623e2740",
+      "round_number": 6,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "Sehr geehrte Damen und Herren, ich danke der Moderatorenin für diese wichtige Anregung, um unsere Diskussion voranzutreiben. Die Notwendigkeit, die Integrationsprogramme zu verbessern, ist ein gemeinsamer Nenner, der uns alle einigt. Wir als CDU/CSU schlagen vor, dass wir uns gemeinsam auf die Einführung einer qualifizierten Integrationsprüfung einlassen, die die Sprachfähigkeit, berufliche Qualifikation und soziale Fähigkeiten der Zuwanderer beurteilt.\n\nDiese Prüfung würde es uns ermöglichen, die Zuwanderer besser auf die Bedürfnisse unserer Gesellschaft zuzubringen und ihre Integrationsfähigkeit zu stärken. Wir schlagen vor, dass diese Prüfung drei Bereiche umfasst: Sprachniveau, berufliche Qualifikation und so",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by proposing a specific solution, the introduction of a qualified integration test, which is relevant and focused.",
+        "logical_consistency": "The argument presented is internally consistent, with a clear logical structure connecting the proposal of an integration test to the goal of improving integration programs, thus scoring 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the three areas the integration test would cover, which strengthens the argument and warrants a score of 4.",
+        "document_grounding": "While the turn generally aligns with the CDU/CSU's known positions on migration and integration, it does not directly reference specific party documents or programs, hence a score of 3 for document grounding.",
+        "responsiveness": "The turn acknowledges the moderator's suggestion and engages with the general discussion on improving integration programs but does not directly respond to specific arguments made by other parties, leading to a score of 3 for responsiveness.",
+        "stance_differentiation": "The proposal of a qualified integration test clearly reflects the CDU/CSU's stance on migration policy, distinguishing it from other parties, and thus merits a score of 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 11955,
+      "token_count_output": 587,
+      "latency_s": 2.714,
+      "timestamp": "2026-06-24T11:14:56.019132Z"
+    },
+    {
+      "turn_id": "3bf56fee-24de-4004-a247-f88a68c8a505",
+      "round_number": 6,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "Die Notwendigkeit, die Integrationsprogramme zu verbessern, ist ein gemeinsamer Nenner, der uns alle einigt. Als SPD setzen wir uns dafür ein, dass Menschen, die in Deutschland bleiben wollen, einen fairen Zugang zu Arbeit, Bildung und Wohnraum haben. Wir müssen sicherstellen, dass unsere Integrationsprogramme die Bedürfnisse der Menschen in Deutschland und der Welt berücksichtigen und dass wir unsere Integrationsfähigkeit stärken, indem wir bessere Bildungs- und Arbeitsmöglichkeiten für Zuwanderer schaffen.\n\nEin wichtiger Schritt, auf dem wir uns gemeinsam einigen können, ist die Einführung von Sprachkursen, die speziell auf die Bedürfnisse von Zuwanderern ausgerichtet sind. Diese Sprachkurse sollten nicht nur die deutsche Sprache als solche, sondern auch die kulturellen und sozialen Aspe",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by focusing on improving integration programs, making it relevant and deserving of a score of 4.",
+        "logical_consistency": "The argument presented is internally consistent, with a clear logical structure connecting premises to conclusions, such as the need for better integration programs leading to improved access to work, education, and housing, which warrants a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the importance of tailored language courses for immigrants, which demonstrates a strong argument and thus a score of 4.",
+        "document_grounding": "The turn reflects documented SPD positions, such as emphasizing humane and fair asylum policy and the need for improved integration programs, which suggests a strong connection to the party's known stances and earns a score of 4.",
+        "responsiveness": "While the turn does engage with the general discussion on improving integration programs, it does not directly address specific arguments made by preceding speakers, which is why it receives an adequate score of 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly maintains a distinct SPD identity and ideological position, emphasizing the importance of fair access to work, education, and housing for immigrants, which is unmistakably aligned with SPD values and thus deserves a score of 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 12199,
+      "token_count_output": 604,
+      "latency_s": 2.795,
+      "timestamp": "2026-06-24T11:14:58.788489Z"
+    },
+    {
+      "turn_id": "fea6b938-b6fd-4ea6-b092-cc2545f747ac",
+      "round_number": 6,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "Sehr geehrte Damen und Herren,\n\nWir Grünen sind froh, dass die Moderatorenin uns die Gelegenheit gibt, unsere Positionen auf eine konstruktive Weise zu präzisieren und gemeinsame Ziele zu verfolgen. Die Notwendigkeit, die Integrationsprogramme zu verbessern, ist ein wichtiger Schritt, um Menschen, die in Deutschland bleiben wollen, einen fairen Zugang zu Arbeit, Bildung und Wohnraum zu bieten.\n\nEin spezifischer Schritt, auf dem wir uns gemeinsam einigen können, ist die Einführung eines sozialen Einwanderungsgesetzes, das fairen Zugang zu Arbeit, Bildung und Wohnraum für alle Menschen, die in Deutschland bleiben wollen, gewährleistet. Dieses Gesetz sollte nicht nur die deutsche Sprache als solche, sondern auch die kulturellen und sozialen Aspekte der deutschen",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains an exemplary parliamentary tone, acknowledging the legitimacy of the discussion and the importance of constructive dialogue, with no signs of personal attacks or inflammatory language.",
+        "relevance": "The turn is precisely targeted at the debate topic of migrationspolitik, focusing on the improvement of integration programs and the introduction of a social immigration law, directly addressing the current discussion.",
+        "logical_consistency": "The argument is generally coherent, with a clear structure connecting the need for improved integration programs to the proposal of a social immigration law, though it lacks detailed logical steps or anticipation of counterarguments.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning about the benefits of a social immigration law, though it could be strengthened by more concrete evidence or data on the effectiveness of such a law.",
+        "document_grounding": "The proposal for a social immigration law aligns with the party's known positions on migration and integration, reflecting a commitment to fairness and social justice, but does not directly reference specific party documents or programs.",
+        "responsiveness": "The turn engages with the preceding discussion by acknowledging the shared goal of improving integration programs and proposing a specific solution, the social immigration law, showing an understanding of the debate's context and progression.",
+        "stance_differentiation": "The turn unmistakably reflects the party's distinctive values and priorities, emphasizing social justice, fairness, and the importance of cultural and social aspects of integration, clearly distinguishing itself from other parties."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 12435,
+      "token_count_output": 585,
+      "latency_s": 2.59,
+      "timestamp": "2026-06-24T11:15:01.558179Z"
+    },
+    {
+      "turn_id": "216a8a18-9f14-41a6-8a84-450b82e83ecf",
+      "round_number": 6,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "Sehr geehrte Damen und Herren,\n\nIch danke der Moderatorenin für diese wichtige Anregung, um unsere Diskussion voranzutreiben. Die Notwendigkeit, die Integrationsprogramme zu verbessern, ist ein gemeinsamer Nenner, der uns alle einigt. Als FDP setzen wir uns dafür ein, dass Menschen, die in Deutschland bleiben wollen, einen fairen Zugang zu Arbeit, Bildung und Wohnraum haben.\n\nEin spezifischer Schritt, auf dem wir uns gemeinsam einigen können, ist die Einführung einer qualifizierten Integrationsprüfung, die die Sprachfähigkeit, berufliche Qualifikation und soziale Fähigkeiten der Zuwanderer beurteilt. Diese Prüfung würde es uns ermöglichen, die Zuwanderer besser auf die Bedürfnisse unserer Gesellschaft zuzubringen und ihre Integrationsfähigkeit zu",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by proposing a specific solution, the qualifizierte Integrationsprüfung, which is directly relevant to the topic.",
+        "logical_consistency": "The argument presented is internally consistent, with a clear logical structure connecting the proposed Integrationsprüfung to the goal of improving integration programs, thus scoring 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the introduction of a qualifizierte Integrationsprüfung, which is a clear and compelling argument for improving integration, warranting a score of 4.",
+        "document_grounding": "The proposal for a qualifizierte Integrationsprüfung reflects the FDP's known positions on migration and integration, suggesting a strong connection to the party's documented policies, hence a score of 4.",
+        "responsiveness": "While the turn acknowledges the general discussion and the need for improved integration programs, it does not directly engage with the specific arguments made by the preceding speakers, which is why it scores 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly identifies the FDP's position on migrationspolitik, distinguishing it through the proposal of a qualifizierte Integrationsprüfung, which is a unique aspect of their policy, thus scoring 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 12650,
+      "token_count_output": 610,
+      "latency_s": 2.9450000000000003,
+      "timestamp": "2026-06-24T11:15:04.121742Z"
+    },
+    {
+      "turn_id": "1048bd97-b5d2-40b7-923d-a2276d53c2c0",
+      "round_number": 6,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Sehr geehrte Damen und Herren, wir müssen unsere Asyl- und Migrationspolitik nicht nur an internationalen Verpflichtungen ausrichten, sondern auch der Not der Menschen in der Welt gerecht werden. Die Zahl von 330.000 Asylanträgen im Jahr 2023 ist ein eindringliches Zeichen dafür, dass wir unsere Integrations- und soziale Infrastruktur schützen müssen.\n\nIch stimme der Moderatorenin zu, dass es wichtig ist, gemeinsame Ziele zu verfolgen und unsere Diskussion auf die Notwendigkeit zu konzentrieren, die Integrationsprogramme zu verbessern. Ein wichtiger Schritt, auf dem wir uns gemeinsam einigen können, ist die Schaffung von qualifizierten Bildungs- und Arbeitsmöglichkeiten für Zuwanderer, die speziell auf die Bedürfnisse unserer Gesellschaft zugeschnitten sind.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 3,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by focusing on the improvement of integration programs, which warrants a score of 4 for relevance.",
+        "logical_consistency": "The argument is generally coherent but lacks specific logical connections between the premises and conclusions, hence a score of 3 for logical consistency.",
+        "argument_strength": "The turn provides some reasoning but lacks concrete evidence or specific mechanisms to support its claims, resulting in a score of 3 for argument strength.",
+        "document_grounding": "The turn does not explicitly reference Die Linke's documented positions, so it receives a score of 3 for document grounding, as it generally aligns with the party's direction but does not directly anchor in verifiable content.",
+        "responsiveness": "The turn acknowledges the moderator's guidance and the general discussion but does not directly engage with the specific arguments of the preceding speakers, leading to a score of 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly reflects Die Linke's party identity and ideological position, particularly in its emphasis on social infrastructure and the needs of the people, which merits a score of 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 12889,
+      "token_count_output": 570,
+      "latency_s": 2.799,
+      "timestamp": "2026-06-24T11:15:07.123310Z"
+    },
+    {
+      "turn_id": "928da47b-3d9c-46d2-8c2c-f51bfbbfca53",
+      "round_number": 6,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "Sehr geehrte Damen und Herren,\n\nDie Zahl von 330.000 Asylanträgen im Jahr 2023 ist ein eindringliches Zeichen dafür, dass unsere Integrationsprogramme nicht nur verbessert werden müssen, sondern auch grundlegend umgestaltet werden. Wir können nicht weiterhin Menschen aufnehmen, die keine klaren Integrationsmöglichkeiten haben und unsere Gesellschaft destabilisieren.\n\nEin wichtiger Schritt, auf dem wir uns gemeinsam einigen können, ist die Einführung eines Integrationsprogramms, das speziell auf die Bedürfnisse unserer Gesellschaft zugeschnitten ist. Dieses Programm sollte sich auf die Stärkung der Integrationsfähigkeit von Zuwanderern konzentrieren, indem es bessere Bildungs- und Arbeitsmöglichkeiten anbietet, die speziell auf die Bedürfnisse unserer Gesellschaft zugeschnitten sind.\n\nWir müssen jedoch",
+      "scores": {
+        "civility": 3,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 3,
+        "responsiveness": 2,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone without personal attacks or inflammatory language, meeting the basic expectations for civility.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and discusses the need for improved integration programs, making it clearly relevant to the discussion.",
+        "logical_consistency": "The argument is generally coherent but lacks rigorous logical structure, making it adequate in terms of logical consistency.",
+        "argument_strength": "The turn provides some reasoning and references the need for better integration programs, but the arguments are not exceptionally strong or supported by compelling evidence.",
+        "document_grounding": "The turn does not explicitly reference the AfD's documented positions, so it is considered adequate in terms of document grounding without more specific information.",
+        "responsiveness": "The turn does not directly engage with the preceding speaker's specific arguments, instead presenting a more general stance on the topic.",
+        "stance_differentiation": "The turn clearly reflects the AfD's distinct position on migrationspolitik, emphasizing the need for integration programs tailored to the society's needs, which differentiates it from other parties."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 13098,
+      "token_count_output": 512,
+      "latency_s": 2.4,
+      "timestamp": "2026-06-24T11:15:09.943113Z"
+    },
+    {
+      "turn_id": "9fd3bc29-45bd-488a-8d03-58364f93c306",
+      "round_number": 7,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "Sehr geehrte Damen und Herren, wir müssen uns der Tatsache stellen, dass die Diskussion um eine reformierte Migration- und Asylpolitik an einem wichtigen Punkt angelangt ist. Die Notwendigkeit, die Integrationsprogramme zu verbessern, ist ein gemeinsamer Nenner, der uns alle einigt. Wir als CDU/CSU schlagen vor, dass wir uns gemeinsam auf die Einführung einer qualifizierten Integrationsprüfung einlassen, die die Sprachfähigkeit, berufliche Qualifikation und soziale Fähigkeiten der Zuwanderer beurteilt.\n\nDiese Prüfung würde es uns ermöglichen, die Zuwanderer besser auf die Bedürfnisse unserer Gesellschaft zuzubringen und ihre Integrationsfähigkeit zu stärken. Wir schlagen vor, dass diese Prüfung drei Bereiche umfasst: Sprachn",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by proposing a specific solution, which is a characteristic of a score of 4 for relevance.",
+        "logical_consistency": "The argument presented is internally consistent, with a clear logical structure connecting premises to conclusions, which warrants a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and identified mechanisms, such as the proposal for a qualifizierten Integrationsprüfung, which supports a score of 4 for argument strength.",
+        "document_grounding": "The proposal for an Integrationsprüfung aligns with the CDU/CSU's known positions on migration policy, reflecting documented party commitments, which justifies a score of 4 for document grounding.",
+        "responsiveness": "While the turn references the general discussion and need for improved integration programs, it does not directly engage with the specific arguments of the preceding speakers, which is why it scores 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly reflects the CDU/CSU's distinct position on migration policy, using party-specific vocabulary and framing, which distinguishes it from other parties and warrants a score of 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 13230,
+      "token_count_output": 583,
+      "latency_s": 2.835,
+      "timestamp": "2026-06-24T11:15:12.442085Z"
+    },
+    {
+      "turn_id": "f446c4c2-ed12-44c0-9b5d-7a19fd6f7128",
+      "round_number": 7,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "Wir müssen die Integrationsprogramme nicht nur verbessern, sondern auch auf die tatsächlichen Bedürfnisse der Menschen in Deutschland und der Welt ausrichten. Die Zahl von 330.000 Asylanträgen im Jahr 2023 ist ein eindringliches Zeichen dafür, dass wir unsere internationalen Verpflichtungen einhalten und gleichzeitig unsere Integrationsfähigkeit stärken müssen.\n\nEin wichtiger Schritt, auf dem wir uns gemeinsam einigen können, ist die Einführung von Sprachkursen, die speziell auf die Bedürfnisse von Zuwanderern ausgerichtet sind. Diese Sprachkurse sollten nicht nur die deutsche Sprache als solche, sondern auch die kulturellen und sozialen Aspekte der deutschen Gesellschaft abdecken. Wir müssen sicherstellen, dass Menschen, die in Deutschland bleiben, eine Chance haben, sich in unsere Gesellschaft einzubringen und Teil",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by focusing on the improvement of integration programs, which is relevant and focused, deserving a score of 4.",
+        "logical_consistency": "The argument presented is internally consistent, with a clear logical structure connecting premises to conclusions, such as the need for improved integration programs and the proposal for tailored language courses, which warrants a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the reference to the number of asylum applications and the need for tailored language courses, which supports a score of 4 for argument strength.",
+        "document_grounding": "The turn reflects documented party positions, such as the emphasis on improving integration programs and providing access to language courses, which is consistent with the SPD's known policies, thus scoring 4.",
+        "responsiveness": "While the turn does acknowledge the broader discussion and the need for collective action, it does not directly engage with the specific arguments of the preceding speaker, which is why it scores 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity and ideological position, using party-specific values and priorities, such as the focus on social integration and access to education and work, which is unmistakably SPD, scoring 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 13474,
+      "token_count_output": 599,
+      "latency_s": 2.836,
+      "timestamp": "2026-06-24T11:15:15.159075Z"
+    },
+    {
+      "turn_id": "21d9a215-3550-4543-8546-dd83fc9bd3f5",
+      "round_number": 7,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "Sehr geehrte Damen und Herren,\n\nDie Moderatorenin hat uns eine wichtige Anregung gegeben, um unsere Diskussion voranzutreiben. Die Notwendigkeit, die Integrationsprogramme zu verbessern, ist ein gemeinsamer Nenner, der uns alle einigt. Wir Grünen sind davon überzeugt, dass wir gemeinsam einen Weg finden können, um die Integrationsfähigkeit zu stärken, ohne unsere grundlegenden Überzeugungen aufzugeben.\n\nEin wichtiger Schritt, auf dem wir uns gemeinsam einigen können, ist die Einführung eines sozialen Einwanderungsgesetzes, das fairen Zugang zu Arbeit, Bildung und Wohnraum für alle Menschen, die in Deutschland bleiben wollen, gewährleistet. Dieses Gesetz sollte nicht nur die deutsche Sprache als solche, sondern auch die kulturellen und sozialen Aspekte der deutschen",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, acknowledging the legitimacy of opposing perspectives and the moderator's guidance, which aligns with an exemplary parliamentary tone.",
+        "relevance": "The turn is precisely targeted at the debate topic of migrationspolitik and directly addresses the need to improve integration programs, making it highly relevant to the discussion.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting the introduction of a social immigration law to the goal of strengthening integration capabilities, though it lacks detailed mechanisms or potential objections.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning about the benefits of a social immigration law, but it could be strengthened by more concrete evidence or addressing potential counterarguments.",
+        "document_grounding": "The proposal for a social immigration law aligns with the party's known positions on migration and integration, reflecting a clear connection to documented party commitments, though specific references to the party's program are not made.",
+        "responsiveness": "The turn engages with the preceding discussion by acknowledging the moderator's guidance and the common goal of improving integration programs, but it does not directly address specific arguments made by other parties.",
+        "stance_differentiation": "The turn unmistakably reflects the party's distinctive values and priorities, such as the emphasis on a social immigration law and fair access to work, education, and housing, which are characteristic of Bündnis 90/Die Grünen's stance on migration policy."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 13710,
+      "token_count_output": 587,
+      "latency_s": 2.875,
+      "timestamp": "2026-06-24T11:15:18.064941Z"
+    },
+    {
+      "turn_id": "d9c95c9f-bbb7-4f26-9c18-40726e72696c",
+      "round_number": 7,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "Sehr geehrte Damen und Herren,\n\nDie Zahl von 330.000 Asylanträgen im Jahr 2023 ist ein eindringliches Zeichen dafür, dass wir unsere Integrations- und soziale Infrastruktur schützen müssen. Wir FDP setzen uns dafür ein, dass Menschen, die in Deutschland bleiben wollen, einen fairen Zugang zu Arbeit, Bildung und Wohnraum haben.\n\nEin wichtiger Schritt, auf dem wir uns gemeinsam einigen können, ist die Einführung einer qualifizierten Integrationsprüfung, die die Sprachfähigkeit, berufliche Qualifikation und soziale Fähigkeiten der Zuwanderer beurteilt. Diese Prüfung würde es uns ermöglichen, die Zuwanderer besser auf die Bedürfnisse unserer Gesellschaft zuzubringen und ihre Integrationsfähigkeit zu stärken.\n\nWir schlagen vor, dass",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without attacking parties or individuals, which aligns with a score of 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and advances the discussion by proposing a specific solution, the introduction of a qualified integration test, making it relevant and deserving of a score of 4.",
+        "logical_consistency": "The argument presented is coherent and logically consistent, as it connects the need for integration programs with the proposal of an integration test, thus scoring 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the introduction of a qualified integration test to strengthen integration capabilities, which warrants a score of 4 for argument strength.",
+        "document_grounding": "The proposal aligns with the FDP's known positions on migration and integration, suggesting a strong connection to the party's documented policies, hence a score of 4 for document grounding.",
+        "responsiveness": "While the turn does engage with the general discussion on integration programs, it does not directly respond to the specific arguments made by the preceding speaker, which is why it scores 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly reflects the FDP's distinct position on migration policy, emphasizing the importance of qualified integration tests, which differentiates it from other parties and merits a score of 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 13925,
+      "token_count_output": 585,
+      "latency_s": 2.832,
+      "timestamp": "2026-06-24T11:15:20.900350Z"
+    },
+    {
+      "turn_id": "4777b56d-cfd6-4712-9b56-5355badc698b",
+      "round_number": 7,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Sehr geehrte Damen und Herren,\n\nIch danke der Moderatorenin für die klare Anleitung, um unsere Diskussion voranzutreiben. Die Notwendigkeit, die Integrationsprogramme zu verbessern, ist ein gemeinsamer Nenner, der uns alle einigt. Als Linke sehen wir es jedoch als unser Ziel an, die Integrationsfähigkeit nicht nur zu stärken, sondern auch die soziale Gerechtigkeit in unserer Gesellschaft zu verbessern.\n\nEin wichtiger Schritt, auf dem wir uns gemeinsam einigen können, ist die Schaffung von qualifizierten Bildungs- und Arbeitsmöglichkeiten für Zuwanderer, die speziell auf die Bedürfnisse unserer Gesellschaft zugeschnitten sind. Wir müssen sicherstellen, dass Menschen, die in Deutschland bleiben, eine Chance haben, sich in unsere Gesellschaft einzubringen und Teil des Sozialstaats zu werden",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without targeting parties as entities, which aligns with a score of 4.",
+        "relevance": "The turn clearly addresses the debate question with focused argumentation that stays within scope, making it relevant to the discussion on migrationspolitik.",
+        "logical_consistency": "The argument is internally consistent with a clear logical structure connecting premises to conclusions, although it does not anticipate objections or distinguish between empirical claims and value judgments in a way that would merit a score of 5.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and identified mechanisms for improving integration, but does not offer compelling evidence or acknowledge limitations in a manner that would be considered exceptional.",
+        "document_grounding": "While the turn generally aligns with the party's known direction, it does not directly anchor its claims in verifiable party programme content, which is why it scores a 3.",
+        "responsiveness": "The turn references the preceding discussion and the moderator's guidance but does not directly engage with specific arguments made by other parties, which is why it scores a 3.",
+        "stance_differentiation": "The turn clearly identifies the party's position and ideological stance, using distinctive framing and vocabulary that differentiates it from other parties, although it does not uniquely distinguish itself in a way that no other party could, which would require a score of 5."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 14165,
+      "token_count_output": 581,
+      "latency_s": 2.987,
+      "timestamp": "2026-06-24T11:15:23.707789Z"
+    },
+    {
+      "turn_id": "8a93f9c4-1c93-4492-87b9-1742dfd8e0e7",
+      "round_number": 7,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "Sehr geehrte Damen und Herren,\n\nWir müssen uns der Tatsache stellen, dass unsere Integrationsprogramme nicht nur verbessert werden müssen, sondern auch grundlegend umgestaltet werden. Die Zahl von 330.000 Asylanträgen im Jahr 2023 ist ein eindringliches Zeichen dafür, dass wir unsere Gesellschaft destabilisieren, wenn wir Menschen ohne klare Integrationsmöglichkeiten aufnehmen.\n\nEin wichtiger Schritt, auf dem wir uns gemeinsam einigen können, ist die Einführung eines Integrationsprogramms, das speziell auf die Bedürfnisse unserer Gesellschaft zugeschnitten ist. Dieses Programm sollte sich auf die Stärkung der Integrationsfähigkeit von Zuwanderern konzentrieren, indem es bessere Bildungs- und Arbeitsmöglichkeiten anbietet, die speziell auf die Bedürfnisse unserer Gesellschaft zugeschnitten",
+      "scores": {
+        "civility": 3,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 2,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone without personal attacks or inflammatory language, meeting the basic expectations for civility in a debate.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and proposes a specific integration program, making it clearly relevant to the discussion.",
+        "logical_consistency": "The argument is generally coherent but lacks rigorous logical structure, relying on assertions about the need for integration programs without fully explaining the causal mechanisms.",
+        "argument_strength": "The turn provides some reasoning for its proposal but relies on general claims about the importance of integration without offering specific evidence or detailed mechanisms.",
+        "document_grounding": "The proposal for an integration program aligns with the AfD's known positions on migration and integration, reflecting a clear connection to the party's documented stances.",
+        "responsiveness": "The turn does not directly engage with the specific arguments made by preceding speakers, instead presenting its own proposal without addressing counterarguments or alternative perspectives.",
+        "stance_differentiation": "The turn clearly reflects the AfD's distinctive position on migration and integration, emphasizing the need for programs tailored to the specific needs of German society and thus maintaining a recognizable party identity."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 14376,
+      "token_count_output": 527,
+      "latency_s": 2.7329999999999997,
+      "timestamp": "2026-06-24T11:15:26.746150Z"
+    },
+    {
+      "turn_id": "cc946ed6-d19d-4f97-888b-a39e4635f1bb",
+      "round_number": 8,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "Sehr geehrte Damen und Herren,\n\nIch danke der Moderatorenin für diese wichtige Anregung, um unsere Diskussion voranzutreiben. Die Notwendigkeit, die Integrationsprogramme zu verbessern, ist ein gemeinsamer Nenner, der uns alle einigt. Als CDU/CSU schlagen wir vor, dass wir uns gemeinsam auf die Einführung einer qualifizierten Integrationsprüfung einlassen, die die Sprachfähigkeit, berufliche Qualifikation und soziale Fähigkeiten der Zuwanderer beurteilt.\n\nDiese Prüfung würde es uns ermöglichen, die Zuwanderer besser auf die Bedürfnisse unserer Gesellschaft zuzubringen und ihre Integrationsfähigkeit zu stärken. Wir schlagen vor, dass diese Prüfung drei Bereiche umfasst: Sprachniveau, berufliche Qualifikation und so",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by proposing a specific solution, which is a characteristic of a score of 4 for relevance.",
+        "logical_consistency": "The argument presented is internally consistent, with a clear logical structure connecting premises to conclusions, which warrants a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and identified mechanisms, such as the proposal for a qualified integration test, which supports a score of 4 for argument strength.",
+        "document_grounding": "The proposal for a qualified integration test aligns with the CDU/CSU's known positions on improving integration programs, indicating a strong connection to documented party stances, thus a score of 4 for document grounding.",
+        "responsiveness": "While the turn does not directly engage with the specific arguments of the preceding speaker, it does acknowledge the general need for improved integration programs, which is why it scores 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly reflects the CDU/CSU's distinct party position through its proposal for a qualified integration test, which differentiates it from other parties, supporting a score of 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 14506,
+      "token_count_output": 579,
+      "latency_s": 2.715,
+      "timestamp": "2026-06-24T11:15:29.432058Z"
+    },
+    {
+      "turn_id": "34ead8ae-1eeb-4994-b906-631e531c8d47",
+      "round_number": 8,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "Sehr geehrte Damen und Herren,\n\nDie Notwendigkeit, die Integrationsprogramme zu verbessern, ist ein gemeinsamer Nenner, der uns alle einigt. Als SPD setzen wir uns dafür ein, dass Menschen, die in Deutschland bleiben wollen, einen fairen Zugang zu Arbeit, Bildung und Wohnraum haben. Wir müssen sicherstellen, dass unsere Integrationsprogramme die Bedürfnisse der Menschen in Deutschland und der Welt berücksichtigen und dass wir unsere Integrationsfähigkeit stärken, indem wir bessere Bildungs- und Arbeitsmöglichkeiten für Zuwanderer schaffen.\n\nEin wichtiger Schritt, auf dem wir uns gemeinsam einigen können, ist die Einführung von Sprachkursen, die speziell auf die Bedürfnisse von Zuwanderern ausgerichtet sind. Diese Sprachkurse sollten nicht nur die deutsche Sprache als solche, sondern auch",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by focusing on improving integration programs, which is relevant and focused, deserving a score of 4.",
+        "logical_consistency": "The argument presented is internally consistent, with a clear logical structure connecting premises to conclusions, such as the need for improved integration programs leading to better access to work, education, and housing, which warrants a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the introduction of language courses tailored to the needs of immigrants, which demonstrates a strong argument, thus a score of 4.",
+        "document_grounding": "The turn reflects documented SPD positions by emphasizing the importance of fair access to work, education, and housing for immigrants, aligning with the party's known commitments, which justifies a score of 4.",
+        "responsiveness": "While the turn does not directly engage with the preceding speaker's specific arguments, it contributes to the ongoing discussion on improving integration programs, which is why it scores 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly identifies the SPD's position on migrationspolitik, emphasizing the party's commitment to fair access to resources for immigrants and the importance of tailored integration programs, which distinguishes it from other parties, earning a score of 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 14750,
+      "token_count_output": 605,
+      "latency_s": 2.512,
+      "timestamp": "2026-06-24T11:15:32.029994Z"
+    },
+    {
+      "turn_id": "df911e21-18d0-405b-9dc4-febc3002bcd5",
+      "round_number": 8,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "Sehr geehrte Damen und Herren,\n\nWir Grünen haben immer betont, dass die Integration von Zuwanderern ein wichtiger Schritt ist, um die Vielfalt und die Stärke unserer Gesellschaft zu fördern. Die Notwendigkeit, die Integrationsprogramme zu verbessern, ist ein gemeinsamer Nenner, der uns alle einigt. Wir möchten jedoch auch unterstreichen, dass die Integration nicht nur ein technisches Problem ist, sondern auch ein soziales und kulturelles.\n\nEin wichtiger Schritt, auf dem wir uns gemeinsam einigen können, ist die Einführung eines sozialen Einwanderungsgesetzes, das fairen Zugang zu Arbeit, Bildung und Wohnraum für alle Menschen, die in Deutschland bleiben wollen, gewährleistet. Dieses Gesetz sollte nicht nur die deutsche Sprache als solche, sondern auch die kulturellen und sozialen As",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by proposing a soziales Einwanderungsgesetz, making it relevant and deserving of a score of 4.",
+        "logical_consistency": "The argument is internally consistent, connecting the need for improved integration programs to the proposal of a soziales Einwanderungsgesetz, which demonstrates logical consistency and warrants a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, referencing the importance of cultural and social aspects in integration, which strengthens the argument and justifies a score of 4.",
+        "document_grounding": "The proposal of a soziales Einwanderungsgesetz aligns with Bündnis 90/Die Grünen's known positions on migration and integration, indicating a strong connection to the party's documented stances and deserving of a score of 4.",
+        "responsiveness": "While the turn does not directly engage with the preceding speaker's specific arguments, it contributes to the ongoing discussion on integration programs, which is why it receives an adequate score of 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly reflects Bündnis 90/Die Grünen's distinctive approach to migration policy, emphasizing social and cultural integration, which differentiates their stance from other parties and merits a score of 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 14986,
+      "token_count_output": 614,
+      "latency_s": 2.98,
+      "timestamp": "2026-06-24T11:15:34.839017Z"
+    },
+    {
+      "turn_id": "3d5a45b2-a7ba-4f58-a228-0e5456f42827",
+      "round_number": 8,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "Sehr geehrte Damen und Herren,\n\nWir haben in den letzten Runden viele wichtige Punkte besprochen, aber es bleibt eine gemeinsame Herausforderung: die Stärkung der Integrationsfähigkeit von Zuwanderern. Als FDP setzen wir uns dafür ein, dass Menschen, die in Deutschland bleiben wollen, einen fairen Zugang zu Arbeit, Bildung und Wohnraum haben.\n\nIch stimme der Moderatorenin zu, dass es wichtig ist, gemeinsame Ziele zu verfolgen und unsere Diskussion auf die Notwendigkeit zu konzentrieren, die Integrationsprogramme zu verbessern. Ein wichtiger Schritt, auf dem wir uns gemeinsam einigen können, ist die Einführung einer qualifizierten Integrationsprüfung, die die Sprachfähigkeit, berufliche Qualifikation und soziale Fähigkeiten der Zuwanderer beurteilt.\n\nDiese Pr",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by focusing on the improvement of integration programs, which warrants a score of 4 for relevance.",
+        "logical_consistency": "The argument presented is internally consistent, with a clear logical structure connecting premises to conclusions, such as the introduction of a qualified integration test to strengthen integration capabilities, thus scoring 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the proposal for a qualified integration test, which demonstrates a strong argument and earns a score of 4 for argument strength.",
+        "document_grounding": "The turn reflects documented FDP positions, such as the emphasis on fair access to work, education, and housing, and the proposal for a qualified integration test, which aligns with a score of 4 for document grounding.",
+        "responsiveness": "While the turn references the moderator's call for common goals and the need to improve integration programs, it does not directly engage with the specific arguments of the preceding speakers, which is why it scores 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly maintains a distinct FDP party identity and ideological position, evident in the emphasis on qualified integration tests and fair access to resources, which distinguishes it from other parties and warrants a score of 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 15201,
+      "token_count_output": 606,
+      "latency_s": 2.95,
+      "timestamp": "2026-06-24T11:15:37.729433Z"
+    },
+    {
+      "turn_id": "130af7d3-edf3-41c9-8b95-4aedd59cb2df",
+      "round_number": 8,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Sehr geehrte Damen und Herren, ich denke, dass es an der Zeit ist, dass wir uns nicht nur auf die gemeinsame Notwendigkeit, die Integrationsprogramme zu verbessern, konzentrieren, sondern auch auf die konkreten Schritte, die wir unternehmen können, um die Integrationsfähigkeit zu stärken.\n\nIch schlage vor, dass wir uns auf die Schaffung von qualifizierten Bildungs- und Arbeitsmöglichkeiten für Zuwanderer einigen, die speziell auf die Bedürfnisse unserer Gesellschaft zugeschnitten sind. Wir müssen sicherstellen, dass Menschen, die in Deutschland bleiben, eine Chance haben, sich in unsere Gesellschaft einzubringen und Teil des Sozialstaats zu werden.\n\nDazu gehört die Ausbildung von mehr Lehrern und Erziehern, die sich auf die Bedürfnisse von Zuwanderern ausrichten, und",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by proposing specific measures to improve integration programs, making it relevant and deserving of a score of 4.",
+        "logical_consistency": "The argument presented is internally consistent, with a clear logical structure connecting premises to conclusions, such as the need for qualified education and job opportunities for immigrants, which warrants a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the importance of training more teachers and educators to cater to the needs of immigrants, which supports a score of 4 for argument strength.",
+        "document_grounding": "While the turn generally aligns with Die Linke's known positions on social justice and integration, it does not directly reference specific party documents or programs, leading to a score of 3 for document grounding.",
+        "responsiveness": "The turn acknowledges the general discussion on improving integration programs but does not directly engage with the specific arguments or claims made by preceding speakers, resulting in a score of 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly reflects Die Linke's distinctive emphasis on social justice and the importance of integrating immigrants into the social state, using party-specific vocabulary and priorities, which merits a score of 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 15441,
+      "token_count_output": 595,
+      "latency_s": 2.758,
+      "timestamp": "2026-06-24T11:15:40.648385Z"
+    },
+    {
+      "turn_id": "2f5634e8-6fdf-4768-9c7b-89d9f4093860",
+      "round_number": 8,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "Sehr geehrte Damen und Herren, ich danke der Moderatorenin für diese wichtige Anregung, um unsere Diskussion voranzutreiben. Die Notwendigkeit, die Integrationsprogramme zu verbessern, ist ein gemeinsamer Nenner, der uns alle einigt. Als AfD müssen wir jedoch auch betonen, dass die Integration von Zuwanderern nicht nur ein technisches Problem ist, sondern auch ein soziales und kulturelles.\n\nWir müssen uns der Tatsache stellen, dass die Zahl von 330.000 Asylanträgen im Jahr 2023 ein eindringliches Zeichen dafür ist, dass wir unsere Gesellschaft destabilisieren, wenn wir Menschen ohne klare Integrationsmöglichkeiten aufnehmen. Wir schlagen vor, dass wir uns gemeinsam auf die Einführung eines Integrationsprogramms einlassen, das speziell auf die Bedürfnisse unserer Gesellschaft zuges",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, avoiding personal attacks or inflammatory language, thus scoring a 4 for civility. The language used is respectful, even when discussing potentially contentious issues.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and integrationsprogramme, making it highly relevant to the discussion, hence a score of 4.",
+        "logical_consistency": "The argument presented is coherent and logically consistent, as it connects the need for improved integration programs with the potential destabilization of society due to uncontrolled migration, warranting a score of 4.",
+        "argument_strength": "The argument is well-supported by referencing the high number of asylum applications and the potential for societal destabilization, which strengthens the claim for tailored integration programs, resulting in a score of 4.",
+        "document_grounding": "While the turn aligns with general positions that might be expected from AfD, it lacks specific references to their documented party positions or programs, thus scoring a 3 for document grounding.",
+        "responsiveness": "The turn acknowledges the preceding discussion and the moderator's suggestion but does not directly engage with specific arguments made by other parties, leading to a score of 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly reflects AfD's distinctive stance on migration and integration, emphasizing the potential for societal destabilization and the need for tailored integration programs, which earns a score of 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 15652,
+      "token_count_output": 584,
+      "latency_s": 3.0999999999999996,
+      "timestamp": "2026-06-24T11:15:43.630384Z"
+    },
+    {
+      "turn_id": "36a38cc4-a33b-439a-a6fd-65f7362e5958",
+      "round_number": 9,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "Sehr geehrte Damen und Herren, ich danke der Moderatorenin für ihre klare Anleitung, um unsere Diskussion voranzutreiben. Die Notwendigkeit, die Integrationsprogramme zu verbessern, ist ein gemeinsamer Nenner, der uns alle einigt. Als CDU/CSU schlagen wir vor, dass wir uns gemeinsam auf die Einführung einer qualifizierten Integrationsprüfung einlassen, die die Sprachfähigkeit, berufliche Qualifikation und soziale Fähigkeiten der Zuwanderer beurteilt.\n\nDiese Prüfung würde es uns ermöglichen, die Zuwanderer besser auf die Bedürfnisse unserer Gesellschaft zuzubringen und ihre Integrationsfähigkeit zu stärken. Wir schlagen vor, dass diese Prüfung drei Bereiche umfasst: Sprachniveau, berufliche Qualifikation und soz",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, addressing the topic without personal attacks or inflammatory language, thus scoring a 4 for being professional and respectful.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by proposing a specific solution, thus scoring a 4 for being clearly on-topic and focused.",
+        "logical_consistency": "The argument presented is internally consistent, with a clear logical structure connecting the proposal of an integrationsprüfung to the goal of improving integration, thus scoring a 4 for being internally consistent.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, identifying the benefits of the proposed integrationsprüfung, thus scoring a 4 for having well-supported claims.",
+        "document_grounding": "The proposal aligns with the CDU/CSU's known positions on migration and integration, reflecting a commitment to improving integration programs, thus scoring a 4 for clearly reflecting documented party positions.",
+        "responsiveness": "While the turn acknowledges the general discussion and the need for improved integration programs, it does not directly engage with the specific arguments or proposals made by other parties in the preceding turns, thus scoring a 3 for being generally responsive but not directly engaging with others' arguments.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity and ideological position, emphasizing the CDU/CSU's approach to integration and migration, thus scoring a 4 for being clearly identifiable as the CDU/CSU's stance."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 15784,
+      "token_count_output": 600,
+      "latency_s": 2.775,
+      "timestamp": "2026-06-24T11:15:46.369775Z"
+    },
+    {
+      "turn_id": "7a4c4c08-3a35-421b-9c0c-a32e13626044",
+      "round_number": 9,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "Sehr geehrte Damen und Herren, ich möchte zunächst betonen, dass die Notwendigkeit, die Integrationsprogramme zu verbessern, ein gemeinsamer Nenner ist, der uns alle einigt. Als SPD setzen wir uns dafür ein, dass Menschen, die in Deutschland bleiben wollen, einen fairen Zugang zu Arbeit, Bildung und Wohnraum haben.\n\nIch stimme der Moderatorenin zu, dass es wichtig ist, einen spezifischen Schritt zu identifizieren, auf dem wir uns gemeinsam einigen können, um die Integrationsfähigkeit zu stärken. Ein solcher Schritt könnte die Einführung von Sprachkursen sein, die speziell auf die Bedürfnisse von Zuwanderern ausgerichtet sind. Diese Sprachkurse sollten nicht nur die deutsche Sprache als solche, sondern auch die kulturellen und sozialen Aspekte der deutschen Gesellschaft",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, addressing the topic without personal attacks or inflammatory language, thus scoring a 4 for being professional and respectful.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by suggesting specific actions like introducing Sprachkurse, making it relevant and focused, hence a score of 4.",
+        "logical_consistency": "The argument is generally coherent but lacks detailed logical structure or anticipation of objections, which is why it scores a 3 for being adequate but not exceptional in logical consistency.",
+        "argument_strength": "The turn provides some reasoning and suggests specific mechanisms like Sprachkurse but does not offer compelling evidence or detailed analysis, resulting in a score of 3 for argument strength.",
+        "document_grounding": "The turn reflects the SPD's known positions on integration and social inclusion, aligning with their documented policies, which is why it scores a 4 for being clearly anchored in the party's programme content.",
+        "responsiveness": "The turn acknowledges the preceding discussion and the moderator's guidance but does not directly engage with specific arguments made by other parties, leading to a score of 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly identifies the SPD's position on migrationspolitik, emphasizing fair access to work, education, and housing, and uses party-specific framing, which is why it scores a 4 for maintaining a distinct party identity."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 16028,
+      "token_count_output": 585,
+      "latency_s": 2.941,
+      "timestamp": "2026-06-24T11:15:49.309948Z"
+    },
+    {
+      "turn_id": "ea5eedec-dee1-446b-ba81-4b413cf3f9a9",
+      "round_number": 9,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "Sehr geehrte Damen und Herren, ich danke der Moderatorenin für ihre klare Anleitung, um unsere Diskussion voranzutreiben. Wir Grünen haben immer betont, dass die Integration von Zuwanderern ein wichtiger Schritt ist, um die Vielfalt und die Stärke unserer Gesellschaft zu fördern. Die Notwendigkeit, die Integrationsprogramme zu verbessern, ist ein gemeinsamer Nenner, der uns alle einigt.\n\nUm die Integrationsfähigkeit von Zuwanderern zu stärken, schlagen wir vor, dass wir uns gemeinsam auf die Einführung eines sozialen Einwanderungsgesetzes einlassen, das fairen Zugang zu Arbeit, Bildung und Wohnraum für alle Menschen, die in Deutschland bleiben wollen, gewährleistet. Dieses Gesetz sollte nicht nur die deutsche Sprache als solche, sondern auch die kulture",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by proposing a specific solution, the soziales Einwanderungsgesetz, which is directly relevant to the topic.",
+        "logical_consistency": "The argument presented is internally consistent, with a clear logical structure connecting the premise of improving integration programs to the conclusion of introducing a social immigration law, demonstrating good logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the importance of fair access to work, education, and housing for immigrants, which strengthens the argument for the proposed law.",
+        "document_grounding": "The proposal for a soziales Einwanderungsgesetz aligns with the party's known positions on migration and integration, reflecting a clear connection to documented party commitments.",
+        "responsiveness": "While the turn acknowledges the general discussion and the need for improved integration programs, it does not directly engage with the specific arguments or proposals made by other parties in the preceding turns, which is why it scores 3 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the party's identity and ideological position, emphasizing the importance of social and cultural aspects of integration, which is characteristic of Bündnis 90/Die Grünen's stance on migration policy."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 16264,
+      "token_count_output": 598,
+      "latency_s": 3.078,
+      "timestamp": "2026-06-24T11:15:52.344556Z"
+    },
+    {
+      "turn_id": "8bda2b7e-f285-4a35-9d68-ea9f3a799f75",
+      "round_number": 9,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "Sehr geehrte Damen und Herren,\n\nIch danke der Moderatorenin für ihre klare Anleitung, um unsere Diskussion voranzutreiben. Die Notwendigkeit, die Integrationsprogramme zu verbessern, ist ein gemeinsamer Nenner, der uns alle einigt. Als FDP setzen wir uns dafür ein, dass Menschen, die in Deutschland bleiben wollen, einen fairen Zugang zu Arbeit, Bildung und Wohnraum haben.\n\nUm die Integrationsfähigkeit von Zuwanderern zu stärken, schlagen wir vor, dass wir uns gemeinsam auf die Einführung einer qualifizierten Integrationsprüfung einlassen, die die Sprachfähigkeit, berufliche Qualifikation und soziale Fähigkeiten der Zuwanderer beurteilt. Diese Prüfung würde es uns ermöglichen, die Zuwanderer besser auf die Bedürfnisse unserer Gesellschaft zuzub",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by proposing a specific solution, which is a characteristic of a score of 4 for relevance.",
+        "logical_consistency": "The argument presented is internally consistent, with a clear logical structure connecting premises to conclusions, which warrants a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and identified mechanisms, such as the introduction of a qualified integration test, which supports a score of 4 for argument strength.",
+        "document_grounding": "The proposal for a qualified integration test reflects the FDP's known positions on integrating migrants into German society, aligning with a score of 4 for document grounding.",
+        "responsiveness": "While the turn acknowledges the general discussion and the need for improved integration programs, it does not directly engage with the specific arguments of the preceding speakers, which is why it scores 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly identifies the FDP's position on migrationspolitik, using party-specific values and priorities, which distinguishes it from other parties and warrants a score of 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 16479,
+      "token_count_output": 570,
+      "latency_s": 2.733,
+      "timestamp": "2026-06-24T11:15:55.428486Z"
+    },
+    {
+      "turn_id": "9caa3703-cf61-458c-8c99-d57428be447a",
+      "round_number": 9,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Sehr geehrte Damen und Herren,\n\nWir Linke haben immer betont, dass die Integration von Zuwanderern ein wichtiger Schritt ist, um die Vielfalt und die Stärke unserer Gesellschaft zu fördern. Die Notwendigkeit, die Integrationsprogramme zu verbessern, ist ein gemeinsamer Nenner, der uns alle einigt. Wir schlagen vor, dass wir uns gemeinsam auf die Schaffung von qualifizierten Bildungs- und Arbeitsmöglichkeiten für Zuwanderer einigen, die speziell auf die Bedürfnisse unserer Gesellschaft zugeschnitten sind.\n\nWir müssen sicherstellen, dass Menschen, die in Deutschland bleiben, eine Chance haben, sich in unsere Gesellschaft einzubringen und Teil des Sozialstaats zu werden. Dazu gehört die Ausbildung von mehr Lehrern und Erziehern, die sich auf die Bedürfnisse von Zuwanderern",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without targeting parties as entities, which aligns with a score of 4.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by proposing specific measures for improving integration programs, warranting a score of 4.",
+        "logical_consistency": "The argument is internally consistent, with a clear logical structure connecting premises to conclusions, such as the need for qualified education and job opportunities for immigrants, which deserves a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the importance of training more teachers and educators tailored to the needs of immigrants, supporting a score of 4.",
+        "document_grounding": "The proposal for creating qualified education and job opportunities aligns with Die Linke's known positions on social justice and integration, suggesting a strong connection to their documented policies, thus a score of 4.",
+        "responsiveness": "While the turn does not directly engage with the specific arguments of the preceding speaker, it contributes to the ongoing discussion on integration programs, which is adequate but not exceptional, hence a score of 3.",
+        "stance_differentiation": "The turn unmistakably reflects Die Linke's party identity and ideological position, emphasizing social justice, education, and the importance of integrating immigrants into the social state, which is characteristic of their stance, warranting a score of 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 16719,
+      "token_count_output": 590,
+      "latency_s": 2.9749999999999996,
+      "timestamp": "2026-06-24T11:15:58.186287Z"
+    },
+    {
+      "turn_id": "8b44a260-c87d-44a8-bda8-e395017e6c4f",
+      "round_number": 9,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "Sehr geehrte Damen und Herren,\n\nIch danke der Moderatorenin für ihre klare Anleitung, um unsere Diskussion voranzutreiben. Die Notwendigkeit, die Integrationsprogramme zu verbessern, ist ein gemeinsamer Nenner, der uns alle einigt. Als AfD müssen wir jedoch auch betonen, dass die Integration von Zuwanderern nicht nur ein technisches Problem ist, sondern auch ein soziales und kulturelles.\n\nWir müssen uns der Tatsache stellen, dass die Zahl von 330.000 Asylanträgen im Jahr 2023 ein eindringliches Zeichen dafür ist, dass wir unsere Gesellschaft destabilisieren, wenn wir Menschen ohne klare Integrationsmöglichkeiten aufnehmen. Wir schlagen vor, dass wir uns gemeinsam auf die Einführung eines Integrationsprogramms einlassen, das speziell auf die Bedürfnisse unserer Gesellschaft zugeschn",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 3,
+        "responsiveness": 2,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, avoiding personal attacks or inflammatory language, thus scoring a 4 for civility. The language used is respectful, even when discussing potentially contentious issues.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and integrationsprogramme, making it highly relevant to the discussion, hence a score of 4.",
+        "logical_consistency": "The argument presented is generally coherent but lacks detailed logical steps or evidence to strongly support its claims, resulting in a score of 3 for logical consistency.",
+        "argument_strength": "The turn provides some reasoning for its proposals but relies on general statements and lacks concrete evidence or mechanisms, leading to a score of 3 for argument strength.",
+        "document_grounding": "The turn does not explicitly reference the AfD's documented positions but aligns with general party stances, thus scoring 3 for document grounding as it does not clearly anchor its claims in verifiable party programme content.",
+        "responsiveness": "The turn does not directly engage with the specific arguments made by the preceding speakers, instead reiterating the party's general position, which warrants a score of 2 for responsiveness.",
+        "stance_differentiation": "The turn clearly reflects the AfD's distinct position on migrationspolitik, emphasizing the need for integration programs tailored to German society's needs, thereby scoring 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 16929,
+      "token_count_output": 572,
+      "latency_s": 3.058,
+      "timestamp": "2026-06-24T11:16:01.267754Z"
+    },
+    {
+      "turn_id": "68206536-1b68-40d9-ae6d-ce09c8c3a911",
+      "round_number": 10,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "Sehr geehrte Damen und Herren,\n\nIch danke der Moderatorenin für ihre klare Anleitung, um unsere Diskussion voranzutreiben. Die Notwendigkeit, die Integrationsprogramme zu verbessern, ist ein gemeinsamer Nenner, der uns alle einigt. Als CDU/CSU schlagen wir vor, dass wir uns gemeinsam auf die Einführung einer qualifizierten Integrationsprüfung einlassen, die die Sprachfähigkeit, berufliche Qualifikation und soziale Fähigkeiten der Zuwanderer beurteilt.\n\nDiese Prüfung würde es uns ermöglichen, die Zuwanderer besser auf die Bedürfnisse unserer Gesellschaft zuzubringen und ihre Integrationsfähigkeit zu stärken. Wir schlagen vor, dass diese Prüfung drei Bereiche umfasst: Sprachniveau, berufliche Qualifikation und soz",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, addressing the topic without personal attacks or inflammatory language, thus scoring a 4 for being professional and respectful.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and the need to improve integration programs, making it clearly relevant and focused, hence a score of 4.",
+        "logical_consistency": "The argument for a qualified integration test is logically consistent, connecting the test's components (language, professional qualification, social skills) to the goal of improving integration, which warrants a score of 4.",
+        "argument_strength": "The turn presents a well-supported claim with specific reasoning (the three areas of the integration test) and a clear mechanism (the test itself), earning a score of 4 for argument strength.",
+        "document_grounding": "Although the turn does not directly reference the party's documented positions, it aligns with general CDU/CSU stances on integration, thus scoring a 4 for reflecting known party directions without direct citation.",
+        "responsiveness": "The turn does not directly engage with the preceding speaker's specific arguments, instead reiterating the CDU/CSU's proposal, which is why it scores a 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly identifies the CDU/CSU's distinct position on integration (qualified integration test) and ideological framing, distinguishing it from other parties, hence a score of 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 17061,
+      "token_count_output": 587,
+      "latency_s": 3.2510000000000003,
+      "timestamp": "2026-06-24T11:16:04.276091Z"
+    },
+    {
+      "turn_id": "99496aa0-ef66-48cc-b44f-621d7d26b989",
+      "round_number": 10,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "Sehr geehrte Damen und Herren,\n\nIch danke der Moderatorenin für diese wichtige Anregung, um unsere Diskussion voranzutreiben. Die Notwendigkeit, die Integrationsprogramme zu verbessern, ist ein gemeinsamer Nenner, der uns alle einigt. Als SPD setzen wir uns dafür ein, dass Menschen, die in Deutschland bleiben wollen, einen fairen Zugang zu Arbeit, Bildung und Wohnraum haben.\n\nIch stimme der Moderatorenin zu, dass es wichtig ist, einen spezifischen Schritt zu identifizieren, auf dem wir uns gemeinsam einigen können, um die Integrationsfähigkeit zu stärken. Ein solcher Schritt könnte die Einführung von Sprachkursen sein, die speziell auf die Bedürfnisse von Zuwanderern ausgerichtet sind. Diese Sprachkurse sollten nicht nur die deutsche Sprache als solche,",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, addressing the topic without personal attacks or inflammatory language, thus scoring a 4 for being professional and respectful.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and integrates the discussion of integrationsprogramme, making it relevant and focused, hence a score of 4.",
+        "logical_consistency": "The argument is generally coherent but lacks detailed logical structure or anticipation of counterarguments, which is why it scores a 3 for being adequate but not exceptional in logical consistency.",
+        "argument_strength": "The turn provides some reasoning for its claims, such as the importance of fair access to work, education, and housing, but lacks specific evidence or mechanisms, resulting in a score of 3 for argument strength.",
+        "document_grounding": "The turn reflects the SPD's known positions on integration and social equality, aligning with their documented policies, which earns it a score of 4 for being clearly anchored in the party's programme.",
+        "responsiveness": "The turn acknowledges the preceding discussion and agrees on the need for improved integration programs, but does not directly engage with specific arguments from other parties, leading to a score of 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly identifies the SPD's position on migrationspolitik, emphasizing fair access to resources for immigrants, which distinguishes it from other parties and warrants a score of 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 17305,
+      "token_count_output": 585,
+      "latency_s": 3.3499999999999996,
+      "timestamp": "2026-06-24T11:16:07.524835Z"
+    },
+    {
+      "turn_id": "7dddccd9-5b56-4f41-b954-6b829b87f45c",
+      "round_number": 10,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "Sehr geehrte Damen und Herren,\n\nDie Moderatorenin hat uns eine wichtige Anregung gegeben, um unsere Diskussion voranzutreiben. Wir Grünen haben immer betont, dass die Integration von Zuwanderern ein wichtiger Schritt ist, um die Vielfalt und die Stärke unserer Gesellschaft zu fördern. Die Notwendigkeit, die Integrationsprogramme zu verbessern, ist ein gemeinsamer Nenner, der uns alle einigt.\n\nUm die Integrationsfähigkeit von Zuwanderern zu stärken, schlagen wir vor, dass wir uns gemeinsam auf die Einführung eines sozialen Einwanderungsgesetzes einlassen, das fairen Zugang zu Arbeit, Bildung und Wohnraum für alle Menschen, die in Deutschland bleiben wollen, gewährleistet. Dieses Gesetz sollte nicht nur die deutsche Sprache als solche, sondern auch die k",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, acknowledging the legitimacy of the discussion and the importance of integration, which aligns with the exemplary parliamentary tone expected for a score of 5.",
+        "relevance": "The turn is precisely targeted at the debate topic of migrationspolitik and advances the discussion by proposing a specific solution, the introduction of a soziales Einwanderungsgesetz, which directly addresses the topic and deepens the discussion.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting the premise of improving integration programs to the conclusion of introducing a soziales Einwanderungsgesetz, but lacks rigorous logical chains or anticipation of objections, which prevents it from scoring a 5.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning about the need for a soziales Einwanderungsgesetz, but does not offer compelling evidence or detailed mechanisms for its implementation, which would be required for a score of 5.",
+        "document_grounding": "The proposal for a soziales Einwanderungsgesetz aligns with the party's known positions on migration and integration, but the turn does not directly reference specific party documents or programs, which would strengthen its grounding and potentially increase its score.",
+        "responsiveness": "The turn acknowledges the discussion context and the need for improvement in integration programs but does not directly engage with the specific arguments or proposals made by other parties in the preceding turns, which is why it scores a 3, indicating a basic level of responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the party's distinctive values and priorities, particularly in its emphasis on the social and cultural aspects of integration and the proposal for a soziales Einwanderungsgesetz, which is characteristic of Bündnis 90/Die Grünen's approach to migration policy."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 17539,
+      "token_count_output": 679,
+      "latency_s": 3.138,
+      "timestamp": "2026-06-24T11:16:10.772066Z"
+    },
+    {
+      "turn_id": "91d9ba80-c053-46e7-a497-79a8d5461086",
+      "round_number": 10,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "Sehr geehrte Damen und Herren,\n\nIch danke der Moderatorenin für die klare Anleitung, um unsere Diskussion voranzutreiben. Die Notwendigkeit, die Integrationsprogramme zu verbessern, ist ein gemeinsamer Nenner, der uns alle einigt. Als FDP setzen wir uns dafür ein, dass Menschen, die in Deutschland bleiben wollen, einen fairen Zugang zu Arbeit, Bildung und Wohnraum haben.\n\nUm die Integrationsfähigkeit von Zuwanderern zu stärken, schlagen wir vor, dass wir uns gemeinsam auf die Einführung einer qualifizierten Integrationsprüfung einlassen, die die Sprachfähigkeit, berufliche Qualifikation und soziale Fähigkeiten der Zuwanderer beurteilt. Diese Prüfung würde es uns ermöglichen, die Zuwanderer besser auf die Bedürfnisse unserer Gesellschaft zuzub",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, with no personal attacks or inflammatory language, thus scoring a 4 for being professional and respectful.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by proposing a specific solution, thus scoring a 4 for being clearly on-topic and focused.",
+        "logical_consistency": "The argument presented is internally consistent, with a clear logical structure connecting premises to conclusions, thus scoring a 4 for being internally consistent.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and identified mechanisms, thus scoring a 4 for being well-supported.",
+        "document_grounding": "The proposal for a qualifizierte Integrationsprüfung aligns with the FDP's known positions on integrating Zuwanderer, thus scoring a 4 for clearly reflecting documented party positions.",
+        "responsiveness": "The turn does not directly engage with the preceding speaker's specific arguments, instead reiterating the FDP's position, thus scoring a 3 for being generally responsive but not directly engaging.",
+        "stance_differentiation": "The turn clearly maintains a distinct FDP identity and ideological position, using party-specific values and priorities, thus scoring a 4 for being clearly identifiable as FDP."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 17754,
+      "token_count_output": 552,
+      "latency_s": 2.8070000000000004,
+      "timestamp": "2026-06-24T11:16:14.080179Z"
+    },
+    {
+      "turn_id": "27012e54-0411-4d72-a780-d06f1a1200b7",
+      "round_number": 10,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Sehr geehrte Damen und Herren, wir müssen uns der Tatsache stellen, dass die Diskussion um eine reformierte Migration- und Asylpolitik an einem wichtigen Punkt angelangt ist. Die Notwendigkeit, die Integrationsprogramme zu verbessern, ist ein gemeinsamer Nenner, der uns alle einigt. Als Linke schlagen wir vor, dass wir uns gemeinsam auf die Schaffung von qualifizierten Bildungs- und Arbeitsmöglichkeiten für Zuwanderer einigen, die speziell auf die Bedürfnisse unserer Gesellschaft zugeschnitten sind.\n\nWir müssen sicherstellen, dass Menschen, die in Deutschland bleiben, eine Chance haben, sich in unsere Gesellschaft einzubringen und Teil des Sozialstaats zu werden. Dazu gehört die Ausbildung von mehr Lehrern und Erziehern, die sich auf die Bedürfnisse von Zuwanderern ausrichten",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of migrationspolitik and advances the discussion by proposing specific measures for improving integration programs, making it relevant and deserving of a score of 4.",
+        "logical_consistency": "The argument presented is internally consistent, with a clear logical structure connecting the proposal for qualified education and job opportunities to the goal of strengthening integration capabilities, thus scoring 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and identified mechanisms (e.g., training more teachers and educators), which supports a score of 4 for argument strength.",
+        "document_grounding": "The proposal aligns with Die Linke's known positions on social and educational policies, suggesting a strong connection to their documented party program, hence a score of 4 for document grounding.",
+        "responsiveness": "While the turn does not directly engage with the specific arguments of the preceding speaker, it acknowledges the common goal of improving integration programs, which is why it scores 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly reflects Die Linke's distinct party identity and ideological position by emphasizing the importance of social and educational integration measures, making it unmistakably distinct and worthy of a score of 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 17994,
+      "token_count_output": 584,
+      "latency_s": 3.082,
+      "timestamp": "2026-06-24T11:16:16.895390Z"
+    },
+    {
+      "turn_id": "7d4e8733-e638-40ae-bfb0-96f85cecb4a3",
+      "round_number": 10,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "Sehr geehrte Damen und Herren,\n\nWir müssen uns der Tatsache stellen, dass unsere Integrationsprogramme nicht nur verbessert werden müssen, sondern auch grundlegend umgestaltet werden. Die Zahl von 330.000 Asylanträgen im Jahr 2023 ist ein eindringliches Zeichen dafür, dass wir unsere Gesellschaft destabilisieren, wenn wir Menschen ohne klare Integrationsmöglichkeiten aufnehmen.\n\nIch stimme der Moderatorenin zu, dass es wichtig ist, einen spezifischen Schritt zu identifizieren, auf dem wir uns gemeinsam einigen können, um die Integrationsfähigkeit zu stärken. Ein solcher Schritt könnte die Einführung eines Integrationsprogramms sein, das speziell auf die Bedürfnisse unserer Gesellschaft zugeschnitten ist. Dieses Programm sollte sich auf die Stärkung der Integrationsfähigkeit von Zuwanderern",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, avoiding personal attacks or inflammatory language, thus scoring a 4 for being respectful throughout.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and proposes a specific solution, making it highly relevant and deserving of a 5.",
+        "logical_consistency": "The argument is coherent and follows a logical structure, but lacks rigorous logical chains or anticipation of objections, hence a score of 4.",
+        "argument_strength": "The turn provides some evidence (the number of asylum applications) and reasoning for its proposal, but could be stronger with more detailed mechanisms or evidence, resulting in a 4.",
+        "document_grounding": "The turn aligns with the AfD's known positions on migration and integration, but does not directly reference specific party documents, thus scoring a 4.",
+        "responsiveness": "The turn engages with the general discussion and acknowledges the need for a common step forward, but does not directly address a specific preceding argument, leading to a score of 4.",
+        "stance_differentiation": "The turn clearly reflects the AfD's distinctive stance on migration and integration, using language and proposals that are unmistakably aligned with the party's known positions, earning a 5."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 18204,
+      "token_count_output": 544,
+      "latency_s": 3.5650000000000004,
+      "timestamp": "2026-06-24T11:16:20.245637Z"
+    }
+  ],
+  "interventions": [
+    {
+      "intervention_id": "ab893c1e-3f79-4184-9448-6ed8203555ac",
+      "after_turn_id": "76524fa2-b6ba-4f22-a6f7-3b26493f63bb",
+      "round_number": 2,
+      "source": "strategy",
+      "strategy": "common-ground",
+      "trigger_dimension": "responsiveness",
+      "trigger_score": 2.0,
+      "trigger_confirmed": true,
+      "silent_control": false,
+      "intervention_text": "The current debate has highlighted the complexities of asylum and migration policy, with each party presenting their stance. However, to move forward, it's essential to identify areas of agreement. Let's focus on finding a narrow, shared premise, such as the need for improved integration programs or the importance of addressing the root causes of migration. By acknowledging these commonalities, parties can then articulate their distinct positions and engage in a more productive exchange. Remember, identifying shared starting points is not about compromising on policy but about clarifying the actual disagreements. Let's use this opportunity to sharpen our arguments and explore the nuances of our differences.",
+      "moderator_output": {
+        "diagnosis": "The debate has reached an impasse, with parties restating their positions without engaging with each other's arguments, resulting in low responsiveness scores.",
+        "target_parties": [
+          "CDU/CSU",
+          "SPD",
+          "Bündnis 90/Die Grünen",
+          "FDP",
+          "Die Linke",
+          "AfD"
+        ],
+        "target_claim": "The discussion around asylum and migration policy, specifically the handling of 330,000 asylum applications in 2023, has led to a stalemate.",
+        "intervention_text": "The current debate has highlighted the complexities of asylum and migration policy, with each party presenting their stance. However, to move forward, it's essential to identify areas of agreement. Let's focus on finding a narrow, shared premise, such as the need for improved integration programs or the importance of addressing the root causes of migration. By acknowledging these commonalities, parties can then articulate their distinct positions and engage in a more productive exchange. Remember, identifying shared starting points is not about compromising on policy but about clarifying the actual disagreements. Let's use this opportunity to sharpen our arguments and explore the nuances of our differences.",
+        "expected_next_turn_behaviour": "Parties are expected to identify one specific policy mechanism, factual premise, or procedural point on which at least two parties agree and then use that shared starting point to articulate precisely where and why their positions diverge, maintaining their distinct stances while engaging in a more responsive and constructive dialogue."
+      },
+      "habermas_output": null,
+      "token_count_input": 3583,
+      "token_count_output": 315,
+      "latency_s": 1.493,
+      "timestamp": "2026-06-24T11:14:00.104462Z"
+    },
+    {
+      "intervention_id": "455412f0-f11e-4303-924b-b06183264318",
+      "after_turn_id": "58ec852a-3b8b-476e-8df2-e0c33e9ecc55",
+      "round_number": 3,
+      "source": "silent",
+      "strategy": "common-ground",
+      "trigger_dimension": "responsiveness",
+      "trigger_score": 2.0,
+      "trigger_confirmed": true,
+      "silent_control": true,
+      "intervention_text": "",
+      "moderator_output": null,
+      "habermas_output": null,
+      "token_count_input": 0,
+      "token_count_output": 0,
+      "latency_s": 0.0,
+      "timestamp": "2026-06-24T11:14:03.450735Z"
+    },
+    {
+      "intervention_id": "97bd4c05-c19c-4ac6-a888-54faa23b1e2b",
+      "after_turn_id": "4a8d8e79-a845-4adc-9a68-de2e5a6f2b5a",
+      "round_number": 3,
+      "source": "strategy",
+      "strategy": "common-ground",
+      "trigger_dimension": "responsiveness",
+      "trigger_score": 2.0,
+      "trigger_confirmed": true,
+      "silent_control": false,
+      "intervention_text": "The current discussion has highlighted the complexity and depth of opinions on asylum and migration policy. However, to move forward productively, it's essential that we identify areas of agreement, no matter how narrow, to serve as a foundation for further discussion. I invite all parties to consider one specific policy mechanism, factual premise, or procedural point on which at least two parties can agree. From this shared starting point, parties can then articulate precisely where and why their positions diverge. Remember, finding common ground is not about compromising on policy but about creating a clearer understanding of the disagreements. Let's use this as an opportunity to sharpen our arguments and engage more directly with each other's perspectives.",
+      "moderator_output": {
+        "diagnosis": "The debate has reached an impasse with parties restating their positions without engaging with each other's arguments, leading to low responsiveness.",
+        "target_parties": [
+          "CDU/CSU",
+          "SPD",
+          "Bündnis 90/Die Grünen",
+          "FDP",
+          "Die Linke",
+          "AfD"
+        ],
+        "target_claim": "The recent statements from all parties reiterating their stances on asylum and migration policy without directly addressing or responding to the arguments of other parties.",
+        "intervention_text": "The current discussion has highlighted the complexity and depth of opinions on asylum and migration policy. However, to move forward productively, it's essential that we identify areas of agreement, no matter how narrow, to serve as a foundation for further discussion. I invite all parties to consider one specific policy mechanism, factual premise, or procedural point on which at least two parties can agree. From this shared starting point, parties can then articulate precisely where and why their positions diverge. Remember, finding common ground is not about compromising on policy but about creating a clearer understanding of the disagreements. Let's use this as an opportunity to sharpen our arguments and engage more directly with each other's perspectives.",
+        "expected_next_turn_behaviour": "Parties are expected to identify a common ground and use it as a basis to articulate their distinct positions more clearly, engaging directly with the arguments of other parties."
+      },
+      "habermas_output": null,
+      "token_count_input": 3583,
+      "token_count_output": 299,
+      "latency_s": 1.368,
+      "timestamp": "2026-06-24T11:14:20.835608Z"
+    },
+    {
+      "intervention_id": "5a3c93b0-d54b-4560-9e56-dd7dd57b55e2",
+      "after_turn_id": "de1e0c7c-1e44-4e99-8cc9-0d6043c83de0",
+      "round_number": 4,
+      "source": "strategy",
+      "strategy": "common-ground",
+      "trigger_dimension": "responsiveness",
+      "trigger_score": 2.0,
+      "trigger_confirmed": true,
+      "silent_control": false,
+      "intervention_text": "```json\n{\n  \"diagnosis\": \"Die Diskussion hat eine Sackgasse erreicht, bei der die Parteien ihre Positionen wiederholen, ohne auf die Argumente der anderen Parteien einzugehen.\",\n  \"target_parties\": [\"CDU/CSU\", \"SPD\", \"Bündnis 90/Die Grünen\", \"FDP\", \"Die Linke\", \"AfD\"],\n  \"target_claim\": \"Die Notwendigkeit, die Integrationsprogramme zu verbessern, um Menschen, die in Deutschland bleiben wollen, einen fairen Zugang zu Arbeit, Bildung und Wohnraum zu bieten.\",\n  \"intervention_text\": \"Die Diskussion hat eine Sackgasse erreicht, bei der die Parteien ihre Positionen wiederholen, ohne auf die Argumente der anderen Parteien einzugehen. Ein gemeinsamer Nenner, der uns alle einigt, ist die Notwendigkeit, die Integrationsprogramme zu verbessern. Ich bitte alle Parteien, einen spezifischen Schritt zu identifizieren, auf dem sie sich gemeinsam einigen können, um die Integrationsfähigkeit zu stärken. Bitte nutzen Sie diese gemeinsame Grundlage, um Ihre unterschiedlichen Positionen und Argumente zu präzisieren, ohne Ihre grundlegenden Überzeugungen aufzugeben. Es ist wichtig, dass Sie Ihre eigenen Standpunkte beibehalten und nicht versuchen, einen Kompromiss zu finden, der Ihre Überzeugungen verwässert.\",\n  \"expected_next_turn_behaviour\": \"Die Parteien sollten nun einen spezifischen Schritt identifizieren, auf dem sie sich gemeinsam einigen können, um die Integrationsfähigkeit zu stärken, und dann ihre unterschiedlichen Positionen und Argumente präzisieren, ohne ihre grundlegenden Überzeug",
+      "moderator_output": null,
+      "habermas_output": null,
+      "token_count_input": 3586,
+      "token_count_output": 400,
+      "latency_s": 1.331,
+      "timestamp": "2026-06-24T11:14:25.686882Z"
+    }
+  ],
+  "round_summaries": [],
+  "total_tokens_input": 690253,
+  "total_tokens_output": 35162,
+  "total_latency_s": 160.04,
+  "started_at": "2026-06-24T11:13:33.237329Z",
+  "finished_at": "2026-06-24T11:16:22.226686Z"
+}
