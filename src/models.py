@@ -164,6 +164,7 @@ class DebateRunConfig(BaseModel):
     uses_trigger: bool = False
     trigger_strategy: Optional[str] = None
     nudge_text: str = ""  # Non-empty for Baseline 2
+    language: str = "de"  # "de" or "en"
 
 
 # ---------------------------------------------------------------------------

@@ -224,6 +224,7 @@ class DebateEngine:
             uses_trigger=self.condition.uses_trigger,
             trigger_strategy=self.condition.trigger_strategy,
             nudge_text=NUDGE_INSTRUCTION if self.condition_id == "baseline_2" else "",
+            language=self.language,
         )
 
     # ------------------------------------------------------------------

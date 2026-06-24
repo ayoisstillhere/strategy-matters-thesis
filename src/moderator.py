@@ -53,7 +53,7 @@ class Moderator:
         self,
         llm_client: LLMClient,
         model: str = JUDGE_MODEL,
-        max_tokens: int = 400,
+        max_tokens: int = 600,
         temperature: float = 0.3,
     ):
         self.llm_client = llm_client
@@ -174,7 +174,7 @@ class Moderator:
             model=self.model,
             system_prompt=HABERMAS_MODERATOR_SYSTEM_PROMPT.strip(),
             user_prompt=user_prompt,
-            max_tokens=self.max_tokens,
+            max_tokens=max(self.max_tokens, 800),  # Habermas needs more for 5-field JSON
             temperature=self.temperature,
             parse_json=True,
         )

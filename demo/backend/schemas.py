@@ -85,6 +85,7 @@ class InterventionResponse(BaseModel):
     silent_control: bool = False
     intervention_text: str
     moderator_output: Optional[dict] = None
+    habermas_output: Optional[dict] = None
     timestamp: Optional[str] = None
 
 

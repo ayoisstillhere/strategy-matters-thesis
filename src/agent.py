@@ -197,10 +197,20 @@ class PoliticalAgent:
             )
 
         # 5. Turn instruction
-        parts.append(
-            f"\n## Your Turn (Round {round_number})\n"
-            f"Produce your next debate contribution as {self.party}. "
-            f"Follow all debate rules."
-        )
+        if not transcript:
+            parts.append(
+                f"\n## Your Turn (Round {round_number})\n"
+                f"You are the FIRST speaker in this debate. Produce an opening "
+                f"statement as {self.party} that introduces your party's position "
+                f"on the topic above. Do NOT reference other parties' arguments "
+                f"since no one has spoken yet. Follow all debate rules."
+            )
+        else:
+            parts.append(
+                f"\n## Your Turn (Round {round_number})\n"
+                f"Produce your next debate contribution as {self.party}. "
+                f"Vary your opening style — do NOT start with 'Regarding X's argument' "
+                f"or any fixed formula. Follow all debate rules."
+            )
 
         return "\n".join(parts)

@@ -37,6 +37,7 @@ export interface Intervention {
   silent_control: boolean;
   intervention_text: string;
   moderator_output: Record<string, unknown> | null;
+  habermas_output: Record<string, unknown> | null;
   timestamp: string | null;
 }
 

@@ -73,6 +73,8 @@ class DebateSession:
     error_message: Optional[str] = None
     # Injected interventions queued by the user
     pending_injection: Optional[str] = None
+    # Last intervention text (for passing to agents)
+    last_intervention_text: str = ""
     # Connected WebSocket clients
     ws_clients: list[WebSocket] = field(default_factory=list)
     # Event loop reference for cross-thread communication
@@ -216,7 +218,7 @@ class DebateManager:
         if engine.rag_pipeline is not None:
             engine.rag_pipeline.init_pools(engine.framing_prompt)
 
-        last_intervention_text = ""
+        session.last_intervention_text = ""
 
         for round_num in range(1, session.num_rounds + 1):
             session.current_round = round_num
@@ -227,7 +229,7 @@ class DebateManager:
                 if session.pending_injection:
                     injection_text = session.pending_injection
                     session.pending_injection = None
-                    last_intervention_text = injection_text
+                    session.last_intervention_text = injection_text
 
                     # Log as intervention event
                     from src.models import InterventionEvent, InterventionSource
@@ -254,7 +256,7 @@ class DebateManager:
                     transcript=session.turns,
                     round_number=round_num,
                     turn_in_round=turn_idx,
-                    last_intervention=last_intervention_text,
+                    last_intervention=session.last_intervention_text,
                 )
 
                 # Score turn
@@ -284,7 +286,7 @@ class DebateManager:
                 # Trigger check (if condition uses triggers)
                 if engine.condition.uses_trigger:
                     self._check_trigger_and_intervene(
-                        engine, session, turn, round_num, last_intervention_text
+                        engine, session, turn, round_num,
                     )
 
             # Habermas (Baseline 3)
@@ -294,7 +296,7 @@ class DebateManager:
                     round_number=round_num,
                 )
                 session.interventions.append(event)
-                last_intervention_text = event.intervention_text
+                session.last_intervention_text = event.intervention_text
                 self._broadcast_sync(session, WSEvent(
                     event_type=WSEventType.INTERVENTION,
                     data=self._intervention_to_dict(event),
@@ -321,7 +323,6 @@ class DebateManager:
         session: DebateSession,
         turn: Turn,
         round_num: int,
-        last_intervention_text: str,
     ) -> None:
         """Run trigger pipeline; broadcast intervention if fired."""
         if turn.scores is None:
@@ -390,9 +391,7 @@ class DebateManager:
         session.interventions.append(event)
 
         if not event.silent_control and event.intervention_text:
-            # Update last intervention for next turns
-            # (accessed via closure in the calling method)
-            pass
+            session.last_intervention_text = event.intervention_text
 
         self._broadcast_sync(session, WSEvent(
             event_type=WSEventType.INTERVENTION,
@@ -444,6 +443,7 @@ class DebateManager:
             silent_control=event.silent_control,
             intervention_text=event.intervention_text,
             moderator_output=event.moderator_output,
+            habermas_output=event.habermas_output,
             timestamp=event.timestamp.isoformat() if event.timestamp else None,
         ).model_dump()
 

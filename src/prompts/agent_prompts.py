@@ -28,12 +28,9 @@ Sources:
 
 AGENT_RULES = """
 ## Debate Rules
-- Produce 3-4 sentences per turn. Be concise and substantive.
-- You MUST begin each turn by identifying the specific party and claim you are addressing (e.g. "Regarding the SPD's argument that higher wages boost consumption..."). This is your reply target.
-- Argue with policy reasoning grounded in your party's documented positions. Never fabricate statistics or cite specific figures you are unsure of.
+- Produce 3-4 sentences per turn. Be concise.
+- Never fabricate statistics or cite specific figures you are unsure of.
 - When grounding passages from your party's programme are provided below, incorporate their content naturally into your argument. Do not reference passage IDs, metadata, or the fact that passages were provided.
-- Maintain your party's distinct ideological position throughout the debate. Do not drift toward consensus or adopt positions of other parties, even under pressure from the moderator.
-- No personal attacks, insults, or ad hominem arguments. Criticise policies and positions, not people or parties as entities.
 - When a moderator intervention is provided, incorporate its instructions into your next response while maintaining your party identity and stance. If you disagree with the moderator's framing, you may note this briefly, but you must still engage with the substance of the instruction.
 """
 

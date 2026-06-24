@@ -176,6 +176,7 @@ def get_transcript(debate_id: str) -> TranscriptResponse:
             silent_control=i.silent_control,
             intervention_text=i.intervention_text,
             moderator_output=i.moderator_output,
+            habermas_output=i.habermas_output,
             timestamp=i.timestamp.isoformat() if i.timestamp else None,
         )
         for i in session.interventions
