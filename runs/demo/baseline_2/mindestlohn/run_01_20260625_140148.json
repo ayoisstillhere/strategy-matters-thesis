@@ -1,0 +1,581 @@
+{
+  "run_id": "7f3a19ed-18f6-430c-9967-3666eed1c916",
+  "config": {
+    "topic_id": "mindestlohn",
+    "topic_type": "empirical",
+    "framing_prompt": "The German federal minimum wage currently stands at €12.82 per hour, set by the independent Mindestlohnkommission. Several parties have proposed raising it to €15 per hour by 2026, while others argue the commission's independence must not be overridden by political targets. Discuss whether the minimum wage should be raised to €15, considering the effects on low-wage workers, small and medium-sized businesses, and regional economic differences between western and eastern Germany. Ground your arguments in your party's documented positions.",
+    "condition_id": "baseline_2",
+    "condition_label": "Nudge",
+    "condition_type": "baseline",
+    "run_number": 1,
+    "agent_model": "llama-3.1-8b-instant",
+    "judge_model": "llama-3.3-70b-versatile",
+    "moderator_model": "",
+    "num_rounds": 3,
+    "num_agents": 6,
+    "max_interventions": 3,
+    "silent_control_rate": 0.2,
+    "turn_order": [
+      "CDU/CSU",
+      "SPD",
+      "Bündnis 90/Die Grünen",
+      "FDP",
+      "Die Linke",
+      "AfD"
+    ],
+    "has_moderator_agent": false,
+    "uses_trigger": false,
+    "trigger_strategy": null,
+    "nudge_text": "Remember: a high-quality political debate requires that you engage directly with the specific arguments made by other parties, maintain a respectful and substantive tone even when you strongly disagree, and ground your claims in your party's documented policy positions. Avoid personal attacks, vague generalisations, and talking past other participants.",
+    "language": "en"
+  },
+  "turns": [
+    {
+      "turn_id": "e6ef23ff-d165-404a-b90b-d57a1d97d0cf",
+      "round_number": 1,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "\"Meine Damen und Herren, wir in der CDU/CSU glauben, dass unser Soziales Marktwirtschaftssystem zu mehr Gerechtigkeit und Chancen für alle führen muss. Dabei spielen auch die Preise auf dem Arbeitsmarkt eine zentrale Rolle. Der Mindestlohn ist ein wichtiger Baustein für die soziale Gerechtigkeit und sollte daher angemessen gestaltet werden. Wir unterstützen daher die Arbeit der unabhängigen Mindestlohnkommission, die einen fairen und wettbewerbsfähigen Mindestlohn auf dem Markt anbietet. Ein Mindestlohn von €15 pro Stunde ist jedoch nicht die richtige Antwort. Wir benötigen eine flexible Lösung, die uns ermöglicht, die wirtschaftlichen Gegebenheiten im Westen und Osten, aber auch die individuellen Bedürfnisse kleiner und mittlerer Unternehmen zu ber",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 2,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing the idea of a €15 minimum wage without attacking opponents directly.",
+        "relevance": "The turn clearly addresses the debate topic of the minimum wage, discussing its importance for social justice and the need for a flexible solution.",
+        "logical_consistency": "The argument is internally consistent, connecting the importance of social justice with the need for a flexible minimum wage solution that considers economic conditions and the needs of small and medium-sized enterprises.",
+        "argument_strength": "The turn provides some reasoning for its position, such as the need for flexibility, but lacks specific evidence or detailed mechanisms to support its claims about the appropriate minimum wage level.",
+        "document_grounding": "The turn reflects the CDU/CSU's known position on supporting the work of the independent Minimum Wage Commission, indicating a clear connection to the party's documented stances.",
+        "responsiveness": "Since this is the first turn, there are no preceding arguments to respond to, making it difficult to assess responsiveness directly; however, the turn does not engage with potential counterarguments or alternative views.",
+        "stance_differentiation": "The turn clearly identifies the CDU/CSU's distinct position on the minimum wage, emphasizing the importance of flexibility and the role of the independent commission, which differentiates it from other parties."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 2645,
+      "token_count_output": 562,
+      "latency_s": 2.048,
+      "timestamp": "2026-06-25T14:01:05.878272Z"
+    },
+    {
+      "turn_id": "e20a6b6a-2730-4593-98d6-8492b630abb0",
+      "round_number": 1,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "Wir als SPD glauben, dass der Mindestlohn ein entscheidender Schritt zur Armutsbekämpfung und zur Förderung der sozialen Gerechtigkeit in Deutschland sein muss. Wir unterstützen die Arbeit der unabhängigen Mindestlohnkommission, aber ihre Empfehlungen haben in den letzten Jahren nicht ausgereicht, um die prekären Arbeitsverhältnisse in Deutschland wirklich anzugehen. Viele Menschen, insbesondere in den Bereichen Gesundheit, Soziales und Bildung, arbeiten noch immer unter prekäreren Bedingungen und verdienen deutlich mehr als den aktuellen Mindestlohn.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without attacking the opposing party directly, which aligns with a score of 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of Mindestlohn, addressing the issue directly and advancing the discussion with specific examples, thus scoring 5 for relevance.",
+        "logical_consistency": "The argument is internally consistent, connecting the need for a higher Mindestlohn with the goal of combating poverty and promoting social justice, but does not delve into complex logical reasoning, hence a score of 4.",
+        "argument_strength": "The turn provides some reasoning and evidence, such as the example of workers in health, social, and educational sectors, to support its claims, but does not offer comprehensive data or mechanisms, resulting in a score of 4 for argument strength.",
+        "document_grounding": "The SPD's stance on Mindestlohn aligns with their known party positions, emphasizing social justice and the need to address precarious working conditions, which suggests a score of 4 for document grounding.",
+        "responsiveness": "While the turn references the work of the Mindestlohnkommission, which was mentioned by the preceding speaker, it does not directly engage with the CDU/CSU's specific arguments or proposals, leading to a score of 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly reflects the SPD's distinct position on Mindestlohn, emphasizing the need for higher wages to combat poverty and promote social justice, which is unmistakably aligned with the party's values and priorities, thus scoring 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 3030,
+      "token_count_output": 571,
+      "latency_s": 2.222,
+      "timestamp": "2026-06-25T14:01:07.741635Z"
+    },
+    {
+      "turn_id": "8086127a-f2fb-46c5-b72c-47a67179c421",
+      "round_number": 1,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "Wir Grüne sehen in einem Mindestlohn von €15 pro Stunde eine wichtige Chance, die prekären Arbeitsverhältnisse in Deutschland endlich zu bekämpfen. Die Mindestlohnkommission hat zwar eine wichtige Rolle bei der Wahrung der Unabhängigkeit des Mindestlohns, aber ihre Empfehlungen müssen auch in den realen Lebensbedingungen der Menschen berücksichtigt werden. Viele Menschen in Deutschland verdienen immer noch nicht genug, um ein Leben in Würde zu führen, und die aktuellen Preise auf dem Arbeitsmarkt haben nicht ausgereicht, um die soziale Gerechtigkeit in Deutschland wirklich anzugehen.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without attacking other parties directly, which aligns with a score of 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of the minimum wage, advancing the discussion with specific arguments about its necessity and the current state of working conditions in Germany, thus scoring 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, connecting the need for a higher minimum wage with the goal of combating precarious working conditions and achieving social justice, though it could be strengthened with more specific data or examples, warranting a score of 4.",
+        "argument_strength": "The turn presents a clear and well-supported claim for why a €15 minimum wage is necessary, referencing the real-life conditions of many workers in Germany, which earns it a score of 4 for argument strength.",
+        "document_grounding": "While the turn does not directly reference specific party documents, it aligns with known positions of Bündnis 90/Die Grünen on social justice and workers' rights, suggesting a score of 4 for document grounding.",
+        "responsiveness": "The turn acknowledges the role of the Mindestlohnkommission, similar to the preceding turns, but does not directly engage with the specific arguments made by CDU/CSU or SPD, resulting in a score of 3 for responsiveness.",
+        "stance_differentiation": "The emphasis on combating precarious working conditions and achieving social justice through a higher minimum wage is distinctive of Bündnis 90/Die Grünen's stance, though it could be more sharply differentiated from other parties' positions, leading to a score of 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 3366,
+      "token_count_output": 586,
+      "latency_s": 2.206,
+      "timestamp": "2026-06-25T14:01:10.013417Z"
+    },
+    {
+      "turn_id": "7895f842-3184-48bf-af0c-cdfe86ba7595",
+      "round_number": 1,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "Ein Mindestlohn von €15 pro Stunde, das klingt zwar verlockend, doch wir in der FDP wissen, dass politische Ziele nicht über die wirtschaftlichen Realitäten hinwegreden können. Die Preise auf dem Arbeitsmarkt hängen stark von der Wettbewerbsfähigkeit unserer Unternehmen ab – nicht von politischen Entscheidungen. Wenn wir den Mindestlohn um 20% erhöhen, drohen wir damit, unsere kleinen und mittleren Unternehmen, die ohnehin schon unter wettbewerbsbedingten Druck stehen, in die Insolvenz zu treiben. Das käme den Menschen in Ostdeutschland, die in dieser Branche arbeiten, nicht zugute. Wir müssen uns stattdessen auf eine faire und flexible Lösung konzentrieren, die es unseren Unternehmen ermöglicht, sich auf dem Markt zu behaupten, anstatt sie mit Bü",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques policies without attacking parties directly, and avoids inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage, engaging with the specific issue at hand and advancing the discussion, which warrants a score of 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, connecting the potential increase in the minimum wage to its impact on small and medium-sized enterprises, though it could be strengthened by more nuanced economic analysis, resulting in a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides a clear reasoning mechanism, suggesting that a significant increase in the minimum wage could lead to insolvency among small and medium-sized enterprises, especially affecting workers in certain regions, which supports a score of 4 for argument strength.",
+        "document_grounding": "While the turn reflects general principles that could be associated with the FDP's economic policies, it does not directly reference or ground itself in specific documented positions of the FDP, leading to a score of 3 for document grounding.",
+        "responsiveness": "The turn engages with the preceding arguments, particularly the proposal of a €15 minimum wage, and responds by highlighting potential economic drawbacks, demonstrating a clear attempt to address opposing views, which merits a score of 4 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the FDP's distinct economic stance, emphasizing the importance of market competitiveness and the potential negative impacts of rigid regulatory measures on small businesses, thereby scoring a 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 3747,
+      "token_count_output": 615,
+      "latency_s": 2.329,
+      "timestamp": "2026-06-25T14:01:12.225374Z"
+    },
+    {
+      "turn_id": "c374d490-d3b2-4c0a-b15a-1d147ebe2ded",
+      "round_number": 1,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Meine Damen und Herren, das Problem ist nicht die Höhe des Mindestlohns, sondern die Tatsache, dass sich der Mindestlohn unter der Ägide der unabhängigen Mindestlohnkommission in den letzten Jahren nicht ausreichend erhöht hat, um die wachsende Armut und Prekarisierung in Deutschland anzugehen. Während die CDU/CSU von einer \"flexiblen Lösung\" spricht, die die wirtschaftlichen Gegebenheiten im Westen und Osten berücksichtigt, ignoriert sie die Tatsache, dass die Löhne in Ostdeutschland seit Jahren unter denen in Westdeutschland liegen. Ein Mindestlohn von €15 pro Stunde ist daher nicht nur ein politisches Ziel, sondern ein notwendiges Mittel, um die soziale Gerechtigkeit in Deutschland zu verbessern. Wir in Die Lin",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiquing policies without personal attacks, but does not go out of its way to acknowledge the legitimacy of opposing views, thus scoring a 4.",
+        "relevance": "The turn directly addresses the debate topic of the Mindestlohn, engaging with the specific issue at hand and advancing the discussion, which warrants a score of 5.",
+        "logical_consistency": "The argument is generally coherent, connecting the need for a higher Mindestlohn with the goal of improving soziale Gerechtigkeit, but does not delve into complex logical reasoning, hence a score of 4.",
+        "argument_strength": "The turn provides reasoning for why a Mindestlohn of €15 pro Stunde is necessary, referencing the gap in Löhne between Ostdeutschland and Westdeutschland, which supports its claim but does not offer extensive evidence, resulting in a score of 4.",
+        "document_grounding": "The turn aligns with Die Linke's known positions on soziale Gerechtigkeit and Mindestlohn, but without direct references to specific party documents or programmes, it scores a 4.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's argument about a 'flexible Lösung' and the issue of wirtschaftlichen Gegebenheiten, demonstrating a high level of responsiveness, thus a score of 5.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity, using language and priorities unique to Die Linke, such as emphasizing the need for a higher Mindestlohn to address Armut and Prekarisierung, which earns a score of 5."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 4198,
+      "token_count_output": 638,
+      "latency_s": 2.673,
+      "timestamp": "2026-06-25T14:01:14.570122Z"
+    },
+    {
+      "turn_id": "f32972b7-d271-41a7-a6b3-4eb0f23451a6",
+      "round_number": 1,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "Meine Damen und Herren, wir in der AfD glauben, dass der jetzige Mindestlohn von €12,82 pro Stunde ein wichtiger Schritt zur Förderung von Wettbewerb und Wirtschaftswachstum in Deutschland ist. Wir befürworten die Arbeit der unabhängigen Mindestlohnkommission, aber die Frage ist, ob ein Mindestlohn von €15 pro Stunde die richtige Antwort ist? Die wirtschaftlichen Realitäten in Ostdeutschland sind einfach zu unterschiedlich von denen im Westen. Wir müssen uns auf Lösungen konzentrieren, die den individuellen Bedürfnissen unserer kleinen und mittleren Unternehmen und der regionalen Gegebenheiten Rechnung tragen. Ein hoher Mindestlohn würde die wettbewerbsfähigkeit unserer Unternehmen untergraben und die Armut in Ostdeutschland nicht wirklich bekämpfen.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 3,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone throughout, avoiding personal attacks or inflammatory language, thus scoring a 4 for civility. The language is respectful, even when disagreeing with other parties' positions.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage, discussing its potential impact on the economy and regional differences, making it clearly relevant and thus scoring a 4.",
+        "logical_consistency": "The argument is generally coherent but lacks depth in its logical structure, making it a 3. It suggests that a high minimum wage could undermine the competitiveness of companies without fully explaining the mechanisms or providing evidence.",
+        "argument_strength": "The turn provides some reasoning for its claims, such as the potential negative impact on small and medium-sized enterprises, but it does not offer strong evidence or detailed analysis, resulting in a score of 3 for argument strength.",
+        "document_grounding": "The turn aligns with the AfD's known positions on promoting economic growth and considering regional differences, but it does not directly reference specific party documents or programs, leading to a score of 3 for document grounding.",
+        "responsiveness": "The turn acknowledges the debate about the minimum wage and the positions of other parties indirectly, but it does not directly engage with the specific arguments made by preceding speakers, thus scoring a 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly reflects the AfD's distinct perspective on economic policy, emphasizing the importance of regional considerations and the potential negative impacts of a high minimum wage on competitiveness, which differentiates it from other parties, scoring a 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 4619,
+      "token_count_output": 618,
+      "latency_s": 2.089,
+      "timestamp": "2026-06-25T14:01:17.228036Z"
+    },
+    {
+      "turn_id": "addeebef-9fa8-4861-9b98-1afadb890648",
+      "round_number": 2,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "\"Unsere Wirtschaft lebt von den kleinen und mittleren Unternehmen, die sich für Deutschland einsetzen und Arbeitsplätze schaffen. Sie müssen in der Lage sein, sich auf dem Markt zu behaupten, ohne durch unverhältnismäßige Mehraufwendungen überfordert zu werden. Ein Mindestlohn von €15 pro Stunde würde diese Unternehmen nicht nur unter Druck setzen, sondern möglicherweise sogar in die Insolvenz treiben. Wir müssen uns daher auf eine Lösung konzentrieren, die sowohl die wirtschaftlichen Gegebenheiten als auch die sozialen Bedürfnisse berücksichtigt. Eine flexible Lösung, die es unseren Unternehmen ermöglicht, sich anzupassen und sich weiterzuentwickeln, ist das Beste, was wir für unsere Wirtschaft und unsere Bürger tun können.\"",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, avoiding any personal attacks or inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of the minimum wage, addressing the potential impact on small and medium-sized enterprises and the need for a flexible solution, making it highly relevant and scoring a 5.",
+        "logical_consistency": "The argument is generally coherent, connecting the dots between the potential negative impact of a high minimum wage on small businesses and the need for flexibility, but it lacks a rigorous logical chain, hence a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning about the potential consequences of a €15 minimum wage on small and medium-sized enterprises, but it could be strengthened with more concrete evidence or data, resulting in a score of 4.",
+        "document_grounding": "While the turn reflects general positions that could be associated with the CDU/CSU, such as support for small and medium-sized enterprises, it does not directly reference or ground itself in specific party documents or known positions, thus scoring a 3.",
+        "responsiveness": "The turn acknowledges the broader debate context and the concerns about the minimum wage but does not directly engage with the specific arguments made by other parties in the preceding turns, leading to a score of 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly reflects the CDU/CSU's stance on the importance of small and medium-sized enterprises and the need for economic flexibility, distinguishing itself from other parties, especially those advocating for a higher minimum wage, hence a score of 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 4944,
+      "token_count_output": 613,
+      "latency_s": 2.521,
+      "timestamp": "2026-06-25T14:01:19.623267Z"
+    },
+    {
+      "turn_id": "5e78d692-3fe5-41f0-a893-6720297db9bc",
+      "round_number": 2,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "\"Wir in der SPD wissen, dass unsere Wirtschaft stark und gerecht sein muss, damit alle Bürgerinnen und Bürger in Deutschland ein gutes Leben führen können. Ein Mindestlohn von €15 pro Stunde ist ein wichtiger Schritt in Richtung einer gerechteren Wirtschaft. Wir unterstützen die Arbeit der unabhängigen Mindestlohnkommission, aber wir müssen auch anerkennt, dass ihre Empfehlungen in den letzten Jahren nicht ausgereicht haben, um die prekären Arbeitsverhältnisse in Deutschland wirklich anzugehen. Viele Menschen, insbesondere in den Bereichen Gesundheit, Soziales und Bildung, arbeiten noch immer unter prekäreren Bedingungen und verdienen deutlich mehr als den aktuellen Mindestlohn. Ein Mindestlohn von €15 pro Stunde würde nicht nur die Löhne der Arbeitnehmerinnen und Arbeitnehmer steigern, sondern auch",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without attacking other parties directly, which aligns with a score of 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of the Mindestlohn, advancing the discussion with specific arguments about its impact, which warrants a score of 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, connecting the need for a higher Mindestlohn with the goal of achieving a more just economy, though it could be strengthened with more detailed logical steps, hence a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning about the benefits of a €15 Mindestlohn, including its impact on workers in healthcare, social services, and education, which supports a score of 4 for argument strength.",
+        "document_grounding": "The turn reflects documented SPD positions on social justice and labor rights, aligning with the party's known commitments, though it does not directly reference specific party documents, leading to a score of 4.",
+        "responsiveness": "The turn acknowledges the broader debate context but does not directly engage with the specific arguments of the preceding speaker, which is why it scores 3 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the SPD's distinct position on the Mindestlohn, emphasizing social justice and the need for a higher minimum wage, which is unmistakably distinct from other parties' stances, earning a score of 5."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 5384,
+      "token_count_output": 608,
+      "latency_s": 2.154,
+      "timestamp": "2026-06-25T14:01:21.841498Z"
+    },
+    {
+      "turn_id": "03e25b75-faf1-4919-89c4-f5fac0f55f8a",
+      "round_number": 2,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "Wir Grüne setzen uns für die Stärkung des sozialen Gefüges unserer Gesellschaft ein, in dem alle Menschen ein sicheres und würdiges Leben führen können. Der Mindestlohn ist ein wichtiger Baustein in diesem Gefüge, aber die derzeitige Höhe des Mindestlohns von €12,82 pro Stunde ist für viele Menschen in Deutschland nicht ausreichend, um ein Leben in Würde zu führen. Viele Menschen in Deutschland leben noch immer unter dem Armutsrisiko, und die prekären Arbeitsverhältnisse halten an. Wir müssen uns daher fragen, warum die derzeitige Höhe des Mindestlohns nicht ausgereicht hat, um die Armut in Deutschland wirklich anzugehen. \n\nWir glauben, dass ein Mindestlohn von €15 pro Stunde eine wichtige Chance ist, die prekären Arbeitsverhältnisse in",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, focusing on the issue at hand without personal attacks or inflammatory language, thus scoring a 4 for being professional and respectful.",
+        "relevance": "The turn is precisely targeted at the debate topic of the minimum wage, addressing the current situation and proposing a solution, making it a 5 for being directly relevant and advancing the discussion.",
+        "logical_consistency": "The argument is generally coherent, connecting the current minimum wage to the issue of poverty and the need for an increase, but it does not delve into complex logical reasoning, hence a score of 4.",
+        "argument_strength": "The turn provides a clear argument for why the current minimum wage is insufficient and why an increase to €15 per hour is necessary, supported by the context of poverty and dignity, scoring a 4 for its clear and supported claims.",
+        "document_grounding": "While the turn does not directly reference specific party documents, it aligns with the known positions of Bündnis 90/Die Grünen on social justice and labor rights, thus scoring a 4 for generally reflecting the party's stance.",
+        "responsiveness": "The turn does not directly engage with the specific arguments made by preceding speakers, instead focusing on the party's own position on the minimum wage, which is why it scores a 3 for only generically acknowledging the debate context.",
+        "stance_differentiation": "The turn clearly and unmistakably reflects the distinctive values and priorities of Bündnis 90/Die Grünen, emphasizing social justice, dignity, and the need for a higher minimum wage, making it a 5 for unmistakable party identity."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 5832,
+      "token_count_output": 627,
+      "latency_s": 2.311,
+      "timestamp": "2026-06-25T14:01:24.089061Z"
+    },
+    {
+      "turn_id": "0cacb38a-75a0-4a0c-ab02-89e86c0706e3",
+      "round_number": 2,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "\"Die wirtschaftliche Realität ist klar: Ein hoher Mindestlohn würde unsere kleinen und mittleren Unternehmen, die ohnehin schon unter wettbewerbsbedingten Druck stehen, in die Insolvenz treiben. Wir müssen uns nicht nur auf die wirtschaftlichen Gegebenheiten im Westen und Osten konzentrieren, sondern auch auf die individuellen Bedürfnisse unserer Unternehmen und der regionalen Gegebenheiten. Eine flexible Lösung, die es unseren Unternehmen ermöglicht, sich anzupassen und sich weiterzuentwickeln, ist das Beste, was wir für unsere Wirtschaft und unsere Bürger tun können. Wir in der FDP setzen uns für eine faire und wettbewerbsfähige Wirtschaft ein, in der keine Branche oder Region benachteiligt wird. Ein Mindestlohn von €15 pro Stunde ist daher nicht die richtige Antwort. Wir brauchen stattdessen eine",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone throughout, avoiding personal attacks or inflammatory language, thus scoring a 4 for civility. The language is respectful, even when disagreeing with other parties' positions.",
+        "relevance": "The turn is highly relevant to the debate topic of the minimum wage, directly addressing the issue and its potential economic impacts, which earns it a score of 5 for relevance.",
+        "logical_consistency": "The argument presented is logically consistent, emphasizing the potential negative economic impacts of a high minimum wage on small and medium-sized enterprises, thus scoring a 4 for logical consistency. However, it does not fully address potential counterarguments or complexities.",
+        "argument_strength": "The turn provides a clear argument with some evidence, focusing on the economic pressures on small and medium-sized enterprises, which gives it a score of 4 for argument strength. It could be strengthened by more specific data or examples.",
+        "document_grounding": "The turn aligns with the FDP's known positions on promoting a competitive economy and considering regional differences, scoring a 4 for document grounding. It reflects the party's emphasis on economic flexibility and competitiveness.",
+        "responsiveness": "The turn responds to preceding arguments by addressing the potential economic consequences of a €15 minimum wage, engaging with the concerns raised by other parties, which earns it a 4 for responsiveness. It directly addresses the topic and engages with opposing views without fully acknowledging their legitimacy.",
+        "stance_differentiation": "The turn clearly differentiates the FDP's stance from others, emphasizing the need for a flexible, competitive economy and the potential risks of a high minimum wage, which scores a 5 for stance differentiation. The language and arguments are unmistakably aligned with the FDP's economic policies."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 6264,
+      "token_count_output": 645,
+      "latency_s": 2.779,
+      "timestamp": "2026-06-25T14:01:26.346840Z"
+    },
+    {
+      "turn_id": "a1965fb1-92d3-4d13-a5c5-7a7a9efe62e6",
+      "round_number": 2,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Armut und Prekarisierung sind keine regionalen Probleme, sondern eine nationale Herausforderung, die wir gemeinsam angehen müssen. Wir in Die Linke haben immer wieder betont, dass der Mindestlohn ein wichtiger Baustein zur Bekämpfung von Armut und Prekarisierung ist. Der jetzige Mindestlohn von €12,82 pro Stunde ist jedoch nicht ausreichend, um die wachsende Armut und Prekarisierung in Deutschland anzugehen.\n\nDie Argumente der CDU/CSU und der FDP, dass ein hoher Mindestlohn die kleinen und mittleren Unternehmen in die Insolvenz treiben würde, sind nichts anderes als die alte Sorge, dass die Arbeiterklasse für die Schwäche der Wirtschaft verantwortlich gemacht wird. Wir wissen, dass die wirtschaftlichen Gegebenheiten komplex sind und dass eine flexible Lösung erforder",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiquing opposing parties' arguments without resorting to personal attacks or inflammatory language, though it does frame their concerns in a somewhat dismissive manner.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage and its impact on poverty and precarization, staying focused on the issue at hand.",
+        "logical_consistency": "The argument is generally coherent, connecting the current minimum wage to the issues of poverty and precarization, though it simplifies the economic complexities involved.",
+        "argument_strength": "The turn provides a clear reasoning for why the current minimum wage is insufficient and counters opposing arguments, but does not offer detailed evidence or specific mechanisms to support its claims.",
+        "document_grounding": "The turn reflects Die Linke's known position on the minimum wage and social justice, aligning with their party programme, but does not directly reference specific documented policies or commitments.",
+        "responsiveness": "The turn directly engages with the preceding arguments of the CDU/CSU and FDP, addressing their concerns about the impact of a higher minimum wage on small and medium-sized enterprises.",
+        "stance_differentiation": "The turn unmistakably reflects Die Linke's distinct ideological position, emphasizing social justice, the need for a higher minimum wage, and criticizing the arguments of other parties, particularly the CDU/CSU and FDP."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 6716,
+      "token_count_output": 573,
+      "latency_s": 2.269,
+      "timestamp": "2026-06-25T14:01:29.157179Z"
+    },
+    {
+      "turn_id": "32c818d1-2875-4e07-abf5-77c10df474e0",
+      "round_number": 2,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "Meine Damen und Herren, wir in der AfD glauben, dass die Debatte über den Mindestlohn oft zu sehr auf die wirtschaftlichen Aspekte konzentriert wird und dabei das menschliche Leid in den Hintergrund rückt. Die Tatsache, dass viele Menschen in Deutschland noch immer unter dem Armutsrisiko leben, ist ein alarmierender Hinweis auf die mangelnde Wirksamkeit der aktuellen Mindestlohnpolitik.\n\nWir müssen uns daher fragen, ob ein Mindestlohn von €15 pro Stunde tatsächlich die richtige Antwort ist, um die Armut in Deutschland anzugehen. Die Erfahrung zeigt, dass eine starre Politik, die die Flexibilität unserer Unternehmen und die regionalen Gegebenheiten nicht berücksichtigt, nicht nur wirtschaftliche Probleme schafft, sondern auch die Menschen in den prekären Arbeitsverhäl",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 3,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, avoiding personal attacks or inflammatory language, thus scoring a 4 for civility. The language used is respectful and focused on the issue at hand.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage, discussing its potential impact on poverty and the effectiveness of the current policy, making it highly relevant and scoring a 4.",
+        "logical_consistency": "The argument presented is generally coherent but lacks a clear logical structure connecting premises to conclusions, hence scoring a 3 for logical consistency. It questions the effectiveness of a €15 minimum wage without providing a detailed alternative.",
+        "argument_strength": "The turn provides some reasoning for its claims, such as the potential ineffectiveness of a high minimum wage in addressing poverty, but it lacks specific evidence or mechanisms to support these claims, resulting in a score of 3 for argument strength.",
+        "document_grounding": "The turn does not explicitly reference the AfD's documented positions or specific policy proposals related to the minimum wage, thus scoring a 3 for document grounding. It aligns with general party stances but does not provide concrete evidence from party documents.",
+        "responsiveness": "The turn engages with the general debate topic and indirectly responds to other parties' arguments about the minimum wage, but it does not directly address specific claims made by preceding speakers, leading to a score of 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly reflects the AfD's distinct perspective on economic and social issues, emphasizing the potential negative consequences of a high minimum wage on businesses and the need for flexibility, thus scoring a 4 for stance differentiation. It is recognizable as an AfD position but could be more distinct in its reasoning and proposals."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 7138,
+      "token_count_output": 645,
+      "latency_s": 2.936,
+      "timestamp": "2026-06-25T14:01:31.574162Z"
+    },
+    {
+      "turn_id": "672d4bba-fb8e-4733-bfc5-d4dbb1d291f5",
+      "round_number": 3,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "\"Die Diskussion um den Mindestlohn zeigt, dass wir uns alle für eine faire und gerechte Gesellschaft einsetzen. Wir in der CDU/CSU glauben, dass eine flexible Lösung, die sowohl die wirtschaftlichen Gegebenheiten als auch die sozialen Bedürfnisse berücksichtigt, das Beste für unsere Wirtschaft und unsere Bürger ist. Wir müssen uns nicht allein auf die Frage konzentrieren, ob ein Mindestlohn von €15 pro Stunde die richtige Antwort ist, sondern auch auf die langfristigen Auswirkungen einer solchen Politik auf unsere Unternehmen und unsere Arbeitsmärkte. Eine flexible Lösung, die es unseren Unternehmen ermöglicht, sich anzupassen und sich weiterzuentwickeln, ist nicht nur wirtschaftlich erforderlich, sondern auch sozial notwendig. Wir müssen uns auf diejenigen konzentrieren, die am meisten",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 3,
+        "document_grounding": 3,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without attacking parties directly, which aligns with a score of 4.",
+        "relevance": "The turn clearly addresses the debate topic of the minimum wage and its implications, staying focused on the issue at hand, thus scoring 4.",
+        "logical_consistency": "The argument is internally consistent, emphasizing the need for a flexible solution that considers both economic and social needs, warranting a score of 4.",
+        "argument_strength": "The turn provides some reasoning for its position, such as the need for flexibility, but lacks specific evidence or mechanisms to strongly support its claims, which is why it scores 3.",
+        "document_grounding": "While the turn reflects general party positions, it does not directly reference or ground its claims in specific party documents or known commitments, resulting in a score of 3.",
+        "responsiveness": "The turn acknowledges the broader debate context but does not directly engage with specific arguments made by other parties, leading to a score of 3.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity, emphasizing the importance of flexibility and the impact on businesses, which is recognizable as a CDU/CSU stance, thus scoring 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 7480,
+      "token_count_output": 548,
+      "latency_s": 2.227,
+      "timestamp": "2026-06-25T14:01:34.396835Z"
+    },
+    {
+      "turn_id": "dade73b1-b19c-4a17-b5c2-528e261f827d",
+      "round_number": 3,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "Wir müssen uns nicht nur auf die wirtschaftlichen Gegebenheiten konzentrieren, sondern auch auf die menschlichen Bedürfnisse. Viele Menschen in Deutschland leben noch immer unter dem Armutsrisiko, und die prekären Arbeitsverhältnisse halten an. Ein Mindestlohn von €15 pro Stunde ist nicht nur ein politisches Ziel, sondern ein notwendiges Mittel, um die soziale Gerechtigkeit in Deutschland zu verbessern. Wir müssen uns auf diejenigen konzentrieren, die am meisten von dieser Politik profitieren würden – die Arbeitnehmerinnen und Arbeitnehmer, die sich für ein besseres Leben einsetzen und die Hoffnung auf ein sicheres und würdiges Leben haben.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing the situation without attacking other parties, which aligns with a score of 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of the minimum wage, addressing the issue directly and advancing the discussion, which warrants a score of 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, connecting the need for a higher minimum wage to the goal of improving social justice, but lacks a rigorous logical chain, hence a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims, emphasizing the necessity of a higher minimum wage for social justice, but could be stronger with more specific evidence or mechanisms, resulting in a score of 4 for argument strength.",
+        "document_grounding": "The argument reflects the SPD's known position on social justice and labor rights, aligning with their documented stances, which justifies a score of 4 for document grounding.",
+        "responsiveness": "While the turn does not directly engage with the preceding speaker's specific arguments, it addresses the broader debate context, which is adequate but not exceptional, hence a score of 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly identifies the SPD's position on the minimum wage, using party-specific values and priorities, which distinguishes it from other parties, warranting a score of 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 7683,
+      "token_count_output": 546,
+      "latency_s": 2.283,
+      "timestamp": "2026-06-25T14:01:36.575119Z"
+    },
+    {
+      "turn_id": "8d11ba82-3832-4b2e-a019-dce5725ae42f",
+      "round_number": 3,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "Der Mindestlohn ist ein wichtiger Baustein, um die soziale Gerechtigkeit in Deutschland zu verbessern und die prekären Arbeitsverhältnisse anzugehen. Wir Grüne setzen uns dafür ein, dass alle Menschen in Deutschland ein sicheres und würdiges Leben führen können. \n\nDie Erfahrung zeigt, dass eine starre Politik, die die Flexibilität unserer Unternehmen und die regionalen Gegebenheiten nicht berücksichtigt, nicht nur wirtschaftliche Probleme schafft, sondern auch die Menschen in den prekären Arbeitsverhältnissen benachteiligt. Wir müssen uns daher auf eine flexible Lösung konzentrieren, die es unseren Unternehmen ermöglicht, sich anzupassen und sich weiterzuentwickeln, und gleichzeitig die sozialen Bedürfnisse und die Prekarisierungsrisiken berücksichtigt. \n\nEin Mindestlohn von €15",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without attacking parties directly, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of the minimum wage and its impact on social justice and precarious working conditions, making it relevant to the discussion.",
+        "logical_consistency": "The argument is internally consistent, suggesting that a flexible solution considering both economic and social needs is necessary, which demonstrates logical coherence.",
+        "argument_strength": "The turn provides well-supported claims, arguing for a minimum wage that considers both the needs of businesses and the social requirements for dignity, which strengthens the argument.",
+        "document_grounding": "The turn reflects the party's known position on social justice and the minimum wage, aligning with their documented stance on ensuring a dignified life for all, which indicates good document grounding.",
+        "responsiveness": "While the turn does engage with the general debate topic, it does not directly address specific arguments made by preceding speakers, which is why it scores 3 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the party's distinct stance on social justice, emphasizing the need for a minimum wage that supports dignified living, which clearly differentiates their position."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 7936,
+      "token_count_output": 549,
+      "latency_s": 2.5069999999999997,
+      "timestamp": "2026-06-25T14:01:38.911097Z"
+    },
+    {
+      "turn_id": "d8f40d4b-2435-452f-b0c3-9f0c9b19e0be",
+      "round_number": 3,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "Wir müssen nicht nur über die Höhe des Mindestlohns diskutieren, sondern auch über die langfristigen Auswirkungen einer Politik, die die Flexibilität unserer Unternehmen und die regionalen Gegebenheiten nicht berücksichtigt. Die Erfahrung zeigt, dass eine starre Politik, wie ein Mindestlohn von €15 pro Stunde, nicht nur wirtschaftliche Probleme schafft, sondern auch die Menschen in den prekären Arbeitsverhältnissen benachteiligt. Wir brauchen eine faire und wettbewerbsfähige Wirtschaft, in der keine Branche oder Region benachteiligt wird. Eine flexible Lösung, die es unseren Unternehmen ermöglicht, sich anzupassen und sich weiterzuentwickeln, ist das Beste, was wir für unsere Wirtschaft und unsere Bürger tun können.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, avoiding personal attacks or inflammatory language, thus scoring a 4 for civility. The language used is respectful and focused on the policy discussion.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage, discussing its potential impact on the economy and businesses, which makes it relevant and scores a 4.",
+        "logical_consistency": "The argument presented is coherent and logically consistent, emphasizing the potential negative effects of a rigid minimum wage policy on businesses and the economy, thus scoring a 4.",
+        "argument_strength": "The turn provides a well-supported argument against a high minimum wage, citing potential economic problems and the need for flexibility, which strengthens its argument to a score of 4.",
+        "document_grounding": "The turn reflects the FDP's known position on promoting a competitive economy and caution against rigid regulatory measures, aligning with their documented stance and scoring a 4.",
+        "responsiveness": "While the turn does not directly engage with the specific arguments of the preceding speaker, it addresses the broader debate topic, which is why it scores a 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly distinguishes the FDP's position from others, emphasizing the need for a flexible and competitive economy, which makes it unmistakably distinct and scores a 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 8183,
+      "token_count_output": 545,
+      "latency_s": 2.334,
+      "timestamp": "2026-06-25T14:01:41.502882Z"
+    },
+    {
+      "turn_id": "578b434f-5255-40b3-b683-ce06952e30bd",
+      "round_number": 3,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Die Wirtschaftsministerin aus der CDU/CSU spricht von einer \"flexiblen Lösung\", aber was bedeutet sie damit genau? Gibt es eine klare Definition, wie diese Flexibilität in der Praxis umgesetzt werden soll? Oder ist es nur ein Lippenbekenntnis, um die wirtschaftlichen Interessen der Unternehmen zu schützen? Wir in Die Linke wissen: Die wirtschaftlichen Gegebenheiten sind komplex, aber die Notwendigkeit, die Armut und Prekarisierung in Deutschland anzugehen, ist klar.\n\nEin Mindestlohn von €15 pro Stunde ist nicht nur ein politisches Ziel, sondern ein notwendiges Mittel, um die soziale Gerechtigkeit in Deutschland zu verbessern. Wir müssen uns nicht nur auf die wirtschaftlichen Aspekte konzentrieren, sondern auch auf die menschlichen Bedürfnisse. Viele Menschen in Deutschland",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiquing the CDU/CSU's 'flexible Lösung' without resorting to personal attacks or inflammatory language, thus scoring a 4 for being professional and respectful throughout.",
+        "relevance": "The turn directly addresses the debate topic of the Mindestlohn and its implications, staying focused on the issue at hand and advancing the discussion, which warrants a score of 5 for being precisely targeted and deepening the discussion.",
+        "logical_consistency": "The argument is generally coherent, connecting the need for a higher Mindestlohn with the goal of improving soziale Gerechtigkeit, but lacks a rigorous logical chain, hence a score of 4 for internal consistency with minor gaps.",
+        "argument_strength": "The turn provides well-supported claims, emphasizing the necessity of a €15 pro Stunde Mindestlohn for addressing Armut and Prekarisierung, but could benefit from more specific evidence or mechanisms, resulting in a score of 4 for being well-supported but not compelling.",
+        "document_grounding": "The argument reflects Die Linke's known position on the Mindestlohn, aligning with their documented stance on soziale Gerechtigkeit and the need for a higher Mindestlohn, thus scoring a 4 for clearly reflecting documented party positions.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's 'flexible Lösung', questioning its meaning and implementation, demonstrating a high level of responsiveness to the preceding argument, which merits a score of 5 for naming the specific party and claim being addressed.",
+        "stance_differentiation": "The turn unmistakably represents Die Linke's distinct ideological position, emphasizing the importance of soziale Gerechtigkeit and the need for a significant increase in the Mindestlohn, scoring a 5 for being unmistakably distinct in reasoning, vocabulary, and priorities."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 8403,
+      "token_count_output": 684,
+      "latency_s": 2.9459999999999997,
+      "timestamp": "2026-06-25T14:01:43.879091Z"
+    },
+    {
+      "turn_id": "30b2d7bf-ecf5-471a-86ac-afc44970cd95",
+      "round_number": 3,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "Meine Damen und Herren, es ist höchste Zeit, dass wir in diesem Debattenraum die Wahrheit über die Mindestlohnpolitik in Deutschland aussprechen. Wir sprechen nicht über die wirtschaftlichen Aspekte, sondern über die menschlichen Bedürfnisse. Viele Menschen in Deutschland leben noch immer unter dem Armutsrisiko, und die prekären Arbeitsverhältnisse halten an.\n\nWir in der AfD glauben, dass der jetzige Mindestlohn von €12,82 pro Stunde ein wichtiger Schritt zur Förderung von Wettbewerb und Wirtschaftswachstum in Deutschland ist. Aber wir müssen uns auch fragen, ob ein Mindestlohn von €15 pro Stunde die richtige Antwort ist, um die Armut in Deutschland anzugehen. Die Erfahrung zeigt, dass eine starre Politik, die die Flexibilität unserer Unternehmen und",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, avoiding personal attacks or inflammatory language, thus scoring a 4 for civility. The language used is respectful and focused on the topic.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage, discussing its potential impact on poverty and precarious working conditions, making it relevant and scoring a 4.",
+        "logical_consistency": "The argument is generally coherent but lacks a clear logical structure connecting premises to conclusions about the minimum wage's effectiveness, scoring a 3 for logical consistency.",
+        "argument_strength": "The turn provides some reasoning but relies on general statements about the need for flexibility and the potential negative impacts of a higher minimum wage without specific evidence, scoring a 3 for argument strength.",
+        "document_grounding": "The turn reflects the AfD's known position on promoting competition and economic growth, aligning with their documented stances, thus scoring a 4 for document grounding.",
+        "responsiveness": "The turn acknowledges the broader debate context but does not directly engage with specific arguments made by other parties, scoring a 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly reflects the AfD's distinct perspective on economic policy, emphasizing the importance of competition and flexibility, thus scoring a 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 8613,
+      "token_count_output": 552,
+      "latency_s": 2.229,
+      "timestamp": "2026-06-25T14:01:46.847407Z"
+    }
+  ],
+  "interventions": [],
+  "round_summaries": [],
+  "total_tokens_input": 106181,
+  "total_tokens_output": 10725,
+  "total_latency_s": 43.06,
+  "started_at": "2026-06-25T14:01:05.878272Z",
+  "finished_at": "2026-06-25T14:01:48.346875Z"
+}
