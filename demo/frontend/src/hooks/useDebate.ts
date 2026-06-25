@@ -19,6 +19,7 @@ export function useDebate(debateId: string | null) {
   const [info, setInfo] = useState<DebateInfo | null>(null);
   const [timeline, setTimeline] = useState<TimelineItem[]>([]);
   const [roundSummaries, setRoundSummaries] = useState<RoundSummary[]>([]);
+  const [debateConfig, setDebateConfig] = useState<Record<string, unknown> | null>(null);
   const [connected, setConnected] = useState(false);
   const wsRef = useRef<WebSocket | null>(null);
   const currentRoundRef = useRef(0);
@@ -55,6 +56,7 @@ export function useDebate(debateId: string | null) {
       }
       setTimeline(items);
       setRoundSummaries(t.round_summaries);
+      setDebateConfig(t.config);
       currentRoundRef.current = lastRound;
     }).catch(console.error);
   }, [debateId]);
@@ -136,5 +138,5 @@ export function useDebate(debateId: string | null) {
     }
   }, []);
 
-  return { info, timeline, roundSummaries, connected, sendPing };
+  return { info, timeline, roundSummaries, debateConfig, connected, sendPing };
 }

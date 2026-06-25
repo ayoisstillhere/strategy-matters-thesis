@@ -27,6 +27,7 @@ See also:
 from __future__ import annotations
 
 import logging
+import re
 import uuid
 from datetime import datetime, timezone
 from typing import Optional
@@ -81,6 +82,13 @@ class PoliticalAgent:
                 "\n\n**IMPORTANT: You MUST write your entire response in German "
                 "(Deutsch). All debate contributions must be in German.**\n"
             )
+        else:
+            self.system_prompt += (
+                "\n\n**IMPORTANT: You MUST write your entire response in English. "
+                "Even though the debate concerns German politics and your party "
+                "name is in German, all your debate contributions must be written "
+                "in English.**\n"
+            )
 
     def generate_turn(
         self,
@@ -134,13 +142,16 @@ class PoliticalAgent:
             temperature=self.temperature,
         )
 
-        # 4. Build Turn
+        # 4. Clean text — strip echoed transcript prefix patterns
+        clean_text = self._strip_prefix(resp.text)
+
+        # 5. Build Turn
         turn = Turn(
             turn_id=str(uuid.uuid4()),
             round_number=round_number,
             turn_in_round=turn_in_round,
             agent_name=self.party,
-            text=resp.text,
+            text=clean_text,
             rag_passages_used=rag_passages_used,
             token_count_input=resp.input_tokens,
             token_count_output=resp.output_tokens,
@@ -153,6 +164,21 @@ class PoliticalAgent:
             f"{resp.output_tokens} tokens, {resp.latency_s:.2f}s"
         )
         return turn
+
+    @staticmethod
+    def _strip_prefix(text: str) -> str:
+        """Remove echoed transcript-format prefixes from LLM output.
+
+        The LLM sometimes mimics the transcript format used in the user prompt,
+        e.g. '**[CDU/CSU]** (Round 2): ...' or '**[SPD]** (Round 1) ...'
+        """
+        # Pattern: **[AnyParty]** (Round N): or **[AnyParty]** (Round N)
+        cleaned = re.sub(
+            r"^\*\*\[.+?\]\*\*\s*\(Round\s*\d+\)[:\s]*",
+            "",
+            text.strip(),
+        )
+        return cleaned.strip()
 
     def _assemble_user_prompt(
         self,

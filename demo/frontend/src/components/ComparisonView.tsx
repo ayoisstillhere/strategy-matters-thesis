@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { getConditions, getTopics, startDebate } from "../api";
+import { getConditions, getTopics, startDebate, injectIntervention } from "../api";
 import { useDebate } from "../hooks/useDebate";
 import TurnCard from "./TurnCard";
 import InterventionCard from "./InterventionCard";
 // ScorePanel used inline via MiniProgress
 import type { ConditionConfig, TopicConfig } from "../types";
 import { TOPIC_LABELS, DIMENSIONS, getScoreBarColor } from "../constants";
-import { ArrowLeft, Play } from "lucide-react";
+import { ArrowLeft, Play, Send } from "lucide-react";
 
 function MiniProgress({ info, roundSummaries }: { info: any; roundSummaries: any[] }) {
   const progress = info
@@ -33,7 +33,7 @@ function MiniProgress({ info, roundSummaries }: { info: any; roundSummaries: any
       {/* Mini scores */}
       {latestSummary?.scores && (
         <div className="grid grid-cols-2 gap-1 mt-2">
-          {DIMENSIONS.slice(0, 4).map((dim) => {
+          {DIMENSIONS.map((dim) => {
             const score = latestSummary.scores[dim.key] ?? 0;
             return (
               <div key={dim.key} className="flex items-center gap-1">
@@ -68,6 +68,10 @@ export default function ComparisonView() {
   const [debateIdA, setDebateIdA] = useState<string | null>(null);
   const [debateIdB, setDebateIdB] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const [injectionA, setInjectionA] = useState("");
+  const [injectionB, setInjectionB] = useState("");
+  const [injectingA, setInjectingA] = useState(false);
+  const [injectingB, setInjectingB] = useState(false);
 
   const debateA = useDebate(debateIdA);
   const debateB = useDebate(debateIdB);
@@ -195,13 +199,48 @@ export default function ComparisonView() {
                 A: {debateA.info?.condition_label ?? conditionA}
               </span>
             </div>
+            {/* Injection bar A */}
+            {debateA.info?.status === "running" && debateIdA && (
+              <div className="flex items-center gap-2 px-3 py-2 border-b border-gray-100 bg-gray-50">
+                <input
+                  type="text"
+                  value={injectionA}
+                  onChange={(e) => setInjectionA(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" && injectionA.trim()) {
+                      setInjectingA(true);
+                      injectIntervention(debateIdA, injectionA.trim()).then(() => setInjectionA("")).finally(() => setInjectingA(false));
+                    }
+                  }}
+                  placeholder="Inject intervention..."
+                  className="flex-1 text-xs px-2 py-1 border border-gray-300 rounded"
+                  disabled={injectingA}
+                />
+                <button
+                  onClick={() => {
+                    if (!injectionA.trim()) return;
+                    setInjectingA(true);
+                    injectIntervention(debateIdA, injectionA.trim()).then(() => setInjectionA("")).finally(() => setInjectingA(false));
+                  }}
+                  disabled={injectingA || !injectionA.trim()}
+                  className="text-blue-600 hover:text-blue-800 disabled:text-gray-300"
+                >
+                  <Send size={14} />
+                </button>
+              </div>
+            )}
             <MiniProgress info={debateA.info} roundSummaries={debateA.roundSummaries} />
             <div className="flex-1 overflow-y-auto px-4 pb-4">
               {/* Topic framing */}
-              {topicLabel && (
+              {(topicLabel || debateA.debateConfig) && (
                 <div className="mb-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
-                  <p className="text-xs font-semibold text-blue-700 dark:text-blue-300 uppercase mb-1">Debate Question</p>
-                  <p className="text-sm text-blue-900 dark:text-blue-100">{topicLabel.title}</p>
+                  <p className="text-xs font-semibold text-blue-700 dark:text-blue-300 uppercase mb-1">Debate Framing</p>
+                  {topicLabel && <p className="text-sm font-medium text-blue-900 dark:text-blue-100">{topicLabel.title}</p>}
+                  {debateA.debateConfig?.framing_prompt ? (
+                    <p className="text-xs text-blue-800 dark:text-blue-200 mt-1 leading-relaxed">
+                      {String(debateA.debateConfig.framing_prompt)}
+                    </p>
+                  ) : null}
                 </div>
               )}
               <div className="space-y-3 max-w-xl mx-auto">
@@ -230,13 +269,48 @@ export default function ComparisonView() {
                 B: {debateB.info?.condition_label ?? conditionB}
               </span>
             </div>
+            {/* Injection bar B */}
+            {debateB.info?.status === "running" && debateIdB && (
+              <div className="flex items-center gap-2 px-3 py-2 border-b border-gray-100 bg-gray-50">
+                <input
+                  type="text"
+                  value={injectionB}
+                  onChange={(e) => setInjectionB(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" && injectionB.trim()) {
+                      setInjectingB(true);
+                      injectIntervention(debateIdB, injectionB.trim()).then(() => setInjectionB("")).finally(() => setInjectingB(false));
+                    }
+                  }}
+                  placeholder="Inject intervention..."
+                  className="flex-1 text-xs px-2 py-1 border border-gray-300 rounded"
+                  disabled={injectingB}
+                />
+                <button
+                  onClick={() => {
+                    if (!injectionB.trim()) return;
+                    setInjectingB(true);
+                    injectIntervention(debateIdB, injectionB.trim()).then(() => setInjectionB("")).finally(() => setInjectingB(false));
+                  }}
+                  disabled={injectingB || !injectionB.trim()}
+                  className="text-green-600 hover:text-green-800 disabled:text-gray-300"
+                >
+                  <Send size={14} />
+                </button>
+              </div>
+            )}
             <MiniProgress info={debateB.info} roundSummaries={debateB.roundSummaries} />
             <div className="flex-1 overflow-y-auto px-4 pb-4">
               {/* Topic framing */}
-              {topicLabel && (
+              {(topicLabel || debateB.debateConfig) && (
                 <div className="mb-4 p-3 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800">
-                  <p className="text-xs font-semibold text-green-700 dark:text-green-300 uppercase mb-1">Debate Question</p>
-                  <p className="text-sm text-green-900 dark:text-green-100">{topicLabel.title}</p>
+                  <p className="text-xs font-semibold text-green-700 dark:text-green-300 uppercase mb-1">Debate Framing</p>
+                  {topicLabel && <p className="text-sm font-medium text-green-900 dark:text-green-100">{topicLabel.title}</p>}
+                  {debateB.debateConfig?.framing_prompt ? (
+                    <p className="text-xs text-green-800 dark:text-green-200 mt-1 leading-relaxed">
+                      {String(debateB.debateConfig.framing_prompt)}
+                    </p>
+                  ) : null}
                 </div>
               )}
               <div className="space-y-3 max-w-xl mx-auto">

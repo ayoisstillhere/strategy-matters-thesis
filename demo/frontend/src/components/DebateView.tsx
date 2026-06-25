@@ -11,7 +11,7 @@ import { ArrowLeft, Send, Wifi, WifiOff } from "lucide-react";
 export default function DebateView() {
   const { debateId } = useParams<{ debateId: string }>();
   const navigate = useNavigate();
-  const { info, timeline, roundSummaries, connected } = useDebate(debateId ?? null);
+  const { info, timeline, roundSummaries, debateConfig, connected } = useDebate(debateId ?? null);
   const [injectionText, setInjectionText] = useState("");
   const [injecting, setInjecting] = useState(false);
   const transcriptEndRef = useRef<HTMLDivElement>(null);
@@ -117,14 +117,39 @@ export default function DebateView() {
             </div>
           )}
 
-          {/* Topic framing card */}
-          {topicLabel && (
-            <div className="max-w-3xl mx-auto mb-4 p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg border border-indigo-200 dark:border-indigo-800">
-              <p className="text-xs font-semibold text-indigo-700 dark:text-indigo-300 uppercase mb-1">Debate Question</p>
-              <p className="text-base text-indigo-900 dark:text-indigo-100 font-medium">{topicLabel.title}</p>
-              {topicLabel.subtitle && (
-                <p className="text-sm text-indigo-700 dark:text-indigo-300 mt-1">{topicLabel.subtitle}</p>
+          {/* Topic framing card — shows what agents were actually told */}
+          {(topicLabel || debateConfig) && (
+            <div className="max-w-3xl mx-auto mb-6 p-5 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg border border-indigo-200 dark:border-indigo-800">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-xs font-bold text-indigo-700 dark:text-indigo-300 uppercase tracking-wide">
+                  Debate Framing
+                </span>
+                {info && (
+                  <span className="text-[10px] px-2 py-0.5 rounded-full bg-indigo-100 dark:bg-indigo-800 text-indigo-600 dark:text-indigo-300 font-medium">
+                    {info.condition_label}
+                  </span>
+                )}
+              </div>
+              {topicLabel && (
+                <h3 className="text-base font-semibold text-indigo-900 dark:text-indigo-100 mb-1">
+                  {topicLabel.title}
+                  {topicLabel.subtitle && (
+                    <span className="text-sm font-normal text-indigo-600 dark:text-indigo-300 ml-2">
+                      ({topicLabel.subtitle})
+                    </span>
+                  )}
+                </h3>
               )}
+              {debateConfig?.framing_prompt ? (
+                <p className="text-sm text-indigo-800 dark:text-indigo-200 leading-relaxed mt-2">
+                  {String(debateConfig.framing_prompt)}
+                </p>
+              ) : null}
+              {debateConfig?.language ? (
+                <p className="text-[10px] text-indigo-500 mt-2">
+                  Language: {String(debateConfig.language) === "de" ? "Deutsch" : "English"}
+                </p>
+              ) : null}
             </div>
           )}
 

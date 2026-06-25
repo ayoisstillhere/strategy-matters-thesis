@@ -191,6 +191,7 @@ def get_transcript(debate_id: str) -> TranscriptResponse:
             "condition_label": session.condition_label,
             "num_rounds": session.num_rounds,
             "language": session.language,
+            "framing_prompt": FRAMING_PROMPTS.get(session.topic_id, ""),
         },
         turns=turns,
         interventions=interventions,
