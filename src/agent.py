@@ -169,14 +169,27 @@ class PoliticalAgent:
     def _strip_prefix(text: str) -> str:
         """Remove echoed transcript-format prefixes from LLM output.
 
-        The LLM sometimes mimics the transcript format used in the user prompt,
-        e.g. '**[CDU/CSU]** (Round 2): ...' or '**[SPD]** (Round 1) ...'
+        The LLM mimics transcript formatting in various ways:
+          **[CDU/CSU]** (Round 2): ...
+          **FDP (Round 10)** ...
+          **CDU/CSU** (Round 2) ...
+          **Die Linke** (Round 3): ...
         """
-        # Pattern: **[AnyParty]** (Round N): or **[AnyParty]** (Round N)
+        cleaned = text.strip()
+        # 1. **[Party]** (Round N):  or  **[Party]** (Round N)
         cleaned = re.sub(
             r"^\*\*\[.+?\]\*\*\s*\(Round\s*\d+\)[:\s]*",
-            "",
-            text.strip(),
+            "", cleaned,
+        )
+        # 2. **Party (Round N)**  (round info inside the bold)
+        cleaned = re.sub(
+            r"^\*\*.+?\(Round\s*\d+\)\*\*[:\s]*",
+            "", cleaned,
+        )
+        # 3. **Party** (Round N):  (no brackets, round outside bold)
+        cleaned = re.sub(
+            r"^\*\*.+?\*\*\s*\(Round\s*\d+\)[:\s]*",
+            "", cleaned,
         )
         return cleaned.strip()
 
