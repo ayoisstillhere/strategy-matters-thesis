@@ -75,19 +75,19 @@ class TriggerResult:
 #   Fire when ANY agent's score on the target dimension falls below threshold.
 #
 # Compound trigger (strategy D — common-ground):
-#   Fire when stance_differentiation > 4.0 AND responsiveness < 2.5
+#   Fire when stance_differentiation > 3 AND responsiveness < 4
 #   for 2 or more agents in the current round.
 
 SIMPLE_TRIGGERS = {
-    "de-escalation": {"dimension": "civility",           "threshold": 2.0},
-    "reframing":     {"dimension": "responsiveness",     "threshold": 2.0},
-    "fact-reminder": {"dimension": "document_grounding", "threshold": 2.0},
+    "de-escalation": {"dimension": "civility",           "threshold": 4},
+    "reframing":     {"dimension": "responsiveness",     "threshold": 4},
+    "fact-reminder": {"dimension": "document_grounding", "threshold": 4},
 }
 
 COMMON_GROUND_TRIGGER = {
-    "stance_min": 4.0,        # stance_differentiation must be ABOVE this
-    "responsiveness_max": 2.5, # responsiveness must be BELOW this
-    "min_agents": 2,           # at least this many agents must meet both
+    "stance_min": 3,          # stance_differentiation must be ABOVE this
+    "responsiveness_max": 4,  # responsiveness must be BELOW this
+    "min_agents": 2,          # at least this many agents must meet both
 }
 
 
@@ -176,7 +176,7 @@ def rule_based_check(
         return _check_common_ground_trigger(round_scores)
 
     if strategy == "random":
-        # Baseline 4: uses a generic trigger — any primary dimension below 2.0.
+        # Baseline 4: uses a generic trigger — any primary dimension below 4.
         # Primary dimensions: civility, argument_strength, document_grounding,
         # responsiveness, stance_differentiation.
         primary_dims = [
@@ -185,7 +185,7 @@ def rule_based_check(
         ]
         for dim in primary_dims:
             value = current_scores.get(dim)
-            if value is not None and value < 2.0:
+            if value is not None and value < 4:
                 return True, dim, float(value)
         return False, None, None
 

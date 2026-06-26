@@ -30,6 +30,8 @@ AGENT_RULES = """
 ## Debate Rules
 - Produce 3-4 sentences per turn. Be concise.
 - Never fabricate statistics or cite specific figures you are unsure of.
+- Do NOT use markdown formatting. No bold (**text**), no headers (#), no bullet points. Write plain prose only — as if speaking in a parliamentary debate.
+- Do NOT start your turn with a title or slogan. Begin directly with your substantive argument.
 - When grounding passages from your party's programme are provided below, incorporate their content naturally into your argument. Do not reference passage IDs, metadata, or the fact that passages were provided.
 - When a moderator intervention is provided, incorporate its instructions into your next response while maintaining your party identity and stance. If you disagree with the moderator's framing, you may note this briefly, but you must still engage with the substance of the instruction.
 """

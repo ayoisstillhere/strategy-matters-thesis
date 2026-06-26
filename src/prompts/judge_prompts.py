@@ -172,8 +172,8 @@ TRIGGER_JUDGE_SYSTEM_PROMPT = """You are a discourse quality judge performing a 
 Evaluate the specified dimension(s) ONLY. You are not scoring all 7 dimensions — you are confirming or rejecting a trigger signal. Be strict: only confirm the trigger if the turn genuinely fails on the specified dimension based on the rubric anchors below.
 
 ## Calibration
-- A score of 1-2 confirms the trigger (genuine quality failure).
-- A score of 3+ rejects the trigger (quality is adequate despite the initial signal).
+- A score of 1-3 confirms the trigger (quality is below good levels and would benefit from moderator intervention).
+- A score of 4+ rejects the trigger (quality is good enough that no intervention is needed).
 - Apply the anchors literally. Do not inflate scores.
 
 ## Dimension Rubrics (abbreviated)
@@ -192,7 +192,7 @@ Respond with ONLY valid JSON:
 {
   "dimension": "<the dimension being evaluated>",
   "score": <int 1-5>,
-  "trigger_confirmed": <boolean — true if score <= 2>,
+  "trigger_confirmed": <boolean — true if score <= 3>,
   "justification": "<1-2 sentences explaining the score with textual evidence>"
 }
 """

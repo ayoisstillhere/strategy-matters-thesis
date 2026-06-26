@@ -167,13 +167,15 @@ class PoliticalAgent:
 
     @staticmethod
     def _strip_prefix(text: str) -> str:
-        """Remove echoed transcript-format prefixes from LLM output.
+        """Remove echoed transcript-format prefixes and bold markdown
+        titles from LLM output.
 
-        The LLM mimics transcript formatting in various ways:
+        Known patterns:
           **[CDU/CSU]** (Round 2): ...
           **FDP (Round 10)** ...
           **CDU/CSU** (Round 2) ...
           **Die Linke** (Round 3): ...
+          **Solidarity with the Vulnerable: A Necessary Wealth Tax** ...
         """
         cleaned = text.strip()
         # 1. **[Party]** (Round N):  or  **[Party]** (Round N)
@@ -189,6 +191,13 @@ class PoliticalAgent:
         # 3. **Party** (Round N):  (no brackets, round outside bold)
         cleaned = re.sub(
             r"^\*\*.+?\*\*\s*\(Round\s*\d+\)[:\s]*",
+            "", cleaned,
+        )
+        # 4. Bold markdown title line: **Some Title Here**\n...
+        #    Only strip if it's a short title-like line (< 120 chars)
+        #    followed by actual content
+        cleaned = re.sub(
+            r"^\*\*[^*]{3,120}\*\*\s*\n?",
             "", cleaned,
         )
         return cleaned.strip()
