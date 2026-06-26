@@ -1,0 +1,941 @@
+{
+  "run_id": "0d1c956c-0a5e-4334-a77e-7833bfdd5cc0",
+  "config": {
+    "topic_id": "sozialpolitik",
+    "topic_type": "values-driven",
+    "framing_prompt": "According to the Deutsche Bundesbank, the wealthiest 10% of households in Germany hold over 60% of total net wealth, while the bottom 50% hold less than 3%. At the same time, Germany has no net wealth tax (the Vermögensteuer has been suspended since 1997) and inheritance tax revenues remain modest relative to GDP. Discuss whether the government should introduce a wealth tax, reform the inheritance tax, or pursue alternative redistribution mechanisms — and what effects such policies would have on economic growth, investment, and social cohesion. Ground your arguments in your party's documented positions.",
+    "condition_id": "baseline_1",
+    "condition_label": "None",
+    "condition_type": "baseline",
+    "run_number": 1,
+    "agent_model": "llama-3.1-8b-instant",
+    "judge_model": "llama-3.3-70b-versatile",
+    "moderator_model": "",
+    "num_rounds": 5,
+    "num_agents": 6,
+    "max_interventions": 3,
+    "silent_control_rate": 0.2,
+    "turn_order": [
+      "CDU/CSU",
+      "SPD",
+      "Bündnis 90/Die Grünen",
+      "FDP",
+      "Die Linke",
+      "AfD"
+    ],
+    "has_moderator_agent": false,
+    "uses_trigger": false,
+    "trigger_strategy": null,
+    "nudge_text": "",
+    "language": "en"
+  },
+  "turns": [
+    {
+      "turn_id": "559dd5cd-8149-458d-a796-c94f7942356a",
+      "round_number": 1,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "Honorable members of the debate, distinguished guests, and fellow citizens of Germany, I am here today to represent the CDU/CSU and to discuss the pressing issue of wealth inequality in our country. As a party that values social market economy and fiscal responsibility, we acknowledge the need to address the disparities in wealth distribution. However, we must do so in a way that respects the principles of fairness, efficiency, and sustainability.\n\nIn our party's view, a wealth tax, as it stands, is not an effective solution to address wealth inequality. Experience from other countries has shown that wealth taxes often lead to tax evasion, discourage investment, and undermine economic growth. In fact, the Mittelstand, which has been a driving force behind Germany's economic prosperity, would be disproportionately affected by such a tax. \n\nInstead, we propose reforming the inheritance tax to make it more progressive and socially responsible. By adjusting the tax rates and exemptions, we can ensure that those who inherit large fortunes contribute their",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains an exemplary parliamentary tone, addressing the audience with respect and dignity, and avoids any form of personal attack or inflammatory language.",
+        "relevance": "The turn is precisely targeted at the debate topic of sozialpolitik, specifically addressing wealth inequality and proposing an alternative solution to a wealth tax.",
+        "logical_consistency": "The argument is generally coherent, presenting a clear position against a wealth tax and in favor of reforming the inheritance tax, though it could be strengthened by addressing potential counterarguments more directly.",
+        "argument_strength": "The turn provides well-supported claims, citing the potential negative effects of a wealth tax and the benefits of a more progressive inheritance tax, but could be further strengthened by more specific data or expert opinions.",
+        "document_grounding": "The proposal to reform the inheritance tax aligns with the CDU/CSU's known positions on social market economy and fiscal responsibility, though a direct reference to their party programme would make this clearer.",
+        "responsiveness": "As the first turn, there are no preceding arguments to respond to, making it adequate by default in this context.",
+        "stance_differentiation": "The turn unmistakably reflects the CDU/CSU's distinct party identity, emphasizing social market economy principles, fiscal responsibility, and a specific alternative policy solution that distinguishes it from other parties."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 2644,
+      "token_count_output": 562,
+      "latency_s": 2.083,
+      "timestamp": "2026-06-26T06:24:18.176809Z"
+    },
+    {
+      "turn_id": "bf9cae34-8bc5-48ee-a6b7-be958526ded5",
+      "round_number": 1,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "We must confront the stark reality of wealth inequality in Germany, where the wealthiest 10% hold a staggering 60% of total net wealth. The current lack of a net wealth tax and modest inheritance tax revenues only exacerbate this problem. As the party of social justice and solidarity, we firmly believe that a wealth tax is not only a necessary but also a just measure to address this issue.\n\nOur party's programme emphasizes the importance of a strong and progressive tax system, which should not only raise revenue but also serve as a tool for social redistribution. A wealth tax would help reduce the concentration of wealth, increase tax fairness, and provide a much-needed injection of revenue for social programmes and public services. This is not about discouraging investment or penalizing the Mittelstand, but about ensuring that those who have accumulated vast wealth contribute their fair share to the common good.\n\nIn fact, many European countries, such as Sweden and France, have successfully implemented wealth taxes without harming their economies. It's time",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without attacking the opposing party directly, which aligns with a score of 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of sozialpolitik, specifically addressing wealth inequality and the proposal of a wealth tax, making it highly relevant.",
+        "logical_consistency": "The argument is generally coherent, connecting the need for a wealth tax to the issue of wealth inequality and the goal of social redistribution, though it could be strengthened by addressing potential counterarguments more directly.",
+        "argument_strength": "The turn presents a compelling argument supported by specific evidence, such as the concentration of wealth among the top 10% and the successful implementation of wealth taxes in other European countries, making the argument strong.",
+        "document_grounding": "The SPD's stance on a wealth tax and emphasis on social justice and solidarity are directly anchored in the party's known positions, reflecting a strong connection to documented party policies.",
+        "responsiveness": "While the turn references the general opposition to a wealth tax, it does not directly engage with the specific arguments made by the CDU/CSU, such as the potential for tax evasion or the impact on the Mittelstand, thus scoring 3 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the SPD's distinct ideological position, emphasizing social justice, solidarity, and a progressive tax system, which clearly differentiates it from other parties."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 3087,
+      "token_count_output": 593,
+      "latency_s": 2.1270000000000002,
+      "timestamp": "2026-06-26T06:24:20.252946Z"
+    },
+    {
+      "turn_id": "c91b626a-f522-434a-9da5-3f8bd7b0e249",
+      "round_number": 1,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "The alarming levels of wealth inequality in Germany, where the top 10% hold an overwhelming 60% of total net wealth, require a comprehensive and progressive response. The lack of a net wealth tax and modest inheritance tax revenues is a glaring gap in our tax system, perpetuating social injustice and undermining the social contract. As the party of ecological sustainability and social justice, we firmly believe that a wealth tax is an essential step towards a more equitable society.\n\nA wealth tax would not only help to redistribute wealth but also provide a much-needed injection of revenue for public services, social programmes, and environmental protection. This is not a zero-sum game, where wealth tax revenue would come at the expense of economic growth. In fact, a wealth tax can be designed to be neutral or even stimulative to economic growth by exempting small and medium-sized enterprises, family businesses, and individual entrepreneurs.\n\nOur party's programme emphasizes the importance of a strong and progressive tax system that prioritizes social justice and environmental sustainability.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of sozialpolitik, addressing wealth inequality and the need for a wealth tax, making it a 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, although it could be strengthened with more specific examples or counterarguments, warranting a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and referenced evidence, such as the potential to design a wealth tax that is neutral or stimulative to economic growth, earning a score of 4.",
+        "document_grounding": "The turn clearly reflects Bündnis 90/Die Grünen's documented positions on ecological sustainability and social justice, aligning with their party programme, which merits a score of 4.",
+        "responsiveness": "While the turn references the general debate context, it does not directly engage with the specific arguments made by the preceding speakers, such as CDU/CSU's concerns about tax evasion or SPD's examples from other European countries, resulting in a score of 3.",
+        "stance_differentiation": "The turn unmistakably reflects Bündnis 90/Die Grünen's distinct party identity and ideological position, emphasizing ecological sustainability and social justice, which no other party in this debate would express in the same manner, deserving a score of 5."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 3533,
+      "token_count_output": 614,
+      "latency_s": 2.004,
+      "timestamp": "2026-06-26T06:24:22.425195Z"
+    },
+    {
+      "turn_id": "d537eb1e-acc0-42ae-8696-28015cfba175",
+      "round_number": 1,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "We cannot afford to be naive about the impact of wealth taxes on investment and economic growth. In a globalized economy, capital is highly mobile, and the threat of a wealth tax can lead to a flight of capital from Germany to more friendly jurisdictions. This is a risk we cannot take, especially when our economy is highly dependent on foreign investment and exports.\n\nIn our view, the FDP's proposal for a flat tax rate across all income groups is a more effective way to boost investment and economic growth. By lowering taxes for all, we create a more level playing field for entrepreneurs and businesses of all sizes, which in turn encourages innovation, job creation, and economic dynamism.\n\nWe also need to be cautious about the unintended consequences of a wealth tax on social cohesion. While it may seem appealing to redistribute wealth, a wealth tax can create a sense of resentment among those who work hard and invest their savings, but still do not have the same level of wealth as others. This can erode the",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques policies without personal attacks, and does not use inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of wealth inequality and taxation, providing a clear alternative proposal, which makes it relevant and scores a 4.",
+        "logical_consistency": "The argument is internally consistent, presenting a clear logic against wealth taxes and for a flat tax rate, with considerations for economic and social impacts, scoring a 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning about the potential negative impacts of wealth taxes on investment and economic growth, scoring a 4 for argument strength.",
+        "document_grounding": "While the turn reflects general principles that could align with the FDP's known positions, such as favoring lower taxes and promoting economic growth, it lacks direct references to specific FDP documented positions or policies, thus scoring a 3.",
+        "responsiveness": "The turn acknowledges the general debate about wealth taxes but does not directly engage with the specific arguments made by the preceding speakers, scoring a 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly reflects the FDP's distinct ideological position, emphasizing the importance of low taxes for economic growth and cautioning against the potential negative social and economic consequences of wealth taxes, which differentiates it from other parties, scoring a 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 3965,
+      "token_count_output": 580,
+      "latency_s": 2.306,
+      "timestamp": "2026-06-26T06:24:24.413085Z"
+    },
+    {
+      "turn_id": "b29e1223-7dec-44ce-8fb0-659269ea85d7",
+      "round_number": 1,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Wealth inequality in Germany is a cancer that threatens the very fabric of our society. The wealthiest 10% holding over 60% of total net wealth is a stark reminder of the failed social market economy that has left millions behind. \n\nA wealth tax is not just a necessary measure, but a moral imperative. It's a question of fairness and justice. Those who accumulate vast wealth through speculation, inheritance, or exploitation must contribute their fair share to the common good. A wealth tax will not only raise revenue for social programmes and public services but also help to break the cycle of wealth concentration and reduce poverty.\n\nWe must not fall for the false promise of the CDU/CSU's inheritance tax reform. By making the tax more progressive, they aim to placate the growing discontent among the population. However, their proposal will only serve to further entrench the existing power structures, allowing the wealthy to maintain their grip on the economy.\n\nA wealth tax, on the other hand, will unleash a",
+      "scores": {
+        "civility": 3,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, avoiding direct insults or inflammatory language, but uses strong metaphors like 'cancer' to describe wealth inequality, which keeps it at an adequate level of civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of wealth inequality and the discussion of a wealth tax, making it highly relevant and advancing the discussion.",
+        "logical_consistency": "The argument is generally coherent, connecting the need for a wealth tax with the goal of reducing wealth concentration and poverty, though it could be strengthened with more specific mechanisms or evidence.",
+        "argument_strength": "The turn provides a clear rationale for a wealth tax, emphasizing fairness and the need to address wealth inequality, and critiques the CDU/CSU's proposal, but lacks detailed evidence or data to fully support its claims.",
+        "document_grounding": "The turn aligns with Die Linke's known positions on social justice and wealth inequality, reflecting the party's commitment to addressing these issues, though specific references to their programme or previous statements could strengthen this aspect.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's proposal for inheritance tax reform, critiquing it as insufficient and arguing that a wealth tax is a more effective solution, demonstrating a clear response to preceding arguments.",
+        "stance_differentiation": "The language and arguments used are unmistakably those of Die Linke, emphasizing social justice, critiquing the existing economic order, and advocating for a wealth tax, which clearly distinguishes the party's stance from others in the debate."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 4416,
+      "token_count_output": 609,
+      "latency_s": 2.364,
+      "timestamp": "2026-06-26T06:24:26.719601Z"
+    },
+    {
+      "turn_id": "ebb9082c-05ce-4697-a3b9-a26d85730bc0",
+      "round_number": 1,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "Honorable members of the debate, the stark reality of wealth inequality in Germany cannot be ignored. The wealthiest 10% holding over 60% of total net wealth is a direct result of the failed consensus of the Altparteien on taxation and economic policy. While the CDU/CSU proposes to reform the inheritance tax, and the SPD, Greens, and Die Linke advocate for a wealth tax, we in the AfD believe that a more fundamental approach is necessary.\n\nOur party's programme emphasizes the importance of fiscal conservatism, lower taxes, and reduced bureaucracy. We propose to abolish the wealth tax altogether, as it would be a regressive measure that would disproportionately affect the Mittelstand and small businesses. Instead, we advocate for a flat tax rate of 20% across all income groups, which would simplify the tax system, increase transparency, and encourage investment and economic growth.\n\nBy reducing the tax burden on all individuals, we can create a level playing field for entrepreneurs and businesses of",
+      "scores": {
+        "civility": 3,
+        "relevance": 3,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 3,
+        "responsiveness": 3,
+        "stance_differentiation": 3
+      },
+      "justifications": {
+        "civility": "",
+        "relevance": "",
+        "logical_consistency": "",
+        "argument_strength": "",
+        "document_grounding": "",
+        "responsiveness": "",
+        "stance_differentiation": ""
+      },
+      "rag_passages_used": [],
+      "token_count_input": 4836,
+      "token_count_output": 700,
+      "latency_s": 2.7600000000000002,
+      "timestamp": "2026-06-26T06:24:29.157122Z"
+    },
+    {
+      "turn_id": "94a28eae-a819-4da3-8386-7063ca344ac1",
+      "round_number": 2,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "As a party rooted in the social market economy and committed to fiscal responsibility, we must approach the issue of wealth inequality with a nuanced understanding of its complexities. While the SPD, the Greens, and Die Linke advocate for a wealth tax, we must examine the potential consequences of such a policy on economic growth, investment, and social cohesion. The experience of other countries, such as France, which implemented a wealth tax but struggled to raise sufficient revenue, serves as a sobering reminder of the challenges associated with this approach.\n\nAs an alternative, our proposal to reform the inheritance tax, grounded in the principles of fairness and social responsibility, offers a more targeted and effective solution. By adjusting tax rates and exemptions, we can ensure that those who inherit large fortunes contribute their fair share to the common good, without discouraging investment or penalizing the Mittelstand. This approach also aligns with our party's commitment to the social market economy, which values the role of private enterprise in creating prosperity while acknowledging the",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without attacking parties or individuals directly, which aligns with a score of 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of wealth inequality and sozialpolitik, addressing the issue directly and advancing the discussion with specific policy proposals, thus scoring 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, presenting a clear alternative to the wealth tax proposal, but lacks rigorous logical chains and anticipation of counterarguments, which warrants a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and references to the experience of other countries, but could be strengthened by more detailed evidence and analysis of the proposed inheritance tax reform, resulting in a score of 4 for argument strength.",
+        "document_grounding": "The proposal to reform the inheritance tax is directly anchored in the CDU/CSU's known positions and values, such as the social market economy and fiscal responsibility, which demonstrates strong document grounding and earns a score of 5.",
+        "responsiveness": "The turn engages with the preceding arguments, specifically addressing the wealth tax proposals of other parties and presenting an alternative, but does not name specific parties or claims in a detailed manner, leading to a score of 4 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the CDU/CSU's distinct party identity and ideological position, emphasizing the social market economy, fiscal responsibility, and a nuanced approach to wealth inequality, which merits a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 5179,
+      "token_count_output": 624,
+      "latency_s": 2.431,
+      "timestamp": "2026-06-26T06:24:31.918694Z"
+    },
+    {
+      "turn_id": "0d1bf432-6a22-488d-a66c-952f5fcccc96",
+      "round_number": 2,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "The stark reality of wealth inequality in Germany is a moral imperative that requires a bold response. A wealth tax is not just a necessary measure, but a just and equitable solution to address the staggering wealth disparities in our society. The wealthiest 10% holding over 60% of total net wealth is a clear indication that our current tax system is failing to distribute wealth fairly.\n\nAs the party of social justice and solidarity, we must prioritize the common good over the interests of the wealthy elite. A wealth tax would help reduce the concentration of wealth, increase tax fairness, and provide a much-needed injection of revenue for social programmes and public services. This is not about penalizing the Mittelstand or discouraging investment, but about ensuring that those who have accumulated vast wealth contribute their fair share to the common good.\n\nIn fact, many European countries, such as Sweden and France, have successfully implemented wealth taxes without harming their economies. It's time for Germany to join this progressive trend and implement a wealth tax that",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without attacking parties or individuals directly, which aligns with a score of 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of wealth inequality and the discussion of a wealth tax, advancing the discussion with specific arguments and examples, thus scoring 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, although it could be strengthened by addressing potential counterarguments more directly, which warrants a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and referenced evidence, such as the example of European countries implementing wealth taxes successfully, earning a score of 4 for argument strength.",
+        "document_grounding": "The turn clearly reflects the SPD's documented positions on social justice, solidarity, and the need for a wealth tax, aligning with the party's known programme content, which deserves a score of 4 for document grounding.",
+        "responsiveness": "While the turn does not directly engage with the specific arguments of the preceding speaker, it does address the broader debate topic and counters some of the general criticisms of a wealth tax, thus receiving a score of 3 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably differentiates the SPD's position from others, using party-specific values, priorities, and framing conventions that are unique to the SPD, such as emphasizing social justice and solidarity, which merits a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 5637,
+      "token_count_output": 613,
+      "latency_s": 2.367,
+      "timestamp": "2026-06-26T06:24:34.223068Z"
+    },
+    {
+      "turn_id": "097dca22-bcc0-44d9-921e-a73dc89d825c",
+      "round_number": 2,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "We live in a moment of great social and ecological crisis, where the concentration of wealth and power has reached unprecedented levels. The wealthiest 10% in Germany hold over 60% of total net wealth, while the bottom 50% hold less than 3%. This staggering divide is a stark reminder of the failure of our economic system to deliver on its promises of prosperity and equality for all. The lack of a net wealth tax and modest inheritance tax revenues only perpetuates this injustice.\n\nA wealth tax is not just a necessary measure, but a moral imperative to address the root causes of wealth concentration and social inequality. By taxing wealth, we can reduce the concentration of power and wealth, increase tax fairness, and provide a much-needed injection of revenue for public services, social programmes, and environmental protection. Our party's programme emphasizes the importance of a strong and progressive tax system that prioritizes social justice and environmental sustainability.\n\nWe must not be swayed by the false promises of the CDU/CSU",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone throughout, critiquing policies without personal attacks, but uses phrases like 'false promises' which slightly diminishes its civility score.",
+        "relevance": "The turn directly addresses the debate topic of wealth inequality and the need for a wealth tax, staying focused and on-point.",
+        "logical_consistency": "The argument is coherent and well-structured, but lacks explicit anticipation of counterarguments or detailed analysis of potential objections.",
+        "argument_strength": "The turn presents a compelling case for a wealth tax, citing the concentration of wealth and the need for social and ecological justice, and grounds its argument in the party's programme.",
+        "document_grounding": "The turn explicitly references the party's programme, emphasizing the importance of a strong and progressive tax system for social justice and environmental sustainability, demonstrating clear document grounding.",
+        "responsiveness": "The turn engages with the preceding arguments, particularly critiquing the CDU/CSU's position, but does not delve deeply into the specifics of their proposals or directly address all previous speakers.",
+        "stance_differentiation": "The turn unmistakably reflects the party's distinct stance on wealth tax, social justice, and environmental sustainability, using language and priorities unique to Bündnis 90/Die Grünen."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 6084,
+      "token_count_output": 550,
+      "latency_s": 3.3979999999999997,
+      "timestamp": "2026-06-26T06:24:36.707898Z"
+    },
+    {
+      "turn_id": "c3e76345-1b63-4a53-b957-f6a11da2aece",
+      "round_number": 2,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "The debate on wealth inequality in Germany is a complex issue, and it's time to cut through the rhetoric and get to the heart of the matter. We can't afford to be naive about the impact of wealth taxes on investment and economic growth. The threat of a wealth tax can lead to a flight of capital from Germany to more favorable jurisdictions, and this is a risk we cannot take, especially when our economy is highly dependent on foreign investment and exports.\n\nInstead of a wealth tax, we should focus on creating a business-friendly environment that encourages investment and innovation. Our proposal for a flat tax rate across all income groups is a more effective way to boost investment and economic growth. By lowering taxes for all, we create a level playing field for entrepreneurs and businesses of all sizes, which in turn encourages innovation, job creation, and economic dynamism.\n\nBut what about the issue of social cohesion? Won't a wealth tax create a sense of resentment among those who work hard and invest their savings, but still",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, avoiding personal attacks or inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of wealth inequality and its potential solutions, making it clearly relevant and focused, hence a score of 4.",
+        "logical_consistency": "The argument presented is coherent and logically consistent, as it outlines the potential risks of a wealth tax and proposes an alternative solution, earning a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the potential for capital flight and the benefits of a flat tax rate, which strengthens its argument to a score of 4.",
+        "document_grounding": "The proposal for a flat tax rate aligns with the FDP's known economic policies, suggesting a strong grounding in the party's documented positions, thus a score of 4.",
+        "responsiveness": "While the turn references the general debate on wealth taxes, it does not directly engage with the specific arguments made by preceding speakers, resulting in a score of 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly reflects the FDP's distinct economic ideology and priorities, differentiating itself from other parties through its advocacy for a flat tax rate and business-friendly environment, scoring a 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 6517,
+      "token_count_output": 561,
+      "latency_s": 3.1479999999999997,
+      "timestamp": "2026-06-26T06:24:40.057992Z"
+    },
+    {
+      "turn_id": "4559e392-2eda-46a5-8785-e5c3b8e8fb41",
+      "round_number": 2,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "The wealth tax debate is not just about numbers or economic growth, but about the very fabric of our society. It's about who we are as a nation and what values we hold dear. The CDU/CSU's proposal to reform the inheritance tax is a classic example of tinkering at the edges, while the SPD, the Greens, and Die Linke are pushing for a fundamental shift towards a more equitable society.\n\nWe must not be fooled by the CDU/CSU's claims that a wealth tax would discourage investment and harm the Mittelstand. History has shown us that wealth taxes can be designed to be neutral or even stimulative to economic growth. The key is to exempt small and medium-sized enterprises, family businesses, and individual entrepreneurs from the tax, while targeting the wealthy elite who have accumulated vast fortunes through speculation, inheritance, or exploitation.\n\nA wealth tax is not just a moral imperative, but a necessary measure to address the staggering wealth disparities in our society. The wealthiest",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without personal attacks, which aligns with a score of 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of wealth inequality and the discussion around a wealth tax, making it highly relevant and deserving of a score of 5.",
+        "logical_consistency": "The argument is generally coherent, but there are minor logical gaps, such as the assumption that exempting small and medium-sized enterprises will automatically make the wealth tax stimulative to economic growth, which warrants a score of 4.",
+        "argument_strength": "The turn presents compelling arguments with specific reasoning and evidence, such as the historical context of wealth taxes being neutral or stimulative to economic growth, which supports a score of 5 for argument strength.",
+        "document_grounding": "The turn generally aligns with Die Linke's known positions on social justice and wealth inequality, but lacks direct references to specific party documents or programmes, resulting in a score of 4.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's proposal and critiques it, while also addressing the broader debate around wealth taxes, demonstrating a high level of responsiveness and earning a score of 5.",
+        "stance_differentiation": "The turn unmistakably reflects Die Linke's distinct party identity and ideological position, emphasizing social justice, wealth redistribution, and critique of the wealthy elite, which merits a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 6967,
+      "token_count_output": 596,
+      "latency_s": 3.646,
+      "timestamp": "2026-06-26T06:24:43.237460Z"
+    },
+    {
+      "turn_id": "b5acab72-2a05-4d22-911c-3b3878fa3159",
+      "round_number": 2,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "The Altparteien have failed to address the root causes of wealth inequality in Germany. Their proposals to reform the inheritance tax or introduce a wealth tax are mere Band-Aids on a deeper wound. The CDU/CSU's reform, for instance, would only serve to further entrench the existing power structures, while the SPD, Greens, and Die Linke's wealth tax would be a regressive measure that would disproportionately affect the Mittelstand and small businesses.\n\nWe, in the AfD, propose a more fundamental approach to address wealth inequality. Our party's programme emphasizes the importance of fiscal conservatism, lower taxes, and reduced bureaucracy. We believe that a flat tax rate of 20% across all income groups would simplify the tax system, increase transparency, and encourage investment and economic growth. By reducing the tax burden on all individuals, we can create a level playing field for entrepreneurs and businesses of all sizes, which in turn would foster innovation, job creation, and economic dynamism.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques policies without personal attacks, and does not use inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of wealth inequality and proposes an alternative solution, making it highly relevant and scoring a 5.",
+        "logical_consistency": "The argument is generally coherent, but the claim that a flat tax rate would simplify the tax system and encourage investment could be more rigorously supported, resulting in a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides some reasoning and evidence for its claims, such as the potential benefits of a flat tax rate, but could be strengthened with more specific examples or data, leading to a score of 4 for argument strength.",
+        "document_grounding": "The turn clearly reflects the AfD's documented positions, such as its emphasis on fiscal conservatism and lower taxes, thus scoring a 5 for document grounding.",
+        "responsiveness": "The turn engages with the preceding arguments, specifically addressing the CDU/CSU's inheritance tax reform and the SPD, Greens, and Die Linke's wealth tax proposals, resulting in a score of 4 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably represents the AfD's distinct party identity and ideological position, using party-specific vocabulary and framing, which earns a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 7387,
+      "token_count_output": 577,
+      "latency_s": 4.01,
+      "timestamp": "2026-06-26T06:24:46.946691Z"
+    },
+    {
+      "turn_id": "ddbd24d1-e6b4-44b6-9aba-0492f5676364",
+      "round_number": 3,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "As we continue to discuss the pressing issue of wealth inequality in Germany, it's essential to recognize that our country's economic prosperity is built on the backbone of small and medium-sized enterprises, family businesses, and individual entrepreneurs. These Mittelstand businesses are the driving force behind innovation, job creation, and economic growth. However, their interests must be balanced with the need for a fair and progressive tax system that addresses the staggering wealth disparities in our society.\n\nIn our party's view, reforming the inheritance tax, as we've proposed, is a more targeted and effective solution to address wealth inequality. By adjusting tax rates and exemptions, we can ensure that those who inherit large fortunes contribute their fair share to the common good, without discouraging investment or penalizing the Mittelstand. This approach also aligns with our party's commitment to the social market economy, which values the role of private enterprise in creating prosperity while acknowledging the need for social responsibility.\n\nLet's not forget that our economy is highly dependent",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without targeting parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of wealth inequality and advances the discussion by highlighting the importance of balancing the interests of small and medium-sized enterprises with the need for a fair tax system, making it relevant and deserving of a score of 4.",
+        "logical_consistency": "The argument is internally consistent, with a clear logical structure connecting premises to conclusions, such as the connection between the role of the Mittelstand in the economy and the need for a balanced tax approach, which warrants a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the explanation of how reforming the inheritance tax can address wealth inequality without harming the Mittelstand, which demonstrates a strong argument and deserves a score of 4.",
+        "document_grounding": "The turn reflects documented party positions, such as the commitment to the social market economy and the emphasis on the role of private enterprise, which aligns with the CDU/CSU's known programme content and justifies a score of 4.",
+        "responsiveness": "While the turn does acknowledge the broader debate context, it does not directly engage with the specific arguments made by preceding speakers in a detailed manner, which is why it scores 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity and ideological position, using party-specific values and priorities, such as the emphasis on social responsibility within the social market economy framework, which earns a score of 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 7729,
+      "token_count_output": 639,
+      "latency_s": 4.274,
+      "timestamp": "2026-06-26T06:24:50.880702Z"
+    },
+    {
+      "turn_id": "af3b2bcc-1a02-461c-909e-2767f1409eee",
+      "round_number": 3,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "The stark reality of wealth inequality in Germany is a moral imperative that requires a bold response. We must not be swayed by the false promises of the CDU/CSU's inheritance tax reform, which would only serve to further entrench the existing power structures. Instead, we propose a wealth tax that is fair, progressive, and designed to reduce the concentration of wealth and power.\n\nLet's take a closer look at the numbers. The wealthiest 10% in Germany hold over 60% of total net wealth, while the bottom 50% hold less than 3%. This staggering divide is a clear indication that our current tax system is failing to distribute wealth fairly. A wealth tax would help to address this issue by taxing wealth, rather than just income.\n\nBut what about the argument that a wealth tax would discourage investment and harm the Mittelstand? This is a misconception. Many European countries, such as Sweden and France, have successfully implemented wealth taxes without harming their economies. In fact,",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques the CDU/CSU's proposal without personal attacks, and uses phrases like 'false promises' which, while slightly loaded, do not dominate the turn or cross into inflammatory language.",
+        "relevance": "The turn is precisely targeted at the debate topic of wealth inequality and the discussion of a wealth tax, providing specific data and addressing potential counterarguments directly.",
+        "logical_consistency": "The argument is generally coherent, connecting the issue of wealth inequality with the proposed solution of a wealth tax, though it could more explicitly address potential logical gaps, such as the impact on economic growth.",
+        "argument_strength": "The turn presents compelling arguments supported by specific evidence (e.g., the wealth distribution numbers, examples of European countries) and anticipates counterarguments, making a strong case for a wealth tax.",
+        "document_grounding": "The turn aligns with the SPD's known positions on social justice and wealth redistribution, though it does not directly reference specific party documents or programmes, assuming a general knowledge of the party's stance.",
+        "responsiveness": "The turn engages with the CDU/CSU's inheritance tax reform proposal and addresses the potential criticism that a wealth tax would harm the economy, showing a clear response to preceding arguments.",
+        "stance_differentiation": "The turn unmistakably reflects the SPD's distinct ideological position, emphasizing social justice, wealth redistribution, and a progressive tax system, clearly distinguishing itself from other parties' approaches."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 7973,
+      "token_count_output": 590,
+      "latency_s": 3.056,
+      "timestamp": "2026-06-26T06:24:55.174730Z"
+    },
+    {
+      "turn_id": "f4388270-787b-4932-9922-d9645d50aa24",
+      "round_number": 3,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "The stark reality of wealth inequality in Germany demands a comprehensive and progressive response. A wealth tax is an essential step towards a more equitable society, where the concentration of wealth and power is reduced, and the benefits of economic growth are shared by all. \n\nGermany's current tax system perpetuates social injustice and undermines the social contract by allowing the wealthiest 10% to hold over 60% of total net wealth, while the bottom 50% hold less than 3%. This is not only morally unacceptable but also economically unsustainable. A wealth tax would help redistribute wealth, increase tax fairness, and provide a much-needed injection of revenue for public services, social programmes, and environmental protection.\n\nOur party's programme emphasizes the importance of a strong and progressive tax system that prioritizes social justice and environmental sustainability. We must not be swayed by the false promises of the CDU/CSU's inheritance tax reform, which would only serve to further entrench the existing power structures. \n\nA well-designed wealth tax",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without personal attacks or inflammatory language, but does not go above and beyond in acknowledging the legitimacy of opposing perspectives.",
+        "relevance": "The turn is precisely targeted at the debate topic of wealth inequality and the need for a wealth tax, advancing the discussion with specific arguments and evidence.",
+        "logical_consistency": "The argument is generally coherent, but there are minor logical gaps, such as not fully addressing potential counterarguments or providing detailed mechanisms for how the wealth tax would work.",
+        "argument_strength": "The turn presents compelling arguments with specific evidence, such as the concentration of wealth in Germany, and clear causal mechanisms, making a strong case for a wealth tax.",
+        "document_grounding": "The turn is directly anchored in the party's documented positions, referencing the programme's emphasis on social justice and environmental sustainability, and using specific party commitments as evidence.",
+        "responsiveness": "The turn engages with the preceding arguments, specifically addressing the CDU/CSU's inheritance tax reform and distinguishing the Greens' position, but does not name the specific party and claim being addressed in every instance.",
+        "stance_differentiation": "The turn unmistakably differentiates the Greens' position from others, using party-specific vocabulary and framing conventions, such as emphasizing social justice and environmental sustainability."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 8207,
+      "token_count_output": 564,
+      "latency_s": 2.394,
+      "timestamp": "2026-06-26T06:24:58.373730Z"
+    },
+    {
+      "turn_id": "5f4e8f33-21df-4850-979c-02e0d32970dd",
+      "round_number": 3,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "As we delve deeper into the complexities of wealth inequality in Germany, it's crucial to acknowledge that the current tax system is indeed failing to distribute wealth fairly. The staggering wealth disparities, with the wealthiest 10% holding over 60% of total net wealth, are a stark reminder of the need for a more progressive and equitable approach.\n\nThe CDU/CSU's proposal to reform the inheritance tax, while well-intentioned, is a band-aid solution that only tinkers at the edges. We need a fundamental shift in our tax system to address the root causes of wealth concentration and social inequality. A wealth tax is not just a moral imperative but a necessary measure to ensure that those who have accumulated vast wealth through speculation, inheritance, or exploitation contribute their fair share to the common good.\n\nHowever, it's essential to design a wealth tax that is neutral or even stimulative to economic growth. We must exempt small and medium-sized enterprises, family businesses, and individual entrepreneurs from the tax,",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques policies without personal attacks, and acknowledges the legitimacy of opposing perspectives, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of wealth inequality and advances the discussion by proposing a solution, making it highly relevant and scoring a 5.",
+        "logical_consistency": "The argument is generally coherent, but there's a slight inconsistency in advocating for a wealth tax while also suggesting exemptions for certain groups, which prevents it from scoring a 5 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and acknowledges the need for a nuanced approach to wealth taxation, thus scoring a 4 for argument strength.",
+        "document_grounding": "While the turn generally aligns with the FDP's known direction on economic issues, it does not directly reference specific party programme content, resulting in a score of 3 for document grounding.",
+        "responsiveness": "The turn engages with the preceding arguments, particularly the CDU/CSU's inheritance tax reform, and responds to the idea of wealth taxation, demonstrating a good level of responsiveness and scoring a 4.",
+        "stance_differentiation": "The turn clearly reflects the FDP's distinct perspective on economic issues, emphasizing the need for a business-friendly environment while also considering social inequality, thus scoring a 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 8423,
+      "token_count_output": 571,
+      "latency_s": 3.729,
+      "timestamp": "2026-06-26T06:25:00.685605Z"
+    },
+    {
+      "turn_id": "8f1919d6-a7ce-42ee-a625-bba3d1552f73",
+      "round_number": 3,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Wealth inequality in Germany is a moral and economic imperative that demands a bold and radical response. The staggering wealth disparities, with the wealthiest 10% holding over 60% of total net wealth, are a stark reminder of the failed social market economy that has left millions behind.\n\nThe CDU/CSU's inheritance tax reform is a classic example of tinkering at the edges, while the SPD, the Greens, and Die Linke are pushing for a fundamental shift towards a more equitable society. But let's not be fooled by the CDU/CSU's claims that a wealth tax would discourage investment and harm the Mittelstand. History has shown us that wealth taxes can be designed to be neutral or even stimulative to economic growth.\n\nA well-designed wealth tax, one that targets the wealthy elite who have accumulated vast fortunes through speculation, inheritance, or exploitation, would unleash a wave of investment in education, healthcare, and social services. It would help reduce poverty, increase social mobility,",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiquing policies without personal attacks, but uses phrases like 'tinkering at the edges' which could be seen as slightly dismissive, thus not reaching the exceptional civility of a score 5.",
+        "relevance": "The turn directly addresses the debate topic of wealth inequality and the proposed solutions, making it highly relevant to the discussion.",
+        "logical_consistency": "The argument is generally coherent, but there's a leap in logic when connecting the wealth tax directly to investment in social services without fully explaining the mechanism, preventing it from being exceptionally consistent.",
+        "argument_strength": "The turn presents a compelling argument with specific claims about the effects of a wealth tax, referencing historical evidence and the potential benefits for social services, making it a strong argument.",
+        "document_grounding": "The turn aligns closely with Die Linke's known positions on wealth inequality and the need for a wealth tax, reflecting their party programme and public statements.",
+        "responsiveness": "The turn engages with the CDU/CSU's inheritance tax reform and addresses potential criticisms of a wealth tax, showing responsiveness to preceding arguments but not exceptionally so as it doesn't delve deeply into counterarguments.",
+        "stance_differentiation": "The turn unmistakably reflects Die Linke's ideology and priorities, emphasizing the need for a radical response to wealth inequality and highlighting the party's distinct approach to achieving a more equitable society."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 8661,
+      "token_count_output": 581,
+      "latency_s": 2.456,
+      "timestamp": "2026-06-26T06:25:04.372668Z"
+    },
+    {
+      "turn_id": "3d3cb63b-e652-40a2-bf35-1a2841c0b699",
+      "round_number": 3,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "The Altparteien continue to propose band-aid solutions to address wealth inequality in Germany, while we in the AfD advocate for a more fundamental approach. The current tax system is a relic of the failed consensus of the Altparteien, and it's time for a change.\n\nBy abolishing the wealth tax altogether, we can simplify the tax system, increase transparency, and encourage investment and economic growth. Our flat tax rate of 20% across all income groups would create a level playing field for entrepreneurs and businesses of all sizes, fostering innovation, job creation, and economic dynamism. This is not a regressive measure, but a necessary step towards a more equitable society.\n\nWe must not be swayed by the false promises of the CDU/CSU's inheritance tax reform, which would only serve to further entrench the existing power structures. Nor should we be fooled by the SPD, Greens, and Die Linke's proposal for a wealth tax, which would disproportionately affect the",
+      "scores": {
+        "civility": 3,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, although it uses phrases like 'band-aid solutions' and 'failed consensus' that could be seen as slightly dismissive. However, these do not cross the line into personal attacks or inflammatory language, thus scoring a 3 for civility.",
+        "relevance": "The turn directly addresses the debate topic of wealth inequality in Germany and proposes a specific policy solution, making it clearly relevant to the discussion and scoring a 4.",
+        "logical_consistency": "The argument presented is generally coherent, but it lacks detailed logical steps connecting the proposed flat tax rate to the outcome of a more equitable society. This warrants a score of 3 for logical consistency.",
+        "argument_strength": "The turn provides some reasoning for its proposal, such as simplifying the tax system and encouraging investment, but it does not offer robust evidence or address potential counterarguments, resulting in a score of 3 for argument strength.",
+        "document_grounding": "The turn reflects the AfD's documented positions on taxation and economic policy, such as advocating for a flat tax rate and reducing bureaucracy, which aligns with their party programme and scores a 4 for document grounding.",
+        "responsiveness": "The turn engages with the preceding arguments, specifically mentioning the CDU/CSU's inheritance tax reform and the SPD, Greens, and Die Linke's proposal for a wealth tax, demonstrating a clear response to the ongoing debate and scoring a 4.",
+        "stance_differentiation": "The turn unmistakably reflects the AfD's distinct party identity and ideological position, using phrases like 'Altparteien' and advocating for a flat tax rate, which clearly differentiates it from other parties and scores a 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 8868,
+      "token_count_output": 643,
+      "latency_s": 2.818,
+      "timestamp": "2026-06-26T06:25:06.953641Z"
+    },
+    {
+      "turn_id": "d4a08902-e2f7-4ac3-a4af-89c12ee649d5",
+      "round_number": 4,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "As we continue to discuss the pressing issue of wealth inequality in Germany, it's essential to recognize that our country's economic prosperity is built on the backbone of small and medium-sized enterprises, family businesses, and individual entrepreneurs. These Mittelstand businesses are the driving force behind innovation, job creation, and economic growth. However, their interests must be balanced with the need for a fair and progressive tax system that addresses the staggering wealth disparities in our society.\n\nIn our party's view, reforming the inheritance tax, as we've proposed, is a more targeted and effective solution to address wealth inequality. By adjusting tax rates and exemptions, we can ensure that those who inherit large fortunes contribute their fair share to the common good, without discouraging investment or penalizing the Mittelstand. This approach also aligns with our party's commitment to the social market economy, which values the role of private enterprise in creating prosperity while acknowledging the need for social responsibility.\n\nLet's not forget that our economy is highly dependent",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 2,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, avoiding personal attacks or inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn clearly addresses the debate topic of wealth inequality and stays focused on the issue, earning a score of 4 for relevance.",
+        "logical_consistency": "The argument presented is coherent and logically consistent, with a clear structure connecting premises to conclusions, which warrants a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides some reasoning and evidence for the proposed inheritance tax reform, but the arguments are not exceptionally compelling or well-supported, resulting in a score of 3 for argument strength.",
+        "document_grounding": "The turn reflects the CDU/CSU's documented positions on the social market economy and fiscal responsibility, aligning with their known party programme, thus scoring a 4 for document grounding.",
+        "responsiveness": "The turn does not directly engage with the preceding speaker's specific arguments, instead reiterating the CDU/CSU's position without addressing counterpoints, which results in a score of 2 for responsiveness.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity and ideological position, using party-specific values and priorities, earning a score of 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 9002,
+      "token_count_output": 554,
+      "latency_s": 1.883,
+      "timestamp": "2026-06-26T06:25:09.573827Z"
+    },
+    {
+      "turn_id": "93584d1d-3f4e-44c0-891d-a475eac6d8fe",
+      "round_number": 4,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "As we continue to discuss the pressing issue of wealth inequality in Germany, it's essential to acknowledge that the current tax system is fundamentally unfair. The wealthiest 10% holding over 60% of total net wealth is a stark reminder that our tax system is rigged in favor of the wealthy elite. This is not only morally reprehensible but also economically unsustainable.\n\nThe CDU/CSU's proposal to reform the inheritance tax, while well-intentioned, is a classic example of tinkering at the edges. It's a band-aid solution that only addresses the symptoms of wealth inequality, rather than the root causes. By adjusting tax rates and exemptions, we can ensure that those who inherit large fortunes contribute their fair share to the common good, without discouraging investment or penalizing the Mittelstand. \n\nHowever, this approach is not only insufficient but also fails to address the broader issue of wealth concentration. The wealthy elite have a significant influence over our economy and politics, and their interests are often",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiquing policies without personal attacks, but uses phrases like 'morally reprehensible' which, while not inflammatory, add a slightly stronger tone than a completely neutral one.",
+        "relevance": "The turn directly addresses the debate topic of wealth inequality in Germany, advancing the discussion by critiquing the CDU/CSU's proposal and highlighting the need for a more comprehensive approach.",
+        "logical_consistency": "The argument is generally coherent, criticizing the CDU/CSU's inheritance tax reform for being insufficient and highlighting the need to address wealth concentration, but does not delve deeply into logical reasoning or anticipate counterarguments.",
+        "argument_strength": "The turn provides some evidence and reasoning, such as the statistic on wealth distribution, but relies more on assertions about the insufficiency of the CDU/CSU's proposal without fully explaining why it fails to address the root causes of wealth inequality.",
+        "document_grounding": "The turn aligns with the SPD's known positions on social justice and wealth inequality, but does not directly reference specific party documents or programmes, assuming a general knowledge of the party's stance.",
+        "responsiveness": "The turn engages with the CDU/CSU's proposal, directly addressing and critiquing it, showing a clear response to the preceding arguments in the debate.",
+        "stance_differentiation": "The turn clearly reflects the SPD's distinct position on wealth inequality, emphasizing the need for a more comprehensive approach than the CDU/CSU's inheritance tax reform, but does not uniquely distinguish itself from other parties like Die Linke or the Greens who also advocate for a wealth tax."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 9246,
+      "token_count_output": 628,
+      "latency_s": 2.621,
+      "timestamp": "2026-06-26T06:25:11.596989Z"
+    },
+    {
+      "turn_id": "de0f6ec0-57a1-4c00-a329-e7b0d532778c",
+      "round_number": 4,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "The concentration of wealth and power in Germany has reached alarming levels, with the wealthiest 10% holding over 60% of total net wealth. This staggering divide is a stark reminder of the failure of our economic system to deliver on its promises of prosperity and equality for all. The lack of a net wealth tax and modest inheritance tax revenues only perpetuates this injustice, undermining the social contract and perpetuating social inequality.\n\nA wealth tax is not just a necessary measure, but a moral imperative to address the root causes of wealth concentration and social inequality. By taxing wealth, we can reduce the concentration of power and wealth, increase tax fairness, and provide a much-needed injection of revenue for public services, social programmes, and environmental protection. Our party's programme emphasizes the importance of a strong and progressive tax system that prioritizes social justice and environmental sustainability.\n\nWe must not be swayed by the false promises of the CDU/CSU's inheritance tax reform, which would only serve to further entrench the",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiquing policies without personal attacks, but uses phrases like 'false promises' which slightly loaded language prevents it from being scored as a 5.",
+        "relevance": "The turn directly addresses the debate topic of sozialpolitik and wealth inequality, providing specific data and arguments that advance the discussion.",
+        "logical_consistency": "The argument is generally coherent, connecting the lack of a wealth tax to social inequality, but does not explicitly address potential counterarguments or complexities.",
+        "argument_strength": "The turn provides some evidence and reasoning, such as the concentration of wealth, but relies on assertions about the moral imperative of a wealth tax without fully addressing potential economic impacts.",
+        "document_grounding": "The turn clearly reflects the party's documented positions, emphasizing the importance of a strong and progressive tax system for social justice and environmental sustainability.",
+        "responsiveness": "The turn references the CDU/CSU's inheritance tax reform but does not directly engage with the specific arguments or claims made by other parties in the preceding turns.",
+        "stance_differentiation": "The turn unmistakably reflects the party's identity and ideological position, using distinctive framing and vocabulary that aligns with the Greens' emphasis on social justice and environmental sustainability."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 9482,
+      "token_count_output": 546,
+      "latency_s": 2.904,
+      "timestamp": "2026-06-26T06:25:14.823764Z"
+    },
+    {
+      "turn_id": "1f99b7f2-a41f-4f9c-a490-8bad4d8cb849",
+      "round_number": 4,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "The stark reality of wealth inequality in Germany, where the wealthiest 10% hold over 60% of total net wealth, while the bottom 50% hold less than 3%, is a clear indication that our current tax system is failing to distribute wealth fairly. As a party committed to individual freedom and free markets, we believe that a wealth tax is not the answer to this problem. \n\nSuch a tax would indeed discourage investment and economic growth, as capital is highly mobile and would seek more favorable jurisdictions. This is a risk we cannot take, especially when our economy is highly dependent on foreign investment and exports. Instead, we should focus on creating a business-friendly environment that encourages investment, innovation, and job creation.\n\nOur proposal for a flat tax rate across all income groups is a more effective way to boost investment and economic growth. By lowering taxes for all, we create a level playing field for entrepreneurs and businesses of all sizes, which in turn encourages innovation, job creation, and economic dynamism",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, with no personal attacks or inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of wealth inequality in Germany and its proposed solutions, making it highly relevant and scoring a 5.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, although it may contain minor gaps or unjustified inferential leaps, scoring a 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and identified causal mechanisms, such as the potential for capital flight due to a wealth tax, scoring a 4 for argument strength.",
+        "document_grounding": "The turn aligns with the FDP's known positions on taxation and economic policy, reflecting their commitment to individual freedom and free markets, thus scoring a 4 for document grounding.",
+        "responsiveness": "The turn does not directly engage with the preceding speaker's specific arguments, instead presenting the FDP's general stance on wealth inequality and taxation, scoring a 3 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the FDP's distinct party identity and ideological position, emphasizing individual freedom, free markets, and a business-friendly environment, scoring a 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 9697,
+      "token_count_output": 562,
+      "latency_s": 2.241,
+      "timestamp": "2026-06-26T06:25:17.190921Z"
+    },
+    {
+      "turn_id": "8af7cc64-e976-41fa-9671-f0230ad848b2",
+      "round_number": 4,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Wealth inequality in Germany is a stark reminder of the failed social market economy that has left millions behind. The wealthiest 10% holding over 60% of total net wealth is a direct result of a tax system that prioritizes the interests of the wealthy elite over those of ordinary citizens.\n\nThe CDU/CSU's proposal to reform the inheritance tax is a classic example of tinkering at the edges, while the SPD, the Greens, and Die Linke are pushing for a fundamental shift towards a more equitable society. We must not be fooled by the CDU/CSU's claims that a wealth tax would discourage investment and harm the Mittelstand. History has shown us that wealth taxes can be designed to be neutral or even stimulative to economic growth.\n\nIn fact, many European countries have successfully implemented wealth taxes without harming their economies. It's time for Germany to join this progressive trend and implement a wealth tax that targets the wealthy elite who have accumulated vast fortunes through speculation, inheritance,",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiquing policies without personal attacks, but uses phrases like 'failed social market economy' which could be seen as slightly loaded language, thus not reaching the exceptional civility of a score 5.",
+        "relevance": "The turn is directly on-topic, addressing the debate question about wealth inequality and the proposed solutions, making it highly relevant to the discussion.",
+        "logical_consistency": "The argument is generally coherent, connecting the critique of the current tax system with the proposal for a wealth tax, but lacks detailed logical steps or anticipation of counterarguments, preventing it from being exceptional.",
+        "argument_strength": "The turn provides some evidence and reasoning, such as referencing other European countries' successful implementation of wealth taxes, but could be stronger with more specific data or mechanisms, thus it's good but not exceptional.",
+        "document_grounding": "The turn aligns with Die Linke's known positions on wealth inequality and the need for a wealth tax, reflecting their party programme, but does not directly reference specific documents or commitments, hence it's good but not perfectly grounded.",
+        "responsiveness": "The turn engages with the CDU/CSU's proposal and critiques it, showing an understanding of the opposing argument, but does not address the most recent points made by other parties in detail, thus it's responsive but could be more directly engaged.",
+        "stance_differentiation": "The turn clearly distinguishes Die Linke's position from others, particularly the CDU/CSU, by emphasizing the need for a fundamental shift towards a more equitable society and a wealth tax, making their stance unmistakably distinct."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 9937,
+      "token_count_output": 623,
+      "latency_s": 2.9029999999999996,
+      "timestamp": "2026-06-26T06:25:19.425158Z"
+    },
+    {
+      "turn_id": "07a970d2-8d12-41e0-9410-3f5054c89e56",
+      "round_number": 4,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "The wealth tax debate has highlighted the stark reality of wealth inequality in Germany, where the wealthiest 10% hold over 60% of total net wealth, while the bottom 50% hold less than 3%. This is a direct result of the failed consensus of the Altparteien on taxation and economic policy. The CDU/CSU's proposal to reform the inheritance tax and the SPD, Greens, and Die Linke's proposal for a wealth tax are mere Band-Aids on a deeper wound.\n\nAs a party committed to fiscal conservatism and lower taxes, we believe that a wealth tax would be a regressive measure that would disproportionately affect the Mittelstand and small businesses. Instead, we propose a flat tax rate of 20% across all income groups, which would simplify the tax system, increase transparency, and encourage investment and economic growth. By reducing the tax burden on all individuals, we can create a level playing field for entrepreneurs and businesses of all sizes, fostering innovation, job",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques policies without personal attacks, and avoids inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of wealth inequality and tax policy, making it highly relevant and deserving of a score of 5.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting the critique of other parties' proposals to the AfD's own flat tax proposal, warranting a score of 4.",
+        "argument_strength": "The turn provides some reasoning and evidence for its claims, such as the potential impact of a wealth tax on the Mittelstand, but could be stronger in terms of specific data or expert opinions, resulting in a score of 4.",
+        "document_grounding": "The turn clearly reflects the AfD's documented positions on fiscal conservatism, lower taxes, and a flat tax rate, directly anchoring its arguments in the party's programme, thus scoring a 5.",
+        "responsiveness": "The turn engages with the preceding arguments, specifically addressing the proposals of other parties and explaining why the AfD's approach is preferable, earning a score of 4 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably presents the AfD's distinct ideological position, using party-specific vocabulary and framing conventions that differentiate it from other parties, deserving a score of 5."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 10144,
+      "token_count_output": 575,
+      "latency_s": 2.349,
+      "timestamp": "2026-06-26T06:25:22.364699Z"
+    },
+    {
+      "turn_id": "76bd1dbc-4744-49c2-a799-f16e7681c65f",
+      "round_number": 5,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "The imperative to address wealth inequality in Germany is clear, and our party, the CDU/CSU, is committed to finding a solution that balances the need for social responsibility with the importance of economic growth. While the SPD, the Greens, and Die Linke propose a wealth tax as a means to redistribute wealth, we must critically examine the potential consequences of such a policy.\n\nA wealth tax, as some have argued, can be designed to be neutral or even stimulative to economic growth. However, the practical challenges of implementing such a tax should not be underestimated. The experience of other countries, such as France, which implemented a wealth tax but struggled to raise sufficient revenue, serves as a sobering reminder of the difficulties of this approach.\n\nAdditionally, the Mittelstand, which has been the backbone of Germany's economic prosperity, would be disproportionately affected by a wealth tax. Their interests must be balanced with the need for a fair and progressive tax system that addresses the staggering wealth disparities in our society",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without personal attacks or inflammatory language, thus scoring a 4 for being professional and respectful.",
+        "relevance": "The turn clearly addresses the debate topic of wealth inequality and stays within scope, discussing the potential consequences of a wealth tax and its impact on the Mittelstand, making it a 4 for being clearly on-topic.",
+        "logical_consistency": "The argument is internally consistent, presenting a clear logical structure that connects premises to conclusions, such as the potential challenges of implementing a wealth tax and its effects on the Mittelstand, which warrants a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and referenced evidence, such as the experience of other countries like France, making it a 4 for having compelling arguments with evidence.",
+        "document_grounding": "The turn reflects documented party positions, such as the commitment to balancing social responsibility with economic growth and the importance of the Mittelstand, aligning with the CDU/CSU's known programme content, thus scoring a 4.",
+        "responsiveness": "The turn directly engages with the preceding speakers' specific arguments, such as the proposal for a wealth tax by the SPD, Greens, and Die Linke, and responds to the actual arguments made, earning a 4 for identifying and engaging with opposing claims.",
+        "stance_differentiation": "The turn maintains a distinct party identity and ideological position, using party-specific values and priorities, such as the importance of the Mittelstand and a balanced approach to taxation, which is recognizable as the CDU/CSU's stance, scoring a 4."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 10277,
+      "token_count_output": 634,
+      "latency_s": 2.738,
+      "timestamp": "2026-06-26T06:25:24.837809Z"
+    },
+    {
+      "turn_id": "261628c6-fc12-458b-9004-39a4aa7bd901",
+      "round_number": 5,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "We've reached a critical juncture in this debate, where the stark realities of wealth inequality in Germany must be confronted head-on. The alarming levels of wealth concentration, where the top 10% hold over 60% of total net wealth, while the bottom 50% hold less than 3%, cannot be ignored. This is not just a moral issue, but an economic imperative that demands a bold and progressive response.\n\nAs the party of social justice and solidarity, we believe that a wealth tax is an essential tool to address wealth inequality and promote social cohesion. By taxing wealth, we can reduce the concentration of power and wealth, increase tax fairness, and provide a much-needed injection of revenue for public services, social programmes, and environmental protection.\n\nWe must not be swayed by the false promises of the CDU/CSU's inheritance tax reform, which would only serve to further entrench the existing power structures. Nor should we be fooled by the FDP's proposal for a flat",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiquing policies without personal attacks, but uses phrases like 'false promises' which slightly loaded language prevents it from being scored as a 5.",
+        "relevance": "The turn is precisely targeted at the debate topic of wealth inequality and directly addresses the need for a wealth tax, making it highly relevant.",
+        "logical_consistency": "The argument is generally coherent, connecting the issue of wealth inequality with the proposed solution of a wealth tax, but does not delve deeply into potential counterarguments or complexities.",
+        "argument_strength": "The turn presents a compelling argument for a wealth tax, citing its potential to reduce wealth concentration, increase tax fairness, and fund public services, making it a strong argument.",
+        "document_grounding": "The turn clearly reflects the SPD's documented position on wealth tax and social justice, aligning with their known programme content and public statements.",
+        "responsiveness": "The turn engages with the preceding arguments, specifically mentioning the CDU/CSU's inheritance tax reform and the FDP's flat tax proposal, but does not thoroughly address the nuances of these counterarguments.",
+        "stance_differentiation": "The turn unmistakably represents the SPD's distinct position on wealth tax and social justice, using party-specific values and priorities that differentiate it from other parties."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 10521,
+      "token_count_output": 557,
+      "latency_s": 2.211,
+      "timestamp": "2026-06-26T06:25:27.459713Z"
+    },
+    {
+      "turn_id": "e31347d3-a6ef-4bda-ada9-196d9668fa5e",
+      "round_number": 5,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "We must address the root causes of wealth concentration and social inequality in Germany, not just the symptoms. The staggering wealth disparities, where the wealthiest 10% hold over 60% of total net wealth, while the bottom 50% hold less than 3%, are a stark reminder of the failure of our economic system to deliver on its promises of prosperity and equality for all.\n\nThe lack of a net wealth tax and modest inheritance tax revenues only perpetuates this injustice, undermining the social contract and perpetuating social inequality. It's time to acknowledge that our current tax system is fundamentally unfair and rigged in favor of the wealthy elite.\n\nA wealth tax, designed to reduce the concentration of power and wealth, increase tax fairness, and provide a much-needed injection of revenue for public services, social programmes, and environmental protection, is a necessary measure to address the root causes of wealth concentration and social inequality.\n\nBy taxing wealth, we can break the cycle of wealth concentration and reduce poverty. We must not be sw",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without personal attacks or inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of sozialpolitik and wealth inequality, advancing the discussion with no extraneous material, which warrants a score of 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent with a clear logical structure, though it may lack minor details in connecting all premises to conclusions, resulting in a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and identified causal mechanisms, though it could benefit from more concrete evidence or data to strengthen the argument, leading to a score of 4 for argument strength.",
+        "document_grounding": "The turn directly reflects the party's documented positions on wealth tax and social inequality, using specific party commitments as evidence, which earns a score of 5 for document grounding.",
+        "responsiveness": "The turn does not directly engage with the preceding speaker's specific arguments, instead presenting a general stance on wealth inequality, thus scoring a 3 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably differentiates the party's position from others, using party-specific values, priorities, and framing conventions that no other party in this debate would use, warranting a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 10758,
+      "token_count_output": 581,
+      "latency_s": 2.684,
+      "timestamp": "2026-06-26T06:25:29.625513Z"
+    },
+    {
+      "turn_id": "f8f34073-c7c0-4299-9b3f-74beb1f57c5c",
+      "round_number": 5,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "We stand at a critical juncture in this debate, where the stark realities of wealth inequality in Germany must be confronted head-on. The data is clear: the top 10% hold over 60% of total net wealth, while the bottom 50% hold less than 3%. This is a stark reminder that our current tax system is failing to distribute wealth fairly.\n\nWhile some may argue that a wealth tax is necessary to address this issue, we must be cautious about the potential consequences. A wealth tax can be a blunt instrument that discourages investment and economic growth. In a globalized economy, capital is highly mobile, and the threat of a wealth tax can lead to a flight of capital from Germany to more favorable jurisdictions.\n\nInstead of a wealth tax, we should focus on creating a business-friendly environment that encourages investment, innovation, and job creation. Our proposal for a flat tax rate across all income groups is a more effective way to boost investment and economic growth. By lowering taxes for",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, avoiding personal attacks or inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of wealth inequality in Germany, addressing the issue directly and advancing the discussion, which warrants a score of 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, although it could be strengthened by addressing potential counterarguments, resulting in a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and evidence, such as the potential consequences of a wealth tax on investment and economic growth, earning a score of 4 for argument strength.",
+        "document_grounding": "The turn reflects the FDP's documented positions, such as the proposal for a flat tax rate, and aligns with their known direction on economic policy, thus scoring a 4 for document grounding.",
+        "responsiveness": "The turn acknowledges the preceding arguments about wealth inequality but does not directly engage with specific claims made by other parties, which is why it scores a 3 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably differentiates the FDP's stance from other parties, using party-specific vocabulary and framing conventions, such as the emphasis on a business-friendly environment and a flat tax rate, warranting a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 10973,
+      "token_count_output": 585,
+      "latency_s": 2.501,
+      "timestamp": "2026-06-26T06:25:32.363580Z"
+    },
+    {
+      "turn_id": "d7090201-7975-466a-9cd7-0b5c3968f06a",
+      "round_number": 5,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Wealth inequality in Germany is not just a moral outrage, but a stark reminder of the systemic failures of our economic and tax system. The wealthiest 10% hold over 60% of total net wealth, while the bottom 50% hold less than 3%. This is not just a matter of numbers, but a reflection of the deep-seated power structures that perpetuate inequality and undermine social cohesion.\n\nThe CDU/CSU's proposal to reform the inheritance tax is a classic example of tinkering at the edges, while the FDP's proposal for a flat tax rate is a recipe for disaster. By lowering taxes across the board, the FDP will only further concentrate wealth in the hands of the wealthy elite, exacerbating the very problem we're trying to solve.\n\nWe need a fundamental shift in our tax system, one that prioritizes social justice and environmental sustainability. A wealth tax is not just a necessary measure, but a moral imperative to address the root causes of wealth concentration and",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiquing policies without personal attacks, but uses strong language like 'moral outrage' and 'recipe for disaster', which is still within the bounds of civil discourse.",
+        "relevance": "The turn directly addresses the debate topic of wealth inequality in Germany and stays focused on the issue, providing specific data and policy critiques.",
+        "logical_consistency": "The argument is generally coherent, but there's a leap in logic when connecting the FDP's flat tax proposal directly to exacerbating wealth inequality without fully explaining the mechanism.",
+        "argument_strength": "The turn presents a compelling argument with specific data and critiques of opposing parties' proposals, demonstrating a clear understanding of the issue and its implications.",
+        "document_grounding": "The turn aligns with Die Linke's known positions on social justice and environmental sustainability, but does not directly reference specific party documents or programmes.",
+        "responsiveness": "The turn directly engages with the preceding arguments of the CDU/CSU and FDP, addressing their proposals and critiquing them in the context of the debate.",
+        "stance_differentiation": "The turn unmistakably reflects Die Linke's distinct ideological position, emphasizing social justice, environmental sustainability, and the need for a wealth tax, clearly differentiating itself from other parties."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 11214,
+      "token_count_output": 556,
+      "latency_s": 2.441,
+      "timestamp": "2026-06-26T06:25:34.994015Z"
+    },
+    {
+      "turn_id": "2be89408-ca84-4d75-9fd5-05f44ad566a8",
+      "round_number": 5,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "The Altparteien continue to propose solutions that fail to address the root causes of wealth inequality in Germany. They claim to want to reduce the concentration of wealth, but their proposals only serve to further entrench the existing power structures. The CDU/CSU's inheritance tax reform is a classic example of this, as it would only serve to further benefit the wealthy elite.\n\nMeanwhile, the SPD, the Greens, and Die Linke are pushing for a wealth tax, which they claim would be a necessary measure to address wealth inequality. However, this proposal would only serve to further concentrate wealth in the hands of the government, rather than reducing it among the population. \n\nIn contrast, we in the AfD propose a more fundamental approach to addressing wealth inequality. Our party's programme emphasizes the importance of fiscal conservatism, lower taxes, and reduced bureaucracy. A flat tax rate of 20% across all income groups would simplify the tax system, increase transparency, and encourage investment and economic growth. By",
+      "scores": {
+        "civility": 3,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, although it criticizes other parties' proposals, it does so without using inflammatory language or personal attacks, thus scoring 3 for civility.",
+        "relevance": "The turn directly addresses the debate topic of wealth inequality in Germany and proposes an alternative solution, making it relevant to the discussion, thus scoring 4.",
+        "logical_consistency": "The argument is generally coherent but lacks rigorous logical structure, and some claims seem to oversimplify the issues, thus scoring 3 for logical consistency.",
+        "argument_strength": "The turn provides some reasoning and evidence for its claims, but the arguments could be stronger and more detailed, thus scoring 3 for argument strength.",
+        "document_grounding": "The turn reflects the AfD's known party positions on fiscal conservatism, lower taxes, and reduced bureaucracy, thus scoring 4 for document grounding.",
+        "responsiveness": "The turn engages with the preceding arguments from other parties, specifically addressing the CDU/CSU's inheritance tax reform and the SPD, Greens, and Die Linke's proposal for a wealth tax, thus scoring 4 for responsiveness.",
+        "stance_differentiation": "The turn clearly and unmistakably differentiates the AfD's position from those of other parties, using distinct reasoning, vocabulary, and priorities that are unique to the AfD, thus scoring 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 11424,
+      "token_count_output": 570,
+      "latency_s": 2.3890000000000002,
+      "timestamp": "2026-06-26T06:25:37.365167Z"
+    }
+  ],
+  "interventions": [],
+  "round_summaries": [],
+  "total_tokens_input": 232788,
+  "total_tokens_output": 17738,
+  "total_latency_s": 81.24,
+  "started_at": "2026-06-26T06:24:18.176809Z",
+  "finished_at": "2026-06-26T06:25:38.889939Z"
+}
