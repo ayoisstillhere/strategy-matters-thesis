@@ -71,12 +71,15 @@ logger = logging.getLogger("model_comparison")
 AGENT_MODELS = [
     ("llama-3.1-8b-instant",    "Llama-3.1-8B  (current)"),
     ("llama-3.3-70b-versatile", "Llama-3.3-70B (larger)"),
-    ("gemma2-9b-it",            "Gemma-2-9B    (alternative)"),
+    ("llama-3.1-70b-versatile", "Llama-3.1-70B (prior gen)"),
+    # gemma2-9b-it — decommissioned by Groq (Jun 2026)
+    # mixtral-8x7b-32768 — decommissioned by Groq (Jun 2026)
 ]
 
 JUDGE_MODELS = [
     ("llama-3.3-70b-versatile", "Llama-3.3-70B (current)"),
-    ("mixtral-8x7b-32768",      "Mixtral-8x7B  (alternative)"),
+    ("llama-3.1-70b-versatile", "Llama-3.1-70B (prior gen)"),
+    # mixtral-8x7b-32768 — decommissioned by Groq (Jun 2026)
 ]
 
 DEBATE_TOPIC    = "rentenpolitik"

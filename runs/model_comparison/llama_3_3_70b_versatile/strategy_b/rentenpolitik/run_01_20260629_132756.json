@@ -1,0 +1,917 @@
+{
+  "run_id": "64b57518-449e-4b2d-adc5-f301d4e44957",
+  "config": {
+    "topic_id": "rentenpolitik",
+    "topic_type": "empirical",
+    "framing_prompt": "Germany's statutory pension system (gesetzliche Rentenversicherung) faces mounting demographic pressure: the old-age dependency ratio is projected to rise from 37 to over 50 by 2040, with fewer contributors supporting more retirees. The current retirement age is 67, the pension level (Rentenniveau) is approximately 48% of average earnings, and contribution rates stand at 18.6%. Discuss how pension policy should be reformed — whether the retirement age should be raised further, benefit levels adjusted, contributions increased, or supplementary funded models expanded. Ground your arguments in your party's documented positions.",
+    "condition_id": "strategy_b",
+    "condition_label": "Reframing",
+    "condition_type": "strategy",
+    "run_number": 1,
+    "agent_model": "llama-3.3-70b-versatile",
+    "judge_model": "llama-3.3-70b-versatile",
+    "moderator_model": "llama-3.3-70b-versatile",
+    "num_rounds": 3,
+    "num_agents": 6,
+    "max_interventions": 3,
+    "silent_control_rate": 0.2,
+    "turn_order": [
+      "CDU/CSU",
+      "SPD",
+      "Bündnis 90/Die Grünen",
+      "FDP",
+      "Die Linke",
+      "AfD"
+    ],
+    "has_moderator_agent": true,
+    "uses_trigger": true,
+    "trigger_strategy": "reframing",
+    "nudge_text": "",
+    "language": "en"
+  },
+  "turns": [
+    {
+      "turn_id": "eb5842dc-8818-4333-98ca-4d886b7b4d4c",
+      "round_number": 1,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "The statutory pension system in Germany is facing significant challenges due to demographic changes, and it is our responsibility to ensure its long-term sustainability. Our party is committed to maintaining the current retirement age of 67, as we believe that this strikes a fair balance between the needs of workers and the demands of the pension system. We also want to encourage people to work longer if they choose to, which is why we propose making work in old age more attractive through an Active Retirement scheme, where earnings up to 2,000 euros per month are tax-free. Furthermore, we support strengthening occupational and private pension schemes, as we believe that a multi-pillar system is essential for providing stable and secure retirement provisions for all citizens. By promoting supplementary funded models and providing incentives for voluntary longer working, we can ensure that the pension system remains stable and reliable for future generations.",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains an exemplary parliamentary tone, devoid of personal attacks or inflammatory language, ensuring a respectful and professional demeanor throughout.",
+        "relevance": "The turn is precisely targeted at the debate topic of rentenpolitik, addressing the challenges of the statutory pension system and proposing specific measures to ensure its sustainability.",
+        "logical_consistency": "The argument is generally coherent, connecting the need for pension system sustainability with the proposal for an Active Retirement scheme and the encouragement of supplementary pension models, though it could more explicitly address potential counterarguments.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the introduction of an Active Retirement scheme to make work in old age more attractive, though it could benefit from more detailed evidence or data to bolster its arguments.",
+        "document_grounding": "The proposals align with the CDU/CSU's known positions on pension reform, emphasizing the importance of a multi-pillar system and the need to encourage longer working lives, reflecting a clear connection to the party's documented stances.",
+        "responsiveness": "As the first turn, there are no preceding arguments to respond to, making it adequate by default in this context, as it sets the stage for the discussion without engaging with any prior claims.",
+        "stance_differentiation": "The turn clearly reflects the CDU/CSU's distinct position on pension policy, emphasizing the balance between worker needs and system demands, and the promotion of a multi-pillar system, which is recognizable as part of the party's ideological stance."
+      },
+      "rag_passages_used": [
+        "gang vom Beruf in die Rente. Arbeiten im Alter machen wir mit einer Aktivrente attraktiv.\nWer das ge",
+        "zum Renteneintrittsalter halten wir fest. Die Regelung für besonders langjährige Versi-\ncherte mit 4",
+        "lich oberhalb der Grundsicherung im Alter liegen. Mit der Union wird es keine Renten-\nkürzungen gebe"
+      ],
+      "token_count_input": 3282,
+      "token_count_output": 572,
+      "latency_s": 2.707,
+      "timestamp": "2026-06-29T13:27:00.397467Z"
+    },
+    {
+      "turn_id": "365afbc7-c8ae-49ea-8c40-ee22e0796e01",
+      "round_number": 1,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "The future of Germany's statutory pension system is a matter of great concern for working people and their families, who rely on a stable and secure pension to enjoy their retirement with dignity. Our party is committed to ensuring that the pension level remains at least 48% of average earnings, as this is crucial for maintaining the standard of living of retirees. We must reject any attempts to erode this standard, such as by raising the retirement age further, which would unfairly penalize those who have contributed to the system throughout their working lives. Instead, we should focus on strengthening the social safety net and promoting fair wages, including a higher minimum wage, to ensure that everyone can contribute to and benefit from the pension system.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques policies without attacking the opposing party directly, and focuses on the issue at hand, demonstrating a respectful approach to the debate.",
+        "relevance": "The turn is precisely targeted at the debate topic of rentenpolitik, addressing key aspects such as pension levels, retirement age, and the importance of a stable pension system, thus advancing the discussion effectively.",
+        "logical_consistency": "The argument is coherent, connecting the need for a stable pension level with the rejection of raising the retirement age and the promotion of fair wages, though it could be strengthened with more explicit causal links.",
+        "argument_strength": "The turn provides well-supported claims, such as the importance of maintaining the pension level at 48% of average earnings, and offers a clear rationale for rejecting further increases in the retirement age, though it lacks specific evidence or data.",
+        "document_grounding": "The SPD's commitment to ensuring a stable and secure pension system aligns with their known party positions, though the turn does not directly reference specific party documents or programmes, suggesting a general alignment rather than a precise grounding.",
+        "responsiveness": "While the turn references the general context of pension system challenges and the need for sustainability, it does not directly engage with the CDU/CSU's specific proposals, such as the Active Retirement scheme or tax-free earnings, thus only generically acknowledging opposing positions.",
+        "stance_differentiation": "The turn unmistakably reflects the SPD's distinct position on pension policy, emphasizing the importance of social safety nets, fair wages, and maintaining pension levels, which clearly differentiates it from the CDU/CSU's approach focused on individual incentives and multi-pillar systems."
+      },
+      "rag_passages_used": [
+        "Mehr für Dich. Besser für Deutschland.\nRegierungsprogramm der SPD für die Bundestagswahl 2025\nWir so",
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "dafür sorgen, dass dieses europäische Recht von der Mindestlohnkommission künftig berücksichtigt\nwir"
+      ],
+      "token_count_input": 3705,
+      "token_count_output": 578,
+      "latency_s": 2.849,
+      "timestamp": "2026-06-29T13:27:03.226684Z"
+    },
+    {
+      "turn_id": "c93649d7-f349-462b-8c7a-f1b75121435b",
+      "round_number": 1,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "The future of our pension system is intricately linked to the broader social and economic transformations we envision for Germany. As we navigate the challenges posed by demographic changes, it's essential to prioritize a holistic approach that balances the needs of current and future generations. Our party advocates for maintaining the pension level at a dignified standard, recognizing the importance of social security in retirement. To achieve this, we must explore innovative solutions, such as introducing progressive taxation to fund the social-ecological transition, which can help stabilize the pension system without overburdening contributors. Moreover, promoting sustainable industries and investing in education and training can help create new job opportunities, thereby strengthening the social safety net and ensuring a more resilient pension system for the future. By focusing on these areas, we can work towards a pension policy that is both fair and sustainable.",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains an exemplary parliamentary tone, devoid of personal attacks or inflammatory language, and acknowledges the legitimacy of addressing the pension system's challenges with a holistic approach.",
+        "relevance": "The response is precisely targeted at the debate topic, advancing the discussion on pension policy by introducing innovative solutions and emphasizing the need for a balanced approach.",
+        "logical_consistency": "The argument is generally coherent, connecting the need for a holistic approach to the proposal for progressive taxation and investment in sustainable industries, though it could more explicitly address potential counterarguments.",
+        "argument_strength": "The turn provides well-supported claims, such as the importance of social security in retirement and the potential of sustainable industries to strengthen the social safety net, but could benefit from more specific evidence or data.",
+        "document_grounding": "The response clearly reflects Bündnis 90/Die Grünen's known positions on social and ecological issues, though it does not directly cite specific party documents or programmes, assuming a general alignment with the party's ecological and social priorities.",
+        "responsiveness": "While the turn does not directly engage with the specific arguments of the preceding speakers, it generically acknowledges the challenges facing the pension system and the need for a balanced approach, without naming or directly addressing the claims of other parties.",
+        "stance_differentiation": "The turn unmistakably reflects Bündnis 90/Die Grünen's distinct party identity, emphasizing the importance of a social-ecological transition, progressive taxation, and investment in sustainable industries, which are hallmark positions of the Green party."
+      },
+      "rag_passages_used": [
+        "Steuererklärung über die Deutschland-App überfällige Reform nicht erfolgreich. Auch\nabzugeben. Zudem",
+        "Beitragsstabilität in der Sozialversicherung, grafische Wandel verstärkt die Arbeits-\num den Anstieg",
+        "wie dem DigitalPakt Alter sorgen wir dafür, für Zuwendung und Aufklärung haben. Sol-\ndass Ältere lan"
+      ],
+      "token_count_input": 4159,
+      "token_count_output": 570,
+      "latency_s": 2.599,
+      "timestamp": "2026-06-29T13:27:06.603824Z"
+    },
+    {
+      "turn_id": "d318c481-8d48-4cf1-8ba2-81074ee6722b",
+      "round_number": 1,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "Germany's pension system is at a crossroads, and the choices we make today will have lasting impacts on the financial security of future generations. Our party believes in empowering individuals to make their own decisions about retirement, following the Swedish model where people can choose when to start their retirement, provided they don't need to claim social benefits. This flexibility is key, as it allows individuals to weigh their personal circumstances and financial readiness for retirement. By introducing such a flexible retirement entry system, where the pension amount increases with the age of retirement, we can create a more sustainable and personally tailored approach to pension planning. Furthermore, we must also consider supplementary funded models, such as the Gesetzliche Aktienrente, which can help mitigate the risks associated with an aging population and ensure that pension contributions remain financially viable.",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, acknowledging the complexity of the pension system without attacking other parties, thus scoring a 5 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of rentenpolitik, discussing flexible retirement options and supplementary funded models, making it highly relevant and scoring a 5.",
+        "logical_consistency": "The argument for a flexible retirement entry system and the mention of supplementary funded models like the Gesetzliche Aktienrente are coherent and well-connected, though it lacks a detailed explanation of how these models would be implemented, scoring a 4 for logical consistency.",
+        "argument_strength": "The turn provides a clear reasoning for introducing a flexible retirement system, citing the Swedish model, and discusses the potential benefits of supplementary funded models, but could be stronger with more specific data or evidence, thus scoring a 4.",
+        "document_grounding": "The proposal aligns with the FDP's known positions on promoting individual freedom and choice, and the mention of the Gesetzliche Aktienrente reflects the party's support for supplementary pension models, scoring a 4 for document grounding.",
+        "responsiveness": "While the turn does not directly address the specific arguments made by the preceding speakers, it engages with the broader topic and presents an alternative perspective, which is adequate but not exceptional, scoring a 3.",
+        "stance_differentiation": "The emphasis on individual choice and flexibility in retirement planning, along with the reference to the Swedish model, clearly distinguishes the FDP's position from other parties, making it unmistakably distinct and scoring a 5."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Rente nach 40 Beitragsjahren: Alle Beschäftigten sollen bereits nach 40 Beitragsjahren ",
+        "für die Bundesländer. Nachhaltige und priorisierende Haushalte schaffen Generationengerechtigkeit,\nw",
+        "Für flexible, finanzierbare und steigende Renten\nWir Freie Demokraten stehen für einen wirklich flex"
+      ],
+      "token_count_input": 4307,
+      "token_count_output": 580,
+      "latency_s": 2.325,
+      "timestamp": "2026-06-29T13:27:09.239149Z"
+    },
+    {
+      "turn_id": "65a98c4d-4c44-4382-bf35-45de229de4a4",
+      "round_number": 1,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "The pension system in Germany is on the brink of a crisis, and it's the result of decades of neglect by successive governments that have prioritized the interests of corporations and the wealthy over those of workers and retirees. The fact that the old-age dependency ratio is projected to rise dramatically by 2040 is a stark reminder of the demographic challenges we face, but it's also a consequence of policies that have eroded the social safety net and pushed more people into precarious work and poverty. Our party, Die Linke, demands a radical overhaul of the pension system to ensure that it serves the needs of all people, not just the privileged few. This means rejecting any further increases to the retirement age, which would only serve to punish workers who have already contributed to the system throughout their lives, and instead, focusing on strengthening the pension level to at least 53% of average earnings, as well as reducing the retirement age to 65, or 60 after 40 years of contributions.",
+      "scores": {
+        "civility": 3,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, criticizing policies rather than making personal attacks, but uses phrases like 'prioritized the interests of corporations and the wealthy' which could be seen as slightly loaded language, thus scoring a 3 for civility.",
+        "relevance": "The turn directly addresses the debate topic of rentenpolitik, discussing specific aspects such as the retirement age and pension level, making it highly relevant to the discussion.",
+        "logical_consistency": "The argument is generally coherent, advocating for a radical overhaul of the pension system to serve all people, with specific proposals like reducing the retirement age and strengthening the pension level, though it assumes a direct link between policy changes and outcomes without fully elaborating on the mechanisms.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as rejecting further increases to the retirement age and focusing on strengthening the pension level, but could be stronger with more detailed evidence or data to back up these proposals.",
+        "document_grounding": "The turn clearly reflects documented positions of Die Linke, such as the demand for a more equitable pension system and the rejection of policies that punish workers, aligning with the party's known commitments to social justice and worker rights.",
+        "responsiveness": "While the turn does not directly engage with the specific arguments of the preceding speakers, it does address the broader topic and indirectly responds to their positions by presenting an alternative vision for the pension system, thus scoring a 3 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the distinct ideological position of Die Linke, using party-specific vocabulary and framing conventions, such as demanding a radical overhaul and focusing on the needs of all people, not just the privileged few, making it unmistakably distinct from other parties."
+      },
+      "rag_passages_used": [
+        "deutlich seltener vertreten, daran hat die Ampel-Regierung 2030 fortgeführt werden oder bis zu dem Z",
+        "Wir wollen 20 Milliarden Euro im Jahr in gemeinnützigen notwendig und spart den Mieter*innen Heizkos",
+        "aufgebaut� Der Ausverkauf durch die Treuhand wirkt aber muss auch zwischen Ost und West gelten! Der "
+      ],
+      "token_count_input": 4805,
+      "token_count_output": 647,
+      "latency_s": 2.755,
+      "timestamp": "2026-06-29T13:27:12.039065Z"
+    },
+    {
+      "turn_id": "1a86c5c4-c7ac-4743-8a91-5c379d9ec925",
+      "round_number": 1,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "Germany's pension system is in dire need of reform, but any solution must prioritize the interests of German citizens who have contributed to the system throughout their working lives. The current pension level, which is one of the lowest in Western Europe, is a stark reminder of the failed policies of the established parties. Our party is committed to significantly increasing the pension level to bring it in line with the Western European average, which is around 70% of the last net income. This is not only a matter of fairness but also a necessity to prevent bitter old-age poverty, which is a reality for far too many German retirees. By promoting a strong and stable pension system, we can ensure that our seniors can enjoy their retirement with dignity, and we must also address the demographic challenges by supporting families and encouraging higher birth rates, rather than relying on mass immigration as a quick fix.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques policies without personal attacks, and avoids inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of rentenpolitik, discussing pension levels and demographic challenges, making it highly relevant and deserving of a 5.",
+        "logical_consistency": "The argument is generally coherent, linking the need for pension reform to the goal of preventing old-age poverty, but lacks detailed logical steps, hence a score of 4.",
+        "argument_strength": "The turn provides some evidence (comparing Germany's pension level to the Western European average) and reasoning (linking pension levels to dignity in retirement), supporting its claims, which warrants a 4.",
+        "document_grounding": "While the turn reflects general positions that could align with the AfD's stance, it lacks direct references to specific party documents or known policy positions, resulting in a score of 3.",
+        "responsiveness": "The turn does not directly engage with the specific arguments of the preceding speakers, instead presenting the AfD's position in a somewhat generic manner, thus scoring a 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly distinguishes the AfD's position from others by emphasizing the need to prioritize German citizens' interests, increase pension levels significantly, and address demographic challenges through family support, earning a 5 for unmistakable party identity."
+      },
+      "rag_passages_used": [
+        "18 SOZIALE MARKTWIRTSCHAFT UND GESUNDHEIT\nDie desolate Situation im deutschen Rentensystem\nDas deuts",
+        "wieder einen finanziell gesicherten Lebensabend erarbeiten können.\nWir halten es dabei für zwingend ",
+        "und Urgroßeltern soll gefördert werden.\nDemografische Wende für Deutschlands Zukunft\nDie Geburtenrat"
+      ],
+      "token_count_input": 5239,
+      "token_count_output": 553,
+      "latency_s": 2.471,
+      "timestamp": "2026-06-29T13:27:15.072741Z"
+    },
+    {
+      "turn_id": "2d5034b4-4821-471f-a676-7e3b93b60e44",
+      "round_number": 2,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "Germany's pension system requires a balanced approach that considers both the demographic challenges and the need to maintain a high standard of living for retirees. Our party remains committed to the principle of no pension cuts, ensuring that those who have contributed to the system throughout their lives can rely on a stable and secure pension. To achieve this, we must strengthen occupational and private pension schemes, providing incentives for individuals and small to medium-sized enterprises to participate in these systems. By doing so, we can reduce the burden on the statutory pension system and create a more sustainable, multi-pillar approach to retirement provision. Furthermore, our proposal for an Active Retirement scheme, which makes earnings up to 2,000 euros per month tax-free for those who choose to work beyond the retirement age, will not only provide additional income for seniors but also contribute to the overall stability of the pension system.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, focusing on policy proposals without personal attacks or inflammatory language, thus scoring a 4 for being professional and respectful.",
+        "relevance": "The turn is precisely targeted at the debate topic of rentenpolitik, addressing the need for a balanced approach to pension reform and proposing specific measures to achieve this, making it a 5 for being directly relevant and advancing the discussion.",
+        "logical_consistency": "The argument is generally coherent, connecting the need for a multi-pillar pension system with the proposal for strengthening occupational and private pension schemes, although it could be stronger with more explicit links between these elements, hence a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the benefits of an Active Retirement scheme and the importance of incentives for participation in occupational and private pension schemes, earning a 4 for its argument strength.",
+        "document_grounding": "The proposal directly reflects the CDU/CSU's known positions, such as maintaining the principle of no pension cuts and promoting a multi-pillar approach, which is verifiable through their party programme, thus scoring a 5 for being well-grounded in documented party positions.",
+        "responsiveness": "While the turn does not directly engage with the specific arguments of the preceding speakers, it generally addresses the topic and acknowledges the demographic challenges and the need for a sustainable pension system, which is why it scores a 3 for being somewhat responsive but not directly engaging with opponents' claims.",
+        "stance_differentiation": "The turn unmistakably reflects the CDU/CSU's distinct party identity and ideological position, emphasizing the importance of a balanced approach, the principle of no pension cuts, and the promotion of occupational and private pension schemes, which is characteristic of their party's stance, thus scoring a 5 for clear stance differentiation."
+      },
+      "rag_passages_used": [
+        "gang vom Beruf in die Rente. Arbeiten im Alter machen wir mit einer Aktivrente attraktiv.\nWer das ge",
+        "zum Renteneintrittsalter halten wir fest. Die Regelung für besonders langjährige Versi-\ncherte mit 4",
+        "lich oberhalb der Grundsicherung im Alter liegen. Mit der Union wird es keine Renten-\nkürzungen gebe"
+      ],
+      "token_count_input": 5430,
+      "token_count_output": 643,
+      "latency_s": 3.3680000000000003,
+      "timestamp": "2026-06-29T13:27:18.098668Z"
+    },
+    {
+      "turn_id": "17d52b25-cd47-46e7-9ca2-b3ef635aa744",
+      "round_number": 2,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "The pension system is a cornerstone of our social safety net, and it is imperative that we protect and strengthen it for future generations. Our party is firmly committed to maintaining the pension level at at least 48% of average earnings, as this is essential for ensuring that retirees can maintain a dignified standard of living. We must reject any attempts to erode this standard, such as raising the retirement age further, which would unfairly penalize those who have contributed to the system throughout their working lives. Instead, we should focus on promoting fair wages, including a higher minimum wage, to ensure that everyone can contribute to and benefit from the pension system. By doing so, we can create a more sustainable and equitable pension system that serves the needs of all citizens.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without attacking opponents directly, which aligns with a score of 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of rentenpolitik, addressing the pension level and retirement age directly, making it highly relevant and deserving of a score of 5.",
+        "logical_consistency": "The argument is generally coherent, connecting the maintenance of the pension level with the need to protect retirees' standard of living, though it could be strengthened with more explicit logical connections, thus scoring 4.",
+        "argument_strength": "The turn provides well-supported claims, such as the importance of maintaining the pension level at 48% of average earnings, but could benefit from more specific evidence or mechanisms, resulting in a score of 4.",
+        "document_grounding": "The SPD's commitment to maintaining the pension level at least 48% of average earnings directly reflects their documented positions, demonstrating strong document grounding and warranting a score of 5.",
+        "responsiveness": "While the turn generally addresses the broader debate context, it does not directly engage with specific arguments from preceding speakers, such as the CDU/CSU's Active Retirement scheme, which is why it scores 3 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the SPD's distinct party position, emphasizing the importance of social safety nets, fair wages, and the rejection of further retirement age increases, which clearly differentiates it from other parties and merits a score of 5."
+      },
+      "rag_passages_used": [
+        "Mehr für Dich. Besser für Deutschland.\nRegierungsprogramm der SPD für die Bundestagswahl 2025\nWir so",
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "dafür sorgen, dass dieses europäische Recht von der Mindestlohnkommission künftig berücksichtigt\nwir"
+      ],
+      "token_count_input": 5878,
+      "token_count_output": 560,
+      "latency_s": 2.226,
+      "timestamp": "2026-06-29T13:27:21.576601Z"
+    },
+    {
+      "turn_id": "34cc2660-900d-42d1-a5f3-623c0b7b3278",
+      "round_number": 2,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "The demographic changes facing Germany's pension system are indeed a pressing concern, but they also present an opportunity to reimagine and strengthen the social safety net for future generations. By prioritizing progressive taxation and investing in sustainable industries, we can create new job opportunities and reduce the burden on the pension system. It's crucial that we maintain a dignified pension level, recognizing the importance of social security in retirement, and explore innovative solutions to stabilize the system without overburdening contributors. Our focus should be on creating a more resilient and sustainable pension system that balances the needs of current and future generations, ensuring that everyone can enjoy their retirement with dignity and security. This approach not only addresses the demographic challenges but also contributes to a more equitable and just society.",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains an exemplary parliamentary tone, devoid of personal attacks or inflammatory language, and acknowledges the legitimacy of addressing demographic challenges in a respectful manner.",
+        "relevance": "The turn is precisely targeted at the debate topic of rentenpolitik, addressing the demographic challenges and the need for a sustainable pension system, thus advancing the discussion directly.",
+        "logical_consistency": "The argument is generally coherent, linking demographic changes to the need for a reimagined social safety net, but lacks a rigorous logical chain connecting all premises to conclusions without gaps.",
+        "argument_strength": "The claims are well-supported with reasoning about progressive taxation and sustainable industries, but could be strengthened further with specific evidence or mechanisms to stabilize the pension system.",
+        "document_grounding": "The turn aligns with Bündnis 90/Die Grünen's known positions on social security and sustainability, but does not directly reference specific party programme content or documented positions without assuming prior knowledge.",
+        "responsiveness": "The turn acknowledges the demographic challenges discussed by other parties but does not directly engage with specific arguments or claims made by preceding speakers, thus only generically responding to the topic.",
+        "stance_differentiation": "The turn unmistakably reflects Bündnis 90/Die Grünen's distinct party identity and ideological position, emphasizing progressive taxation, sustainability, and social security, which clearly differentiates it from other parties."
+      },
+      "rag_passages_used": [
+        "Steuererklärung über die Deutschland-App überfällige Reform nicht erfolgreich. Auch\nabzugeben. Zudem",
+        "Beitragsstabilität in der Sozialversicherung, grafische Wandel verstärkt die Arbeits-\num den Anstieg",
+        "wie dem DigitalPakt Alter sorgen wir dafür, für Zuwendung und Aufklärung haben. Sol-\ndass Ältere lan"
+      ],
+      "token_count_input": 6324,
+      "token_count_output": 521,
+      "latency_s": 2.621,
+      "timestamp": "2026-06-29T13:27:24.494274Z"
+    },
+    {
+      "turn_id": "3c81e409-b3d5-4dd0-80d0-14b0fbd252b4",
+      "round_number": 2,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "Germany's pension system is in need of a fundamental transformation to ensure its long-term sustainability and to provide individuals with the flexibility they deserve in planning their retirement. The current one-size-fits-all approach no longer meets the diverse needs of modern society, where people have varying career paths, health conditions, and personal aspirations. By adopting a flexible retirement entry system, similar to the Swedish model, individuals can choose when to start their retirement, with the pension amount increasing the later they decide to retire. This approach not only empowers individuals to make their own decisions but also creates a more sustainable pension system, as those who choose to work longer contribute more to the system and receive a higher pension in return. Furthermore, introducing supplementary funded models, such as the Gesetzliche Aktienrente, can help mitigate the risks associated with an aging population and ensure that pension contributions remain financially viable, thereby securing a stable and secure retirement for future generations.",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 5,
+        "argument_strength": 5,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, with no personal attacks, insults, or inflammatory language, thus scoring a 5 for civility.",
+        "relevance": "The turn directly addresses the debate topic of pension policy and its need for transformation, making it highly relevant and deserving of a score of 5.",
+        "logical_consistency": "The argument presented is internally coherent, with a clear logical structure connecting the need for a flexible retirement system to its potential for sustainability, earning it a score of 5 for logical consistency.",
+        "argument_strength": "The turn provides strong support for its claims, including the example of the Swedish model and the introduction of supplementary funded models, which demonstrates compelling reasoning and evidence, thus scoring a 5.",
+        "document_grounding": "While the turn generally aligns with the FDP's known positions on pension reform, such as promoting flexibility and supplementary funded models, it does not directly reference specific party documents or programmes, leading to a score of 4.",
+        "responsiveness": "The turn does not directly engage with the specific arguments made by preceding speakers, instead presenting the FDP's stance on pension reform in a somewhat generic manner, which is why it scores a 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity, using party-specific values and priorities such as individual flexibility and supplementary funded models, making it unmistakably the FDP's position and deserving of a score of 5."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Rente nach 40 Beitragsjahren: Alle Beschäftigten sollen bereits nach 40 Beitragsjahren ",
+        "für die Bundesländer. Nachhaltige und priorisierende Haushalte schaffen Generationengerechtigkeit,\nw",
+        "Für flexible, finanzierbare und steigende Renten\nWir Freie Demokraten stehen für einen wirklich flex"
+      ],
+      "token_count_input": 6481,
+      "token_count_output": 577,
+      "latency_s": 2.568,
+      "timestamp": "2026-06-29T13:27:27.149859Z"
+    },
+    {
+      "turn_id": "a4aba538-a04b-4494-a25e-ac50952019a4",
+      "round_number": 2,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "The pension system in Germany is a stark reminder of the deep-seated inequalities that plague our society, where the wealthy few are protected at the expense of the many. It is unconscionable that after a lifetime of work, retirees are left with a pension that barely covers their basic needs, while corporations and the rich continue to accumulate wealth. Our party demands a radical change to this system, one that prioritizes the needs of workers and retirees over the interests of capital. We propose a significant increase in the pension level to at least 53% of average earnings, as well as a reduction in the retirement age to 65, or 60 after 40 years of contributions, to ensure that people can enjoy their retirement with dignity. This is not only a matter of social justice but also an economic imperative, as a robust pension system can stimulate economic growth and reduce poverty.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiquing the system and policies without resorting to personal attacks or inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn is directly relevant to the debate topic of rentenpolitik, addressing the pension system's shortcomings and proposing specific reforms, making it deserving of a 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, linking the proposed pension reforms to social justice and economic imperatives, but lacks detailed logical steps, hence a score of 4 for logical consistency.",
+        "argument_strength": "The turn presents a compelling argument, supported by the moral imperative of social justice and the economic benefit of reducing poverty, thus earning a 5 for argument strength.",
+        "document_grounding": "The proposal for increasing the pension level to at least 53% of average earnings and reducing the retirement age aligns with Die Linke's known policy positions, grounding the argument in the party's documented stance, which warrants a 5 for document grounding.",
+        "responsiveness": "While the turn does not directly engage with the specific arguments of the preceding speakers, it addresses the broader debate context, thus receiving a 3 for responsiveness as it does not go beyond general acknowledgment of opposing views.",
+        "stance_differentiation": "The turn unmistakably reflects Die Linke's distinct ideological position, emphasizing social justice, the need to prioritize workers' and retirees' interests over capital, and specific policy proposals unique to the party, thereby scoring a 5 for stance differentiation."
+      },
+      "rag_passages_used": [
+        "deutlich seltener vertreten, daran hat die Ampel-Regierung 2030 fortgeführt werden oder bis zu dem Z",
+        "Wir wollen 20 Milliarden Euro im Jahr in gemeinnützigen notwendig und spart den Mieter*innen Heizkos",
+        "aufgebaut� Der Ausverkauf durch die Treuhand wirkt aber muss auch zwischen Ost und West gelten! Der "
+      ],
+      "token_count_input": 6983,
+      "token_count_output": 582,
+      "latency_s": 2.589,
+      "timestamp": "2026-06-29T13:27:30.066628Z"
+    },
+    {
+      "turn_id": "6c765048-d412-42aa-8850-5a743493673e",
+      "round_number": 2,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "The German pension system is in a state of crisis, and it's imperative that we take bold action to ensure that our seniors can enjoy their retirement with dignity. For too long, the established parties have neglected the needs of German citizens, leaving them with one of the lowest pension levels in Western Europe. Our party is committed to changing this by significantly increasing the pension level to bring it in line with the Western European average of around 70% of the last net income. This is not only a matter of fairness but also a necessity to prevent bitter old-age poverty, which is a reality for far too many German retirees. We must prioritize the needs of our own citizens and ensure that they can live out their retirement without financial worries, rather than relying on mass immigration as a quick fix to our demographic challenges. By promoting a strong and stable pension system, we can also encourage higher birth rates and support families, which is essential for the long-term sustainability of our social safety net.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiquing the current state of the pension system and the policies of other parties without resorting to personal attacks or inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn is directly relevant to the topic of rentenpolitik, addressing the pension level, old-age poverty, and demographic challenges, making it a 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, linking the need for a higher pension level with the prevention of old-age poverty and the promotion of a strong pension system, but lacks detailed logical steps, hence a score of 4.",
+        "argument_strength": "The turn presents a clear and well-supported argument for increasing the pension level, citing the Western European average and the need to prevent old-age poverty, which warrants a score of 4 for argument strength.",
+        "document_grounding": "The turn reflects the AfD's known position on prioritizing the needs of German citizens and increasing the pension level, aligning with their party programme, thus scoring a 4 for document grounding.",
+        "responsiveness": "While the turn does not directly engage with the specific arguments of the preceding speakers, it addresses the broader debate context and the topic at hand, earning a score of 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly and unmistakably represents the AfD's distinct position on pension policy, emphasizing the need to prioritize German citizens' needs and increase the pension level, which is a 5 for stance differentiation."
+      },
+      "rag_passages_used": [
+        "18 SOZIALE MARKTWIRTSCHAFT UND GESUNDHEIT\nDie desolate Situation im deutschen Rentensystem\nDas deuts",
+        "wieder einen finanziell gesicherten Lebensabend erarbeiten können.\nWir halten es dabei für zwingend ",
+        "und Urgroßeltern soll gefördert werden.\nDemografische Wende für Deutschlands Zukunft\nDie Geburtenrat"
+      ],
+      "token_count_input": 7417,
+      "token_count_output": 601,
+      "latency_s": 3.161,
+      "timestamp": "2026-06-29T13:27:32.864705Z"
+    },
+    {
+      "turn_id": "8c1c8086-e1df-4f30-8329-de06e4c4c8e2",
+      "round_number": 3,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "Germany's pension system is at a critical juncture, and it's essential that we strike a balance between ensuring the long-term sustainability of the system and maintaining a high standard of living for retirees. Our party remains committed to the principle of no pension cuts, which is crucial for providing stability and security for those who have contributed to the system throughout their lives. By strengthening occupational and private pension schemes, we can reduce the burden on the statutory pension system and create a more sustainable, multi-pillar approach to retirement provision. This approach will not only benefit retirees but also contribute to the overall stability of the pension system, as individuals and small to medium-sized enterprises participate in these schemes. Furthermore, our proposal for an Active Retirement scheme, which makes earnings up to 2,000 euros per month tax-free for those who choose to work beyond the retirement age, will provide additional income for seniors and contribute to the overall stability of the pension system.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without attacking parties or individuals, which aligns with a score of 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of rentenpolitik and advances the discussion by proposing specific solutions, such as strengthening occupational and private pension schemes, making it highly relevant.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, although it could be strengthened by addressing potential counterarguments, thus scoring 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and evidence, such as the proposal for an Active Retirement scheme, but could be further enhanced by addressing potential criticisms or complexities, scoring 4.",
+        "document_grounding": "The turn clearly reflects documented CDU/CSU positions, such as the commitment to no pension cuts and the promotion of a multi-pillar pension system, demonstrating strong document grounding.",
+        "responsiveness": "While the turn references the general debate context, it does not directly engage with specific arguments made by preceding speakers, making it only moderately responsive, hence a score of 3.",
+        "stance_differentiation": "The turn clearly identifies and maintains a distinct CDU/CSU party position, using party-specific values and priorities, but does not uniquely distinguish itself from potential similar positions of other parties, scoring 4."
+      },
+      "rag_passages_used": [
+        "gang vom Beruf in die Rente. Arbeiten im Alter machen wir mit einer Aktivrente attraktiv.\nWer das ge",
+        "zum Renteneintrittsalter halten wir fest. Die Regelung für besonders langjährige Versi-\ncherte mit 4",
+        "lich oberhalb der Grundsicherung im Alter liegen. Mit der Union wird es keine Renten-\nkürzungen gebe"
+      ],
+      "token_count_input": 7646,
+      "token_count_output": 567,
+      "latency_s": 2.45,
+      "timestamp": "2026-06-29T13:27:36.174597Z"
+    },
+    {
+      "turn_id": "84014857-c2c4-4d74-93bd-95799abd229e",
+      "round_number": 3,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "To ensure the long-term sustainability of Germany's pension system, it is crucial that we prioritize fairness and solidarity. Our party's commitment to maintaining the pension level at at least 48% of average earnings is not just a matter of social justice, but also an economic imperative. This standard is essential for maintaining the dignity of retirees and ensuring they can participate fully in society. In contrast to proposals that suggest raising the retirement age or cutting pension benefits, our approach focuses on promoting fair wages, including a higher minimum wage, to ensure that everyone can contribute to and benefit from the pension system. The CDU/CSU's Active Retirement scheme, which makes earnings up to 2,000 euros per month tax-free for those who choose to work beyond the retirement age, may provide additional income for some seniors, but it does not address the fundamental issue of ensuring a stable and secure pension for all. Our position differs because we believe that the pension system should be based on solidarity and the principle of social insurance, rather than individualized solutions that may benefit some at the expense of others.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without attacking parties as entities, which aligns with a score of 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of rentenpolitik and advances the discussion by presenting the SPD's position and comparing it with other proposals, making it highly relevant and deserving of a score of 5.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, although it could be strengthened by more explicit connections between the importance of the pension level and the economic imperative, thus scoring 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the importance of maintaining the pension level for dignity and participation in society, and critiques other proposals effectively, warranting a score of 4 for argument strength.",
+        "document_grounding": "The turn reflects the SPD's known documented positions, such as the commitment to maintaining the pension level at at least 48% of average earnings, which is consistent with their party programme, earning a score of 4.",
+        "responsiveness": "The turn directly engages with the preceding speaker's (CDU/CSU) specific arguments, such as the Active Retirement scheme, and explains precisely where and why the SPD's position differs, demonstrating high responsiveness and deserving a score of 5.",
+        "stance_differentiation": "The turn unmistakably differentiates the SPD's position from others, using party-specific values and priorities, such as the emphasis on solidarity and social insurance, making it unmistakably distinct and worthy of a score of 5."
+      },
+      "rag_passages_used": [
+        "Mehr für Dich. Besser für Deutschland.\nRegierungsprogramm der SPD für die Bundestagswahl 2025\nWir so",
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "dafür sorgen, dass dieses europäische Recht von der Mindestlohnkommission künftig berücksichtigt\nwir"
+      ],
+      "token_count_input": 8219,
+      "token_count_output": 644,
+      "latency_s": 3.0220000000000002,
+      "timestamp": "2026-06-29T13:27:41.354025Z"
+    },
+    {
+      "turn_id": "0be4372a-ba04-4c87-8e5d-54734fc6b006",
+      "round_number": 3,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "The heart of the pension debate lies in striking a balance between ensuring the system's long-term sustainability and maintaining a dignified standard of living for retirees. A crucial aspect often overlooked is the interplay between pension policy and the broader economic transformation Germany is undergoing. Our party, Bündnis 90/Die Grünen, believes that progressive taxation is key to funding the social-ecological transition, which in turn can help stabilize the pension system without overburdening contributors. This approach differs significantly from the CDU/CSU's proposal for an Active Retirement scheme, which, while providing additional income for some seniors, does not address the systemic issues facing the pension system. By investing in sustainable industries and promoting fair wages, we can create new job opportunities and reduce the burden on the pension system, thereby ensuring a more resilient and sustainable future for all. This holistic approach is essential for navigating the demographic challenges and ensuring that the pension system serves the needs of both current and future generations.",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 5,
+        "argument_strength": 5,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains an exemplary parliamentary tone, acknowledging the legitimacy of opposing perspectives while firmly disagreeing, as seen in the respectful critique of the CDU/CSU's Active Retirement scheme.",
+        "relevance": "The turn is precisely targeted, addressing the central debate question of balancing the pension system's sustainability with retirees' standard of living, and deepens the discussion by introducing the interplay with economic transformation.",
+        "logical_consistency": "The argument is rigorously logical, connecting the dots between progressive taxation, the social-ecological transition, and the stabilization of the pension system, demonstrating a clear and coherent thought process.",
+        "argument_strength": "The turn presents compelling arguments, supported by specific reasoning about the benefits of progressive taxation and investing in sustainable industries, which strengthens the pension system without overburdening contributors.",
+        "document_grounding": "While the turn generally aligns with Bündnis 90/Die Grünen's known positions on progressive taxation and sustainable development, it does not directly reference specific party documents or programs, hence a score of 4.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's Active Retirement scheme, naming the specific party and claim being addressed, and explains precisely where and why its position differs, demonstrating high responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects Bündnis 90/Die Grünen's distinct party identity and ideological position, using party-specific values and framing conventions that no other party in the debate would use, such as emphasizing the social-ecological transition."
+      },
+      "rag_passages_used": [
+        "Steuererklärung über die Deutschland-App überfällige Reform nicht erfolgreich. Auch\nabzugeben. Zudem",
+        "Beitragsstabilität in der Sozialversicherung, grafische Wandel verstärkt die Arbeits-\num den Anstieg",
+        "wie dem DigitalPakt Alter sorgen wir dafür, für Zuwendung und Aufklärung haben. Sol-\ndass Ältere lan"
+      ],
+      "token_count_input": 8626,
+      "token_count_output": 605,
+      "latency_s": 2.874,
+      "timestamp": "2026-06-29T13:27:44.755788Z"
+    },
+    {
+      "turn_id": "fddf0c9e-6108-4516-88f6-88b35a44d7c5",
+      "round_number": 3,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "The pension debate has shed light on the vastly different approaches each party proposes to tackle the challenges facing Germany's statutory pension system. A key aspect that stands out is the CDU/CSU's Active Retirement scheme, which, while aiming to incentivize longer working lives, may inadvertently create a complex web of tax incentives that could benefit some seniors but overlook the need for a fundamentally flexible retirement system. In contrast, our party's proposal for a flexible retirement entry system, akin to the Swedish model, allows individuals to choose when to retire, with the pension amount adjusting accordingly. This not only empowers individuals to make their own decisions about retirement but also creates a more sustainable pension system, as those who work longer contribute more and receive a higher pension. We believe that this approach better addresses the demographic challenges and provides a more personalized solution for retirement planning, differing significantly from the CDU/CSU's scheme, which may not fully capture the diverse needs and aspirations of modern society. By adopting a flexible and adaptive approach to retirement, we can ensure that the pension system remains viable and responsive to the changing needs of German citizens.",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 5,
+        "argument_strength": 5,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains an exemplary parliamentary tone, acknowledging the legitimacy of opposing perspectives while firmly disagreeing, as seen in the polite critique of the CDU/CSU's Active Retirement scheme.",
+        "relevance": "The turn is precisely targeted at the debate topic, advancing the discussion on pension system reform with a clear focus on the FDP's proposal for a flexible retirement entry system.",
+        "logical_consistency": "The argument is rigorously logical, anticipating potential objections and distinguishing between empirical claims and value judgments, such as the comparison between the FDP's proposal and the CDU/CSU's Active Retirement scheme.",
+        "argument_strength": "The turn presents compelling arguments with specific evidence, such as the reference to the Swedish model, and clear causal mechanisms, like the adjustment of pension amounts based on retirement age.",
+        "document_grounding": "While the turn generally aligns with the FDP's known positions, it does not directly reference specific party documents or programmes, hence a score of 4, indicating a strong but not perfect alignment.",
+        "responsiveness": "The turn directly engages with the preceding speaker's arguments, specifically addressing the CDU/CSU's Active Retirement scheme and explaining why the FDP's flexible retirement entry system is a better approach.",
+        "stance_differentiation": "The turn unmistakably differentiates the FDP's position from others, using party-specific reasoning and vocabulary, such as the emphasis on individual flexibility and the reference to the Swedish model, which is distinct from other parties' proposals."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Rente nach 40 Beitragsjahren: Alle Beschäftigten sollen bereits nach 40 Beitragsjahren ",
+        "für die Bundesländer. Nachhaltige und priorisierende Haushalte schaffen Generationengerechtigkeit,\nw",
+        "Für flexible, finanzierbare und steigende Renten\nWir Freie Demokraten stehen für einen wirklich flex"
+      ],
+      "token_count_input": 8686,
+      "token_count_output": 623,
+      "latency_s": 2.993,
+      "timestamp": "2026-06-29T13:27:47.887585Z"
+    },
+    {
+      "turn_id": "61eafb0f-9b74-4c8c-8e28-1874a63ccef4",
+      "round_number": 3,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Germany's pension system is a stark reflection of the deep-seated inequalities that plague our society, with the wealthy few accumulating wealth while retirees struggle to make ends meet. The CDU/CSU's proposal for an Active Retirement scheme, which makes earnings up to 2,000 euros per month tax-free for those who choose to work beyond the retirement age, may provide additional income for some seniors, but it fundamentally misses the point. This scheme does not address the core issue of ensuring a dignified standard of living for all retirees, regardless of their ability or desire to continue working. In contrast, our demand for a significant increase in the pension level to at least 53% of average earnings, as well as a reduction in the retirement age to 65, or 60 after 40 years of contributions, directly tackles the heart of the problem. By prioritizing the needs of workers and retirees over the interests of capital, we can create a more just and equitable pension system. The FDP's flexible retirement entry system, which allows individuals to choose when to retire with an adjusting pension amount, may offer flexibility, but it does not guarantee a secure and stable pension for all, leaving the most vulnerable to the whims of the market. Our approach, grounded in solidarity and social justice, ensures that every retiree can live with dignity, regardless of their background or circumstances.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 5,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiquing policies without personal attacks, but uses phrases like 'deep-seated inequalities' and 'wealthy few accumulating wealth' that could be seen as slightly loaded, thus not reaching the exemplary parliamentary tone of a score 5.",
+        "relevance": "The turn directly addresses the debate topic of pension policy, engaging with specific proposals from other parties and advancing the discussion with clear, relevant arguments.",
+        "logical_consistency": "The argument is internally consistent, clearly connecting the critique of other parties' proposals to the justification of Die Linke's own demands, with a logical structure that premises lead to conclusions.",
+        "argument_strength": "The turn provides compelling arguments supported by clear reasoning, contrasting Die Linke's proposals with those of other parties to demonstrate the superiority of their approach in addressing the core issues of pension reform.",
+        "document_grounding": "The turn reflects Die Linke's documented positions on pension reform, specifically the demand for a significant increase in the pension level and a reduction in the retirement age, demonstrating a clear connection to the party's known policies.",
+        "responsiveness": "The turn directly engages with specific arguments and proposals from preceding speakers (CDU/CSU and FDP), addressing their schemes and explaining precisely where and why Die Linke's position differs, demonstrating a high level of responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects Die Linke's distinct party identity and ideological position, using language and framing that is characteristic of the party's emphasis on social justice and solidarity, clearly distinguishing itself from other parties."
+      },
+      "rag_passages_used": [
+        "deutlich seltener vertreten, daran hat die Ampel-Regierung 2030 fortgeführt werden oder bis zu dem Z",
+        "Wir wollen 20 Milliarden Euro im Jahr in gemeinnützigen notwendig und spart den Mieter*innen Heizkos",
+        "aufgebaut� Der Ausverkauf durch die Treuhand wirkt aber muss auch zwischen Ost und West gelten! Der "
+      ],
+      "token_count_input": 9155,
+      "token_count_output": 688,
+      "latency_s": 3.42,
+      "timestamp": "2026-06-29T13:27:51.375106Z"
+    },
+    {
+      "turn_id": "38a9fcb3-cca6-431e-8adf-a615d561a39d",
+      "round_number": 3,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "Germany's pension system is at a critical juncture, and it's imperative that we prioritize the needs of our citizens who have contributed to the system throughout their working lives. The CDU/CSU's proposal for an Active Retirement scheme, which makes earnings up to 2,000 euros per month tax-free for those who choose to work beyond the retirement age, may provide additional income for some seniors, but it falls short of addressing the fundamental issue of ensuring a dignified standard of living for all retirees. In contrast, our party's commitment to significantly increasing the pension level to bring it in line with the Western European average of around 70% of the last net income is a matter of fairness and necessity. This approach differs significantly from the CDU/CSU's scheme, as it directly tackles the heart of the problem - the low pension level that leaves many retirees in poverty. By prioritizing the needs of our own citizens and ensuring that they can live out their retirement without financial worries, we can also encourage higher birth rates and support families, which is essential for the long-term sustainability of our social safety net. Unlike the CDU/CSU's proposal, our approach does not rely on individualized solutions but rather on a comprehensive reform that benefits all retirees, thereby ensuring a more stable and secure pension system for future generations.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques policies without personal attacks, and respects opposing perspectives, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of rentenpolitik and engages with the preceding arguments, making it highly relevant and deserving of a score of 5.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, although it could be strengthened with more specific evidence, warranting a score of 4.",
+        "argument_strength": "The turn presents well-supported claims with specific reasoning and references to the party's documented positions, but lacks concrete data or empirical evidence to fully back its assertions, resulting in a score of 4.",
+        "document_grounding": "The argument reflects the AfD's known positions on pension reform, aligning with their commitment to increasing the pension level, thus scoring a 4 for document grounding.",
+        "responsiveness": "The turn directly engages with the CDU/CSU's Active Retirement scheme, naming the specific party and claim being addressed, and explains precisely where and why its position differs, earning a score of 5 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably differentiates the AfD's position from others, using party-specific reasoning and vocabulary, and clearly articulates its unique approach to pension reform, deserving a score of 5."
+      },
+      "rag_passages_used": [
+        "18 SOZIALE MARKTWIRTSCHAFT UND GESUNDHEIT\nDie desolate Situation im deutschen Rentensystem\nDas deuts",
+        "wieder einen finanziell gesicherten Lebensabend erarbeiten können.\nWir halten es dabei für zwingend ",
+        "und Urgroßeltern soll gefördert werden.\nDemografische Wende für Deutschlands Zukunft\nDie Geburtenrat"
+      ],
+      "token_count_input": 9553,
+      "token_count_output": 646,
+      "latency_s": 2.997,
+      "timestamp": "2026-06-29T13:27:54.958329Z"
+    }
+  ],
+  "interventions": [
+    {
+      "intervention_id": "5167f880-8b9f-4ba1-83fc-75a5a159fe62",
+      "after_turn_id": "",
+      "round_number": 2,
+      "source": "silent",
+      "strategy": "reframing",
+      "trigger_dimension": "responsiveness",
+      "trigger_score": 3.0,
+      "trigger_confirmed": true,
+      "silent_control": true,
+      "intervention_text": "",
+      "moderator_output": null,
+      "habermas_output": null,
+      "token_count_input": 0,
+      "token_count_output": 0,
+      "latency_s": 0.0,
+      "timestamp": "2026-06-29T13:27:20.664074Z"
+    },
+    {
+      "intervention_id": "0d03376b-e650-49c9-a851-244300ca5385",
+      "after_turn_id": "8c1c8086-e1df-4f30-8329-de06e4c4c8e2",
+      "round_number": 3,
+      "source": "strategy",
+      "strategy": "reframing",
+      "trigger_dimension": "responsiveness",
+      "trigger_score": 3.0,
+      "trigger_confirmed": true,
+      "silent_control": false,
+      "intervention_text": "The discussion on Germany's pension system has highlighted diverse perspectives, but it is crucial that each party directly engages with the strongest arguments presented by their opponents. For instance, CDU/CSU's proposal for an Active Retirement scheme and SPD's commitment to maintaining the pension level at 48% of average earnings should be addressed by other parties, such as Bündnis 90/Die Grünen's advocacy for progressive taxation and FDP's flexible retirement entry system. Die Linke's demand for a significant increase in the pension level and AfD's proposal to bring the pension level in line with the Western European average should also be directly countered. In the next round, each party should specifically address the strongest argument made by an opposing party and explain why their position differs. This direct engagement will enhance the quality of the debate and provide a clearer understanding of the parties' positions. Remember, addressing an opposing argument does not imply agreement; it is about clarifying the differences and strengthening the discourse.",
+      "moderator_output": {
+        "diagnosis": "The current debate on Germany's pension system lacks direct engagement between parties, with each side presenting their arguments without adequately addressing the strongest claims made by opposing parties.",
+        "target_parties": [
+          "CDU/CSU",
+          "SPD",
+          "Bündnis 90/Die Grünen",
+          "FDP",
+          "Die Linke",
+          "AfD"
+        ],
+        "target_claim": "The debate has seen various proposals, including maintaining the pension level at 48% of average earnings, introducing a flexible retirement entry system, increasing the pension level to 53% or 70% of average earnings, and reducing the retirement age, but these have not been directly addressed or countered by opposing parties.",
+        "intervention_text": "The discussion on Germany's pension system has highlighted diverse perspectives, but it is crucial that each party directly engages with the strongest arguments presented by their opponents. For instance, CDU/CSU's proposal for an Active Retirement scheme and SPD's commitment to maintaining the pension level at 48% of average earnings should be addressed by other parties, such as Bündnis 90/Die Grünen's advocacy for progressive taxation and FDP's flexible retirement entry system. Die Linke's demand for a significant increase in the pension level and AfD's proposal to bring the pension level in line with the Western European average should also be directly countered. In the next round, each party should specifically address the strongest argument made by an opposing party and explain why their position differs. This direct engagement will enhance the quality of the debate and provide a clearer understanding of the parties' positions. Remember, addressing an opposing argument does not imply agreement; it is about clarifying the differences and strengthening the discourse.",
+        "expected_next_turn_behaviour": "In the next round, parties are expected to directly address and counter the strongest arguments made by their opponents, providing a clearer understanding of their positions and the reasoning behind their proposals. This should lead to a more engaging and informative debate, where each party's stance is clearly articulated and differentiated from others."
+      },
+      "habermas_output": null,
+      "token_count_input": 3077,
+      "token_count_output": 426,
+      "latency_s": 1.672,
+      "timestamp": "2026-06-29T13:27:40.038039Z"
+    }
+  ],
+  "round_summaries": [
+    {
+      "round_number": 1,
+      "mean_scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "per_agent_scores": {
+        "CDU/CSU": {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        },
+        "SPD": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "Bündnis 90/Die Grünen": {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "FDP": {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "Die Linke": {
+          "civility": 3,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "AfD": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 3,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        }
+      },
+      "composite": 4.14,
+      "plateau": false,
+      "intervention_count_so_far": 0
+    },
+    {
+      "round_number": 2,
+      "mean_scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "per_agent_scores": {
+        "CDU/CSU": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "SPD": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "Bündnis 90/Die Grünen": {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "FDP": {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 5,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "Die Linke": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 5,
+          "document_grounding": 5,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "AfD": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        }
+      },
+      "composite": 4.14,
+      "plateau": true,
+      "intervention_count_so_far": 0
+    },
+    {
+      "round_number": 3,
+      "mean_scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "per_agent_scores": {
+        "CDU/CSU": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        },
+        "SPD": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        },
+        "Bündnis 90/Die Grünen": {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 5,
+          "document_grounding": 4,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        },
+        "FDP": {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 5,
+          "document_grounding": 4,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        },
+        "Die Linke": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 5,
+          "document_grounding": 5,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        },
+        "AfD": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        }
+      },
+      "composite": 4.43,
+      "plateau": false,
+      "intervention_count_so_far": 1
+    }
+  ],
+  "total_tokens_input": 118972,
+  "total_tokens_output": 11183,
+  "total_latency_s": 51.67,
+  "started_at": "2026-06-29T13:26:54.275043Z",
+  "finished_at": "2026-06-29T13:27:56.633137Z"
+}
