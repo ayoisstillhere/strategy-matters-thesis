@@ -62,7 +62,7 @@ class PoliticalAgent:
         model: str = AGENT_MODEL,
         nudge_text: str = "",
         language: str = "en",
-        max_tokens: int = 200,
+        max_tokens: int = 800,
         temperature: float = 0.7,
     ):
         self.party = party

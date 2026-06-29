@@ -44,6 +44,7 @@ from src.experiment_config import CONDITIONS, FRAMING_PROMPTS, TOPIC_TYPES
 from src.export import save_run_json
 from src.llm_client import LLMClient
 from src.models import DebateRun, InterventionEvent, Turn
+from src.rag_pipeline import RAGPipeline
 
 logger = logging.getLogger(__name__)
 
@@ -157,6 +158,8 @@ class DebateManager:
 
         try:
             client = self._get_client()
+            rag = RAGPipeline()  # uses default embeddings dir
+
             engine = DebateEngine(
                 topic_id=session.topic_id,
                 framing_prompt=FRAMING_PROMPTS[session.topic_id],
@@ -164,7 +167,7 @@ class DebateManager:
                 condition_id=session.condition_id,
                 run_number=1,
                 llm_client=client,
-                rag_pipeline=None,  # RAG optional for demo
+                rag_pipeline=rag,
                 num_rounds=session.num_rounds,
                 language=session.language,
             )
@@ -223,6 +226,7 @@ class DebateManager:
         for round_num in range(1, session.num_rounds + 1):
             session.current_round = round_num
             round_turns = []
+            round_trigger_fired = False  # max 1 trigger per round
 
             for turn_idx, party in enumerate(TURN_ORDER, start=1):
                 # Check for pending user injection before this turn
@@ -284,10 +288,16 @@ class DebateManager:
                 ))
 
                 # Trigger check (if condition uses triggers)
-                if engine.condition.uses_trigger:
-                    self._check_trigger_and_intervene(
+                #   Skip round 1: agents have no prior turns to respond to.
+                #   Max 1 trigger per round to preserve intervention budget.
+                if (engine.condition.uses_trigger
+                        and round_num > 1
+                        and not round_trigger_fired):
+                    fired = self._check_trigger_and_intervene(
                         engine, session, turn, round_num,
                     )
+                    if fired:
+                        round_trigger_fired = True
 
             # Habermas (Baseline 3)
             if engine.condition_id == "baseline_3":
@@ -323,10 +333,13 @@ class DebateManager:
         session: DebateSession,
         turn: Turn,
         round_num: int,
-    ) -> None:
-        """Run trigger pipeline; broadcast intervention if fired."""
+    ) -> bool:
+        """Run trigger pipeline; broadcast intervention if fired.
+
+        Returns True if a trigger fired, False otherwise.
+        """
         if turn.scores is None:
-            return
+            return False
 
         from src.trigger_check import check_trigger
         from src.prompts.moderator_prompts import STRATEGY_TRIGGERS
@@ -357,7 +370,7 @@ class DebateManager:
         )
 
         if not result.triggered:
-            return
+            return False
 
         from src.moderator import Moderator
 
@@ -397,6 +410,7 @@ class DebateManager:
             event_type=WSEventType.INTERVENTION,
             data=self._intervention_to_dict(event),
         ))
+        return True
 
     # ------------------------------------------------------------------
     # Helpers

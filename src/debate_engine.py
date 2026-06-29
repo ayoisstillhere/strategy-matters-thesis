@@ -235,6 +235,7 @@ class DebateEngine:
         """Execute one round: 6 agent turns + evaluation + triggers."""
         round_turns: list[Turn] = []
         round_scores: list[dict] = []
+        round_trigger_fired = False  # max 1 trigger per round
 
         for turn_idx, party in enumerate(self.turn_order, start=1):
             # 1. Agent generates turn
@@ -268,12 +269,19 @@ class DebateEngine:
             round_scores.append(scores.to_dict())
 
             # 4. Trigger check (if condition uses triggers)
-            if self.condition.uses_trigger:
-                self._check_and_intervene(
+            #    Skip round 1: agents have no prior turns to respond to,
+            #    so responsiveness is artificially low.
+            #    Max 1 trigger per round to preserve intervention budget.
+            if (self.condition.uses_trigger
+                    and round_num > 1
+                    and not round_trigger_fired):
+                fired = self._check_and_intervene(
                     turn=turn,
                     round_num=round_num,
                     round_scores=round_scores,
                 )
+                if fired:
+                    round_trigger_fired = True
 
         # 5. Habermas intervention (Baseline 3 — after every round)
         if self.condition_id == "baseline_3":
@@ -298,10 +306,13 @@ class DebateEngine:
         turn: Turn,
         round_num: int,
         round_scores: list[dict],
-    ) -> None:
-        """Run trigger pipeline after an agent turn; invoke moderator if needed."""
+    ) -> bool:
+        """Run trigger pipeline after an agent turn; invoke moderator if needed.
+
+        Returns True if a trigger fired (active or silent), False otherwise.
+        """
         if turn.scores is None:
-            return
+            return False
 
         strategy = self.condition.trigger_strategy or ""
 
@@ -326,7 +337,7 @@ class DebateEngine:
         )
 
         if not result.triggered:
-            return
+            return False
 
         # Trigger confirmed — decide on intervention
         if result.silent_control:
@@ -338,7 +349,7 @@ class DebateEngine:
             )
             self.interventions.append(event)
             # Silent: no intervention text, don't increment count
-            return
+            return True
 
         # Generate actual intervention
         if strategy == "random":
@@ -371,6 +382,7 @@ class DebateEngine:
             f"  → Intervention #{self.intervention_count} "
             f"({strategy}, {result.dimension}={result.score})"
         )
+        return True
 
     # ------------------------------------------------------------------
     # Round summary and plateau detection
