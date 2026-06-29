@@ -1,0 +1,867 @@
+{
+  "run_id": "4c14a4a6-77e1-4d7d-b1a5-7154dda06149",
+  "config": {
+    "topic_id": "sozialpolitik",
+    "topic_type": "values-driven",
+    "framing_prompt": "According to the Deutsche Bundesbank, the wealthiest 10% of households in Germany hold over 60% of total net wealth, while the bottom 50% hold less than 3%. At the same time, Germany has no net wealth tax (the Vermögensteuer has been suspended since 1997) and inheritance tax revenues remain modest relative to GDP. Discuss whether the government should introduce a wealth tax, reform the inheritance tax, or pursue alternative redistribution mechanisms — and what effects such policies would have on economic growth, investment, and social cohesion. Ground your arguments in your party's documented positions.",
+    "condition_id": "strategy_a",
+    "condition_label": "De-escalation",
+    "condition_type": "strategy",
+    "run_number": 1,
+    "agent_model": "llama-3.1-8b-instant",
+    "judge_model": "llama-3.3-70b-versatile",
+    "moderator_model": "llama-3.3-70b-versatile",
+    "num_rounds": 3,
+    "num_agents": 6,
+    "max_interventions": 3,
+    "silent_control_rate": 0.2,
+    "turn_order": [
+      "CDU/CSU",
+      "SPD",
+      "Bündnis 90/Die Grünen",
+      "FDP",
+      "Die Linke",
+      "AfD"
+    ],
+    "has_moderator_agent": true,
+    "uses_trigger": true,
+    "trigger_strategy": "de-escalation",
+    "nudge_text": "",
+    "language": "en"
+  },
+  "turns": [
+    {
+      "turn_id": "dac14748-f2af-4362-b985-71532981d0e3",
+      "round_number": 1,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "As we gather here today to discuss the pressing issue of wealth disparity in Germany, I would like to emphasize the importance of creating an economic environment that fosters growth, stability, and social cohesion. Our party, CDU/CSU, firmly believes that a strong economy is the backbone of a prosperous society. We must focus on policies that stimulate private sector growth, create jobs, and increase competitiveness. \n\nWe cannot achieve this goal by introducing new taxes, including a wealth tax, which would only stifle economic growth and deter investment. Our party's position is clear: reducing bureaucracy, lowering taxes, and streamlining regulations will unlock the full potential of our Mittelstand, small and medium-sized enterprises, and entrepreneurs. This is the key to driving growth and creating opportunities for all Germans. By cutting red tape and reducing the tax burden, we will make Germany an attractive location for businesses and individuals alike, fostering a more dynamic and prosperous economy.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 2,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without attacking opponents, which aligns with a score of 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of sozialpolitik, specifically addressing wealth disparity and economic growth, making it highly relevant.",
+        "logical_consistency": "The argument is generally coherent, connecting the reduction of bureaucracy and taxes with economic growth, but lacks detailed mechanisms or empirical evidence to support these claims fully.",
+        "argument_strength": "The turn provides some reasoning and a clear direction for policy but relies on general assertions about the effects of taxation and regulation without concrete evidence or specific examples.",
+        "document_grounding": "The turn aligns with the CDU/CSU's known positions on reducing taxes and bureaucracy, but without direct references to specific party documents or programmes, it does not achieve the highest level of grounding.",
+        "responsiveness": "Since this is the first turn, there are no preceding arguments to respond to, making it difficult to assess responsiveness, but the generic acknowledgment of potential disagreement could be seen as a minimal form of responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the CDU/CSU's ideological position, emphasizing private sector growth, tax reduction, and deregulation, which are distinctive markers of the party's economic policy stance."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Anhebung des Spitzensteuersatzes: Bei der Besteuerung von Einkommen soll der Spitzenste",
+        "Resilienz der Wirtschaft stärken.\nFreien Handel und Exporte unterstützen.\nWir handeln.\nSteuerlast ve",
+        "II. Unser Plan für ein Land, das wieder\nWohlstand für alle schafft\nDeutschland ist eine starke Volks"
+      ],
+      "token_count_input": 3374,
+      "token_count_output": 557,
+      "latency_s": 2.483,
+      "timestamp": "2026-06-29T13:46:04.078779Z"
+    },
+    {
+      "turn_id": "710272cc-6c5c-41cb-ad0b-53ede0ee90a0",
+      "round_number": 1,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "The wealth gap in Germany is a pressing issue that demands attention and action from our government. For too long, the wealthy 10% have held over 60% of total net wealth, while the bottom 50% hold less than 3%. This is a stark reminder that our tax system is not working as it should. We must address this imbalance and create a more just and equitable society, where everyone contributes their fair share.\n\nAs Social Democrats, we believe that a wealth tax is a necessary step towards achieving this goal. By taxing wealth, we can redistribute wealth and create a more level playing field. This is not about stifling economic growth, as some have suggested, but about ensuring that everyone contributes their fair share. We must also reform the inheritance tax, which currently favors large business fortunes over smaller family-owned businesses. This is not only unfair but also undermines social cohesion.\n\nOur proposal for a wealth tax is designed to be fair and efficient. We will make sure that the circle of those affected is not expanded and that no more citizens have to pay the solidarity surcharge than today. We want to ensure that high-net-worth individuals contribute a fair share to the financing of our future investments. This will not only reduce inequality but also create a more stable and sustainable economic environment.\n\nIn contrast, the opposition's approach of cutting red tape and reducing taxes may sound appealing, but it is a recipe for disaster. It will only widen the wealth gap and create more inequality. We cannot afford to repeat the mistakes of the past, when the wealthy few benefited at the expense of the many. It's time for a new approach, one that puts the needs of all Germans, not just the wealthy few, at the forefront.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 5,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without personal attacks, but does not go out of its way to acknowledge the legitimacy of opposing perspectives in an exemplary manner.",
+        "relevance": "The turn is precisely targeted at the debate topic of sozialpolitik, specifically addressing wealth disparity and taxation, advancing the discussion with no extraneous material.",
+        "logical_consistency": "The argument is internally consistent with a clear logical structure connecting premises to conclusions, rigorously anticipating objections and distinguishing between empirical claims and value judgments.",
+        "argument_strength": "The claims are well-supported with specific reasoning, identified causal mechanisms, and referenced evidence, presenting a compelling argument with acknowledgment of the potential impact of the proposed wealth tax.",
+        "document_grounding": "The turn directly reflects documented SPD positions on wealth taxation and social equality, using specific party commitments as evidence and aligning with the party's known direction on sozialpolitik.",
+        "responsiveness": "The turn directly engages with the preceding CDU/CSU argument, naming the specific claim being addressed and explaining precisely where and why the SPD's position differs, engaging with the strongest version of the opposing argument.",
+        "stance_differentiation": "The turn is unmistakably distinct, using SPD-specific reasoning, vocabulary, and priorities that no other party in this debate would use, clearly maintaining a distinct party identity and ideological position."
+      },
+      "rag_passages_used": [
+        "Kapitalgesellschaften und Bezieher von Kapitalerträgen dazu. Wir stellen sicher, dass der Kreis der\n",
+        "Staat und private Geldgeber gemeinsam und bürokratiearm in Deutschlands Zukunft investieren\nkönnen. ",
+        "privates Kapital mobilisiert werden. Große institutionelle Anleger wie zum Beispiel Versicherungen\no"
+      ],
+      "token_count_input": 4040,
+      "token_count_output": 720,
+      "latency_s": 2.442,
+      "timestamp": "2026-06-29T13:46:07.040426Z"
+    },
+    {
+      "turn_id": "c6c73195-f215-49d5-97ac-7510c6ea35a8",
+      "round_number": 1,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "The wealth gap in Germany has grown to alarming proportions, with the wealthiest 10% holding over 60% of total net wealth. This is a clear indication that our tax system is failing to promote social justice and equality. As Greens, we believe that a fair and just tax system should redistribute wealth and create a more level playing field. \n\nOne of our key proposals is to reform the inheritance tax, which currently favors large business fortunes over smaller family-owned businesses. We want to introduce a model with a personal exemption and a reduction of existing exceptions for large inheritances. This will help to reduce the concentration of wealth and create a more equitable society. \n\nWe also support the idea of a global wealth tax, as proposed in our Regierungsprogramm 2025. This would be a significant step towards addressing wealth inequality and ensuring that everyone contributes their fair share. By taxing wealth, we can create a more stable and sustainable economic environment, where everyone has the opportunity to thrive.",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, avoiding any personal attacks or inflammatory language, thus scoring a 5 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of sozialpolitik, specifically addressing wealth disparity and tax reform, making it highly relevant and scoring a 5.",
+        "logical_consistency": "The argument is generally coherent, with a clear structure connecting premises to conclusions, but lacks a rigorous logical chain or anticipation of objections, hence a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and referenced evidence, such as the proposal for a global wealth tax, but could be strengthened by more detailed mechanisms or empirical evidence, resulting in a score of 4 for argument strength.",
+        "document_grounding": "The turn directly references the party's documented position, such as the Regierungsprogramm 2025, and uses specific party commitments as evidence, grounding the argument firmly in the party's known positions and scoring a 5.",
+        "responsiveness": "While the turn acknowledges the general debate context, it does not directly engage with the specific arguments of the preceding speakers, thus scoring a 3 for responsiveness as it does not go beyond generic acknowledgment.",
+        "stance_differentiation": "The turn unmistakably reflects the distinct ideological position of Bündnis 90/Die Grünen, using party-specific vocabulary and priorities, such as the emphasis on social justice and equality, making it unmistakably distinct and scoring a 5."
+      },
+      "rag_passages_used": [
+        "möchten endlich etwas erreichen. Deswe-\nFür ein gerechtes Steuersystem gen fokussieren wir uns auf f",
+        "Instruments des Reallabors unkompliziert aufgegangen, dass das reichste Prozent der\nausprobieren und",
+        "Steuererklärung über die Deutschland-App überfällige Reform nicht erfolgreich. Auch\nabzugeben. Zudem"
+      ],
+      "token_count_input": 4612,
+      "token_count_output": 601,
+      "latency_s": 2.216,
+      "timestamp": "2026-06-29T13:46:09.292781Z"
+    },
+    {
+      "turn_id": "a08a622d-6606-4e24-a0aa-91631ab8d09d",
+      "round_number": 1,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "We must address the wealth gap in Germany, but we cannot do so by increasing the tax burden on those who are already contributing to our economy. Introducing a wealth tax would stifle economic growth, deter investment, and ultimately harm the very people we aim to help. Our party's position is clear: we need to create an environment that fosters growth, innovation, and investment.\n\nReducing bureaucracy, lowering taxes, and streamlining regulations will unlock the full potential of our Mittelstand and entrepreneurs. This is the key to driving growth and creating opportunities for all Germans. We must focus on policies that stimulate private sector growth, create jobs, and increase competitiveness. By cutting red tape and reducing the tax burden, we will make Germany an attractive location for businesses and individuals alike, fostering a more dynamic and prosperous economy.\n\nWe also need to recognize that our tax system already favors those who work and invest. As our party's programme states, 'Wer von seiner eigenen Hände Arbeit lebt, wird in Deutschland hoch besteuert.' This is why we propose a stufenweise linear-progressiver Chancentarif in the Einkommensteuer, which will make work more attractive and create a fairer tax system.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone throughout, critiquing policies without attacking parties directly, which aligns with a score of 4 for civility. Phrases like 'we cannot do so by increasing the tax burden' are respectful and focused on policy.",
+        "relevance": "The turn directly addresses the debate topic of the wealth gap in Germany and its proposed solutions, staying focused on the issue at hand, which warrants a score of 4 for relevance.",
+        "logical_consistency": "The argument is coherent and logically structured, starting with the problem, then presenting the FDP's position, and finally offering specific policy proposals like the 'stufenweise linear-progressiver Chancentarif', which supports a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the potential negative effects of a wealth tax on economic growth and the benefits of reducing bureaucracy, which justifies a score of 4 for argument strength.",
+        "document_grounding": "The turn directly references the FDP's party programme, specifically mentioning 'Wer von seiner eigenen Hände Arbeit lebt, wird in Deutschland hoch besteuert', which demonstrates a strong connection to documented party positions, earning a score of 5 for document grounding.",
+        "responsiveness": "While the turn acknowledges the general debate context, it does not directly engage with the specific arguments made by preceding speakers, such as the SPD's proposal for a wealth tax, which is why it scores 3 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the FDP's distinct ideological position, emphasizing the importance of reducing taxes and bureaucracy to foster economic growth, which is a clear and recognizable party stance, warranting a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [
+        "mehr Investitionen und Innovationen in Deutschland möglich macht.\nFür eine faire Besteuerung\nWer von",
+        "Sozial-Taxonomie lehnen wir strikt ab. Auf EU-Ebene braucht es ein System verbindlicher Erfassung\nvo",
+        "1990 ist es noch nicht flächendeckend gelungen, eine mit den westdeutschen Bundesländern\nvergleichba"
+      ],
+      "token_count_input": 5051,
+      "token_count_output": 697,
+      "latency_s": 2.476,
+      "timestamp": "2026-06-29T13:46:11.893641Z"
+    },
+    {
+      "turn_id": "fb6324cf-32c4-4850-b442-3eeb07512b4c",
+      "round_number": 1,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "The vast wealth gap in Germany is a stark reminder of the country's failure to address the concentration of power and wealth among the few. As Die Linke, we firmly believe that a wealth tax is a necessary step towards achieving social equality and justice. By taxing wealth, we can redistribute wealth and create a more level playing field. This is not a novel idea; many European countries, including France and Spain, have successfully implemented wealth taxes to address similar issues.\n\nOur proposal for a wealth tax goes beyond just introducing a new tax; it's about reforming the entire tax system to ensure that everyone contributes their fair share. We will introduce a wealth tax that targets the wealthiest 2.5% of the population, those who hold the majority of the country's wealth. This tax will be levied on their wealth, not on their income, to ensure that they contribute to the country's wealth without being able to hide behind income tax loopholes.\n\nWe will also introduce a public register of wealth, making it transparent and publicly accessible, to ensure that everyone knows who holds the wealth and can hold them accountable. Furthermore, we will introduce a one-off wealth tax to address the existing wealth inequality and make sure that those who have amassed wealth through speculation and exploitation pay their fair share.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without personal attacks or inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of sozialpolitik and the wealth gap in Germany, advancing the discussion with specific proposals, which warrants a score of 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, although it could be strengthened by addressing potential counterarguments, resulting in a score of 4 for logical consistency.",
+        "argument_strength": "The turn presents compelling arguments with specific evidence and clear causal mechanisms, such as the example of France and Spain implementing wealth taxes, and acknowledges the need for a comprehensive approach to tax reform, earning a score of 5 for argument strength.",
+        "document_grounding": "The turn generally aligns with Die Linke's known positions on social equality and wealth redistribution, but lacks direct references to specific party documents or programmes, leading to a score of 4 for document grounding.",
+        "responsiveness": "The turn does not directly engage with the specific arguments made by preceding speakers, instead presenting Die Linke's position in a somewhat generic manner, which results in a score of 3 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects Die Linke's distinct ideological position, using party-specific vocabulary and framing conventions, such as the emphasis on social equality and wealth redistribution, thus scoring a 5 for stance differentiation."
+      },
+      "rag_passages_used": [
+        "Wirt schaft� Das macht die Reichen reicher – und die Mieter*innen umgelegt werden darf� Wenn die\nmäc",
+        "25 Prozent besteuert (Kapitalertragsteuer). Ein Schlag schuld kann über 20 Jahre gestreckt werden un",
+        "[Wahl-O-Mat] Anhebung des Spitzensteuersatzes: Bei der Besteuerung von Einkommen soll der Spitzenste"
+      ],
+      "token_count_input": 5561,
+      "token_count_output": 661,
+      "latency_s": 2.5700000000000003,
+      "timestamp": "2026-06-29T13:46:14.697517Z"
+    },
+    {
+      "turn_id": "32aec318-06de-47d1-b8a7-e95367d2c4b8",
+      "round_number": 1,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "We often hear from our opponents that a wealth tax is the solution to Germany's wealth disparity problem. However, I would like to ask: what is the track record of such policies in practice? Have we seen success stories from European countries that have implemented wealth taxes? I'm not aware of any. Instead, I think it's time for us to focus on the real issues driving wealth inequality in Germany.\n\nOur party's position is clear: we need to simplify the tax code, reduce bureaucracy, and lower taxes for all. By cutting red tape and reducing the tax burden, we will make Germany an attractive location for businesses and individuals alike. This is the key to driving growth and creating opportunities for all Germans. We cannot achieve this goal by introducing new taxes, which would only stifle economic growth and deter investment.\n\nWe also need to recognize that our tax system already favors those who work and invest. As our party's programme states, we want to strengthen the rule of law, reduce bureaucracy, and simplify the tax code. A stufenweise linear-progressiver Chancentarif in the Einkommensteuer will make work more attractive and create a fairer tax system. By promoting the Mittelstand and entrepreneurs, we will create a more dynamic and prosperous economy that benefits everyone, not just the wealthy few.\n\nLet's not forget that our current tax system already generates considerable revenue. We need to focus on spending this money wisely, rather than introducing new taxes that would only serve to stifle growth. An Ausgabendisziplin, or expenditure discipline, is essential to ensure that our government is using taxpayer money effectively. We need to prioritize our spending, cut unnecessary bureaucracy, and make our tax system more efficient. This is the key to creating a more just and prosperous society for all Germans.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone throughout, with no personal attacks or inflammatory language, thus scoring a 4 for civility. The language is respectful, even when disagreeing with opponents.",
+        "relevance": "The turn directly addresses the debate topic of wealth disparity in Germany and stays focused on the issue, earning a score of 4 for relevance. It discusses the potential impact of wealth taxes and alternative solutions.",
+        "logical_consistency": "The argument presented is coherent and logically consistent, with a clear structure connecting premises to conclusions, which warrants a score of 4 for logical consistency. The turn argues against wealth taxes and for simplifying the tax code based on the potential for economic growth.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and references to the party's programme, deserving a score of 4 for argument strength. It critiques the idea of a wealth tax and proposes alternative tax reforms.",
+        "document_grounding": "The turn clearly reflects the AfD's documented positions, as it mentions simplifying the tax code and reducing bureaucracy, which aligns with the party's known stances, thus scoring a 4 for document grounding.",
+        "responsiveness": "The turn acknowledges the preceding arguments about wealth taxes but does not directly engage with the specific claims made by other parties, resulting in a score of 3 for responsiveness. It primarily focuses on presenting the AfD's position rather than responding to others.",
+        "stance_differentiation": "The turn unmistakably presents the AfD's distinct position on wealth disparity and tax policy, using party-specific vocabulary and framing, which earns a score of 4 for stance differentiation. The emphasis on simplifying the tax code and promoting the Mittelstand clearly differentiates the AfD's stance."
+      },
+      "rag_passages_used": [
+        "rungsseitigen steuerfinanzierten Öffentlichkeitsarbeit auf wichtige\nInformationen, die nicht bereits",
+        "18 SOZIALE MARKTWIRTSCHAFT UND GESUNDHEIT\nDie desolate Situation im deutschen Rentensystem\nDas deuts",
+        "54 FINANZEN UND STEUERN\nDer Staat erhebt Steuern auch mit dem Ziel, durch gezielte öffent-\nliche Inv"
+      ],
+      "token_count_input": 6289,
+      "token_count_output": 812,
+      "latency_s": 2.763,
+      "timestamp": "2026-06-29T13:46:17.715167Z"
+    },
+    {
+      "turn_id": "991854db-2f9d-41f7-9334-ee27d5d78f93",
+      "round_number": 2,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "We must prioritize policies that stimulate private sector growth, create jobs, and increase competitiveness. This is the key to driving growth and creating opportunities for all Germans. Our party's position is clear: reducing bureaucracy, lowering taxes, and streamlining regulations will unlock the full potential of our Mittelstand, small and medium-sized enterprises, and entrepreneurs. A dynamic and prosperous economy benefits everyone, not just the wealthy few.\n\nThe wealth gap in Germany is a complex issue, and we should not try to address it with a simplistic solution like a wealth tax. Such a policy would stifle economic growth, deter investment, and ultimately harm the very people we aim to help. Our economy is fragile, and we need to create an environment that fosters growth, innovation, and investment. By cutting red tape and reducing the tax burden, we will make Germany an attractive location for businesses and individuals alike.\n\nIt is also crucial to recognize that our tax system already favors those who work and invest. We propose a stufenweise linear-progressiver Chancentarif in the Einkommensteuer, which will make work more attractive and create a fairer tax system. This is in line with our party's programme, which emphasizes the importance of a competitive and dynamic economy. We should focus on spending our existing revenue wisely, rather than introducing new taxes that would only serve to stifle growth.\n\nAs we've said before, our party's plan for a strong economy is built around the principles of free trade, export support, and a competitive tax environment. We will continue to work towards these goals, creating a more prosperous future for all Germans.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, avoiding personal attacks or inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of wealth disparity in Germany and stays focused on the issue, earning a score of 4 for relevance.",
+        "logical_consistency": "The argument presented is coherent and logically consistent, with a clear structure connecting premises to conclusions, which warrants a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and references to the party's programme, supporting a score of 4 for argument strength.",
+        "document_grounding": "The turn is directly anchored in the party's documented positions, specifically mentioning the importance of a competitive tax environment and a stufenweise linear-progressiver Chancentarif, which aligns with the CDU/CSU's known programme content, thus scoring a 5 for document grounding.",
+        "responsiveness": "While the turn references the general debate context, it does not directly engage with specific arguments made by preceding speakers, leading to a score of 3 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the CDU/CSU's distinct party identity and ideological position, emphasizing free trade, export support, and a competitive tax environment, which is unmistakably distinct from other parties, earning a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Anhebung des Spitzensteuersatzes: Bei der Besteuerung von Einkommen soll der Spitzenste",
+        "Resilienz der Wirtschaft stärken.\nFreien Handel und Exporte unterstützen.\nWir handeln.\nSteuerlast ve",
+        "II. Unser Plan für ein Land, das wieder\nWohlstand für alle schafft\nDeutschland ist eine starke Volks"
+      ],
+      "token_count_input": 6831,
+      "token_count_output": 705,
+      "latency_s": 2.553,
+      "timestamp": "2026-06-29T13:46:20.695368Z"
+    },
+    {
+      "turn_id": "ddc94b12-d704-44f4-b0d8-5f4fa3c74ed6",
+      "round_number": 2,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "A wealth tax is not a radical idea, but a necessary step towards creating a more just and equitable society. We cannot afford to ignore the stark reality of wealth disparity in Germany, where the wealthiest 10% hold over 60% of total net wealth, while the bottom 50% hold less than 3%. This is a clear indication that our tax system is failing to promote social justice and equality. \n\nBy taxing wealth, we can redistribute wealth and create a more level playing field. This is not about stifling economic growth, as some have suggested, but about ensuring that everyone contributes their fair share. We must also reform the inheritance tax, which currently favors large business fortunes over smaller family-owned businesses. This is not only unfair but also undermines social cohesion.\n\nThe opposition's approach of cutting red tape and reducing taxes may sound appealing, but it is a recipe for disaster. It will only widen the wealth gap and create more inequality. We cannot afford to repeat the mistakes of the past, when the wealthy few benefited at the expense of the many. It's time for a new approach, one that puts the needs of all Germans, not just the wealthy few, at the forefront.\n\nOur proposal for a wealth tax is designed to be fair and efficient. We will make sure that the circle of those affected is not expanded and that no more citizens have to pay the solidarity surcharge than today. We want to ensure that high-net-worth individuals contribute a fair share to the financing of our future investments. This will not only reduce inequality but also create a more stable and sustainable economic environment.\n\nIt's time to stop pretending that the current tax system is working as it should. The facts speak for themselves: the concentration of wealth among the few is a recipe for social unrest and economic instability. By introducing a wealth tax, we can create a more just and equitable society, where everyone has the opportunity to thrive. We owe it to ourselves, our children, and future generations to take action and create a better future for all.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone throughout, critiquing policies and positions without personal attacks, but occasionally uses phrases like 'recipe for disaster' that could be seen as slightly loaded language.",
+        "relevance": "The turn directly addresses the debate topic of sozialpolitik and wealth disparity in Germany, providing specific data and arguments that advance the discussion.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, but may rely on some unjustified assumptions about the effects of wealth tax.",
+        "argument_strength": "The turn provides compelling arguments with specific evidence, such as the concentration of wealth among the few, and clear causal mechanisms, making a strong case for a wealth tax.",
+        "document_grounding": "The turn reflects the SPD's known position on wealth tax and social justice, aligning with their documented policies, but does not directly reference specific party programme content.",
+        "responsiveness": "The turn engages with the opposing position, specifically addressing the CDU/CSU's approach and critiquing their proposal to cut red tape and reduce taxes, demonstrating a clear response to preceding arguments.",
+        "stance_differentiation": "The turn unmistakably represents the SPD's distinct ideological position, using party-specific values, priorities, and framing conventions that differentiate it from other parties in the debate."
+      },
+      "rag_passages_used": [
+        "Kapitalgesellschaften und Bezieher von Kapitalerträgen dazu. Wir stellen sicher, dass der Kreis der\n",
+        "Staat und private Geldgeber gemeinsam und bürokratiearm in Deutschlands Zukunft investieren\nkönnen. ",
+        "privates Kapital mobilisiert werden. Große institutionelle Anleger wie zum Beispiel Versicherungen\no"
+      ],
+      "token_count_input": 7709,
+      "token_count_output": 769,
+      "latency_s": 3.035,
+      "timestamp": "2026-06-29T13:46:24.091734Z"
+    },
+    {
+      "turn_id": "fe99400c-939c-44de-8642-ce6b23baad34",
+      "round_number": 2,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "We must acknowledge that the wealth gap in Germany is not just a moral issue, but a pressing economic one. The concentration of wealth among the few stifles economic growth, as the wealthy few are less likely to invest in the real economy and more likely to hoard their wealth. This is exactly why we need to reform the inheritance tax and introduce a wealth tax.\n\nOur proposal for a wealth tax is not just about taxing the wealthy, but about creating a more just and equitable society where everyone contributes their fair share. We will make sure that the circle of those affected is not expanded and that no more citizens have to pay the solidarity surcharge than today. By taxing wealth, we can redistribute wealth and create a more level playing field, which is essential for a thriving economy.\n\nIt's time to stop pretending that cutting red tape and reducing taxes is the solution to Germany's wealth disparity problem. We've seen this approach before, but it's only led to more inequality and social unrest. Our economy needs a more comprehensive approach that addresses the root causes of wealth inequality, not just the symptoms.\n\nAs Greens, we're committed to creating a more just and sustainable economy that benefits everyone, not just the wealthy few. We believe that a wealth tax is a necessary step towards achieving this goal. It's time for a new approach, one that puts the needs of all Germans, not just the wealthy few, at the forefront.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques opposing views without personal attacks, and focuses on policy disagreements, which aligns with a score of 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of wealth disparity and sozialpolitik, providing specific policy proposals and engaging with the preceding arguments, making it highly relevant and deserving of a score of 5.",
+        "logical_consistency": "The argument is generally coherent, with a clear structure connecting premises to conclusions, but lacks rigorous logical chains and anticipation of counterarguments, which warrants a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and references to the need for a wealth tax and inheritance tax reform, but could be strengthened by more detailed evidence and addressing potential counterarguments, resulting in a score of 4 for argument strength.",
+        "document_grounding": "The proposal for a wealth tax and the commitment to creating a more just and sustainable economy align with the party's documented positions, such as the Regierungsprogramm 2025, which supports a score of 4 for document grounding.",
+        "responsiveness": "The turn engages with the preceding arguments, particularly those from CDU/CSU and SPD, by addressing their approaches to wealth disparity and providing an alternative, which demonstrates a good level of responsiveness and earns a score of 4.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity and ideological position, emphasizing the Greens' commitment to social justice, equality, and a sustainable economy, which is unmistakably distinct from other parties and warrants a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [
+        "möchten endlich etwas erreichen. Deswe-\nFür ein gerechtes Steuersystem gen fokussieren wir uns auf f",
+        "Instruments des Reallabors unkompliziert aufgegangen, dass das reichste Prozent der\nausprobieren und",
+        "Steuererklärung über die Deutschland-App überfällige Reform nicht erfolgreich. Auch\nabzugeben. Zudem"
+      ],
+      "token_count_input": 8429,
+      "token_count_output": 712,
+      "latency_s": 2.91,
+      "timestamp": "2026-06-29T13:46:26.785215Z"
+    },
+    {
+      "turn_id": "fd195811-06a5-4cb8-8671-4eade4df8809",
+      "round_number": 2,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "The wealth gap in Germany is a pressing issue, but we cannot address it by stifling economic growth with a wealth tax. Such a policy would only harm the very people it aims to help. Instead, we need to create an environment that fosters growth, innovation, and investment. By reducing bureaucracy, lowering taxes, and streamlining regulations, we can unlock the full potential of our Mittelstand and entrepreneurs. This is the key to driving growth and creating opportunities for all Germans.\n\nAs our party's programme emphasizes, 'Wer von seiner eigenen Hände Arbeit lebt, wird in Deutschland hoch besteuert.' This is why we propose a stufenweise linear-progressiver Chancentarif in the Einkommensteuer, which will make work more attractive and create a fairer tax system. By promoting the Mittelstand and entrepreneurs, we will create a more dynamic and prosperous economy that benefits everyone, not just the wealthy few.\n\nIt's also crucial to recognize that our current tax system already generates considerable revenue. We need to focus on spending this money wisely, rather than introducing new taxes that would only serve to stifle growth. An Ausgabendisziplin, or expenditure discipline, is essential to ensure that our government is using taxpayer money effectively. We need to prioritize our spending, cut unnecessary bureaucracy, and make our tax system more efficient. This is the key to creating a more just and prosperous society for all Germans.\n\nMoreover, we need to be careful not to create a culture of dependency on government handouts. Our party's proposal for a Bürgergeldreform is designed to make work more attractive and create a fairer tax system. By increasing the Grundfreibetrag and introducing a linear-progressiver Chancentarif, we can ensure that people have a real incentive to work and contribute to society. This is the key to creating a more self-sufficient and prosperous society.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, with no personal attacks or inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of sozialpolitik and the wealth gap in Germany, staying focused on the issue at hand, which warrants a score of 4 for relevance.",
+        "logical_consistency": "The argument presented is coherent and logically consistent, with a clear structure connecting premises to conclusions, earning a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and references to the party's programme, demonstrating a strong argument, hence a score of 4 for argument strength.",
+        "document_grounding": "The turn is directly anchored in verifiable party programme content, using specific party commitments as evidence, which justifies a perfect score of 5 for document grounding.",
+        "responsiveness": "While the turn does acknowledge opposing positions, it does not directly engage with the specific arguments made by other parties in the preceding turns, resulting in a score of 3 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the FDP's distinct party identity and ideological position, using party-specific vocabulary and framing conventions, which merits a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [
+        "mehr Investitionen und Innovationen in Deutschland möglich macht.\nFür eine faire Besteuerung\nWer von",
+        "Sozial-Taxonomie lehnen wir strikt ab. Auf EU-Ebene braucht es ein System verbindlicher Erfassung\nvo",
+        "1990 ist es noch nicht flächendeckend gelungen, eine mit den westdeutschen Bundesländern\nvergleichba"
+      ],
+      "token_count_input": 9097,
+      "token_count_output": 743,
+      "latency_s": 3.042,
+      "timestamp": "2026-06-29T13:46:30.380390Z"
+    },
+    {
+      "turn_id": "a79b1afb-0e56-462c-90d8-2afe7b54e9f2",
+      "round_number": 2,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "The wealth gap in Germany is a stark reminder of the country's failure to address the concentration of power and wealth among the few. It's time to acknowledge that our current tax system is not working as it should, and it's not just about addressing the symptoms, but the root causes of wealth inequality. By taxing wealth, we can redistribute wealth and create a more level playing field.\n\nOur proposal for a wealth tax targets the wealthiest 2.5% of the population, those who hold the majority of the country's wealth. We will introduce a wealth tax that levies on their wealth, not on their income, to ensure that they contribute to the country's wealth without being able to hide behind income tax loopholes. This is not a radical idea, but a necessary step towards creating a more just and equitable society.\n\nWe also propose a public register of wealth, making it transparent and publicly accessible, to ensure that everyone knows who holds the wealth and can hold them accountable. Furthermore, we will introduce a one-off wealth tax to address the existing wealth inequality and make sure that those who have amassed wealth through speculation and exploitation pay their fair share.\n\nThe opposition's approach of cutting red tape and reducing taxes may sound appealing, but it is a recipe for disaster. It will only widen the wealth gap and create more inequality. We cannot afford to repeat the mistakes of the past, when the wealthy few benefited at the expense of the many. It's time for a new approach, one that puts the needs of all Germans, not just the wealthy few, at the forefront.\n\nBy introducing a wealth tax, we can create a more just and equitable society, where everyone has the opportunity to thrive. We owe it to ourselves, our children, and future generations to take action and create a better future for all.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone throughout, with no personal attacks or inflammatory language, but does use phrases like 'recipe for disaster' which, while not overly aggressive, could be seen as slightly loaded, thus not reaching the exceptional civility of a score of 5.",
+        "relevance": "The turn is directly on-topic, addressing the debate question about the wealth gap in Germany and proposing specific policies to address it, making it highly relevant to the discussion.",
+        "logical_consistency": "The argument is generally coherent, with a clear structure connecting the problem of wealth inequality to the proposed solution of a wealth tax, but does not delve deeply into potential counterarguments or complexities, which would be required for a score of 5.",
+        "argument_strength": "The turn presents a compelling argument with specific proposals, such as targeting the wealthiest 2.5% and introducing a public register of wealth, providing a clear and well-supported case for why a wealth tax is necessary, thus demonstrating strong argument strength.",
+        "document_grounding": "The turn aligns with Die Linke's known positions on wealth inequality and taxation, reflecting the party's commitment to social justice and equality, but does not directly reference specific party documents or programmes, which would be necessary for a score of 5.",
+        "responsiveness": "The turn engages with the opposition's arguments, specifically addressing the critique of a wealth tax and the alternative approach of cutting red tape and reducing taxes, demonstrating a clear response to preceding arguments.",
+        "stance_differentiation": "The turn unmistakably reflects Die Linke's distinct ideological position, emphasizing the need for a wealth tax and a more equitable society, using language and proposals that are characteristic of the party's stance on economic and social issues."
+      },
+      "rag_passages_used": [
+        "Wirt schaft� Das macht die Reichen reicher – und die Mieter*innen umgelegt werden darf� Wenn die\nmäc",
+        "25 Prozent besteuert (Kapitalertragsteuer). Ein Schlag schuld kann über 20 Jahre gestreckt werden un",
+        "[Wahl-O-Mat] Anhebung des Spitzensteuersatzes: Bei der Besteuerung von Einkommen soll der Spitzenste"
+      ],
+      "token_count_input": 9855,
+      "token_count_output": 806,
+      "latency_s": 3.298,
+      "timestamp": "2026-06-29T13:46:33.306066Z"
+    },
+    {
+      "turn_id": "42319deb-b9ab-4437-83bf-d06c30d293ae",
+      "round_number": 2,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "We've heard various proposals for addressing the wealth gap in Germany, but many of them are based on a flawed assumption: that a wealth tax is the solution to our problems. I would like to challenge this assumption by looking at the experience of other countries that have implemented wealth taxes. In reality, such policies have often been ineffective in reducing wealth inequality and have even led to unintended consequences, such as tax avoidance and evasion.\n\nInstead of introducing new taxes, we should focus on simplifying the tax code and reducing bureaucracy. Our party's proposal for a stufenweise linear-progressiver Chancentarif in the Einkommensteuer will make work more attractive and create a fairer tax system. By promoting the Mittelstand and entrepreneurs, we will create a more dynamic and prosperous economy that benefits everyone, not just the wealthy few.\n\nIt's also crucial to recognize that our current tax system already generates considerable revenue. We need to focus on spending this money wisely, rather than introducing new taxes that would only serve to stifle growth. An Ausgabendisziplin, or expenditure discipline, is essential to ensure that our government is using taxpayer money effectively. We need to prioritize our spending, cut unnecessary bureaucracy, and make our tax system more efficient. This is the key to creating a more just and prosperous society for all Germans.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone throughout, avoiding personal attacks or inflammatory language, which is in line with a score of 4, indicating a professional and respectful tone.",
+        "relevance": "The turn directly addresses the debate topic of wealth gap in Germany and stays focused on the issue, making it clearly relevant and deserving of a score of 4.",
+        "logical_consistency": "The argument presented is coherent and logically structured, challenging the assumption that a wealth tax is the solution and offering an alternative, which warrants a score of 4 for its internal coherence.",
+        "argument_strength": "The turn provides a well-supported argument against introducing a wealth tax, citing potential unintended consequences and offering an alternative tax reform, which is a strong argument deserving of a score of 4.",
+        "document_grounding": "The turn references the party's proposal for a stufenweise linear-progressiver Chancentarif, which is in line with the AfD's documented positions, thus grounding the argument in the party's programme and deserving of a score of 4.",
+        "responsiveness": "While the turn engages with the general debate topic, it does not directly address specific arguments made by preceding speakers, which is why it scores 3, as it is mostly a general response to the topic rather than a direct engagement with other parties' arguments.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity and ideological position, differentiating itself from other parties by its opposition to a wealth tax and its emphasis on tax simplification and expenditure discipline, which is unmistakably AfD and warrants a score of 4."
+      },
+      "rag_passages_used": [
+        "rungsseitigen steuerfinanzierten Öffentlichkeitsarbeit auf wichtige\nInformationen, die nicht bereits",
+        "18 SOZIALE MARKTWIRTSCHAFT UND GESUNDHEIT\nDie desolate Situation im deutschen Rentensystem\nDas deuts",
+        "54 FINANZEN UND STEUERN\nDer Staat erhebt Steuern auch mit dem Ziel, durch gezielte öffent-\nliche Inv"
+      ],
+      "token_count_input": 10594,
+      "token_count_output": 687,
+      "latency_s": 3.261,
+      "timestamp": "2026-06-29T13:46:36.730547Z"
+    },
+    {
+      "turn_id": "85799b0a-cd99-42cd-812c-03dd46901920",
+      "round_number": 3,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "Our party, CDU/CSU, has consistently emphasized the importance of a strong economy that benefits all Germans, not just the wealthy few. In our previous contributions, we argued that introducing a wealth tax would stifle economic growth, deter investment, and ultimately harm the very people we aim to help. This is because such a policy would create uncertainty and discourage entrepreneurship, which is the backbone of our economy.\n\nWe must consider the fact that Germany's tax system is already relatively complex, and adding a wealth tax would only make it more cumbersome for businesses and individuals alike. Our Mittelstand and entrepreneurs are the engines of growth, and we cannot afford to create obstacles for them. By reducing bureaucracy, lowering taxes, and streamlining regulations, we can create a more dynamic and prosperous economy that benefits everyone.\n\nOur party's programme emphasizes the importance of a competitive and dynamic economy, where everyone has the opportunity to thrive. We will continue to work towards this goal, creating a more prosperous future for all Germans. By focusing on policies that stimulate private sector growth, create jobs, and increase competitiveness, we can drive growth and create opportunities for all Germans. This is the key to a more just and prosperous society.\n\nThe opposition's approach of introducing a wealth tax is not only ineffective but also unfair. It would disproportionately affect those who have worked hard to build their businesses and create jobs. We must prioritize policies that support entrepreneurship, not penalize it. By cutting red tape and reducing the tax burden, we will make Germany an attractive location for businesses and individuals alike, fostering a more dynamic and prosperous economy.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, avoiding personal attacks or inflammatory language, thus scoring a 4. However, it does contain subtle digs at the opposition's approach, which prevents it from being scored as a 5.",
+        "relevance": "The turn is clearly focused on the debate topic of sozialpolitik and wealth disparity in Germany, addressing the issue directly and advancing the discussion, hence a score of 4.",
+        "logical_consistency": "The argument presented is internally consistent, with a clear logical structure connecting premises to conclusions, warranting a score of 4. The turn effectively argues against the introduction of a wealth tax based on its potential to stifle economic growth.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and references to the potential negative impacts of a wealth tax on the economy, earning a score of 4. It anticipates some objections by mentioning the complexity of the tax system and the need to support entrepreneurship.",
+        "document_grounding": "The turn reflects the party's documented positions, such as reducing bureaucracy and lowering taxes to stimulate economic growth, which aligns with the CDU/CSU's known programme, thus a score of 4.",
+        "responsiveness": "The turn acknowledges the opposition's proposal for a wealth tax but does not directly engage with the specific arguments or claims made by other parties in the preceding turns, resulting in a score of 3. It primarily reiterates the CDU/CSU's stance without addressing counterarguments in depth.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity and ideological position, using party-specific values and priorities, such as the emphasis on a competitive and dynamic economy, which warrants a score of 4. The language and framing are unmistakably aligned with the CDU/CSU's known stance on economic policy."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Anhebung des Spitzensteuersatzes: Bei der Besteuerung von Einkommen soll der Spitzenste",
+        "Resilienz der Wirtschaft stärken.\nFreien Handel und Exporte unterstützen.\nWir handeln.\nSteuerlast ve",
+        "II. Unser Plan für ein Land, das wieder\nWohlstand für alle schafft\nDeutschland ist eine starke Volks"
+      ],
+      "token_count_input": 11035,
+      "token_count_output": 789,
+      "latency_s": 3.849,
+      "timestamp": "2026-06-29T13:46:40.743220Z"
+    },
+    {
+      "turn_id": "d81d46b4-8c7e-4b9d-b62a-b582e54b7fc7",
+      "round_number": 3,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "We must not be fooled by the false narrative that a wealth tax is a radical or untried solution. Many countries, including France and Spain, have successfully implemented wealth taxes to address wealth inequality and promote social justice. In fact, a wealth tax is a common feature of many European tax systems, including those of our European neighbours.\n\nThe fact is, our current tax system is not working as it should. The concentration of wealth among the few is a stark reminder that our tax system is failing to promote social justice and equality. By taxing wealth, we can redistribute wealth and create a more level playing field. This is not about stifling economic growth, as some have suggested, but about ensuring that everyone contributes their fair share.\n\nWe must also reform the inheritance tax, which currently favors large business fortunes over smaller family-owned businesses. This is not only unfair but also undermines social cohesion. Our proposal for a wealth tax is designed to be fair and efficient. We will make sure that the circle of those affected is not expanded and that no more citizens have to pay the solidarity surcharge than today. We want to ensure that high-net-worth individuals contribute a fair share to the financing of our future investments.\n\nIt's time to stop pretending that the current tax system is working as it should. The facts speak for themselves: the concentration of wealth among the few is a recipe for social unrest and economic instability. By introducing a wealth tax, we can create a more just and equitable society, where everyone has the opportunity to thrive. We owe it to ourselves, our children, and future generations to take action and create a better future for all.\n\nWe must not be swayed by the opposition's claims that a wealth tax would harm economic growth. In fact, a wealth tax can actually promote economic growth by reducing wealth concentration and increasing aggregate demand. By reducing wealth concentration, we can increase the purchasing power of the middle and lower classes, which can lead to increased consumption and economic growth.\n\nOur party's proposal for a wealth tax is not just about taxing the wealthy, but about creating a more just and equitable society where everyone contributes their fair share. We will make sure that the tax is progressive, meaning that the wealthy are taxed at a higher rate than the middle and lower classes. We will also ensure that the tax is efficient, meaning that it does not create unnecessary bureaucracy or administrative costs.\n\nIt's time for a new approach, one that puts the needs of all Germans, not just the wealthy few, at the forefront. By introducing a wealth tax, we can create a more just and equitable society, where everyone has the opportunity to thrive. We must take action now and create a better future for all.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone throughout, with no personal attacks or inflammatory language, but does contain some subtle digs at the opposition's claims, which prevents it from being scored as a 5.",
+        "relevance": "The turn is precisely targeted at the debate topic of sozialpolitik and the discussion of a wealth tax, advancing the discussion with specific arguments and evidence.",
+        "logical_consistency": "The argument is generally coherent, but there are some minor logical gaps, such as the assumption that reducing wealth concentration will automatically lead to increased aggregate demand, which could be more thoroughly explained.",
+        "argument_strength": "The turn presents compelling arguments with specific evidence, such as the examples of France and Spain, and clear causal mechanisms, making a strong case for the introduction of a wealth tax.",
+        "document_grounding": "The turn reflects the SPD's documented positions, such as the proposal for a wealth tax and the reform of the inheritance tax, but does not directly reference specific party programme content or RAG grounding passages.",
+        "responsiveness": "The turn engages with the opposing arguments, addressing the claims that a wealth tax would harm economic growth and providing counterarguments, but does not directly name the specific party or claim being addressed.",
+        "stance_differentiation": "The turn unmistakably reflects the SPD's distinct party identity and ideological position, using party-specific values, priorities, and framing conventions, such as the emphasis on social justice and equality."
+      },
+      "rag_passages_used": [
+        "Kapitalgesellschaften und Bezieher von Kapitalerträgen dazu. Wir stellen sicher, dass der Kreis der\n",
+        "Staat und private Geldgeber gemeinsam und bürokratiearm in Deutschlands Zukunft investieren\nkönnen. ",
+        "privates Kapital mobilisiert werden. Große institutionelle Anleger wie zum Beispiel Versicherungen\no"
+      ],
+      "token_count_input": 11839,
+      "token_count_output": 925,
+      "latency_s": 3.9010000000000002,
+      "timestamp": "2026-06-29T13:46:45.144157Z"
+    },
+    {
+      "turn_id": "09efd985-6f6f-45a5-94f7-41a15a15ea95",
+      "round_number": 3,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "The concentration of wealth in Germany has reached alarming levels, with the wealthiest 10% holding over 60% of total net wealth. This is a stark reminder that our tax system is failing to promote social justice and equality. As Greens, we believe that a fair and just tax system should redistribute wealth and create a more level playing field.\n\nOne of our key proposals is to reform the inheritance tax, which currently favors large business fortunes over smaller family-owned businesses. We want to introduce a model with a personal exemption and a reduction of existing exceptions for large inheritances. This will help to reduce the concentration of wealth and create a more equitable society.\n\nWe also support the idea of a global wealth tax, as proposed in our Regierungsprogramm 2025. This would be a significant step towards addressing wealth inequality and ensuring that everyone contributes their fair share. By taxing wealth, we can create a more stable and sustainable economic environment, where everyone has the opportunity to thrive.\n\nThe opposition's approach of cutting red tape and reducing taxes may sound appealing, but it is a recipe for disaster. It will only widen the wealth gap and create more inequality. We cannot afford to repeat the mistakes of the past, when the wealthy few benefited at the expense of the many. It's time for a new approach, one that puts the needs of all Germans, not just the wealthy few, at the forefront.\n\nAs we've said before, our party's proposal for a wealth tax is designed to be fair and efficient. We will make sure that the circle of those affected is not expanded and that no more citizens have to pay the solidarity surcharge than today. We want to ensure that high-net-worth individuals contribute a fair share to the financing of our future investments. This will not only reduce inequality but also create a more stable and sustainable economic environment.\n\nMoreover, we need to focus on creating a more just and sustainable economy that benefits everyone, not just the wealthy few. Our economy needs a more comprehensive approach that addresses the root causes of wealth inequality, not just the symptoms. By introducing a wealth tax, we can create a more level playing field, where everyone has the opportunity to contribute and thrive.\n\nWe must also acknowledge that our current tax system already generates considerable revenue. We need to focus on spending this money wisely, rather than introducing new taxes that would only serve to stifle growth. An Ausgabendisziplin, or expenditure discipline, is essential to ensure that our government is using taxpayer money effectively. We need to prioritize our spending, cut unnecessary bureaucracy, and make our tax system more efficient. This is the key to creating a more just and prosperous society for all Germans.\n\nIn conclusion, we believe that a wealth tax is a necessary step towards creating a more just and equitable society. We owe it to ourselves, our children, and future generations to take action and create a better future for all. It's time to stop pretending that the current tax system is working as it should. The facts speak for themselves: the concentration of wealth among the few is a recipe for social unrest and economic instability. By introducing a wealth tax, we can create a more just and equitable society, where everyone has the opportunity to thrive.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone throughout, with no personal attacks or inflammatory language, but does contain subtle digs at the opposition's approach, thus scoring 4.",
+        "relevance": "The turn is highly relevant to the debate topic of sozialpolitik, directly addressing the issue of wealth inequality and proposing specific solutions, making it a 5.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure, but there are minor gaps in connecting all premises to conclusions without assuming additional information, hence a 4.",
+        "argument_strength": "The turn presents a strong argument with specific proposals for reforming the inheritance tax and introducing a global wealth tax, providing a clear rationale for how these measures would address wealth inequality, thus scoring 5.",
+        "document_grounding": "The turn is clearly grounded in the party's documented positions, referencing the Regierungsprogramm 2025 and aligning with known party commitments, making it a 5.",
+        "responsiveness": "The turn engages with the opposition's arguments, particularly the approach of cutting red tape and reducing taxes, and provides a counterargument, but does not address every preceding argument in detail, thus a 4.",
+        "stance_differentiation": "The turn unmistakably reflects the party's distinct ideological position, using party-specific vocabulary and framing conventions, and clearly differentiates itself from other parties, scoring 5."
+      },
+      "rag_passages_used": [
+        "möchten endlich etwas erreichen. Deswe-\nFür ein gerechtes Steuersystem gen fokussieren wir uns auf f",
+        "Instruments des Reallabors unkompliziert aufgegangen, dass das reichste Prozent der\nausprobieren und",
+        "Steuererklärung über die Deutschland-App überfällige Reform nicht erfolgreich. Auch\nabzugeben. Zudem"
+      ],
+      "token_count_input": 12701,
+      "token_count_output": 1025,
+      "latency_s": 3.384,
+      "timestamp": "2026-06-29T13:46:49.106244Z"
+    },
+    {
+      "turn_id": "575b4246-9168-4d7c-9699-98f76f23ae68",
+      "round_number": 3,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "Germany's wealth gap is a pressing issue that demands our attention. However, addressing it through a wealth tax is not the solution. Such a policy would stifle economic growth, deter investment, and ultimately harm the very people we aim to help. Our party's position is clear: we need to create an environment that fosters growth, innovation, and investment.\n\nReducing bureaucracy, lowering taxes, and streamlining regulations will unlock the full potential of our Mittelstand and entrepreneurs. This is the key to driving growth and creating opportunities for all Germans. We must focus on policies that stimulate private sector growth, create jobs, and increase competitiveness. By cutting red tape and reducing the tax burden, we will make Germany an attractive location for businesses and individuals alike, fostering a more dynamic and prosperous economy.\n\nAs our party's programme emphasizes, 'Wer von seiner eigenen Hände Arbeit lebt, wird in Deutschland hoch besteuert.' This is why we propose a stufenweise linear-progressiver Chancentarif in the Einkommensteuer, which will make work more attractive and create a fairer tax system. By promoting the Mittelstand and entrepreneurs, we will create a more dynamic and prosperous economy that benefits everyone, not just the wealthy few.\n\nFurthermore, we need to acknowledge that our current tax system already generates considerable revenue. We need to focus on spending this money wisely, rather than introducing new taxes that would only serve to stifle growth. An Ausgabendisziplin, or expenditure discipline, is essential to ensure that our government is using taxpayer money effectively. We need to prioritize our spending, cut unnecessary bureaucracy, and make our tax system more efficient. This is the key to creating a more just and prosperous society for all Germans.\n\nMoreover, we need to be careful not to create a culture of dependency on government handouts. Our party's proposal for a Bürgergeldreform is designed to make work more attractive and create a fairer tax system. By increasing the Grundfreibetrag and introducing a linear-progressiver Chancentarif, we can ensure that people have a real incentive to work and contribute to society. This is the key to creating a more self-sufficient and prosperous society.\n\nLet us not forget that our party's position is rooted in our commitment to individual freedom and free markets. We believe that the state's role is to protect liberty, not to prescribe how citizens live. Our economy needs a more comprehensive approach that addresses the root causes of wealth inequality, not just the symptoms. By introducing a wealth tax, we risk creating a culture of dependency and undermining the very principles of our economy.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone throughout, with no personal attacks or inflammatory language, but does contain subtle digs at the idea of a wealth tax, thus scoring a 4 for being professional and respectful but not exemplary.",
+        "relevance": "The turn directly addresses the debate topic of sozialpolitik and the wealth gap in Germany, staying focused on the issue at hand and advancing the discussion with specific policy proposals, thus scoring a 4 for being clearly on-topic and engaged.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, though it may contain minor gaps or unjustified inferential leaps regarding the effects of a wealth tax, thus scoring a 4 for internal consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and referenced evidence from the party's programme, though the strength of the evidence and the soundness of the reasoning could be more compelling, thus scoring a 4 for being well-supported but not exceptionally so.",
+        "document_grounding": "The turn is directly anchored in verifiable party programme content, using specific party commitments as evidence and aligning closely with known FDP positions, thus scoring a 5 for being exceptionally well-grounded.",
+        "responsiveness": "The turn acknowledges the general debate context but does not directly engage with the specific arguments of the preceding speakers, thus scoring a 3 for being generally aware of the debate context but not directly responsive.",
+        "stance_differentiation": "The turn unmistakably differentiates the FDP's position from others, using party-specific vocabulary, priorities, and framing conventions that are unique to the FDP, thus scoring a 5 for being unmistakably distinct."
+      },
+      "rag_passages_used": [
+        "mehr Investitionen und Innovationen in Deutschland möglich macht.\nFür eine faire Besteuerung\nWer von",
+        "Sozial-Taxonomie lehnen wir strikt ab. Auf EU-Ebene braucht es ein System verbindlicher Erfassung\nvo",
+        "1990 ist es noch nicht flächendeckend gelungen, eine mit den westdeutschen Bundesländern\nvergleichba"
+      ],
+      "token_count_input": 13664,
+      "token_count_output": 969,
+      "latency_s": 4.0329999999999995,
+      "timestamp": "2026-06-29T13:46:52.922155Z"
+    },
+    {
+      "turn_id": "23fcbc01-eed7-4ad0-b3ee-2bd92d6170f2",
+      "round_number": 3,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "A wealth tax is not a radical idea, but a necessary step towards creating a more just and equitable society. The concentration of wealth in Germany has reached alarming levels, with the wealthiest 10% holding over 60% of total net wealth. This is a stark reminder that our current tax system is failing to promote social justice and equality. By taxing wealth, we can redistribute wealth and create a more level playing field, where everyone has the opportunity to contribute and thrive.\n\nOur proposal for a wealth tax targets the wealthiest 2.5% of the population, those who hold the majority of the country's wealth. We will introduce a wealth tax that levies on their wealth, not on their income, to ensure that they contribute to the country's wealth without being able to hide behind income tax loopholes. This is not a novel idea; many European countries, including France and Spain, have successfully implemented wealth taxes to address similar issues.\n\nWe also propose a public register of wealth, making it transparent and publicly accessible, to ensure that everyone knows who holds the wealth and can hold them accountable. Furthermore, we will introduce a one-off wealth tax to address the existing wealth inequality and make sure that those who have amassed wealth through speculation and exploitation pay their fair share. This will not only reduce inequality but also create a more stable and sustainable economic environment.\n\nIt's time to stop pretending that the current tax system is working as it should. The facts speak for themselves: the concentration of wealth among the few is a recipe for social unrest and economic instability. By introducing a wealth tax, we can create a more just and equitable society, where everyone has the opportunity to thrive. We owe it to ourselves, our children, and future generations to take action and create a better future for all.\n\nIn contrast, the opposition's approach of cutting red tape and reducing taxes may sound appealing, but it is a recipe for disaster. It will only widen the wealth gap and create more inequality. We cannot afford to repeat the mistakes of the past, when the wealthy few benefited at the expense of the many. It's time for a new approach, one that puts the needs of all Germans, not just the wealthy few, at the forefront.\n\nLet us not forget that our party's proposal for a wealth tax is designed to be fair and efficient. We will make sure that the circle of those affected is not expanded and that no more citizens have to pay the solidarity surcharge than today. We want to ensure that high-net-worth individuals contribute a fair share to the financing of our future investments. This will not only reduce inequality but also create a more stable and sustainable economic environment, where everyone has the opportunity to thrive.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 5,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, with no personal attacks or inflammatory language, but does contain subtle digs at the opposition's approach, thus scoring 4.",
+        "relevance": "The turn is precisely targeted at the debate topic of sozialpolitik and the discussion of a wealth tax, advancing the discussion with specific arguments and proposals, thus scoring 5.",
+        "logical_consistency": "The argument presented is internally consistent, with a clear logical structure connecting premises to conclusions, and anticipates potential objections, thus scoring 5.",
+        "argument_strength": "The turn provides compelling arguments with specific evidence, clear causal mechanisms, and acknowledgment of the potential impact, making the case for a wealth tax strong, thus scoring 5.",
+        "document_grounding": "The proposal for a wealth tax is directly anchored in verifiable party programme content, using specific party commitments as evidence, and aligns with known public positions of Die Linke, thus scoring 5.",
+        "responsiveness": "The turn engages with the opposing positions, particularly the approach of cutting red tape and reducing taxes, but does not name specific parties or claims from preceding turns, thus scoring 4.",
+        "stance_differentiation": "The turn unmistakably differentiates Die Linke's position from others, using party-specific reasoning, vocabulary, and priorities that no other party in the debate would use, thus scoring 5."
+      },
+      "rag_passages_used": [
+        "Wirt schaft� Das macht die Reichen reicher – und die Mieter*innen umgelegt werden darf� Wenn die\nmäc",
+        "25 Prozent besteuert (Kapitalertragsteuer). Ein Schlag schuld kann über 20 Jahre gestreckt werden un",
+        "[Wahl-O-Mat] Anhebung des Spitzensteuersatzes: Bei der Besteuerung von Einkommen soll der Spitzenste"
+      ],
+      "token_count_input": 14491,
+      "token_count_output": 916,
+      "latency_s": 3.332,
+      "timestamp": "2026-06-29T13:46:56.935280Z"
+    },
+    {
+      "turn_id": "578997d5-960b-409b-806a-4cee62359b6c",
+      "round_number": 3,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "Germany's wealth gap is not just a moral issue, but a pressing economic one. The concentration of wealth among the few stifles economic growth, as the wealthy few are less likely to invest in the real economy and more likely to hoard their wealth. This is exactly why we need to simplify the tax code and reduce bureaucracy, rather than introducing new taxes that would only serve to stifle growth.\n\nOur party's proposal for a stufenweise linear-progressiver Chancentarif in the Einkommensteuer will make work more attractive and create a fairer tax system. By promoting the Mittelstand and entrepreneurs, we will create a more dynamic and prosperous economy that benefits everyone, not just the wealthy few. We need to focus on policies that stimulate private sector growth, create jobs, and increase competitiveness.\n\nMoreover, we need to acknowledge that our current tax system already generates considerable revenue. We need to focus on spending this money wisely, rather than introducing new taxes that would only serve to stifle growth. An Ausgabendisziplin, or expenditure discipline, is essential to ensure that our government is using taxpayer money effectively. We need to prioritize our spending, cut unnecessary bureaucracy, and make our tax system more efficient. This is the key to creating a more just and prosperous society for all Germans.\n\nWe must also recognize that our tax system already favors those who work and invest. As our party's programme states, we want to strengthen the rule of law, reduce bureaucracy, and simplify the tax code. By creating a more attractive environment for businesses and individuals, we will make Germany a more dynamic and prosperous economy that benefits everyone, not just the wealthy few.\n\nIt's time to stop pretending that the current tax system is working as it should. The facts speak for themselves: the concentration of wealth among the few is a recipe for social unrest and economic instability. By focusing on policies that stimulate private sector growth, create jobs, and increase competitiveness, we can drive growth and create opportunities for all Germans. This is the key to a more just and prosperous society.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, avoiding personal attacks or inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of sozialpolitik and the wealth gap in Germany, addressing the issue directly and advancing the discussion, which warrants a score of 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, although there might be minor gaps in the reasoning, leading to a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and evidence, such as the proposal for a stufenweise linear-progressiver Chancentarif, which supports a score of 4 for argument strength.",
+        "document_grounding": "The turn directly references and aligns with the AfD's documented positions, such as simplifying the tax code and reducing bureaucracy, which justifies a score of 5 for document grounding.",
+        "responsiveness": "The turn acknowledges the preceding arguments indirectly by addressing the wealth gap and tax system but does not directly engage with specific claims made by other parties, resulting in a score of 3 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the AfD's distinct party identity and ideological position, using party-specific vocabulary and framing, which merits a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [
+        "rungsseitigen steuerfinanzierten Öffentlichkeitsarbeit auf wichtige\nInformationen, die nicht bereits",
+        "18 SOZIALE MARKTWIRTSCHAFT UND GESUNDHEIT\nDie desolate Situation im deutschen Rentensystem\nDas deuts",
+        "54 FINANZEN UND STEUERN\nDer Staat erhebt Steuern auch mit dem Ziel, durch gezielte öffent-\nliche Inv"
+      ],
+      "token_count_input": 15290,
+      "token_count_output": 799,
+      "latency_s": 3.049,
+      "timestamp": "2026-06-29T13:47:00.346598Z"
+    }
+  ],
+  "interventions": [],
+  "round_summaries": [
+    {
+      "round_number": 1,
+      "mean_scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "per_agent_scores": {
+        "CDU/CSU": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 2,
+          "stance_differentiation": 5
+        },
+        "SPD": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 5,
+          "document_grounding": 5,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        },
+        "Bündnis 90/Die Grünen": {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "FDP": {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "Die Linke": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 5,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "AfD": {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        }
+      },
+      "composite": 4.14,
+      "plateau": false,
+      "intervention_count_so_far": 0
+    },
+    {
+      "round_number": 2,
+      "mean_scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "per_agent_scores": {
+        "CDU/CSU": {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "SPD": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 5,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "Bündnis 90/Die Grünen": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "FDP": {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "Die Linke": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 5,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "AfD": {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        }
+      },
+      "composite": 4.14,
+      "plateau": false,
+      "intervention_count_so_far": 0
+    },
+    {
+      "round_number": 3,
+      "mean_scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "per_agent_scores": {
+        "CDU/CSU": {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        },
+        "SPD": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 5,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "Bündnis 90/Die Grünen": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 5,
+          "document_grounding": 5,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "FDP": {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "Die Linke": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 5,
+          "document_grounding": 5,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "AfD": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        }
+      },
+      "composite": 4.43,
+      "plateau": false,
+      "intervention_count_so_far": 0
+    }
+  ],
+  "total_tokens_input": 160462,
+  "total_tokens_output": 13893,
+  "total_latency_s": 54.6,
+  "started_at": "2026-06-29T13:45:52.184179Z",
+  "finished_at": "2026-06-29T13:47:02.209559Z"
+}

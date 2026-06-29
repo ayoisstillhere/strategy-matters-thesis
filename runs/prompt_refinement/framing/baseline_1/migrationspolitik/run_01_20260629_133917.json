@@ -1,0 +1,795 @@
+{
+  "run_id": "b217c74a-8fbc-4f7f-b7bc-5c4595695c3c",
+  "config": {
+    "topic_id": "migrationspolitik",
+    "topic_type": "values-driven",
+    "framing_prompt": "Germany received approximately 330,000 first-time asylum applications in 2023, the highest number since 2016. Municipalities report strain on housing, schools, and administrative capacity, while labour market data shows persistent shortages in healthcare, skilled trades, and IT. Discuss how Germany should reform its migration and asylum policy, addressing the balance between humanitarian obligations under international law, integration capacity, and labour market needs. Ground your arguments in your party's documented positions.",
+    "condition_id": "baseline_1",
+    "condition_label": "None",
+    "condition_type": "baseline",
+    "run_number": 1,
+    "agent_model": "llama-3.1-8b-instant",
+    "judge_model": "llama-3.3-70b-versatile",
+    "moderator_model": "",
+    "num_rounds": 3,
+    "num_agents": 6,
+    "max_interventions": 3,
+    "silent_control_rate": 0.2,
+    "turn_order": [
+      "CDU/CSU",
+      "SPD",
+      "Bündnis 90/Die Grünen",
+      "FDP",
+      "Die Linke",
+      "AfD"
+    ],
+    "has_moderator_agent": false,
+    "uses_trigger": false,
+    "trigger_strategy": null,
+    "nudge_text": "",
+    "language": "en"
+  },
+  "turns": [
+    {
+      "turn_id": "ac4c91c2-058e-4714-a14f-8ad199271881",
+      "round_number": 1,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "We welcome the opportunity to discuss Germany's migration and asylum policy, a crucial aspect of our country's social and economic fabric. As CDU/CSU, we believe that Germany must strike a delicate balance between fulfilling its humanitarian obligations under international law and ensuring the effective integration of newcomers into our society. This balance is essential for maintaining public trust and supporting the social market economy. We reject the notion that our humanitarian duties must be prioritized over social cohesion or the needs of our labour market. On the contrary, we believe that a well-designed migration policy can actually benefit our economy and help alleviate some of the persistent shortages in skilled sectors. Our goal is to create a more orderly and efficient asylum process, one that distinguishes between economic migrants and genuine refugees. In line with our party's programme, we support the implementation of a more robust border control system and the establishment of fair and efficient asylum procedures that prioritize the most vulnerable cases.",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 5,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains an exemplary parliamentary tone, devoid of personal attacks or inflammatory language, and acknowledges the legitimacy of humanitarian obligations.",
+        "relevance": "The turn is precisely targeted at the debate topic of migrationspolitik, addressing the balance between humanitarian duties and social cohesion.",
+        "logical_consistency": "The argument is internally consistent, clearly connecting the need for a balanced migration policy with the goals of maintaining public trust and supporting the social market economy.",
+        "argument_strength": "The turn presents compelling arguments with clear reasoning, supporting the notion that a well-designed migration policy can benefit the economy and alleviate skilled sector shortages.",
+        "document_grounding": "The turn directly references and aligns with the CDU/CSU party programme, specifically mentioning the support for robust border control and efficient asylum procedures.",
+        "responsiveness": "Since this is the first turn, there are no preceding arguments to respond to, making it neutral in terms of responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the CDU/CSU's distinct position on migration policy, emphasizing the importance of balancing humanitarian obligations with social cohesion and economic needs."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 2651,
+      "token_count_output": 506,
+      "latency_s": 1.787,
+      "timestamp": "2026-06-29T13:38:26.983080Z"
+    },
+    {
+      "turn_id": "86315e56-3e9e-47b9-87af-de29829831a8",
+      "round_number": 1,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "Germany's asylum policy is a complex issue that demands a nuanced approach. As a country with a long history of welcoming refugees and asylum seekers, we must uphold our humanitarian obligations under international law. The influx of 330,000 first-time asylum applications in 2023 highlights the need for a more efficient and coordinated approach to asylum processing. Our party's commitment to a strong social safety net and a comprehensive welfare state is rooted in our understanding that everyone deserves a fair chance to rebuild their lives in a new country. This includes access to education, job training, and healthcare, which are essential for successful integration into German society.\n\nIn line with our party's programme, we advocate for a more humane and efficient asylum process that prioritizes the needs of vulnerable individuals, including women, children, and LGBTQ+ individuals. We reject the notion of rigid border controls that could lead to the return of desperate people to life-threatening situations. Our goal is to create a welcoming and inclusive society that integrates newcomers into our communities, while addressing the legitimate concerns of municipalities and the labour market. This requires a more effective coordination between federal, state, and local authorities, as well as a comprehensive integration strategy that supports newcomers in finding employment and accessing social services.",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains an exemplary parliamentary tone, acknowledging the complexity of the issue and the need for a nuanced approach, without any personal attacks or inflammatory language.",
+        "relevance": "The turn is precisely targeted at the debate topic, addressing the asylum policy and integration of newcomers into German society, with no extraneous material.",
+        "logical_consistency": "The argument is generally coherent, with a clear structure connecting premises to conclusions, although it could be strengthened by more explicit causal mechanisms or empirical evidence.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and referenced needs of vulnerable individuals, but could be further strengthened by more detailed evidence or data on the effectiveness of proposed integration strategies.",
+        "document_grounding": "The turn clearly reflects the SPD's known positions on migration policy, emphasizing humanitarian obligations, social safety nets, and comprehensive welfare states, although it does not directly cite specific party programme content.",
+        "responsiveness": "The turn acknowledges the general context of the debate but does not directly engage with the specific arguments made by the preceding speaker, such as the CDU/CSU's rejection of prioritizing humanitarian duties over social cohesion.",
+        "stance_differentiation": "The turn unmistakably reflects the SPD's distinct party identity and ideological position, emphasizing a humane and efficient asylum process, access to social services, and a comprehensive integration strategy, which clearly differentiates it from other parties."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 3123,
+      "token_count_output": 619,
+      "latency_s": 1.851,
+      "timestamp": "2026-06-29T13:38:28.747955Z"
+    },
+    {
+      "turn_id": "06e73adb-8004-4290-8512-d2805fba95cb",
+      "round_number": 1,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "The influx of over 330,000 first-time asylum applications in 2023 underscores the pressing need for a comprehensive overhaul of Germany's migration and asylum policy. As a party committed to upholding human rights and international law, we must prioritize the safety and dignity of all individuals seeking refuge in our country. However, this does not preclude us from addressing the legitimate concerns of municipalities and the labour market. In fact, our party's programme emphasizes the importance of a just ecological transition, which can be achieved through a more inclusive and sustainable approach to migration.\n\nWe advocate for a more humane and efficient asylum process that prioritizes the needs of vulnerable individuals, while also implementing measures to support the integration of newcomers into our labour market. This includes investing in vocational training and education programs, as well as providing access to job placement services and social support. By doing so, we can not only address the pressing shortages in skilled sectors but also create a more inclusive and equitable society that values diversity and promotes social cohesion.\n\nMoreover, our party's commitment to European solidarity and cooperation requires a more unified and coordinated approach to asylum policy across the EU. We must work together to develop a more effective and humane system for processing asylum claims, while also addressing the root causes of migration and promoting sustainable development in countries of origin. By taking a more comprehensive and inclusive approach to migration, we can create a more just and equitable society that benefits both newcomers and native-born Germans alike.",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 5,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains an exemplary parliamentary tone, acknowledging the legitimacy of opposing perspectives while firmly disagreeing, and prioritizes the safety and dignity of all individuals seeking refuge.",
+        "relevance": "The turn is precisely targeted at the debate question, addressing the need for a comprehensive overhaul of Germany's migration and asylum policy, and deepens the discussion by introducing the importance of a just ecological transition.",
+        "logical_consistency": "The argument is rigorously logical, connecting the need for a humane asylum process with the importance of integrating newcomers into the labour market, and distinguishes between empirical claims and value judgments.",
+        "argument_strength": "The turn presents compelling arguments with specific evidence, such as the need for vocational training and education programs, and clear causal mechanisms, like the benefits of a more inclusive and sustainable approach to migration.",
+        "document_grounding": "The turn is directly anchored in verifiable party programme content, such as the emphasis on human rights, international law, and European solidarity, with no ungrounded claims.",
+        "responsiveness": "The turn engages with the preceding arguments, particularly the SPD's commitment to a humane and efficient asylum process, but does not name the specific party or claim being addressed, thus not fully meeting the criteria for a score of 5.",
+        "stance_differentiation": "The turn unmistakably reflects the party's distinct identity and ideological position, using party-specific values, priorities, and framing conventions, such as the importance of a just ecological transition and European solidarity."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 3702,
+      "token_count_output": 682,
+      "latency_s": 2.4370000000000003,
+      "timestamp": "2026-06-29T13:38:30.590138Z"
+    },
+    {
+      "turn_id": "0efd2bb7-2c5e-494e-9faf-c93f2cb485cb",
+      "round_number": 1,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "Germany's migration and asylum policy is at a crossroads. We must acknowledge that our current system is overstretched and in need of reform. The influx of 330,000 first-time asylum applications in 2023 is a stark reminder of the challenges we face. However, we must resist the temptation to sacrifice our humanitarian obligations under international law on the altar of a more orderly and efficient process.\n\nInstead, we propose a more pragmatic approach that balances our obligations with the need for effective integration and labour market participation. In line with our party's programme, we advocate for a more market-based approach to migration, one that recognizes the value of skilled labour and the importance of attracting the best and brightest from around the world. This includes streamlined procedures for highly skilled workers, as well as targeted measures to support the integration of newcomers into our labour market.\n\nWe also believe that a more effective asylum process requires a more robust border control system, but one that is not based on rigid controls or arbitrary quotas. Rather, we propose a more nuanced approach that takes into account the complexities of individual cases and the need for greater transparency and accountability in our asylum procedures. By doing so, we can ensure that our humanitarian obligations are upheld while also addressing the legitimate concerns of municipalities and the labour market.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without attacking parties or individuals directly, thus scoring a 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of Germany's migration and asylum policy, advancing the discussion with specific proposals and considerations, making it a 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, proposing a market-based approach to migration and a more nuanced asylum process, but lacks a rigorous logical chain in parts, hence a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the need for a more market-based approach and streamlined procedures for skilled workers, earning a 4 for argument strength.",
+        "document_grounding": "The proposal aligns with the FDP's known positions on migration, such as advocating for a more market-based approach, but does not directly reference specific party documents, resulting in a score of 4 for document grounding.",
+        "responsiveness": "While the turn acknowledges the challenges and general context of the debate, it does not directly engage with the specific arguments made by preceding speakers, thus scoring a 3 for responsiveness.",
+        "stance_differentiation": "The turn clearly reflects the FDP's distinct party identity and ideological position, emphasizing a market-based approach and the importance of attracting skilled labour, which is unmistakably distinct from other parties, scoring a 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 4276,
+      "token_count_output": 647,
+      "latency_s": 2.354,
+      "timestamp": "2026-06-29T13:38:33.064970Z"
+    },
+    {
+      "turn_id": "876f63a0-c8c5-48ed-a127-7781e8482981",
+      "round_number": 1,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Germany's asylum policy is in crisis, with over 330,000 first-time asylum applications in 2023 putting a massive strain on municipalities and the labour market. Yet, instead of scapegoating refugees, we must address the systemic issues driving this influx, such as poverty, conflict, and climate change. Die Linke's programme emphasizes the importance of a humane and efficient asylum process that prioritizes the needs of vulnerable individuals, including women, children, and LGBTQ+ individuals.\n\nHowever, we cannot simply talk about a more efficient asylum process without addressing the root causes of migration. We must work towards a world where people are not forced to flee their homes due to war, persecution, or economic necessity. This requires international cooperation and solidarity, as well as a commitment to addressing the global drivers of migration, such as the exploitation of resources and the pursuit of profit over people.\n\nIn line with our party's programme, we advocate for a fundamental transformation of our asylum policy, one that prioritizes the dignity and human rights of all individuals seeking refuge in our country. This includes the immediate abolition of inhumane detention centres and the introduction of a fair and transparent asylum procedure that recognizes the complexity of individual cases. We also believe that the labour market should be opened up to refugees and migrants, with access to vocational training and job placement services to support their integration into our society.\n\nBut this is not just about refugees and migrants; it is also about the future of our society and our economy. By embracing a more inclusive and equitable approach to migration, we can address the shortages in skilled sectors and create a more dynamic and diverse labour market that benefits both newcomers and native-born Germans alike. This is the vision of Die Linke: a society that values solidarity, equality, and human rights for all.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without personal attacks or inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of migrationspolitik, addressing the current challenges and proposing solutions, making it highly relevant and deserving of a score of 5.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, although minor gaps in addressing counterarguments prevent it from being exceptional, hence a score of 4.",
+        "argument_strength": "The turn presents compelling arguments with specific evidence and clear causal mechanisms, such as addressing the root causes of migration and proposing concrete measures for asylum process reform, warranting a score of 5.",
+        "document_grounding": "The turn is directly anchored in Die Linke's documented positions, using specific party commitments as evidence and reflecting a deep understanding of the party's programme, thus scoring a 5.",
+        "responsiveness": "While the turn references the general debate context, it does not directly engage with the specific arguments of preceding speakers, instead presenting a standalone position, which is why it scores a 3 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects Die Linke's distinct party identity and ideological position, using party-specific vocabulary and framing conventions that are unmistakable and unique to Die Linke, deserving of a score of 5."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 4937,
+      "token_count_output": 745,
+      "latency_s": 2.24,
+      "timestamp": "2026-06-29T13:38:35.635415Z"
+    },
+    {
+      "turn_id": "d1b890ad-475b-4a5d-b2c4-3db7d4e1636f",
+      "round_number": 1,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "Germany is at a breaking point due to the unchecked influx of migrants. The staggering number of 330,000 first-time asylum applications in 2023 is a stark reminder of the consequences of our failed asylum policy. Our party's programme emphasizes the importance of securing our borders and enforcing strict immigration controls to prevent uncontrolled migration. This is not only essential for maintaining public trust but also for ensuring the effective integration of those who do come to our country.\n\nThe current system prioritizes the interests of migrants over those of German citizens, leading to a strain on our municipalities, schools, and labour market. We cannot afford to ignore the concerns of our citizens any longer. By implementing a more robust border control system and introducing stricter asylum procedures, we can ensure that only those in genuine need of protection are granted asylum. Our goal is to create a fair and efficient asylum process that prioritizes the most vulnerable cases while protecting the interests of German citizens.\n\nWe cannot continue to blindly follow international law without considering the consequences for our country and our people. A more nuanced approach that takes into account the complexities of individual cases is necessary, but this must not come at the expense of our sovereignty and the well-being of German citizens.",
+      "scores": {
+        "civility": 2,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn uses phrases like 'breaking point' and 'failed asylum policy', which have a somewhat inflammatory tone, and implies that migrants' interests are prioritized over those of German citizens, which could be seen as dismissive or divisive.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and discusses the need for stricter immigration controls and a more efficient asylum process, making it clearly relevant to the discussion.",
+        "logical_consistency": "The argument is generally coherent but lacks specific evidence or data to support the claims about the consequences of the current asylum policy, and the connection between stricter controls and effective integration is not fully explained.",
+        "argument_strength": "The turn presents some reasoning for stricter immigration controls and a more efficient asylum process, but the arguments are not particularly compelling or supported by strong evidence, and counterarguments are not addressed.",
+        "document_grounding": "The turn reflects AfD's known party positions on migration and asylum policy, emphasizing the need for stricter controls and prioritizing the interests of German citizens, which is in line with their programme.",
+        "responsiveness": "The turn acknowledges the general debate context and the issue of migration, but does not directly engage with specific arguments or claims made by other parties in the preceding turns.",
+        "stance_differentiation": "The turn unmistakably reflects AfD's distinct party identity and ideological position on migration and asylum policy, using language and framing that is characteristic of the party's stance on these issues."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 5556,
+      "token_count_output": 631,
+      "latency_s": 2.3810000000000002,
+      "timestamp": "2026-06-29T13:38:37.947282Z"
+    },
+    {
+      "turn_id": "6258ba6a-7ea1-4623-b41b-65a7bdcf6906",
+      "round_number": 2,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "The influx of 330,000 first-time asylum applications in 2023 has underscored the need for a more efficient and effective asylum process. We can no longer afford to have a system that is plagued by lengthy processing times, inadequate resources, and a lack of transparency. Our party's programme emphasizes the importance of implementing a more robust border control system to prevent uncontrolled migration, while also ensuring that those who do come to our country are properly integrated into our society.\n\nTo address these challenges, we propose a three-pronged approach. Firstly, we will establish a more efficient asylum procedure that prioritizes the most vulnerable cases, such as women and children, and ensures that they receive the necessary support and protection. This will involve introducing more streamlined procedures for asylum applications, as well as increasing the number of asylum judges and staff to handle the increased demand.\n\nSecondly, we will implement a more comprehensive integration strategy that supports newcomers in finding employment and accessing social services. This will involve investing in vocational training and education programs, as well as providing access to job placement services and language courses. By doing so, we can help alleviate some of the persistent shortages in skilled sectors and ensure that newcomers are able to contribute to our labour market.\n\nThirdly, we will work towards a more sustainable and inclusive approach to migration that takes into account the global drivers of migration, such as poverty, conflict, and climate change. This will involve increasing our support for international development programs, as well as working with other countries to address the root causes of migration. By doing so, we can help reduce the number of people who are forced to flee their homes due to these factors and create a more stable and secure world.\n\nIn conclusion, we believe that our proposed approach will help address the pressing challenges facing our asylum system, while also promoting a more inclusive and sustainable approach to migration. We look forward to working with other parties to find common ground and develop a more effective and humane asylum policy.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, with no personal attacks or inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of migrationspolitik, addressing the need for a more efficient and effective asylum process, and advancing the discussion with specific proposals, making it a 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, with a clear three-pronged approach to addressing asylum challenges, but lacks rigorous logical chains and anticipation of objections, hence a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and identified mechanisms for improving the asylum process, but could benefit from more concrete evidence and data to strengthen the arguments, resulting in a score of 4 for argument strength.",
+        "document_grounding": "The turn reflects the CDU/CSU's known positions on migration policy, including the emphasis on a robust border control system and comprehensive integration strategy, aligning with their party programme, thus scoring a 4 for document grounding.",
+        "responsiveness": "While the turn acknowledges the general debate context, it does not directly engage with specific arguments made by preceding speakers, making it a 3 for responsiveness as it does not go beyond generic acknowledgment.",
+        "stance_differentiation": "The turn clearly maintains a distinct CDU/CSU party identity, using party-specific values and priorities, such as the emphasis on a robust border control system and comprehensive integration, making it a 4 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 6131,
+      "token_count_output": 801,
+      "latency_s": 3.04,
+      "timestamp": "2026-06-29T13:38:40.616827Z"
+    },
+    {
+      "turn_id": "ccf1534e-1a84-4e70-94a0-92ab1f9a6c3d",
+      "round_number": 2,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "We cannot continue to treat asylum seekers as mere statistics or administrative burdens. The influx of 330,000 first-time asylum applications in 2023 is a stark reminder of the human faces behind these numbers. We must recognize the dignity and worth of every individual seeking refuge in our country, regardless of their background or circumstances.\n\nAs a party that champions the values of social justice and human rights, we cannot support a policy that prioritizes border controls over the needs of vulnerable individuals. Our commitment to a strong social safety net and a comprehensive welfare state demands that we provide a safe and welcoming environment for those fleeing war, persecution, or economic hardship. This includes access to education, job training, and healthcare, which are essential for successful integration into German society.\n\nTo address the pressing challenges facing our asylum system, we propose a more humane and efficient asylum process that prioritizes the needs of vulnerable individuals, including women, children, and LGBTQ+ individuals. This will involve introducing more streamlined procedures for asylum applications, as well as increasing the number of asylum judges and staff to handle the increased demand. We will also invest in vocational training and education programs, as well as provide access to job placement services and language courses to support the integration of newcomers into our labour market.\n\nHowever, we cannot simply focus on the asylum process without addressing the root causes of migration. We must work towards a world where people are not forced to flee their homes due to war, persecution, or economic necessity. This requires international cooperation and solidarity, as well as a commitment to addressing the global drivers of migration, such as poverty, conflict, and climate change.\n\nIn conclusion, we believe that our proposed approach will help address the pressing challenges facing our asylum system, while also promoting a more inclusive and sustainable approach to migration. We will continue to work towards a society that values solidarity, equality, and human rights for all.",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains an exemplary parliamentary tone, acknowledging the dignity and worth of every individual seeking refuge, and avoids any inflammatory language or personal attacks.",
+        "relevance": "The turn is precisely targeted at the debate topic of migrationspolitik, addressing the asylum process, integration, and root causes of migration, making it highly relevant to the discussion.",
+        "logical_consistency": "The argument is generally coherent, but there are minor logical gaps, such as the transition between discussing the asylum process and addressing the root causes of migration, which could be more smoothly connected.",
+        "argument_strength": "The turn presents compelling arguments with specific evidence, such as the number of first-time asylum applications, and clear proposals for a more humane and efficient asylum process, making the argument exceptionally strong.",
+        "document_grounding": "The turn is directly anchored in the SPD's known programme content, referencing commitments to social justice, human rights, and a strong social safety net, demonstrating a high level of document grounding.",
+        "responsiveness": "The turn engages with the preceding arguments, particularly those of CDU/CSU, by addressing the need for a more efficient asylum process and the importance of integrating newcomers into the labour market, but could more explicitly name and address specific counterarguments.",
+        "stance_differentiation": "The turn unmistakably reflects the SPD's distinct party identity and ideological position, emphasizing social justice, human rights, and solidarity, making it unmistakably distinct from other parties in the debate."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 6955,
+      "token_count_output": 764,
+      "latency_s": 2.6180000000000003,
+      "timestamp": "2026-06-29T13:38:43.385488Z"
+    },
+    {
+      "turn_id": "0118a429-19f1-4143-b296-49e4d42141f2",
+      "round_number": 2,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "Germany's asylum policy is at a critical juncture, and it's imperative that we adopt a comprehensive and inclusive approach to addressing the influx of over 330,000 first-time asylum applications in 2023. The current system is overstretched, and municipalities are reporting strain on housing, schools, and administrative capacity. Labour market data shows persistent shortages in healthcare, skilled trades, and IT, which can only be alleviated by investing in the integration of newcomers.\n\nOur party's programme emphasizes the importance of a just ecological transition, which can be achieved through a more inclusive and sustainable approach to migration. We advocate for a more humane and efficient asylum process that prioritizes the needs of vulnerable individuals, while also implementing measures to support the integration of newcomers into our labour market. This includes investing in vocational training and education programs, as well as providing access to job placement services and social support.\n\nHowever, we cannot simply focus on the asylum process without addressing the root causes of migration. We must work towards a world where people are not forced to flee their homes due to war, persecution, or economic necessity. This requires international cooperation and solidarity, as well as a commitment to addressing the global drivers of migration, such as poverty, conflict, and climate change. By taking a more comprehensive and inclusive approach to migration, we can create a more just and equitable society that benefits both newcomers and native-born Germans alike.\n\nMoreover, our party's commitment to European solidarity and cooperation requires a more unified and coordinated approach to asylum policy across the EU. We must work together to develop a more effective and humane system for processing asylum claims, while also addressing the root causes of migration and promoting sustainable development in countries of origin. By taking a more comprehensive and inclusive approach to migration, we can create a more stable and secure world that values solidarity, equality, and human rights for all.",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 5,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains an exemplary parliamentary tone, acknowledging the legitimacy of opposing perspectives and avoiding personal attacks or inflammatory language. The language used is professional and respectful throughout.",
+        "relevance": "The turn is precisely targeted at the debate topic of migrationspolitik, addressing the current challenges and proposing solutions that advance the discussion. The argument stays within scope and deepens the discussion.",
+        "logical_consistency": "The argument presented is rigorous and internally consistent, with a clear logical structure connecting premises to conclusions. The turn anticipates potential objections and distinguishes between empirical claims and value judgments.",
+        "argument_strength": "The turn presents compelling arguments with specific evidence, clear causal mechanisms, and an acknowledgment of limitations or trade-offs. The reasoning is well-supported and addresses multiple facets of the issue.",
+        "document_grounding": "The turn is directly anchored in verifiable party programme content, using specific party commitments as evidence. The claims made are consistent with the party's known positions and public statements.",
+        "responsiveness": "The turn engages with the preceding arguments, particularly those related to the asylum process and integration strategies. However, it does not name specific parties or claims being addressed, which prevents it from being scored as exceptional.",
+        "stance_differentiation": "The turn unmistakably reflects the party's distinct ideological position, using party-specific vocabulary, priorities, and framing conventions. The argument is unmistakably that of Bündnis 90/Die Grünen, with no confusion possible with other parties."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 7746,
+      "token_count_output": 761,
+      "latency_s": 2.778,
+      "timestamp": "2026-06-29T13:38:46.056768Z"
+    },
+    {
+      "turn_id": "2c02bc67-e88e-4fc7-99a8-86052805e958",
+      "round_number": 2,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "The current asylum system is a perfect example of how bureaucratic inefficiencies and a lack of market-based solutions can lead to chaos and strain on our municipalities and labour market. We must acknowledge that our current system is not working, and it's time for a more pragmatic approach that balances our humanitarian obligations with the need for effective integration and labour market participation.\n\nIn line with our party's programme, we advocate for a more market-based approach to migration, one that recognizes the value of skilled labour and the importance of attracting the best and brightest from around the world. This includes streamlined procedures for highly skilled workers, as well as targeted measures to support the integration of newcomers into our labour market. By doing so, we can alleviate some of the persistent shortages in skilled sectors and ensure that newcomers are able to contribute to our labour market.\n\nHowever, we also recognize that not all asylum seekers are highly skilled workers. That's why we propose a more nuanced approach that takes into account the complexities of individual cases and the need for greater transparency and accountability in our asylum procedures. This includes the implementation of a more robust border control system, but one that is not based on rigid controls or arbitrary quotas. Instead, we will work towards a system that is fair, efficient, and humane, one that prioritizes the needs of vulnerable individuals while also addressing the legitimate concerns of municipalities and the labour market.\n\nBy taking a more pragmatic and market-based approach to migration, we can create a more inclusive and sustainable society that benefits both newcomers and native-born Germans alike. This is the vision of the FDP, and we believe that it's time for a change in our asylum policy.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, with no personal attacks or inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of migrationspolitik, addressing the current asylum system and proposing a more market-based approach to migration, making it highly relevant and scoring a 5.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, although there might be minor gaps in fully addressing potential counterarguments, scoring a 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and references to the party's programme, but could benefit from more detailed evidence or data to further strengthen the arguments, thus scoring a 4 for argument strength.",
+        "document_grounding": "The turn is directly anchored in the FDP's programme, with clear references to the party's documented positions on migration and asylum policy, scoring a 5 for document grounding.",
+        "responsiveness": "While the turn acknowledges the need for a new approach to asylum policy, it does not directly engage with the specific arguments made by preceding speakers, scoring a 3 for responsiveness as it mostly presents the FDP's stance without addressing others' claims.",
+        "stance_differentiation": "The turn unmistakably presents the FDP's distinct position on migration and asylum policy, using party-specific vocabulary and framing conventions that differentiate it from other parties, thus scoring a 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 8476,
+      "token_count_output": 725,
+      "latency_s": 2.666,
+      "timestamp": "2026-06-29T13:38:48.851659Z"
+    },
+    {
+      "turn_id": "98cc60e6-ce52-488b-891e-8417ca8b23e0",
+      "round_number": 2,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "The current asylum policy in Germany is a stark reminder of the humanitarian crisis unfolding before our eyes. Over 330,000 first-time asylum applications in 2023 put a massive strain on municipalities, schools, and administrative capacity, while labour market data shows persistent shortages in healthcare, skilled trades, and IT. As Die Linke, we cannot simply focus on the asylum process without addressing the root causes of migration, such as poverty, conflict, and climate change.\n\nIt is imperative that we prioritize the dignity and human rights of all individuals seeking refuge in our country. This includes the immediate abolition of inhumane detention centres and the introduction of a fair and transparent asylum procedure that recognizes the complexity of individual cases. We must also invest in vocational training and education programs, as well as provide access to job placement services and language courses to support the integration of newcomers into our labour market.\n\nHowever, our approach goes beyond merely alleviating the symptoms of the crisis. We must work towards a world where people are not forced to flee their homes due to war, persecution, or economic necessity. This requires international cooperation and solidarity, as well as a commitment to addressing the global drivers of migration. By taking a more comprehensive and inclusive approach to migration, we can create a more just and equitable society that values solidarity, equality, and human rights for all.\n\nMoreover, we cannot ignore the fact that the current asylum policy is also a reflection of the broader social and economic crisis in our country. The influx of asylum seekers has highlighted the need for a more inclusive and equitable approach to migration, one that addresses the root causes of poverty, inequality, and social exclusion. By embracing a more inclusive and equitable approach to migration, we can create a more dynamic and diverse labour market that benefits both newcomers and native-born Germans alike.\n\nAs Die Linke, we believe that our proposed approach is not only morally justifiable but also economically sustainable. By investing in the integration of newcomers, we can alleviate some of the persistent shortages in skilled sectors and create a more stable and secure society. This is the vision of Die Linke, and we urge all parties to join us in working towards a more just and equitable society that values human rights, solidarity, and equality for all.",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 5,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, acknowledging the humanitarian crisis and the need for a comprehensive approach to migration, without using inflammatory language or personal attacks.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik, discussing the current asylum policy, its challenges, and proposing a comprehensive approach to address the root causes of migration.",
+        "logical_consistency": "The argument is well-structured and coherent, starting with the description of the crisis, then proposing solutions, and finally justifying the approach, with a clear logical chain and no self-contradictions.",
+        "argument_strength": "The turn provides compelling arguments, supported by references to the humanitarian crisis, labour market data, and the need for international cooperation, making a strong case for a comprehensive and inclusive approach to migration.",
+        "document_grounding": "The turn reflects Die Linke's documented positions, emphasizing the importance of human rights, solidarity, and equality, and proposing solutions that align with the party's programme, such as the abolition of detention centres and investment in vocational training.",
+        "responsiveness": "The turn engages with the preceding arguments, acknowledging the need for a comprehensive approach to migration, but does not directly address specific claims made by other parties, which is why it scores 4 instead of 5.",
+        "stance_differentiation": "The turn unmistakably reflects Die Linke's distinct party identity and ideological position, emphasizing the importance of human rights, solidarity, and equality, and proposing solutions that are unique to the party's programme and values."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 9300,
+      "token_count_output": 851,
+      "latency_s": 2.991,
+      "timestamp": "2026-06-29T13:38:51.673961Z"
+    },
+    {
+      "turn_id": "7c236782-bf3a-46ad-892b-2041c1303c94",
+      "round_number": 2,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "The current asylum policy has reached a breaking point, with over 330,000 first-time asylum applications in 2023 putting a massive strain on our municipalities, schools, and administrative capacity. As the AfD, we have long argued that our policy must prioritize the needs of German citizens and the integration of those who do come to our country, rather than blindly following international law at the expense of our sovereignty.\n\nGermany's failed asylum policy has led to a culture of entitlement among migrants, where they feel they can take advantage of our welfare system without making any effort to integrate or contribute to our society. This is unsustainable and unacceptable. Our party's programme emphasizes the importance of implementing a more robust border control system to prevent uncontrolled migration, while also ensuring that those who do come to our country are properly integrated into our society.\n\nWe cannot continue to turn a blind eye to the root causes of migration, such as poverty, conflict, and climate change. These issues require a comprehensive and international response, not just a piecemeal approach that fails to address the underlying problems. By investing in vocational training and education programs, as well as providing access to job placement services and language courses, we can help alleviate some of the persistent shortages in skilled sectors and ensure that newcomers are able to contribute to our labour market.\n\nHowever, we must also acknowledge that our current asylum system is not designed to handle the influx of asylum seekers we are seeing today. The current system is plagued by lengthy processing times, inadequate resources, and a lack of transparency. We need a more efficient and humane asylum process that prioritizes the needs of vulnerable individuals, such as women and children, and ensures that they receive the necessary support and protection.\n\nUltimately, the AfD's vision for Germany's asylum policy is one that prioritizes the needs of German citizens and the integration of newcomers, while also upholding our humanitarian obligations under international law. We will continue to advocate for a more robust border control system, stricter asylum procedures, and a more comprehensive integration strategy that supports the needs of both newcomers and native-born Germans alike.\n\nModerator, I would like to request clarification on the following point: How do the other parties plan to address the root causes of migration, such as poverty, conflict, and climate change, and what specific measures will they take to alleviate the strain on our municipalities and labour market?",
+      "scores": {
+        "civility": 2,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn contains phrases that could be seen as dismissive or critical of migrants, such as 'culture of entitlement among migrants', which may be perceived as inflammatory or derogatory, thus scoring a 2 for civility.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and stays focused on the issue at hand, discussing the strain on municipalities, the need for a more robust border control system, and the importance of integrating newcomers, thus scoring a 4 for relevance.",
+        "logical_consistency": "The argument presented is generally coherent but lacks rigorous logical structure, with some points feeling somewhat disconnected or lacking clear causal links, thus scoring a 3 for logical consistency.",
+        "argument_strength": "The turn provides some reasoning and evidence for its claims, such as the strain on municipalities and the need for better integration strategies, but these are not exceptionally compelling or well-supported, thus scoring a 3 for argument strength.",
+        "document_grounding": "The turn reflects the AfD's known positions on migration policy, such as the emphasis on border control and the integration of newcomers, which aligns with their party programme, thus scoring a 4 for document grounding.",
+        "responsiveness": "The turn does engage with the broader debate context, referencing the need to address the root causes of migration and the strain on municipalities, but does not directly respond to specific arguments made by other parties, thus scoring a 3 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the AfD's distinct stance on migration policy, emphasizing the need for a more robust border control system, stricter asylum procedures, and a focus on the needs of German citizens, which clearly differentiates it from other parties, thus scoring a 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 10240,
+      "token_count_output": 922,
+      "latency_s": 3.1660000000000004,
+      "timestamp": "2026-06-29T13:38:54.709650Z"
+    },
+    {
+      "turn_id": "8f71943f-2fa6-4ec4-8c59-852f5e7d7ad1",
+      "round_number": 3,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "As we continue to discuss Germany's asylum policy, it is essential to acknowledge the complexities of addressing the root causes of migration. Poverty, conflict, and climate change are all pressing issues that require a comprehensive and international response. As CDU/CSU, we recognize the need for a multifaceted approach that involves not only our government but also international partners, civil society, and the private sector.\n\nIn line with our party's programme, we have committed to increasing our support for international development programs, particularly in regions that are prone to conflict and instability. This includes initiatives aimed at promoting economic development, improving access to education and healthcare, and enhancing the resilience of communities in the face of climate-related disasters.\n\nTo alleviate the strain on our municipalities and labour market, we propose a three-pronged strategy. Firstly, we will continue to invest in vocational training and education programs that support the integration of newcomers into our labour market. This will include targeted measures to address the persistent shortages in skilled sectors, such as healthcare, skilled trades, and IT.\n\nSecondly, we will work towards creating a more efficient and humane asylum process that prioritizes the needs of vulnerable individuals, such as women and children. This will involve introducing more streamlined procedures for asylum applications, as well as increasing the number of asylum judges and staff to handle the increased demand.\n\nThirdly, we will implement a more comprehensive integration strategy that supports the social and economic inclusion of newcomers. This will include measures such as language courses, job placement services, and access to social services, as well as initiatives aimed at promoting social cohesion and community engagement.\n\nIn conclusion, we believe that our proposed approach will help address the pressing challenges facing our asylum system, while also promoting a more inclusive and sustainable approach to migration. We will continue to work towards a society that values solidarity, equality, and human rights for all, and we look forward to working with other parties to find common ground and develop a more effective and humane asylum policy.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, with no instances of inflammatory language or personal attacks, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of Germany's asylum policy and migration, providing a clear and focused argument that advances the discussion, earning a score of 5 for relevance.",
+        "logical_consistency": "The argument presented is generally coherent, with a clear logical structure connecting premises to conclusions, although there might be minor gaps in addressing potential counterarguments, resulting in a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and evidence, such as the proposal for a three-pronged strategy to alleviate strain on municipalities and the labour market, thus scoring a 4 for argument strength.",
+        "document_grounding": "The turn is directly anchored in the CDU/CSU party's programme, with clear references to committed policies such as increasing support for international development programs, earning a score of 5 for document grounding.",
+        "responsiveness": "The turn engages with the preceding discussion by addressing the need for a comprehensive approach to migration and asylum, responding to implicit arguments about the root causes of migration and the strain on municipalities, thus scoring a 4 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the CDU/CSU's distinct party identity and ideological position, using party-specific vocabulary and framing conventions that differentiate it from other parties, resulting in a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 11049,
+      "token_count_output": 799,
+      "latency_s": 3.0300000000000002,
+      "timestamp": "2026-06-29T13:38:57.756492Z"
+    },
+    {
+      "turn_id": "28cbe12c-f75d-490c-8dc0-3c6a6c76c808",
+      "round_number": 3,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "The sheer scale of the asylum influx has left our municipalities and labour market struggling to cope. It's time for a more humane and efficient asylum process that prioritizes the needs of vulnerable individuals, including women, children, and LGBTQ+ individuals. Our party's commitment to a strong social safety net and a comprehensive welfare state demands that we provide a safe and welcoming environment for those fleeing war, persecution, or economic hardship.\n\nTo address this challenge, we propose investing in vocational training and education programs, as well as providing access to job placement services and language courses to support the integration of newcomers into our labour market. This includes targeted measures to alleviate the persistent shortages in skilled sectors, such as healthcare, skilled trades, and IT. By doing so, we can create a more inclusive and sustainable society that benefits both newcomers and native-born Germans alike.\n\nMoreover, we must work towards a world where people are not forced to flee their homes due to war, persecution, or economic necessity. This requires international cooperation and solidarity, as well as a commitment to addressing the global drivers of migration, such as poverty, conflict, and climate change. By taking a more comprehensive and inclusive approach to migration, we can create a more just and equitable society that values solidarity, equality, and human rights for all.\n\nWe will not sacrifice our humanitarian obligations under international law on the altar of a more orderly and efficient process. Our asylum policy must be guided by the principles of humanity, dignity, and respect for human rights. We will continue to work towards a society that values the dignity and worth of every individual, regardless of their background or circumstances.",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, acknowledging the legitimacy of opposing perspectives and focusing on the party's commitment to humanitarian obligations and human rights.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and advances the discussion by proposing specific measures to support the integration of newcomers into the labour market.",
+        "logical_consistency": "The argument is generally coherent, but there are minor logical gaps, such as the transition between discussing the need for a more efficient asylum process and the importance of addressing global drivers of migration.",
+        "argument_strength": "The turn presents compelling arguments with specific evidence, such as the need for vocational training and education programs, and clear causal mechanisms, like the link between poverty and migration.",
+        "document_grounding": "The turn is directly anchored in the SPD's party programme, referencing the commitment to a strong social safety net and a comprehensive welfare state, and aligns with the party's known positions on migration and asylum policy.",
+        "responsiveness": "The turn engages with the preceding arguments, particularly those related to the need for a more efficient asylum process and the importance of addressing the root causes of migration, but does not directly address specific claims made by other parties.",
+        "stance_differentiation": "The turn unmistakably reflects the SPD's party identity and ideological position, emphasizing the importance of humanitarian obligations, social justice, and human rights, which distinguishes it from other parties in the debate."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 11623,
+      "token_count_output": 705,
+      "latency_s": 3.185,
+      "timestamp": "2026-06-29T13:39:00.804090Z"
+    },
+    {
+      "turn_id": "8103a5a1-03c4-45ad-a835-c04be5e00618",
+      "round_number": 3,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "The current asylum policy in Germany is a litmus test of our values as a society, and it's imperative that we adopt a comprehensive and inclusive approach to address the influx of over 330,000 first-time asylum applications in 2023. The strain on municipalities, schools, and administrative capacity is a pressing concern, but so too are the persistent shortages in skilled sectors, such as healthcare, skilled trades, and IT. As Bündnis 90/Die Grünen, we have always advocated for a just ecological transition, and we believe that this can be achieved through a more inclusive and sustainable approach to migration.\n\nWe have proposed a more humane and efficient asylum process that prioritizes the needs of vulnerable individuals, while also implementing measures to support the integration of newcomers into our labour market. This includes investing in vocational training and education programs, as well as providing access to job placement services and social support. By doing so, we can alleviate some of the persistent shortages in skilled sectors and create a more inclusive and equitable society that benefits both newcomers and native-born Germans alike.\n\nHowever, we cannot simply focus on the asylum process without addressing the root causes of migration. Poverty, conflict, and climate change are all pressing issues that require a comprehensive and international response. As a party committed to European solidarity and cooperation, we believe that we must work together with our international partners to address these drivers of migration. This includes increasing our support for international development programs, particularly in regions that are prone to conflict and instability.\n\nFurthermore, we must also address the systemic issues driving the current influx of asylum seekers. Poverty, inequality, and social exclusion are all pressing concerns that require a more comprehensive and inclusive approach to migration. By investing in the social and economic inclusion of newcomers, we can alleviate some of the persistent shortages in skilled sectors and create a more dynamic and diverse labour market that benefits both newcomers and native-born Germans alike.",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 5,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, acknowledging the legitimacy of opposing perspectives and avoiding inflammatory language or personal attacks.",
+        "relevance": "The turn directly addresses the debate topic and advances the discussion by proposing a comprehensive and inclusive approach to address the influx of asylum applications.",
+        "logical_consistency": "The argument is internally consistent, with a clear logical structure connecting premises to conclusions, and the turn anticipates potential objections by addressing the root causes of migration.",
+        "argument_strength": "The turn presents compelling arguments with specific evidence, clear causal mechanisms, and acknowledgment of limitations or trade-offs, such as the need for international cooperation to address poverty, conflict, and climate change.",
+        "document_grounding": "The turn is directly anchored in verifiable party programme content, such as the commitment to a just ecological transition and European solidarity, and uses specific party commitments as evidence.",
+        "responsiveness": "The turn engages with the preceding arguments, particularly those related to the strain on municipalities and labour market, but could more explicitly address specific claims made by other parties.",
+        "stance_differentiation": "The turn unmistakably reflects the party's distinctive values and priorities, such as the emphasis on a just ecological transition, European solidarity, and social inclusion, which are unique to Bündnis 90/Die Grünen."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 12115,
+      "token_count_output": 737,
+      "latency_s": 3.058,
+      "timestamp": "2026-06-29T13:39:04.129105Z"
+    },
+    {
+      "turn_id": "30205924-df17-4025-8986-3b95394a02e1",
+      "round_number": 3,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "We must not get lost in the rhetoric of endless humanitarian obligations and the imperative to address root causes of migration. Instead, we need a pragmatic approach that balances our duties with the need for effective integration and labour market participation. Germany's asylum policy is not just about protecting refugees, but also about promoting the economic and social well-being of our citizens.\n\nOur proposal for a more market-based approach to migration is essential for achieving this balance. By streamlining procedures for highly skilled workers and implementing targeted measures to support the integration of newcomers into our labour market, we can alleviate some of the persistent shortages in skilled sectors and ensure that newcomers are able to contribute to our economy. This approach also recognizes the value of skilled labour and the importance of attracting the best and brightest from around the world.\n\nHowever, we cannot simply focus on the economic benefits of migration without acknowledging the complexities of individual cases and the need for greater transparency and accountability in our asylum procedures. Our proposal for a more robust border control system, but one that is not based on rigid controls or arbitrary quotas, is a necessary step towards creating a fair, efficient, and humane asylum process.\n\nMoreover, we must not ignore the fact that our current asylum system is not designed to handle the influx of asylum seekers we are seeing today. The current system is plagued by lengthy processing times, inadequate resources, and a lack of transparency. We need to work towards a more efficient and humane asylum process that prioritizes the needs of vulnerable individuals, such as women and children, and ensures that they receive the necessary support and protection.\n\nAs FDP, we believe that our proposed approach will help address the pressing challenges facing our asylum system, while also promoting a more inclusive and sustainable approach to migration. We will continue to work towards a society that values solidarity, equality, and human rights for all, and we look forward to working with other parties to find common ground and develop a more effective and humane asylum policy.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone throughout, with no personal attacks or inflammatory language, but does use phrases like 'rhetoric of endless humanitarian obligations' which could be seen as slightly dismissive, thus not reaching the exceptional civility of a score of 5.",
+        "relevance": "The turn directly addresses the debate topic of migrationspolitik and advances the discussion by proposing a market-based approach to migration, making it highly relevant to the current debate.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, but there are minor gaps in addressing potential counterarguments, preventing it from being perfectly consistent.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and evidence, such as the need for a more efficient asylum process and the benefits of a market-based approach, but could be stronger with more detailed data or expert opinions.",
+        "document_grounding": "The proposal aligns with the FDP's known positions on migration, such as advocating for a more market-based approach, but does not directly reference specific party documents or programmes, thus not achieving the highest level of grounding.",
+        "responsiveness": "The turn acknowledges the broader debate context but does not directly engage with specific arguments made by other parties in the preceding turns, making it only adequately responsive.",
+        "stance_differentiation": "The turn unmistakably reflects the FDP's distinct party identity and ideological position, emphasizing a market-based approach to migration and the importance of attracting skilled labour, clearly differentiating itself from other parties."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 12607,
+      "token_count_output": 792,
+      "latency_s": 3.31,
+      "timestamp": "2026-06-29T13:39:07.240935Z"
+    },
+    {
+      "turn_id": "12973abf-ac86-47d7-9684-5cda09c2f4ff",
+      "round_number": 3,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "The current asylum crisis in Germany is a stark reminder of the systemic failures that have led to this humanitarian disaster. The influx of over 330,000 first-time asylum applications in 2023 has put a massive strain on our municipalities, schools, and administrative capacity, while labour market data shows persistent shortages in healthcare, skilled trades, and IT. Our party, Die Linke, has always maintained that this crisis is not just about numbers, but about the human lives and dignity that are being compromised.\n\nWe must acknowledge that the root causes of this crisis are not just external, but also internal. The systemic issues driving the current influx of asylum seekers are deeply rooted in poverty, inequality, and social exclusion. The austerity policies of the past decade have only exacerbated these problems, creating a perfect storm that has led to this humanitarian crisis. As Die Linke, we have always advocated for a fundamental transformation of our asylum policy, one that prioritizes the dignity and human rights of all individuals seeking refuge in our country.\n\nOur proposal for a more humane and efficient asylum process is based on the principles of solidarity, equality, and human rights. We advocate for the immediate abolition of inhumane detention centres and the introduction of a fair and transparent asylum procedure that recognizes the complexity of individual cases. We must also invest in vocational training and education programs, as well as provide access to job placement services and language courses to support the integration of newcomers into our labour market.\n\nHowever, our approach goes beyond merely alleviating the symptoms of this crisis. We must work towards a world where people are not forced to flee their homes due to war, persecution, or economic necessity. This requires international cooperation and solidarity, as well as a commitment to addressing the global drivers of migration, such as poverty, conflict, and climate change. By taking a more comprehensive and inclusive approach to migration, we can create a more just and equitable society that values solidarity, equality, and human rights for all.\n\nAs Die Linke, we believe that our proposed approach is not only morally justifiable but also economically sustainable. By investing in the integration of newcomers, we can alleviate some of the persistent shortages in skilled sectors and create a more dynamic and diverse labour market that benefits both newcomers and native-born Germans alike. This is the vision of Die Linke, and we urge all parties to join us in working towards a more just and equitable society that values human rights, solidarity, and equality for all.\n\nWe would like to request clarification on the following point: How do the other parties plan to address the systemic issues driving the current influx of asylum seekers, such as poverty, inequality, and social exclusion, and what specific measures will they take to alleviate the strain on our municipalities and labour market?",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 5,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, acknowledging the legitimacy of opposing perspectives while firmly disagreeing, which is exemplary of a parliamentary tone.",
+        "relevance": "The turn is precisely targeted at the debate topic, addressing the current asylum crisis in Germany and advancing the discussion with specific proposals and critiques.",
+        "logical_consistency": "The argument is internally consistent, with a clear logical structure connecting premises to conclusions, and the turn anticipates potential objections by addressing the root causes of migration.",
+        "argument_strength": "The turn presents compelling arguments with specific evidence, clear causal mechanisms, and acknowledgment of limitations, such as the need for international cooperation to address global drivers of migration.",
+        "document_grounding": "The turn is directly anchored in verifiable party programme content, using specific commitments as evidence, and there are no ungrounded claims, demonstrating a strong connection to Die Linke's documented positions.",
+        "responsiveness": "The turn engages with the preceding speakers' arguments, referencing the systemic issues driving the asylum crisis and the need for a comprehensive approach, but could more directly address specific claims made by other parties.",
+        "stance_differentiation": "The turn unmistakably differentiates Die Linke's position, using party-specific vocabulary, priorities, and framing conventions that no other party in the debate would use, such as the emphasis on solidarity, equality, and human rights."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 13327,
+      "token_count_output": 918,
+      "latency_s": 3.979,
+      "timestamp": "2026-06-29T13:39:11.108634Z"
+    },
+    {
+      "turn_id": "b199618a-a8b6-4c33-ae85-4c1f1fd61181",
+      "round_number": 3,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "Germany's asylum policy has reached a breaking point, and it's time for a reality check. The influx of over 330,000 first-time asylum applications in 2023 has put a massive strain on our municipalities, schools, and administrative capacity, while labour market data shows persistent shortages in healthcare, skilled trades, and IT. The current system is unsustainable, and it's not just about numbers; it's about the human lives and dignity that are being compromised.\n\nWe cannot continue to blindly follow international law without considering the consequences for our country and our people. Our party's programme emphasizes the importance of securing our borders and enforcing strict immigration controls to prevent uncontrolled migration. This is not only essential for maintaining public trust but also for ensuring the effective integration of those who do come to our country.\n\nThe root causes of this crisis are not just external, but also internal. Poverty, inequality, and social exclusion are all pressing concerns that require a more comprehensive and inclusive approach to migration. However, this does not mean we should sacrifice our sovereignty or compromise the well-being of German citizens. We must prioritize the needs of our own citizens and ensure that our asylum policy serves their interests.\n\nOur proposal for a more efficient and humane asylum process is based on the principles of fairness, transparency, and accountability. We advocate for the introduction of stricter asylum procedures, which prioritize the most vulnerable cases and ensure that those who do come to our country are properly integrated into our society. This includes measures such as language courses, job placement services, and access to social services, as well as initiatives aimed at promoting social cohesion and community engagement.\n\nHowever, we must also acknowledge that our current asylum system is not designed to handle the influx of asylum seekers we are seeing today. The current system is plagued by lengthy processing times, inadequate resources, and a lack of transparency. We need a more efficient and humane asylum process that prioritizes the needs of vulnerable individuals, such as women and children, and ensures that they receive the necessary support and protection.\n\nWe will continue to advocate for a more robust border control system, stricter asylum procedures, and a more comprehensive integration strategy that supports the needs of both newcomers and native-born Germans alike. Our proposal is not just about protecting refugees; it's about promoting the economic and social well-being of our citizens and ensuring that our asylum policy serves their interests.\n\nWe would like to reiterate our request for clarification on the following point: How do the other parties plan to address the systemic issues driving the current influx of asylum seekers, such as poverty, inequality, and social exclusion, and what specific measures will they take to alleviate the strain on our municipalities and labour market?",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone throughout, with no personal attacks or inflammatory language, thus scoring a 4 for civility. However, it does contain some loaded language, such as 'reality check' and 'breaking point', which prevents it from achieving a perfect score.",
+        "relevance": "The turn is highly relevant to the debate topic of migrationspolitik, addressing the current asylum policy, its challenges, and proposed solutions, making it a 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, with a clear structure connecting premises to conclusions, but contains some minor logical gaps, such as not fully addressing counterarguments, resulting in a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and evidence, such as the number of asylum applications and labour market data, but could be strengthened by more detailed analysis of the proposed solutions, thus scoring a 4 for argument strength.",
+        "document_grounding": "The turn is clearly anchored in the AfD's party programme, with specific references to securing borders and enforcing strict immigration controls, demonstrating a strong connection to documented positions and earning a score of 5 for document grounding.",
+        "responsiveness": "The turn engages with the preceding speakers' arguments, acknowledging the need for a comprehensive approach to migration and addressing the root causes of the crisis, but could more directly address specific points made by other parties, resulting in a score of 4 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the AfD's distinct party identity and ideological position, using party-specific vocabulary and framing conventions, making it a 5 for stance differentiation."
+      },
+      "rag_passages_used": [],
+      "token_count_input": 14058,
+      "token_count_output": 964,
+      "latency_s": 4.598000000000001,
+      "timestamp": "2026-06-29T13:39:15.718614Z"
+    }
+  ],
+  "interventions": [],
+  "round_summaries": [
+    {
+      "round_number": 1,
+      "mean_scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "per_agent_scores": {
+        "CDU/CSU": {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 5,
+          "document_grounding": 5,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "SPD": {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "Bündnis 90/Die Grünen": {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 5,
+          "document_grounding": 5,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "FDP": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        },
+        "Die Linke": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 5,
+          "document_grounding": 5,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "AfD": {
+          "civility": 2,
+          "relevance": 4,
+          "logical_consistency": 3,
+          "argument_strength": 3,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        }
+      },
+      "composite": 4.14,
+      "plateau": false,
+      "intervention_count_so_far": 0
+    },
+    {
+      "round_number": 2,
+      "mean_scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "per_agent_scores": {
+        "CDU/CSU": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        },
+        "SPD": {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 5,
+          "document_grounding": 5,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "Bündnis 90/Die Grünen": {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 5,
+          "document_grounding": 5,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "FDP": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "Die Linke": {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 5,
+          "document_grounding": 5,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "AfD": {
+          "civility": 2,
+          "relevance": 4,
+          "logical_consistency": 3,
+          "argument_strength": 3,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        }
+      },
+      "composite": 4.43,
+      "plateau": false,
+      "intervention_count_so_far": 0
+    },
+    {
+      "round_number": 3,
+      "mean_scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "per_agent_scores": {
+        "CDU/CSU": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "SPD": {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 5,
+          "document_grounding": 5,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "Bündnis 90/Die Grünen": {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 5,
+          "document_grounding": 5,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "FDP": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "Die Linke": {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 5,
+          "document_grounding": 5,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "AfD": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        }
+      },
+      "composite": 4.43,
+      "plateau": true,
+      "intervention_count_so_far": 0
+    }
+  ],
+  "total_tokens_input": 147872,
+  "total_tokens_output": 13569,
+  "total_latency_s": 51.47,
+  "started_at": "2026-06-29T13:38:26.395417Z",
+  "finished_at": "2026-06-29T13:39:17.875489Z"
+}
