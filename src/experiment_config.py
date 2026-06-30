@@ -370,13 +370,19 @@ STRATEGY_C = ExperimentalCondition(
     condition_type=ConditionType.STRATEGY,
     description=(
         "Active moderator with fact-reminder strategy. Trigger: document-"
-        "grounding score < 2.0 for any agent turn, confirmed by LLM judge. "
+        "grounding score < 4 for any agent turn, confirmed by LLM judge. "
         "The moderator surfaces specific grounding data from the parties' "
         "Bundestagswahlprogramme and redirects the debate toward verifiable "
-        "claims. Primary target dimension: document-grounding. Expected "
-        "secondary effect: may improve argument strength (evidence-based "
-        "reasoning). Risk: may reduce responsiveness if agents pivot to "
-        "programme-quoting rather than engaging with opponents."
+        "claims. Primary target dimension: document-grounding. "
+        "Design note (Option A): RAG keeps document-grounding at avg 4.3+ "
+        "across all topics, yielding 0-1 stage-1 fires per 60 turns "
+        "(all rejected by stage-2 judge). Strategy C therefore produces "
+        "0 interventions in RAG-enabled runs. This is accepted as a finding: "
+        "RAG pre-empts the fact-reminder trigger, demonstrating that "
+        "retrieval-augmented grounding and explicit moderator fact-reminding "
+        "address the same underlying problem through different mechanisms. "
+        "Strategy C's temporal trajectory is expected to be indistinguishable "
+        "from Baseline 1 in the per-dimension analysis."
     ),
     has_moderator_agent=True,
     uses_trigger=True,

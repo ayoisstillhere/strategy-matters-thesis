@@ -82,6 +82,13 @@ SIMPLE_TRIGGERS = {
     "de-escalation": {"dimension": "civility",           "threshold": 4},
     "reframing":     {"dimension": "responsiveness",     "threshold": 4},
     "fact-reminder": {"dimension": "document_grounding", "threshold": 4},
+    # Note: with RAG enabled, document_grounding stays at avg 4.3+ across all
+    # topics, yielding 0-1 stage-1 fires per 60 turns (all rejected by stage-2).
+    # This means Strategy C effectively produces 0 interventions in the main
+    # experiment. This is accepted as a design finding: RAG pre-empts the
+    # fact-reminder trigger, showing that retrieval-augmented grounding and
+    # explicit moderator fact-reminding address the same underlying problem.
+    # See expose.tex §4.5 for discussion.
 }
 
 COMMON_GROUND_TRIGGER = {

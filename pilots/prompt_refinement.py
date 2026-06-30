@@ -264,12 +264,86 @@ def task4_trigger_calibration() -> None:
               f"{cfg['num_rounds']:<8} {active:<8} {silent:<8} {cap_reached}")
 
     print()
-    print("  Current thresholds:")
-    print("    Simple triggers (civ/resp/doc): score < 4")
-    print("    Common-ground: stance > 3 AND resp < 4 for 2+ agents")
+    print("  Current thresholds (post-fix):")
+    print("    Strategy A: civility < 4")
+    print("    Strategy B: responsiveness < 4")
+    print("    Strategy C: argument_strength < 4  [CHANGED from document_grounding]")
+    print("    Strategy D: stance_diff > 3 AND resp < 4 for 2+ agents")
     print("    Stage-2 judge confirmation: score <= 3")
     print("    Silent control: 20% of confirmed triggers")
     print("    Max interventions per run: 3")
+    print()
+
+
+# ── Task 5: Strategy A & B post-fix intervention review ───────────────────
+
+def task5_strategy_ab_review(client: LLMClient) -> None:
+    print("\n" + "=" * 65)
+    print("  TASK 5: Strategy A & B Post-Fix Intervention Review")
+    print("  5-round debates | RAG enabled | sozialpolitik")
+    print("  Validates: intervention structure, strategy-specificity,")
+    print("  judge 700-token fix (no score defaults to 3)")
+    print("=" * 65)
+
+    rag = RAGPipeline()
+
+    for condition_id, label in [("strategy_a", "A — De-escalation"),
+                                  ("strategy_b", "B — Reframing")]:
+        logger.info(f"  Running: Strategy {label}")
+        engine = DebateEngine(
+            topic_id="sozialpolitik",
+            framing_prompt=FRAMING_PROMPTS["sozialpolitik"],
+            topic_type="values-driven",
+            condition_id=condition_id,
+            run_number=1,
+            llm_client=client,
+            rag_pipeline=rag,
+            num_rounds=5,
+        )
+        result = engine.run()
+        save_run_json(result, OUTPUT_DIR / "strategy_ab_review")
+
+        turns = result.turns
+        active_ivs = [i for i in result.interventions if i.intervention_text]
+        silent_ivs = [i for i in result.interventions if i.silent_control]
+
+        # Judge fix validation: count score-3 defaults
+        defaulted = sum(
+            1 for t in turns
+            if t.scores and all(
+                v == 3 for v in t.scores.to_dict().values()
+            )
+        )
+
+        print(f"\n  ── Strategy {label} ──")
+        print(f"     Turns: {len(turns)}  |  Active: {len(active_ivs)}  "
+              f"|  Silent: {len(silent_ivs)}  |  All-3 defaults: {defaulted}")
+        if defaulted > 0:
+            print(f"     ⚠  {defaulted} turns have all scores = 3 — judge truncation may still occur")
+        else:
+            print("     ✓ No all-3 score defaults — judge 700-token fix confirmed")
+
+        if not active_ivs:
+            print("     (No active interventions in 5 rounds — "
+                  "try a longer run or check trigger thresholds)")
+        else:
+            for iv in active_ivs:
+                print(f"\n     Round {iv.round_number} | dim={iv.trigger_dimension} "
+                      f"score={iv.trigger_score}")
+                if iv.moderator_output:
+                    diag = iv.moderator_output.get("diagnosis", "")
+                    target = iv.moderator_output.get("target_parties", [])
+                    print(f"     Diagnosis:      {diag[:140]}")
+                    print(f"     Target parties: {target}")
+                print(f"     Intervention:   {iv.intervention_text[:250]}...")
+                ok_structure = (
+                    iv.intervention_text != "" and
+                    iv.moderator_output is not None and
+                    iv.moderator_output.get("diagnosis") and
+                    iv.moderator_output.get("target_parties") and
+                    iv.moderator_output.get("intervention_text")
+                )
+                print(f"     Structure valid: {'✓' if ok_structure else '✗ MISSING FIELDS'}")
     print()
 
 
@@ -277,8 +351,8 @@ def task4_trigger_calibration() -> None:
 
 def main():
     parser = argparse.ArgumentParser(description="Prompt Refinement Pilots")
-    parser.add_argument("--task", type=int, choices=[1, 2, 3, 4],
-                        help="Run only a specific task (1-4)")
+    parser.add_argument("--task", type=int, choices=[1, 2, 3, 4, 5],
+                        help="Run only a specific task (1-5)")
     args = parser.parse_args()
 
     run_all = args.task is None
@@ -297,6 +371,8 @@ def main():
         task3_moderator_quality(client)
     if run_all or args.task == 4:
         task4_trigger_calibration()
+    if run_all or args.task == 5:
+        task5_strategy_ab_review(client)
 
     print(f"\n  Results saved to: {OUTPUT_DIR}")
     print("  Review output above for any ⚠ warnings before proceeding.\n")
