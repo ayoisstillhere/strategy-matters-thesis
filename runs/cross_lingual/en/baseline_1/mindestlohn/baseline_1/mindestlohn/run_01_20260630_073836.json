@@ -1,0 +1,867 @@
+{
+  "run_id": "6be30b98-4fe6-4ce4-b621-63e0e345cbe9",
+  "config": {
+    "topic_id": "mindestlohn",
+    "topic_type": "empirical",
+    "framing_prompt": "The German federal minimum wage currently stands at €12.82 per hour, set by the independent Mindestlohnkommission. Several parties have proposed raising it to €15 per hour by 2026, while others argue the commission's independence must not be overridden by political targets. Discuss whether the minimum wage should be raised to €15, considering the effects on low-wage workers, small and medium-sized businesses, and regional economic differences between western and eastern Germany. Ground your arguments in your party's documented positions.",
+    "condition_id": "baseline_1",
+    "condition_label": "None",
+    "condition_type": "baseline",
+    "run_number": 1,
+    "agent_model": "llama-3.1-8b-instant",
+    "judge_model": "llama-3.3-70b-versatile",
+    "moderator_model": "",
+    "num_rounds": 3,
+    "num_agents": 6,
+    "max_interventions": 3,
+    "silent_control_rate": 0.2,
+    "turn_order": [
+      "CDU/CSU",
+      "SPD",
+      "Bündnis 90/Die Grünen",
+      "FDP",
+      "Die Linke",
+      "AfD"
+    ],
+    "has_moderator_agent": false,
+    "uses_trigger": false,
+    "trigger_strategy": null,
+    "nudge_text": "",
+    "language": "en"
+  },
+  "turns": [
+    {
+      "turn_id": "163b704b-4a2c-40e6-9faa-b09cf2c73fbc",
+      "round_number": 1,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "As the CDU/CSU, we believe that the minimum wage should be determined by the independent Mindestlohnkommission, not by political targets. This commission has been instrumental in setting a fair and competitive minimum wage, which has been a cornerstone of our social market economy. We stand by the principle that wage determination should be a matter for the social partners, rather than the state. This allows for a flexible and dynamic approach to wage setting, which benefits both employers and employees. Our party has a long history of supporting the social partners and their ability to negotiate fair wages, and we will continue to do so. We are committed to a good wage development, but we must also consider the impact on small and medium-sized businesses, as well as regional economic differences.",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, acknowledging the importance of fair wages without attacking opposing views, thus scoring a 5 for exemplary parliamentary tone.",
+        "relevance": "The turn is precisely targeted at the debate topic of the minimum wage, discussing the role of the Mindestlohnkommission and the principle of social partners determining wages, making it a 5 for being directly on-topic.",
+        "logical_consistency": "The argument is generally coherent, advocating for the Mindestlohnkommission's role and the importance of social partners in wage determination, but lacks a detailed explanation of how this approach addresses potential criticisms, hence a 4.",
+        "argument_strength": "The turn provides a clear reasoning for why the minimum wage should be determined by the Mindestlohnkommission, citing the benefits of flexibility and the support for social partners, but could be strengthened with specific evidence or data, resulting in a 4.",
+        "document_grounding": "The CDU/CSU's stance on supporting the social partners and the Mindestlohnkommission aligns with their known party positions, but the turn does not directly reference specific party documents or programmes, leading to a score of 4.",
+        "responsiveness": "Since this is the first turn, there are no preceding arguments to respond to, making the turn neither responsive nor unresponsive, thus scoring a 3 as it meets the basic expectation by not being able to engage with prior claims.",
+        "stance_differentiation": "The turn clearly identifies the CDU/CSU's distinct position on the minimum wage, emphasizing the role of the Mindestlohnkommission and social partners, which is unmistakably aligned with their party's ideology and values, earning a 5."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "helfen wir den Berechtigten und vermeiden Mehrfachleistungen.\nTarifpartnerschaft, Mitbestimmung und ",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 3348,
+      "token_count_output": 603,
+      "latency_s": 2.514,
+      "timestamp": "2026-06-30T07:37:40.054297Z"
+    },
+    {
+      "turn_id": "e7485388-cbf0-4372-9bd2-779b4942fc48",
+      "round_number": 1,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "As we continue this discussion on the minimum wage, I would like to emphasize that the SPD has a long-standing commitment to strengthening the rights of low-wage workers. The current minimum wage of €12.82 per hour is a positive step, but we firmly believe that it should be raised to €15 per hour by 2026. This increase will not only provide a much-needed boost to the income of millions of people but also help to close the wage gap between eastern and western Germany.\n\nIn our programme, we have emphasized the importance of strengthening the tariff system, which is essential for securing higher wages and better working conditions, particularly in regions with lower average wages and limited tariff binding. By increasing the tariff binding, we can ensure that workers in these regions receive fairer compensation and have a better quality of life. The principle of \"Mehr für Dich, Besser für Deutschland\" – more for you, better for Germany – is at the heart of our social policy, and a higher minimum wage is a crucial step in achieving this goal.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies rather than making personal attacks, which aligns with a score of 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of the minimum wage, advancing the discussion with specific proposals, thus scoring 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, connecting the proposed minimum wage increase with the goal of improving workers' conditions and regional economic disparities, though it could delve deeper into potential counterarguments, warranting a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, such as the impact on low-wage workers and regional wage gaps, but could benefit from more detailed evidence or addressing potential drawbacks, resulting in a score of 4.",
+        "document_grounding": "The proposal directly reflects the SPD's known positions, such as the emphasis on strengthening the tariff system and the principle of 'Mehr für Dich, Besser für Deutschland', which demonstrates strong document grounding and earns a score of 5.",
+        "responsiveness": "While the turn does not directly engage with the preceding CDU/CSU argument, it generally addresses the topic without ignoring the context, thus receiving a score of 3 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the SPD's distinct ideological position, using party-specific vocabulary and priorities, such as the emphasis on workers' rights and regional disparities, which merits a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "dafür sorgen, dass dieses europäische Recht von der Mindestlohnkommission künftig berücksichtigt\nwir",
+        "Mehr für Dich. Besser für Deutschland.\nRegierungsprogramm der SPD für die Bundestagswahl 2025\nDen Mi"
+      ],
+      "token_count_input": 3730,
+      "token_count_output": 611,
+      "latency_s": 2.1710000000000003,
+      "timestamp": "2026-06-30T07:37:42.798742Z"
+    },
+    {
+      "turn_id": "7f6996b6-3621-47ac-9454-7e0da344a432",
+      "round_number": 1,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "We firmly believe that raising the minimum wage to €15 per hour by 2026 is a necessary step towards achieving greater social justice and reducing economic inequality in Germany. As our party's programme states, fair wages require a fair minimum wage, and we cannot ignore the fact that millions of people in Germany are barely scraping by on the current wage of €12.82 per hour. In order to address the inflation that has plagued our country in recent years, we need to take decisive action to increase the purchasing power of low-wage workers. Raising the minimum wage to €15 per hour by 2025 would not only help to alleviate the financial burden on these workers but also align with the EU's minimum wage directive. This is a matter of social fairness and a key component of our vision for a more equitable society.",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains an exemplary parliamentary tone, acknowledging the legitimacy of the issue without attacking opposing parties, thus scoring a 5 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of the minimum wage, advancing the discussion with a clear proposal, which warrants a score of 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, connecting the need for a higher minimum wage with social justice and economic inequality, but lacks a detailed explanation of how the €15 per hour figure was determined, hence a score of 4 for logical consistency.",
+        "argument_strength": "The turn presents compelling arguments supported by the need to address inflation and align with the EU's minimum wage directive, providing a strong rationale for the proposed minimum wage increase, thus deserving a 5 for argument strength.",
+        "document_grounding": "The turn directly references the party's programme, indicating that the proposal is grounded in the party's documented positions, which justifies a score of 5 for document grounding.",
+        "responsiveness": "While the turn does not directly engage with the specific arguments of the preceding speakers, it addresses the broader debate context and the topic at hand, earning a score of 4 for responsiveness as it could more explicitly address counterarguments.",
+        "stance_differentiation": "The turn unmistakably reflects the party's distinct ideological position, emphasizing social justice, fairness, and alignment with EU directives, which is characteristic of Bündnis 90/Die Grünen's vision, thus scoring a 5 for stance differentiation."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "sozialen Umstände abhängen darf. Es Faire Löhne verlangen nach einem fairen\ngilt für Menschen, die u",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 4049,
+      "token_count_output": 570,
+      "latency_s": 2.3,
+      "timestamp": "2026-06-30T07:37:45.204368Z"
+    },
+    {
+      "turn_id": "f54f72f6-1815-488d-ab63-ade1a12a4670",
+      "round_number": 1,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "The idea of raising the minimum wage to €15 per hour by 2026 is a simplistic solution that overlooks the complex interplay between wages, inflation, and regional economic differences. Our party's stance is clear: we do not support political interference in the independent Mindestlohnkommission's decision-making process. The commission's expertise has led to a fair and competitive minimum wage, which has been a cornerstone of our social market economy. \n\nAs we consider the impact on small and medium-sized businesses, we must not forget that they are the backbone of our economy. Increasing the minimum wage to €15 per hour would not only lead to higher labor costs but also reduce their competitiveness, particularly in regions with lower average wages. This could have unintended consequences, such as job losses and a decline in economic activity.\n\nOur programme emphasizes the importance of making work pay more than social benefits. We propose a fundamental reform of the Bürgergeld system, shifting from an alimentary approach to one that emphasizes activation and the value of work. By doing so, we aim to create a more inclusive and fair society, where work is rewarded and everyone has the opportunity to contribute to our country's success.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone throughout, critiquing policies without attacking opponents directly, which aligns with a score of 4 for civility. The language is respectful, focusing on the argument rather than personal attacks.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage, engaging with the specific arguments made by preceding speakers and advancing the discussion with its own perspective, thus scoring 5 for relevance.",
+        "logical_consistency": "The argument presented is coherent, with a clear logical structure connecting the FDP's stance on the minimum wage to its potential impact on small and medium-sized businesses and the overall economy, warranting a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims, using specific reasoning about the potential consequences of raising the minimum wage on regional economic differences and the competitiveness of small businesses, which supports a score of 4 for argument strength.",
+        "document_grounding": "The FDP's stance is clearly grounded in its party programme, emphasizing the importance of making work pay more than social benefits and proposing a reform of the Bürgergeld system, which aligns with a score of 4 for document grounding.",
+        "responsiveness": "The turn directly engages with the arguments made by preceding speakers, particularly the CDU/CSU's stance on the Mindestlohnkommission and the SPD's proposal for raising the minimum wage, demonstrating a clear responsiveness to the ongoing debate and scoring 4.",
+        "stance_differentiation": "The FDP's unique perspective and policy proposals, such as the reform of the Bürgergeld system and the emphasis on activation and the value of work, clearly differentiate its stance from other parties, earning a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "erst möglich machen.\nArbeit muss sich stärker lohnen\nMillionen Menschen in Deutschland gehen jeden T",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 4471,
+      "token_count_output": 689,
+      "latency_s": 2.215,
+      "timestamp": "2026-06-30T07:37:47.934202Z"
+    },
+    {
+      "turn_id": "be577d4a-32b7-4464-8981-a648e5c5d92b",
+      "round_number": 1,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "The struggle for a decent life is a fundamental human right, not a privilege reserved for the few who can afford it. As Die Linke, we firmly believe that the minimum wage must be a living wage, sufficient to cover the basic needs of every individual. The current minimum wage of €12.82 per hour is a paltry sum that barely scratches the surface of poverty, particularly in regions like eastern Germany where the cost of living is already inflated.\n\nThe EU's minimum wage directive stipulates that the minimum wage should be at least 60% of the median income. In 2025, this would translate to a minimum wage of €15.12 per hour. We demand that the minimum wage be raised to at least €15 per hour by 2026, and eventually to €16 per hour, to ensure that every worker can afford a decent life. This is not a luxury, but a necessity, and it is our duty to ensure that every individual has access to a fair income, regardless of their occupation or location.\n\nThe experience of low-wage workers in eastern Germany is particularly stark. Their income is 17% lower than in western Germany, and their pensions, even after 40 years of contributions, are €150 lower than in western Germany. This is a stark reminder of the structural inequalities that persist in our society, and it is our responsibility to address them. By raising the minimum wage, we can begin to close the wage gap between eastern and western Germany and create a more equitable society for all.",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 5,
+        "argument_strength": 5,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, acknowledging the legitimacy of the issue without attacking opposing parties, thus scoring a 5 for exemplary parliamentary tone.",
+        "relevance": "The turn is precisely targeted at the debate question, advancing the discussion on the minimum wage with specific arguments and data, making it a 5 for being precisely targeted and deepening the discussion.",
+        "logical_consistency": "The argument is internally consistent, with a clear logical structure connecting premises to conclusions, and it anticipates the need to address regional economic differences, thus scoring a 5 for rigorous logical chain.",
+        "argument_strength": "The turn provides compelling arguments with specific evidence, such as the EU's minimum wage directive and the experience of low-wage workers in eastern Germany, making it a 5 for having clear causal mechanisms and acknowledgment of social fairness.",
+        "document_grounding": "While the turn clearly reflects Die Linke's known positions on social justice and workers' rights, it does not directly reference specific party documents or programmes, thus scoring a 4 for generally aligning with the party's direction but lacking direct anchoring in verifiable party content.",
+        "responsiveness": "The turn engages with the general arguments made by preceding speakers, particularly addressing the issue of regional wage gaps and the need for a living wage, but does not directly address specific claims made by other parties, thus scoring a 4 for identifying and engaging with the broader discussion.",
+        "stance_differentiation": "The turn is unmistakably distinct, using Die Linke's specific values, priorities, and framing conventions, such as the emphasis on social justice and the reference to the EU's minimum wage directive, making it a 5 for being unmistakably Die Linke."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "über den Monat kommt – in Ostdeutschland fast jede*r werden wir deutlich enger begrenzen, spätestens",
+        "aufgebaut� Der Ausverkauf durch die Treuhand wirkt aber muss auch zwischen Ost und West gelten! Der "
+      ],
+      "token_count_input": 5191,
+      "token_count_output": 747,
+      "latency_s": 2.5389999999999997,
+      "timestamp": "2026-06-30T07:37:50.661780Z"
+    },
+    {
+      "turn_id": "73004fce-0d2d-4902-97b8-bd5009f657f9",
+      "round_number": 1,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "The relentless drive to increase the minimum wage, as we've seen from our opponents, ignores the fundamental issue: the current system of wage determination is broken. The Mindestlohnkommission has done its job, but its recommendations are often based on an idealistic assumption that employers and employees can magically agree on fair wages. In reality, many small and medium-sized businesses are struggling to stay afloat due to excessive labor costs, and a further increase to €15 per hour would tip the scales against them.\n\nWe cannot afford to ignore the harsh realities of the German economy. Raising the minimum wage without regard for the specific needs of different regions and industries would be a recipe for disaster. Eastern Germany, for example, has seen significant decline in recent years, and a minimum wage increase would only serve to exacerbate this trend. We must prioritize a more nuanced approach, one that takes into account the unique challenges faced by each region and industry.\n\nAs our programme highlights, the German rent system is a pressing issue that has been neglected for far too long. If we can't even ensure a decent retirement for our seniors, how can we justify further increases in the minimum wage? The focus should be on creating a sustainable, long-term solution that benefits all workers, not just those who are already relatively well-off. A more modest approach to wage increases, combined with targeted support for small businesses and struggling regions, is the only way forward.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, avoiding personal attacks or inflammatory language, but does engage in somewhat critical language towards the opposing views, thus scoring a 4 for being respectful yet firm in disagreement.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage, discussing its potential impact on small and medium-sized businesses and regional economic differences, making it clearly relevant and scoring a 4.",
+        "logical_consistency": "The argument presented is coherent, highlighting the potential negative consequences of a minimum wage increase on certain businesses and regions, and proposing a more nuanced approach, thus scoring a 4 for logical consistency.",
+        "argument_strength": "The turn provides reasoning and evidence for its claims, such as the potential struggle of small and medium-sized businesses and the unique challenges faced by different regions, making the argument well-supported and scoring a 4.",
+        "document_grounding": "While the turn references the party's programme, it does not directly anchor its claims in verifiable party programme content, thus scoring a 3 as it generally aligns with what could be expected from the AfD's stance but lacks specific grounding.",
+        "responsiveness": "The turn acknowledges the general debate context and the push for a minimum wage increase by other parties but does not directly engage with the specific arguments made by the preceding speakers, thus scoring a 3 for generic acknowledgment without detailed engagement.",
+        "stance_differentiation": "The turn clearly reflects the AfD's distinct position on the minimum wage, emphasizing the need for a nuanced approach that considers regional and industrial differences, and prioritizing support for small businesses and struggling regions, thus scoring a 4 for maintaining a distinct party identity."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "18 SOZIALE MARKTWIRTSCHAFT UND GESUNDHEIT\nDie desolate Situation im deutschen Rentensystem\nDas deuts",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 5700,
+      "token_count_output": 717,
+      "latency_s": 2.578,
+      "timestamp": "2026-06-30T07:37:53.673451Z"
+    },
+    {
+      "turn_id": "3e7fdc0e-fb9a-4f78-a4ab-61a25d35601f",
+      "round_number": 2,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "We recognize that the current minimum wage of €12.82 per hour has been a step in the right direction, but we cannot support a unilateral increase to €15 per hour by 2026. As our party's programme emphasizes, the social partners, including employers and employees, must have the flexibility to negotiate fair wages that suit the specific needs of their industries and regions. This approach has been instrumental in maintaining a balance between fair wages and the competitiveness of our economy.\n\nFurthermore, we cannot ignore the potential impact of a significant increase in the minimum wage on small and medium-sized businesses, which are the backbone of our economy. These businesses often operate on thin profit margins and may struggle to absorb the increased labor costs, potentially leading to job losses and a decline in economic activity, particularly in regions with lower average wages. Instead of a blanket increase, we should focus on supporting these businesses through targeted measures and ensuring that they have the necessary flexibility to adapt to changing market conditions.\n\nBy preserving the independence of the Mindestlohnkommission and allowing the social partners to negotiate fair wages, we can ensure that the minimum wage remains a competitive and dynamic aspect of our social market economy. This approach has served us well in the past, and we believe it is the best way forward for the future.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without attacking parties or individuals directly, which aligns with a score of 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage, engaging with the specific issue and advancing the discussion with focused argumentation, making it deserving of a score of 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, although it may contain minor logical gaps or unjustified inferential leaps, thus scoring 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and identified causal mechanisms, such as the potential impact on small and medium-sized businesses, which supports a score of 4 for argument strength.",
+        "document_grounding": "The turn clearly reflects the CDU/CSU's documented positions, emphasizing the role of the social partners and the independence of the Mindestlohnkommission, which directly aligns with their party programme, earning a score of 5 for document grounding.",
+        "responsiveness": "The turn engages with the preceding arguments, particularly those concerning the impact on small businesses and regional economic differences, but does not name specific parties or claims, thus scoring 4 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably differentiates the CDU/CSU's position, using party-specific values and priorities such as the emphasis on social partners and the social market economy, which is unmistakably distinct from other parties, deserving a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "helfen wir den Berechtigten und vermeiden Mehrfachleistungen.\nTarifpartnerschaft, Mitbestimmung und ",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 6298,
+      "token_count_output": 678,
+      "latency_s": 2.294,
+      "timestamp": "2026-06-30T07:37:56.505331Z"
+    },
+    {
+      "turn_id": "28b3ff28-6dd3-40e2-af81-4a82f099a943",
+      "round_number": 2,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "We must not let the fear of potential job losses or reduced competitiveness cloud our judgment. The reality is that millions of people in Germany are barely scraping by on the current minimum wage of €12.82 per hour. Raising the minimum wage to €15 per hour by 2026 is not a luxury, but a necessity to ensure that every worker can afford a decent life and a fair income. Our programme emphasizes the importance of making work pay more than social benefits, and this is precisely what we aim to achieve with a higher minimum wage.\n\nAs we consider the impact on small and medium-sized businesses, we must not forget that they are not the only ones suffering from the current wage gap. Workers in eastern Germany, in particular, have been left behind, with income 17% lower than in western Germany and pensions €150 lower after 40 years of contributions. By raising the minimum wage, we can begin to close this wage gap and create a more equitable society for all. Our commitment to strengthening the tariff system will also help to ensure that workers in these regions receive fairer compensation and have a better quality of life.\n\nAs we move forward, we must prioritize the needs of workers and ensure that their voices are heard in the decision-making process. A higher minimum wage is not a panacea for all our economic woes, but it is a crucial step towards creating a more just and equitable society.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing opposing views without personal attacks or inflammatory language, thus scoring a 4 for being professional and respectful.",
+        "relevance": "The turn is precisely targeted at the debate topic, addressing the minimum wage and its impact, making it a 5 for being directly relevant and advancing the discussion.",
+        "logical_consistency": "The argument is generally coherent, connecting the need for a higher minimum wage with the goal of reducing the wage gap and improving workers' lives, though it could more explicitly address potential counterarguments, scoring a 4.",
+        "argument_strength": "The turn presents compelling arguments supported by specific evidence, such as the income disparity between eastern and western Germany, and clearly explains how a higher minimum wage addresses these issues, making it a 5 for strong support and reasoning.",
+        "document_grounding": "The turn directly references the party's programme and commitments, such as strengthening the tariff system and ensuring work pays more than social benefits, grounding the argument in documented party positions, thus a 5.",
+        "responsiveness": "The turn engages with the preceding arguments, particularly addressing concerns about small and medium-sized businesses and the impact on competitiveness, though it could more directly address specific points made by other parties, scoring a 4.",
+        "stance_differentiation": "The turn unmistakably reflects the SPD's distinct position and values, emphasizing the need for a higher minimum wage, the importance of the tariff system, and the commitment to social equity, making it a 5 for clear and unmistakable party identity."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "dafür sorgen, dass dieses europäische Recht von der Mindestlohnkommission künftig berücksichtigt\nwir",
+        "Mehr für Dich. Besser für Deutschland.\nRegierungsprogramm der SPD für die Bundestagswahl 2025\nDen Mi"
+      ],
+      "token_count_input": 6870,
+      "token_count_output": 691,
+      "latency_s": 2.626,
+      "timestamp": "2026-06-30T07:37:59.256768Z"
+    },
+    {
+      "turn_id": "9cf9a1ef-04d9-4f56-8911-79743e85cd40",
+      "round_number": 2,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "The current minimum wage of €12.82 per hour is a testament to the progress Germany has made in ensuring fair wages for its citizens. However, it is equally clear that more needs to be done to address the stark realities of poverty and economic inequality in our country. Millions of people are barely scraping by, and the current wage gap between eastern and western Germany is a pressing issue that demands our attention.\n\nAs our party's programme emphasizes, fair wages require a fair minimum wage. This is not a luxury, but a necessity, and it is our duty to ensure that every worker can afford a decent life. The proposal to raise the minimum wage to €15 per hour by 2026 is a necessary step towards achieving greater social justice and reducing economic inequality in Germany. By doing so, we can alleviate the financial burden on low-wage workers and align with the EU's minimum wage directive.\n\nIt is essential to acknowledge that the current system of wage determination is not working for many workers. The social partners have failed to negotiate fair wages, and the result is a wage gap that persists across our country. Our proposal for a higher minimum wage is not a panacea for all our economic woes, but it is a crucial step towards creating a more just and equitable society. The time has come to recognize that a decent income is a fundamental human right, and we must take decisive action to ensure that every worker can afford it.\n\nBy implementing a higher minimum wage, we can also begin to close the wage gap between eastern and western Germany. This is not a new challenge, but it is one that requires our immediate attention. The experience of low-wage workers in eastern Germany is particularly stark, with income 17% lower than in western Germany and pensions €150 lower after 40 years of contributions. By raising the minimum wage, we can begin to address these inequalities and create a more equitable society for all.\n\nOur party's commitment to strengthening the tariff system will also help to ensure that workers in these regions receive fairer compensation and have a better quality of life. By supporting the social partners in negotiating fair wages, we can create a more inclusive and fair society where work is rewarded and everyone has the opportunity to contribute to our country's success.\n\nIn conclusion, raising the minimum wage to €15 per hour by 2026 is a necessary step towards achieving greater social justice and reducing economic inequality in Germany. We must prioritize the needs of workers and ensure that their voices are heard in the decision-making process. The time has come to recognize that a decent income is a fundamental human right, and we must take decisive action to ensure that every worker can afford it.",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 5,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, acknowledging the legitimacy of the issue without attacking opposing views, thus scoring a 5 for exemplary parliamentary tone.",
+        "relevance": "The turn is precisely targeted at the debate topic of the minimum wage, advancing the discussion with specific arguments and evidence, making it a 5 for being precisely targeted and deepening the discussion.",
+        "logical_consistency": "The argument is rigorously logical, anticipating potential objections and distinguishing between empirical claims and value judgments, such as the necessity of a higher minimum wage for social justice and the current wage gap between eastern and western Germany.",
+        "argument_strength": "The turn presents compelling arguments with specific evidence, such as the EU's minimum wage directive and the experience of low-wage workers in eastern Germany, and acknowledges the limitations of the current system, thus scoring a 5 for compelling arguments and clear causal mechanisms.",
+        "document_grounding": "The turn is directly anchored in the party's programme, referencing the importance of fair wages and the commitment to strengthening the tariff system, making it a 5 for being verifiably grounded in party documents.",
+        "responsiveness": "While the turn engages with the general debate and acknowledges the positions of other parties indirectly, it does not directly address the specific claims made by the preceding speakers, thus scoring a 4 for identifying and engaging with the broader debate but not the strongest version of opposing arguments.",
+        "stance_differentiation": "The turn unmistakably reflects the party's distinct ideological position, using party-specific vocabulary and framing conventions, such as the emphasis on social justice and the need for a fair minimum wage, making it a 5 for being unmistakably distinct."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "sozialen Umstände abhängen darf. Es Faire Löhne verlangen nach einem fairen\ngilt für Menschen, die u",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 7627,
+      "token_count_output": 961,
+      "latency_s": 3.021,
+      "timestamp": "2026-06-30T07:38:02.364130Z"
+    },
+    {
+      "turn_id": "bef0cf99-f2eb-4431-8adb-edaed6af383f",
+      "round_number": 2,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "The idea that the minimum wage serves as a panacea for poverty and economic inequality is a simplistic one. While a higher minimum wage may alleviate some of the financial burdens on low-wage workers, it does not address the root causes of poverty. In fact, increasing the minimum wage to €15 per hour by 2026 could have unintended consequences, such as reducing the competitiveness of small and medium-sized businesses, particularly in regions with lower average wages. This could lead to job losses and a decline in economic activity, ultimately harming the very workers we aim to protect.\n\nOur party's emphasis on making work pay more than social benefits is not a callous disregard for the struggles of low-wage workers. Rather, it is a recognition that work should be a source of pride and self-sufficiency, rather than a mere means of survival. By reforming the Bürgergeld system and promoting a more active approach to social welfare, we can create a more inclusive and fair society where everyone has the opportunity to contribute to our country's success. This approach is not only more effective in addressing poverty but also more sustainable in the long term.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 5,
+        "argument_strength": 5,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, avoiding personal attacks or inflammatory language, but also does not go out of its way to acknowledge the legitimacy of opposing views, thus scoring a 4.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage, providing a clear and focused argument that stays within the scope of the discussion, earning a score of 5.",
+        "logical_consistency": "The argument presented is internally consistent, with a clear logical structure that connects premises to conclusions, demonstrating rigorous logical chain and anticipation of objections, thus a score of 5.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, identified causal mechanisms, and acknowledgment of potential unintended consequences, making the argument compelling and earning a score of 5.",
+        "document_grounding": "The turn generally aligns with the FDP's known positions, emphasizing the importance of making work pay more than social benefits and reforming the Bürgergeld system, but does not directly reference specific party programme content, resulting in a score of 4.",
+        "responsiveness": "The turn engages with the preceding arguments, particularly those concerning the impact of a higher minimum wage on small and medium-sized businesses, but does not name specific parties or claims, thus scoring a 4.",
+        "stance_differentiation": "The turn unmistakably reflects the FDP's distinct party identity and ideological position, using party-specific values, priorities, and framing conventions, making it unmistakably distinct and earning a score of 5."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "erst möglich machen.\nArbeit muss sich stärker lohnen\nMillionen Menschen in Deutschland gehen jeden T",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 8402,
+      "token_count_output": 625,
+      "latency_s": 2.5460000000000003,
+      "timestamp": "2026-06-30T07:38:05.237426Z"
+    },
+    {
+      "turn_id": "ddd1e07e-0fae-48dd-a14a-1b3b57a7f110",
+      "round_number": 2,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "The debate on raising the minimum wage to €15 per hour by 2026 has laid bare the stark realities of poverty and economic inequality in Germany. While some parties have tried to downplay the significance of this issue, we cannot afford to ignore the fact that millions of people are barely scraping by on the current wage of €12.82 per hour. As Die Linke, we firmly believe that the minimum wage must be a living wage, sufficient to cover the basic needs of every individual.\n\nThe EU's minimum wage directive stipulates that the minimum wage should be at least 60% of the median income. In 2025, this would translate to a minimum wage of €15.12 per hour. We demand that the minimum wage be raised to at least €15 per hour by 2026, and eventually to €16 per hour, to ensure that every worker can afford a decent life. This is not a luxury, but a necessity, and it is our duty to ensure that every individual has access to a fair income, regardless of their occupation or location.\n\nThe experience of low-wage workers in eastern Germany is particularly stark. Their income is 17% lower than in western Germany, and their pensions, even after 40 years of contributions, are €150 lower than in western Germany. This is a stark reminder of the structural inequalities that persist in our society, and it is our responsibility to address them. By raising the minimum wage, we can begin to close the wage gap between eastern and western Germany and create a more equitable society for all.\n\nOur party's emphasis on strengthening the tariff system is crucial in ensuring that workers in these regions receive fairer compensation and have a better quality of life. By supporting the social partners in negotiating fair wages, we can create a more inclusive and fair society where work is rewarded and everyone has the opportunity to contribute to our country's success. We must not let the fear of potential job losses or reduced competitiveness cloud our judgment. Raising the minimum wage to €15 per hour by 2026 is not a panacea for all our economic woes, but it is a crucial step towards creating a more just and equitable society.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without attacking parties as entities, which warrants a score of 4.",
+        "relevance": "The turn is precisely targeted at the debate topic, advancing the discussion on the minimum wage with no extraneous material, making it a 5.",
+        "logical_consistency": "The argument is generally coherent with a clear logical structure, but there are minor gaps in addressing potential counterarguments, hence a 4.",
+        "argument_strength": "The turn presents compelling arguments with specific evidence, such as the EU's minimum wage directive, and clear causal mechanisms, like the impact on low-wage workers, which justifies a 5.",
+        "document_grounding": "The turn reflects documented party positions, such as the demand for a higher minimum wage and the emphasis on strengthening the tariff system, but does not directly reference specific party programme content, resulting in a 4.",
+        "responsiveness": "The turn acknowledges the general debate context but does not directly engage with specific arguments made by preceding speakers, which is why it scores a 3.",
+        "stance_differentiation": "The turn unmistakably differentiates Die Linke's position, using party-specific reasoning, vocabulary, and priorities that no other party in this debate would use, making it a 5."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "über den Monat kommt – in Ostdeutschland fast jede*r werden wir deutlich enger begrenzen, spätestens",
+        "aufgebaut� Der Ausverkauf durch die Treuhand wirkt aber muss auch zwischen Ost und West gelten! Der "
+      ],
+      "token_count_input": 9240,
+      "token_count_output": 797,
+      "latency_s": 3.121,
+      "timestamp": "2026-06-30T07:38:08.591998Z"
+    },
+    {
+      "turn_id": "5ffd88eb-5613-47d0-acf4-d4b7db4b0365",
+      "round_number": 2,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "We must not lose sight of the fact that the German economy is facing a multitude of challenges, including a stagnating labor market, skyrocketing energy costs, and an overburdened social welfare system. The relentless drive to increase the minimum wage, as advocated by some parties, ignores these harsh realities and the specific needs of different regions and industries. Raising the minimum wage to €15 per hour by 2026 would only serve to exacerbate the problems faced by small and medium-sized businesses, which are the backbone of our economy.\n\nA more nuanced approach is needed, one that takes into account the unique challenges faced by each region and industry. We must prioritize a sustainable, long-term solution that benefits all workers, not just those who are already relatively well-off. The focus should be on creating a more flexible and dynamic labor market, where workers can earn higher wages through their skills and productivity, rather than relying on a one-size-fits-all minimum wage.\n\nAs our programme highlights, the German rent system is a pressing issue that has been neglected for far too long. If we can't even ensure a decent retirement for our seniors, how can we justify further increases in the minimum wage? The emphasis on creating a sustainable, long-term solution should be directed towards addressing the root causes of poverty and economic inequality, rather than simply increasing the minimum wage as a quick fix.\n\nWe must also address the issue of wage inequality between eastern and western Germany. The current wage gap is a stark reminder of the structural inequalities that persist in our society. By raising the minimum wage, we can begin to close this gap, but we must also recognize that a more comprehensive approach is needed to address the underlying causes of poverty and economic inequality in these regions.\n\nIn conclusion, we must prioritize a more nuanced approach to addressing the challenges faced by the German economy. A higher minimum wage is not the solution to all our economic woes, but rather a symptom of a deeper problem that requires a more comprehensive and sustainable solution.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone throughout, with no personal attacks or inflammatory language, earning a score of 4. The language is respectful, even when disagreeing with other parties' proposals.",
+        "relevance": "The turn is highly relevant to the debate topic, addressing the minimum wage and its potential impact on the German economy, making it a 5. It stays focused on the issue at hand and provides specific examples and arguments related to the topic.",
+        "logical_consistency": "The argument is generally coherent, with a clear structure connecting premises to conclusions, warranting a score of 4. However, there are minor logical gaps, such as the assumption that a higher minimum wage would automatically exacerbate problems for small and medium-sized businesses without providing detailed evidence.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and references to the challenges faced by the German economy, earning a 4. The argument that a more nuanced approach is needed, considering regional and industrial differences, is compelling but could be strengthened with more concrete data or examples.",
+        "document_grounding": "The turn reflects the AfD's documented positions, such as the emphasis on a sustainable, long-term solution and the need to address the root causes of poverty and economic inequality, making it a 4. However, it does not directly reference specific passages from their programme, which would have strengthened the grounding.",
+        "responsiveness": "The turn acknowledges the arguments of other parties indirectly but does not directly engage with specific claims made by preceding speakers, resulting in a score of 3. It addresses the general debate context but lacks a targeted response to the immediate preceding turns.",
+        "stance_differentiation": "The turn unmistakably reflects the AfD's distinct party identity and ideological position, particularly in its emphasis on a nuanced approach and addressing structural inequalities, earning a 5. The vocabulary and framing conventions used are unmistakably aligned with the AfD's known stance on economic and social issues."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "18 SOZIALE MARKTWIRTSCHAFT UND GESUNDHEIT\nDie desolate Situation im deutschen Rentensystem\nDas deuts",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 9992,
+      "token_count_output": 889,
+      "latency_s": 3.548,
+      "timestamp": "2026-06-30T07:38:11.907703Z"
+    },
+    {
+      "turn_id": "9f27182b-bab8-4a40-a56b-a5430245c2cb",
+      "round_number": 3,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "We must be mindful of the potential consequences of a significant increase in the minimum wage on our small and medium-sized businesses, which are the backbone of our economy. These businesses often operate on thin profit margins and may struggle to absorb the increased labor costs, potentially leading to job losses and a decline in economic activity, particularly in regions with lower average wages. Our party's commitment to preserving the independence of the Mindestlohnkommission and allowing the social partners to negotiate fair wages is essential in ensuring that the minimum wage remains a competitive and dynamic aspect of our social market economy.\n\nAs our programme emphasizes, the social partners, including employers and employees, must have the flexibility to negotiate fair wages that suit the specific needs of their industries and regions. This approach has been instrumental in maintaining a balance between fair wages and the competitiveness of our economy. By supporting the social partners in negotiating fair wages, we can create a more inclusive and fair society where work is rewarded and everyone has the opportunity to contribute to our country's success.\n\nWe cannot afford to ignore the harsh realities of the German economy, and it is essential to address the root causes of poverty and economic inequality, rather than relying solely on a one-size-fits-all minimum wage. A more nuanced approach is needed, one that takes into account the unique challenges faced by each region and industry, and prioritizes the creation of a more flexible and dynamic labor market, where workers can earn higher wages through their skills and productivity.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, avoiding any personal attacks or inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage and its potential impact on small and medium-sized businesses, making it clearly relevant and scoring a 4.",
+        "logical_consistency": "The argument presented is coherent and logically consistent, emphasizing the potential consequences of a significant minimum wage increase on small businesses and the importance of the social partners negotiating fair wages, which warrants a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning about the potential impact on small and medium-sized businesses, and the need for a nuanced approach, earning it a score of 4 for argument strength.",
+        "document_grounding": "The turn is directly anchored in the CDU/CSU's documented positions, referencing the party's commitment to preserving the independence of the Mindestlohnkommission and supporting the social partners in negotiating fair wages, which aligns with their programme and scores a 5.",
+        "responsiveness": "While the turn does acknowledge the general debate context, it does not directly engage with the specific arguments made by other parties in the preceding turns, thus scoring a 3 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the CDU/CSU's distinct party position, emphasizing the importance of the social market economy, the role of the Mindestlohnkommission, and the need for flexibility in wage negotiations, which is characteristic of the party's stance and scores a 5."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "helfen wir den Berechtigten und vermeiden Mehrfachleistungen.\nTarifpartnerschaft, Mitbestimmung und ",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 10737,
+      "token_count_output": 711,
+      "latency_s": 2.8729999999999998,
+      "timestamp": "2026-06-30T07:38:15.576956Z"
+    },
+    {
+      "turn_id": "979addfb-ae4f-493d-875c-095356e96cba",
+      "round_number": 3,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "The debate on the minimum wage has revealed a stark divide between those who prioritize the interests of big business and those who stand up for the rights of working people. As the SPD, we are committed to strengthening the rights of low-wage workers and ensuring that they receive a fair income. Raising the minimum wage to €15 per hour by 2026 is not a panacea for all our economic woes, but it is a crucial step towards creating a more just and equitable society.\n\nWe must not be swayed by the arguments of those who claim that a higher minimum wage will lead to job losses and reduced competitiveness. The evidence is clear: a higher minimum wage does not necessarily lead to job losses, and it can actually increase productivity and reduce turnover rates. Our commitment to strengthening the tariff system will also help to ensure that workers in eastern Germany receive fairer compensation and have a better quality of life.\n\nThe experience of low-wage workers in eastern Germany is particularly stark. Their income is 17% lower than in western Germany, and their pensions, even after 40 years of contributions, are €150 lower than in western Germany. This is a stark reminder of the structural inequalities that persist in our society. By raising the minimum wage, we can begin to close the wage gap between eastern and western Germany and create a more equitable society for all.\n\nAs we move forward, we must prioritize the needs of workers and ensure that their voices are heard in the decision-making process. A higher minimum wage is not a luxury, but a necessity, and it is our duty to ensure that every worker can afford a decent life. Our programme emphasizes the importance of making work pay more than social benefits, and this is precisely what we aim to achieve with a higher minimum wage.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques opposing positions without personal attacks, and avoids inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage, stays focused, and advances the discussion, earning a score of 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, but lacks rigorous anticipation of counterarguments, resulting in a score of 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and evidence, such as the impact of a higher minimum wage on productivity and the experience of low-wage workers in eastern Germany, but could benefit from more detailed analysis, thus scoring a 4 for argument strength.",
+        "document_grounding": "The turn clearly reflects the SPD's documented positions, such as the commitment to raising the minimum wage to €15 per hour by 2026 and strengthening the tariff system, aligning with the party's programme, which warrants a score of 5 for document grounding.",
+        "responsiveness": "The turn engages with opposing arguments, acknowledging concerns about job losses and competitiveness, and provides counterarguments, demonstrating a good level of responsiveness, hence a score of 4.",
+        "stance_differentiation": "The turn unmistakably represents the SPD's distinct position, using party-specific values, priorities, and framing conventions, such as emphasizing the importance of making work pay more than social benefits, which earns a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "dafür sorgen, dass dieses europäische Recht von der Mindestlohnkommission künftig berücksichtigt\nwir",
+        "Mehr für Dich. Besser für Deutschland.\nRegierungsprogramm der SPD für die Bundestagswahl 2025\nDen Mi"
+      ],
+      "token_count_input": 11247,
+      "token_count_output": 758,
+      "latency_s": 2.891,
+      "timestamp": "2026-06-30T07:38:18.882370Z"
+    },
+    {
+      "turn_id": "33ddd1a5-b975-4db2-a5ad-97ac29694f2b",
+      "round_number": 3,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "The pressing issue of a fair minimum wage is a matter of social justice, and our commitment to raising the minimum wage to €15 per hour by 2026 is unwavering. The current minimum wage of €12.82 per hour is a testament to the progress Germany has made in ensuring fair wages for its citizens, but it is equally clear that more needs to be done to address the stark realities of poverty and economic inequality in our country.\n\nAs our party's programme states, fair wages require a fair minimum wage, and this is not a luxury, but a necessity. The experience of low-wage workers in eastern Germany is particularly stark, with income 17% lower than in western Germany and pensions €150 lower after 40 years of contributions. By raising the minimum wage, we can begin to close the wage gap between eastern and western Germany and create a more equitable society for all.\n\nOur commitment to strengthening the tariff system will also help to ensure that workers in these regions receive fairer compensation and have a better quality of life. By supporting the social partners in negotiating fair wages, we can create a more inclusive and fair society where work is rewarded and everyone has the opportunity to contribute to our country's success. This approach is not only more effective in addressing poverty but also more sustainable in the long term.\n\nWe must not let the fear of potential job losses or reduced competitiveness cloud our judgment. A higher minimum wage is not a panacea for all our economic woes, but it is a crucial step towards creating a more just and equitable society. The emphasis on creating a sustainable, long-term solution should be directed towards addressing the root causes of poverty and economic inequality, rather than simply increasing the minimum wage as a quick fix.\n\nIn our party's programme, we have emphasized the importance of making work pay more than social benefits, and this is precisely what we aim to achieve with a higher minimum wage. By reforming the Bürgergeld system and promoting a more active approach to social welfare, we can create a more inclusive and fair society where everyone has the opportunity to contribute to our country's success. This approach is not only more effective in addressing poverty but also more sustainable in the long term.",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 5,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, acknowledging the legitimacy of the issue of minimum wage and its impact on social justice without attacking or dismissing opposing views.",
+        "relevance": "The turn is precisely targeted at the debate topic, addressing the issue of raising the minimum wage to €15 per hour by 2026 and its implications for social justice and economic inequality.",
+        "logical_consistency": "The argument is internally consistent, with a clear logical structure connecting the need for a fair minimum wage to the goal of reducing economic inequality and promoting social justice.",
+        "argument_strength": "The turn presents compelling arguments with specific evidence, such as the experience of low-wage workers in eastern Germany, and clear causal mechanisms, like the impact of a higher minimum wage on reducing the wage gap between eastern and western Germany.",
+        "document_grounding": "The turn is directly anchored in the party's programme, referencing specific commitments like strengthening the tariff system and reforming the Bürgergeld system to support the argument for a higher minimum wage.",
+        "responsiveness": "The turn engages with the general debate context and the issue at hand but does not directly address specific claims made by other parties in the preceding turns, thus not fully meeting the criteria for a score of 5.",
+        "stance_differentiation": "The turn unmistakably reflects the party's distinct position on the minimum wage, emphasizing the importance of social justice, fair wages, and a more equitable society, which clearly differentiates it from other parties' stances."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "sozialen Umstände abhängen darf. Es Faire Löhne verlangen nach einem fairen\ngilt für Menschen, die u",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 11767,
+      "token_count_output": 838,
+      "latency_s": 2.996,
+      "timestamp": "2026-06-30T07:38:22.131989Z"
+    },
+    {
+      "turn_id": "6f256f79-46c3-4590-82d9-0eb19e065abb",
+      "round_number": 3,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "The idea that a higher minimum wage is the panacea for poverty and economic inequality is a simplistic one. While a higher minimum wage may alleviate some of the financial burdens on low-wage workers, it does not address the root causes of poverty. \n\nAs our party's programme emphasizes, the social partners, including employers and employees, must have the flexibility to negotiate fair wages that suit the specific needs of their industries and regions. This approach has been instrumental in maintaining a balance between fair wages and the competitiveness of our economy.\n\nFurthermore, increasing the minimum wage to €15 per hour by 2026 could have unintended consequences, such as reducing the competitiveness of small and medium-sized businesses, particularly in regions with lower average wages. This could lead to job losses and a decline in economic activity, ultimately harming the very workers we aim to protect.\n\nInstead of relying on a one-size-fits-all minimum wage, we should focus on creating a more flexible and dynamic labor market, where workers can earn higher wages through their skills and productivity. Our proposal for reforming the Bürgergeld system and promoting a more active approach to social welfare is a crucial step towards creating a more inclusive and fair society where work is rewarded and everyone has the opportunity to contribute to our country's success.\n\nBy prioritizing the creation of a more dynamic labor market and promoting a more active approach to social welfare, we can create a more sustainable and long-term solution to addressing poverty and economic inequality, rather than simply relying on a higher minimum wage as a quick fix.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 5,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without attacking parties or individuals directly, which aligns with a score of 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage and its potential impact on the economy, staying focused on the issue at hand and advancing the discussion, which warrants a score of 5 for relevance.",
+        "logical_consistency": "The argument presented is internally coherent, with a clear logical structure connecting premises to conclusions, and the turn anticipates potential objections by discussing unintended consequences, which justifies a score of 5 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning, identified causal mechanisms, and referenced party programme content, making the argument compelling and well-evidenced, which deserves a score of 5 for argument strength.",
+        "document_grounding": "The turn clearly reflects the FDP's documented positions, specifically referencing the party's programme and its emphasis on the social partners' flexibility in negotiating fair wages, which demonstrates strong document grounding and warrants a score of 5.",
+        "responsiveness": "The turn engages with the preceding arguments, particularly those concerning the potential impact of a higher minimum wage on small and medium-sized businesses, but does not directly address every specific claim made by other parties, which results in a score of 4 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably differentiates the FDP's position from others, using party-specific reasoning, vocabulary, and priorities, such as the focus on creating a dynamic labor market and reforming the Bürgergeld system, which earns a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "erst möglich machen.\nArbeit muss sich stärker lohnen\nMillionen Menschen in Deutschland gehen jeden T",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 12351,
+      "token_count_output": 742,
+      "latency_s": 4.637,
+      "timestamp": "2026-06-30T07:38:25.333254Z"
+    },
+    {
+      "turn_id": "7457b5aa-0ff6-44e8-a788-c652edd50a87",
+      "round_number": 3,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "The struggle for a living wage is a fundamental human right that must be at the forefront of our policy debates. As Die Linke, we firmly believe that the minimum wage should be at least 60% of the median income, as stipulated by the EU's minimum wage directive. In 2025, this translates to a minimum wage of €15.12 per hour, and we demand that the minimum wage be raised to at least €15 per hour by 2026, and eventually to €16 per hour, to ensure that every worker can afford a decent life.\n\nThe experience of low-wage workers in eastern Germany is particularly stark, with income 17% lower than in western Germany and pensions €150 lower after 40 years of contributions. This is a stark reminder of the structural inequalities that persist in our society, and it is our responsibility to address them. By raising the minimum wage, we can begin to close the wage gap between eastern and western Germany and create a more equitable society for all.\n\nFurthermore, our party's emphasis on strengthening the tariff system is crucial in ensuring that workers in these regions receive fairer compensation and have a better quality of life. By supporting the social partners in negotiating fair wages, we can create a more inclusive and fair society where work is rewarded and everyone has the opportunity to contribute to our country's success.\n\nThe debate on the minimum wage has revealed a stark divide between those who prioritize the interests of big business and those who stand up for the rights of working people. As Die Linke, we are committed to strengthening the rights of low-wage workers and ensuring that they receive a fair income. Raising the minimum wage to €15 per hour by 2026 is not a panacea for all our economic woes, but it is a crucial step towards creating a more just and equitable society.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without personal attacks or inflammatory language, thus scoring a 4 for being professional and respectful.",
+        "relevance": "The turn is precisely targeted at the debate topic, advancing the discussion on the minimum wage with specific arguments and data, making it a 5 for being directly relevant and advancing the discussion.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, though it may lack depth in addressing potential counterarguments, scoring a 4 for internal coherence.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and evidence, such as referencing the EU's minimum wage directive, but could benefit from more nuanced consideration of counterarguments, thus a 4 for good support but room for deeper analysis.",
+        "document_grounding": "The turn directly references and aligns with Die Linke's documented positions, such as the demand for a minimum wage of at least €15 per hour, demonstrating a strong connection to the party's programme, scoring a 5 for clear grounding in party documents.",
+        "responsiveness": "The turn engages with the broader debate context, acknowledging the divide between parties on the minimum wage issue and directly addressing the experiences of low-wage workers, but does not specifically respond to the immediately preceding turn, scoring a 4 for engagement with the debate context.",
+        "stance_differentiation": "The turn unmistakably reflects Die Linke's distinct party identity and ideological position, emphasizing the struggle for a living wage as a fundamental human right and the need to address structural inequalities, making it a 5 for clear and unmistakable party stance."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "über den Monat kommt – in Ostdeutschland fast jede*r werden wir deutlich enger begrenzen, spätestens",
+        "aufgebaut� Der Ausverkauf durch die Treuhand wirkt aber muss auch zwischen Ost und West gelten! Der "
+      ],
+      "token_count_input": 12950,
+      "token_count_output": 801,
+      "latency_s": 3.45,
+      "timestamp": "2026-06-30T07:38:30.169838Z"
+    },
+    {
+      "turn_id": "b75b8eca-4b49-4c25-8ffd-d8dcf7219fb7",
+      "round_number": 3,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "The relentless drive to increase the minimum wage, as we've seen from some of our opponents, ignores the fundamental issue: the current system of wage determination is broken. The Mindestlohnkommission has done its job, but its recommendations are often based on an idealistic assumption that employers and employees can magically agree on fair wages. In reality, many small and medium-sized businesses are struggling to stay afloat due to excessive labor costs, and a further increase to €15 per hour would tip the scales against them.\n\nAs our programme emphasizes, the German rent system is a pressing issue that has been neglected for far too long. If we can't even ensure a decent retirement for our seniors, how can we justify further increases in the minimum wage? The focus should be on creating a sustainable, long-term solution that benefits all workers, not just those who are already relatively well-off. A more modest approach to wage increases, combined with targeted support for small businesses and struggling regions, is the only way forward.\n\nWe must not lose sight of the fact that the German economy is facing a multitude of challenges, including a stagnating labor market, skyrocketing energy costs, and an overburdened social welfare system. By prioritizing a more nuanced approach, one that takes into account the unique challenges faced by each region and industry, we can create a more flexible and dynamic labor market, where workers can earn higher wages through their skills and productivity, rather than relying on a one-size-fits-all minimum wage.\n\nThe current minimum wage of €12.82 per hour is a paltry sum that barely scratches the surface of poverty, particularly in regions like eastern Germany where the cost of living is already inflated. By raising the minimum wage to €15 per hour by 2026, we are essentially asking small and medium-sized businesses to absorb a significant increase in labor costs without any corresponding benefits. This would be a recipe for disaster, particularly in regions with lower average wages.\n\nAs we move forward, we must prioritize a more sustainable, long-term solution that benefits all workers, not just those who are already relatively well-off. By creating a more flexible and dynamic labor market, where workers can earn higher wages through their skills and productivity, we can address the root causes of poverty and economic inequality, rather than simply increasing the minimum wage as a quick fix.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone throughout, avoiding personal attacks or inflammatory language, but does use phrases like 'relentless drive' that could be seen as slightly loaded, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage, stays focused on the issue, and advances the discussion by introducing the challenges faced by small and medium-sized businesses, scoring a 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, but may contain minor gaps or unjustified inferential leaps, such as assuming the direct impact of minimum wage increases on small businesses without providing specific evidence, thus scoring a 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and identified mechanisms, such as the impact of labor costs on small businesses, but could be strengthened by more concrete evidence or data, scoring a 4 for argument strength.",
+        "document_grounding": "The turn reflects the AfD's known positions, such as emphasizing the challenges faced by small and medium-sized businesses and the need for a more nuanced approach to wage determination, thus scoring a 4 for document grounding.",
+        "responsiveness": "The turn acknowledges the opposing positions indirectly but does not directly engage with specific arguments made by other parties, scoring a 3 for responsiveness as it mostly reads as a prepared statement with minimal reference to preceding arguments.",
+        "stance_differentiation": "The turn unmistakably reflects the AfD's distinct party identity and ideological position, using party-specific reasoning and vocabulary that no other party in the debate would use, thus scoring a 5 for stance differentiation."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "18 SOZIALE MARKTWIRTSCHAFT UND GESUNDHEIT\nDie desolate Situation im deutschen Rentensystem\nDas deuts",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 13387,
+      "token_count_output": 906,
+      "latency_s": 3.7119999999999997,
+      "timestamp": "2026-06-30T07:38:34.299716Z"
+    }
+  ],
+  "interventions": [],
+  "round_summaries": [
+    {
+      "round_number": 1,
+      "mean_scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "per_agent_scores": {
+        "CDU/CSU": {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "SPD": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "Bündnis 90/Die Grünen": {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 5,
+          "document_grounding": 5,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "FDP": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "Die Linke": {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 5,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "AfD": {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 3,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        }
+      },
+      "composite": 4.29,
+      "plateau": false,
+      "intervention_count_so_far": 0
+    },
+    {
+      "round_number": 2,
+      "mean_scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "per_agent_scores": {
+        "CDU/CSU": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "SPD": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 5,
+          "document_grounding": 5,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "Bündnis 90/Die Grünen": {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 5,
+          "document_grounding": 5,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "FDP": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 5,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "Die Linke": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 5,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "AfD": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        }
+      },
+      "composite": 4.43,
+      "plateau": false,
+      "intervention_count_so_far": 0
+    },
+    {
+      "round_number": 3,
+      "mean_scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "per_agent_scores": {
+        "CDU/CSU": {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "SPD": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "Bündnis 90/Die Grünen": {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 5,
+          "document_grounding": 5,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "FDP": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 5,
+          "document_grounding": 5,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "Die Linke": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "AfD": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        }
+      },
+      "composite": 4.43,
+      "plateau": false,
+      "intervention_count_so_far": 0
+    }
+  ],
+  "total_tokens_input": 147357,
+  "total_tokens_output": 13334,
+  "total_latency_s": 52.03,
+  "started_at": "2026-06-30T07:37:27.429999Z",
+  "finished_at": "2026-06-30T07:38:36.609728Z"
+}

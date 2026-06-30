@@ -6,7 +6,9 @@ automatic retries on rate-limit errors, and JSON response parsing.
 
 Supports two models:
   - Agent model (8b): llama-3.1-8b-instant
-  - Judge/Moderator model (70b): llama-3.3-70b-versatile
+  - Judge/Moderator model: meta-llama/llama-4-scout-17b-16e-instruct
+    (replaced llama-3.3-70b-versatile, deprecated 2026-08-16;
+     pilot comparison: 100% valid, 83-89% intra-agreement, 1.26s latency)
 
 If litellm is needed later for multi-provider support, this module
 can be swapped without changing the rest of the codebase.
@@ -36,7 +38,7 @@ logger = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 
 AGENT_MODEL = "llama-3.1-8b-instant"
-JUDGE_MODEL = "llama-3.3-70b-versatile"
+JUDGE_MODEL = "meta-llama/llama-4-scout-17b-16e-instruct"
 
 DEFAULT_MAX_RETRIES = 8
 DEFAULT_RETRY_BASE_DELAY = 2.0  # seconds, exponential backoff
@@ -196,25 +198,30 @@ class LLMClient:
     def _parse_json(text: str) -> Optional[dict]:
         """Best-effort JSON parsing from LLM output.
 
-        Handles common cases: raw JSON, markdown-fenced JSON,
-        and JSON embedded in surrounding text.
+        Handles: raw JSON, markdown-fenced JSON, JSON embedded in text,
+        and thinking-model <think>...</think> prefix blocks (Qwen3, etc.).
         """
-        # Strip markdown code fences if present
         cleaned = text.strip()
+
+        # Strip markdown code fences if present
         if cleaned.startswith("```"):
-            # Remove opening fence (with optional language tag)
             first_newline = cleaned.index("\n")
             cleaned = cleaned[first_newline + 1:]
             if cleaned.endswith("```"):
                 cleaned = cleaned[:-3]
             cleaned = cleaned.strip()
 
+        # Strip <think>...</think> blocks produced by reasoning models
+        # (Qwen3, DeepSeek-R1, etc.). Must happen BEFORE the {…} search
+        # because thinking content may itself contain braces.
+        cleaned = re.sub(r"<think>.*?</think>", "", cleaned, flags=re.DOTALL).strip()
+
         try:
             return json.loads(cleaned)
         except json.JSONDecodeError:
             pass
 
-        # Try to find JSON object in the text
+        # Try to find JSON object in the remaining text
         start = cleaned.find("{")
         end = cleaned.rfind("}")
         if start != -1 and end != -1 and end > start:

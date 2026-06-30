@@ -1,0 +1,677 @@
+{
+  "meta": {
+    "turns_sampled": 18,
+    "reruns_per_turn": 3,
+    "judge_temperature": 0.0,
+    "exact_agreement_threshold": 0.9
+  },
+  "per_dimension_stats": {
+    "civility": {
+      "exact_pct": 1.0,
+      "within1_pct": 1.0,
+      "mean_std": 0.0
+    },
+    "relevance": {
+      "exact_pct": 1.0,
+      "within1_pct": 1.0,
+      "mean_std": 0.0
+    },
+    "logical_consistency": {
+      "exact_pct": 0.9444444444444444,
+      "within1_pct": 1.0,
+      "mean_std": 0.032075014954979206
+    },
+    "argument_strength": {
+      "exact_pct": 0.9444444444444444,
+      "within1_pct": 1.0,
+      "mean_std": 0.032075014954979206
+    },
+    "document_grounding": {
+      "exact_pct": 1.0,
+      "within1_pct": 1.0,
+      "mean_std": 0.0
+    },
+    "responsiveness": {
+      "exact_pct": 0.8333333333333334,
+      "within1_pct": 1.0,
+      "mean_std": 0.09622504486493762
+    },
+    "stance_differentiation": {
+      "exact_pct": 0.8888888888888888,
+      "within1_pct": 1.0,
+      "mean_std": 0.06415002990995841
+    }
+  },
+  "raw_records": [
+    {
+      "turn_id": "980bc47c-e02e-4eda-8ed7-5964d2c1aaa2",
+      "agent_name": "CDU/CSU",
+      "topic": "mindestlohn",
+      "round": 1,
+      "reruns": [
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 3,
+          "document_grounding": 4,
+          "responsiveness": 1,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 3,
+          "document_grounding": 4,
+          "responsiveness": 1,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 3,
+          "document_grounding": 4,
+          "responsiveness": 1,
+          "stance_differentiation": 4
+        }
+      ]
+    },
+    {
+      "turn_id": "c01994f0-1e95-4b23-aaf5-9737a9259dc5",
+      "agent_name": "CDU/CSU",
+      "topic": "mindestlohn",
+      "round": 2,
+      "reruns": [
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 3,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        }
+      ]
+    },
+    {
+      "turn_id": "47e11250-3b87-4bc1-b4a5-8480ceda3757",
+      "agent_name": "CDU/CSU",
+      "topic": "mindestlohn",
+      "round": 3,
+      "reruns": [
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 3,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 3,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 3,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 4
+        }
+      ]
+    },
+    {
+      "turn_id": "f006df5d-e17b-4870-b114-4c4a85bd55ed",
+      "agent_name": "SPD",
+      "topic": "mindestlohn",
+      "round": 1,
+      "reruns": [
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 2,
+          "stance_differentiation": 5
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 2,
+          "stance_differentiation": 4
+        }
+      ]
+    },
+    {
+      "turn_id": "714b1447-bc87-48f1-846e-21ae35ea78a6",
+      "agent_name": "SPD",
+      "topic": "mindestlohn",
+      "round": 2,
+      "reruns": [
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 4
+        }
+      ]
+    },
+    {
+      "turn_id": "514c93c5-a2d1-4dac-9777-5ee7d730a302",
+      "agent_name": "SPD",
+      "topic": "mindestlohn",
+      "round": 3,
+      "reruns": [
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        }
+      ]
+    },
+    {
+      "turn_id": "be2cb4f2-51d5-459c-bead-ea55efbdbfd3",
+      "agent_name": "Bündnis 90/Die Grünen",
+      "topic": "mindestlohn",
+      "round": 1,
+      "reruns": [
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        }
+      ]
+    },
+    {
+      "turn_id": "263072f6-52ee-4a0b-8326-5a7c47913c75",
+      "agent_name": "Bündnis 90/Die Grünen",
+      "topic": "mindestlohn",
+      "round": 2,
+      "reruns": [
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 4
+        }
+      ]
+    },
+    {
+      "turn_id": "3353ac56-a865-4ddc-bdfe-d71a1b7cb57e",
+      "agent_name": "Bündnis 90/Die Grünen",
+      "topic": "mindestlohn",
+      "round": 3,
+      "reruns": [
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        }
+      ]
+    },
+    {
+      "turn_id": "b670f4fa-8ffa-496a-857e-98071ffce6c0",
+      "agent_name": "FDP",
+      "topic": "mindestlohn",
+      "round": 1,
+      "reruns": [
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 3,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 3,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 3,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        }
+      ]
+    },
+    {
+      "turn_id": "0a1f996d-7e13-440d-9406-55d9f69a3236",
+      "agent_name": "FDP",
+      "topic": "mindestlohn",
+      "round": 2,
+      "reruns": [
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 3,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 3,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 3,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        }
+      ]
+    },
+    {
+      "turn_id": "e5fa15ed-7748-4be9-ab8b-11b180a4323e",
+      "agent_name": "FDP",
+      "topic": "mindestlohn",
+      "round": 3,
+      "reruns": [
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 3,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 3,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 3,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        }
+      ]
+    },
+    {
+      "turn_id": "cf6d791d-bacd-47ef-96bf-6d9799d3b002",
+      "agent_name": "Die Linke",
+      "topic": "mindestlohn",
+      "round": 1,
+      "reruns": [
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 3,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 3,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 3,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        }
+      ]
+    },
+    {
+      "turn_id": "d6554612-f545-4ce1-ab5f-227fe9bcb7c3",
+      "agent_name": "Die Linke",
+      "topic": "mindestlohn",
+      "round": 2,
+      "reruns": [
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        }
+      ]
+    },
+    {
+      "turn_id": "fb450e16-6dce-49b6-869f-f5d0717aca27",
+      "agent_name": "Die Linke",
+      "topic": "mindestlohn",
+      "round": 3,
+      "reruns": [
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 4
+        }
+      ]
+    },
+    {
+      "turn_id": "ab080dde-1506-41db-8592-95b5bf5d7f83",
+      "agent_name": "AfD",
+      "topic": "mindestlohn",
+      "round": 1,
+      "reruns": [
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 3,
+          "document_grounding": 3,
+          "responsiveness": 2,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 3,
+          "document_grounding": 3,
+          "responsiveness": 2,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 3,
+          "document_grounding": 3,
+          "responsiveness": 2,
+          "stance_differentiation": 4
+        }
+      ]
+    },
+    {
+      "turn_id": "92449840-8033-4e35-b681-05086c72e2fa",
+      "agent_name": "AfD",
+      "topic": "mindestlohn",
+      "round": 2,
+      "reruns": [
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 3,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 3,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 3,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        }
+      ]
+    },
+    {
+      "turn_id": "9b20e6f3-4ddb-4e67-afd6-890c8fe6cfc8",
+      "agent_name": "AfD",
+      "topic": "mindestlohn",
+      "round": 3,
+      "reruns": [
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 3,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 3,
+          "argument_strength": 3,
+          "document_grounding": 4,
+          "responsiveness": 2,
+          "stance_differentiation": 4
+        },
+        {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 3,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        }
+      ]
+    }
+  ]
+}

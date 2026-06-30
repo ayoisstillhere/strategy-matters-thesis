@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "turns_sampled": 18,
+    "reruns_per_turn": 2,
+    "models_tested": [
+      "llama-3.3-70b-versatile",
+      "openai/gpt-oss-120b",
+      "qwen/qwen3.6-27b",
+      "qwen/qwen3-32b"
+    ],
+    "baseline_model": "llama-3.3-70b-versatile",
+    "deprecation_date": "2026-08-16"
+  },
+  "results": [
+    {
+      "model": "llama-3.3-70b-versatile",
+      "json_valid_rate": 1.0,
+      "per_dim_means": {
+        "civility": 4.056,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4.139,
+        "document_grounding": 4.139,
+        "responsiveness": 3.667,
+        "stance_differentiation": 4.889
+      },
+      "composite_mean": 4.27,
+      "intra_agreement_exact": 0.7222222222222222,
+      "mean_latency_s": 1.8
+    },
+    {
+      "model": "openai/gpt-oss-120b",
+      "json_valid_rate": 1.0,
+      "per_dim_means": {
+        "civility": 3,
+        "relevance": 3,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 3,
+        "responsiveness": 3,
+        "stance_differentiation": 3
+      },
+      "composite_mean": 3,
+      "intra_agreement_exact": 1,
+      "mean_latency_s": 1.88
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "json_valid_rate": 1.0,
+      "per_dim_means": {
+        "civility": 3,
+        "relevance": 3,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 3,
+        "responsiveness": 3,
+        "stance_differentiation": 3
+      },
+      "composite_mean": 3,
+      "intra_agreement_exact": 1,
+      "mean_latency_s": 1.76
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "json_valid_rate": 1.0,
+      "per_dim_means": {
+        "civility": 3,
+        "relevance": 3,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 3,
+        "responsiveness": 3,
+        "stance_differentiation": 3
+      },
+      "composite_mean": 3,
+      "intra_agreement_exact": 1,
+      "mean_latency_s": 2.11
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "turns_sampled": 18,
+    "reruns_per_turn": 2,
+    "models_tested": [
+      "llama-3.3-70b-versatile",
+      "openai/gpt-oss-120b",
+      "qwen/qwen3.6-27b",
+      "qwen/qwen3-32b"
+    ],
+    "baseline_model": "llama-3.3-70b-versatile",
+    "deprecation_date": "2026-08-16"
+  },
+  "results": [
+    {
+      "model": "llama-3.3-70b-versatile",
+      "json_valid_rate": 1.0,
+      "per_dim_means": {
+        "civility": 4.056,
+        "relevance": 5,
+        "logical_consistency": 4.028,
+        "argument_strength": 4.111,
+        "document_grounding": 4.111,
+        "responsiveness": 3.667,
+        "stance_differentiation": 4.889
+      },
+      "composite_mean": 4.266,
+      "intra_agreement_exact": 0.7777777777777778,
+      "mean_latency_s": 1.82
+    },
+    {
+      "model": "openai/gpt-oss-120b",
+      "json_valid_rate": 0.9722222222222222,
+      "per_dim_means": {
+        "civility": 4.057,
+        "relevance": 4.229,
+        "logical_consistency": 3.943,
+        "argument_strength": 3.029,
+        "document_grounding": 3.714,
+        "responsiveness": 3.543,
+        "stance_differentiation": 4
+      },
+      "composite_mean": 3.788,
+      "intra_agreement_exact": 0.23529411764705882,
+      "mean_latency_s": 3.53
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "json_valid_rate": 0.0,
+      "per_dim_means": {
+        "civility": 0.0,
+        "relevance": 0.0,
+        "logical_consistency": 0.0,
+        "argument_strength": 0.0,
+        "document_grounding": 0.0,
+        "responsiveness": 0.0,
+        "stance_differentiation": 0.0
+      },
+      "composite_mean": 0.0,
+      "intra_agreement_exact": 0.0,
+      "mean_latency_s": 3.85
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "json_valid_rate": 1.0,
+      "per_dim_means": {
+        "civility": 4.028,
+        "relevance": 4.667,
+        "logical_consistency": 4.306,
+        "argument_strength": 3.583,
+        "document_grounding": 4.444,
+        "responsiveness": 3.806,
+        "stance_differentiation": 4.611
+      },
+      "composite_mean": 4.206,
+      "intra_agreement_exact": 0.05555555555555555,
+      "mean_latency_s": 2.59
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "turns_sampled": 18,
+    "reruns_per_turn": 2,
+    "models_tested": [
+      "llama-3.3-70b-versatile",
+      "meta-llama/llama-4-scout-17b-16e-instruct",
+      "qwen/qwen3-32b",
+      "qwen/qwen3.6-27b"
+    ],
+    "baseline_model": "llama-3.3-70b-versatile",
+    "deprecation_date": "2026-08-16"
+  },
+  "results": [
+    {
+      "model": "llama-3.3-70b-versatile",
+      "json_valid_rate": 1.0,
+      "per_dim_means": {
+        "civility": 4.056,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4.083,
+        "document_grounding": 4.139,
+        "responsiveness": 3.639,
+        "stance_differentiation": 4.917
+      },
+      "composite_mean": 4.262,
+      "intra_agreement_exact": 0.7777777777777778,
+      "mean_latency_s": 1.84
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "json_valid_rate": 1.0,
+      "per_dim_means": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 3.972,
+        "argument_strength": 3.611,
+        "document_grounding": 3.861,
+        "responsiveness": 3.056,
+        "stance_differentiation": 4.194
+      },
+      "composite_mean": 3.813,
+      "intra_agreement_exact": 0.8333333333333334,
+      "mean_latency_s": 1.08
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "json_valid_rate": 1.0,
+      "per_dim_means": {
+        "civility": 4.056,
+        "relevance": 4.556,
+        "logical_consistency": 3.833,
+        "argument_strength": 3.611,
+        "document_grounding": 4.111,
+        "responsiveness": 3.778,
+        "stance_differentiation": 4.389
+      },
+      "composite_mean": 4.048,
+      "intra_agreement_exact": 1,
+      "mean_latency_s": 1.14
+    },
+    {
+      "model": "qwen/qwen3.6-27b",
+      "json_valid_rate": 0.0,
+      "per_dim_means": {
+        "civility": 0.0,
+        "relevance": 0.0,
+        "logical_consistency": 0.0,
+        "argument_strength": 0.0,
+        "document_grounding": 0.0,
+        "responsiveness": 0.0,
+        "stance_differentiation": 0.0
+      },
+      "composite_mean": 0.0,
+      "intra_agreement_exact": 0.0,
+      "mean_latency_s": 2.79
+    }
+  ]
+}

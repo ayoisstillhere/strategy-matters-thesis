@@ -1,0 +1,930 @@
+{
+  "run_id": "9db6a97f-35c9-419e-8aed-d1809396bc24",
+  "config": {
+    "topic_id": "mindestlohn",
+    "topic_type": "empirical",
+    "framing_prompt": "The German federal minimum wage currently stands at €12.82 per hour, set by the independent Mindestlohnkommission. Several parties have proposed raising it to €15 per hour by 2026, while others argue the commission's independence must not be overridden by political targets. Discuss whether the minimum wage should be raised to €15, considering the effects on low-wage workers, small and medium-sized businesses, and regional economic differences between western and eastern Germany. Ground your arguments in your party's documented positions.",
+    "condition_id": "strategy_b",
+    "condition_label": "Reframing",
+    "condition_type": "strategy",
+    "run_number": 1,
+    "agent_model": "llama-3.1-8b-instant",
+    "judge_model": "llama-3.3-70b-versatile",
+    "moderator_model": "llama-3.3-70b-versatile",
+    "num_rounds": 3,
+    "num_agents": 6,
+    "max_interventions": 3,
+    "silent_control_rate": 0.2,
+    "turn_order": [
+      "CDU/CSU",
+      "SPD",
+      "Bündnis 90/Die Grünen",
+      "FDP",
+      "Die Linke",
+      "AfD"
+    ],
+    "has_moderator_agent": true,
+    "uses_trigger": true,
+    "trigger_strategy": "reframing",
+    "nudge_text": "",
+    "language": "de"
+  },
+  "turns": [
+    {
+      "turn_id": "980bc47c-e02e-4eda-8ed7-5964d2c1aaa2",
+      "round_number": 1,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "Die Diskussion um den gesetzlichen Mindestlohn ist ein wichtiger Teil unserer Arbeitsmarktordnung. Wir stehen zum gesetzlichen Mindestlohn, den wir 2014 eingeführt haben, und zur unabhängigen Mindestlohnkommission. Sie ist für die einvernehmliche Entscheidungsfindung über den Mindestlohn verantwortlich. Wir unterstützen eine gute Lohnentwicklung, die zeigt, dass wir auf dem richtigen Weg sind. Wir vertrauen auf die Fähigkeit der Sozialpartner, gemeinsam eine faire und leistungsgerechte Lohnentwicklung zu gestalten. Eine politische Entscheidung im Bundestag über den Mindestlohn lehnen wir ab, da dies die Tarifautonomie der Sozialpartner beeinträchtigen würde. Wir setzen uns für eine weitere Verbesserung der Arbeitsbedingungen ein, ohne die unabhängige Kommission zu beeinträchtigen.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 2,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies without attacking parties, which aligns with a score of 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of Mindestlohn, addressing it directly and advancing the discussion, which warrants a score of 5 for relevance.",
+        "logical_consistency": "The argument is internally consistent, supporting the role of the Mindestlohnkommission and the importance of Tarifautonomie, though it could delve deeper into logical reasoning, thus scoring 4 for logical consistency.",
+        "argument_strength": "The turn provides well-supported claims, referencing the party's historical stance and the role of the Mindestlohnkommission, but could offer more specific evidence or mechanisms, resulting in a score of 4 for argument strength.",
+        "document_grounding": "The turn directly reflects the CDU/CSU's documented positions on Mindestlohn and the importance of the unabhängige Mindestlohnkommission, which justifies a score of 5 for document grounding.",
+        "responsiveness": "Since this is the first turn, there are no preceding arguments to respond to, which is why it scores 2 for responsiveness, as it does not engage with any opposing claims.",
+        "stance_differentiation": "The turn unmistakably reflects the CDU/CSU's distinct position on Mindestlohn, emphasizing the role of the Mindestlohnkommission and Tarifautonomie, making it unmistakably distinct and worthy of a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "helfen wir den Berechtigten und vermeiden Mehrfachleistungen.\nTarifpartnerschaft, Mitbestimmung und ",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 3385,
+      "token_count_output": 622,
+      "latency_s": 2.336,
+      "timestamp": "2026-06-30T07:40:32.647728Z"
+    },
+    {
+      "turn_id": "f006df5d-e17b-4870-b114-4c4a85bd55ed",
+      "round_number": 1,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "Ein erhöhter gesetzlicher Mindestlohn auf 15 Euro pro Stunde ist notwendig, um sicherzustellen, dass Arbeitnehmer in Deutschland ein auskömmliches Einkommen haben. Die SPD hat den gesetzlichen Mindestlohn eingeführt und sich für eine Angleichung an das mittlere Einkommen in Deutschland eingesetzt. Die europäische Richtlinie sieht ein Mindesteinkommen von 60 Prozent des mittleren Einkommens vor, was sich auf 15 Euro pro Stunde belauft. Wir werden dafür sorgen, dass die Mindestlohnkommission künftig diese Empfehlung berücksichtigt. Eine erhöhung des Mindestlohns ist insbesondere in Ostdeutschland von Bedeutung, wo viele Regionen mit niedrigeren Durchschnittslöhnen und einer geringen Tarifbindung zu kämpfen haben.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, focusing on policy arguments without personal attacks or inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic of the minimum wage, directly addressing the issue and advancing the discussion with specific proposals, which warrants a score of 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, connecting the need for a higher minimum wage to the goal of ensuring a decent income, although it could be strengthened by more detailed explanations of how the 15 Euro figure is derived from the European directive, hence a score of 4.",
+        "argument_strength": "The turn provides specific reasoning and references the European directive to support the proposed minimum wage increase, demonstrating a well-supported claim, thus scoring 4 for argument strength.",
+        "document_grounding": "The SPD's known position on the minimum wage and its introduction are referenced, aligning with the party's documented stance, which supports a score of 4 for document grounding.",
+        "responsiveness": "While the turn does not directly engage with the CDU/CSU's argument against political decisions on the minimum wage, it generally responds to the broader context of the debate, hence a score of 3 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects the SPD's distinct position on the minimum wage, emphasizing the need for an increase to 15 Euro and referencing European guidelines, which clearly differentiates it from other parties, warranting a score of 5."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "dafür sorgen, dass dieses europäische Recht von der Mindestlohnkommission künftig berücksichtigt\nwir",
+        "Mehr für Dich. Besser für Deutschland.\nRegierungsprogramm der SPD für die Bundestagswahl 2025\nDen Mi"
+      ],
+      "token_count_input": 3809,
+      "token_count_output": 603,
+      "latency_s": 2.106,
+      "timestamp": "2026-06-30T07:40:35.276674Z"
+    },
+    {
+      "turn_id": "be2cb4f2-51d5-459c-bead-ea55efbdbfd3",
+      "round_number": 1,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "Die Diskussion um den gesetzlichen Mindestlohn ist ein Schlüsselelement für eine gerechte Arbeitsmarktordnung. Wir in Bündnis 90/Die Grünen setzen uns für die Erhöhung des Mindestlohns auf 15 Euro pro Stunde ein, wie von uns bereits im Wahlprogramm festgelegt. Dies ist nicht nur ein Ausgleich für die durch die Inflation der vergangenen Jahre verursachte Entwertung von Löhnen, sondern auch eine notwendige Maßnahme, um sicherzustellen, dass Menschen, die unverschuldet ihre Arbeit verlieren, soziale Sicherung erhalten und nicht in Armut abrutschen. Wir unterstützen die Idee, den Mindestlohn an die regionale Tarifbindung anzupassen, um soziale Ungleichheiten zu verringern und sicherzustellen, dass auch in Ostdeutschland faire Löhne gelten.",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains an exemplary parliamentary tone, devoid of personal attacks or inflammatory language, ensuring a respectful dialogue.",
+        "relevance": "The turn is precisely targeted at the debate topic of the Mindestlohn, advancing the discussion with specific proposals and reasoning.",
+        "logical_consistency": "The argument is generally coherent, connecting the need for a higher Mindestlohn with its benefits, such as combating inflation's effects on wages and ensuring social security, though it could delve deeper into potential counterarguments.",
+        "argument_strength": "The turn presents compelling arguments, supported by the rationale that the Mindestlohn increase is necessary to counteract inflation's impact on wages and to ensure fair compensation, especially in regions like Ostdeutschland.",
+        "document_grounding": "The statement directly references the party's documented position, as outlined in their Wahlprogramm, demonstrating a clear commitment to their platform.",
+        "responsiveness": "While the turn does not directly address the preceding speakers' specific arguments, it engages with the broader discussion on the Mindestlohn, reflecting an understanding of the debate's context and the positions of other parties.",
+        "stance_differentiation": "The turn unmistakably reflects Bündnis 90/Die Grünen's distinct party identity and ideological position, emphasizing social justice, regional fairness, and the importance of a living wage, which is characteristic of their political stance."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "sozialen Umstände abhängen darf. Es Faire Löhne verlangen nach einem fairen\ngilt für Menschen, die u",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 4157,
+      "token_count_output": 575,
+      "latency_s": 2.28,
+      "timestamp": "2026-06-30T07:40:37.769427Z"
+    },
+    {
+      "turn_id": "b670f4fa-8ffa-496a-857e-98071ffce6c0",
+      "round_number": 1,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "Wir müssen realistisch bleiben und nicht in politische Versprechungen hereinfallen, die die Wirtschaft und die Beschäftigung gefährden. Die Erhöhung des Mindestlohns auf 15 Euro pro Stunde, wie von einigen Parteien vorgeschlagen, wäre ein schwerwiegender Fehler. Die unabhängige Mindestlohnkommission hat bereits einen fairen Mindestlohn von 12,82 Euro pro Stunde festgelegt, der die Interessen von Arbeitnehmern und Arbeitgebern ausbalanciert. Wir sollten nicht die Tarifautonomie der Sozialpartner untergraben und die unabhängige Kommission nicht durch politische Eingriffe beeinträchtigen. Eine politische Entscheidung im Bundestag über den Mindestlohn würde nur zu unnötiger Komplexität und Unsicherheit für die Wirtschaft führen. Wir brauchen faire Löhne, aber nicht auf Kosten der Wettbewerbsfähigkeit und der Beschäftigung.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques policies without attacking parties directly, and avoids inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn directly addresses the debate topic of the Mindestlohn, engaging with the specific proposals and arguments presented by other parties, making it highly relevant and deserving of a 5.",
+        "logical_consistency": "The argument is coherent and logically structured, emphasizing the potential negative consequences of raising the Mindestlohn to 15 Euro and the importance of maintaining the independence of the Mindestlohnkommission, which warrants a score of 4.",
+        "argument_strength": "The turn provides well-supported claims, referencing the existing Mindestlohn set by the independent commission and arguing against political interference in the process, which strengthens its argument to a score of 4.",
+        "document_grounding": "The FDP's stance aligns with its known positions on minimizing state intervention in economic matters and supporting the independence of regulatory bodies, thus grounding its argument in party doctrine and earning a 4.",
+        "responsiveness": "The turn directly engages with the arguments presented by other parties, particularly the proposal to raise the Mindestlohn to 15 Euro, and responds to the underlying concerns and values expressed, which demonstrates a strong level of responsiveness and merits a 4.",
+        "stance_differentiation": "The FDP clearly differentiates its position from those of other parties, emphasizing its commitment to economic freedom, the role of the independent Mindestlohnkommission, and the potential risks of excessive state intervention, making its stance unmistakably distinct and worthy of a 5."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "erst möglich machen.\nArbeit muss sich stärker lohnen\nMillionen Menschen in Deutschland gehen jeden T",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 4597,
+      "token_count_output": 644,
+      "latency_s": 2.497,
+      "timestamp": "2026-06-30T07:40:40.334793Z"
+    },
+    {
+      "turn_id": "cf6d791d-bacd-47ef-96bf-6d9799d3b002",
+      "round_number": 1,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Der gesetzliche Mindestlohn muss erhöht werden, um sicherzustellen, dass Arbeitnehmer in Deutschland ein auskömmliches Einkommen haben. Die europäische Richtlinie sieht ein Mindesteinkommen von 60 Prozent des mittleren Einkommens vor, was sich auf 15 Euro pro Stunde belauft. Wir in Die Linke setzen uns dafür ein, dass der gesetzliche Mindestlohn spätestens 2026 auf 15 Euro pro Stunde erhöht wird. Dies ist nicht nur ein Ausgleich für die durch die Inflation der vergangenen Jahre verursachte Entwertung von Löhnen, sondern auch eine notwendige Maßnahme, um sicherzustellen, dass Menschen, die unverschuldet ihre Arbeit verlieren, soziale Sicherung erhalten und nicht in Armut abrutschen.\n\nIn Ostdeutschland sind die Einkommen durchschnittlich 17 Prozent niedriger als im Westen, die Renten auch nach 40 Versicherungsjahren 150 Euro geringer als in Westdeutschland. Die Ampel-Regierung hat sich zwar für die Stärkung der Tarifbindung in Ostdeutschland eingesetzt, aber die Region bleibt immer noch strukturschwach. Wir in Die Linke setzen uns dafür ein, dass der gesetzliche Mindestlohn in Ostdeutschland auf mindestens 15 Euro pro Stunde erhöht wird, um die sozialen Ungleichheiten zu verringern und sicherzustellen, dass auch in Ostdeutschland faire Löhne gelten.",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 5,
+        "argument_strength": 5,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, acknowledging the legitimacy of the issue without attacking other parties, thus scoring a 5 for exemplary parliamentary tone.",
+        "relevance": "The turn is precisely targeted at the debate topic of the Mindestlohn, advancing the discussion with specific arguments and data, which warrants a score of 5 for being exceptionally relevant.",
+        "logical_consistency": "The argument is internally consistent, with a clear logical structure connecting premises to conclusions, including the use of specific data on income disparities in Ostdeutschland, thus deserving a score of 5 for rigorous logical consistency.",
+        "argument_strength": "The turn presents compelling arguments with specific evidence, such as the reference to the european Richtlinie and the impact of inflation on Löhnen, supporting the claim for a Mindestlohn of 15 Euro pro Stunde, which earns a score of 5 for exceptional argument strength.",
+        "document_grounding": "While the turn aligns with Die Linke's known positions on soziale Gerechtigkeit and Mindestlohn, it does not directly reference specific party documents or programs, hence a score of 4 for generally reflecting documented party positions without direct anchoring.",
+        "responsiveness": "The turn engages with the general debate context and indirectly responds to other parties' arguments by emphasizing the need for a higher Mindestlohn, particularly in Ostdeutschland, but does not directly address specific claims made by other parties, resulting in a score of 4 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects Die Linke's distinct party identity and ideological position, emphasizing soziale Sicherung, faire Löhne, and the reduction of soziale Ungleichheiten, which is characteristic of Die Linke's stance, thus scoring a 5 for unmistakable stance differentiation."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "über den Monat kommt – in Ostdeutschland fast jede*r werden wir deutlich enger begrenzen, spätestens",
+        "aufgebaut� Der Ausverkauf durch die Treuhand wirkt aber muss auch zwischen Ost und West gelten! Der "
+      ],
+      "token_count_input": 5340,
+      "token_count_output": 818,
+      "latency_s": 2.8480000000000003,
+      "timestamp": "2026-06-30T07:40:43.148328Z"
+    },
+    {
+      "turn_id": "ab080dde-1506-41db-8592-95b5bf5d7f83",
+      "round_number": 1,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "Wir müssen realistisch bleiben und die Wirklichkeit im Blick haben. Die Erhöhung des gesetzlichen Mindestlohns auf 15 Euro pro Stunde wäre ein schwerwiegender Fehler, der die Wirtschaft und die Beschäftigung gefährden würde. Die unabhängige Mindestlohnkommission hat bereits einen fairen Mindestlohn von 12,82 Euro pro Stunde festgelegt, der die Interessen von Arbeitnehmern und Arbeitgebern ausbalanciert. Wir sollten nicht die Tarifautonomie der Sozialpartner untergraben und die unabhängige Kommission nicht durch politische Eingriffe beeinträchtigen.\n\nWir in der AfD setzen uns für eine faire Lohnentwicklung ein, aber nicht auf Kosten der Wettbewerbsfähigkeit und der Beschäftigung. Unsere Wirtschaft ist bereits angesichts der globalen Herausforderungen und der wachsenden Wettbewerbsdruck gefährdet. Eine weitere Erhöhung des Mindestlohns würde nur zu unnötiger Komplexität und Unsicherheit für die Wirtschaft führen. Wir brauchen faire Löhne, aber nicht auf Kosten der Zukunft unserer Unternehmen und der Beschäftigung.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone throughout, avoiding personal attacks or inflammatory language, thus scoring a 4 for civility. The language is respectful and focused on the policy issue at hand.",
+        "relevance": "The turn is highly relevant to the debate topic, directly addressing the issue of the minimum wage and its potential impact on the economy, which aligns perfectly with the topic of mindestlohn, scoring a 5 for relevance.",
+        "logical_consistency": "The argument presented is logically consistent, emphasizing the potential negative consequences of raising the minimum wage on the economy and employment, thus scoring a 4 for logical consistency. The turn coherently connects the dots between the proposed policy and its anticipated outcomes.",
+        "argument_strength": "The turn provides a well-supported argument against raising the minimum wage, citing the potential harm to the economy and the importance of maintaining competitiveness, scoring a 4 for argument strength. The argument is bolstered by referencing the role of the independent minimum wage commission.",
+        "document_grounding": "While the turn does not directly reference the AfD's documented positions, it aligns with general conservative economic principles often associated with the party, scoring a 3 for document grounding. However, without explicit reference to the party's programme, the grounding is not as strong as it could be.",
+        "responsiveness": "The turn responds to the general debate context, particularly echoing concerns about the economy and competitiveness raised by other parties, but does not directly engage with the specific arguments of the preceding speakers, scoring a 3 for responsiveness. It acknowledges the debate's focus on the minimum wage but does not address the unique points made by other parties.",
+        "stance_differentiation": "The turn clearly reflects a distinct party identity, emphasizing the importance of economic competitiveness and the potential risks of over-regulation, which is characteristic of the AfD's stance, scoring a 4 for stance differentiation. The language and arguments used are recognizable as belonging to the party's economic policy perspective."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "18 SOZIALE MARKTWIRTSCHAFT UND GESUNDHEIT\nDie desolate Situation im deutschen Rentensystem\nDas deuts",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 5871,
+      "token_count_output": 760,
+      "latency_s": 2.903,
+      "timestamp": "2026-06-30T07:40:46.299892Z"
+    },
+    {
+      "turn_id": "c01994f0-1e95-4b23-aaf5-9737a9259dc5",
+      "round_number": 2,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "Wir in der CDU/CSU setzen uns für eine faire Lohnentwicklung ein, die die Interessen von Arbeitnehmern und Arbeitgebern ausbalanciert. Unsere Position ist klar: der gesetzliche Mindestlohn ist ein wichtiger Teil unserer Arbeitsmarktordnung und sollte von der unabhängigen Mindestlohnkommission festgelegt werden, nicht durch politische Entscheidungen im Bundestag. Wir unterstützen die Arbeit der Kommission und ihre einvernehmliche Entscheidungsfindung.\n\nEine Erhöhung des Mindestlohns auf 15 Euro pro Stunde, wie von einigen Parteien vorgeschlagen, wäre ein schwerwiegender Fehler, der die Wirtschaft und die Beschäftigung gefährden würde. Wir müssen realistisch bleiben und die Wirklichkeit im Blick haben. Die unabhängige Mindestlohnkommission hat bereits einen fairen Mindestlohn von 12,82 Euro pro Stunde festgelegt, der die Interessen von Arbeitnehmern und Arbeitgebern ausbalanciert. Wir sollten nicht die Tarifautonomie der Sozialpartner untergraben und die unabhängige Kommission nicht durch politische Eingriffe beeinträchtigen.\n\nWir setzen uns für eine weitere Verbesserung der Arbeitsbedingungen ein, ohne die unabhängige Kommission zu beeinträchtigen. Wir unterstützen eine gute Lohnentwicklung, die zeigt, dass wir auf dem richtigen Weg sind. Wir vertrauen auf die Fähigkeit der Sozialpartner, gemeinsam eine faire und leistungsgerechte Lohnentwicklung zu gestalten.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone throughout, avoiding personal attacks or inflammatory language, thus scoring a 4 for being respectful and professional.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage, staying focused on the issue at hand and advancing the discussion, which warrants a score of 5 for its precision and relevance.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, although it could be strengthened by addressing potential counterarguments, earning a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and references to the independent minimum wage commission, supporting its argument with evidence, thus scoring a 4 for argument strength.",
+        "document_grounding": "The turn clearly reflects the CDU/CSU's documented positions on the minimum wage and the role of the independent commission, demonstrating a strong connection to the party's known policies and earning a score of 5.",
+        "responsiveness": "While the turn references the general debate and opposing views, it does not directly engage with specific arguments made by other parties, resulting in a score of 3 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably presents the CDU/CSU's distinct position on the minimum wage, using party-specific reasoning and vocabulary that distinguishes it from other parties, thus scoring a 5 for its clear and distinctive stance."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "helfen wir den Berechtigten und vermeiden Mehrfachleistungen.\nTarifpartnerschaft, Mitbestimmung und ",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 6542,
+      "token_count_output": 733,
+      "latency_s": 2.5709999999999997,
+      "timestamp": "2026-06-30T07:40:49.614584Z"
+    },
+    {
+      "turn_id": "714b1447-bc87-48f1-846e-21ae35ea78a6",
+      "round_number": 2,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "Die Erhöhung des gesetzlichen Mindestlohns auf 15 Euro pro Stunde ist nicht nur eine Frage der gerechten Verteilung des Einkommens, sondern auch eine Notwendigkeit, um sicherzustellen, dass Arbeitnehmer in Deutschland ein auskömmliches Einkommen haben. Die europäische Richtlinie sieht ein Mindesteinkommen von 60 Prozent des mittleren Einkommens vor, was sich auf 15 Euro pro Stunde belauft. Wir in der SPD setzen uns dafür ein, dass der gesetzliche Mindestlohn spätestens 2026 auf 15 Euro pro Stunde erhöht wird.\n\nDie Argumente unserer Gegenseite, dass eine politische Entscheidung im Bundestag über den Mindestlohn die Tarifautonomie der Sozialpartner untergraben würde, sind nicht überzeugend. Die unabhängige Mindestlohnkommission hat bereits einen fairen Mindestlohn von 12,82 Euro pro Stunde festgelegt, der die Interessen von Arbeitnehmern und Arbeitgebern ausbalanciert. Doch warum sollte diese Kommission nicht auch die Empfehlungen der europäischen Richtlinie berücksichtigen, wenn es um die Ermittlung eines fairen Mindestlohns geht? Wir in der SPD glauben, dass die Tarifautonomie der Sozialpartner durch eine klare und transparente Entscheidungsfindung der Kommission nicht beeinträchtigt wird, wenn diese auch die europäischen Richtlinien berücksichtigt.\n\nDie Wirtschaft und die Beschäftigung sind wichtige Faktoren bei der Diskussion um den gesetzlichen Mindestlohn. Doch die These unserer Gegenseite, dass eine Erhöhung des Mindestlohns auf 15 Euro pro Stunde die Wirtschaft und die Beschäftigung gefährden würde, ist nicht durch Fakten gestützt. Die Studien, die wir in Auftrag gegeben haben, zeigen, dass eine Erhöhung des Mindestlohns auf 15 Euro pro Stunde nicht nur zu einer weiteren Verbesserung der Lebensbedingungen der Arbeitnehmer führen würde, sondern auch zu einer weiteren Stärkung der Wirtschaft und der Beschäftigung.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without attacking parties directly, which aligns with a score of 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic, advancing the discussion on the minimum wage with no extraneous material, which warrants a score of 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, though it could be strengthened by more explicitly addressing potential counterarguments, thus scoring 4 for logical consistency.",
+        "argument_strength": "The turn presents compelling arguments with specific evidence, such as referencing the European directive and citing studies, which supports a score of 5 for argument strength.",
+        "document_grounding": "The turn reflects documented SPD positions, such as the commitment to increasing the minimum wage, but could more explicitly reference specific party documents, resulting in a score of 4 for document grounding.",
+        "responsiveness": "The turn directly engages with the preceding speaker's specific arguments, naming and addressing the concerns of the opposing party, which deserves a score of 5 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably differentiates the SPD's position, using party-specific values and framing conventions that no other party in the debate would use, earning a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "dafür sorgen, dass dieses europäische Recht von der Mindestlohnkommission künftig berücksichtigt\nwir",
+        "Mehr für Dich. Besser für Deutschland.\nRegierungsprogramm der SPD für die Bundestagswahl 2025\nDen Mi"
+      ],
+      "token_count_input": 7689,
+      "token_count_output": 850,
+      "latency_s": 2.998,
+      "timestamp": "2026-06-30T07:40:55.463700Z"
+    },
+    {
+      "turn_id": "263072f6-52ee-4a0b-8326-5a7c47913c75",
+      "round_number": 2,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "Wir müssen ein klares Zeichen setzen, dass die Erhöhung des gesetzlichen Mindestlohns auf 15 Euro pro Stunde ein notwendiger Schritt zur Abhilfe der Entwertung von Löhnen durch die Inflation ist. Die europäische Richtlinie sieht ein Mindesteinkommen von 60 Prozent des mittleren Einkommens vor, was sich auf 15 Euro pro Stunde belauft. Unsere Position ist klar: Die unabhängige Mindestlohnkommission hat bereits einen fairen Mindestlohn von 12,82 Euro pro Stunde festgelegt, aber diese Kommission sollte auch die Empfehlungen der europäischen Richtlinie berücksichtigen, wenn es um die Ermittlung eines fairen Mindestlohns geht.\n\nDie Argumente unserer Gegenseite, dass eine politische Entscheidung im Bundestag über den Mindestlohn die Tarifautonomie der Sozialpartner untergraben würde, sind nicht überzeugend. Wir glauben, dass die Tarifautonomie der Sozialpartner durch eine klare und transparente Entscheidungsfindung der Kommission nicht beeinträchtigt wird, wenn diese auch die europäischen Richtlinien berücksichtigt. Unsere Wirtschaft und unsere Beschäftigung sind zwar wichtige Faktoren bei der Diskussion um den gesetzlichen Mindestlohn, aber die These unserer Gegenseite, dass eine Erhöhung des Mindestlohns auf 15 Euro pro Stunde die Wirtschaft und die Beschäftigung gefährden würde, ist nicht durch Fakten gestützt.\n\nWir in Bündnis 90/Die Grünen setzen uns für eine faire Lohnentwicklung ein, die die Interessen von Arbeitnehmern und Arbeitgebern ausbalanciert. Wir unterstützen die Idee, den Mindestlohn an die regionale Tarifbindung anzupassen, um soziale Ungleichheiten zu verringern und sicherzustellen, dass auch in Ostdeutschland faire Löhne gelten. Unsere Position ist klar: Die Erhöhung des gesetzlichen Mindestlohns auf 15 Euro pro Stunde ist ein notwendiger Schritt zur Abhilfe der Entwertung von Löhnen durch die Inflation und zur Stärkung der Wirtschaft und der Beschäftigung. Wir werden uns weiterhin für die Erhöhung des Mindestlohns einsetzen und sicherstellen, dass Arbeitnehmer in Deutschland ein auskömmliches Einkommen haben.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without personal attacks or inflammatory language, which aligns with a score of 4.",
+        "relevance": "The turn is precisely targeted at the debate topic, addressing the issue of the minimum wage and its potential increase to 15 Euro per hour, making it highly relevant and deserving of a score of 5.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, although there might be minor gaps in the reasoning, warranting a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and references to the European directive, demonstrating a good level of argument strength, which corresponds to a score of 4.",
+        "document_grounding": "The turn reflects the party's documented positions, such as supporting the increase of the minimum wage to 15 Euro per hour and adjusting it to regional tariff bindings, indicating a strong connection to the party's programme, thus scoring 4.",
+        "responsiveness": "The turn engages directly with the preceding arguments, particularly those from the CDU/CSU and SPD, addressing their concerns and counterarguments in a clear and respectful manner, which merits a score of 4.",
+        "stance_differentiation": "The turn unmistakably differentiates the party's position, using distinctive framing and vocabulary that is unique to Bündnis 90/Die Grünen, such as emphasizing the need to adjust the minimum wage to combat inflation and ensure fair wages, earning a score of 5."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "sozialen Umstände abhängen darf. Es Faire Löhne verlangen nach einem fairen\ngilt für Menschen, die u",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 8672,
+      "token_count_output": 961,
+      "latency_s": 3.6710000000000003,
+      "timestamp": "2026-06-30T07:40:58.817248Z"
+    },
+    {
+      "turn_id": "0a1f996d-7e13-440d-9406-55d9f69a3236",
+      "round_number": 2,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "Wir müssen realistisch bleiben und nicht in politische Versprechungen hereinfallen, die die Wirtschaft und die Beschäftigung gefährden. Die Erhöhung des Mindestlohns auf 15 Euro pro Stunde, wie von einigen Parteien vorgeschlagen, wäre ein schwerwiegender Fehler. Die unabhängige Mindestlohnkommission hat bereits einen fairen Mindestlohn von 12,82 Euro pro Stunde festgelegt, der die Interessen von Arbeitnehmern und Arbeitgebern ausbalanciert.\n\nWir in der FDP setzen uns für eine faire Lohnentwicklung ein, aber nicht auf Kosten der Wettbewerbsfähigkeit und der Beschäftigung. Unsere Wirtschaft ist bereits angesichts der globalen Herausforderungen und der wachsenden Wettbewerbsdruck gefährdet. Eine weitere Erhöhung des Mindestlohns würde nur zu unnötiger Komplexität und Unsicherheit für die Wirtschaft führen. Wir brauchen faire Löhne, aber nicht auf Kosten der Zukunft unserer Unternehmen und der Beschäftigung.\n\nDie Argumente unserer Gegenseite, dass eine politische Entscheidung im Bundestag über den Mindestlohn die Tarifautonomie der Sozialpartner untergraben würde, sind nicht überzeugend. Wir glauben, dass die Tarifautonomie der Sozialpartner durch eine klare und transparente Entscheidungsfindung der Kommission nicht beeinträchtigt wird, wenn diese auch die europäischen Richtlinien berücksichtigt. Doch warum sollten wir uns auf die politische Entscheidung im Bundestag verlassen, wenn die unabhängige Mindestlohnkommission bereits einen fairen Mindestlohn festgelegt hat? Wir in der FDP glauben, dass die Kommission am besten geeignet ist, um die Interessen von Arbeitnehmern und Arbeitgebern auszugleichen.\n\nWir setzen uns für eine faire Lohnentwicklung ein, aber nicht auf Kosten der Wirtschaft und der Beschäftigung. Wir sollten nicht die Tarifautonomie der Sozialpartner untergraben und die unabhängige Kommission nicht durch politische Eingriffe beeinträchtigen. Die Erhöhung des Mindestlohns auf 15 Euro pro Stunde wäre ein schwerwiegender Fehler, der die Wirtschaft und die Beschäftigung gefährden würde. Wir brauchen faire Löhne, aber nicht auf Kosten der Zukunft unserer Unternehmen und der Beschäftigung.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone throughout, avoiding personal attacks or inflammatory language, thus scoring a 4 for civility. The language is respectful, even when disagreeing with other parties.",
+        "relevance": "The turn is highly relevant to the debate topic, directly addressing the issue of the minimum wage and its potential increase to 15 Euro per hour, which is the central discussion point, earning a score of 5.",
+        "logical_consistency": "The argument presented is logically consistent, emphasizing the potential negative impacts of raising the minimum wage on the economy and employment, and advocating for the independence of the Mindestlohnkommission, thus scoring a 4 for logical consistency.",
+        "argument_strength": "The turn provides a well-supported argument against increasing the minimum wage, citing potential economic and employment risks, and advocating for the current system's balance, which earns a score of 4 for argument strength.",
+        "document_grounding": "The turn reflects the FDP's known position on the minimum wage and the role of the Mindestlohnkommission, aligning with their documented stances, thus scoring a 4 for document grounding.",
+        "responsiveness": "The turn engages with the arguments of other parties, particularly addressing the idea of political decisions on the minimum wage and the role of the Mindestlohnkommission, demonstrating a clear response to preceding arguments, which warrants a score of 4.",
+        "stance_differentiation": "The FDP's stance is clearly differentiated from other parties, especially in its emphasis on the potential economic risks of a minimum wage increase and its support for the independence of the Mindestlohnkommission, earning a score of 5 for stance differentiation."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "erst möglich machen.\nArbeit muss sich stärker lohnen\nMillionen Menschen in Deutschland gehen jeden T",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 9782,
+      "token_count_output": 981,
+      "latency_s": 3.645,
+      "timestamp": "2026-06-30T07:41:02.990651Z"
+    },
+    {
+      "turn_id": "d6554612-f545-4ce1-ab5f-227fe9bcb7c3",
+      "round_number": 2,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Die Diskussion um den gesetzlichen Mindestlohn zeigt, dass die Frage der fairen Verteilung des Einkommens in Deutschland von zentraler Bedeutung ist. Die Europäische Union hat in der Mindestlohn-Richtlinie ein Mindesteinkommen von 60 Prozent des mittleren Einkommens vorgesehen, was sich auf 15 Euro pro Stunde belauft. Wir in Die Linke setzen uns daraufhin ein, dass der gesetzliche Mindestlohn spätestens 2026 auf 15 Euro pro Stunde erhöht wird. \n\nDie Argumente der CDU/CSU und der FDP, dass eine politische Entscheidung im Bundestag über den Mindestlohn die Tarifautonomie der Sozialpartner untergraben würde, sind nicht überzeugend. Wir glauben, dass die Tarifautonomie der Sozialpartner durch eine klare und transparente Entscheidungsfindung der Kommission nicht beeinträchtigt wird, wenn diese auch die europäischen Richtlinien berücksichtigt. Die CDU/CSU und die FDP argumentieren auch, dass die Wirtschaft und die Beschäftigung gefährdet wären, wenn der Mindestlohn erhöht würde. Doch die Studien, die wir in Auftrag gegeben haben, zeigen, dass eine Erhöhung des Mindestlohns auf 15 Euro pro Stunde nicht nur zu einer weiteren Verbesserung der Lebensbedingungen der Arbeitnehmer führen würde, sondern auch zu einer weiteren Stärkung der Wirtschaft und der Beschäftigung.\n\nIn Ostdeutschland sind die Einkommen durchschnittlich 17 Prozent niedriger als im Westen, die Renten auch nach 40 Versicherungsjahren 150 Euro geringer als in Westdeutschland. Die Ampel-Regierung hat sich zwar für die Stärkung der Tarifbindung in Ostdeutschland eingesetzt, aber die Region bleibt immer noch strukturschwach. Wir in Die Linke setzen uns dafür ein, dass der gesetzliche Mindestlohn in Ostdeutschland auf mindestens 15 Euro pro Stunde erhöht wird, um die sozialen Ungleichheiten zu verringern und sicherzustellen, dass auch in Ostdeutschland faire Löhne gelten. \n\nWir glauben, dass unsere Position die beste Lösung für die Arbeitsmarktordnung in Deutschland ist, weil sie die Interessen von Arbeitnehmern und Arbeitgebern ausbalanciert und zu einer weiteren Stärkung der Wirtschaft und der Beschäftigung führen würde. Wir werden uns weiterhin für die Erhöhung des Mindestlohns einsetzen und sicherstellen, dass Arbeitnehmer in Deutschland ein auskömmliches Einkommen haben.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 5,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without personal attacks, thus scoring a 4 for civility.",
+        "relevance": "The turn is precisely targeted to the debate topic, advancing the discussion on the minimum wage with no extraneous material, which warrants a score of 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent with a clear logical structure, though minor gaps in addressing counterarguments prevent a perfect score, resulting in a 4 for logical consistency.",
+        "argument_strength": "The turn presents compelling arguments with specific evidence, such as referencing EU guidelines and studies, to support its claims, earning a 5 for argument strength.",
+        "document_grounding": "The turn aligns with Die Linke's documented positions on minimum wage, though it could more explicitly reference specific party program content, leading to a score of 4 for document grounding.",
+        "responsiveness": "The turn directly engages with specific arguments from preceding speakers, such as CDU/CSU and FDP, and addresses their concerns, which merits a 5 for responsiveness.",
+        "stance_differentiation": "The turn unmistakably reflects Die Linke's distinct party identity and ideological position, using party-specific reasoning and priorities, thus scoring a 5 for stance differentiation."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "über den Monat kommt – in Ostdeutschland fast jede*r werden wir deutlich enger begrenzen, spätestens",
+        "aufgebaut� Der Ausverkauf durch die Treuhand wirkt aber muss auch zwischen Ost und West gelten! Der "
+      ],
+      "token_count_input": 11110,
+      "token_count_output": 966,
+      "latency_s": 3.224,
+      "timestamp": "2026-06-30T07:41:06.553376Z"
+    },
+    {
+      "turn_id": "92449840-8033-4e35-b681-05086c72e2fa",
+      "round_number": 2,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "Wir müssen unbedingt die Wirklichkeit im Blick haben. Die Erhöhung des gesetzlichen Mindestlohns auf 15 Euro pro Stunde wäre ein schwerwiegender Fehler, der die Wirtschaft und die Beschäftigung gefährden würde. Die Argumente unserer Gegenseite, dass diese Erhöhung notwendig ist, um sicherzustellen, dass Arbeitnehmer ein auskömmliches Einkommen haben, sind nicht durch Fakten gestützt.\n\nDie unabhängige Mindestlohnkommission hat bereits einen fairen Mindestlohn von 12,82 Euro pro Stunde festgelegt, der die Interessen von Arbeitnehmern und Arbeitgebern ausbalanciert. Warum sollten wir uns auf eine politische Entscheidung im Bundestag verlassen, wenn die Kommission bereits einen fairen Mindestlohn festgelegt hat? Wir in der AfD glauben, dass die Kommission am besten geeignet ist, um die Interessen von Arbeitnehmern und Arbeitgebern auszugleichen.\n\nDie Tarifautonomie der Sozialpartner sollte nicht untergraben werden, sondern wir sollten die Arbeit der Kommission unterstützen. Die Erhöhung des Mindestlohns auf 15 Euro pro Stunde wäre ein Schritt in die falsche Richtung, der die Wirtschaft und die Beschäftigung gefährden würde. Wir setzen uns für eine faire Lohnentwicklung ein, aber nicht auf Kosten der Wettbewerbsfähigkeit und der Beschäftigung. Wir brauchen faire Löhne, aber nicht auf Kosten der Zukunft unserer Unternehmen und der Beschäftigung.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 3,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone throughout, with no personal attacks or inflammatory language, thus scoring a 4 for civility.",
+        "relevance": "The turn is highly relevant to the debate topic, directly addressing the issue of the minimum wage and its potential impact on the economy, scoring a 5 for relevance.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure, but lacks depth in addressing counterarguments, scoring a 4 for logical consistency.",
+        "argument_strength": "The turn presents a well-supported claim with specific reasoning, referencing the role of the independent minimum wage commission, scoring a 4 for argument strength.",
+        "document_grounding": "The turn does not explicitly reference the party's documented positions but aligns with known AfD stances on economic issues, scoring a 3 for document grounding.",
+        "responsiveness": "The turn engages with the arguments of opposing parties, addressing their claims about the necessity of a higher minimum wage, scoring a 4 for responsiveness.",
+        "stance_differentiation": "The turn clearly maintains a distinct party identity, using language and arguments characteristic of the AfD's economic policy stance, scoring a 5 for stance differentiation."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "18 SOZIALE MARKTWIRTSCHAFT UND GESUNDHEIT\nDie desolate Situation im deutschen Rentensystem\nDas deuts",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 11982,
+      "token_count_output": 683,
+      "latency_s": 2.7800000000000002,
+      "timestamp": "2026-06-30T07:41:09.762584Z"
+    },
+    {
+      "turn_id": "47e11250-3b87-4bc1-b4a5-8480ceda3757",
+      "round_number": 3,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "Die unabhängige Mindestlohnkommission hat ihre Arbeit bereits aufgenommen, um einen fairen Mindestlohn festzulegen, der die Interessen von Arbeitnehmern und Arbeitgebern ausbalanciert. Wir in der CDU/CSU unterstützen die Arbeit der Kommission und ihre einvernehmliche Entscheidungsfindung. Die Kommission muss in ihrer Arbeit frei und unabhängig bleiben, um sicherzustellen, dass sie einen fairen Mindestlohn festlegen kann, der die unterschiedlichen Interessen der Arbeitnehmer und Arbeitgeber berücksichtigt.\n\nDie Forderung nach einer Erhöhung des Mindestlohns auf 15 Euro pro Stunde durch die SPD, Bündnis 90/Die Grünen und Die Linke ist nicht durch Fakten gestützt. Die unabhängige Mindestlohnkommission hat bereits einen fairen Mindestlohn von 12,82 Euro pro Stunde festgelegt, der die Interessen von Arbeitnehmern und Arbeitgebern ausbalanciert. Eine politische Entscheidung im Bundestag über den Mindestlohn würde nur zu unnötiger Komplexität und Unsicherheit für die Wirtschaft führen.\n\nWir in der CDU/CSU setzen uns für eine weitere Verbesserung der Arbeitsbedingungen ein, ohne die unabhängige Kommission zu beeinträchtigen. Wir unterstützen eine gute Lohnentwicklung, die zeigt, dass wir auf dem richtigen Weg sind. Wir vertrauen auf die Fähigkeit der Sozialpartner, gemeinsam eine faire und leistungsgerechte Lohnentwicklung zu gestalten. Die Tarifautonomie der Sozialpartner sollte nicht untergraben werden, sondern wir sollten die Arbeit der Kommission unterstützen.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone, critiques policies without personal attacks, and does not use inflammatory language, thus scoring a 4 for being professional and respectful throughout.",
+        "relevance": "The turn directly addresses the debate topic of the Mindestlohn, stays focused, and deepens the discussion by referencing the work of the unabhängige Mindestlohnkommission, thus scoring a 5 for being precisely targeted and advancing the discussion.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, but lacks rigorous logical chains and anticipation of objections, thus scoring a 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and referenced evidence, such as the existing fair Mindestlohn set by the commission, but does not acknowledge potential limitations or trade-offs, thus scoring a 4.",
+        "document_grounding": "The turn clearly reflects the CDU/CSU's documented positions on the Mindestlohn and the role of the unabhängige Mindestlohnkommission, directly anchoring its arguments in verifiable party commitments, thus scoring a 5.",
+        "responsiveness": "The turn identifies and engages with specific opposing claims, particularly those from the SPD, Bündnis 90/Die Grünen, and Die Linke, but does not name the parties in every instance or explain precisely where and why its position differs in all cases, thus scoring a 4.",
+        "stance_differentiation": "The turn unmistakably differentiates the CDU/CSU's position from others, using party-specific reasoning, vocabulary, and priorities that are distinct from other parties in the debate, thus scoring a 5."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "helfen wir den Berechtigten und vermeiden Mehrfachleistungen.\nTarifpartnerschaft, Mitbestimmung und ",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 12766,
+      "token_count_output": 826,
+      "latency_s": 3.365,
+      "timestamp": "2026-06-30T07:41:12.957708Z"
+    },
+    {
+      "turn_id": "514c93c5-a2d1-4dac-9777-5ee7d730a302",
+      "round_number": 3,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "Die von uns geforderte Erhöhung des gesetzlichen Mindestlohns auf 15 Euro pro Stunde ist nicht nur eine Frage der gerechten Verteilung des Einkommens, sondern auch eine Notwendigkeit, um sicherzustellen, dass Arbeitnehmer in Deutschland ein auskömmliches Einkommen haben. Die europäische Richtlinie sieht ein Mindesteinkommen von 60 Prozent des mittleren Einkommens vor, was sich auf 15 Euro pro Stunde belauft. Wir in der SPD setzen uns dafür ein, dass der gesetzliche Mindestlohn spätestens 2026 auf 15 Euro pro Stunde erhöht wird.\n\nDie CDU/CSU und die FDP argumentieren, dass eine politische Entscheidung im Bundestag über den Mindestlohn die Tarifautonomie der Sozialpartner untergraben würde. Wir glauben jedoch, dass die unabhängige Mindestlohnkommission bereits einen fairen Mindestlohn festgelegt hat, der die Interessen von Arbeitnehmern und Arbeitgebern ausbalanciert. Warum sollte diese Kommission nicht auch die Empfehlungen der europäischen Richtlinie berücksichtigen, wenn es um die Ermittlung eines fairen Mindestlohns geht?\n\nWir in der SPD glauben, dass unsere Position die beste Lösung für die Arbeitsmarktordnung in Deutschland ist, weil sie die Interessen von Arbeitnehmern und Arbeitgebern ausbalanciert und zu einer weiteren Stärkung der Wirtschaft und der Beschäftigung führen würde. Wir setzen uns für eine faire Lohnentwicklung ein, die die unterschiedlichen Interessen der Arbeitnehmer und Arbeitgeber berücksichtigt. Wir werden uns weiterhin für die Erhöhung des Mindestlohns einsetzen und sicherstellen, dass Arbeitnehmer in Deutschland ein auskömmliches Einkommen haben.\n\nDie von uns geforderte Erhöhung des Mindestlohns auf 15 Euro pro Stunde ist nicht nur eine Frage der gerechten Verteilung des Einkommens, sondern auch eine Notwendigkeit, um sicherzustellen, dass Arbeitnehmer in Deutschland ein auskömmliches Einkommen haben. Wir in der SPD setzen uns dafür ein, dass der gesetzliche Mindestlohn spätestens 2026 auf 15 Euro pro Stunde erhöht wird.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without attacking parties or individuals directly, which aligns with a score of 4 for civility.",
+        "relevance": "The turn is precisely targeted at the debate topic, addressing the issue of the minimum wage and its proposed increase to 15 Euro pro Stunde, making it highly relevant and thus scoring 5.",
+        "logical_consistency": "The argument is generally coherent, with a clear logical structure connecting premises to conclusions, although it could be strengthened by addressing potential counterarguments more directly, which warrants a score of 4.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and references to the European directive, but could be further strengthened by incorporating more diverse evidence or addressing the economic impact in more detail, resulting in a score of 4.",
+        "document_grounding": "The SPD's position is clearly grounded in their party's documented stance on the minimum wage, reflecting their commitment to social justice and fair income distribution, which is evident in their argument and thus scores 4.",
+        "responsiveness": "The turn directly engages with the arguments of opposing parties, particularly the CDU/CSU and FDP, by addressing their concerns about the impact on tariff autonomy and the economy, demonstrating a strong level of responsiveness and earning a score of 4.",
+        "stance_differentiation": "The SPD's position is unmistakably distinct, with a clear and consistent argument that reflects the party's values and priorities, making it unmistakable and thus scoring 5 for stance differentiation."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "dafür sorgen, dass dieses europäische Recht von der Mindestlohnkommission künftig berücksichtigt\nwir",
+        "Mehr für Dich. Besser für Deutschland.\nRegierungsprogramm der SPD für die Bundestagswahl 2025\nDen Mi"
+      ],
+      "token_count_input": 13486,
+      "token_count_output": 934,
+      "latency_s": 3.688,
+      "timestamp": "2026-06-30T07:41:16.967423Z"
+    },
+    {
+      "turn_id": "3353ac56-a865-4ddc-bdfe-d71a1b7cb57e",
+      "round_number": 3,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "Die Forderung nach einem Mindestlohn von 15 Euro pro Stunde ist nicht nur eine Frage der gerechten Verteilung des Einkommens, sondern auch eine Notwendigkeit, um sicherzustellen, dass Arbeitnehmer in Deutschland ein auskömmliches Einkommen haben. Wir in Bündnis 90/Die Grünen setzen uns dafür ein, dass der gesetzliche Mindestlohn spätestens 2026 auf 15 Euro pro Stunde erhöht wird.\n\nDie europäische Richtlinie sieht ein Mindesteinkommen von 60 Prozent des mittleren Einkommens vor, was sich auf 15 Euro pro Stunde belauft. Wir glauben jedoch nicht, dass diese Richtlinie nur als Mindestanforderung gilt, sondern dass sie auch ein wichtiger Schritt in Richtung einer gerechteren Verteilung des Einkommens in Deutschland ist. Die Forderung nach einem Mindestlohn von 15 Euro pro Stunde ist nicht nur eine Frage der Gerechtigkeit, sondern auch eine Notwendigkeit, um sicherzustellen, dass Arbeitnehmer in Deutschland ein auskömmliches Einkommen haben.\n\nDie Argumente der CDU/CSU und der FDP, dass eine politische Entscheidung im Bundestag über den Mindestlohn die Tarifautonomie der Sozialpartner untergraben würde, sind nicht überzeugend. Wir glauben, dass die unabhängige Mindestlohnkommission bereits einen fairen Mindestlohn festgelegt hat, der die Interessen von Arbeitnehmern und Arbeitgebern ausbalanciert. Warum sollte diese Kommission nicht auch die Empfehlungen der europäischen Richtlinie berücksichtigen, wenn es um die Ermittlung eines fairen Mindestlohns geht?\n\nWir in Bündnis 90/Die Grünen setzen uns für eine faire Lohnentwicklung ein, die die unterschiedlichen Interessen der Arbeitnehmer und Arbeitgeber berücksichtigt. Wir glauben, dass unsere Position die beste Lösung für die Arbeitsmarktordnung in Deutschland ist, weil sie die Interessen von Arbeitnehmern und Arbeitgebern ausbalanciert und zu einer weiteren Stärkung der Wirtschaft und der Beschäftigung führen würde. Wir werden uns weiterhin für die Erhöhung des Mindestlohns einsetzen und sicherstellen, dass Arbeitnehmer in Deutschland ein auskömmliches Einkommen haben.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without personal attacks or inflammatory language, thus scoring a 4 for being professional and respectful.",
+        "relevance": "The turn is precisely targeted at the debate topic, advancing the discussion on the minimum wage with no extraneous material, which warrants a score of 5 for being exceptionally relevant.",
+        "logical_consistency": "The argument is generally coherent with a clear logical structure, though it may contain minor gaps or unjustified inferential leaps, hence a score of 4 for being logically consistent but not flawless.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and referenced evidence, such as the European directive, which supports a score of 4 for having a strong argument.",
+        "document_grounding": "The turn clearly reflects documented party positions, such as the commitment to increasing the minimum wage to 15 Euro per hour, aligning with the party's known programme content, thus scoring a 4 for being well-grounded in party documents.",
+        "responsiveness": "The turn identifies and engages with specific opposing claims, particularly those from the CDU/CSU and FDP, and responds to the actual arguments made, which deserves a score of 4 for being responsive to preceding arguments.",
+        "stance_differentiation": "The turn unmistakably maintains a distinct party identity and ideological position, using party-specific values and priorities that no other party would use, warranting a score of 5 for exceptional stance differentiation."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "sozialen Umstände abhängen darf. Es Faire Löhne verlangen nach einem fairen\ngilt für Menschen, die u",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 14279,
+      "token_count_output": 934,
+      "latency_s": 3.302,
+      "timestamp": "2026-06-30T07:41:20.681342Z"
+    },
+    {
+      "turn_id": "e5fa15ed-7748-4be9-ab8b-11b180a4323e",
+      "round_number": 3,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "Wir müssen realistisch bleiben und nicht in politische Versprechungen hereinfallen, die die Wirtschaft und die Beschäftigung gefährden. Die Erhöhung des Mindestlohns auf 15 Euro pro Stunde, wie von einigen Parteien vorgeschlagen, wäre ein schwerwiegender Fehler. Die unabhängige Mindestlohnkommission hat bereits einen fairen Mindestlohn von 12,82 Euro pro Stunde festgelegt, der die Interessen von Arbeitnehmern und Arbeitgebern ausbalanciert.\n\nWir in der FDP glauben, dass die Tarifautonomie der Sozialpartner durch eine klare und transparente Entscheidungsfindung der Kommission nicht beeinträchtigt wird, wenn diese auch die europäischen Richtlinien berücksichtigt. Doch warum sollten wir uns auf die politische Entscheidung im Bundestag verlassen, wenn die Kommission bereits einen fairen Mindestlohn festgelegt hat? Unsere Wirtschaft ist bereits angesichts der globalen Herausforderungen und der wachsenden Wettbewerbsdruck gefährdet. Eine weitere Erhöhung des Mindestlohns würde nur zu unnötiger Komplexität und Unsicherheit für die Wirtschaft führen.\n\nWir brauchen faire Löhne, aber nicht auf Kosten der Zukunft unserer Unternehmen und der Beschäftigung. Die CDU/CSU und die FDP argumentieren, dass eine politische Entscheidung im Bundestag über den Mindestlohn die Tarifautonomie der Sozialpartner untergraben würde. Wir stimmen diesen Parteien zu, dass die Tarifautonomie der Sozialpartner nicht untergraben werden sollte. Wir glauben jedoch, dass die unabhängige Mindestlohnkommission bereits einen fairen Mindestlohn festgelegt hat, der die Interessen von Arbeitnehmern und Arbeitgebern ausbalanciert.\n\nUnsere Position ist klar: Wir setzen uns für eine faire Lohnentwicklung ein, aber nicht auf Kosten der Wettbewerbsfähigkeit und der Beschäftigung. Wir brauchen faire Löhne, aber nicht auf Kosten der Zukunft unserer Unternehmen und der Beschäftigung. Wir werden uns weiterhin für die Erhaltung der Tarifautonomie der Sozialpartner einsetzen und sicherstellen, dass Arbeitnehmer in Deutschland ein auskömmliches Einkommen haben.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional and respectful tone throughout, critiquing policies and positions without attacking parties or individuals directly.",
+        "relevance": "The turn clearly addresses the debate topic of the minimum wage and its potential increase, staying focused on the issue at hand.",
+        "logical_consistency": "The argument presented is internally consistent, with a clear logical structure connecting premises to conclusions, though it may rely on assumptions about the impact of minimum wage increases on the economy.",
+        "argument_strength": "The turn provides well-supported claims with specific reasoning and references to the role of the independent minimum wage commission, though it could be strengthened by more concrete evidence or data.",
+        "document_grounding": "The turn reflects the FDP's known position on the minimum wage, aligning with their documented stance on economic and labor market policies, and references the independent minimum wage commission's decision.",
+        "responsiveness": "The turn acknowledges the opposing positions, particularly mentioning the CDU/CSU, but does not directly engage with the strongest version of the arguments made by other parties, such as the SPD or Die Linke.",
+        "stance_differentiation": "The turn clearly maintains a distinct FDP party identity and ideological position, using party-specific values and priorities, such as the emphasis on not undermining the competitiveness and employment."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "erst möglich machen.\nArbeit muss sich stärker lohnen\nMillionen Menschen in Deutschland gehen jeden T",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 15135,
+      "token_count_output": 876,
+      "latency_s": 3.442,
+      "timestamp": "2026-06-30T07:41:24.427589Z"
+    },
+    {
+      "turn_id": "fb450e16-6dce-49b6-869f-f5d0717aca27",
+      "round_number": 3,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Die Diskussion um den gesetzlichen Mindestlohn ist ein wichtiger Schritt auf dem Weg zu einer gerechteren Gesellschaft. Wir in Die Linke glauben, dass die europäische Richtlinie, die ein Mindesteinkommen von 60 Prozent des mittleren Einkommens vorsieht, ein wichtiger Meilenstein auf dem Weg zu einer gerechteren Verteilung des Einkommens in Deutschland ist. Diese Richtlinie soll sicherstellen, dass Arbeitnehmer in Deutschland ein auskömmliches Einkommen haben, das ihnen ermöglicht, eine selbstständige Existenz zu führen und ihre Familien zu ernähren.\n\nDie Argumente von CDU/CSU und FDP, dass eine politische Entscheidung im Bundestag über den Mindestlohn die Tarifautonomie der Sozialpartner untergraben würde, sind nicht überzeugend. Wir glauben, dass die unabhängige Mindestlohnkommission bereits einen fairen Mindestlohn festgelegt hat, der die Interessen von Arbeitnehmern und Arbeitgebern ausbalanciert. Warum sollte diese Kommission nicht auch die Empfehlungen der europäischen Richtlinie berücksichtigen, wenn es um die Ermittlung eines fairen Mindestlohns geht?\n\nWir in Die Linke setzen uns dafür ein, dass der gesetzliche Mindestlohn spätestens 2026 auf 15 Euro pro Stunde erhöht wird. Dies ist nicht nur ein Ausgleich für die durch die Inflation der vergangenen Jahre verursachte Entwertung von Löhnen, sondern auch eine notwendige Maßnahme, um sicherzustellen, dass Menschen, die unverschuldet ihre Arbeit verlieren, soziale Sicherung erhalten und nicht in Armut abrutschen.\n\nIn Ostdeutschland sind die Einkommen durchschnittlich 17 Prozent niedriger als im Westen, die Renten auch nach 40 Versicherungsjahren 150 Euro geringer als in Westdeutschland. Die Ampel-Regierung hat sich zwar für die Stärkung der Tarifbindung in Ostdeutschland eingesetzt, aber die Region bleibt immer noch strukturschwach. Wir in Die Linke setzen uns dafür ein, dass der gesetzliche Mindestlohn in Ostdeutschland auf mindestens 15 Euro pro Stunde erhöht wird, um die sozialen Ungleichheiten zu verringern und sicherzustellen, dass auch in Ostdeutschland faire Löhne gelten.\n\nWir glauben, dass unsere Position die beste Lösung für die Arbeitsmarktordnung in Deutschland ist, weil sie die Interessen von Arbeitnehmern und Arbeitgebern ausbalanciert und zu einer weiteren Stärkung der Wirtschaft und der Beschäftigung führen würde. Wir setzen uns weiterhin für die Erhöhung des Mindestlohns ein und sicherstellen, dass Arbeitnehmer in Deutschland ein auskömmliches Einkommen haben.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone throughout, with no personal attacks or inflammatory language, but does not go out of its way to acknowledge the legitimacy of opposing views, thus scoring a 4.",
+        "relevance": "The turn is highly relevant to the topic of the minimum wage, directly addressing the issue and its implications, making it a 5.",
+        "logical_consistency": "The argument is generally coherent, with a clear structure and logical flow, but may contain minor gaps in reasoning, hence a 4.",
+        "argument_strength": "The turn presents a well-supported argument with specific evidence and reasoning, but may not fully address potential counterarguments, resulting in a 4.",
+        "document_grounding": "The turn references the European directive and the situation in Ostdeutschland, showing a good connection to documented positions and facts, thus a 4.",
+        "responsiveness": "The turn engages with the arguments of other parties, particularly CDU/CSU and FDP, but could more directly address their specific claims, leading to a 4.",
+        "stance_differentiation": "The turn clearly and unmistakably represents the position of Die Linke, with distinctive reasoning and vocabulary that sets it apart from other parties, making it a 5."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "über den Monat kommt – in Ostdeutschland fast jede*r werden wir deutlich enger begrenzen, spätestens",
+        "aufgebaut� Der Ausverkauf durch die Treuhand wirkt aber muss auch zwischen Ost und West gelten! Der "
+      ],
+      "token_count_input": 16335,
+      "token_count_output": 1002,
+      "latency_s": 3.732,
+      "timestamp": "2026-06-30T07:41:31.403285Z"
+    },
+    {
+      "turn_id": "9b20e6f3-4ddb-4e67-afd6-890c8fe6cfc8",
+      "round_number": 3,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "Die Erhöhung des gesetzlichen Mindestlohns auf 15 Euro pro Stunde ist ein Schritt in die falsche Richtung, der die Wirtschaft und die Beschäftigung gefährden würde. Die unabhängige Mindestlohnkommission hat bereits einen fairen Mindestlohn von 12,82 Euro pro Stunde festgelegt, der die Interessen von Arbeitnehmern und Arbeitgebern ausbalanciert. Warum sollten wir uns auf eine politische Entscheidung im Bundestag verlassen, wenn die Kommission bereits einen fairen Mindestlohn festgelegt hat?\n\nDie Argumente unserer Gegenseite, dass eine politische Entscheidung im Bundestag über den Mindestlohn die Tarifautonomie der Sozialpartner untergraben würde, sind nicht überzeugend. Wir glauben, dass die Tarifautonomie der Sozialpartner durch eine klare und transparente Entscheidungsfindung der Kommission nicht beeinträchtigt wird, wenn diese auch die europäischen Richtlinien berücksichtigt. Doch warum sollten wir uns auf die politische Entscheidung im Bundestag verlassen, wenn die Kommission bereits einen fairen Mindestlohn festgelegt hat?\n\nDie Wirtschaft und die Beschäftigung sind wichtige Faktoren bei der Diskussion um den gesetzlichen Mindestlohn. Doch die These unserer Gegenseite, dass eine Erhöhung des Mindestlohns auf 15 Euro pro Stunde die Wirtschaft und die Beschäftigung gefährden würde, ist nicht durch Fakten gestützt. Wir in der AfD setzen uns für eine faire Lohnentwicklung ein, aber nicht auf Kosten der Wettbewerbsfähigkeit und der Beschäftigung.\n\nWir müssen unbedingt die Wirklichkeit im Blick haben. Die Erhöhung des gesetzlichen Mindestlohns auf 15 Euro pro Stunde wäre ein schwerwiegender Fehler, der die Wirtschaft und die Beschäftigung gefährden würde. Die CDU/CSU und die FDP argumentieren, dass eine politische Entscheidung im Bundestag über den Mindestlohn die Tarifautonomie der Sozialpartner untergraben würde. Wir stimmen diesen Parteien zu, dass die Tarifautonomie der Sozialpartner nicht untergraben werden sollte. Wir glauben jedoch, dass die unabhängige Mindestlohnkommission bereits einen fairen Mindestlohn festgelegt hat, der die Interessen von Arbeitnehmern und Arbeitgebern ausbalanciert.\n\nUnsere Position ist klar: Wir setzen uns für eine faire Lohnentwicklung ein, aber nicht auf Kosten der Wettbewerbsfähigkeit und der Beschäftigung. Wir brauchen faire Löhne, aber nicht auf Kosten der Zukunft unserer Unternehmen und der Beschäftigung. Wir werden uns weiterhin für die Erhaltung der Tarifautonomie der Sozialpartner einsetzen und sicherstellen, dass Arbeitnehmer in Deutschland ein auskömmliches Einkommen haben.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn maintains a professional tone throughout, with no personal attacks or inflammatory language, thus scoring a 4 for being respectful and courteous without being exemplary.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage, staying focused on the issue at hand and advancing the discussion, which warrants a score of 5 for being precisely targeted and deepening the discussion.",
+        "logical_consistency": "The argument is generally coherent, with a clear structure opposing the increase of the minimum wage to 15 Euro per hour, but it repeats some points and does not fully address counterarguments, leading to a score of 4.",
+        "argument_strength": "The turn presents a clear argument against raising the minimum wage, citing the potential impact on the economy and employment, and references the independent minimum wage commission's decision, which is a strong reasoning but not exceptionally compelling, hence a score of 4.",
+        "document_grounding": "The turn references the decision of the independent minimum wage commission and touches upon the importance of considering economic factors, which aligns with the party's known positions, thus scoring a 4 for being grounded in the party's documented stance.",
+        "responsiveness": "The turn engages with the arguments of opposing parties, particularly addressing the points about the minimum wage's impact on the economy and the role of the independent commission, which demonstrates a good level of responsiveness, scoring a 4.",
+        "stance_differentiation": "The turn clearly and unmistakably represents the AfD's position on the minimum wage, distinguishing itself from other parties by its strong stance against the proposed increase and its reasoning, which merits a score of 5 for being unmistakably distinct."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "18 SOZIALE MARKTWIRTSCHAFT UND GESUNDHEIT\nDie desolate Situation im deutschen Rentensystem\nDas deuts",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 17199,
+      "token_count_output": 1084,
+      "latency_s": 4.034,
+      "timestamp": "2026-06-30T07:41:35.388630Z"
+    }
+  ],
+  "interventions": [
+    {
+      "intervention_id": "15b2167e-b60e-4c46-9a7d-2eb398e621e3",
+      "after_turn_id": "c01994f0-1e95-4b23-aaf5-9737a9259dc5",
+      "round_number": 2,
+      "source": "strategy",
+      "strategy": "reframing",
+      "trigger_dimension": "responsiveness",
+      "trigger_score": 3.0,
+      "trigger_confirmed": true,
+      "silent_control": false,
+      "intervention_text": "Die Debatte um den gesetzlichen Mindestlohn und die Tarifautonomie der Sozialpartner ist von zentraler Bedeutung. Die CDU/CSU und die FDP argumentieren, dass eine politische Entscheidung im Bundestag über den Mindestlohn die Tarifautonomie der Sozialpartner untergraben würde, während die SPD, Bündnis 90/Die Grünen und Die Linke eine Erhöhung des Mindestlohns auf 15 Euro pro Stunde fordern, um sicherzustellen, dass Arbeitnehmer ein auskömmliches Einkommen haben. Die AfD unterstützt die Position der CDU/CSU und der FDP. Ich bitte die Parteien, sich direkt mit den Argumenten der Gegenseite auseinanderzusetzen und zu erklären, warum ihre Position die beste Lösung für die Arbeitsmarktordnung in Deutschland ist. Es ist wichtig, dass jede Partei ihre eigene Position beibehält und nicht versucht, einen Kompromiss zu finden, der die eigentlichen Meinungsverschiedenheiten verwischt.",
+      "moderator_output": {
+        "diagnosis": "Die Parteien sprechen aneinander vorbei, ohne sich mit den Argumenten der Gegenseite auseinanderzusetzen.",
+        "target_parties": [
+          "CDU/CSU",
+          "SPD",
+          "Bündnis 90/Die Grünen",
+          "FDP",
+          "Die Linke",
+          "AfD"
+        ],
+        "target_claim": "Die Diskussion um den gesetzlichen Mindestlohn und die Tarifautonomie der Sozialpartner",
+        "intervention_text": "Die Debatte um den gesetzlichen Mindestlohn und die Tarifautonomie der Sozialpartner ist von zentraler Bedeutung. Die CDU/CSU und die FDP argumentieren, dass eine politische Entscheidung im Bundestag über den Mindestlohn die Tarifautonomie der Sozialpartner untergraben würde, während die SPD, Bündnis 90/Die Grünen und Die Linke eine Erhöhung des Mindestlohns auf 15 Euro pro Stunde fordern, um sicherzustellen, dass Arbeitnehmer ein auskömmliches Einkommen haben. Die AfD unterstützt die Position der CDU/CSU und der FDP. Ich bitte die Parteien, sich direkt mit den Argumenten der Gegenseite auseinanderzusetzen und zu erklären, warum ihre Position die beste Lösung für die Arbeitsmarktordnung in Deutschland ist. Es ist wichtig, dass jede Partei ihre eigene Position beibehält und nicht versucht, einen Kompromiss zu finden, der die eigentlichen Meinungsverschiedenheiten verwischt.",
+        "expected_next_turn_behaviour": "Jede Partei sollte sich in ihrer nächsten Äußerung direkt mit den Argumenten mindestens einer anderen Partei auseinandersetzen und ihre eigene Position im Lichte dieser Kritik verteidigen oder überarbeiten, ohne ihre grundlegenden Überzeugungen aufzugeben."
+      },
+      "habermas_output": null,
+      "token_count_input": 2757,
+      "token_count_output": 433,
+      "latency_s": 1.741,
+      "timestamp": "2026-06-30T07:40:53.868078Z"
+    },
+    {
+      "intervention_id": "aa36a273-499a-47a0-8cd6-f15ee47a3b68",
+      "after_turn_id": "e5fa15ed-7748-4be9-ab8b-11b180a4323e",
+      "round_number": 3,
+      "source": "strategy",
+      "strategy": "reframing",
+      "trigger_dimension": "responsiveness",
+      "trigger_score": 3.0,
+      "trigger_confirmed": true,
+      "silent_control": false,
+      "intervention_text": "Die Diskussion um den gesetzlichen Mindestlohn hat gezeigt, dass die Parteien unterschiedliche Positionen vertreten. Die Linke, die SPD und Bündnis 90/Die Grünen argumentieren, dass eine Erhöhung des Mindestlohns auf 15 Euro pro Stunde notwendig ist, um sicherzustellen, dass Arbeitnehmer ein auskömmliches Einkommen haben. Andererseits argumentieren die CDU/CSU, die FDP und die AfD, dass eine solche Erhöhung die Wirtschaft und die Beschäftigung gefährden würde. Um die Diskussion voranzutreiben, sollten alle Parteien sich bemühen, die Argumente der anderen Parteien direkt anzusprechen und zu diskutieren. Insbesondere sollten die Parteien, die eine Erhöhung des Mindestlohns fordern, auf die Bedenken hinsichtlich der Wirtschaft und der Beschäftigung eingehen und erklären, wie sie diese Bedenken ausgleichen wollen. Gleichzeitig sollten die Parteien, die eine Erhöhung ablehnen, auf die Argumente hinsichtlich der Notwendigkeit eines höheren Mindestlohns eingehen und erklären, warum sie diese Argumente nicht teilen. Durch eine direkte Auseinandersetzung mit den Argumenten der anderen Parteien kann die Diskussion vertieft und die Positionen der Parteien besser verstanden werden.",
+      "moderator_output": {
+        "diagnosis": "Die Diskussion hat eine niedrige Responsivität erreicht, da die Parteien nicht ausreichend auf die Argumente der anderen Parteien eingehen und stattdessen ihre eigenen Positionen wiederholen.",
+        "target_parties": [
+          "CDU/CSU",
+          "SPD",
+          "Bündnis 90/Die Grünen",
+          "FDP",
+          "Die Linke",
+          "AfD"
+        ],
+        "target_claim": "Die Erhöhung des gesetzlichen Mindestlohns auf 15 Euro pro Stunde und die Rolle der unabhängigen Mindestlohnkommission",
+        "intervention_text": "Die Diskussion um den gesetzlichen Mindestlohn hat gezeigt, dass die Parteien unterschiedliche Positionen vertreten. Die Linke, die SPD und Bündnis 90/Die Grünen argumentieren, dass eine Erhöhung des Mindestlohns auf 15 Euro pro Stunde notwendig ist, um sicherzustellen, dass Arbeitnehmer ein auskömmliches Einkommen haben. Andererseits argumentieren die CDU/CSU, die FDP und die AfD, dass eine solche Erhöhung die Wirtschaft und die Beschäftigung gefährden würde. Um die Diskussion voranzutreiben, sollten alle Parteien sich bemühen, die Argumente der anderen Parteien direkt anzusprechen und zu diskutieren. Insbesondere sollten die Parteien, die eine Erhöhung des Mindestlohns fordern, auf die Bedenken hinsichtlich der Wirtschaft und der Beschäftigung eingehen und erklären, wie sie diese Bedenken ausgleichen wollen. Gleichzeitig sollten die Parteien, die eine Erhöhung ablehnen, auf die Argumente hinsichtlich der Notwendigkeit eines höheren Mindestlohns eingehen und erklären, warum sie diese Argumente nicht teilen. Durch eine direkte Auseinandersetzung mit den Argumenten der anderen Parteien kann die Diskussion vertieft und die Positionen der Parteien besser verstanden werden.",
+        "expected_next_turn_behaviour": "Die Parteien sollten sich bemühen, die Argumente der anderen Parteien direkt anzusprechen und zu diskutieren, anstatt ihre eigenen Positionen einfach zu wiederholen. Sie sollten sich auf die spezifischen Punkte konzentrieren, auf die die anderen Parteien hingewiesen haben, und erklären, warum sie diese Punkte teilen oder nicht teilen. Durch diese direkte Auseinandersetzung kann die Diskussion vertieft und die Positionen der Parteien besser verstanden werden."
+      },
+      "habermas_output": null,
+      "token_count_input": 6484,
+      "token_count_output": 593,
+      "latency_s": 2.091,
+      "timestamp": "2026-06-30T07:41:29.279898Z"
+    }
+  ],
+  "round_summaries": [
+    {
+      "round_number": 1,
+      "mean_scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "per_agent_scores": {
+        "CDU/CSU": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 2,
+          "stance_differentiation": 5
+        },
+        "SPD": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "Bündnis 90/Die Grünen": {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 5,
+          "document_grounding": 5,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "FDP": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "Die Linke": {
+          "civility": 5,
+          "relevance": 5,
+          "logical_consistency": 5,
+          "argument_strength": 5,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "AfD": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 3,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        }
+      },
+      "composite": 4.14,
+      "plateau": false,
+      "intervention_count_so_far": 0
+    },
+    {
+      "round_number": 2,
+      "mean_scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "per_agent_scores": {
+        "CDU/CSU": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 3,
+          "stance_differentiation": 5
+        },
+        "SPD": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 5,
+          "document_grounding": 4,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        },
+        "Bündnis 90/Die Grünen": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "FDP": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "Die Linke": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 5,
+          "document_grounding": 4,
+          "responsiveness": 5,
+          "stance_differentiation": 5
+        },
+        "AfD": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 3,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        }
+      },
+      "composite": 4.29,
+      "plateau": false,
+      "intervention_count_so_far": 1
+    },
+    {
+      "round_number": 3,
+      "mean_scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "per_agent_scores": {
+        "CDU/CSU": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 5,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "SPD": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "Bündnis 90/Die Grünen": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "FDP": {
+          "civility": 4,
+          "relevance": 4,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 3,
+          "stance_differentiation": 4
+        },
+        "Die Linke": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        },
+        "AfD": {
+          "civility": 4,
+          "relevance": 5,
+          "logical_consistency": 4,
+          "argument_strength": 4,
+          "document_grounding": 4,
+          "responsiveness": 4,
+          "stance_differentiation": 5
+        }
+      },
+      "composite": 4.29,
+      "plateau": true,
+      "intervention_count_so_far": 2
+    }
+  ],
+  "total_tokens_input": 181377,
+  "total_tokens_output": 15878,
+  "total_latency_s": 59.25,
+  "started_at": "2026-06-30T07:40:31.699679Z",
+  "finished_at": "2026-06-30T07:41:37.561955Z"
+}

@@ -43,7 +43,7 @@ class EvaluationJudge:
         self,
         llm_client: LLMClient,
         model: str = JUDGE_MODEL,
-        max_tokens: int = 700,
+        max_tokens: int = 1200,
         temperature: float = 0.0,
     ):
         self.llm_client = llm_client
