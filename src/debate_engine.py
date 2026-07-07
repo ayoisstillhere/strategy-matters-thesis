@@ -73,6 +73,7 @@ class DebateEngine:
         num_rounds: Number of debate rounds (default 10).
         max_interventions: Cap on moderator interventions per run.
         silent_control_rate: Proportion of triggers silenced.
+        turn_order: Optional override for speaking order (default: TURN_ORDER).
     """
 
     def __init__(
@@ -90,6 +91,7 @@ class DebateEngine:
         max_interventions: int = 3,
         silent_control_rate: float = 0.20,
         language: str = "en",
+        turn_order: Optional[list[str]] = None,
     ):
         self.topic_id = topic_id
         self.framing_prompt = framing_prompt
@@ -107,7 +109,7 @@ class DebateEngine:
 
         # Load condition spec
         self.condition = CONDITIONS[condition_id]
-        self.turn_order = TURN_ORDER
+        self.turn_order = turn_order if turn_order is not None else TURN_ORDER
 
         # Build components
         self.agents = self._build_agents()
