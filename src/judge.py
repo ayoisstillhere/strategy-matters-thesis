@@ -88,17 +88,40 @@ class EvaluationJudge:
             preceding_turns=preceding_text,
         )
 
-        resp = self.llm_client.complete(
-            model=self.model,
-            system_prompt=self._system_prompt,
-            user_prompt=user_prompt,
-            max_tokens=self.max_tokens,
-            temperature=self.temperature,
-            parse_json=True,
-        )
+        max_parse_retries = 3
+        total_input_tokens = 0
+        total_output_tokens = 0
+        total_latency = 0.0
 
-        scores, justifications = self._parse_response(resp.parsed_json, turn)
-        return scores, justifications, resp.input_tokens, resp.output_tokens, resp.latency_s
+        for attempt in range(1, max_parse_retries + 1):
+            resp = self.llm_client.complete(
+                model=self.model,
+                system_prompt=self._system_prompt,
+                user_prompt=user_prompt,
+                max_tokens=self.max_tokens,
+                temperature=self.temperature,
+                parse_json=True,
+            )
+            total_input_tokens += resp.input_tokens
+            total_output_tokens += resp.output_tokens
+            total_latency += resp.latency_s
+
+            if resp.parsed_json is not None and "scores" in resp.parsed_json:
+                scores, justifications = self._parse_response(resp.parsed_json, turn)
+                return scores, justifications, total_input_tokens, total_output_tokens, total_latency
+
+            logger.warning(
+                f"Judge parse failed for turn {turn.turn_id} "
+                f"(attempt {attempt}/{max_parse_retries}). Retrying..."
+            )
+
+        # All retries exhausted — fall back to defaults
+        logger.error(
+            f"Judge failed to produce valid JSON after {max_parse_retries} attempts "
+            f"for turn {turn.turn_id}. Defaulting all scores to 3."
+        )
+        scores, justifications = self._parse_response(None, turn)
+        return scores, justifications, total_input_tokens, total_output_tokens, total_latency
 
     def _parse_response(
         self, parsed: Optional[dict], turn: Turn

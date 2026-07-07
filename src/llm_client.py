@@ -128,11 +128,16 @@ class LLMClient:
         for attempt in range(1, self.max_retries + 1):
             try:
                 t0 = time.time()
+                api_kwargs = {}
+                if parse_json:
+                    api_kwargs["response_format"] = {"type": "json_object"}
+
                 resp = self._client.chat.completions.create(
                     model=model,
                     messages=messages,
                     max_tokens=max_tokens,
                     temperature=temperature,
+                    **api_kwargs,
                 )
                 latency = time.time() - t0
 
@@ -199,29 +204,33 @@ class LLMClient:
         """Best-effort JSON parsing from LLM output.
 
         Handles: raw JSON, markdown-fenced JSON, JSON embedded in text,
-        and thinking-model <think>...</think> prefix blocks (Qwen3, etc.).
+        thinking-model <think>...</think> prefix blocks (Qwen3, etc.),
+        and JSON truncated by max_tokens cutoff.
         """
         cleaned = text.strip()
 
-        # Strip markdown code fences if present
-        if cleaned.startswith("```"):
-            first_newline = cleaned.index("\n")
-            cleaned = cleaned[first_newline + 1:]
-            if cleaned.endswith("```"):
-                cleaned = cleaned[:-3]
-            cleaned = cleaned.strip()
-
         # Strip <think>...</think> blocks produced by reasoning models
-        # (Qwen3, DeepSeek-R1, etc.). Must happen BEFORE the {…} search
+        # (Qwen3, DeepSeek-R1, etc.). Must happen BEFORE fence/brace search
         # because thinking content may itself contain braces.
         cleaned = re.sub(r"<think>.*?</think>", "", cleaned, flags=re.DOTALL).strip()
 
+        # Strip markdown code fences (handles both complete and truncated)
+        fence_match = re.search(r"```\w*\s*\n(.*?)```", cleaned, re.DOTALL)
+        if fence_match:
+            cleaned = fence_match.group(1).strip()
+        elif cleaned.startswith("```"):
+            # Opening fence without closing (truncated response)
+            first_nl = cleaned.find("\n")
+            if first_nl != -1:
+                cleaned = cleaned[first_nl + 1:].strip()
+
+        # 1) Try direct parse
         try:
             return json.loads(cleaned)
         except json.JSONDecodeError:
             pass
 
-        # Try to find JSON object in the remaining text
+        # 2) Try to extract JSON object from surrounding text
         start = cleaned.find("{")
         end = cleaned.rfind("}")
         if start != -1 and end != -1 and end > start:
@@ -230,5 +239,87 @@ class LLMClient:
             except json.JSONDecodeError:
                 pass
 
+        # 3) Try to repair truncated JSON (max_tokens cutoff)
+        if start != -1:
+            repaired = LLMClient._repair_truncated_json(cleaned[start:])
+            if repaired:
+                try:
+                    return json.loads(repaired)
+                except json.JSONDecodeError:
+                    pass
+
         logger.warning(f"Failed to parse JSON from LLM response: {text[:200]}...")
+        return None
+
+    @staticmethod
+    def _repair_truncated_json(fragment: str) -> Optional[str]:
+        """Attempt to repair JSON truncated by max_tokens cutoff.
+
+        Strategy: close any unclosed string, then try progressively
+        trimming at comma break-points (from least to most aggressive)
+        until balancing braces/brackets yields parseable JSON.
+        """
+        # Close any unclosed string literal
+        in_str = False
+        esc = False
+        for c in fragment:
+            if esc:
+                esc = False
+            elif c == "\\" and in_str:
+                esc = True
+            elif c == '"':
+                in_str = not in_str
+        if in_str:
+            fragment += '"'
+
+        # Find all comma positions outside strings (potential trim points)
+        break_points: list[int] = []
+        in_str = False
+        esc = False
+        for i, c in enumerate(fragment):
+            if esc:
+                esc = False
+            elif c == "\\" and in_str:
+                esc = True
+            elif c == '"':
+                in_str = not in_str
+            elif not in_str and c == ",":
+                break_points.append(i)
+
+        # Try candidates: full fragment first, then trim at each comma R-to-L
+        candidates = [fragment] + [fragment[:bp] for bp in reversed(break_points)]
+
+        for candidate in candidates:
+            trimmed = candidate.rstrip().rstrip(",").rstrip(":")
+            if not trimmed:
+                continue
+
+            # Count unbalanced braces/brackets
+            in_str = False
+            esc = False
+            brace = 0
+            bracket = 0
+            for c in trimmed:
+                if esc:
+                    esc = False
+                elif c == "\\" and in_str:
+                    esc = True
+                elif c == '"':
+                    in_str = not in_str
+                elif not in_str:
+                    if c == "{": brace += 1
+                    elif c == "}": brace -= 1
+                    elif c == "[": bracket += 1
+                    elif c == "]": bracket -= 1
+
+            if brace <= 0 and bracket <= 0:
+                continue  # already balanced or over-closed
+
+            balanced = trimmed + "]" * max(0, bracket) + "}" * max(0, brace)
+            try:
+                json.loads(balanced)
+                return balanced
+            except json.JSONDecodeError:
+                continue
+
         return None
