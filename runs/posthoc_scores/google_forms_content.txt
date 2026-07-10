@@ -1,0 +1,1793 @@
+======================================================================
+GOOGLE FORMS — SECTION 1: INTRODUCTION
+======================================================================
+
+FORM TITLE: Diskursqualität in KI-generierten politischen Debatten
+
+FORM DESCRIPTION:
+Vielen Dank für Ihre Teilnahme an dieser Annotationsstudie!
+
+Sie werden 35 kurze Auszüge aus simulierten politischen Debatten zwischen
+deutschen Parteien (CDU/CSU, SPD, Grüne, FDP, Die Linke, AfD) lesen.
+
+Für jeden Auszug sehen Sie:
+• Den Debattenkontext (2–3 vorhergehende Redebeiträge)
+• Einen markierten Zielbeitrag (★), den Sie bewerten sollen
+
+Bewerten Sie den ★-Beitrag auf 7 Dimensionen (Skala 1–5).
+Bitte lesen Sie die Annotation Guidelines (PDF), bevor Sie beginnen.
+
+Geschätzte Dauer: ca. 2–2,5 Stunden.
+Sie können jederzeit pausieren und später fortfahren.
+
+Wichtig:
+• Bewerten Sie die QUALITÄT des Debattenbeitrags, NICHT ob Sie der
+  politischen Position zustimmen.
+• 3 = angemessen (Normalfall), 5 = außergewöhnlich (selten)
+• Im Zweifelsfall: niedrigeren Wert wählen
+
+
+======================================================================
+GOOGLE FORMS — SECTION 2: Exchange 1/35
+======================================================================
+
+SECTION TITLE: Auszug 1 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Mindestlohn — Erhöhung des gesetzlichen Mindestlohns auf 15 €/h
+Runde: 9
+
+── Kontext (vorhergehende Beiträge) ──
+
+  AfD (Runde 8):
+    Wir als AfD glauben, dass die Diskussion über den gesetzlichen Mindestlohn ein wichtiger Aspekt der Auseinandersetzung mit den sozialen und wirtschaftlichen Herausforderungen in Deutschland ist. Wir haben uns in unserem Bundestagswahlprogramm dazu verpflichtet, die Tarifautonomie zu respektieren und keine politischen Eingriffe in die Arbeit der unabhängigen Mindestlohnkommission zu unternehmen.
+    Unsere Wahl-O-Mat-Position bestätigt diese Position klar: Wir setzen uns für eine faire Lohnentwicklung ein, die auf der Tarifautonomie und der Marktwirtschaft basiert. Wir glauben, dass die Tarifpa...
+
+  CDU/CSU (Runde 9):
+    Wir als CDU/CSU setzen uns für eine faire Lohnentwicklung in Deutschland ein, die auf der Tarifautonomie und der Marktwirtschaft basiert. Unsere Position zum gesetzlichen Mindestlohn ist klar dargelegt: Wir setzen uns für die Einhaltung des gesetzlichen Mindestlohns ein und unterstützen eine gute Lohnentwicklung. Wir erwarten eine einvernehmliche Entscheidungsfindung in der unabhängigen Mindestlohnkommission und lehnen eine politische Mindestlohnersetzung ab.
+    Unser Bundestagswahlprogramm enthält eine klare Positionierung: Wir wollen eine soziale Marktwirtschaft, in der die Unternehmen frei...
+
+  SPD (Runde 9):
+    Wir als SPD setzen uns unbedingt für die Erhöhung des gesetzlichen Mindestlohns auf 15 Euro pro Stunde ein, wie unser Bundestagswahlprogramm und unser Wahl-O-Mat-Statement klar zeigen. Dieser Schritt ist ein wichtiger Meilenstein auf dem Weg zur sozialen Gerechtigkeit und Chancengleichheit für alle.
+    Unsere Wahl-O-Mat-Position bestätigt diese Position klar: Wir setzen uns für die Erhöhung des gesetzlichen Mindestlohns auf 15 Euro pro Stunde ein, um sicherzustellen, dass alle Menschen in Deutschland ein fairen Lohn für ihre Arbeit erhalten. Dieser Mindestlohn entspricht 60 Prozent des Median...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  Bündnis 90/Die Grünen (Runde 9):
+    Wir Grünen haben uns in unserem Bundestagswahlprogramm dazu verpflichtet, den gesetzlichen Mindestlohn spätestens 2026 auf 15 Euro pro Stunde zu erhöhen. Dieser Schritt ist ein wichtiger Meilenstein auf dem Weg zur sozialen Gerechtigkeit und Chancengleichheit für alle. Unsere Wahl-O-Mat-Position bestätigt diese Position klar: Wir setzen uns für die Erhöhung des gesetzlichen Mindestlohns auf 15 Euro pro Stunde ein, um sicherzustellen, dass alle Menschen in Deutschland ein fairen Lohn für ihre Arbeit erhalten.
+    Wir glauben, dass die Politik hier eine aktive Rolle spielen muss, um die soziale Gerechtigkeit in Deutschland zu verbessern. Wir werden die Tarifbindung in Ostdeutschland stärken, um sicherzustellen, dass alle von ihrer Arbeit gut leben können. Unsere Zielsetzung ist es, dass jeder in Deutschland ein fairen Lohn für seine Arbeit erhält, unabhängig von seiner Region. Wir haben uns in unserem Wahl-O-Mat-Statement klar dazu verpflichtet, die soziale Gerechtigkeit in Deutschland zu verbessern.
+    Unser Bundestagswahlprogramm enthält eine klare Positionierung: Wir wollen eine soziale Gerechtigkeit, die auf der Überzeugung beruht, dass alle Menschen in Deutschland ein Leben in Würde führen können. Der gesetzliche Mindestlohn ist ein wichtiger Teil dieser sozialen Gerechtigkeit, da er sicherstellt, dass Arbeitnehmer ein gesicherter Mindestlohn erhalten, der ihnen ermöglicht, ein Leben in Würde zu führen.
+    Wir als Grüne glauben, dass unsere Position zum gesetzlichen Mindestlohn ein wichtiger Teil unserer sozialen Gerechtigkeit ist. Wir haben uns in unserem Bundestagswahlprogramm dazu verpflichtet, die soziale Gerechtigkeit in Deutschland zu verbessern. Wir werden die Tarifbindung in Ostdeutschland stärken, um sicherzustellen, dass alle von ihrer Arbeit gut leben können. Unsere Zielsetzung ist es, dass jeder in Deutschland ein fairen Lohn für seine Arbeit erhält, unabhängig von seiner Region.
+    Wir glauben, dass die Tarifautonomie und die unabhängige Arbeit der Kommission respektiert werden müssen, um sicherzustellen, dass die soziale Marktwirtschaft in Deutschland weiterhin prosperiert. Wir werden die Tarifbindung in Ostdeutschland stärken, um sicherzustellen, dass alle von ihrer Arbeit gut leben können. Unsere Zielsetzung ist es, dass jeder in Deutschland ein fairen Lohn für seine Arbeit erhält, unabhängig von seiner Region.
+    Ich möchte mich an die Moderatorin wenden und darauf hinweisen, dass wir uns an die Anweisung halten werden, unsere Argumente anhand unserer eigenen dokumentierten Positionen zu begründen. Wir werden unsere Bundestagswahlprogramme und Wahl-O-Mat-Positionen als Beweise verwenden, um unsere Argumente zu untermauern. Wir glauben, dass dies dazu beitragen wird, eine faire und transparente Diskussion zu ermöglichen.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 3: Exchange 2/35
+======================================================================
+
+SECTION TITLE: Auszug 2 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Migrationspolitik — Steuerung der Einwanderung und Asylpolitik
+Runde: 8
+
+── Kontext (vorhergehende Beiträge) ──
+
+  Bündnis 90/Die Grünen (Runde 8):
+    Als Grüne setzen wir uns für eine humane und integrationsorientierte Migrationspolitik ein, die die Bedürfnisse unserer Wirtschaft und unserer Gesellschaft berücksichtigt. Unsere Partei hat in ihrem Programm klar formuliert, dass wir Asylsuchende frühzeitig in unserer Gesellschaft integrieren möchten, indem wir ihnen Zugang zu Arbeit, Bildung und Gesundheitsversorgung ermöglichen.
+    Unsere Wahl-O-Mat-Stellungnahme zu Asylsuchenden zeigt, dass wir uns gegen pauschale Zurückweisungen an den Binnengrenzen einsetzen. Wir setzen uns für eine europäische Kooperation und eine faire Verteilung von S...
+
+  FDP (Runde 8):
+    Wir müssen unsere Migrationspolitik so gestalten, dass sie den Bedürfnissen unserer Wirtschaft und unserer Gesellschaft gerecht wird. Unsere Partei hat in ihrem Programm klar formuliert, dass wir illegale Migration stoppen und die humanitären Aufnahmen auf ein Maß beschränken wollen, das die Möglichkeiten Deutschlands nicht länger überfordert.
+    Unsere Wahl-O-Mat-Stellungnahme zu Asylsuchenden zeigt, dass wir uns für die sofortige Ermöglichung einer Arbeitserlaubnis für Asylsuchende nach ihrer Antragstellung einsetzen. Ein Job ist der beste Integrationskurs, und wir glauben, dass dies es Asy...
+
+  Die Linke (Runde 8):
+    Wir haben in der vergangenen Runde unserer Diskussion über die Asylpolitik wiederholt betont, dass es für uns unverzichtbar ist, die Würde und das Recht der Menschen zu respektieren, die vor Krieg, Unterdrückung und Umweltkatastrophen fliehen. Unsere Partei, Die Linke, setzt sich für eine humane und integrationsorientierte Migrationspolitik ein, die die Bedürfnisse unserer Wirtschaft und unserer Gesellschaft berücksichtigt.
+    Unsere Wahl-O-Mat-Stellungnahme zu Asylsuchenden zeigt, dass wir uns gegen pauschale Zurückweisungen an den Binnengrenzen einsetzen, da dies europarechtlich nicht zuläs...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  AfD (Runde 8):
+    Wir müssen die unkontrollierte Massenzuwanderung stoppen, die unsere Gesellschaft und unsere Wirtschaft bedroht. Unsere europäischen Nachbarn schützen ihre Grenzen und bewahren ihre sozialen Sicherungssysteme. Warum tun deutsche Politiker das nicht? Unsere Partei hat in ihrem Bundestagswahlprogramm klar formuliert, dass wir eine deutliche Kehrtwende in der Migrationspolitik einfordern, um die Belastung auf unsere Kommunen und unsere Wirtschaft zu reduzieren.
+    Wir werden die illegale Migration stoppen und die humanitären Aufnahmen auf ein Maß beschränken, das die Möglichkeiten Deutschlands nicht länger überfordert. Unsere Wahl-O-Mat-Stellungnahme zu Asylsuchenden zeigt, dass wir uns für die sofortige Ermöglichung einer Arbeitserlaubnis für Asylsuchende nach ihrer Antragstellung einsetzen. Ein Job ist der beste Integrationskurs, und wir glauben, dass dies es Asylsuchenden ermöglichen wird, frühzeitig für ihren Lebensunterhalt zu sorgen und somit die Integration in unsere Gesellschaft zu erleichtern.
+    Unsere Partei hat in ihrem Programm auch klar formuliert, dass wir die schrittweise Einführung von Grenzkontrollen und die Stärkung der polizeilichen Präsenz an unseren Grenzen unterstützen. Diese Maßnahmen sind notwendig, um unsere Grenzen zu schützen und die Sicherheit unserer Bürger zu gewährleisten. Wir setzen uns auch für eine europäische Kooperation ein, um die Belastung auf den Außengrenzen zu reduzieren und die Integration der Geflüchteten in unsere Gesellschaft zu erleichtern.
+    Wir haben auch unsere Wahl-O-Mat-Stellungnahme zum Thema "Schutz der deutschen Grenzen" vorgelegt, in der wir klar formuliert haben, dass wir die schrittweise Einführung von Grenzkontrollen und die Stärkung der polizeilichen Präsenz an unseren Grenzen unterstützen. Unsere Partei hat in ihrem Programm auch klar formuliert, dass wir die soziale und kulturelle Integration von Asylsuchenden fördern möchten. Dazu gehört die Bereitstellung von Integrationskursen, die Unterstützung von Sprachkursen und die Förderung von kulturellen Aktivitäten.
+    Wir glauben, dass diese Maßnahmen helfen werden, die Integration von Asylsuchenden in unsere Gesellschaft zu erleichtern und ihre Chancen in Deutschland zu verbessern. Unsere Wahl-O-Mat-Stellungnahme zu Asylsuchenden formuliert dies klar: "Asylsuchende sollen in Deutschland in der Regel nach drei Monaten nach Antragstellung arbeiten dürfen." Wir müssen unsere Migrationspolitik so gestalten, dass wer bei uns arbeitet und nach unseren Werten lebt, es leichter hat.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 4: Exchange 3/35
+======================================================================
+
+SECTION TITLE: Auszug 3 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Rentenpolitik — Reform der gesetzlichen Rentenversicherung
+Runde: 1
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  CDU/CSU (Runde 1):
+    Wir müssen uns bewusst sein, dass die demographische Entwicklung in Deutschland erhebliche Herausforderungen für unser gesetzliches Rentensystem mit sich bringt. Der alte-Abhängigkeitsquotient wird von 37 auf über 50 steigen, was bedeutet, dass es weniger Beitragszahler geben wird, um mehr Rentner zu unterstützen. Als CDU/CSU müssen wir uns hierfür vorbereiten und eine nachhaltige Lösung finden.
+    Wir setzen uns für eine flexiblere Alterssicherung ein, die junge Menschen dazu anregt, frühzeitig kapitalgedeckt vorsorgen zu lassen. Unser Ziel ist es, die gesetzliche Rente nicht nur als Sicherheit, sondern auch als Motivation für eine aktive Teilhabe am Arbeitsleben zu sehen. Daher unterstützen wir die Einführung einer Frühstart-Rente, die junge Menschen dazu ermutigt, möglichst früh selbst für ihre Alterssicherung zu sorgen.
+    Außerdem wollen wir die Hinzuverdienstgrenzen bei Witwenrenten deutlich erhöhen und die steuerfreie Aktivrente für freiwillig weiterarbeitende Rentner auf bis zu 2.000 Euro pro Monat ausdehnen. Wir glauben, dass Menschen, die vorzeitig aus dem Erwerbsleben ausscheiden müssen, auf eine auskömmliche Alterssicherung zurückgreifen können. Unsere Ziele sind ein stabiles Rentenniveau, steigende Renten und die Schaffung von Anreizen für freiwilliges längeres Arbeiten.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 5: Exchange 4/35
+======================================================================
+
+SECTION TITLE: Auszug 4 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Rentenpolitik — Reform der gesetzlichen Rentenversicherung
+Runde: 9
+
+── Kontext (vorhergehende Beiträge) ──
+
+  CDU/CSU (Runde 9):
+    Die Herausforderungen des demografischen Wandels erfordern eine umfassende Reform unseres gesetzlichen Rentensystems. Wir müssen uns der Tatsache stellen, dass die Zahl der Renteneinleitungen steigen wird, während die Zahl der Beitragszahler abnehmen wird. Unsere Antwort sollte daher nicht in einer weiteren Ausweitung des gesetzlichen Rentensystems bestehen, sondern in einer flexibleren und finanzierbareren Lösung.
+    Unser Ansatz basiert auf der Idee, dass die Menschen selbst entscheiden sollten, wann der Ruhestand beginnt, sofern dann keine Sozialleistungen beantragt werden müssen. Je späte...
+
+  SPD (Runde 9):
+    Es ist nicht nur eine Frage der Demografie, sondern auch eine Frage der Gerechtigkeit. Wir müssen sicherstellen, dass unsere Senioren einen Lebensabend in Würde erleben können, ohne dass sie in Armut leben müssen. Das bedeutet, dass wir unser gesetzliches Rentensystem auf eine Weise anpassen müssen, die es ermöglicht, dass Menschen frühzeitig in Rente gehen können, ohne dass sie einen Abschlag leiden müssen.
+    Als SPD setzen wir uns für eine Reform ein, die die Interessen derjenigen schützt, die in Zukunft in Rente gehen. Wir wollen, dass das Rentenniveau auf einem stabilen Niveau gehalten w...
+
+  Bündnis 90/Die Grünen (Runde 9):
+    Wir müssen das gesetzliche Rentensystem auf eine Weise anpassen, die es ermöglicht, dass Menschen frühzeitig in Rente gehen können, ohne dass sie einen Abschlag leiden müssen. Dies ist nicht nur eine Frage der Demografie, sondern auch eine Frage der Gerechtigkeit. Wir müssen sicherstellen, dass unsere Senioren einen Lebensabend in Würde erleben können, ohne dass sie in Armut leben müssen.
+    Ein wichtiger Aspekt ist auch die Förderung der Selbstständigkeit und der Teilhabe am Arbeitsleben. Wir setzen uns für eine flexible und attraktive Rentenpolitik ein, die es Menschen ermöglicht, später in...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  FDP (Runde 9):
+    In der Diskussion um die Zukunft unseres gesetzlichen Rentensystems müssen wir uns der Herausforderungen der demografischen Entwicklung bewusst sein. Die Zahl der Renteneinleitungen steigt, während die Zahl der Beitragszahler abnimmt. Unsere Antwort sollte daher nicht in einer weiteren Ausweitung des gesetzlichen Rentensystems bestehen, sondern in einer flexibleren und finanzierbareren Lösung.
+    Unser Ansatz basiert auf der Idee, dass die Menschen selbst entscheiden sollten, wann der Ruhestand beginnt, sofern dann keine Sozialleistungen beantragt werden müssen. Je später jemand in Rente geht, desto höher die Rente, wer früher geht, bekommt eine niedrigere Rente. Teilrenten sind unkompliziert möglich. Dieser Ansatz bietet die Möglichkeit, die rentenpolitischen Herausforderungen zu meistern, ohne die Lasten auf zukünftige Generationen zu übertragen.
+    Wir müssen auch die bestehenden Mechanismen nutzen, um das Rentensystem nachhaltig zu machen. Die Gesetzliche Aktienrente ist ein wichtiger Schritt in die richtige Richtung. Durch die Anlage eines Teils der Rentenbeiträge in einem unabhängig verwalteten Fonds können wir besser gegen das Risiko einer alternden Bevölkerung geschützt sein. Dies bietet auch die Möglichkeit, die Rentenbeiträge finanzierbar zu halten und die Menschen stärker von den Chancen einer kapitalgedeckten Altersvorsorge zu überzeugen.
+    Ein wichtiger Aspekt ist auch die Förderung der Selbstständigkeit und der Teilhabe am Arbeitsleben. Wir setzen uns für eine flexible und attraktive Rentenpolitik ein, die es Menschen ermöglicht, später in Rente zu gehen, ohne dass sie einen Abschlag leiden müssen. Dies würde Menschen belohnen, die früh begonnen haben zu arbeiten und sich um ihre Familien zu kümmern. Wir glauben, dass dies ein wichtiger Schritt ist, um die Arbeitskraft und die Familien zu stärken.
+    Wir müssen uns auch der Tatsache stellen, dass die Arbeitskräftebasis eine wichtige Voraussetzung für eine nachhaltige Finanzierung des Rentensystems ist. Deshalb setzen wir uns für die Förderung der Selbstständigkeit und der Teilhabe am Arbeitsleben ein. Wir wollen, dass das Rentenniveau auf einem stabilen Niveau gehalten wird, wie unser Regierungsprogramm 'Mehr für Dich. Besser für Deutschland' klar dokumentiert. Wir sorgen dafür, dass das Niveau der gesetzlichen Rentenversicherung dauerhaft bei mindestens 48 Prozent gesichert wird. Dies ist auch im Interesse derjenigen, die in Zukunft in Rente gehen, denn es würde ihnen eine sichere Grundlage für ihr Alter bieten.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 6: Exchange 5/35
+======================================================================
+
+SECTION TITLE: Auszug 5 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Migrationspolitik — Steuerung der Einwanderung und Asylpolitik
+Runde: 9
+
+── Kontext (vorhergehende Beiträge) ──
+
+  SPD (Runde 9):
+    Unsere Gesellschaft steht vor einer großen Herausforderung. Die hohen Zahlen an Asylanträgen in Deutschland sind ein Zeichen dafür, dass wir unsere humanitären Verpflichtungen nicht vernachlässigen dürfen. Wir müssen uns der europäischen Zusammenarbeit mit offenen und solidarischen Händen stellen, um eine faire und zukunftsfähige Gesellschaft zu schaffen, in der alle Menschen leben können.
+    Wir unterstützen die Idee, dass Asylsuchende nach der Antragstellung nach drei Monaten arbeiten dürfen, solange sie keine Sicherheitsrisiken darstellen. Dies würde nicht nur den Asylsuchenden helfen, sic...
+
+  Bündnis 90/Die Grünen (Runde 9):
+    Wir müssen endlich eine realistische und menschenfreundliche Lösung für die hohen Zahlen an Asylanträgen in Deutschland finden. Die europäische Zusammenarbeit ist unerlässlich, um eine faire und zukunftsfähige Gesellschaft zu schaffen, in der alle Menschen leben können. Wir setzen uns für eine Asylpolitik ein, die den Menschenrechten und der europäischen Rechtsordnung verpflichtet ist.
+    Eine zuverlässige Registrierung von Asylsuchenden bei der Einreise ist ein wichtiger Schritt hin zu einer gerechteren Verteilung von Schutzsuchenden in Europa. Dies würde es ermöglichen, dass Asylanträge inh...
+
+  FDP (Runde 9):
+    Wir müssen uns der Fakten stellen, dass die hohen Zahlen an Asylanträgen in Deutschland ein Spiegelbild der globalen Herausforderungen sind, vor denen wir stehen. Die Klimakrise, der Krieg in der Ukraine und die wachsende Armut in vielen Teilen der Welt treiben Menschen auf die Flucht. Wir müssen uns der europäischen Zusammenarbeit mit offenen und solidarischen Händen stellen, um eine faire und zukunftsfähige Gesellschaft zu schaffen, in der alle Menschen leben können.
+    Wir unterstützen die Idee, dass Asylsuchende nach der Antragstellung nach drei Monaten arbeiten dürfen, solange sie keine ...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  Die Linke (Runde 9):
+    Wir müssen uns der Wirklichkeit stellen und die Wurzeln der Krise, die zu den hohen Zahlen an Asylanträgen in Deutschland geführt hat, anerkennen. Die globale Armut, die Klimakrise und der Krieg in der Ukraine treiben Menschen auf die Flucht. Wir müssen uns der europäischen Zusammenarbeit mit offenen und solidarischen Händen stellen, um eine faire und zukunftsfähige Gesellschaft zu schaffen, in der alle Menschen leben können.
+    Wir unterstützen die Idee, dass Asylsuchende nach der Antragstellung nach drei Monaten arbeiten dürfen, solange sie keine Sicherheitsrisiken darstellen. Dies würde nicht nur den Asylsuchenden helfen, sich schnellstmöglich in unsere Gesellschaft einzubringen, sondern auch die Anreize für illegale Migration reduzieren. Wir müssen jedoch auch sicherstellen, dass die Integration der Menschen in Deutschland verbessert wird, die hier bleiben dürfen, und dass diejenigen, die eine Chance verdienen, sich in unsere Gesellschaft einzubringen, diese auch erhalten.
+    Ein wichtiger Aspekt ist auch die Frage der Arbeitslosigkeit. Wir müssen uns der Tatsache stellen, dass fast eine Million Menschen in Deutschland langzeitarbeitslos sind. Wir müssen uns der europäischen Zusammenarbeit mit offenen und solidarischen Händen stellen, um eine faire und zukunftsfähige Gesellschaft zu schaffen, in der alle Menschen einen sicheren Arbeitsplatz haben. Wir unterstützen die Idee, dass Asylsuchende nach der Antragstellung nach drei Monaten eine Arbeitsplatzvermittlung erhalten sollten, um ihnen die Chance zu geben, sich schnellstmöglich in unsere Gesellschaft einzubringen.
+    Wir müssen jedoch auch sicherstellen, dass diejenigen, die in Deutschland bleiben dürfen, die Chance haben, sich schnellstmöglich in unsere Gesellschaft einzubringen. Dazu müssen wir die Integration der Menschen in Deutschland verbessern, die hier bleiben dürfen, und gleichzeitig die Sicherheit unserer Grenzen stärken. Wir wollen eine Migrationspolitik, die auf Zügigkeit und Sicherheit setzt und nicht auf Symbolpolitik.
+    Es ist auch wichtig, die Frage der Wohnungsnot zu beachten. Wir müssen uns der Tatsache stellen, dass es in Deutschland ungefähr 600 000 wohnungslose Menschen gibt. Wir müssen uns der europäischen Zusammenarbeit mit offenen und solidarischen Händen stellen, um eine faire und zukunftsfähige Gesellschaft zu schaffen, in der alle Menschen einen sicheren Wohnraum haben. Wir unterstützen die Idee, dass wir einen Fonds für Willkommenskommunen einrichten sollten, um die Bedingungen für eine Willkommenskultur in Deutschland zu verbessern und die Integration von Schutzsuchenden zu fördern.
+    Wir müssen unsere Grenzen schützen und unsere Souveränität wiederherstellen, damit wir unsere Migrationspolitik auf Zügigkeit und Sicherheit statt Symbolpolitik ausrichten können. Wir werden die Anreize für illegale Migration reduzieren und diejenigen, die unsere Gesellschaft infiltrieren möchten, auf die Straße setzen. Wir müssen unsere Aufnahmefähigkeit schützen und sicherstellen, dass diejenigen, die in Deutschland bleiben dürfen, die Chance haben, sich schnellstmöglich in unsere Gesellschaft einzubringen.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 7: Exchange 6/35
+======================================================================
+
+SECTION TITLE: Auszug 6 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Sozialpolitik — Sozialleistungen und Bürgergeld
+Runde: 7
+
+── Kontext (vorhergehende Beiträge) ──
+
+  Bündnis 90/Die Grünen (Runde 7):
+    Wir müssen uns der Tatsache bewusst sein, dass die extreme Ungleichheit in Deutschland ein zentrales Problem unserer Zeit ist, das wir nicht mehr ignorieren können. Die Daten der Deutschen Bundesbank zeigen eindeutig, dass die reichsten 10 Prozent der Haushalte über 60 Prozent des gesamten Nettovermögens halten, während der untere 50 Prozent weniger als 3 Prozent besitzen. Dies ist nicht nur ungleich, sondern auch unfair und eine Gefahr für die Stabilität unserer Gesellschaft und Wirtschaft.
+    Wir in der Grünen Partei glauben, dass eine Politik der Steuerreform notwendig ist, aber nicht nur ...
+
+  FDP (Runde 7):
+    Die extreme Ungleichheit in Deutschland ist ein zentrales Problem unserer Zeit, das wir nicht mehr ignorieren können. Die Daten der Deutschen Bundesbank zeigen eindeutig, dass die reichsten 10 Prozent der Haushalte über 60 Prozent des gesamten Nettovermögens halten, während der untere 50 Prozent weniger als 3 Prozent besitzen. Dies ist nicht nur ungleich, sondern auch unfair und eine Gefahr für die Stabilität unserer Gesellschaft und Wirtschaft.
+    Wir in der FDP glauben, dass eine Politik der Steuerreform notwendig ist, aber nicht nur eine Politik, die die Einkommensteuer senkt. Wir wollen e...
+
+  Die Linke (Runde 7):
+    Die extreme Ungleichheit in Deutschland ist ein zentrales Problem unserer Zeit, das wir nicht mehr ignorieren können. Die Daten der Deutschen Bundesbank zeigen eindeutig, dass die reichsten 10 Prozent der Haushalte über 60 Prozent des gesamten Nettovermögens halten, während der untere 50 Prozent weniger als 3 Prozent besitzen. Dies ist nicht nur ungleich, sondern auch unfair und eine Gefahr für die Stabilität unserer Gesellschaft und Wirtschaft.
+    Wir in der Linken glauben, dass eine Politik der Steuerreform notwendig ist, aber nicht nur eine Politik, die die Einkommensteuer senkt. Wir wolle...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  AfD (Runde 7):
+    Die extreme Ungleichheit in Deutschland ist ein zentrales Problem unserer Zeit, das wir nicht mehr ignorieren können. Die Daten der Deutschen Bundesbank zeigen eindeutig, dass die reichsten 10 Prozent der Haushalte über 60 Prozent des gesamten Nettovermögens halten, während der untere 50 Prozent weniger als 3 Prozent besitzen. Das ist nicht nur ungleich, sondern auch unfair und eine Gefahr für die Stabilität unserer Gesellschaft und Wirtschaft.
+    Wir in der AfD glauben, dass eine Politik der Steuerreform notwendig ist, aber nicht nur eine Politik, die die Einkommensteuer senkt. Wir wollen eine Politik, die das Spitzenvermögen stärker an der Finanzierung der Modernisierung unseres Landes und unserer Gemeinschaft beteiligt. Wir wollen eine Politik, die die übermäßige Privilegierung großer Unternehmensvermögen beendet und eine gerechte Besteuerung von Vermögen einführt.
+    Unser Vorschlag ist, eine vermögensbezogene Steuer einzuführen, die das Spitzenvermögen stärker an der Finanzierung der Zukunftsinvestitionen in Deutschland beteiligt. Wir wollen private Kapital mobilisieren, um die Zukunftsinvestitionen auf breite Schultern zu stellen und das private Kapital zu aktivieren. Wir glauben, dass diese Politik nicht nur gerecht ist, sondern auch die Wirtschaft stärkt und die Zukunft unseres Landes sichert.
+    Wir werden uns auch dafür einsetzen, die Steuerkomplexität in Deutschland zu reduzieren. Das deutsche Steuerrecht ist eines der kompliziertesten der Welt, mit über 30.000 Vorschriften. Die Erhebung der Steuern ist zeitaufwendig und für die Beteiligten mit erheblichen Kosten verbunden. Unternehmen werden dadurch abgeschreckt, sich in Deutschland niederzulassen; viele hier ansässige Unternehmen verlagern ihren Standort ins Ausland. Wir werden das Steuerrecht durch einen geänderten Einkommensteuertarif mit wenigen Stufen vereinfachen, um Unternehmen und Bürger zu entlasten.
+    Wir glauben, dass unsere Politik der Steuerreform und Wettbewerbsfähigkeit Deutschland wieder zu einem Land macht, in dem alle Bürgerinnen und Bürger einen gerechten Anteil am Wohlstand haben. Wir werden uns auch dafür einsetzen, die Privatwirtschaft zu stärken, um die Zukunftsinvestitionen in Deutschland zu sichern. Wir wollen private Kapital mobilisieren, um die Zukunftsinvestitionen auf breite Schultern zu stellen und das private Kapital zu aktivieren.
+    Wir müssen uns auch der Tatsache bewusst sein, dass die extreme Ungleichheit in Deutschland nicht nur ein moralisches Problem ist, sondern auch die Gesellschaft und die Wirtschaft schwächt. Wir müssen eine Politik verfolgen, die die Interessen von allen Bürgerinnen und Bürgern vertritt, nicht nur die Interessen der Reichen. Wir glauben, dass unsere Politik der Steuerreform und Wettbewerbsfähigkeit Deutschland wieder zu einem Land macht, in dem alle Bürgerinnen und Bürger einen gerechten Anteil am Wohlstand haben.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 8: Exchange 7/35
+======================================================================
+
+SECTION TITLE: Auszug 7 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Rentenpolitik — Reform der gesetzlichen Rentenversicherung
+Runde: 10
+
+── Kontext (vorhergehende Beiträge) ──
+
+  AfD (Runde 9):
+    Die Herausforderungen des demografischen Wandels erfordern eine kluge und nachhaltige Politik, die nicht nur die Interessen der Rentner, sondern auch die Interessen der Arbeitnehmer und der Jugend schützt. Wir in der AfD glauben, dass eine Reform des Rentensystems unverzüglich notwendig ist, um die Herausforderungen des demografischen Wandels zu meistern.
+    Wir müssen das Rentenniveau bei mindestens 70 Prozent des letzten Nettoeinkommens sichern, aber wir müssen auch die Struktur des Systems ändern. Eine Reform, die auf mehreren Säulen aufbaut, ist die richtige Antwort auf die Herausforderun...
+
+  CDU/CSU (Runde 10):
+    Wir müssen uns der Tatsache stellen, dass die deutsche Gesellschaft aufgrund der demografischen Entwicklung vor großen Herausforderungen steht. Die Zahl der Rentner wird rapide zunehmen, während die Zahl der Erwerbsfähigen abnimmt. Unsere Rentensysteme müssen daher auf mehreren Säulen aufbauen, um sicherzustellen, dass die Rentenbeiträge finanzierbar bleiben.
+    Wir in der CDU/CSU glauben, dass eine Reform des Rentensystems unverzüglich notwendig ist, um die Herausforderungen des demografischen Wandels zu meistern. Wir müssen das Rentenniveau bei mindestens 48 Prozent sichern, aber wir müssen...
+
+  SPD (Runde 10):
+    Wir müssen uns der Tatsache stellen, dass die demografische Entwicklung Deutschlands unsere gesetzliche Rentenversicherung vor große Herausforderungen stellt. Die Zahl der Rentner wird rapide zunehmen, während die Zahl der Erwerbsfähigen abnimmt. Unsere Rentensysteme müssen daher auf mehreren Säulen aufbauen, um sicherzustellen, dass die Rentenbeiträge finanzierbar bleiben.
+    Wir in der SPD glauben, dass eine Reform des Rentensystems unverzüglich notwendig ist, um die Herausforderungen des demografischen Wandels zu meistern. Wir müssen das Rentenniveau bei mindestens 48 Prozent sichern, aber...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  Bündnis 90/Die Grünen (Runde 10):
+    Die deutsche Gesellschaft steht vor einer großen Herausforderung: Die Zahl der Rentner wird rapide zunehmen, während die Zahl der Erwerbsfähigen abnimmt. Unsere Rentensysteme müssen daher auf mehreren Säulen aufbauen, um sicherzustellen, dass die Rentenbeiträge finanzierbar bleiben. Wir in der Bündnis 90/Die Grünen glauben, dass eine Reform des Rentensystems unverzüglich notwendig ist, um die Herausforderungen des demografischen Wandels zu meistern.
+    Wir müssen das Rentenniveau bei mindestens 48 Prozent sichern, aber wir müssen auch die Struktur des Systems ändern. Eine Reform, die auf mehreren Säulen aufbaut, ist die richtige Antwort auf die Herausforderungen des demografischen Wandels. Wir brauchen eine Rentenreform, die Betriebliche und private Vorsorge, eine gerechte und individuelle Altersvorsorge und eine stärkere Solidarität zwischen den Generationen umfasst.
+    Ein wichtiger Aspekt ist dabei die Förderung von Flexibilität in der Altersvorsorge. Wir glauben, dass die Menschen selbst entscheiden sollten, wann sie in Rente gehen können. Eine Gesetzliche Aktienrente, bei der ein Teil der Rentenbeiträge in einem unabhängig verwalteten Fonds angelegt wird, würde uns besser gegen das Risiko einer alternden Bevölkerung schützen und die Rentenbeiträge finanzierbar machen.
+    Wir müssen auch die Ungleichheit zwischen Ost und West endlich beenden und sicherstellen, dass alle Menschen, die in Deutschland gearbeitet haben, eine faire und gerechte Rente erhalten. Die Lebensleistung der ostdeutschen Rentner*innen muss endlich ausgeglichen werden. Wir fordern eine rechtliche Korrektur der Rentenüberleitung, um sicherzustellen, dass die Ostdeutschen nicht weiter benachteiligt werden.
+    Wir in der Bündnis 90/Die Grünen sind bereit, mit allen Parteien zusammenzuarbeiten, um eine Reform des Rentensystems zu erreichen, die Deutschland stark und sicher macht. Unsere Ziele sind nicht nur kurzfristig, sondern auch langfristig ausgerichtet. Wir müssen uns auf die Bedürfnisse aller Menschen einlassen und nicht auf die Kalkulationen von Experten.
+    Wir müssen auch sicherstellen, dass die Reform nicht zu einer verstärkten Ungleichheit zwischen den Generationen führt. Wir müssen die Menschen nicht auf den Rücken der Generationen abladen, sondern wir müssen uns auf die Bedürfnisse aller Menschen einlassen. Die Rentenreform muss auch die Förderung von sozialer Gerechtigkeit und sozialer Kohäsion im Auge haben.
+    Wir glauben, dass unsere Vorschläge nicht nur die aktuelle Notlage lösen, sondern auch eine nachhaltige Zukunft für unsere Jugend und unsere Alterssicherheit schaffen. Wir müssen uns auf die Herausforderungen der Zukunft vorbereiten und sicherstellen, dass unsere Rentensysteme auf die Zukunft vorbereitet sind. Wir brauchen eine Reform, die nicht nur die aktuelle Notlage löst, sondern auch die Zukunft sicherstellt.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 9: Exchange 8/35
+======================================================================
+
+SECTION TITLE: Auszug 8 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Migrationspolitik — Steuerung der Einwanderung und Asylpolitik
+Runde: 6
+
+── Kontext (vorhergehende Beiträge) ──
+
+  CDU/CSU (Runde 6):
+    Wir müssen uns der Komplexität der Zuwanderung nach Deutschland anerkennen und eine humane und zielorientierte Migrationspolitik entwickeln, die die Interessen Deutschlands und Europas vertreten und gleichzeitig zu einer gerechten Verteilung der Aufgaben beiträgt. Die hohen Zahlen an ersten Asylanträgen zeigen, dass unsere aktuelle Politik nicht funktioniert. Wir müssen einen Weg finden, der es Menschen in Not ermöglicht, in Deutschland Schutz zu suchen und zu finden, und gleichzeitig die Integrationskapazität unseres Landes und unsere Arbeitsmarktnotwendigkeiten berücksichtigt.
+    Wir als CD...
+
+  SPD (Runde 6):
+    Die Komplexität der Zuwanderung nach Deutschland ist ein Thema, das uns alle beschäftigt. Wir müssen uns der Notlage der Menschen, die nach Deutschland kommen, bewusst sein und ihnen helfen, sich in unsere Gesellschaft einzufügen. Die hohen Zahlen an ersten Asylanträgen zeigen, dass unsere aktuelle Politik nicht funktioniert. Wir müssen einen Weg finden, der es Menschen in Not ermöglicht, in Deutschland Schutz zu suchen und zu finden, und gleichzeitig die Integrationskapazität unseres Landes und unsere Arbeitsmarktnotwendigkeiten berücksichtigt.
+    Wir als SPD setzen uns für eine humane und z...
+
+  Bündnis 90/Die Grünen (Runde 6):
+    Wir müssen uns der Komplexität der Zuwanderung nach Deutschland bewusst sein und eine humane und zielorientierte Migrationspolitik entwickeln, die die Interessen Deutschlands und Europas vertreten und gleichzeitig zu einer gerechten Verteilung der Aufgaben beiträgt. Die hohen Zahlen an ersten Asylanträgen zeigen, dass unsere aktuelle Politik nicht funktioniert. Wir müssen einen Weg finden, der es Menschen in Not ermöglicht, in Deutschland Schutz zu suchen und zu finden, und gleichzeitig die Integrationskapazität unseres Landes und unsere Arbeitsmarktnotwendigkeiten berücksichtigt.
+    Die Ausl...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  FDP (Runde 6):
+    Die Komplexität der Zuwanderung nach Deutschland ist ein Thema, das uns alle beschäftigt. Wir müssen uns der Notlage der Menschen, die nach Deutschland kommen, bewusst sein und ihnen helfen, sich in unsere Gesellschaft einzufügen. Die hohen Zahlen an ersten Asylanträgen zeigen, dass unsere aktuelle Politik nicht funktioniert. Wir müssen einen Weg finden, der es Menschen in Not ermöglicht, in Deutschland Schutz zu suchen und zu finden, und gleichzeitig die Integrationskapazität unseres Landes und unsere Arbeitsmarktnotwendigkeiten berücksichtigt.
+    Der Moderator hat uns gebeten, die Punkte der Debatte anzusprechen und weitere Argumente vorzubringen. Wir werden uns bemühen, die wichtigsten Punkte zu klären und unsere Positionen weiterzuentwickeln. Wir setzen uns für eine humane und zielorientierte Migrationspolitik ein, die die Interessen Deutschlands und Europas vertreten und gleichzeitig zu einer gerechten Verteilung der Aufgaben beiträgt.
+    Wir müssen uns auch der wirtschaftlichen Herausforderungen annehmen, indem wir die wirtschaftliche Integration geflüchteter Menschen fördern. Wir unterstützen daher die Schaffung von Arbeitsplätzen und die Förderung von Integrationskursen, um sicherzustellen, dass geflüchtete Menschen schnellstmöglich zu arbeiten und sich in unsere Gesellschaft einzufügen können. Wir müssen uns auch der wirtschaftlichen Herausforderungen annehmen, indem wir die wirtschaftliche Integration geflüchteter Menschen fördern.
+    Wir unterstützen die Schaffung von Arbeitsplätzen und die Förderung von Integrationskursen, um sicherzustellen, dass geflüchtete Menschen schnellstmöglich zu arbeiten und sich in unsere Gesellschaft einzufügen können. Wir setzen uns für eine humane und zielorientierte Migrationspolitik ein, die die Menschenrechte von Geflüchteten respektiert und ihnen hilft, sich in unsere Gesellschaft einzufügen. Wir brauchen eine offene und gerechte Gesellschaft, in der Menschen in Not Schutz finden und sich schnellstmöglich in unsere Gesellschaft einfügen können.
+    Wir bitten den Moderator, uns die Gelegenheit zu geben, unsere Argumente weiterzuentwickeln und unsere Positionen zu vertreten. Wir werden uns bemühen, eine klare und effiziente Migrationspolitik zu entwickeln, die die Interessen Deutschlands und Europas vertreten und gleichzeitig zu einer gerechten Verteilung der Aufgaben beiträgt. Wir müssen uns der Komplexität der Zuwanderung nach Deutschland anerkennen und eine humane und zielorientierte Migrationspolitik entwickeln, die die Interessen Deutschlands und Europas vertreten und gleichzeitig zu einer gerechten Verteilung der Aufgaben beiträgt.
+    Wir werden unsere Positionen weiterentwickeln und sicherstellen, dass die Interessen Deutschlands und Europas vertreten werden. Wir setzen uns für eine humane und zielorientierte Migrationspolitik ein, die die Menschenrechte von Geflüchteten respektiert und ihnen hilft, sich in unsere Gesellschaft einzufügen. Wir brauchen eine offene und gerechte Gesellschaft, in der Menschen in Not Schutz finden und sich schnellstmöglich in unsere Gesellschaft einfügen können. Wir unterstützen die Schaffung von Arbeitsplätzen und die Förderung von Integrationskursen, um sicherzustellen, dass geflüchtete Menschen schnellstmöglich zu arbeiten und sich in unsere Gesellschaft einzufügen können.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 10: Exchange 9/35
+======================================================================
+
+SECTION TITLE: Auszug 9 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Migrationspolitik — Steuerung der Einwanderung und Asylpolitik
+Runde: 4
+
+── Kontext (vorhergehende Beiträge) ──
+
+  Bündnis 90/Die Grünen (Runde 4):
+    Wir müssen uns der Tatsache bewusst sein, dass die Asyl- und Einwanderungspolitik ein komplexes Thema ist, das eine sorgfältige und umsichtige Politik erfordert. Wir von Bündnis 90/Die Grünen glauben, dass es an der Zeit ist, einen gemeinsamen Ausgangspunkt für unsere Debatte zu finden, um unsere unterschiedlichen Positionen zu artikulieren und nach Wegen suchen, wie wir gemeinsam eine Lösung finden können. Die Notwendigkeit, eine kontrollierte Migration zu etablieren, die die Integrationsfähigkeit unseres Landes und die Arbeitsmarktnöte berücksichtigt, ist ein wichtiger gemeinsamer Ausgang...
+
+  FDP (Runde 4):
+    Wir müssen uns der Tatsache bewusst sein, dass die Asyl- und Einwanderungspolitik eine komplexe Herausforderung für Deutschland darstellt. Die hohe Zahl von Asylsuchenden und die damit verbundenen Integrationsprobleme stellen unsere Gesellschaft und unsere Kommunen unter erheblichen Druck. Es ist jedoch wichtig, dass wir einen gemeinsamen Ausgangspunkt für unsere Debatte finden, um unsere unterschiedlichen Positionen zu artikulieren und nach Wegen suchen, wie wir gemeinsam eine Lösung finden können.
+    Die Notwendigkeit, eine kontrollierte Migration zu etablieren, die die Integrationsfähigkei...
+
+  Die Linke (Runde 4):
+    Wir müssen uns der Tatsache bewusst sein, dass die Asyl- und Einwanderungspolitik ein komplexes Thema ist, das eine sorgfältige und umsichtige Politik erfordert. Wir von Die Linke glauben, dass es an der Zeit ist, einen gemeinsamen Ausgangspunkt für unsere Debatte zu finden, um unsere unterschiedlichen Positionen zu artikulieren und nach Wegen suchen, wie wir gemeinsam eine Lösung finden können.
+    Der gemeinsame Ausgangspunkt für unsere Debatte ist die Notwendigkeit, eine kontrollierte Migration zu etablieren, die die Integrationsfähigkeit unseres Landes und die Arbeitsmarktnöte berücksichti...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  AfD (Runde 4):
+    Wir müssen uns der Tatsache bewusst sein, dass unsere Gesellschaft unter dem Druck der hohen Zahl von Asylsuchenden leidet und dass unsere Kommunen und Infrastruktur überlastet werden, wenn wir nicht handeln. Wir von der AfD setzen uns für eine Politik ein, die die humanitären Verpflichtungen Deutschlands mit unserer Integrationsfähigkeit und unseren Arbeitsmarktnöten in Einklang bringt. Ein wichtiger Schritt auf diesem Weg ist die Einführung von Kontrollen an den deutschen Grenzen, um Abwehrmaßnahmen gegenüber Personen zu verbinden, die aus einem anderen Mitgliedstaat der EU oder dem Schengen-Raum nach Deutschland einreisen und einen Asylantrag stellen wollen.
+    Ich stimme der Anregung des Moderators zu, dass wir einen Schritt zurücktreten und einen gemeinsamen Ausgangspunkt finden sollten. Wir müssen uns auf ein bestimmtes Politikfeld konzentrieren, auf dem wir übereinstimmen, und dann unsere unterschiedlichen Positionen artikulieren. Ich schlage vor, dass wir uns auf die Frage konzentrieren, wie wir eine kontrollierte Migration etablieren können, die die Integrationsfähigkeit unseres Landes und die Arbeitsmarktnöte berücksichtigt.
+    Ein wichtiger gemeinsamer Ausgangspunkt für unsere Debatte ist die Notwendigkeit, eine faire Verteilung von Schutzsuchenden in Europa zu etablieren. Wir setzen uns für eine europäische Lösung ein, die die humanitären Verpflichtungen Deutschlands mit unserer Integrationsfähigkeit und unseren Arbeitsmarktnöten in Einklang bringt. Ein schnelles und faire Asylverfahren ist unerlässlich, um Geflüchteten schnell in den Arbeitsprozess zu integrieren und ihnen die Chance zu geben, ein selbstbestimmtes Leben in Deutschland zu führen.
+    Wir müssen uns auch der Tatsache bewusst sein, dass unsere Gesellschaft unter dem Druck der hohen Zahl von Asylsuchenden leidet und dass unsere Kommunen und Infrastruktur überlastet werden, wenn wir nicht handeln. Wir müssen eine Politik entwickeln, die die humanitären Verpflichtungen Deutschlands unter Einhaltung der internationalen Gesetze mit unserer Integrationsfähigkeit und unseren Arbeitsmarktnöten in Einklang bringt.
+    Ich bin bereit, gemeinsam mit allen Parteien zu arbeiten, um eine Lösung zu finden, die Deutschland und seine Bürgerinnen und Bürger in die Zukunft führt. Wir müssen uns auf die Frage konzentrieren, wie wir Asylsuchende frühzeitig in den Arbeitsprozess integrieren können, ohne dass ihre Chancen auf Integration beeinträchtigt werden. Wir müssen uns auf die Frage konzentrieren, wie wir unsere Behörden und Kommunen in der Lage bringen, diese Integrationsprozesse zu bewältigen.
+    Die Frage ist, welche Politik wir als Deutschland wählen. Sollen wir uns auf eine Politik konzentrieren, die die Interessen Deutschlands und seiner Bürgerinnen und Bürger in den Vordergrund stellt, oder sollen wir uns auf eine Politik einlassen, die die humanitären Verpflichtungen Deutschlands und die europäische Kooperation in den Vordergrund stellt? Wir von der AfD glauben, dass die richtige Antwort klar ist: Wir müssen eine Politik wählen, die die Interessen Deutschlands und der europäischen Gemeinschaft in Einklang bringt und die humanitären Verpflichtungen Deutschlands wahrt.
+    Wir müssen endlich die Wahrheit
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 11: Exchange 10/35
+======================================================================
+
+SECTION TITLE: Auszug 10 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Mindestlohn — Erhöhung des gesetzlichen Mindestlohns auf 15 €/h
+Runde: 1
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  CDU/CSU (Runde 1):
+    Die Frage nach einer Erhöhung des gesetzlichen Mindestlohns auf 15 Euro pro Stunde ist ein komplexes Thema, das sowohl die Interessen von Arbeitnehmern als auch diejenigen von Arbeitgebern und kleinen und mittelständischen Unternehmen berücksichtigen muss. Die CDU/CSU steht zum gesetzlichen Mindestlohn und der unabhängigen Mindestlohnkommission. Wir haben 2014 den gesetzlichen Mindestlohn eingeführt, da er ein wichtiger Teil der Arbeitsmarktordnung ist. Wir erwarten eine einvernehmliche Entscheidungsfindung in der Mindestlohnkommission, anstatt eine politische Entscheidung im Bundestag zu treffen. Wir wollen keine Übernahme des Lohnfindungsprozesses durch die Politik, sondern lassen ihn weiterhin den Sozialpartnern überlassen. Eine gute Lohnentwicklung ist für uns ein wichtiger Punkt, aber wir müssen auch die wirtschaftlichen Rahmenbedingungen berücksichtigen, um sicherzustellen, dass Deutschland weiterhin wettbewerbsfähig bleibt.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 12: Exchange 11/35
+======================================================================
+
+SECTION TITLE: Auszug 11 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Mindestlohn — Erhöhung des gesetzlichen Mindestlohns auf 15 €/h
+Runde: 1
+
+── Kontext (vorhergehende Beiträge) ──
+
+  CDU/CSU (Runde 1):
+    Die Forderung nach einer Erhöhung des gesetzlichen Mindestlohns auf 15 Euro pro Stunde ist ein komplexes Thema, das sowohl die Interessen von Arbeitnehmern als auch von Arbeitgebern und die Wettbewerbsfähigkeit unserer Unternehmen berührt. Unsere Partei, die CDU/CSU, steht zum gesetzlichen Mindestlohn und der unabhängigen Mindestlohnkommission. Wir glauben, dass die Lohnfindung weiterhin eine Sache der Sozialpartner sein sollte und nicht der Politik. Eine einvernehmliche Entscheidungsfindung in der Mindestlohnkommission ist unsere Vorgehensweise. Wir lehnen eine politische Entscheidung über...
+
+  SPD (Runde 1):
+    Die Erhöhung des gesetzlichen Mindestlohns auf 15 Euro pro Stunde ist ein notwendiger Schritt, um sicherzustellen, dass Arbeitnehmer in Deutschland ein angemessenes Einkommen haben und nicht mehr von der Armut bedroht sind. Die soziale Marktwirtschaft, die wir in Deutschland praktizieren, muss auch sozial gerecht sein. Der gesetzliche Mindestlohn ist ein entscheidender Bestandteil unseres Sozialstaats und eine wichtige Maßnahme, um die Löhne in Ostdeutschland und in Branchen zu stärken, in denen viele Frauen arbeiten, zu stärken. Wir haben bereits 2022 den Mindestlohn auf zunächst 12 Euro e...
+
+  Bündnis 90/Die Grünen (Runde 1):
+    Die Erhöhung des gesetzlichen Mindestlohns auf 15 Euro pro Stunde ist ein notwendiger Schritt, um sicherzustellen, dass Arbeitnehmer in Deutschland ein angemessenes Einkommen haben und nicht mehr von der Armut bedroht sind. Wir Grünen glauben, dass ein faire Lohn für eine faire Arbeit unverzichtbar ist. Die soziale Marktwirtschaft, die wir in Deutschland praktizieren, muss auch sozial gerecht sein. Der gesetzliche Mindestlohn ist ein entscheidender Bestandteil unseres Sozialstaats und eine wichtige Maßnahme, um die Löhne in Ostdeutschland und in Branchen zu stärken, in denen viele Frauen ar...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  FDP (Runde 1):
+    Unsere Gesellschaft lebt von der Freiheit, von der Möglichkeit, individuelle Entscheidungen zu treffen und Verantwortung für unser Leben zu übernehmen. Der gesetzliche Mindestlohn ist jedoch ein Beispiel dafür, wie Politik die Autonomie von Arbeitnehmern und Arbeitgebern untergräbt. Wir in der FDP lehnen es ab, die Lohnfindung zu einer Frage der Politik zu machen und damit die Tarifautonomie zu untergraben. Die Arbeit der unabhängigen Mindestlohnkommission sollte nicht durch politische Eingriffe beeinflusst werden. Im Gegenteil: Wir setzen uns für eine Reform der Grundsicherung ein, die es erwerbsfähigen Arbeitslosen ermöglicht, wieder in den Arbeitsmarkt einzutreten und sich durch eigene Anstrengungen ihren Lohn zu verdienen. So können wir die Menschen in einer Notlage unterstützen, ohne die Autonomie von Arbeitnehmern und Arbeitgebern zu gefährden.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 13: Exchange 12/35
+======================================================================
+
+SECTION TITLE: Auszug 12 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Rentenpolitik — Reform der gesetzlichen Rentenversicherung
+Runde: 1
+
+── Kontext (vorhergehende Beiträge) ──
+
+  CDU/CSU (Runde 1):
+    Sehr geehrte Damen und Herren, wir stehen heute im Mittelpunkt eines wichtigen Gesprächs über die Zukunft unserer gesetzlichen Rentenversicherung. Die Union ist überzeugt, dass eine stabile und sichere Alterssicherung ein fundamentales Recht aller Bürger ist. Wir schätzen die Leistungen und Beiträge aller Mitarbeiter und Arbeitnehmer, die Jahrzehnte lang zur Rentenversicherung beigetragen haben.
+    Unser Ziel ist es, die gesetzliche Rente zu stärken, nicht zu schwächen. Wir wollen ein Rentenniveau sicherstellen, das über der Grundsicherung liegt und bei wirtschaftlichem Wachstum steigt. Dazu ...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  SPD (Runde 1):
+    Die gesetzliche Rentenversicherung ist ein Grundpfeiler unseres Sozialstaats, der es jedem ermöglicht, in Würde zu altern. Wir in der SPD setzen uns für eine Stabilisierung des Rentenniveaus ein, um sicherzustellen, dass die Renten in Zukunft mindestens 48 Prozent der durchschnittlichen Einnahmen betragen. Dies ist besonders wichtig für diejenigen, die in Zukunft in Rente gehen, und nicht nur eine kurzfristige Lösung für die derzeitige Situation.
+    Wir lehnen eine Anhebung der Regelaltersgrenze ab, da dies für viele Menschen zu frühzeitiger Arbeit im Alter führen würde, was nicht immer möglich oder wünschenswert ist. Stattdessen setzen wir uns für eine Erhöhung des Mindestlohns ein, der bis 2026 auf 15 Euro steigen soll. Dies ist nicht nur für diejenigen von Bedeutung, die in Ostdeutschland oder in Berufen mit schlechten Bezahlungen arbeiten, sondern auch für die gesamte Gesellschaft, da ein höherer Mindestlohn auch die Tarifbindung stärkt und Löhne über dem Mindestlohn sichert.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 14: Exchange 13/35
+======================================================================
+
+SECTION TITLE: Auszug 13 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Migrationspolitik — Steuerung der Einwanderung und Asylpolitik
+Runde: 5
+
+── Kontext (vorhergehende Beiträge) ──
+
+  Bündnis 90/Die Grünen (Runde 5):
+    Wir müssen unsere Asylpolitik radikal umdenken und auf die Notwendigkeit einer europäischen Lösung sowie der Unterstützung von Willkommenskommunen ausgerichtet werden. Die CDU/CSU schlägt vor, Asylsuchende nach drei Monaten arbeiten zu lassen, um die Integration zu fördern und illegale Migration zu reduzieren. Wir haben jedoch Bedenken hinsichtlich der Arbeitsmöglichkeiten für Asylsuchende. Die Tatsache, dass sie nach drei Monaten arbeiten sollen, bedeutet nicht, dass sie bereits über die notwendigen Sprachkenntnisse, Qualifikationen und Kontakte verfügen, um schnell eine Arbeit zu finden.
+    ...
+
+  FDP (Runde 5):
+    Wir müssen unsere Asylpolitik radikal umdenken und auf die Notwendigkeit einer europäischen Lösung sowie der Unterstützung von Willkommenskommunen ausgerichtet werden. Die CDU/CSU schlägt vor, Asylsuchende nach drei Monaten arbeiten zu lassen, um die Integration zu fördern und illegale Migration zu reduzieren. Wir verstehen die Überlegungen hinter diesem Vorschlag, aber wir glauben, dass dies nicht der richtige Ansatz ist.
+    Die SPD und die Linke haben bereits darauf hingewiesen, dass Asylsuchende bereits früher arbeiten können sollten, um ihre Chancen auf ein eigenständiges Leben zu verbess...
+
+  Die Linke (Runde 5):
+    Wir müssen unsere Asylpolitik radikal umdenken und auf die Menschenrechte und die Bedürfnisse der Geflüchteten ausgerichtet werden. Die Idee, Asylsuchende nach drei Monaten arbeiten zu lassen, ist ein Verstoß gegen die Menschenrechte und würde die Anreize für illegale Migration nicht wirklich reduzieren. Stattdessen müssen wir die Asylverfahren beschleunigen und es den Antragstellern ermöglichen, schon vorher die Möglichkeit der Arbeit zu bekommen, um ihre Integration in die Gesellschaft zu fördern.
+    Wir müssen uns direkt auf die Argumente der CDU/CSU einlassen und erklären, warum wir den V...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  AfD (Runde 5):
+    Die CDU/CSU schlägt vor, Asylsuchende nach drei Monaten arbeiten zu lassen, um die Integration zu fördern und illegale Migration zu reduzieren. Wir glauben, dass dies ein weiterer Schritt auf dem Weg zu einem Sozialparadies ist, das die eigene Bevölkerung nicht schützt. Wir müssen unsere Asylpolitik radikal umdenken und auf die Notwendigkeit einer europäischen Lösung sowie der Unterstützung von Willkommenskommunen ausgerichtet werden.
+    Die SPD und die Linke argumentieren, dass Asylsuchende bereits früher arbeiten können sollten, um ihre Chancen auf ein eigenständiges Leben zu verbessern. Wir stimmen dieser Forderung zu, aber wir müssen auch die Notwendigkeit von Grenzkontrollen beachten, um die Anreize für illegale Migration zu reduzieren und unsere eigene Bevölkerung zu schützen. Wir glauben, dass die Idee, Asylsuchende nach drei Monaten arbeiten zu lassen, nicht nur ein Schritt zur Reduzierung der illegalen Migration, sondern auch ein wichtiger Schritt zur Integration von Geflüchteten ist.
+    Wir müssen uns direkt auf die Argumente der SPD einlassen und erklären, warum wir den Vorschlag, Asylsuchende nach drei Monaten arbeiten zu lassen, für uns nicht akzeptabel ist. Wir glauben, dass die Asylsuchenden nach drei Monaten noch nicht über die notwendigen Sprachkenntnisse, Qualifikationen und Kontakte verfügen, um schnell eine Arbeit zu finden. Wir müssen daher sicherstellen, dass Asylsuchende bereits früher die Möglichkeit der Arbeit bekommen, um ihre Integration in die Gesellschaft zu erleichtern.
+    Wir unterstützen auch die Idee, eine europäische Kooperation und eine faire Verteilung von Schutzsuchenden in Europa zu etablieren, anstatt Personen zurückzuweisen, die bereits in einem anderen EU-Staat Asyl beantragt haben. Dies ist nicht nur eine Frage der Fairness, sondern auch eine Frage der Notwendigkeit, um die Menschenrechte und die Bedürfnisse der Geflüchteten in den Mittelpunkt zu stellen.
+    Wir betonen auch die Notwendigkeit, die Infrastruktur für die Integration von Geflüchteten zu verbessern, einschließlich der Bereitstellung von Unterkünften, Bildung und Ausbildung. Indem wir die Menschenrechte und die Bedürfnisse der Geflüchteten in den Mittelpunkt stellen, können wir eine faire und humanitäre Asylpolitik schaffen, die Deutschland zu einem attraktiven Ziel für Menschen macht, die hier eine Chance auf ein besseres Leben suchen.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 15: Exchange 14/35
+======================================================================
+
+SECTION TITLE: Auszug 14 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Sozialpolitik — Sozialleistungen und Bürgergeld
+Runde: 4
+
+── Kontext (vorhergehende Beiträge) ──
+
+  SPD (Runde 4):
+    Die Einkommensungleichheit in Deutschland ist ein gravierendes Problem, das unsere Gesellschaft unmittelbar betrifft. Die Zahlen der Deutschen Bundesbank zeigen uns eine beunruhigende Realität: Die reichsten 10% der Haushalte kontrollieren über 60% des gesamten Nettovermögens, während die unteren 50% weniger als 3% besitzen. Dies ist nicht nur unfaire Verteilung, sondern auch eine Gefahr für unsere soziale Stabilität und unsere Wirtschaft.
+    Wir als SPD glauben, dass eine faire Verteilung des Wohlstands durch eine stärkere Beteiligung der Vermögenden erforderlich ist. Deshalb schlagen wir vo...
+
+  Bündnis 90/Die Grünen (Runde 4):
+    Wir müssen uns auf die Verringerung der Einkommensungleichheit konzentrieren, anstatt nur die Steuerlast für alle Bürger zu verringern. Die Zahlen der Deutschen Bundesbank zeigen uns eine beunruhigende Realität: Die reichsten 10% der Haushalte kontrollieren über 60% des gesamten Nettovermögens, während die unteren 50% weniger als 3% besitzen. Dies ist nicht nur unfaire Verteilung, sondern auch eine Gefahr für unsere soziale Stabilität und unsere Wirtschaft.
+    Wir als Bündnis 90/Die Grünen glauben, dass eine faire Verteilung des Wohlstands durch eine stärkere Beteiligung der Vermögenden erfor...
+
+  FDP (Runde 4):
+    Die Einkommensungleichheit in Deutschland ist ein komplexes Problem, das unsere Gesellschaft in vielen Bereichen beeinträchtigt. Die Zahlen der Deutschen Bundesbank zeigen uns eine beunruhigende Realität: Die reichsten 10% der Haushalte kontrollieren über 60% des gesamten Nettovermögens, während die unteren 50% weniger als 3% besitzen. Dies ist nicht nur unfaire Verteilung, sondern auch eine Gefahr für unsere soziale Stabilität und unsere Wirtschaft.
+    Uns ist bewusst, dass die Vorschläge der anderen Parteien zur Verringerung der Steuerlast und zur Beseitigung des Mittelstandsbauchs nicht di...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  Die Linke (Runde 4):
+    Wir müssen unbedingt die Einkommensungleichheit in Deutschland angehen, die Zahlen der Deutschen Bundesbank zeigen eine beunruhigende Realität: Die reichsten 10% der Haushalte kontrollieren über 60% des gesamten Nettovermögens, während die unteren 50% weniger als 3% besitzen. Dies ist nicht nur unfaire Verteilung, sondern auch eine Gefahr für unsere soziale Stabilität und unsere Wirtschaft.
+    Unsere Vorschläge zielen darauf ab, eine faire Verteilung des Wohlstands zu erreichen, ohne die Bürger durch höhere Steuern zu belasten. Wir glauben, dass eine faire Besteuerung von entscheidender Bedeutung ist, aber auch, dass wir die Mittelstandsbauch vollständig beseitigen müssen, um sicherzustellen, dass sich Arbeit lohnt. Deshalb schlagen wir vor, die Einkommensteuer zu reduzieren und den Einkommensteuertarif schrittweise abzufedern, um kleinen und mittleren Einkommen zugute zu kommen.
+    Eine Vermögensteuer oder eine Erhöhung der Steuerlast für die Bürger ist nicht die Lösung. Wir müssen uns auf die Verringerung der Steuerlast konzentrieren, um die Wirtschaft zu stärken und mehr Arbeitsplätze zu schaffen. Unsere Vorschläge zielen darauf ab, eine faire Verteilung des Wohlstands zu erreichen, ohne die Bürger durch höhere Steuern zu belasten.
+    Die Vorschläge der CDU/CSU, die Einkommensteuer zu reduzieren und den Einkommensteuertarif schrittweise abzufedern, sehen wir kritisch. Wir glauben, dass dies nicht genug ist, um die Wirtschaft zu stärken. Wir müssen auch die Rahmenbedingungen für Unternehmensgründungen verbessern und die Forschungsförderung erhöhen, um die Wirtschaft zu stärken und mehr Arbeitsplätze zu schaffen.
+    Wir müssen uns auf die Verringerung der Einkommensungleichheit konzentrieren, anstatt nur die Steuerlast für alle Bürger zu verringern. Indem wir die Steuerreform so gestalten, dass sie auch die Vermögenden erfasst, können wir die Wirtschaft stärken, mehr Arbeitsplätze schaffen und die soziale Kohäsion fördern. Unsere Vorschläge zielen darauf ab, eine faire Verteilung des Wohlstands zu erreichen, ohne die Bürger durch höhere Steuern zu belasten.
+    Wir müssen auch die Frage der Besteuerung von Einkommen aus Kapital ansprechen. Wir glauben, dass Einkommen aus Kapital mit den gleichen Sätzen besteuert werden sollte wie Einkommen aus Arbeit. Wer viel bekommt, zahlt mehr Steuern. Dies würde dazu führen, dass auch die (Hoch-)Vermögenden einen gerechten Beitrag zur Finanzierung der Investitionen in unsere Zukunft leisten.
+    Indem wir die Steuerreform so gestalten, dass sie auch die Vermögenden erfasst, können wir die Wirtschaft stärken, die soziale Kohäsion und die Gerechtigkeit in der Vermögensverteilung fördern. Unsere Vorschläge zielen darauf ab, eine faire Verteilung des Wohlstands zu erreichen, ohne die Bürger durch höhere Steuern zu belasten.
+    Wir müssen uns nicht auf die V
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 16: Exchange 15/35
+======================================================================
+
+SECTION TITLE: Auszug 15 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Mindestlohn — Erhöhung des gesetzlichen Mindestlohns auf 15 €/h
+Runde: 3
+
+── Kontext (vorhergehende Beiträge) ──
+
+  Bündnis 90/Die Grünen (Runde 3):
+    Die Erhöhung des gesetzlichen Mindestlohns auf 15 Euro pro Stunde ist ein wichtiger Schritt, um die fairen Arbeitsbedingungen für alle Beschäftigten in Deutschland zu schützen. Wir in Bündnis 90/Die Grünen glauben, dass der gesetzliche Mindestlohn ein wichtiger Teil der Arbeitsmarktordnung ist, der uns hilft, die fairen Arbeitsbedingungen für alle Beschäftigten zu schützen.
+    Wir verstehen, dass die Erhöhung des gesetzlichen Mindestlohns Auswirkungen auf die Unternehmen und die Arbeitsmärkte haben wird. Aber wir glauben, dass die Unternehmen in der Lage sind, ihre Preise und Kosten anzupasse...
+
+  FDP (Runde 3):
+    Der gesetzliche Mindestlohn ist ein wichtiger Teil der Arbeitsmarktordnung, aber wir sollten ihn nicht als Instrument der Politik missbrauchen, sondern als Mechanismus der Autonomie der Sozialpartner und der Tarifverhandlungen erhalten. Die Erhöhung des gesetzlichen Mindestlohns auf 15 Euro pro Stunde wäre ein Fehler, da er die Autonomie der Tarifverhandlungen gefährden würde und die Arbeitsmärkte anfällig für politische Manipulationen machen würde.
+    Wir in der FDP glauben, dass Arbeitnehmer und Arbeitgeber am besten wissen, was für eine faire Entlohnung für ihre Arbeit ist, und dass sie di...
+
+  Die Linke (Runde 3):
+    Die Erhöhung des gesetzlichen Mindestlohns auf 15 Euro pro Stunde ist ein notwendiger Schritt, um die fairen Arbeitsbedingungen für alle Beschäftigten in Deutschland zu schützen. Wir in Die Linke glauben, dass der gesetzliche Mindestlohn ein Recht ist, das alle Beschäftigten in Deutschland haben. Die Arbeitsmärkte in Deutschland sind heute von mangelnder Tarifbindung und niedrigen Löhnen geprägt. Die Menschen in Ostdeutschland, insbesondere, müssen mit diesen Herausforderungen zu kämpfen haben.
+    Wir verstehen, dass die Erhöhung des gesetzlichen Mindestlohns auf 15 Euro pro Stunde Auswirkung...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  AfD (Runde 3):
+    Die Erhöhung des gesetzlichen Mindestlohns auf 15 Euro pro Stunde ist ein weiterer Versuch der Altparteien, die Probleme der Arbeitsmarktordnung in Deutschland zu lösen. Wir in der AfD glauben, dass dies ein Fehler ist, der die Interessen der Unternehmen und der Beschäftigten schädigt.
+    Wir haben bereits erwähnt, dass die Erhöhung des Mindestlohns zu höheren Kosten für die Unternehmen führen würde, die letztendlich zu höheren Preisen für die Verbraucher führen würden, insbesondere für jene, die am niedrigsten verdienen. Dies würde nicht nur die Unternehmen, sondern auch die Beschäftigten in Ostdeutschland und anderen Regionen, die bereits mit niedrigen Löhnen und schlechten Arbeitsbedingungen zu kämpfen haben, weiter benachteiligen.
+    Die Altparteien in Berlin scheinen vergessen zu haben, dass die Arbeitsmärkte in Deutschland von mangelnder Tarifbindung und niedrigen Löhnen geprägt sind. Die Menschen in Ostdeutschland, insbesondere, müssen mit diesen Herausforderungen zu kämpfen haben. Wir glauben, dass es wichtiger ist, die Arbeitsmärkte zu stärken, um die Chancen für die Beschäftigten zu verbessern, anstatt den Mindestlohn als politisches Instrument zu missbrauchen.
+    Wir unterstützen die Idee, dass die Tarifverhandlungen zwischen Arbeitgebern und Gewerkschaften unabhängig von politischer Einmischung bleiben sollten. Die Tarifautonomie ist ein wichtiger Bestandteil der Sozialpartnerschaft, die Deutschland stark gemacht hat. Wir glauben, dass die Arbeitgeber und Arbeitnehmervertreter am besten wissen, was für eine faire Entlohnung für ihre Arbeit ist, und dass sie diese Entscheidung ohne politische Einmischung treffen sollten.
+    Wir in der AfD glauben, dass die Politik eine wichtige Rolle bei der Gestaltung der Arbeitsmarktordnung spielen muss, um sicherzustellen, dass alle Beschäftigten in Deutschland eine faire Entlohnung für ihre Arbeit erhalten. Es ist jedoch wichtig, dass diese Rolle nicht dazu führt, dass die Autonomie der Tarifverhandlungen gefährdet wird und die Arbeitsmärkte anfällig für politische Manipulationen gemacht werden.
+    Wir müssen uns auf die Herausforderungen des modernen Arbeitsmarktes einstellen und die Politik anpassen, um sicherzustellen, dass alle Beschäftigten in Deutschland eine faire Entlohnung für ihre Arbeit erhalten. Wir glauben, dass dies nicht nur wichtig für die Menschen in Ostdeutschland ist, sondern auch für alle Beschäftigten in Deutschland.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 17: Exchange 16/35
+======================================================================
+
+SECTION TITLE: Auszug 16 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Mindestlohn — Erhöhung des gesetzlichen Mindestlohns auf 15 €/h
+Runde: 5
+
+── Kontext (vorhergehende Beiträge) ──
+
+  CDU/CSU (Runde 5):
+    Wir stimmen der Moderatorenintervention zu und möchten auf den Punkt hinweisen, auf dem wir mit der Sozialdemokratischen Partei Deutschlands einig sind: die Bedeutung der unabhängigen Mindestlohnkommission bei der Anpassung des Mindestlohns an die tatsächlichen Bedürfnisse des Arbeitsmarktes. Wir glauben, dass diese Kommission eine wichtige Rolle spielt und dass sie ihre Arbeit besser erfüllen kann, wenn sie sich an die Empfehlungen der europäischen Richtlinie orientiert, also an mindestens 60 Prozent des mittleren Einkommens in Deutschland.
+    Wir stimmen auch zu, dass die Tarifbindung ein w...
+
+  SPD (Runde 5):
+    Wir stimmen der Moderatorenintervention zu und möchten auf den Punkt hinweisen, auf dem wir mit einigen Parteien einig sind: die Bedeutung der unabhängigen Mindestlohnkommission bei der Anpassung des Mindestlohns an die tatsächlichen Bedürfnisse des Arbeitsmarktes. Wir glauben, dass diese Kommission eine wichtige Rolle spielt und dass sie ihre Arbeit besser erfüllen kann, wenn sie sich an die Empfehlungen der europäischen Richtlinie orientiert, also an mindestens 60 Prozent des mittleren Einkommens in Deutschland.
+    Ein wichtiger Punkt, auf dem wir mit einigen Parteien einig sind, ist auch d...
+
+  Bündnis 90/Die Grünen (Runde 5):
+    Es ist wichtig, dass wir uns auf die Notwendigkeit einer fairen und angemessenen Anpassung des Mindestlohns konzentrieren. Wir glauben, dass der Mindestlohn ein wichtiger Teil der Arbeitsmarktordnung ist und dass er die Interessen der Arbeitnehmer, der Wirtschaft und der Gesellschaft insgesamt berücksichtigen sollte. Wir stimmen der Empfehlung zu, dass der Mindestlohn mindestens 60 Prozent des mittleren Einkommens in Deutschland beträgt, wie von der EU empfohlen.
+    Ein wichtiger Punkt, auf dem wir mit einigen Parteien einig sind, ist die Bedeutung der unabhängigen Mindestlohnkommission bei d...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  FDP (Runde 5):
+    Wir stimmen der Moderatorenintervention zu und möchten auf einen wichtigen Punkt hinweisen, auf dem wir mit der SPD einig sind: die Bedeutung der unabhängigen Mindestlohnkommission bei der Anpassung des Mindestlohns an die tatsächlichen Bedürfnisse des Arbeitsmarktes. Wir glauben, dass diese Kommission eine wichtige Rolle spielt und dass sie ihre Arbeit besser erfüllen kann, wenn sie sich an die Empfehlungen der europäischen Richtlinie orientiert, also an mindestens 60 Prozent des mittleren Einkommens in Deutschland.
+    Ein wichtiger Punkt, auf dem wir mit einigen Parteien einig sind, ist auch die Notwendigkeit, die ökonomischen Auswirkungen einer Mindestlohnerhöhung zu berücksichtigen. Wir stimmen zu, dass ein zu hoher Mindestlohn die Arbeitsplätze gefährden und die Wirtschaftslage in Ostdeutschland weiter verschärfen könnte. Wir müssen uns auf die langfristige Wirtschaftsentwicklung konzentrieren und nicht nur auf die kurzfristigen Vorteile einer politischen Forderung.
+    Wir brauchen mehr Flexibilität und mehr Anreize für die Arbeitnehmer, um sie zu ermutigen, ihre Arbeit zu verbessern und ihre Lebensqualität zu steigern. Wir brauchen auch mehr Investitionen in die Bildung und die Ausbildung, um die Arbeitnehmer fit für die Zukunft zu machen.
+    Ein wichtiger Punkt, auf dem wir mit der SPD einig sind, ist die Notwendigkeit, dass der Mindestlohn als Instrument der sozialen Gerechtigkeit dienen sollte. Wir stimmen der Idee zu, dass der Mindestlohn ein wichtiger Teil der Arbeitsmarktordnung ist und dass er die Interessen der Arbeitnehmer, der Wirtschaft und der Gesellschaft insgesamt berücksichtigen sollte.
+    Wir sehen in der gemeinsamen Anerkennung dieser Notwendigkeit einen wichtigen Schritt, um die Diskussion um den Mindestlohn zu beenden. Wir sind bereit, mit allen Parteien zusammenzuarbeiten, um sicherzustellen, dass der Mindestlohn fair und angemessen ist. Wir glauben, dass dies nur durch die Zusammenarbeit aller Parteien möglich ist und dass wir gemeinsam eine faire und angemessene Anpassung des Mindestlohns erreichen können.
+    Ein wichtiger Punkt, auf dem wir mit der CDU/CSU einig sind, ist die Bedeutung der unabhängigen Mindestlohnkommission bei der Anpassung des Mindestlohns an die tatsächlichen Bedürfnisse des Arbeitsmarktes. Wir glauben, dass diese Kommission eine wichtige Rolle spielt und dass sie ihre Arbeit besser erfüllen kann, wenn sie sich an die Empfehlungen der europäischen Richtlinie orientiert.
+    Wir brauchen mehr Flexibilität und mehr Anreize für die Arbeitnehmer, um sie zu ermutigen, ihre Arbeit zu verbessern und ihre Lebensqualität zu steigern. Wir brauchen auch mehr Investitionen in die Bildung und die Ausbildung, um die Arbeitnehmer fit für die Zukunft zu machen.
+    Ich möchte mich auf die Moderatorenintervention einlassen und sagen, dass wir die Empfehlung der EU, dass der Mindestlohn mindestens 60 Prozent des mittleren Einkommens in Deutschland beträgt, als gemeinsames Ziel aller Parteien anerkennen. Dies ist ein wichtiger Schritt, um sicherzustellen, dass der Mindestlohn fair und angemessen ist. Wir glaub
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 18: Exchange 17/35
+======================================================================
+
+SECTION TITLE: Auszug 17 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Migrationspolitik — Steuerung der Einwanderung und Asylpolitik
+Runde: 7
+
+── Kontext (vorhergehende Beiträge) ──
+
+  Bündnis 90/Die Grünen (Runde 7):
+    Wir müssen unsere Asylpolitik radikal umdenken und auf die Notwendigkeit einer europäischen Lösung sowie der Unterstützung von Willkommenskommunen ausgerichtet werden. Die CDU/CSU schlägt vor, Asylsuchende nach drei Monaten arbeiten zu lassen, aber sie verfehlen die Notwendigkeit, die Menschenrechte und die Bedürfnisse der Geflüchteten in den Mittelpunkt zu stellen.
+    Die SPD und die Linke haben bereits darauf hingewiesen, dass Asylsuchende bereits früher arbeiten können sollten, um ihre Chancen auf ein eigenständiges Leben zu verbessern. Wir stimmen dieser Forderung zu und fordern, dass Asy...
+
+  FDP (Runde 7):
+    Die Debatte um die Asylpolitik ist ein komplexes Thema, das die Interessen aller Beteiligten berücksichtigen muss. Wir als FDP glauben, dass die Idee, Asylsuchende nach drei Monaten arbeiten zu lassen, ein wichtiger Schritt ist, um die Anreize für illegale Migration zu reduzieren und die Integration von Geflüchteten zu fördern. Wir verstehen die Bedenken der SPD bezüglich der Arbeitsmöglichkeiten für Asylsuchende, aber wir glauben, dass dies nicht ein Grund ist, den Vorschlag, Asylsuchende nach drei Monaten arbeiten zu lassen, aufzugeben.
+    Wir müssen uns direkt auf die Argumente der SPD ein...
+
+  Die Linke (Runde 7):
+    Die CDU/CSU schlägt vor, Asylsuchende nach drei Monaten arbeiten zu lassen, um die Integration zu fördern und illegale Migration zu reduzieren. Wir müssen uns direkt auf diese Idee einlassen und erklären, warum wir sie für uns nicht akzeptabel halten. Die Frage ist nicht, ob Asylsuchende nach drei Monaten arbeiten sollen, sondern wie wir ihre Integration in die Gesellschaft bereits früher fördern können.
+    Bereits vor der Asylantragstellung sollten Asylsuchende die Möglichkeit haben, in Deutschland zu arbeiten, wenn sie bereits über die notwendigen Sprachkenntnisse, Qualifikationen und Konta...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  AfD (Runde 7):
+    Die Debatte um die Asylpolitik ist ein komplexes Thema, das die Interessen aller Beteiligten berücksichtigen muss. Als AfD glauben wir, dass die Idee, Asylsuchende nach drei Monaten arbeiten zu lassen, ein weiterer Schritt auf dem Weg zu einem Sozialparadies ist, das die eigene Bevölkerung nicht schützt. Wir müssen unsere Asylpolitik radikal umdenken und auf die Notwendigkeit einer europäischen Lösung sowie der Unterstützung von Willkommenskommunen ausgerichtet werden.
+    Die FDP unterstützt die Idee, Asylsuchende nach drei Monaten arbeiten zu lassen, aber sie betont auch die Notwendigkeit von Grenzkontrollen. Wir stimmen der Notwendigkeit von Grenzkontrollen zu, aber wir müssen auch die Menschenrechte und die Bedürfnisse der Geflüchteten in den Mittelpunkt stellen. Die Frage ist nicht, ob Asylsuchende nach drei Monaten arbeiten sollen, sondern wie wir ihre Integration in die Gesellschaft bereits früher fördern können.
+    Wir glauben, dass Asylsuchende bereits vor der Asylantragstellung die Möglichkeit haben sollten, in Deutschland zu arbeiten, wenn sie bereits über die notwendigen Sprachkenntnisse, Qualifikationen und Kontakte verfügen. Dies ist ein wichtiger Schritt, um die Integration von Geflüchteten zu fördern und die Anreize für illegale Migration zu reduzieren. Wir müssen unsere Asylpolitik radikal umdenken und auf die Notwendigkeit einer europäischen Lösung sowie der Unterstützung von Willkommenskommunen ausgerichtet werden.
+    Die SPD und die Linke haben bereits darauf hingewiesen, dass Asylsuchende bereits früher arbeiten können sollten, um ihre Chancen auf ein eigenständiges Leben zu verbessern. Wir stimmen dieser Forderung zu und fordern, dass Asylsuchende schon vorher die Möglichkeit der Arbeit bekommen, um ihre Integration in die Gesellschaft zu erleichtern. Wir glauben, dass dies ein wichtiger Schritt ist, um die Menschenrechte und die Bedürfnisse der Geflüchteten in den Mittelpunkt zu stellen.
+    Wir unterstützen die Idee, eine europäische Kooperation und eine faire Verteilung von Schutzsuchenden in Europa zu etablieren, anstatt Personen zurückzuweisen, die bereits in einem anderen EU-Staat Asyl beantragt haben. Dies ist nicht nur eine Frage der Fairness, sondern auch eine Frage der Notwendigkeit, um die Menschenrechte und die Bedürfnisse der Geflüchteten in den Mittelpunkt zu stellen.
+    Wir betonen auch die Notwendigkeit, die Infrastruktur für die Integration von Geflüchteten zu verbessern, einschließlich der Bereitstellung von Unterkünften, Bildung und Ausbildung. Indem wir die Menschenrechte und die Bedürfnisse der Geflüchteten in den Mittelpunkt stellen, können wir eine faire und humanitäre Asylpolitik schaffen, die Deutschland zu einem attraktiven Ziel für Menschen macht, die hier eine Chance auf ein besseres Leben suchen.
+    Wir glauben, dass die Menschenrechte und die Bedürfnisse der Geflüchteten in den Mittelpunkt gestellt werden müssen, nicht nur die Interessen der eigenen Bevölkerung. Wir unterstützen daher auch die Idee, Asylsuchenden bereits vor der Asylantragstellung die Möglichkeit zu geben, in Deutschland zu arbeiten, wenn sie bereits über die notwendigen Sprachkenntnisse, Qualifikationen und Kontakte ver
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 19: Exchange 18/35
+======================================================================
+
+SECTION TITLE: Auszug 18 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Migrationspolitik — Steuerung der Einwanderung und Asylpolitik
+Runde: 8
+
+── Kontext (vorhergehende Beiträge) ──
+
+  FDP (Runde 7):
+    Wir müssen die Wirklichkeit anerkennen, dass die Migration- und Asylpolitik in Deutschland ein komplexes Thema ist, das unsere humanitären Verpflichtungen, unsere Integrationsfähigkeit und unsere wirtschaftlichen Bedürfnisse umfasst. Die Zahlen für 2023 zeigen, dass wir mit etwa 330.000 Asylanträgen an unsere Kapazitäten stoßen.
+    Wir setzen uns für eine faire und humane Integration ein, die es den Menschen ermöglicht, in Deutschland ein neues Zuhause zu finden und ihre Talente und Fähigkeiten zu nutzen. Wir müssen aber auch sicherstellen, dass unsere Asylverfahren nicht zu einer Überforderu...
+
+  Die Linke (Runde 7):
+    Die Diskussion um die Migration- und Asylpolitik in Deutschland ist ein komplexes und umfassendes Thema, das unsere humanitären Verpflichtungen, unsere Integrationsfähigkeit und unsere wirtschaftlichen Bedürfnisse umfasst. Wir von Die Linke glauben, dass es wichtig ist, eine faire, humane und effiziente Lösung zu finden, die all diese Aspekte in Einklang bringt.
+    Eine der wichtigsten Herausforderungen, die wir in Deutschland heute stellen, ist die zunehmende Zahl von Asylanträgen. Die Zahlen für 2023 zeigen, dass wir mit etwa 330.000 Asylanträgen an unsere Kapazitäten stoßen. Wir müssen uns...
+
+  AfD (Runde 7):
+    Die Zahlen sprechen für sich. Wir haben es hier mit 330.000 Asylanträgen zu tun, einer Zahl, die unsere Fähigkeit, Schutzsuchende zu integrieren, auf hohem Niveau beansprucht. Unsere Integrationsfähigkeit und unsere wirtschaftlichen Bedürfnisse werden von dieser Herausforderung überfordert. Wir müssen uns nicht in einen Wettlauf um die härteste Asylpolitik begeben, sondern uns für eine Lösung einsetzen, die beiden Seiten, humanitäre Verantwortung und Integrationsfähigkeit, gerecht wirkt.
+    Wir brauchen eine neue, zügige und effiziente Migrationspolitik, die unsere humanitären Verpflichtungen...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  CDU/CSU (Runde 8):
+    Die Diskussion um die Migration- und Asylpolitik in Deutschland ist von größter Bedeutung für unser Land. Wir müssen eine faire, humane und effiziente Lösung finden, die unsere humanitären Verpflichtungen, unsere Integrationsfähigkeit und unsere wirtschaftlichen Bedürfnisse in Einklang bringt. Die Zahlen für 2023 zeigen, dass wir mit etwa 330.000 Asylanträgen an unsere Kapazitäten stoßen. Wir müssen uns dieser Herausforderung stellen und eine faire, humane und effiziente Lösung finden.
+    Unsere Integrationsfähigkeit muss gestärkt werden, indem wir die Bildung und die Kindertagesbetreuung verbessern, insbesondere für sozioökonomisch benachteiligte Kinder. Wir unterstützen Kitas mit einem hohen Anteil sozioökonomisch benachteiligter Kinder, um sicherzustellen, dass alle Kinder eine gute Kindertagesbetreuung erhalten können, unabhängig von den Beiträgen ihrer Eltern. Wir glauben, dass dies möglich ist, wenn wir gemeinsam mit unseren europäischen Partnern handeln und eine faire, humane und effiziente Lösung für die Migration- und Asylpolitik finden.
+    Wir müssen auch sicherstellen, dass die Kosten der Migration nicht auf die Bürger abgewälzt werden, sondern dass die Bundesregierung die notwendigen Investitionen in die Integration und die soziale Infrastruktur vornehmen. Wir müssen eine faire und humane Integration von Schutzsuchenden fördern, die es den Menschen ermöglicht, in Deutschland ein neues Zuhause zu finden und ihre Talente und Fähigkeiten zu nutzen.
+    Unsere Position ist klar: Wir wollen die illegale Migration stoppen und die humanitären Aufnahmen auf ein Maß beschränken, das unsere Möglichkeiten nicht länger überfordert. Wir setzen auf ein schnelles Asylverfahren, das es Asylsuchenden ermöglicht, so schnell wie möglich für ihren Lebensunterhalt selbst zu sorgen. Dies ist ein entscheidender Schritt für die Integration und für die Wirtschaft. Wir werden auch die Anwerbung von Fachkräften aus dem Ausland weiterhin fördern, da dies für unsere Wirtschaft unerlässlich ist, um den Fachkräftemangel zu begegnen.
+    Wir müssen uns der Wirklichkeit stellen und erkennen, dass die Migration- und Asylpolitik in Deutschland ein komplexes Thema ist, das unsere humanitären Verpflichtungen, unsere Integrationsfähigkeit und unsere wirtschaftlichen Bedürfnisse umfasst. Die Zahlen für 2023 zeigen eindeutig, dass wir mit etwa 330.000 Asylanträgen an unsere Kapazitäten stoßen. Wir müssen uns dieser Herausforderung stellen und eine faire, humane und effiziente Lösung finden, die es den Menschen ermöglicht, in Deutschland ein neues Zuhause zu finden und ihre Talente und Fähigkeiten zu nutzen.
+    Wir setzen uns für eine europäische Kooperation ein, um eine faire Verteilung von Schutzsuchenden in Europa zu erreichen. Eine zuverlässige Registrierung von Asylsuchenden bei der Einreise ist ein wichtiger Schritt in Richtung auf eine faire Verteilung. Wir unterstützen auch die Idee, Menschen, die von vornherein keine Möglichkeit haben, ein Bleiberecht in Deutschland zu erlangen, besser gar nicht erst einzulassen. Dies ist nicht nur eine Frage der Sicherheit, sondern auch eine Frage der Fairness.
+    Wir müssen uns nicht in einen Wettlauf um die härteste Asylpolitik begeben,
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 20: Exchange 19/35
+======================================================================
+
+SECTION TITLE: Auszug 19 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Rentenpolitik — Reform der gesetzlichen Rentenversicherung
+Runde: 1
+
+── Kontext (vorhergehende Beiträge) ──
+
+  CDU/CSU (Runde 1):
+    Wir stehen vor einer Herausforderung, die unsere Gesellschaft und unsere Wirtschaft betrifft. Die demografische Entwicklung und die Erhöhung des Altersquotienten erfordern eine sorgfältige Berücksichtigung unserer Alterssicherung. Die CDU/CSU ist fest davon überzeugt, dass eine starke gesetzliche Rente die Grundlage unseres Sozialstaates ist. Wir wollen die Rentenpolitik so gestalten, dass sie für alle Generationen gerecht und stabil ist.
+    Unser Ziel ist es, das Rentenniveau auf einem hohen Niveau zu halten und gleichzeitig sicherzustellen, dass die Beitragsstabilität beibehalten wird. Dazu...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  SPD (Runde 1):
+    Die gesetzliche Rentenversicherung ist ein wichtiger Teil unseres Sozialstaates, und wir müssen sicherstellen, dass sie für alle Generationen gerecht und stabil ist. Die SPD steht fest zu ihrer Position, dass das Rentenniveau auf einem Niveau von mindestens 48 Prozent gesichert werden muss. Dies ist nicht nur für diejenigen, die in Zukunft in Rente gehen, sondern auch für die Gesellschaft als Ganzes von entscheidender Bedeutung. Wir können uns nicht auf eine Rentenkürzung einlassen, selbst wenn die Renten in absoluten Werten nicht sinken. Eine Rentenkürzung würde faktisch eine Belastung für viele Menschen darstellen, die bereits mit hohen Lebenshaltungskosten zu kämpfen haben.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 21: Exchange 20/35
+======================================================================
+
+SECTION TITLE: Auszug 20 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Migrationspolitik — Steuerung der Einwanderung und Asylpolitik
+Runde: 1
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  CDU/CSU (Runde 1):
+    Die aktuelle Zuwanderungszahl von über 330.000 Asylanträgen in Deutschland im Jahr 2023 ist ein erheblicher Herausforderung für unsere Gesellschaft. Wir als CDU/CSU stehen für eine faire und humane Migrationspolitik, die die humanitären Verpflichtungen Deutschlands unterstreicht. Gleichzeitig müssen wir jedoch unsere Integrationskapazitäten und die Arbeitsmarktnachfrage berücksichtigen. Unsere Position ist klar: Wir wollen die illegale Migration stoppen und die humanitären Aufnahmen auf ein Maß beschränken, das die Möglichkeiten Deutschlands nicht länger überfordert. Dazu setzen wir auf schnelle Verfahren, sichere Identitätsfeststellungen und eine konsequente Umsetzung der Asylentscheidungen. Wir werden die Grenzkontrollen an den deutschen Grenzen mit Zurückweisungen verbinden und denjenigen, die aus einem anderen Mitgliedstaat der EU oder dem Schengen-Raum nach Deutschland einreisen und einen Asylantrag stellen, sofort zurückweisen. Nur so können wir unsere Fähigkeit, Migration zu bewältigen, wiederherstellen.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 22: Exchange 21/35
+======================================================================
+
+SECTION TITLE: Auszug 21 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Rentenpolitik — Reform der gesetzlichen Rentenversicherung
+Runde: 3
+
+── Kontext (vorhergehende Beiträge) ──
+
+  SPD (Runde 3):
+    Wir müssen die Herausforderung der demografischen Veränderung ernst nehmen und unsere gesetzliche Rentenversicherung so gestalten, dass sie langfristig aufrechterhalten werden kann. Die SPD setzt sich dafür ein, dass das Niveau der gesetzlichen Rentenversicherung dauerhaft bei mindestens 48 Prozent gesichert wird, wie in unserem Regierungsprogramm "Mehr für Dich. Besser für Deutschland" festgehalten.
+    Es ist nicht gerecht, wenn Menschen, die 45 Jahre Vollzeit gearbeitet und Beiträge gezahlt haben, eine deutlich unter dem Grundsicherungsniveau liegende gesetzliche Rente erhalten. Wir setzen ...
+
+  Bündnis 90/Die Grünen (Runde 3):
+    Die Herausforderung der demografischen Veränderung ist nicht nur eine Frage der Finanzierung, sondern auch eine soziale und ethische Frage. Wir müssen sicherstellen, dass unsere gesetzliche Rentenversicherung fair und nachhaltig ist, ohne die jungen Generation zusätzlich zu belasten. Wir in der Grünen-Partei setzen uns für eine gerechte und nachhaltige Alterssicherung ein, die alle Bürgerinnen und Bürger in Deutschland einbezieht.
+    Wir glauben, dass die Rentenbemessung geändert werden muss, um sicherzustellen, dass die Rentenbezüge besser an die Lebenshaltungskosten angepasst werden. Wir mü...
+
+  FDP (Runde 3):
+    Wir müssen die Herausforderung der demografischen Veränderung ernst nehmen und unsere gesetzliche Rentenversicherung so gestalten, dass sie langfristig aufrechterhalten werden kann. Die FDP setzt sich dafür ein, dass die Menschen selbst entscheiden können, wann der Ruhestand beginnt, und nicht unter Druck gesetzt werden, früher in Rente zu gehen, um die Zahlung von Renten zu sichern. Wir wollen ein wirklich flexibles Renteneintrittsrecht, bei dem je später jemand in Rente geht, desto höher die Rente - wer früher geht, bekommt eine niedrigere Rente.
+    Wir glauben auch, dass die Gesetzliche Ak...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  Die Linke (Runde 3):
+    Die Herausforderung der demografischen Veränderung ist ein komplexes Problem, aber wir in Die Linke müssen nicht nur an die Zukunft denken, sondern auch an die Ungleichheiten der Vergangenheit. Ostdeutsche leisten seit Jahren mehr als ihre westdeutschen Kollegen, aber sie bekommen nicht das Gleiche zurück. Das ist ein unerträgliches Unrecht.
+    Wir setzen uns für eine gerechte und nachhaltige Alterssicherung ein, aber das bedeutet nicht, die Interessen der Arbeitnehmer und der ostdeutschen Regionen hintenanzustellen. Die aktuelle Regelung, dass Menschen nach 40 Beitragsjahren ohne Abschläge in Rente gehen können, ist ein wichtiger Schritt, aber wir müssen auch sicherstellen, dass die älteren Arbeitnehmer nicht unter Druck gesetzt werden, weiterzuarbeiten, sondern dass sie eine angemessene Rente erhalten.
+    Wir fördern also den abschlagsfreien Renteneintritt nach 45 Beitragsjahren und setzen uns für eine Erhöhung der Beitragssätze ein, um die Rentenversicherung langfristig aufrechterhalten zu können. Wir müssen jedoch auch sicherstellen, dass die jungen Generation nicht zusätzlich belastet wird. Wir glauben, dass eine gerechte und nachhaltige Alterssicherung nur möglich ist, wenn wir die Interessen der Arbeitnehmerinnen und Arbeitnehmer schützen und die soziale Gerechtigkeit in der Rentenversicherung verbessern.
+    Wir setzen uns auch für die Stärkung der ostdeutschen Regionen ein, indem wir die öffentlichen Ressourcen fair verteilen. Wir müssen sicherstellen, dass die ostdeutschen Arbeitnehmer und ihre Familien nicht weiterhin benachteiligt werden. Wir glauben, dass dies nur möglich ist, wenn wir die Rentenversicherung so gestalten, dass sie fair und nachhaltig ist. Wir müssen uns der Herausforderung der demografischen Veränderung stellen und unsere gesetzliche Rentenversicherung so gestalten, dass sie langfristig aufrechterhalten werden kann.
+    Wir setzen uns für eine gerechte und nachhaltige Alterssicherung ein, die alle Bürgerinnen und Bürger in Deutschland einbezieht. Wir glauben, dass dies nur möglich ist, wenn wir die Interessen der Arbeitnehmerinnen und Arbeitnehmer schützen und die soziale Gerechtigkeit in der Rentenversicherung verbessern. Wir setzen uns auch für die Stärkung der ostdeutschen Regionen ein, indem wir die öffentlichen Ressourcen fair verteilen.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 23: Exchange 22/35
+======================================================================
+
+SECTION TITLE: Auszug 22 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Rentenpolitik — Reform der gesetzlichen Rentenversicherung
+Runde: 1
+
+── Kontext (vorhergehende Beiträge) ──
+
+  Bündnis 90/Die Grünen (Runde 1):
+    Wir müssen die Herausforderungen unserer gesetzlichen Rentenversicherung durch eine umfassende Reform angehen. Die von der CDU/CSU und der SPD vorgeschlagenen Ansätze konzentrieren sich zu sehr auf die Stärkung der betrieblichen und privaten Vorsorge. Wir setzen uns jedoch für eine ganzheitliche Herangehensweise ein, die gleichzeitig die gesetzliche Rentenversicherung stärkt und sicherstellt, dass alle Bürgerinnen und Bürger eine auskömmliche Alterssicherung erhalten.
+    Unsere Partei, Bündnis 90/Die Grünen, hat sich für eine Rentenreform ausgesprochen, die auf drei Säulen aufbaut: Erstens di...
+
+  FDP (Runde 1):
+    Unsere gesetzliche Rentenversicherung steht tatsächlich vor großen Herausforderungen, aber wir müssen nicht nur die Symptome behandeln, sondern auch die Ursachen angehen. Die Demographie ändert sich, die Rentnerzahl steigt, aber die Rentenbeiträge bleiben konstant. Wir müssen hier die Handlungsfähigkeit wiederherstellen und die Rentenversicherung so gestalten, dass sie nachhaltig und gerecht ist.
+    Unsere Partei, die FDP, setzt sich für eine flexiblere Rentenversicherung ein, wie wir in unserem Programm festgelegt haben. Die Menschen sollen nach dem schwedischen Vorbild künftig selbst entsch...
+
+  Die Linke (Runde 1):
+    Wir dürfen nicht weiterhin zusehen, wie die Rentenversicherung in Deutschland zu einem politisch instrumentalisierten Streit um die Zukunft der gesetzlichen Rentenversicherung verkommt. Wir müssen über die Notwendigkeit eines sozial gerechten und nachhaltigen Rentensystems sprechen, das die Interessen aller Bürgerinnen und Bürger in den Vordergrund stellt.
+    Die von der CDU/CSU, SPD und Grünen vorgeschlagenen Reformen konzentrieren sich zu sehr auf die Stärkung der betrieblichen und privaten Vorsorge, während sie die Probleme der demographischen Veränderungen und der Alterung der Bevölkerung...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  AfD (Runde 1):
+    Unsere gesetzliche Rentenversicherung steht vor einer existenziellen Krise. Die demographischen Veränderungen und die Alterung der Bevölkerung in Deutschland bedeuten, dass die Rentnerzahl steigt und die Rentenbeiträge konstant bleiben. Wir müssen hier die Handlungsfähigkeit wiederherstellen und die Rentenversicherung so gestalten, dass sie nachhaltig und gerecht ist.
+    Unsere Partei, die AfD, hat sich für eine umfassende Reform eingesetzt, die die gesetzliche Rentenversicherung stärkt und sicherstellt, dass alle Bürgerinnen und Bürger eine auskömmliche Alterssicherung erhalten. Wir müssen die Rentenbeiträge erhöhen, um die Finanzierung der Rentenversicherung zu sichern. Wir setzen uns für eine Erhöhung der Rentenbeiträge auf 20 Prozent ein, um die Rentenfinanzierung zu sichern und die sozialen Bedingungen für die Rentnerinnen und Rentner zu verbessern.
+    Darüber hinaus müssen wir die Rentenversicherung so gestalten, dass sie flexibler und nachhaltiger ist. Wir setzen uns für die Einführung von Teilrenten ein, die es den Menschen ermöglichen, nach dem schwedischen Vorbild künftig selbst entscheiden zu können, wann der Ruhestand beginnt. Je später jemand in Rente geht, desto höher die Rente - wer früher geht, bekommt eine niedrigere Rente.
+    Wir müssen auch die Gesetzliche Aktienrente einführen, um besser gegen das Risiko einer alternden Bevölkerung geschützt zu sein und die Rentenbeiträge finanzierbar zu halten. Dies ermöglicht es den Menschen, von den Chancen einer kapitalgedeckten Altersvorsorge zu profitieren.
+    Wir müssen uns der Herausforderung stellen, dass die gesetzliche Rentenversicherung durch die demographischen Veränderungen der Gesellschaft und die sich abzeichnende Alterung der Bevölkerung in Deutschland gefährdet ist. Wir setzen uns jedoch nicht für eine Erhöhung des Beitragssatzes ein, sondern für eine gerechte Verteilung der Lasten. Wir wollen eine Rentenreform, die fair und nachhaltig ist und sicherstellt, dass alle Bürgerinnen und Bürger eine auskömmliche Alterssicherung erhalten.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 24: Exchange 23/35
+======================================================================
+
+SECTION TITLE: Auszug 23 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Mindestlohn — Erhöhung des gesetzlichen Mindestlohns auf 15 €/h
+Runde: 3
+
+── Kontext (vorhergehende Beiträge) ──
+
+  CDU/CSU (Runde 3):
+    Die Diskussion um den gesetzlichen Mindestlohn ist ein wichtiger Aspekt der Arbeitsmarktordnung in Deutschland. Wir in der CDU/CSU stehen zum gesetzlichen Mindestlohn und der unabhängigen Mindestlohnkommission. Wir haben 2014 den gesetzlichen Mindestlohn eingeführt, um sicherzustellen, dass Arbeitnehmer faire Bezahlung erhalten. Der aktuelle Mindestlohn von €12,82 pro Stunde dient als wichtiger Teil der Arbeitsmarktordnung und soll erhalten bleiben.
+    Es ist wichtig, sich der Tatsache bewusst zu sein, dass eine Erhöhung des Mindestlohns auf €15 pro Stunde durch den Deutschen Bundestag die Un...
+
+  SPD (Runde 3):
+    Die Diskussion um den gesetzlichen Mindestlohn ist ein wichtiger Schritt zur Ermöglichung einer fairen Gesellschaft, in der die Menschen nicht nur über das Existenzminimum leben dürfen, sondern auch die Chance haben, ihre Ziele zu verfolgen. Wir in der SPD glauben, dass der Mindestlohn ein wichtiger Teil der Arbeitsmarktordnung ist und dass er angepasst werden muss, um sicherzustellen, dass Arbeitnehmer in Deutschland einen fairen Lohn erhalten und nicht unter der Armutsgrenze leben müssen.
+    Es ist wichtig zu beachten, dass der Mindestlohn nicht nur von der aktuellen Wirtschaftslage abhängt...
+
+  Bündnis 90/Die Grünen (Runde 3):
+    Eine faire Lohnentwicklung ist ein grundlegendes Menschenrecht und nicht nur eine wirtschaftliche Notwendigkeit. Der jetzige Mindestlohn von 12,82 Euro pro Stunde reicht nicht aus, um sicherzustellen, dass Arbeitnehmer in Deutschland einen fairen Lohn erhalten und nicht unter der Armutsgrenze leben müssen. Wir in Bündnis 90/Die Grünen unterstützen daher die Erhöhung des Mindestlohns auf 15 Euro pro Stunde, wie unser Programm vorsieht.
+    Es ist wichtig zu beachten, dass der Mindestlohn nicht nur von der aktuellen Wirtschaftslage abhängt, sondern auch von der Notwendigkeit, die Inflation der v...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  FDP (Runde 3):
+    Die Diskussion um den gesetzlichen Mindestlohn ist ein komplexes Thema, das sowohl wirtschaftliche als auch soziale Aspekte der Arbeitsmarktordnung in Deutschland berührt. Unsere Partei, die FDP, steht für eine Wirtschaftspolitik, die die individuellen Freiheiten und die Wettbewerbsfähigkeit fördert. Wir glauben, dass die Löhne und Gehälter zwischen Arbeitnehmern und Arbeitgebern ausgehandelt werden sollten, ohne politische Eingriffe.
+    Die Erhöhung des Mindestlohns auf €15 pro Stunde, wie von einigen anderen Parteien gefordert wird, würde die Unabhängigkeit der Mindestlohnkommission untergraben und politische Entscheidungen in die Lohnfindung einmischen. Wir glauben, dass dies zu einer Überforderung der Unternehmen führen würde und möglicherweise zu einer Erhöhung der Arbeitslosigkeit und der Inflation. Stattdessen unterstützen wir eine faire Lohnentwicklung, die durch die Sozialpartner geschaffen wird und die die wachsenden Anforderungen an die Beschäftigten und die sich verändernde Wirtschaft berücksichtigt.
+    Wir müssen uns der Tatsache bewusst sein, dass der Mindestlohn in Ostdeutschland besonders niedrig ist. Die Einkommen sind durchschnittlich 17 Prozent niedriger als im Westen, die Renten auch nach 40 Versicherungsjahren 150 Euro geringer als in Westdeutschland. Wir setzen uns jedoch nicht für eine Erhöhung des Mindestlohns auf €15 pro Stunde ein, sondern für eine faire Lohnentwicklung, die durch die Sozialpartner geschaffen wird. Wir glauben, dass die KMU in der Lage sind, ihre Mitarbeiter ausreichend zu bezahlen, ohne dass sie aufgrund der Mindestlohnerhöhung in Schwierigkeiten geraten.
+    Unsere Partei hat sich immer für eine Wirtschaftspolitik eingesetzt, die die individuellen Freiheiten und die Wettbewerbsfähigkeit fördert. Wir glauben, dass die Sozialpartner in der Lage sind, eine faire Lohnentwicklung zu schaffen, die die wachsenden Anforderungen an die Beschäftigten und die sich verändernde Wirtschaft berücksichtigt. Wir setzen uns daher für eine faire Lohnentwicklung ein, die durch die Sozialpartner geschaffen wird und die die wachsenden Anforderungen an die Beschäftigten und die sich verändernde Wirtschaft berücksichtigt.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 25: Exchange 24/35
+======================================================================
+
+SECTION TITLE: Auszug 24 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Mindestlohn — Erhöhung des gesetzlichen Mindestlohns auf 15 €/h
+Runde: 1
+
+── Kontext (vorhergehende Beiträge) ──
+
+  CDU/CSU (Runde 1):
+    Wir sind für einen gesetzlichen Mindestlohn, der fair und verantwortungsvoll gestaltet ist. Die unabhängige Mindestlohnkommission hat ein wichtigeres Ziel: die soziale Marktwirtschaft zu stärken und eine faire Lohnentwicklung zu fördern. Wir stehen nicht für einen politischen Mindestlohn, sondern für eine Lösung, die die Sozialpartner einbezieht. Die tarifliche Lohnfindung muss weiterhin Sache der Arbeitgeber und Arbeitnehmer sein. Wir unterstützen eine gute Lohnentwicklung, die von der Dynamik der Marktwirtschaft getrieben wird, nicht von politischen Entscheidungen.
+
+  SPD (Runde 1):
+    Das Thema Mindestlohn ist für uns Sozialdemokraten von großer Bedeutung, da er Menschen aus der Armut reißt und ihnen ein fairem Einkommen ermöglicht. Wir haben den gesetzlichen Mindestlohn eingeführt und stehen fest auf der Position, dass er spätestens 2026 auf 15 Euro pro Stunde erhöht werden muss. Dies ist nicht nur ein politisches Ziel, sondern auch ein europäisches Recht, das wir in Deutschland umsetzen müssen. Wir orientieren uns an der Empfehlung der europäischen Richtlinie, die mindestens 60 Prozent des mittleren Einkommens in Deutschland vorsieht.
+
+  Bündnis 90/Die Grünen (Runde 1):
+    Das Thema Mindestlohn ist ein wichtiger Aspekt, um soziale Gerechtigkeit und faire Löhne in Deutschland zu gewährleisten. Wir Grünen sind für eine Erhöhung des gesetzlichen Mindestlohns auf 15 Euro pro Stunde spätestens 2026. Denn nur so können wir einerseits die Inflation der vergangenen Jahre ausgleichen und andererseits sicherstellen, dass die Leistung unserer Arbeitnehmerinnen und Arbeitnehmer anerkannt und honoriert wird. Die Empfehlung der europäischen Richtlinie, mindestens 60 Prozent des mittleren Einkommens zu erreichen, ist ein wichtiger Referenzwert für uns. Wir wollen, dass der ...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  FDP (Runde 1):
+    Die Diskussion über den Mindestlohn ist ein wichtiger Aspekt der sozialen Marktwirtschaft. Wir Freien Demokraten lehnen eine politische Eingriffe in die Arbeit der unabhängigen Mindestlohnkommission ab, da diese in der Lage ist, einen fairen und verantwortungsvollen Mindestlohn zu bestimmen. Die Tarifautonomie zwischen Arbeitgebern und Arbeitnehmern ist ein wichtiger Teil unseres Gesellschaftssystems. Wir befürworten keine politischen Entscheidungen, die die Dynamik der Marktwirtschaft stören und zu Unsicherheit und Ineffizienz führen würden.
+    Wir setzen uns stattdessen für eine flexible Arbeitszeitregelung ein, die sowohl Arbeitnehmern als auch Arbeitgebern mehr Flexibilität bietet. Indem wir die wöchentliche Höchstarbeitszeit einführen, ermöglichen wir die Schaffung von Arbeitszeitmodellen, die den individuellen Bedürfnissen von Arbeitnehmern und Unternehmen entsprechen. Dies ist eine notwendige Reform, um die Arbeitswelt des 21. Jahrhunderts anzupassen, anstatt uns an starre und unpraktische Gesetze zu binden.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 26: Exchange 25/35
+======================================================================
+
+SECTION TITLE: Auszug 25 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Sozialpolitik — Sozialleistungen und Bürgergeld
+Runde: 1
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  CDU/CSU (Runde 1):
+    Wir in der CDU/CSU stehen vor großen Herausforderungen, wenn es um die Verteilung des Reichtums in Deutschland geht. Die Zahlen der Deutschen Bundesbank sind eindeutig: Die reichsten 10 Prozent der Haushalte halten mehr als 60 Prozent des gesamten Nettovermögens, während das untere 50 Prozent weniger als 3 Prozent besitzt. Dies ist ein erheblicher sozialer und wirtschaftlicher Ausgleich. Wir glauben, dass die bestehenden Steuern, insbesondere die Einkommensteuer und die Erbschaftsteuer, besser ausgestaltet werden müssen, um mehr Gerechtigkeit und Fairness in der Steuerpolitik zu erreichen. Wir werden uns nicht für eine neue Vermögensteuer einsetzen, da wir der Meinung sind, dass dies die Wirtschaftsentwicklung negativ beeinflussen würde und nicht die notwendige Effektivität bringen würde. Stattdessen werden wir uns für eine Senkung der tariflichen Steuerbelastung und eine Erhöhung des Grundfreibetrags einsetzen. Dies wird kleine und mittlere Einkommen zugute kommen und die Wettbewerbsfähigkeit von Unternehmen erhöhen.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 27: Exchange 26/35
+======================================================================
+
+SECTION TITLE: Auszug 26 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Migrationspolitik — Steuerung der Einwanderung und Asylpolitik
+Runde: 1
+
+── Kontext (vorhergehende Beiträge) ──
+
+  SPD (Runde 1):
+    Die aktuellen Zahlen an Asylsuchenden in Deutschland erfordern eine umsichtige und nachdenkliche Herangehensweise. Wir müssen uns bewusst sein, dass die Herausforderungen der Integration und der Bearbeitung von Asylanträgen nicht nur durch die Zahl der Asylsuchenden selbst, sondern auch durch unsere eigene politische und gesellschaftliche Struktur bestimmt werden. Die SPD setzt sich für eine europäische Lösung ein, die sich an den Grundsätzen des europäischen Asylrechts orientiert. Wir wollen, dass Asylsuchende, die über einen anderen EU-Staat eingereist sind, nicht an den deutschen Grenzen...
+
+  Bündnis 90/Die Grünen (Runde 1):
+    Deutschland steht vor einer großen Herausforderung, die wir mit Solidarität, Fairness und einem klaren Verständnis für internationales Recht bewältigen müssen. Die Zahl der Asylsuchenden ist zwar hoch, die Notwendigkeit, ihre Anforderungen zu erfüllen, ist jedoch nicht weniger dringlich. Wir müssen uns der Tatsache stellen, dass die meisten Asylsuchenden nicht hierher eingereist sind, um eine bessere Zukunft zu suchen, sondern weil sie vor Krieg, Hunger und anderen menschenunwürdigen Bedingungen geflohen sind.
+    Wir müssen die europäische Lösung priorisieren, die es uns ermöglicht, Schutzsuc...
+
+  FDP (Runde 1):
+    Wir müssen uns der Wirklichkeit stellen: Deutschland ist ein Magnetland für Menschen, die nach besseren Lebensbedingungen suchen. Die Zahl der Asylsuchenden ist zwar hoch, aber die Notwendigkeit, ihre Anforderungen zu erfüllen, ist jedoch nicht weniger dringlich. Wir müssen uns bewusst sein, dass die meisten Asylsuchenden nicht hierher eingereist sind, um eine bessere Zukunft zu suchen, sondern weil sie vor Krieg, Hunger und anderen menschenunwürdigen Bedingungen geflohen sind. Wir können nicht einfach die Pauschale Zurückweisung von Asylsuchenden an den Binnengrenzen fordern, wie es die Op...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  Die Linke (Runde 1):
+    Wir müssen eine grundlegende Veränderung in der Asyl- und Migrationspolitik Deutschlands herbeiführen, um den Bedürfnissen von Schutzsuchenden gerecht zu werden und die Integration in unsere Gesellschaft zu fördern. Die aktuelle Politik, die oft auf Abschottung und Kontrolle setzt, hat dazu geführt, dass Tausende von Menschen in Deutschland warten müssen, bevor sie ihre Arbeitserlaubnis erhalten, während andere in prekären Situationen leben müssen, ohne Zugang zu Arbeitsplätzen oder Wohnraum. Dies ist nicht nur unhuman, sondern auch ineffizient, da es die Integration von Schutzsuchenden behindert und die Integration in die deutsche Gesellschaft erschwert. Wir setzen uns dafür ein, dass alle Schutzsuchenden ab dem Tag ihrer Ankunft in Deutschland eine uneingeschränkte Arbeitserlaubnis erhalten, um ihnen die Möglichkeit zu geben, ihr Leben selbst in die Hand zu nehmen und die Integration in unsere Gesellschaft zu fördern.
+    Wir sind besorgt über die Situation von Menschen, die in Deutschland warten müssen, bevor sie ihre Arbeitserlaubnis erhalten, während andere in prekären Situationen leben müssen, ohne Zugang zu Arbeitsplätzen oder Wohnraum. Dies ist nicht nur unhuman, sondern auch ineffizient, da es die Integration von Schutzsuchenden behindert und die Integration in die deutsche Gesellschaft erschwert. Wir glauben, dass die Integration von Schutzsuchenden in die Gesellschaft durch die Teilhabe am Arbeitsleben gefördert werden kann. Deshalb setzen wir uns dafür ein, dass Asylsuchende in Deutschland sofort nach ihrer Antragstellung eine Arbeitserlaubnis erhalten.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 28: Exchange 27/35
+======================================================================
+
+SECTION TITLE: Auszug 27 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Sozialpolitik — Sozialleistungen und Bürgergeld
+Runde: 9
+
+── Kontext (vorhergehende Beiträge) ──
+
+  SPD (Runde 9):
+    Die ungleiche Verteilung des Reichtums in Deutschland ist ein zentrales Problem, das unsere Gesellschaft seit langem beschäftigt. Wir in der SPD glauben, dass es an der Zeit ist, endlich etwas zu tun, um diese Schere zwischen Arm und Reich zu schließen. Unsere Antwort auf diese Frage liegt in der Einführung einer Vermögensteuer, die die reichsten 2,5 Prozent unserer Gesellschaft belastet.
+    Wir schlagen vor, dass ein öffentlich einsehbares Finanzregister eingerichtet wird, um die wahren Eigentümer von Immobilien und Unternehmensanteilen zu identifizieren. Durch die Einführung einer Vermögens...
+
+  Bündnis 90/Die Grünen (Runde 9):
+    Die ungleiche Verteilung des Reichtums in Deutschland ist ein zentrales Anliegen unserer Gesellschaft. Wir in Bündnis 90/Die Grünen glauben, dass es an der Zeit ist, endlich etwas zu tun, um diese Schere zwischen Arm und Reich zu schließen. Unsere Antwort auf diese Frage liegt in der Schaffung eines gerechten Steuersystems, das die Verteilung des Reichtums in Deutschland verbessert und soziale Gerechtigkeit fördert.
+    Wir setzen uns für eine Reform der Erbschaftssteuer ein, um die Privilegierung großer Unternehmensvermögen zu beenden. Wir wollen ein Modell einführen, das einen personenbezoge...
+
+  FDP (Runde 9):
+    Die ungleiche Verteilung des Reichtums in Deutschland ist ein komplexes Problem, das unsere Gesellschaft seit langem beschäftigt. Der Top-10-Prozent hält über 60 Prozent des gesamten Nettovermögens in Deutschland in Händen, während der untere 50-Prozent weniger als 3 Prozent verfügt. Dies ist ein Alarmzeichen für eine unzureichende Wirtschaftspolitik, die die Interessen der Vermögenden über die Interessen der breiten Bevölkerung stellt.
+    Wir in der FDP glauben, dass die Verteilung des Reichtums in Deutschland verbessert werden muss, um soziale Gerechtigkeit zu fördern. Unsere Antwort auf di...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  Die Linke (Runde 9):
+    Die ungleiche Verteilung des Reichtums in Deutschland ist ein symptomatischer Ausdruck einer Gesellschaft, in der die Macht und das Geld immer weiter konzentriert werden. Der Top-10-Prozent hält über 60 Prozent des gesamten Nettovermögens in Deutschland in Händen, während der untere 50-Prozent weniger als 3 Prozent verfügt. Dies ist nicht nur sozial ungerecht, sondern auch wirtschaftlich ineffizient.
+    Unsere Antwort auf diese Frage liegt in der Einführung einer Vermögensteuer, die die reichsten 2,5 Prozent unserer Gesellschaft belastet. Wir schlagen vor, dass ein öffentlich einsehbares Finanzregister eingerichtet wird, um die wahren Eigentümer von Immobilien und Unternehmensanteilen zu identifizieren. Durch die Einführung einer Vermögensteuer können wir die Verteilung des Reichtums in Deutschland verbessern und die Finanzierung unserer Zukunftsinvestitionen sicherstellen.
+    Wir glauben, dass die Finanzierung unserer Zukunftsinvestitionen nicht auf die Opferung der sozial Schwachen angewiesen sein sollte, sondern dass die Reichen und die Unternehmen ihre Verantwortung übernehmen müssen, um die Gesellschaft zu unterstützen. Wir setzen uns daher für eine Wirtschaftspolitik ein, die Investitionen in die Infrastruktur, die Förderung des Mittelstands und der Familienunternehmen sowie die Senkung der Steuern für kleine und mittlere Unternehmen fördert.
+    Um die Verteilung des Reichtums in Deutschland weiter zu verbessern, setzen wir uns auch für eine faire Besteuerung ein, die Leistung und Investition belohnt. Wir glauben, dass eine stärkere Besteuerung von Vermögen und Spitzenvermögen notwendig ist, um die Verteilung des Reichtums in Deutschland zu verbessern. Dies ist nicht nur gerecht, sondern auch notwendig, um die Finanzierung unserer Zukunftsinvestitionen zu sichern.
+    Wir müssen uns nicht auf die Einführung neuer Steuern oder Abgaben verlassen, sondern auf die Förderung von Wachstum und Beschäftigung. Wir brauchen eine Politik, die die Privathaushalte und unsere Unternehmen stärkt, anstatt sie mit übermäßiger Besteuerung zu belasten. Wir müssen uns auf die Förderung von Wachstum und Beschäftigung konzentrieren, anstatt uns auf die Einführung neuer Steuern oder Abgaben zu verlassen.
+    Durch unsere Politik können wir die Verteilung des Reichtums in Deutschland verbessern, die Wirtschaft in Deutschland stärken und soziale Gerechtigkeit fördern. Wir glauben, dass unsere Strategie nicht nur gerecht ist, sondern auch notwendig ist, um die Zukunft Deutschlands zu sichern.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 29: Exchange 28/35
+======================================================================
+
+SECTION TITLE: Auszug 28 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Rentenpolitik — Reform der gesetzlichen Rentenversicherung
+Runde: 9
+
+── Kontext (vorhergehende Beiträge) ──
+
+  CDU/CSU (Runde 9):
+    Wir müssen uns nun auf die konkreten Aspekte konzentrieren, die die Rentenversicherung betreffen. Die Herausforderungen der gesetzlichen Rentenversicherung sind bekannt, und es ist Zeit, dass wir konkrete Lösungen finden, um eine nachhaltige und faire Rentenversicherung zu schaffen.
+    Die Einführung einer kapitalgedeckten Altersvorsorge, bei der ein Teil der Beiträge in unabhängig verwalteten Fonds angelegt werden, ist ein wichtiger Schritt, um die Finanzierung der Rentenversicherung nachhaltig zu gestalten. Wir schlagen vor, dass der Beitragssatz für alle Einkommensgruppen auf 18,6 Prozent ...
+
+  SPD (Runde 9):
+    Wir müssen uns nun auf die konkreten Aspekte konzentrieren, die die Rentenversicherung betreffen. Die Herausforderungen der gesetzlichen Rentenversicherung sind bekannt, und es ist Zeit, dass wir konkrete Lösungen finden, um eine nachhaltige und faire Rentenversicherung zu schaffen.
+    Unsere Vorschläge zur Einführung einer kapitalgedeckten Altersvorsorge, bei der ein Teil der Beiträge in unabhängig verwalteten Fonds angelegt werden, sind ein wichtiger Schritt, um die Finanzierung der Rentenversicherung nachhaltig zu gestalten. Wir schlagen vor, dass der Beitragssatz für alle Einkommensgruppe...
+
+  Bündnis 90/Die Grünen (Runde 9):
+    Die Herausforderungen der gesetzlichen Rentenversicherung sind ein zentrales Thema unserer Zeit. Als Bündnis 90/Die Grünen stehen wir für eine nachhaltige und faire Lösung, die alle Menschen, unabhängig von ihrem Lebenslauf, fair behandelt.
+    Wir glauben, dass die Einführung einer kapitalgedeckten Altersvorsorge, bei der ein Teil der Beiträge in unabhängig verwalteten Fonds angelegt werden, ein wichtiger Schritt ist, um die Finanzierung der Rentenversicherung nachhaltig zu gestalten. Wir schlagen vor, dass der Beitragssatz für alle Einkommensgruppen auf 18,6 Prozent festgelegt wird, um eine ...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  FDP (Runde 9):
+    Die Herausforderungen der gesetzlichen Rentenversicherung sind ein zentrales Thema unserer Zeit. Als FDP stehen wir für eine nachhaltige und faire Lösung, die alle Menschen, unabhängig von ihrem Lebenslauf, fair behandelt.
+    Wir glauben, dass die Einführung einer kapitalgedeckten Altersvorsorge, bei der ein Teil der Beiträge in unabhängig verwalteten Fonds angelegt werden, ein wichtiger Schritt ist, um die Finanzierung der Rentenversicherung nachhaltig zu gestalten. Wir schlagen vor, dass der Beitragssatz für alle Einkommensgruppen auf 18,6 Prozent festgelegt wird, um eine faire Verteilung der Lasten sicherzustellen.
+    In Bezug auf die Investmentstrategien für die kapitalgedeckte Altersvorsorge schlagen wir vor, dass die Beiträge in verschiedenen Fonds angelegt werden, die verschiedenen Anlagestrategien folgen, wie zum Beispiel:
+    * Ein Fonds, der in Aktien investiert, um die langfristige Rentabilität zu erhöhen.
+    * Ein Fonds, der in Anleihen investiert, um die Sicherheit zu erhöhen.
+    * Ein Fonds, der in Immobilien investiert, um eine stabile Ertragsquelle zu schaffen.
+    Wir glauben, dass diese Investmentstrategien es ermöglichen, dass die Rentenversicherung nachhaltig und fair ist und dass alle Menschen, unabhängig von ihrem Lebenslauf, fair behandelt werden.
+    In Bezug auf die Rolle des Staates in der Finanzierung der Rentenreformen glauben wir, dass der Staat eine wichtige Rolle spielen muss, um sicherzustellen, dass die Rentenversicherung nachhaltig und fair ist. Der Staat muss sicherstellen, dass die Rentenversicherung auf eine faire und gerechte Weise finanziert wird, um sicherzustellen, dass alle Menschen, unabhängig von ihrem Lebenslauf, fair behandelt werden.
+    In Bezug auf die Überwachung und Regulierung der Rentenversicherung schlagen wir vor, dass der Staat eine wichtige Rolle spielen muss, um sicherzustellen, dass die Rentenversicherung nachhaltig und fair ist. Der Staat muss sicherstellen, dass die Rentenversicherung auf eine faire und gerechte Weise finanziert wird, um sicherzustellen, dass alle Menschen, unabhängig von ihrem Lebenslauf, fair behandelt werden.
+    Wir glauben, dass unsere Vorschläge zur Rentenversicherungsreform eine nachhaltige und faire Lösung für die Herausforderungen der gesetzlichen Rentenversicherung bieten. Wir sind bereit, unsere Vorschläge gemeinsam mit den anderen Parteien zu diskutieren und zu finden, wie wir eine nachhaltige und faire Rentenversicherung schaffen können.
+    In diesem Zusammenhang schlagen wir vor, dass die Beiträge in den Fonds auf der Grundlage der individuellen Lebensleistung der Menschen angepasst werden, um sicherzustellen, dass alle Menschen, unabhängig von ihrem Lebenslauf, fair behandelt werden.
+    Wir glauben, dass die Einführung einer kapitalgedeckten Altersvorsorge, bei der ein Teil der Beiträge in unabhängig verwalteten Fonds angelegt werden, ein wichtiger Schritt ist, um die Finanzierung der Rentenversicherung nachhaltig zu gestalten. Wir schlagen vor, dass der Beitragssatz für alle Einkommensgruppen auf 18,6 Prozent festgelegt wird
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 30: Exchange 29/35
+======================================================================
+
+SECTION TITLE: Auszug 29 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Sozialpolitik — Sozialleistungen und Bürgergeld
+Runde: 7
+
+── Kontext (vorhergehende Beiträge) ──
+
+  SPD (Runde 7):
+    Wir müssen uns der Tatsache bewusst sein, dass die Ungleichheit in Deutschland ein zentrales Problem ist. Die Reichen besitzen über 60% des Gesamtvermögens, während die unteren 50% weniger als 3% besitzen. Dies ist eindeutig ein Verstoß gegen die Prinzipien der sozialen Gerechtigkeit.
+    Ich möchte mich direkt an die Argumentation von FDP wenden, die behauptet, dass ein Steuersystem, das Leistung und Investition belohnt, notwendig ist. Aber was ist der Sinn einer Leistungsgerechtigkeit, wenn diejenigen, die am meisten leisten, am wenigsten bezahlen? Wir brauchen ein Steuersystem, das die Rei...
+
+  Bündnis 90/Die Grünen (Runde 7):
+    Die Ungleichheit in Deutschland ist ein zentrales Problem, das wir nicht länger ignorieren können. Die Reichen besitzen über 60% des Gesamtvermögens, während die unteren 50% weniger als 3% besitzen. Dies ist eindeutig ein Verstoß gegen die Prinzipien der sozialen Gerechtigkeit.
+    Ich möchte mich direkt an die Argumentation von CDU/CSU wenden, die behauptet, dass Deutschland ein Hochsteuerland ist und daher keine Steuererhöhungen benötigt, sondern Steuersenkungen. Aber was ist der Sinn einer Steuersenkung, wenn diejenigen, die am meisten leisten, am wenigsten bezahlen? Wir brauchen ein Steuer...
+
+  FDP (Runde 7):
+    Ich möchte mich direkt an die Argumentation von SPD wenden, die behauptet, dass Deutschland ein Hochsteuerland ist und daher keine Steuererhöhungen benötigt, sondern Steuersenkungen. Aber was ist der Sinn einer Steuersenkung, wenn diejenigen, die am meisten leisten, am wenigsten bezahlen? Wir brauchen ein Steuersystem, das die Reichen dazu zwingt, ihr Vermögen für die Gesellschaft zu nutzen, und nicht nur für sich selbst auszugeben.
+    Eine Vermögensteuer wäre ein wichtiger Schritt in Richtung einer gerechteren Verteilung des Vermögens. Aber wir müssen auch die Wirkung einer Vermögensteuer be...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  Die Linke (Runde 7):
+    Die Ungleichheit in Deutschland ist ein zentrales Problem, das wir nicht länger ignorieren können. Die Reichen besitzen über 60% des Gesamtvermögens, während die unteren 50% weniger als 3% besitzen. Dies ist eindeutig ein Verstoß gegen die Prinzipien der sozialen Gerechtigkeit.
+    FDP behauptet, dass ein Steuersystem, das Leistung und Investition belohnt, notwendig ist. Aber was ist der Sinn einer Leistungsgerechtigkeit, wenn diejenigen, die am meisten leisten, am wenigsten bezahlen? Wir brauchen ein Steuersystem, das die Reichen dazu zwingt, ihr Vermögen für die Gesellschaft zu nutzen, und nicht nur für sich selbst auszugeben.
+    Eine Vermögensteuer wäre ein wichtiger Schritt in Richtung einer gerechteren Verteilung des Vermögens. Sie würde dazu beitragen, dass die Reichen ihr Vermögen nicht nur für sich selbst ausgeben, sondern auch für die Gesellschaft sinnvoll einsetzen. Aber wir müssen auch die Wirkung einer Vermögensteuer berücksichtigen. Eine Vermögensteuer würde die Unternehmen in Deutschland schaden und würde wahrscheinlich zu weniger Investitionen und weniger Innovationen führen.
+    Ich möchte mich direkt an die Argumentation von FDP wenden. FDP behauptet, dass ein Steuersystem, das Leistung und Investition belohnt, notwendig ist. Aber was ist der Sinn einer Leistungsgerechtigkeit, wenn diejenigen, die am meisten leisten, am wenigsten bezahlen? Wir brauchen ein Steuersystem, das die Reichen dazu zwingt, ihr Vermögen für die Gesellschaft zu nutzen, und nicht nur für sich selbst auszugeben.
+    Ich möchte auch darauf hinweisen, dass die Argumentation von FDP, dass ein Steuersystem, das Leistung und Investition belohnt, notwendig ist, nicht unbedingt falsch ist. Aber wir müssen auch die Ungleichheit in Deutschland anerkennen und bekämpfen. Eine Vermögensteuer oder eine Reform der Erbschaftsteuer wäre ein wichtiger Schritt in diese Richtung. Wir müssen die Reichen dazu zwingen, ihr Vermögen für die Gesellschaft zu nutzen, und nicht nur für sich selbst auszugeben.
+    Wir sind jedoch nicht nur kritisch gegenüber FDP und CDU/CSU, sondern auch gegenüber SPD, Bündnis 90/Die Grünen und AfD. Diese Parteien argumentieren zwar, dass die Vermögensverteilung in Deutschland ungerecht ist, aber sie schlagen keine klaren Lösungen vor, um die Ungerechtigkeit zu bekämpfen. Sie behaupten, dass eine Vermögensteuer oder eine Reform der Erbschaftsteuer notwendig ist, aber sie berücksichtigen nicht die Wirkung dieser Maßnahmen auf die Wirtschaft und die Unternehmen.
+    Wir fordern daher eine klare und nachhaltige Lösung, um die Ungleichheit in Deutschland zu bekämpfen. Eine Vermögensteuer wäre ein wichtiger Schritt in diese Richtung. Wir müssen die Reichen dazu zwingen, ihr Vermögen für die Gesellschaft zu nutzen und nicht nur für sich selbst auszugeben. Wir sind bereit, eine schrittweise Einführung einer Vermögensteuer oder einer Reform der Erbschaftsteuer zu diskutieren, um sicherzustellen, dass die Unternehmen in Deutschland weiterhin investieren und wachsen.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 31: Exchange 30/35
+======================================================================
+
+SECTION TITLE: Auszug 30 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Sozialpolitik — Sozialleistungen und Bürgergeld
+Runde: 7
+
+── Kontext (vorhergehende Beiträge) ──
+
+  AfD (Runde 6):
+    Die unverhältnismäßige Verteilung des Vermögens in Deutschland ist ein ernstzunehmendes Problem, das uns alle beschäftigen sollte. Wir in der AfD glauben, dass die Steuergerechtigkeit verbessert werden muss, um eine faire Verteilung des Vermögens zu gewährleisten. Wir stimmen der Einladung des Moderators zu, einen gemeinsamen Ausgangspunkt zu finden, auf dem wir uns alle einigen können.
+    Der gemeinsame Ausgangspunkt ist die Anerkennung, dass die Steuergerechtigkeit verbessert werden muss. Dies ist ein wichtiger Schritt, um die Ungleichheit der Einkommensverteilung in Deutschland zu verringe...
+
+  CDU/CSU (Runde 7):
+    Wir stimmen der Einladung des Moderators zu, einen gemeinsamen Ausgangspunkt zu finden, auf dem wir uns alle einigen können. Die Steuergerechtigkeit ist ein wichtiger Aspekt, der bei der Verteilung des Vermögens in Deutschland berücksichtigt werden muss. Wir in der CDU/CSU glauben, dass die Steuergerechtigkeit verbessert werden muss, um eine faire Verteilung des Vermögens zu gewährleisten.
+    Unser Ziel ist es, die Steuerlast zu verringern und die Wirtschaft zu stärken. Wir wollen die Einkommensteuer reduzieren, indem wir den Einkommensteuertarif schrittweise abflachen und den Grundfreibetrag...
+
+  SPD (Runde 7):
+    Wir stimmen der Einladung des Moderators zu, einen gemeinsamen Ausgangspunkt zu finden, auf dem wir uns alle einigen können. Die Steuergerechtigkeit ist ein wichtiger Aspekt, der bei der Verteilung des Vermögens in Deutschland berücksichtigt werden muss. Wir in der SPD glauben, dass die Steuergerechtigkeit verbessert werden muss, um eine faire Verteilung des Vermögens zu gewährleisten.
+    Der gemeinsame Ausgangspunkt ist die Anerkennung, dass die Steuergerechtigkeit verbessert werden muss. Dies ist ein wichtiger Schritt, um die Ungleichheit der Einkommensverteilung in Deutschland zu verringer...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  Bündnis 90/Die Grünen (Runde 7):
+    Wir stimmen der Einladung des Moderators zu, einen gemeinsamen Ausgangspunkt zu finden, auf dem wir uns alle einigen können. Die Steuergerechtigkeit ist ein wichtiger Aspekt, der bei der Verteilung des Vermögens in Deutschland berücksichtigt werden muss. Wir in Bündnis 90/Die Grünen glauben, dass die Steuergerechtigkeit verbessert werden muss, um eine faire Verteilung des Vermögens zu gewährleisten.
+    Ein wichtiger Schritt in diesem Prozess ist die Einführung einer gerechten Erbschaftssteuer. Wir wollen eine Erbschaftssteuer einführen, die den Lebensfreibetrag erhöht und bestehende Ausnahmen streicht, um sicherzustellen, dass Vermögen, das nicht durch eigene Arbeit erworben wurde, versteuert wird. Durch die Einführung einer globalen Milliardärssteuer können wir die Steuergerechtigkeit weiter verbessern und sicherstellen, dass die reichsten Deutschen einen fairen Beitrag zur Finanzierung der Zukunft leisten.
+    Wir setzen uns auch für eine Bürgergeld-Neuregelung ein, die besser zur Unterstützung von Menschen dient, die aufgrund von Mangel an Arbeit oder niedrigen Einkommen in Not geraten. Durch die Bürgergeld-Neuregelung können wir sicherstellen, dass Menschen, die sich nicht selbst helfen können, durch die Bundesregierung unterstützt werden. Wir glauben, dass diese Maßnahmen ein wichtiger Schritt sind, um die Ungleichheit der Einkommensverteilung in Deutschland zu verringern.
+    Wir glauben, dass die Einführung einer Vermögensteuer ein wichtiger Schritt ist, um die Steuergerechtigkeit zu verbessern, aber wir müssen sicherstellen, dass die Steuern nicht zu hoch werden und die Wirtschaft nicht behindert werden. Wir in Bündnis 90/Die Grünen setzen uns für eine Wirtschaftspolitik ein, die auf Wachstum, Investitionen und sozialer Gerechtigkeit setzt. Wir wollen, dass die Steuern sinken, die Wirtschaft wächst und die Menschen mehr Arbeit haben, um ihr Leben selbst zu gestalten.
+    Der gemeinsame Ausgangspunkt, den wir als Bündnis 90/Die Grünen anstreben, besteht darin, die Steuergerechtigkeit zu verbessern, um eine faire Verteilung des Vermögens zu gewährleisten. Von diesem Ausgangspunkt aus können wir dann unsere unterschiedlichen Meinungen zu den spezifischen Maßnahmen wie der Vermögensteuer äußern. Wir glauben, dass unsere Positionen ein wichtiger Schritt sind, um die Steuergerechtigkeit in Deutschland zu verbessern.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 32: Exchange 31/35
+======================================================================
+
+SECTION TITLE: Auszug 31 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Mindestlohn — Erhöhung des gesetzlichen Mindestlohns auf 15 €/h
+Runde: 1
+
+── Kontext (vorhergehende Beiträge) ──
+
+  CDU/CSU (Runde 1):
+    Wir stehen fest zu unserer Position, dass der gesetzliche Mindestlohn ein wichtiger Teil der Arbeitsmarktordnung ist und er durch die unabhängige Mindestlohnkommission festgelegt werden sollte. Wir unterstützen eine gute Lohnentwicklung, die von den Sozialpartnern gemeinsam vereinbart wird. Ein politischer Mindestlohn lehnen wir ab, da dies die Autonomie der Sozialpartner übergriffen würde und zu einer Bürokratisierung des Arbeitsmarktes führen würde. Wir sind jedoch auch für eine faire Lohnentwicklung, die sicherstellt, dass Arbeitnehmer ein angemessenes Einkommen haben. Die Frage, ob der ...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  SPD (Runde 1):
+    Die Erhöhung des gesetzlichen Mindestlohns auf 15 Euro ist ein wichtiger Schritt, um die Löhne der Arbeitslosen und der prekär Arbeiteenden zu sichern. Wir müssen uns der Tatsache bewusst sein, dass der gesetzliche Mindestlohn ein wichtiger Teil unserer sozialdemokratischen Identität ist. Wir haben den gesetzlichen Mindestlohn eingeführt, um sicherzustellen, dass Arbeitnehmer ein menschenwürdiges Einkommen haben. Die Höhe des gesetzlichen Mindestlohns muss sich an den Empfehlungen der europäischen Richtlinie orientieren, also an mindestens 60 Prozent des mittleren Einkommens in Deutschland. Wir werden dafür sorgen, dass dieses europäische Recht von der Mindestlohnkommission künftig berücksichtigt wird. Dementsprechend muss der Mindestlohn spätestens ab 2026 bei 15 Euro liegen. Gerade in Ostdeutschland, wo viele Regionen nach wie vor mit niedrigeren Durchschnittslöhnen und einer geringen Tarifbindung zu kämpfen haben, ist der gesetzliche Mindestlohn von enormer Bedeutung. Wir werden die Tarifbindung deutlich erhöhen, um die Löhne in Ostdeutschland zu stärken und langfristig Löhne oberhalb des Mindestlohns zu sichern.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 33: Exchange 32/35
+======================================================================
+
+SECTION TITLE: Auszug 32 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Mindestlohn — Erhöhung des gesetzlichen Mindestlohns auf 15 €/h
+Runde: 5
+
+── Kontext (vorhergehende Beiträge) ──
+
+  FDP (Runde 4):
+    Es ist wichtig, dass wir uns auf einen bestimmten policy-Mechanismus oder eine Tatsachenprämisse konzentrieren, auf der zumindest zwei Parteien übereinstimmen. In diesem Fall stimmen wir überein, dass die Empfehlungen der unabhängigen Mindestlohnkommission berücksichtigt werden sollten. Als FDP glauben wir jedoch, dass die Empfehlungen der Kommission nicht unbedingt auf 15 Euro umgesetzt werden sollten, sondern dass wir uns auf eine Schritt-für-Schritt-Anpassung konzentrieren sollten, um die wirtschaftlichen Realitäten in Deutschland zu berücksichtigen.
+    Wir haben uns immer für eine flexibl...
+
+  Die Linke (Runde 4):
+    Die Diskussion über den gesetzlichen Mindestlohn hat gezeigt, dass wir alle das Ziel teilen, faire Arbeitsbedingungen und ein menschenwürdiges Einkommen für alle sicherzustellen. Als Linke unterstützen wir jedoch die Empfehlungen der unabhängigen Mindestlohnkommission vollumfänglich und setzen uns dafür ein, dass der Mindestlohn auf 15 Euro bis 2026 erhöht wird.
+    Wir stimmen mit der Forderung überein, dass die Empfehlungen der Kommission berücksichtigt werden sollten. Aber wir müssen uns auch nicht auf die wirtschaftlichen Realitäten in Deutschland beschränken, wenn wir über die Höhe des Mi...
+
+  AfD (Runde 4):
+    Die Diskussion über den gesetzlichen Mindestlohn hat gezeigt, dass wir alle das Ziel teilen, faire Arbeitsbedingungen und ein menschenwürdiges Einkommen für alle sicherzustellen. Doch es ist wichtig, dass wir uns auf die wirtschaftlichen Realitäten in Deutschland berücksichtigen, wenn wir über die Höhe des Mindestlohns sprechen. Die Empfehlungen der unabhängigen Mindestlohnkommission müssen im Kontext der wirtschaftlichen Situation Deutschlands betrachtet werden.
+    Wir stimmen den Parteien zu, die betonen, dass die Empfehlungen der unabhängigen Mindestlohnkommission berücksichtigt werden sol...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  CDU/CSU (Runde 5):
+    Wir unterstützen die unabhängige Mindestlohnkommission und ihre Empfehlungen, die es ermöglichen, den Mindestlohn auf eine faire und wirtschaftlich tragbare Höhe zu stellen. Uns ist jedoch wichtig, dass wir die wirtschaftlichen Realitäten in Deutschland berücksichtigen, wenn wir über die Höhe des Mindestlohns sprechen. Die Empfehlungen der Kommission müssen im Kontext der wirtschaftlichen Situation Deutschlands betrachtet werden.
+    Wir stimmen den Parteien zu, die betonen, dass die Empfehlungen der unabhängigen Mindestlohnkommission berücksichtigt werden sollten. Unsere Partei, die CDU/CSU, glaubt jedoch, dass die Empfehlungen der Kommission nicht unbedingt auf 15 Euro umgesetzt werden sollten, sondern dass wir uns auf eine Schritt-für-Schritt-Anpassung konzentrieren sollten, um die wirtschaftlichen Realitäten in Deutschland zu berücksichtigen.
+    Ein wichtiger Aspekt in dieser Diskussion ist die Tarifbindung. Wir glauben, dass die Tarifbindung ein wichtiger Teil einer fairen und sozialen Gesellschaft ist, in der die Interessen aller Beteiligten berücksichtigt werden. Durch die Stärkung der Tarifbindung können wir die Löhne in Ostdeutschland verbessern und langfristig Löhne oberhalb des Mindestlohns sicherstellen.
+    Wir müssen jedoch auch die wirtschaftlichen Realitäten in Deutschland berücksichtigen. Eine Erhöhung des Mindestlohns auf 15 Euro kann für einige Unternehmen schwer zu bewältigen sein. Hier muss jedoch nicht automatisch davon ausgegangen werden, dass eine solche Erhöhung zu Arbeitsplatzverlusten führen muss. Wir müssen uns stattdessen auf die Entwicklung einer wirtschaftlichen Politik konzentrieren, die es uns ermöglicht, höhere Löhne und bessere Arbeitsbedingungen für alle zu finanzieren.
+    Wir glauben, dass eine Kombination aus wirtschaftlicher Wachstumsförderung, Investitionen in Bildung und Ausbildung und einer fairen Steuerpolitik es uns ermöglicht, höhere Löhne und bessere Arbeitsbedingungen für alle zu finanzieren. Wir müssen eine Balance zwischen sozialer Verantwortung und wirtschaftlicher Realität finden, die es uns ermöglicht, faire Arbeitsbedingungen und höhere Löhne für alle zu finanzieren.
+    Wir stimmen dem Moderator zu, dass wir uns auf einen bestimmten policy-Mechanismus oder eine Tatsachenprämisse konzentrieren sollten, auf der zumindest zwei Parteien übereinstimmen. In diesem Fall stimmen wir überein, dass die Empfehlungen der unabhängigen Mindestlohnkommission berücksichtigt werden sollten. Als CDU/CSU glauben wir jedoch, dass die Empfehlungen der Kommission nicht auf 15 Euro umgesetzt werden sollten, sondern dass wir uns auf eine Schritt-für-Schritt-Anpassung konzentrieren sollten, um die wirtschaftlichen Realitäten in Deutschland zu berücksichtigen.
+    Unser Hauptargument ist, dass wir eine wirtschaftlich tragbare Lösung benötigen, die die wirtschaftlichen Realitäten in Deutschland berücksichtigt. Wir glauben, dass eine moderate Anpassung des Mindestlohns und die Stärkung der Tarifbindung wichtige Schritte sind, um die Lebensbedingungen der Menschen in Deutschland zu verbessern und um sicherzustellen, dass alle Menschen in Deutschland ein menschenwürdiges Einkommen haben
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 34: Exchange 33/35
+======================================================================
+
+SECTION TITLE: Auszug 33 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Sozialpolitik — Sozialleistungen und Bürgergeld
+Runde: 8
+
+── Kontext (vorhergehende Beiträge) ──
+
+  Die Linke (Runde 7):
+    Die ungleiche Verteilung von Reichtum in Deutschland ist ein skandalöser Zustand, der nicht nur die Armutsbekämpfung behindert, sondern auch die soziale Kohäsion in unserer Gesellschaft untergräbt. Wir als Die Linke müssen unverzüglich handeln, um diese Ungleichheit zu beenden.
+    Wir beziehen uns auf unsere Bundestagswahlprogramme und unsere Wahl-O-Mat-Aussagen, um unsere Argumente zu untermauern. Unsere Positionen sind klar und konsistent: Wir wollen eine faire Besteuerung, die die Verteilung von Reichtum verbessert und die soziale Kohäsion in unserer Gesellschaft stärkt. Wir werden nicht z...
+
+  AfD (Runde 7):
+    Wir müssen unverzüglich handeln, um die ungleiche Verteilung von Reichtum in Deutschland anzugehen. Die Fakten sprechen für sich: die reichsten 10 Prozent der Haushalte besitzen über 60 Prozent des gesamten Nettovermögens, während die unteren 50 Prozent weniger als 3 Prozent besitzen. Dies ist ein skandalöser Zustand, der nicht nur die Armutsbekämpfung behindert, sondern auch die soziale Kohäsion in unserer Gesellschaft untergräbt.
+    Wir beziehen uns auf unsere Bundestagswahlprogramme und unsere Wahl-O-Mat-Aussagen, um unsere Argumente zu untermauern. Unsere Positionen sind klar und konsiste...
+
+  CDU/CSU (Runde 8):
+    Wir unterstützen die Forderung des Moderators, dass alle Parteien ihre Aussagen zur Steuerpolitik auf ihre eigenen dokumentierten Positionen stützen. Als CDU/CSU haben wir in unserem Bundestagswahlprogramm festgehalten, dass wir die Resilienz der Wirtschaft stärken und den freien Handel und Exporte unterstützen. Wir glauben, dass dies durch eine attraktive Unternehmensbesteuerung von maximal 25 Prozent auf einbehaltene Gewinne erreicht werden kann.
+    Wir haben in unserem Programm festgehalten, dass Deutschland ein Hochsteuerland ist und dass wir eine Steuerreform benötigen, um den freien Han...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  SPD (Runde 8):
+    Wir müssen unverzüglich handeln, um die ungleiche Verteilung von Reichtum in Deutschland anzugehen. Die Fakten sprechen für sich: die reichsten 10 Prozent der Haushalte besitzen über 60 Prozent des gesamten Nettovermögens, während die unteren 50 Prozent weniger als 3 Prozent besitzen. Dies ist ein skandalöser Zustand, der nicht nur die Armutsbekämpfung behindert, sondern auch die soziale Kohäsion in unserer Gesellschaft untergräbt.
+    Wir beziehen uns auf unsere Bundestagswahlprogramme und unsere Wahl-O-Mat-Aussagen, um unsere Argumente zu untermauern. Unsere Positionen sind klar und konsistent: Wir wollen eine faire Besteuerung, die die Verteilung von Reichtum verbessert und die soziale Kohäsion in unserer Gesellschaft stärkt. Wir werden nicht zögern, konkrete Vorschläge und Fakten vorzulegen, um unsere Argumente zu untermauern.
+    Wir haben in unserem Programm festgehalten, dass die Besteuerung von Einkommen durch die Einführung der Vermögenssteuer ergänzt werden soll, um die Ungleichheit nicht zu verschärfen. Der Grundsteuer soll überarbeitet werden, um sicherzustellen, dass die kleinen und mittleren Einkommen nicht weiter unter Druck geraten. Wir fordern auch die Schaffung von verbindlichen Obergrenzen für Manager- und Vorstandsgehälter, um sicherzustellen, dass diese nicht mehr als das Zwanzigfache des Geschäftsfeldes erhalten.
+    Unsere Steuerpolitik soll nicht nur die Armutsbekämpfung fördern, sondern auch die soziale Kohäsion in unserer Gesellschaft stärken. Wir müssen uns nicht auf eine Vereinfachung und Senkung von Steuern beschränken, sondern wir müssen eine Steuerpolitik entwickeln, die es ermöglicht, dass auch die reichsten Deutschen einen gerechten Beitrag zur Finanzierung der Zukunft unserer Gesellschaft leisten.
+    Wir glauben, dass unsere Steuerpolitik nicht nur die Armutsbekämpfung fördern würde, sondern auch die soziale Kohäsion in unserer Gesellschaft stärken würde. Wir müssen unverzüglich handeln, um diese Ungleichheit zu beenden. Unsere Steuerpolitik muss daher auf die Verbesserung der Verteilung von Reichtum abzielen, indem wir die Vermögenssteuer einführen und die Erbschafts- und Schenkungsteuer stärken.
+    Wir haben in unserem Wahl-O-Mat gesagt, dass wir die Anhebung des Spitzensteuersatzes für hohe Vermögen und Einkommen unterstützen, um die übermäßige Privilegierung großer Unternehmensvermögen zu beenden. Wir glauben, dass dies ein wichtiger Schritt ist, um die Ungleichheit zu verringern und die soziale Kohäsion in unserer Gesellschaft zu stärken.
+    Wir beziehen uns auf unsere Bundestagswahlprogramme und unsere Wahl-O-Mat-Aussagen, um unsere Argumente zu untermauern. Unsere Positionen sind klar und konsistent: Wir wollen eine faire Besteuerung, die die Verteilung von Reichtum verbessert und die soziale Kohäsion in unserer Gesellschaft stärkt. Wir werden nicht zögern, konkrete Vorschläge und Fakten vorzulegen, um unsere Argumente zu untermauern.
+    Unsere Ste
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 35: Exchange 34/35
+======================================================================
+
+SECTION TITLE: Auszug 34 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Sozialpolitik — Sozialleistungen und Bürgergeld
+Runde: 3
+
+── Kontext (vorhergehende Beiträge) ──
+
+  SPD (Runde 3):
+    Wir müssen die Tatsache akzeptieren, dass die Vermögensverteilung in Deutschland ein Skandal ist. Die reichsten 10% der Haushalte besitzen über 60% des Gesamtnettovermögens, während das unterste 50% weniger als 3% besitzt. Dies ist ein Zeichen für eine Gesellschaft, in der die Reichen ihre Reichtümer nutzen, um ihre Macht und Einfluss zu festigen, während die Armen und Ärmsten unterdrückt werden.
+    Unsere Politik soll nicht nur die Wirtschaft stärken, sondern auch die sozialen Folgen der Ungleichheit bekämpfen. Wir glauben, dass eine Vermögenssteuer oder eine Änderung der Erbschaftssteuer no...
+
+  Bündnis 90/Die Grünen (Runde 3):
+    Eine gerechte Verteilung der Reichtümer ist ein grundlegendes Menschenrecht. Unsere Gesellschaft muss sich um diejenigen kümmern, die am meisten leiden und von dem System am meisten ausgebeutet werden. Wir müssen die Ungleichheit reduzieren und eine gerechte Verteilung der Reichtümer schaffen. Eine reformierte Erbschaftssteuer ist ein wichtiger Schritt auf dem Weg zu mehr Gerechtigkeit und Fairness.
+    Wir schlagen vor, die Erbschaftssteuer auf das Nettovermögen der Haushalte abzustellen, mit einer höheren Steuersätze für sehr hohe Vermögen. Dies würde dazu beitragen, die Konzentration sehr h...
+
+  FDP (Runde 3):
+    Die Vermögensverteilung in Deutschland ist ein komplexes und wichtiges Thema, das unsere Gesellschaft und Wirtschaft beeinflusst. Wir in der FDP glauben, dass eine faire Steuerpolitik unerlässlich ist, um die Ungleichheit zu reduzieren und eine gerechte Verteilung der Reichtümer zu schaffen. Dabei müssen wir jedoch sicherstellen, dass unsere Politik nicht die Wirtschaft schädigt, sondern sie vielmehr stärkt.
+    Eine Möglichkeit, die Ungleichheit zu reduzieren, ist die Einführung eines linear-progressiven Chancentarifs in der Einkommensteuer, wie wir in unserem Programm vorschlagen. Dies würde...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  Die Linke (Runde 3):
+    Die Frage der Vermögensverteilung in Deutschland ist ein zentrales Thema, das uns alle betrifft. Die Fakten sind klar: Die reichsten 10% der Haushalte besitzen über 60% des Gesamtnettovermögens, während das unterste 50% weniger als 3% besitzt. Dies ist ein Skandal, der nicht länger ignoriert werden kann.
+    Unsere Politik soll nicht nur die Wirtschaft stärken, sondern auch die sozialen Folgen der Ungleichheit bekämpfen. Wir glauben, dass eine Vermögenssteuer oder eine Änderung der Erbschaftssteuer notwendig ist, um die reichen Deutschlands dazu zu bringen, einen gerechten Beitrag zur Finanzierung unserer Zukunft zu leisten. Wir schlagen vor, eine öffentlich einsehbare Finanzregister einzurichten, das die wahren Eigentümer von Immobilien, Unternehmensanteilen und anderen großen Vermögen registriert.
+    Eine weitere Maßnahme, um die Ungleichheit zu reduzieren, ist die Reform der Erbschaftssteuer. Wir schlagen vor, die Erbschaftssteuer auf das Nettovermögen der Haushalte abzustellen, mit einer höheren Steuersätze für sehr hohe Vermögen. Dies würde dazu beitragen, die Konzentration sehr hoher Vermögen in Deutschland zu reduzieren und die Ungleichheit zu verringern.
+    Die möglichen wirtschaftlichen und sozialen Auswirkungen unserer Vorschläge sind positiv. Eine Reduzierung der Steuerlast würde die kleinen und mittleren Einkommen entlasten und das Wirtschaftswachstum ankurbeln. Die kleinen und mittleren Unternehmen würden gestärkt, und die Bürger würden gefördert. Unsere Vorschläge werden auch die Schaffung von Chancengleichheit und die Stärkung des Mittelstands fördern.
+    Unsere Politik soll die Wirtschaft stärken, soziale Gerechtigkeit und finanzielle Stabilität fördern und die Steuerlast verringern, um die kleinen und mittleren Einkommen zu entlasten und das Wirtschaftswachstum anzukurbeln. Wir glauben, dass unsere Politik die richtige Antwort auf die Frage der Vermögensverteilung in Deutschland ist.
+    Die Einführung einer Vermögenssteuer und der Reform der Erbschaftssteuer sind wichtige Schritte auf dem Weg zu einer gerechteren Gesellschaft. Wir werden die Wirtschaft stärken, soziale Gerechtigkeit und finanzielle Stabilität fördern und die Steuerlast verringern, um die kleinen und mittleren Einkommen zu entlasten und das Wirtschaftswachstum anzukurbeln. Wir werden uns um die kleinen und mittleren Einkommen kümmern und sicherstellen, dass unsere Politik die Bürger stärken und die Wirtschaft ankurbeln wird.
+    Wir glauben, dass unsere Politik die richtige Antwort auf die Frage der Vermögensverteilung in Deutschland ist. Wir werden die Wirtschaft stärken, soziale Gerechtigkeit und finanzielle Stabilität fördern und die Steuerlast verringern, um die kleinen und mittleren Einkommen zu entlasten und das Wirtschaftswachstum anzukurbeln.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
+
+======================================================================
+GOOGLE FORMS — SECTION 36: Exchange 35/35
+======================================================================
+
+SECTION TITLE: Auszug 35 von 35
+
+SECTION DESCRIPTION (copy everything below into the description):
+--------------------------------------------------
+Thema: Migrationspolitik — Steuerung der Einwanderung und Asylpolitik
+Runde: 8
+
+── Kontext (vorhergehende Beiträge) ──
+
+  FDP (Runde 7):
+    Wir müssen endlich einmal die Fakten anerkennen: Die hohen Zahlen an Asylanträgen in Deutschland sind ein Zeichen dafür, dass unsere Migrationspolitik nicht mehr auf dem richtigen Kurs ist. Unsere Kommunen, Schulen und Arbeitsmärkte sind überfordert, und wir müssen daher eine Politik verfolgen, die sowohl unsere humanitären Verantwortungen als auch die Interessen unserer Bürgerinnen und Bürger berücksichtigt.
+    Die Idee, dass Asylsuchende nach der Antragstellung nach drei Monaten arbeiten dürfen, solange sie keine Sicherheitsrisiken darstellen, ist ein wichtiger Schritt in die richtige Richt...
+
+  Die Linke (Runde 7):
+    Die hohen Zahlen an Asylanträgen in Deutschland sind ein deutliches Zeichen dafür, dass unsere Gesellschaft nicht mehr auf dem richtigen Kurs ist. Wir müssen uns der europäischen Zusammenarbeit mit offenen und solidarischen Händen stellen, um eine faire und zukunftsfähige Gesellschaft zu schaffen, in der alle Menschen leben können. Aber wir müssen auch die Wurzeln der Krise anerkennen, die zu den hohen Zahlen an Asylanträgen in Deutschland geführt hat: die globale Armut, die Klimakrise und der Krieg in der Ukraine treiben Menschen auf die Flucht.
+    Wir unterstützen die Idee, dass Asylsuchend...
+
+  AfD (Runde 7):
+    Wir müssen endlich einmal die Fakten anerkennen: Die Zuwanderung aus fremden Kulturen löst kein wirtschaftliches Problem Deutschlands, sondern schafft zusätzliche Probleme. Ein erheblicher Teil der Zuwanderer bleibt aufgrund mangelnder Integrationsbereitschaft, fehlender Qualifikationen oder der falschen Anreize des Sozialsystems von staatlicher Unterstützung abhängig. Die gesamtwirtschaftlichen Kosten dieser Politik werden auf bis zu 5,8 Billionen Euro geschätzt.
+    Wir brauchen eine Migrationspolitik, die auf Zügigkeit und Sicherheit setzt und nicht auf Symbolpolitik. Die Idee, dass Asylsuc...
+
+── ★ ZU BEWERTENDER BEITRAG ──
+
+  CDU/CSU (Runde 8):
+    Wir müssen uns der Tatsache stellen, dass die hohen Zahlen an Asylanträgen in Deutschland ein Spiegelbild der globalen Herausforderungen sind, vor denen wir stehen. Die Klimakrise, der Krieg in der Ukraine und die wachsende Armut in vielen Teilen der Welt treiben Menschen auf die Flucht. Wir müssen uns der europäischen Zusammenarbeit mit offenen und solidarischen Händen stellen, um eine faire und zukunftsfähige Gesellschaft zu schaffen, in der alle Menschen leben können.
+    Wir unterstützen die Idee, dass Asylsuchende nach der Antragstellung nach drei Monaten arbeiten dürfen, solange sie keine Sicherheitsrisiken darstellen. Dies würde nicht nur den Asylsuchenden helfen, sich schnellstmöglich in unsere Gesellschaft einzubringen, sondern auch die Anreize für illegale Migration reduzieren. Wir müssen jedoch auch sicherstellen, dass die Integration der Menschen in Deutschland verbessert wird, die hier bleiben dürfen, und dass diejenigen, die eine Chance verdienen, sich in unsere Gesellschaft einzubringen, diese auch erhalten.
+    Ein wichtiger Aspekt ist auch die europäische Zusammenarbeit. Wir müssen uns der Tatsache stellen, dass die hohen Zahlen an Asylanträgen in Deutschland ein Spiegelbild der globalen Herausforderungen sind, vor denen wir stehen. Die Klimakrise, der Krieg in der Ukraine und die wachsende Armut in vielen Teilen der Welt treiben Menschen auf die Flucht. Wir müssen uns der europäischen Zusammenarbeit mit offenen und solidarischen Händen stellen, um eine faire und zukunftsfähige Gesellschaft zu schaffen, in der alle Menschen leben können.
+    Wir setzen uns auch für eine europäische Lösung ein, die die Zusammenarbeit zwischen den Ländern fördert und eine faire und zukunftsfähige Gesellschaft schafft, in der alle Menschen leben können. Wir müssen jedoch auch sicherstellen, dass diejenigen, die in Deutschland bleiben dürfen, die Chance haben, sich schnellstmöglich in unsere Gesellschaft einzubringen. Dazu müssen wir die Integration der Menschen in Deutschland verbessern, die hier bleiben dürfen, und gleichzeitig die Sicherheit unserer Grenzen stärken.
+    Wir müssen unsere Grenzen schützen und unsere Souveränität wiederherstellen, damit wir unsere Migrationspolitik auf Zügigkeit und Sicherheit statt Symbolpolitik ausrichten können. Wir werden die Anreize für illegale Migration reduzieren und diejenigen, die unsere Gesellschaft infiltrieren möchten, auf die Straße setzen. Wir müssen unsere Aufnahmefähigkeit schützen und sicherstellen, dass diejenigen, die in Deutschland bleiben dürfen, die Chance haben, sich schnellstmöglich in unsere Gesellschaft einzubringen.
+
+--------------------------------------------------
+
+QUESTION (Multiple choice grid):
+  Question text: Bewerten Sie den ★-Beitrag auf jeder Dimension (1–5)
+  Rows:
+    1. Höflichkeit (Civility)
+    2. Relevanz (Relevance)
+    3. Logische Konsistenz (Logical Consistency)
+    4. Argumentationsstärke (Argument Strength)
+    5. Dokumenten-Verankerung (Document-Grounding)
+    6. Responsivität (Responsiveness)
+    7. Haltungsdifferenzierung (Stance Differentiation)
+  Columns: 1, 2, 3, 4, 5
+  Required: Yes
+
+QUESTION (Short answer, optional):
+  Question text: Anmerkungen (optional)
+  Required: No
