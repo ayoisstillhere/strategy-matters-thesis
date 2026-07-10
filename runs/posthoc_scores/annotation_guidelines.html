@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <title>Annotation Guidelines — Discourse Quality Scoring</title>
 <style>
-  @page { margin: 2cm; size: A4; }
-  * { box-sizing: border-box; }
+  @page { margin: 1.5cm; size: A4; }
+  * { box-sizing: border-box; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; color-adjust: exact !important; }
   body {
     font-family: 'Segoe UI', Calibri, Arial, sans-serif;
     font-size: 11pt;
@@ -31,7 +31,7 @@
   .score-5 { background: #e0f2f1; }
   .highlight { background: #fff3cd; padding: 8px 12px; border-left: 4px solid #ffc107; margin: 0.6em 0; font-size: 10.5pt; }
   .important { background: #fce4e4; padding: 8px 12px; border-left: 4px solid #dc3545; margin: 0.6em 0; font-size: 10.5pt; }
-  .example-box { border: 1px solid #ccc; border-radius: 4px; padding: 12px; margin: 0.8em 0; background: #fafafa; page-break-inside: avoid; }
+  .example-box { border: 1px solid #ccc; border-radius: 4px; padding: 12px; margin: 0.8em 0; background: #fafafa; }
   .example-box h4 { margin: 0 0 0.4em 0; color: #1a3a5c; font-size: 11pt; }
   .turn-text { background: #f0f4f8; padding: 10px; border-radius: 3px; font-size: 10pt; line-height: 1.45; margin: 0.4em 0; white-space: pre-wrap; }
   .context-text { background: #f8f8f0; padding: 8px; border-radius: 3px; font-size: 9.5pt; line-height: 1.4; margin: 0.3em 0; white-space: pre-wrap; color: #555; }
@@ -43,8 +43,12 @@
   .justification { font-size: 9.5pt; color: #444; font-style: italic; margin-left: 0.5em; }
   .page-break { page-break-before: always; }
   @media print {
-    body { padding: 0; }
+    body { padding: 0; max-width: none; }
     .no-print { display: none; }
+    h2 { page-break-after: avoid; }
+    h3 { page-break-after: avoid; }
+    table { page-break-inside: avoid; }
+    .highlight, .important { page-break-inside: avoid; }
   }
 </style>
 </head>
