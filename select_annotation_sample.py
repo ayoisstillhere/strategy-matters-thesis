@@ -308,11 +308,7 @@ def write_readable(exchanges: list[dict], path: Path) -> None:
             lines.append(f"\n--- Context (preceding turns) ---")
             for ct in ex["context"]:
                 lines.append(f"\n  {ct['agent_name']} (Round {ct['round_number']}):")
-                # Truncate context at 600 chars for readability
-                text = ct["text"][:600]
-                if len(ct["text"]) > 600:
-                    text += "..."
-                for line in text.split("\n"):
+                for line in ct["text"].split("\n"):
                     lines.append(f"    {line}")
 
         lines.append(f"\n--- ★ TURN TO SCORE ---")
