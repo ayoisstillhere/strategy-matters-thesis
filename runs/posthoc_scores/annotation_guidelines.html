@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>Annotation Guidelines — Discourse Quality Scoring</title>
+<title>HAKI — Annotation Guidelines</title>
 <style>
   @page { margin: 1.5cm; size: A4; }
   * { box-sizing: border-box; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; color-adjust: exact !important; }
@@ -16,6 +16,9 @@
     padding: 2cm;
   }
   h1 { font-size: 20pt; margin-bottom: 0.3em; color: #1a3a5c; border-bottom: 2px solid #1a3a5c; padding-bottom: 0.2em; }
+  .haki-badge { display: inline-block; background: linear-gradient(135deg, #4f46e5, #7c3aed); color: #fff; padding: 2px 10px; border-radius: 4px; font-size: 14pt; font-weight: 700; letter-spacing: 1px; margin-right: 8px; vertical-align: middle; }
+  .tip-box { background: #e8f5e9; padding: 8px 12px; border-left: 4px solid #4caf50; margin: 0.6em 0; font-size: 10.5pt; }
+  .bias-box { background: #fff3e0; padding: 8px 12px; border-left: 4px solid #ff9800; margin: 0.6em 0; font-size: 10.5pt; }
   h2 { font-size: 15pt; color: #1a3a5c; margin-top: 1.5em; margin-bottom: 0.4em; border-bottom: 1px solid #ccc; padding-bottom: 0.15em; }
   h3 { font-size: 12pt; color: #2a5a8c; margin-top: 1.2em; margin-bottom: 0.3em; }
   p { margin: 0.4em 0; }
@@ -54,8 +57,9 @@
 </head>
 <body>
 
-<h1>Annotation Guidelines</h1>
-<p style="font-size: 13pt; color: #555; margin-bottom: 1.5em;">Discourse Quality Scoring for AI-Generated Political Debates</p>
+<h1><span class="haki-badge">HAKI</span> Annotation Guidelines</h1>
+<p style="font-size: 13pt; color: #555; margin-bottom: 0.5em;">Human Annotation of KI-generated Interactions</p>
+<p style="font-size: 11pt; color: #777; margin-bottom: 1.5em;">Discourse Quality Scoring for AI-Generated Political Debates</p>
 
 <!-- ═══════════════════════════════════════════════════════ -->
 <h2>1. Task Overview</h2>
@@ -69,10 +73,22 @@
   <li><strong>One target turn</strong> marked with <span class="star">★</span> — this is the turn you will score</li>
 </ul>
 
-<p>Your task is to <strong>score the target turn on 7 dimensions</strong> using a 1–5 scale. There are 35 exchanges to score, which should take about <strong>2–2.5 hours</strong>.</p>
+<p>Your task is to <strong>score the target turn on 7 dimensions</strong> using a 1–5 scale. There are <strong>50 exchanges</strong> to score, which should take approximately <strong>2.5–3 hours</strong>. You can pause at any time — your progress is saved automatically.</p>
 
 <div class="highlight">
-  <strong>Important:</strong> You are scoring the <em>quality of the debate contribution</em>, NOT whether you agree with the political position. A turn you politically disagree with can still score highly on all dimensions.
+  <strong>⚠️ Important:</strong> You are scoring the <em>quality of the debate contribution</em>, NOT whether you agree with the political position. A turn you politically disagree with can still score highly on all dimensions.
+</div>
+
+<h3>1.1 Two-Phase Scoring Process</h3>
+<p>For each exchange, you will go through <strong>two phases</strong>:</p>
+<ol>
+  <li><strong>Phase 1 — Blind Scoring:</strong> Read the exchange and score all 7 dimensions independently. You can also flag the text as biased/provocative and add optional notes.</li>
+  <li><strong>Phase 2 — LLM Comparison &amp; Review:</strong> After submitting your scores, you will see an <em>automatic LLM judge rating</em> for comparison. You can then decide whether to keep or revise your scores.</li>
+</ol>
+<p>This two-phase design helps capture both your independent judgment and any insights gained from seeing the automated assessment.</p>
+
+<div class="bias-box">
+  <strong>🚩 Perceived Bias / Provocative Content:</strong> If you feel a contribution is biased or provocative, you can flag it using the bias toggle. When flagged, scoring becomes <strong>optional</strong> — you may skip the rating and proceed to the next exchange. This accommodates cases where the text may be offensive and you prefer not to engage with it for scoring.
 </div>
 
 <!-- ═══════════════════════════════════════════════════════ -->
@@ -289,11 +305,13 @@ Wir werden uns auch für eine Bildungspolitik einsetzen, die frühkindliche Bild
 <h2 class="page-break">5. Practical Instructions</h2>
 
 <ol>
-  <li><strong>Read the context turns</strong> first to understand what was said before.</li>
+  <li><strong>Read the context turns</strong> first to understand what was said before. Context turns can be expanded/collapsed by clicking on them.</li>
   <li><strong>Read the target turn</strong> (★) carefully and in full.</li>
-  <li><strong>Score each of the 7 dimensions independently</strong> using the rubric in Section 3. Enter your score (1–5) in the form.</li>
+  <li><strong>Score each of the 7 dimensions independently</strong> using the rubric in Section 3. Click the score buttons (1–5) for each dimension. Hover over dimension names for short descriptions.</li>
+  <li>If the text feels biased or provocative, <strong>flag it</strong> using the bias toggle. You may then skip scoring if you prefer.</li>
+  <li>If you want to note why you scored a particular way, use the optional <strong>"Notes"</strong> field.</li>
+  <li><strong>Submit your blind scores</strong> → review the LLM judge's scores → decide whether to revise.</li>
   <li><strong>Move to the next exchange.</strong> Do not go back and change earlier scores.</li>
-  <li>If you want to note why you scored a particular way, use the optional "Notes" field.</li>
 </ol>
 
 <div class="important">
@@ -305,8 +323,19 @@ Wir werden uns auch für eine Bildungspolitik einsetzen, die frühkindliche Bild
   </ul>
 </div>
 
+<div class="tip-box">
+  <strong>💡 Usability Tips:</strong>
+  <ul style="margin:0.3em 0">
+    <li>⏸️ You can <strong>pause at any time</strong> — your progress is saved automatically. Resume by entering your name on the welcome page.</li>
+    <li>🌐 Use the <strong>language toggle</strong> (top of page) to switch between German and English.</li>
+    <li>📂 <strong>Context turns are collapsible</strong> — click to expand/collapse them to manage long text.</li>
+    <li>🎯 Focus on <strong>discourse quality</strong>, not political content.</li>
+    <li>⬇️ When uncertain between two scores, <strong>prefer the lower value</strong>.</li>
+  </ul>
+</div>
+
 <h3>Estimated Time</h3>
-<p>~3–5 minutes per exchange × 35 exchanges = <strong>approximately 2–2.5 hours</strong>. Please complete all exchanges within the agreed timeframe.</p>
+<p>~3–3.5 minutes per exchange × 50 exchanges = <strong>approximately 2.5–3 hours</strong>. You can pause and resume at any time — your progress is saved.</p>
 
 <h3>Questions?</h3>
 <p>If anything is unclear during annotation, note your uncertainty in the "Notes" field and move on. Do not stop to ask — consistency of your own judgement matters more than "correct" answers.</p>
@@ -382,7 +411,7 @@ Wir werden uns auch für eine Bildungspolitik einsetzen, die frühkindliche Bild
   </tr>
 </table>
 
-<p style="margin-top: 2em; color: #888; font-size: 9pt; text-align: center;">— End of Guidelines —</p>
+<p style="margin-top: 2em; color: #888; font-size: 9pt; text-align: center;">— End of HAKI Annotation Guidelines —</p>
 
 </body>
 </html>
