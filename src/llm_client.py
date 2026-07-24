@@ -6,9 +6,9 @@ automatic retries on rate-limit errors, and JSON response parsing.
 
 Supports two models:
   - Agent model (8b): llama-3.1-8b-instant
-  - Judge/Moderator model: meta-llama/llama-4-scout-17b-16e-instruct
-    (replaced llama-3.3-70b-versatile, deprecated 2026-08-16;
-     pilot comparison: 100% valid, 83-89% intra-agreement, 1.26s latency)
+  - Judge/Moderator model: llama-3.3-70b-versatile
+    (reverted from meta-llama/llama-4-scout-17b-16e-instruct which was
+     removed from Groq 2026-07-24; original feasibility: 98.8% exact agreement)
 
 If litellm is needed later for multi-provider support, this module
 can be swapped without changing the rest of the codebase.
@@ -38,7 +38,7 @@ logger = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 
 AGENT_MODEL = "llama-3.1-8b-instant"
-JUDGE_MODEL = "meta-llama/llama-4-scout-17b-16e-instruct"
+JUDGE_MODEL = "llama-3.3-70b-versatile"
 
 DEFAULT_MAX_RETRIES = 8
 DEFAULT_RETRY_BASE_DELAY = 2.0  # seconds, exponential backoff
