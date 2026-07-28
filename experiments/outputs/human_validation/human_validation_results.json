@@ -1,0 +1,160 @@
+{
+  "study_params": {
+    "n_annotators": 5,
+    "n_items": 50,
+    "n_annotations_initial": 238,
+    "n_annotations_revised": 250,
+    "revision_rate": 0.272,
+    "bias_rate": 0.048,
+    "avg_completion_hours": 2.3069653333333333
+  },
+  "per_dimension": [
+    {
+      "dimension": "civility",
+      "label": "Civility",
+      "alpha": -0.02108594347715198,
+      "pct_exact": 0.2847682119205298,
+      "pct_within1": 0.7328918322295805,
+      "spearman_rho": 0.3458911504991239,
+      "spearman_p": 0.01387714174793242,
+      "exact_vs_llm": 0.31932773109243695,
+      "within1_vs_llm": 0.9621848739495799,
+      "mean_human": 3.8026666666666675,
+      "mean_llm": 3.92,
+      "delta": 0.1173333333333324
+    },
+    {
+      "dimension": "relevance",
+      "label": "Relevance",
+      "alpha": -0.08740168158394357,
+      "pct_exact": 0.33995584988962474,
+      "pct_within1": 0.8543046357615894,
+      "spearman_rho": 0.047769520316952266,
+      "spearman_p": 0.7418335651979509,
+      "exact_vs_llm": 0.4831932773109244,
+      "within1_vs_llm": 0.9705882352941176,
+      "mean_human": 4.009333333333333,
+      "mean_llm": 4.04,
+      "delta": 0.030666666666666842
+    },
+    {
+      "dimension": "logical_consistency",
+      "label": "Logical Consistency",
+      "alpha": 0.11698956780923975,
+      "pct_exact": 0.34216335540838855,
+      "pct_within1": 0.8233995584988962,
+      "spearman_rho": 0.6383115727096388,
+      "spearman_p": 6.133629647446246e-07,
+      "exact_vs_llm": 0.453781512605042,
+      "within1_vs_llm": 0.9201680672268907,
+      "mean_human": 3.3033333333333337,
+      "mean_llm": 3.72,
+      "delta": 0.4166666666666665
+    },
+    {
+      "dimension": "argument_strength",
+      "label": "Argument Strength",
+      "alpha": 0.051466151804031246,
+      "pct_exact": 0.33112582781456956,
+      "pct_within1": 0.8631346578366446,
+      "spearman_rho": 0.3911677479906071,
+      "spearman_p": 0.004971263960529724,
+      "exact_vs_llm": 0.4579831932773109,
+      "within1_vs_llm": 0.9159663865546218,
+      "mean_human": 3.159,
+      "mean_llm": 3.52,
+      "delta": 0.3610000000000002
+    },
+    {
+      "dimension": "document_grounding",
+      "label": "Document-Grounding",
+      "alpha": 0.05108560553095587,
+      "pct_exact": 0.25386313465783666,
+      "pct_within1": 0.739514348785872,
+      "spearman_rho": 0.460319203379345,
+      "spearman_p": 0.0007693315564622257,
+      "exact_vs_llm": 0.25210084033613445,
+      "within1_vs_llm": 0.7142857142857143,
+      "mean_human": 2.6430000000000002,
+      "mean_llm": 3.54,
+      "delta": 0.8969999999999998
+    },
+    {
+      "dimension": "responsiveness",
+      "label": "Responsiveness",
+      "alpha": -0.0006182871678919177,
+      "pct_exact": 0.26490066225165565,
+      "pct_within1": 0.6821192052980133,
+      "spearman_rho": 0.40897532806490794,
+      "spearman_p": 0.0031890400193969365,
+      "exact_vs_llm": 0.3319327731092437,
+      "within1_vs_llm": 0.7563025210084033,
+      "mean_human": 2.736333333333333,
+      "mean_llm": 2.34,
+      "delta": -0.3963333333333332
+    },
+    {
+      "dimension": "stance_differentiation",
+      "label": "Stance Differentiation",
+      "alpha": 0.15295716086365785,
+      "pct_exact": 0.293598233995585,
+      "pct_within1": 0.7483443708609272,
+      "spearman_rho": 0.3644019083675835,
+      "spearman_p": 0.00927718269386975,
+      "exact_vs_llm": 0.28991596638655465,
+      "within1_vs_llm": 0.726890756302521,
+      "mean_human": 3.4406666666666665,
+      "mean_llm": 4.18,
+      "delta": 0.7393333333333332
+    }
+  ],
+  "per_annotator": [
+    {
+      "name": "Nik K\u00fcnzer",
+      "n_annotations": 46,
+      "mean_score": 3.6552795031055902,
+      "std_score": 0.9760104253794846,
+      "median_score": 4.0,
+      "time_hours": 2.7589469444444448
+    },
+    {
+      "name": "Yannik Halfer",
+      "n_annotations": 50,
+      "mean_score": 3.44,
+      "std_score": 0.748789499315872,
+      "median_score": 4.0,
+      "time_hours": 2.1180858333333332
+    },
+    {
+      "name": "Finn Schmid",
+      "n_annotations": 49,
+      "mean_score": 3.0932944606413995,
+      "std_score": 1.3903190661545126,
+      "median_score": 3.0,
+      "time_hours": 1.747808611111111
+    },
+    {
+      "name": "Anas",
+      "n_annotations": 44,
+      "mean_score": 3.24025974025974,
+      "std_score": 0.9606220576948057,
+      "median_score": 3.0,
+      "time_hours": 2.800708055555556
+    },
+    {
+      "name": "Dominic Roggi",
+      "n_annotations": 49,
+      "mean_score": 3.1253644314868803,
+      "std_score": 0.7316448369811931,
+      "median_score": 3.0,
+      "time_hours": 2.1092772222222225
+    }
+  ],
+  "summary": {
+    "mean_alpha": 0.037627510539842465,
+    "mean_within1_inter": 0.7776726584673604,
+    "mean_within1_vs_llm": 0.8523409363745499,
+    "mean_spearman": 0.37954806161830834,
+    "mean_llm_bias": 0.30938095238095226
+  }
+}

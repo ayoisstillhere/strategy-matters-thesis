@@ -1,0 +1,23 @@
+\begin{table}[htbp]
+\centering
+\caption{Human Validation Results: Inter-Annotator Agreement and LLM Judge Correlation ($n=5$ annotators, 50 exchanges, 7 dimensions)}
+\label{tab:human-validation}
+\small
+\begin{tabular}{l cc cc cc}
+\toprule
+& \multicolumn{2}{c}{\textbf{Inter-Annotator}} & \multicolumn{2}{c}{\textbf{Human vs.\ LLM}} & \multicolumn{2}{c}{\textbf{Means}} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7}
+\textbf{Dimension} & $\alpha$ & $\pm 1$\% & $\rho$ & $\pm 1$\% & $\mu_H$ & $\mu_L$ \\
+\midrule
+Civility & -0.021 & 73.3 & 0.346 & 96.2 & 3.80 & 3.92 \\
+Relevance & -0.087 & 85.4 & 0.048 & 97.1 & 4.01 & 4.04 \\
+Logical Consistency & 0.117 & 82.3 & 0.638 & 92.0 & 3.30 & 3.72 \\
+Argument Strength & 0.051 & 86.3 & 0.391 & 91.6 & 3.16 & 3.52 \\
+Document-Grounding & 0.051 & 74.0 & 0.460 & 71.4 & 2.64 & 3.54 \\
+Responsiveness & -0.001 & 68.2 & 0.409 & 75.6 & 2.74 & 2.34 \\
+Stance Differentiation & 0.153 & 74.8 & 0.364 & 72.7 & 3.44 & 4.18 \\
+\midrule
+\textbf{Mean} & 0.038 & 77.8 & 0.380 & 85.2 & 3.30 & 3.61 \\
+\bottomrule
+\end{tabular}
+\end{table}
