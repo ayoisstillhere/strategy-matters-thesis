@@ -60,6 +60,7 @@ class DebateInfo(BaseModel):
     total_rounds: int = 10
     turn_count: int = 0
     intervention_count: int = 0
+    created_at: Optional[str] = None
     error_message: Optional[str] = None
 
 

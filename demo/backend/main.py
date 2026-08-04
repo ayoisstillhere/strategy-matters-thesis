@@ -152,6 +152,49 @@ def get_transcript(debate_id: str) -> TranscriptResponse:
     if not session:
         raise HTTPException(status_code=404, detail="Debate not found")
 
+    # Handle persisted sessions (loaded from JSON files on startup)
+    if hasattr(session, '_persisted_turns'):
+        turns = [
+            TurnResponse(
+                turn_id=t.get("turn_id", ""),
+                round_number=t.get("round_number", 0),
+                turn_in_round=t.get("turn_in_round", 0),
+                agent_name=t.get("agent_name", ""),
+                text=t.get("text", ""),
+                scores=t.get("scores"),
+                timestamp=t.get("timestamp"),
+            )
+            for t in session._persisted_turns
+        ]
+        interventions = [
+            InterventionResponse(
+                intervention_id=i.get("intervention_id", ""),
+                round_number=i.get("round_number", 0),
+                source=i.get("source", "strategy"),
+                strategy=i.get("strategy", ""),
+                trigger_dimension=i.get("trigger_dimension"),
+                trigger_score=i.get("trigger_score"),
+                silent_control=i.get("silent_control", False),
+                intervention_text=i.get("intervention_text", ""),
+                moderator_output=i.get("moderator_output"),
+                habermas_output=i.get("habermas_output"),
+                timestamp=i.get("timestamp"),
+            )
+            for i in session._persisted_interventions
+        ]
+        config = session._persisted_config
+        config["language"] = session.language
+        config["framing_prompt"] = FRAMING_PROMPTS.get(session.topic_id, "")
+        return TranscriptResponse(
+            debate_id=debate_id,
+            status=session.status,
+            config=config,
+            turns=turns,
+            interventions=interventions,
+            round_summaries=session._persisted_round_summaries,
+        )
+
+    # Live sessions with Turn/InterventionEvent objects
     turns = [
         TurnResponse(
             turn_id=t.turn_id,

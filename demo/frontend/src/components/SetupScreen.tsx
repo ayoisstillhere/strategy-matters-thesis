@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { getConditions, getTopics, startDebate } from "../api";
 import type { ConditionConfig, TopicConfig } from "../types";
 import { TOPIC_LABELS } from "../constants";
-import { Columns2, Play } from "lucide-react";
+import { Columns2, History, Play } from "lucide-react";
 
 export default function SetupScreen() {
   const navigate = useNavigate();
@@ -223,6 +223,13 @@ export default function SetupScreen() {
           >
             <Columns2 size={16} />
             Split View
+          </button>
+          <button
+            onClick={() => navigate("/history")}
+            className="btn-outline flex items-center gap-2"
+          >
+            <History size={16} />
+            History
           </button>
         </div>
       </div>

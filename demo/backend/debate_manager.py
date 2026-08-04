@@ -14,6 +14,7 @@ Architecture:
 from __future__ import annotations
 
 import asyncio
+import json
 import logging
 import uuid
 from concurrent.futures import ThreadPoolExecutor
@@ -67,6 +68,7 @@ class DebateSession:
     language: str
     status: DebateStatus = DebateStatus.PENDING
     current_round: int = 0
+    created_at: datetime = field(default_factory=lambda: datetime.now(timezone.utc))
     turns: list[Turn] = field(default_factory=list)
     interventions: list[InterventionEvent] = field(default_factory=list)
     round_summaries: list[dict] = field(default_factory=list)
@@ -92,6 +94,58 @@ class DebateManager:
     def __init__(self):
         self._sessions: dict[str, DebateSession] = {}
         self._llm_client: Optional[LLMClient] = None
+        self._load_persisted_sessions()
+
+    def _load_persisted_sessions(self) -> None:
+        """Load completed debate sessions from runs/demo/ on startup."""
+        demo_dir = PROJECT_ROOT / "runs" / "demo"
+        if not demo_dir.exists():
+            return
+
+        loaded = 0
+        for json_file in demo_dir.rglob("*.json"):
+            try:
+                data = json.loads(json_file.read_text(encoding="utf-8"))
+                run_id = data.get("run_id", json_file.stem)
+                config = data.get("config", {})
+
+                # Parse created_at from started_at or filename
+                started_at_str = data.get("started_at")
+                if started_at_str:
+                    created_at = datetime.fromisoformat(
+                        started_at_str.replace("Z", "+00:00")
+                    )
+                else:
+                    created_at = datetime.now(timezone.utc)
+
+                turns_data = data.get("turns", [])
+                interventions_data = data.get("interventions", [])
+
+                # Build lightweight session (no Turn/InterventionEvent objects needed
+                # for listing — we store raw counts and basic info)
+                session = DebateSession(
+                    debate_id=run_id,
+                    topic_id=config.get("topic_id", "unknown"),
+                    condition_id=config.get("condition_id", "unknown"),
+                    condition_label=config.get("condition_label", "Unknown"),
+                    num_rounds=config.get("num_rounds", 10),
+                    language="de",
+                    status=DebateStatus.COMPLETED,
+                    current_round=config.get("num_rounds", 10),
+                    created_at=created_at,
+                )
+                # Attach raw turn/intervention data for transcript retrieval
+                session._persisted_turns = turns_data
+                session._persisted_interventions = interventions_data
+                session._persisted_round_summaries = data.get("round_summaries", [])
+                session._persisted_config = config
+
+                self._sessions[run_id] = session
+                loaded += 1
+            except Exception as e:
+                logger.warning(f"Failed to load {json_file}: {e}")
+
+        logger.info(f"Loaded {loaded} persisted debate sessions from {demo_dir}")
 
     def _get_client(self) -> LLMClient:
         if self._llm_client is None:
@@ -417,6 +471,20 @@ class DebateManager:
     # ------------------------------------------------------------------
 
     def _session_to_info(self, session: DebateSession) -> DebateInfo:
+        # Handle persisted sessions (loaded from JSON) vs live sessions
+        if hasattr(session, '_persisted_turns'):
+            turn_count = len(session._persisted_turns)
+            intervention_count = len([
+                i for i in session._persisted_interventions
+                if not i.get("silent_control", False) and i.get("intervention_text")
+            ])
+        else:
+            turn_count = len(session.turns)
+            intervention_count = len([
+                i for i in session.interventions
+                if not i.silent_control and i.intervention_text
+            ])
+
         return DebateInfo(
             debate_id=session.debate_id,
             topic_id=session.topic_id,
@@ -425,11 +493,9 @@ class DebateManager:
             status=session.status,
             current_round=session.current_round,
             total_rounds=session.num_rounds,
-            turn_count=len(session.turns),
-            intervention_count=len([
-                i for i in session.interventions
-                if not i.silent_control and i.intervention_text
-            ]),
+            turn_count=turn_count,
+            intervention_count=intervention_count,
+            created_at=session.created_at.isoformat(),
             error_message=session.error_message,
         )
 

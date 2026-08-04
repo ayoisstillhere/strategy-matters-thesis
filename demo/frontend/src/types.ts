@@ -14,6 +14,7 @@ export interface DebateInfo {
   total_rounds: number;
   turn_count: number;
   intervention_count: number;
+  created_at: string | null;
   error_message: string | null;
 }
 
