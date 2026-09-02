@@ -294,7 +294,7 @@ BASELINE_4 = ExperimentalCondition(
         "messages. The trigger mechanism is identical to the strategy "
         "conditions: any primary dimension (civility, argument strength, "
         "document-grounding, responsiveness, or stance differentiation) "
-        "dropping below 2.0 fires the trigger, followed by LLM judge "
+        "dropping below 4 fires the trigger, followed by LLM judge "
         "confirmation and silent control logic. The only difference is "
         "that confirmed triggers produce a randomly selected generic "
         "message instead of a strategy-specific intervention. This "
@@ -320,7 +320,7 @@ STRATEGY_A = ExperimentalCondition(
     condition_type=ConditionType.STRATEGY,
     description=(
         "Active moderator with de-escalation strategy. Trigger: civility "
-        "score < 2.0 for any agent turn, confirmed by LLM judge. The "
+        "score < 4 for any agent turn, confirmed by LLM judge. The "
         "moderator identifies uncivil language, acknowledges the emotional "
         "dimension of the disagreement, and redirects toward substantive "
         "policy claims. Primary target dimension: civility. Expected "
@@ -345,7 +345,7 @@ STRATEGY_B = ExperimentalCondition(
     condition_type=ConditionType.STRATEGY,
     description=(
         "Active moderator with reframing strategy. Trigger: responsiveness "
-        "score < 2.0 for any agent turn, confirmed by LLM judge. The "
+        "score < 4 for any agent turn, confirmed by LLM judge. The "
         "moderator restates the core disagreement in neutral terms and "
         "directs each party to engage with the strongest version of a "
         "named opposing argument. Primary target dimension: responsiveness. "
@@ -401,7 +401,7 @@ STRATEGY_D = ExperimentalCondition(
     condition_type=ConditionType.STRATEGY,
     description=(
         "Active moderator with common-ground prompting strategy. Trigger: "
-        "stance differentiation > 4.0 AND responsiveness < 2.5 for 2+ "
+        "stance differentiation > 3 AND responsiveness < 4 for 2+ "
         "agents in the current round (compound condition), confirmed by "
         "LLM judge. The moderator identifies a narrow procedural or factual "
         "point of agreement and asks parties to use it as a springboard to "
