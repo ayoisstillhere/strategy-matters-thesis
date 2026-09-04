@@ -17,6 +17,7 @@ __pycache__/
 .idea/
 
 # Data not needed for demo
+runs/
 pilots/
 experiments/
 paper/

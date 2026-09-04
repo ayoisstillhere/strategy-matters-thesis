@@ -11,7 +11,6 @@ RUN npm run build
 
 # ── Stage 2: Python backend + serve frontend ──
 FROM python:3.11-slim
-# cache-bust: v2 (force rebuild 2026-09-04)
 WORKDIR /app
 
 # Install CPU-only PyTorch first (smaller than default CUDA build)
@@ -35,8 +34,8 @@ COPY demo/backend/ ./demo/backend/
 COPY demo/__init__.py ./demo/__init__.py
 COPY data/embeddings/ ./data/embeddings/
 
-# Copy persisted demo runs (pre-recorded debates for history page)
-COPY runs/demo/ ./runs/demo/
+# Create runs/demo/ directory for session persistence
+RUN mkdir -p runs/demo
 
 # Copy built frontend from stage 1
 COPY --from=frontend-build /app/demo/frontend/dist ./demo/frontend/dist
