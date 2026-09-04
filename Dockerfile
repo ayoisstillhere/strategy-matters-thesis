@@ -34,8 +34,8 @@ COPY demo/backend/ ./demo/backend/
 COPY demo/__init__.py ./demo/__init__.py
 COPY data/embeddings/ ./data/embeddings/
 
-# Create runs/demo/ directory for session persistence
-RUN mkdir -p runs/demo
+# Copy persisted demo runs (pre-recorded debates for history page)
+COPY runs/demo/ ./runs/demo/
 
 # Copy built frontend from stage 1
 COPY --from=frontend-build /app/demo/frontend/dist ./demo/frontend/dist
