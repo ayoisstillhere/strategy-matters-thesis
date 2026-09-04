@@ -100,9 +100,9 @@ class DebateManager:
     def _load_persisted_sessions(self) -> None:
         """Load completed debate sessions from runs/demo/ on startup."""
         demo_dir = PROJECT_ROOT / "runs" / "demo"
-        logger.info(f"Looking for persisted sessions in: {demo_dir} (exists={demo_dir.exists()})")
+        print(f"[LOAD] Looking for persisted sessions in: {demo_dir} (exists={demo_dir.exists()})")
         if not demo_dir.exists():
-            logger.warning(f"Demo runs directory does not exist: {demo_dir}")
+            print(f"[LOAD] Demo runs directory does not exist: {demo_dir}")
             return
 
         loaded = 0
@@ -146,9 +146,10 @@ class DebateManager:
                 self._sessions[run_id] = session
                 loaded += 1
             except Exception as e:
-                logger.warning(f"Failed to load {json_file}: {e}")
+                print(f"[LOAD] FAILED to load {json_file.name}: {e}")
 
-        logger.info(f"Loaded {loaded} persisted debate sessions from {demo_dir}")
+        json_count = len(list(demo_dir.rglob("*.json")))
+        print(f"[LOAD] Found {json_count} JSON files, loaded {loaded} sessions")
 
     def _get_client(self) -> LLMClient:
         if self._llm_client is None:
