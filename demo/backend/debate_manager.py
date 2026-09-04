@@ -100,7 +100,9 @@ class DebateManager:
     def _load_persisted_sessions(self) -> None:
         """Load completed debate sessions from runs/demo/ on startup."""
         demo_dir = PROJECT_ROOT / "runs" / "demo"
+        logger.info(f"Looking for persisted sessions in: {demo_dir} (exists={demo_dir.exists()})")
         if not demo_dir.exists():
+            logger.warning(f"Demo runs directory does not exist: {demo_dir}")
             return
 
         loaded = 0
