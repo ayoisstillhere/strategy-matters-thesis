@@ -32,6 +32,7 @@ See also:
 from __future__ import annotations
 
 import json
+import os
 import numpy as np
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -136,7 +137,10 @@ class RAGPipeline:
     def _get_bi_encoder(self):
         if self._bi_encoder is None:
             from sentence_transformers import SentenceTransformer
-            self._bi_encoder = SentenceTransformer(BI_ENCODER_MODEL)
+            # Use ONNX backend in production for lower memory footprint (~150MB vs ~700MB)
+            backend = os.environ.get("EMBEDDING_BACKEND", "torch")
+            kwargs = {"backend": backend} if backend != "torch" else {}
+            self._bi_encoder = SentenceTransformer(BI_ENCODER_MODEL, **kwargs)
         return self._bi_encoder
 
     def _get_cross_encoder(self):

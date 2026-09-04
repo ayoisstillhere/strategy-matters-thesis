@@ -94,6 +94,7 @@ class DebateManager:
     def __init__(self):
         self._sessions: dict[str, DebateSession] = {}
         self._llm_client: Optional[LLMClient] = None
+        self._rag_pipeline: Optional[RAGPipeline] = None
         self._load_persisted_sessions()
 
     def _load_persisted_sessions(self) -> None:
@@ -151,6 +152,12 @@ class DebateManager:
         if self._llm_client is None:
             self._llm_client = LLMClient()
         return self._llm_client
+
+    def _get_rag(self) -> RAGPipeline:
+        """Return the shared RAGPipeline instance (lazy-init, reused across debates)."""
+        if self._rag_pipeline is None:
+            self._rag_pipeline = RAGPipeline()
+        return self._rag_pipeline
 
     def get_session(self, debate_id: str) -> Optional[DebateSession]:
         return self._sessions.get(debate_id)
@@ -212,7 +219,7 @@ class DebateManager:
 
         try:
             client = self._get_client()
-            rag = RAGPipeline()  # uses default embeddings dir
+            rag = self._get_rag()
 
             engine = DebateEngine(
                 topic_id=session.topic_id,

@@ -20,6 +20,14 @@ RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/wh
 COPY requirements-deploy.txt ./
 RUN pip install --no-cache-dir -r requirements-deploy.txt
 
+# Pre-export the embedding model to ONNX at build time.
+# First load triggers ONNX export (needs torch); subsequent loads use the cached ONNX file.
+# This avoids a slow + memory-heavy first-request export at runtime.
+RUN python -c "\
+from sentence_transformers import SentenceTransformer; \
+m = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2', backend='onnx'); \
+print('ONNX export OK, shape:', m.encode(['test']).shape)"
+
 # Copy application code
 COPY src/ ./src/
 COPY demo/backend/ ./demo/backend/
@@ -31,6 +39,9 @@ RUN mkdir -p runs/demo
 
 # Copy built frontend from stage 1
 COPY --from=frontend-build /app/demo/frontend/dist ./demo/frontend/dist
+
+# Use ONNX backend for embeddings (lower runtime memory than PyTorch inference)
+ENV EMBEDDING_BACKEND=onnx
 
 # Expose port (Railway sets PORT env var)
 EXPOSE 8000
