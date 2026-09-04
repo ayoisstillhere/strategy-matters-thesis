@@ -11,6 +11,7 @@ RUN npm run build
 
 # ── Stage 2: Python backend + serve frontend ──
 FROM python:3.11-slim
+# cache-bust: v2 (force rebuild 2026-09-04)
 WORKDIR /app
 
 # Install CPU-only PyTorch first (smaller than default CUDA build)
