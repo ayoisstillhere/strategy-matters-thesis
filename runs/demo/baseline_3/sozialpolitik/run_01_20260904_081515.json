@@ -1,0 +1,726 @@
+{
+  "run_id": "795f11c6-698c-44d3-82a4-27cf1c8a72d1",
+  "config": {
+    "topic_id": "sozialpolitik",
+    "topic_type": "values-driven",
+    "framing_prompt": "According to the Deutsche Bundesbank, the wealthiest 10% of households in Germany hold over 60% of total net wealth, while the bottom 50% hold less than 3%. At the same time, Germany has no net wealth tax (the Vermögensteuer has been suspended since 1997) and inheritance tax revenues remain modest relative to GDP. Discuss whether the government should introduce a wealth tax, reform the inheritance tax, or pursue alternative redistribution mechanisms — and what effects such policies would have on economic growth, investment, and social cohesion. Ground your arguments in your party's documented positions.",
+    "condition_id": "baseline_3",
+    "condition_label": "Habermas",
+    "condition_type": "baseline",
+    "run_number": 1,
+    "agent_model": "qwen/qwen3.8-27b",
+    "judge_model": "qwen/qwen3.8-27b",
+    "moderator_model": "qwen/qwen3.8-27b",
+    "num_rounds": 3,
+    "num_agents": 6,
+    "max_interventions": 3,
+    "silent_control_rate": 0.2,
+    "turn_order": [
+      "CDU/CSU",
+      "SPD",
+      "Bündnis 90/Die Grünen",
+      "FDP",
+      "Die Linke",
+      "AfD"
+    ],
+    "has_moderator_agent": true,
+    "uses_trigger": false,
+    "trigger_strategy": null,
+    "nudge_text": "",
+    "language": "en"
+  },
+  "turns": [
+    {
+      "turn_id": "820d44d7-dd56-447d-89a8-db3699815165",
+      "round_number": 1,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "We fundamentally reject the idea of introducing a new wealth tax, as Germany is already a high-tax jurisdiction where citizens and businesses bear a burden that stifles competitiveness. Our focus must be on a comprehensive tax reform that lowers the corporate tax rate to a maximum of 25 percent and flattens the income tax scale, because performance must be rewarded to ensure that work and entrepreneurship pay off again. Rather than confiscating capital through static wealth levies, we support the social market economy by strengthening the Mittelstand and family businesses, which are the true engines of our prosperity and job creation. We believe that sustainable redistribution is best achieved through growth, lower tax burdens, and a fair, efficient tax system that encourages investment rather than driving it abroad.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The tone is professional and respectful, using standard political rhetoric like 'fundamentally reject' and 'confiscating capital' without resorting to personal attacks or inflammatory language against specific opponents.",
+        "relevance": "The turn directly addresses the core of social policy by discussing the funding mechanisms (taxation) and the economic basis (growth vs. redistribution) for social welfare, staying firmly within the scope of the debate topic.",
+        "logical_consistency": "The argument follows a coherent internal logic: high taxes stifle growth -> lower taxes/growth create wealth -> wealth enables sustainable redistribution, presenting a clear causal chain without internal contradictions.",
+        "argument_strength": "While the reasoning is clear, it relies on general economic principles and assertions (e.g., 'stifles competitiveness') without citing specific data, studies, or concrete mechanisms to support the claim that lower taxes lead to better social outcomes.",
+        "document_grounding": "The positions align closely with the CDU/CSU 2025 programme, specifically the rejection of a wealth tax, the goal of a 25% corporate tax rate, and the emphasis on the 'social market economy' and Mittelstand.",
+        "responsiveness": "As this is the first turn with no preceding speakers, the agent cannot engage with specific opposing arguments; it presents a standalone opening statement, which is adequate for the context but lacks direct engagement with others.",
+        "stance_differentiation": "The use of specific terminology like 'social market economy,' 'Mittelstand,' and the explicit rejection of a 'wealth tax' clearly identifies the speaker as CDU/CSU, distinguishing them from left-wing parties that might support such taxes."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Anhebung des Spitzensteuersatzes: Bei der Besteuerung von Einkommen soll der Spitzenste",
+        "Resilienz der Wirtschaft stärken.\nFreien Handel und Exporte unterstützen.\nWir handeln.\nSteuerlast ve",
+        "II. Unser Plan für ein Land, das wieder\nWohlstand für alle schafft\nDeutschland ist eine starke Volks"
+      ],
+      "token_count_input": 3372,
+      "token_count_output": 591,
+      "latency_s": 1.7160000000000002,
+      "timestamp": "2026-09-04T08:14:30.131435Z"
+    },
+    {
+      "turn_id": "02a574ea-6ce7-428c-964a-77771e1027fe",
+      "round_number": 1,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "The claim that taxing the top 10% of wealth holders would stifle competitiveness ignores the reality that labor income is currently taxed far more heavily than capital, creating a fundamental distortion that penalizes hard work. We must correct this imbalance by strengthening asset-based taxation and reforming the inheritance tax, which currently privileges large corporate estates over family businesses and small inheritances. This is not about confiscation, but about ensuring that those with the greatest means contribute fairly to the investments our society needs, such as our proposed Deutschlandfonds to mobilize public and private capital for the future. A just society requires that property brings security but also carries responsibility, and we will ensure that top wealth shares the burden of modernizing our country without expanding the tax base to the middle class.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The tone is professional and respectful, focusing on policy mechanisms rather than attacking the opposing party's character. Phrases like 'ignores the reality' are critical but remain within the bounds of standard parliamentary debate without inflammatory language.",
+        "relevance": "The turn directly addresses the CDU/CSU's rejection of wealth taxes and their focus on competitiveness, staying strictly within the scope of social policy and tax reform.",
+        "logical_consistency": "The argument is internally coherent, moving from the premise of tax distortion (labor vs. capital) to the solution (asset-based taxation) and the specific mechanism (Deutschlandfonds), without logical gaps or contradictions.",
+        "argument_strength": "The turn provides specific reasoning by identifying the causal mechanism (tax distortion penalizing labor) and referencing a concrete policy instrument (Deutschlandfonds) to support the claim that wealth taxation can fund necessary investments.",
+        "document_grounding": "The references to the 'Deutschlandfonds' and the specific stance on inheritance tax reform align closely with the SPD's 2025 Bundestagswahlprogramm and public positions on social justice and investment.",
+        "responsiveness": "The turn explicitly engages with the CDU/CSU's specific argument about competitiveness and 'confiscation,' directly countering the claim that wealth taxes stifle growth by reframing it as a correction of existing distortions.",
+        "stance_differentiation": "The use of terms like 'Deutschlandfonds,' the emphasis on 'social justice' and 'responsibility' of property, and the specific focus on correcting the labor-capital tax imbalance are distinctively SPD markers that differentiate it from the CDU's market-liberal framing."
+      },
+      "rag_passages_used": [
+        "Kapitalgesellschaften und Bezieher von Kapitalerträgen dazu. Wir stellen sicher, dass der Kreis der\n",
+        "Staat und private Geldgeber gemeinsam und bürokratiearm in Deutschlands Zukunft investieren\nkönnen. ",
+        "privates Kapital mobilisiert werden. Große institutionelle Anleger wie zum Beispiel Versicherungen\no"
+      ],
+      "token_count_input": 3676,
+      "token_count_output": 593,
+      "latency_s": 1.637,
+      "timestamp": "2026-09-04T08:14:32.314803Z"
+    },
+    {
+      "turn_id": "08f9e179-2ba9-4ffa-bb5c-772f81a61706",
+      "round_number": 1,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "The fact that the wealthiest one percent of Germans holds more wealth than the bottom ninety percent combined is not a statistical anomaly but a moral failure that demands immediate structural correction. We must finally end the suspension of the wealth tax and reform the inheritance tax to ensure that extraordinary fortunes do not simply pass down the generations, thereby undermining the principle that social mobility is earned through effort, not birthright. By closing the loopholes that exempt large inheritances and actively pursuing a global billionaire tax, we can generate the substantial revenue needed to fund the social-ecological transition and protect our most vulnerable citizens from the inflationary shocks that the poorest have borne the heaviest burden of. This is not about punishing success, but about ensuring that Germany remains a society where everyone has the dignity and resources to participate fully in the economic and democratic life of our country.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The tone is professional and respectful, focusing on structural issues rather than attacking opponents personally. The phrase 'moral failure' is strong but directed at the economic structure/inequality, not the opposing parties, maintaining a high standard of parliamentary discourse.",
+        "relevance": "The turn directly addresses the core debate topic of social policy and taxation, specifically engaging with the wealth tax and inheritance tax issues raised by the preceding speakers. It stays focused on the fiscal mechanisms for social redistribution.",
+        "logical_consistency": "The argument follows a clear logical chain: identifying the problem (inequality), proposing specific solutions (wealth tax, inheritance reform), and linking them to the desired outcome (funding the transition). There are no internal contradictions or non-sequiturs.",
+        "argument_strength": "While the moral and structural arguments are clear, the turn relies on general assertions about revenue generation without providing specific estimates or detailed mechanisms for how the 'global billionaire tax' would be implemented or enforced. It lacks the concrete evidence found in higher-scoring turns.",
+        "document_grounding": "The positions align closely with the Greens' 2025 program, specifically the call to end the suspension of the wealth tax (Vermögenssteuer) and reform inheritance tax to close loopholes. The emphasis on the 'social-ecological transition' as a funding priority is a hallmark of their documented platform.",
+        "responsiveness": "The turn engages with the general theme of taxation but does not directly refute the specific arguments made by the CDU (competitiveness/corporate tax) or SPD (labor vs. capital distortion). It presents its own position rather than directly countering the specific claims of the previous speakers, resulting in a moderate level of responsiveness.",
+        "stance_differentiation": "The turn is unmistakably Green, using specific vocabulary like 'social-ecological transition,' 'moral failure' regarding inequality, and prioritizing climate/social justice over pure economic growth. This framing is distinct from the CDU's market-liberal and SPD's social-democratic approaches."
+      },
+      "rag_passages_used": [
+        "möchten endlich etwas erreichen. Deswe-\nFür ein gerechtes Steuersystem gen fokussieren wir uns auf f",
+        "Instruments des Reallabors unkompliziert aufgegangen, dass das reichste Prozent der\nausprobieren und",
+        "Steuererklärung über die Deutschland-App überfällige Reform nicht erfolgreich. Auch\nabzugeben. Zudem"
+      ],
+      "token_count_input": 4073,
+      "token_count_output": 686,
+      "latency_s": 1.928,
+      "timestamp": "2026-09-04T08:14:34.334255Z"
+    },
+    {
+      "turn_id": "6e4f6539-99fb-49fa-b60a-fa8408da53a8",
+      "round_number": 1,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "The SPD and Greens are proposing a wealth tax, which is not a solution to inequality but a prescription for capital flight and economic stagnation. We must remember that Germany already ranks among the highest taxed jurisdictions in Europe, and adding another layer of confiscatory levies will only drive our most productive entrepreneurs and investors abroad. Instead of trying to tax existing wealth into oblivion, we should focus on making work and investment attractive again by introducing a linear progressive income tax that eliminates the middle-class trap and ensures that effort is truly rewarded. A strong, innovation-driven economy that generates new wealth through less bureaucracy and lower taxes is the only sustainable way to lift the bottom half out of poverty, rather than simply raiding the pockets of those who built this country.",
+      "scores": {
+        "civility": 3,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The tone is professional and policy-focused, but it uses loaded language such as 'confiscatory levies' and 'raiding the pockets' to characterize opponents' proposals, which falls under the 'occasional loaded language' anchor for a score of 3.",
+        "relevance": "The turn directly addresses the debate topic of social policy by arguing against wealth taxes and proposing alternative economic measures to address inequality, staying firmly within the scope of the discussion.",
+        "logical_consistency": "The argument follows a clear internal logic: high taxes lead to capital flight, which harms the economy, so lowering taxes and reducing bureaucracy will generate growth to lift people out of poverty. There are no internal contradictions.",
+        "argument_strength": "The turn relies on general economic principles (capital flight, incentive structures) without citing specific data, studies, or concrete mechanisms for how the proposed 'linear progressive income tax' would function or generate sufficient revenue, resulting in a score of 3.",
+        "document_grounding": "The positions align well with the FDP's 2025 program, specifically the rejection of a wealth tax, the call for tax relief for the middle class, and the emphasis on reducing bureaucracy to stimulate growth.",
+        "responsiveness": "The turn explicitly names the SPD and Greens and directly refutes their specific proposal for a wealth tax, engaging with the core argument made in the preceding turns rather than ignoring them.",
+        "stance_differentiation": "The use of terms like 'linear progressive income tax,' 'bureaucracy,' and the focus on 'entrepreneurs' and 'capital flight' clearly marks the turn as distinctively liberal/FDP, differentiating it from the social-democratic and green positions."
+      },
+      "rag_passages_used": [
+        "mehr Investitionen und Innovationen in Deutschland möglich macht.\nFür eine faire Besteuerung\nWer von",
+        "Sozial-Taxonomie lehnen wir strikt ab. Auf EU-Ebene braucht es ein System verbindlicher Erfassung\nvo",
+        "1990 ist es noch nicht flächendeckend gelungen, eine mit den westdeutschen Bundesländern\nvergleichba"
+      ],
+      "token_count_input": 4379,
+      "token_count_output": 602,
+      "latency_s": 1.748,
+      "timestamp": "2026-09-04T08:14:36.638106Z"
+    },
+    {
+      "turn_id": "8743b1ab-7b0a-41bd-ad61-7749c0030160",
+      "round_number": 1,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "You speak of competitiveness while ignoring that the wealthiest 10 percent of households hold over 60 percent of total net wealth, yet they pay a fraction of what a factory worker pays on their hard-earned income. We demand the immediate reintroduction of the Vermögensteuer, targeting only the richest 2.5 percent with a one million euro exemption per person, so that those who have amassed fortunes without creating social value finally pay their share. We will also close every loophole in the inheritance tax, ending the special treatment of corporate assets and large real estate holdings that allows dynasties to pass down wealth without consequence. This is not confiscation; it is a necessary correction of a system where capital is taxed far less than labor, and the revenue will fund the public investment and social protections that the bottom 50 percent have been denied for decades.",
+      "scores": {
+        "civility": 3,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The tone is professional and policy-focused, but the phrase 'those who have amassed fortunes without creating social value' is a loaded characterization that implies moral judgment on the opponents' supporters, placing it at the boundary of dismissive framing (score 2) and neutral critique (score 3).",
+        "relevance": "The turn directly addresses the core debate topic of social policy and taxation, specifically responding to the wealth tax controversy raised by previous speakers without drifting to unrelated issues.",
+        "logical_consistency": "The argument follows a clear logical structure: identifying an imbalance (wealth vs. labor taxation), proposing a specific remedy (Vermögensteuer), and linking the revenue to social outcomes. There are no internal contradictions.",
+        "argument_strength": "While the turn cites a specific statistic (60% wealth share) and specific policy parameters (2.5% target, 1M exemption), it relies on general assertions about 'social value' and 'denied protections' without providing concrete evidence for the causal link between the tax and the specific social outcomes claimed.",
+        "document_grounding": "The proposal for a Vermögensteuer targeting the top 2.5% with a 1 million euro exemption aligns closely with Die Linke's documented positions in their 2025 election program and public statements regarding wealth redistribution.",
+        "responsiveness": "The turn explicitly engages with the 'competitiveness' argument used by the CDU/CSU and FDP, countering it with data on wealth distribution and the tax burden on labor, thereby addressing the specific objections raised in the preceding turns.",
+        "stance_differentiation": "The use of terms like 'social value,' 'dynasties,' and the specific focus on correcting the labor-capital tax imbalance is distinctly characteristic of Die Linke's left-wing economic framing, clearly differentiating it from the SPD's more moderate social-democratic approach."
+      },
+      "rag_passages_used": [
+        "Wirt schaft� Das macht die Reichen reicher – und die Mieter*innen umgelegt werden darf� Wenn die\nmäc",
+        "25 Prozent besteuert (Kapitalertragsteuer). Ein Schlag schuld kann über 20 Jahre gestreckt werden un",
+        "[Wahl-O-Mat] Anhebung des Spitzensteuersatzes: Bei der Besteuerung von Einkommen soll der Spitzenste"
+      ],
+      "token_count_input": 4739,
+      "token_count_output": 663,
+      "latency_s": 1.903,
+      "timestamp": "2026-09-04T08:14:38.844065Z"
+    },
+    {
+      "turn_id": "901e8800-506f-42e7-9aaf-0607a51d4c2c",
+      "round_number": 1,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "The real issue is not that the rich are taxed too little, but that the state has become a bloated, wasteful machine that consumes ever more of your labor while offering nothing in return. We must dismantle the over 30,000 regulations in our tax code that drive businesses away and burden the Mittelstand, rather than inventing new confiscatory taxes to feed a growing bureaucracy. Instead of redistributing poverty through ideological wealth levies, we will cut spending, lower taxes, and restore the social market economy so that hard work and entrepreneurship generate prosperity for the many, not just the few.",
+      "scores": {
+        "civility": 3,
+        "relevance": 3,
+        "logical_consistency": 3,
+        "argument_strength": 2,
+        "document_grounding": 4,
+        "responsiveness": 2,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The tone is largely professional but uses loaded, inflammatory language such as 'bloated, wasteful machine' and 'ideological wealth levies,' which characterizes the state and opponents' motives negatively without direct personal attacks.",
+        "relevance": "The turn addresses the general theme of social policy and taxation but drifts into a broader critique of state bureaucracy and regulation, failing to engage with the specific mechanisms of wealth or inheritance tax reform proposed by other parties.",
+        "logical_consistency": "The argument is internally coherent in its premise that reducing state size and taxes will improve prosperity, but it contains a minor logical gap by assuming that dismantling regulations directly solves the inequality or social funding issues raised by others.",
+        "argument_strength": "The claim of 'over 30,000 regulations' is a specific but unverified statistic that serves as a weak anchor for the broader argument; the turn relies heavily on general assertions about 'cutting spending' without detailing how this specifically addresses the social policy deficits identified by other parties.",
+        "document_grounding": "The focus on deregulation, reducing the tax burden on the Mittelstand, and restoring the social market economy aligns closely with the AfD's documented positions on economic freedom and skepticism toward state intervention and redistribution.",
+        "responsiveness": "The turn ignores the specific arguments made by the SPD, Greens, and Linke regarding the distortion of labor vs. capital taxation and the moral imperative of wealth redistribution, instead launching a pre-prepared counter-attack on the state's size.",
+        "stance_differentiation": "The turn is distinctly identifiable as AfD due to its strong emphasis on state bloat, deregulation, and a specific framing of the 'social market economy' that prioritizes entrepreneurial freedom over redistributive justice, which contrasts sharply with the other parties' focus on tax reform for social investment."
+      },
+      "rag_passages_used": [
+        "rungsseitigen steuerfinanzierten Öffentlichkeitsarbeit auf wichtige\nInformationen, die nicht bereits",
+        "18 SOZIALE MARKTWIRTSCHAFT UND GESUNDHEIT\nDie desolate Situation im deutschen Rentensystem\nDas deuts",
+        "54 FINANZEN UND STEUERN\nDer Staat erhebt Steuern auch mit dem Ziel, durch gezielte öffent-\nliche Inv"
+      ],
+      "token_count_input": 5121,
+      "token_count_output": 600,
+      "latency_s": 1.758,
+      "timestamp": "2026-09-04T08:14:40.944432Z"
+    },
+    {
+      "turn_id": "9bbb8bce-c1d7-4f7d-88c5-e298e278dfe0",
+      "round_number": 2,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "To the parties advocating for a wealth tax, the empirical evidence from the suspension of the Vermögensteuer in 1997 and international comparisons clearly demonstrates that such measures trigger capital flight and reduce domestic investment rather than generating sustainable revenue. We do not need to speculate about stagnation; we have seen that when the state signals it will confiscate accumulated capital, entrepreneurs and investors rationalize by moving their assets to more predictable jurisdictions, thereby shrinking the very tax base you hope to exploit. Our approach prioritizes long-term investment incentives by lowering the corporate tax burden to a maximum of 25 percent, which directly supports the Mittelstand and ensures that new wealth creation funds social cohesion through economic growth rather than static redistribution.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The tone remains professional and focused on policy mechanisms rather than personal attacks. Phrases like 'To the parties advocating for a wealth tax' are direct but not inflammatory or dismissive.",
+        "relevance": "The turn directly addresses the core debate topic of social policy and taxation, specifically countering the wealth tax proposals made by SPD, Greens, and Die Linke in the previous round.",
+        "logical_consistency": "The argument follows a clear causal chain: wealth tax signals confiscation -> capital flight -> reduced tax base -> reduced investment. There are no internal contradictions or logical leaps.",
+        "argument_strength": "While the turn cites 'empirical evidence' and the 1997 suspension, it lacks specific data points or named studies to substantiate the claim that capital flight is the primary outcome, relying instead on general economic reasoning.",
+        "document_grounding": "The position aligns strongly with the CDU/CSU 2025 program, specifically the commitment to lower corporate tax to 25% and the rejection of a new wealth tax in favor of growth-oriented reforms.",
+        "responsiveness": "The turn explicitly references the opposing parties' advocacy for a wealth tax and directly counters their premise by arguing that such measures reduce rather than increase revenue, engaging with the specific policy mechanism proposed.",
+        "stance_differentiation": "The use of terms like 'Mittelstand,' 'social market economy,' and the specific target of a 25% corporate tax rate clearly identifies the speaker as CDU/CSU, distinguishing them from the FDP (which favors a linear tax) and the AfD (which focuses more on deregulation/spending cuts)."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Anhebung des Spitzensteuersatzes: Bei der Besteuerung von Einkommen soll der Spitzenste",
+        "Resilienz der Wirtschaft stärken.\nFreien Handel und Exporte unterstützen.\nWir handeln.\nSteuerlast ve",
+        "II. Unser Plan für ein Land, das wieder\nWohlstand für alle schafft\nDeutschland ist eine starke Volks"
+      ],
+      "token_count_input": 5443,
+      "token_count_output": 584,
+      "latency_s": 1.8370000000000002,
+      "timestamp": "2026-09-04T08:14:44.226853Z"
+    },
+    {
+      "turn_id": "422d34fd-46fb-43b2-825c-eeafd94a30c1",
+      "round_number": 2,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "The argument that a modern, carefully calibrated wealth tax inevitably causes capital flight is a generalization that ignores the specific design of our proposal, which targets only top-tier assets to ensure fairness without burdening the middle class. We are not proposing a blanket levy that punishes savings, but a structural correction to a system where labor income is heavily taxed while huge fortunes remain largely untaxed, thereby distorting the incentive structure. By reforming the inheritance tax to end the excessive privilege of large corporate estates, we can generate sustainable revenue to fund the Deutschlandfonds, which mobilizes private capital for future investments rather than draining it. This approach balances immediate social needs with long-term stability, ensuring that the wealth created in Germany contributes to the infrastructure and education that allow all citizens to participate in our economic success.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The tone remains professional and respectful, focusing on policy design ('carefully calibrated', 'structural correction') rather than attacking opponents. It avoids inflammatory language or personal attacks, maintaining a parliamentary standard.",
+        "relevance": "The turn directly addresses the debate topic of social policy and taxation, specifically responding to the previous round's arguments about wealth taxes and capital flight. It stays focused on the core issue of tax fairness and revenue generation.",
+        "logical_consistency": "The argument is internally coherent, moving from the critique of the opponent's generalization to the specific design of the SPD proposal, and finally to the intended use of revenue. There are no self-contradictions or logical leaps.",
+        "argument_strength": "While the reasoning is sound, it relies on general assertions about the 'design' of the tax and the benefits of the Deutschlandfonds without citing specific empirical evidence or detailed mechanisms to counter the CDU's claim about capital flight. It is adequate but lacks the depth of specific data or case studies.",
+        "document_grounding": "The turn clearly reflects SPD positions, specifically mentioning the 'Deutschlandfonds' and the focus on correcting the imbalance between labor and capital taxation, which are key themes in their 2025 program. It aligns well with their documented stance on inheritance tax reform.",
+        "responsiveness": "The turn explicitly engages with the CDU/CSU's argument about capital flight by characterizing it as a 'generalization' and contrasting it with the 'specific design' of the SPD proposal. It directly addresses the concern raised in the preceding turn.",
+        "stance_differentiation": "The use of terms like 'Deutschlandfonds', 'structural correction', and the emphasis on balancing social needs with long-term stability clearly identifies the speaker as the SPD, distinguishing them from the Greens (who focus more on ecological transition) and the Left (who are more radical on wealth redistribution)."
+      },
+      "rag_passages_used": [
+        "Kapitalgesellschaften und Bezieher von Kapitalerträgen dazu. Wir stellen sicher, dass der Kreis der\n",
+        "Staat und private Geldgeber gemeinsam und bürokratiearm in Deutschlands Zukunft investieren\nkönnen. ",
+        "privates Kapital mobilisiert werden. Große institutionelle Anleger wie zum Beispiel Versicherungen\no"
+      ],
+      "token_count_input": 5765,
+      "token_count_output": 647,
+      "latency_s": 1.991,
+      "timestamp": "2026-09-04T08:14:46.404042Z"
+    },
+    {
+      "turn_id": "1120b07f-3dde-40d4-a03b-29a0d34bb0c7",
+      "round_number": 2,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "We must move beyond the ideological standoff of capital flight versus social justice and look at the concrete design of our proposal, which targets only extraordinary fortunes while explicitly keeping self-used residential property exempt to protect the middle class. The evidence does not support the fear that a progressive, top-heavy wealth tax will hollow out our economy, as such measures primarily affect a tiny fraction of households whose capital is already diversified and globally mobile regardless of domestic policy. By pairing this with a comprehensive inheritance tax reform that strips away the special privileges for large corporate estates, we create a sustainable revenue stream that directly funds the green transition and social safety nets, ensuring that the costs of ecological modernization are not borne exclusively by those with the least means. This is not a zero-sum game where we sacrifice growth for fairness, but a necessary investment in social cohesion that stabilizes our democratic foundations and ensures long-term prosperity for all.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The tone is professional and respectful, using phrases like 'move beyond the ideological standoff' to de-escalate rather than attack. It critiques the opposing position's logic without resorting to personal insults or inflammatory labels.",
+        "relevance": "The turn directly addresses the debate topic of social policy and taxation, specifically focusing on the design of the wealth tax and its impact on the middle class, which is central to the ongoing discussion.",
+        "logical_consistency": "The argument is internally coherent, moving from the specific design of the tax (exemptions) to the economic rationale (diversified capital) and finally to the policy outcome (funding the green transition). There are no self-contradictions.",
+        "argument_strength": "While the reasoning is sound, it relies on general assertions about 'evidence' and 'diversified capital' without citing specific studies or data points, making it slightly less robust than a turn with concrete empirical backing.",
+        "document_grounding": "The positions align well with the Greens' documented stance on reintroducing the wealth tax, reforming inheritance tax, and funding the ecological transition, reflecting their core programme priorities.",
+        "responsiveness": "The turn explicitly engages with the 'capital flight' argument raised by the CDU/CSU and FDP in previous turns, countering it with specific design features (exemptions) and economic reasoning about asset mobility.",
+        "stance_differentiation": "The focus on the 'green transition,' 'ecological modernization,' and 'social cohesion' as the primary beneficiaries of the tax revenue clearly distinguishes the Greens from other parties who focus more on general economic growth or social justice alone."
+      },
+      "rag_passages_used": [
+        "möchten endlich etwas erreichen. Deswe-\nFür ein gerechtes Steuersystem gen fokussieren wir uns auf f",
+        "Instruments des Reallabors unkompliziert aufgegangen, dass das reichste Prozent der\nausprobieren und",
+        "Steuererklärung über die Deutschland-App überfällige Reform nicht erfolgreich. Auch\nabzugeben. Zudem"
+      ],
+      "token_count_input": 6177,
+      "token_count_output": 620,
+      "latency_s": 1.891,
+      "timestamp": "2026-09-04T08:14:48.665528Z"
+    },
+    {
+      "turn_id": "9b6d037d-c42f-4442-88e6-5a86b946b2fc",
+      "round_number": 2,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "The empirical evidence consistently shows that broad-based wealth taxes inevitably trigger capital flight, shrinking the tax base and reducing long-term investment incentives rather than generating sustainable revenue. We do not need to speculate about this outcome; we have seen that when the state signals it will confiscate accumulated capital, entrepreneurs and investors rationalize by moving their assets to more predictable jurisdictions, thereby undermining the very economic growth required to lift the bottom half out of poverty. Instead of pursuing static redistribution through new levies, we must focus on dynamic wealth creation by eliminating the middle-class trap in income tax and reducing the bureaucratic burden that stifles our Mittelstand. A strong, innovation-driven economy that rewards performance and lowers taxes is the only sustainable mechanism to ensure that hard work and entrepreneurship generate prosperity for all, rather than simply raiding the pockets of those who built this country.",
+      "scores": {
+        "civility": 3,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 2,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The tone is largely professional, but the phrase 'raiding the pockets of those who built this country' is a loaded, inflammatory characterization of the opposing parties' proposals, dropping below the standard of purely neutral policy critique.",
+        "relevance": "The turn directly addresses the core debate topic of social policy and taxation, specifically countering the wealth tax arguments with the FDP's alternative focus on income tax reform and deregulation.",
+        "logical_consistency": "The argument is internally coherent but relies on a significant logical leap by asserting that wealth taxes 'inevitably' cause capital flight, ignoring the nuance of tax design (e.g., exemptions for residential property) mentioned by opponents, which weakens the causal claim.",
+        "argument_strength": "The turn relies on general assertions about 'empirical evidence' without citing specific studies or data points, and it repeats the same broad claims made in Round 1 without adding new specific mechanisms or evidence to strengthen the case.",
+        "document_grounding": "The positions align well with the FDP's documented 2025 programme, specifically the call for a linear progressive income tax, reduction of bureaucracy, and opposition to new wealth taxes, reflecting their core economic platform.",
+        "responsiveness": "The turn fails to engage with the specific counter-arguments made in Round 2 by the SPD and Greens (such as the exemption of self-used residential property or the targeting of only top-tier assets), instead repeating the generic 'capital flight' argument from Round 1 as if the specific design flaws had not been addressed.",
+        "stance_differentiation": "The turn clearly identifies as FDP through its emphasis on 'dynamic wealth creation,' 'innovation-driven economy,' and the specific critique of the 'middle-class trap,' which are distinct ideological markers compared to the other parties."
+      },
+      "rag_passages_used": [
+        "mehr Investitionen und Innovationen in Deutschland möglich macht.\nFür eine faire Besteuerung\nWer von",
+        "Sozial-Taxonomie lehnen wir strikt ab. Auf EU-Ebene braucht es ein System verbindlicher Erfassung\nvo",
+        "1990 ist es noch nicht flächendeckend gelungen, eine mit den westdeutschen Bundesländern\nvergleichba"
+      ],
+      "token_count_input": 6511,
+      "token_count_output": 635,
+      "latency_s": 2.06,
+      "timestamp": "2026-09-04T08:14:50.799540Z"
+    },
+    {
+      "turn_id": "f1ab6632-1042-4f7f-811c-e0ff0ccb9f2d",
+      "round_number": 2,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "The claim that a wealth tax on the richest 2.5 percent will trigger capital flight is a scare tactic that ignores the reality that the vast majority of this wealth is tied to illiquid assets like real estate and corporate holdings that cannot simply be moved abroad overnight. We are not asking for speculative capital to flee; we are demanding that the dynastic wealth accumulated over generations in Germany finally contributes to the common good instead of being shielded by loopholes and tax havens. Unlike the vague promises of growth-based trickle-down, our proposal generates an estimated 17 billion euros annually, providing concrete, immediate funding for housing and social security that the current system fails to deliver. We reject the false dichotomy between fairness and investment, because a society where the bottom half holds less than 3 percent of national wealth is already failing, and no amount of corporate tax cuts will fix the structural inequality that undermines social cohesion and democratic stability.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 5,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The tone is professional and firm, using terms like 'scare tactic' and 'false dichotomy' to critique opposing arguments without resorting to personal insults or dehumanizing language. It maintains a respectful parliamentary register while firmly rejecting the opponents' premises.",
+        "relevance": "The turn directly addresses the specific counter-arguments raised in Round 2 regarding capital flight and the inadequacy of wealth taxes, staying strictly within the scope of the social policy and taxation debate.",
+        "logical_consistency": "The argument is internally coherent, logically connecting the nature of the assets (illiquid) to the feasibility of the tax, and then linking the revenue to specific social outcomes. It effectively dismantles the 'capital flight' objection by distinguishing between mobile speculative capital and fixed domestic assets.",
+        "argument_strength": "The turn provides strong support by citing a specific revenue estimate (17 billion euros) and a concrete statistical claim about wealth distribution (bottom half holds <3%), which adds empirical weight to the argument beyond general assertions.",
+        "document_grounding": "The position aligns closely with Die Linke's documented 2025 program, specifically the demand for a wealth tax on the top 2.5% and the focus on structural inequality and social security, reflecting their core ideological commitments.",
+        "responsiveness": "The turn explicitly engages with the strongest version of the opposing argument (capital flight) by addressing the specific mechanism (liquidity of assets) and directly refutes the 'trickle-down' narrative mentioned by the CDU and FDP in previous turns.",
+        "stance_differentiation": "The use of terms like 'dynastic wealth,' 'common good,' and the specific focus on the bottom 50% holding less than 3% of wealth is unmistakably characteristic of Die Linke's left-wing, anti-capitalist framing, distinguishing it clearly from the SPD or Greens."
+      },
+      "rag_passages_used": [
+        "Wirt schaft� Das macht die Reichen reicher – und die Mieter*innen umgelegt werden darf� Wenn die\nmäc",
+        "25 Prozent besteuert (Kapitalertragsteuer). Ein Schlag schuld kann über 20 Jahre gestreckt werden un",
+        "[Wahl-O-Mat] Anhebung des Spitzensteuersatzes: Bei der Besteuerung von Einkommen soll der Spitzenste"
+      ],
+      "token_count_input": 6902,
+      "token_count_output": 673,
+      "latency_s": 2.166,
+      "timestamp": "2026-09-04T08:14:53.175627Z"
+    },
+    {
+      "turn_id": "428b01f6-a0b4-4b5f-b8ee-1ef9e097ae10",
+      "round_number": 2,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "The demand for data on capital flight is a distraction, because the state itself is the biggest thief, hoarding wealth through over 30,000 tax regulations that strangle our economy. We have no interest in modeling the success of a failed policy, but we do have the data showing that high taxation and bureaucratic overreach drive our Mittelstand and entrepreneurs abroad. The trade-off is simple: you either keep the capital in Germany by cutting spending and lowering taxes, or you chase it away with ideological levies that only enrich the political class. We choose to empower the many through a lean, efficient state, not to fund a bloated bureaucracy with the money of the few.",
+      "scores": {
+        "civility": 2,
+        "relevance": 3,
+        "logical_consistency": 3,
+        "argument_strength": 2,
+        "document_grounding": 4,
+        "responsiveness": 2,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn uses inflammatory and dehumanizing language, labeling the state as 'the biggest thief' and describing opponents' policies as 'ideological levies that only enrich the political class,' which attributes bad motives and uses aggressive characterizations rather than neutral policy critique.",
+        "relevance": "While the turn addresses the core debate topic of taxation and wealth distribution, it largely ignores the specific counter-arguments regarding the design of the wealth tax (e.g., targeting only top 2.5%, illiquid assets) and instead pivots to a general critique of state size and bureaucracy.",
+        "logical_consistency": "The argument contains a non-sequitur by dismissing the need for data on capital flight while simultaneously claiming to have data showing high taxation drives businesses abroad; the leap from '30,000 regulations' to 'state is a thief' is a rhetorical exaggeration rather than a logical deduction.",
+        "argument_strength": "The turn relies on vague assertions and emotional appeals ('hoarding wealth,' 'strangle our economy') without providing specific evidence, mechanisms, or concrete policy details to support the claim that cutting spending is the superior alternative to the proposed wealth tax reforms.",
+        "document_grounding": "The turn aligns well with the AfD's documented positions on reducing bureaucracy, lowering taxes, and criticizing the 'bureaucratic state,' reflecting their core platform themes of fiscal conservatism and deregulation.",
+        "responsiveness": "The turn fails to engage with the specific arguments made by Die Linke or other parties in the preceding turn (such as the illiquid nature of assets or the specific revenue estimates), instead offering a generic dismissal of the 'capital flight' debate as a distraction.",
+        "stance_differentiation": "The turn clearly reflects the AfD's distinct ideological stance, using specific vocabulary like 'Mittelstand,' 'lean, efficient state,' and 'political class' to differentiate itself from the center-right and left-wing parties."
+      },
+      "rag_passages_used": [
+        "rungsseitigen steuerfinanzierten Öffentlichkeitsarbeit auf wichtige\nInformationen, die nicht bereits",
+        "18 SOZIALE MARKTWIRTSCHAFT UND GESUNDHEIT\nDie desolate Situation im deutschen Rentensystem\nDas deuts",
+        "54 FINANZEN UND STEUERN\nDer Staat erhebt Steuern auch mit dem Ziel, durch gezielte öffent-\nliche Inv"
+      ],
+      "token_count_input": 7313,
+      "token_count_output": 637,
+      "latency_s": 2.128,
+      "timestamp": "2026-09-04T08:14:55.540524Z"
+    },
+    {
+      "turn_id": "74491273-1ce4-4172-a8e8-bcbe56672716",
+      "round_number": 3,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "The argument that wealth is too illiquid to be mobile ignores the fundamental reality that human capital and entrepreneurial intent are the most mobile assets of all. When the state signals a structural shift toward confiscatory taxation, it does not just chase bank accounts; it chases the mind of the entrepreneur, who will simply choose to build their next factory, start their next venture, or relocate their family to a jurisdiction with predictable rules and lower burdens. We maintain that the suspension of the Vermögensteuer was a pragmatic correction, as the administrative costs and legal complexities of such a tax have historically outweighed the revenue generated, creating a net loss for the public purse. Our responsibility is to protect the Mittelstand and family businesses from bureaucratic strangulation, ensuring that the capital they hold is reinvested into jobs and innovation rather than being drained by a state that cannot manage its own finances.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The tone remains professional and focused on policy mechanisms rather than personal attacks. Phrases like 'bureaucratic strangulation' are critical but standard political rhetoric, not inflammatory or dehumanizing.",
+        "relevance": "The turn directly addresses the debate topic of social policy through the lens of tax policy and wealth taxation, staying strictly within the scope of the ongoing discussion about the Vermögensteuer.",
+        "logical_consistency": "The argument is internally coherent, moving from the mobility of human capital to the administrative inefficiency of the tax, and concluding with the need to protect the Mittelstand. There are no self-contradictions.",
+        "argument_strength": "While the point about human capital mobility is valid, the claim that administrative costs historically outweighed revenue is a generalization that lacks specific data or citation in this turn, making it a moderate argument rather than a compelling one.",
+        "document_grounding": "The stance aligns well with the CDU/CSU's documented position against a wealth tax and their focus on the Mittelstand and tax relief, reflecting their 2025 programme priorities without fabricating specific commitments.",
+        "responsiveness": "The turn explicitly engages with Die Linke's specific argument from Round 2 that wealth is 'tied to illiquid assets' by counter-arguing that 'human capital and entrepreneurial intent' are the mobile assets, showing direct engagement with the preceding speaker's logic.",
+        "stance_differentiation": "The use of terms like 'Mittelstand', 'family businesses', and the focus on 'predictable rules' and 'lower burdens' clearly marks the turn as distinctively CDU/CSU, differentiating it from the FDP's more radical tax cuts or the AfD's anti-state rhetoric."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Anhebung des Spitzensteuersatzes: Bei der Besteuerung von Einkommen soll der Spitzenste",
+        "Resilienz der Wirtschaft stärken.\nFreien Handel und Exporte unterstützen.\nWir handeln.\nSteuerlast ve",
+        "II. Unser Plan für ein Land, das wieder\nWohlstand für alle schafft\nDeutschland ist eine starke Volks"
+      ],
+      "token_count_input": 7569,
+      "token_count_output": 637,
+      "latency_s": 2.283,
+      "timestamp": "2026-09-04T08:14:59.778409Z"
+    },
+    {
+      "turn_id": "2643d0ff-fa04-45a7-b6b1-447c629fe275",
+      "round_number": 3,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "We design our proposal to target only top-tier assets, ensuring the tax base remains narrow and focused on extraordinary fortunes rather than the savings of the middle class or the Mittelstand. By pairing this with a robust reform of the inheritance tax that ends the excessive privilege of large corporate estates, we create a stable, predictable framework where property carries a clear social responsibility. This revenue directly funds the Deutschlandfonds, mobilizing private capital for future investments rather than draining it, thereby proving that fairness and investment can coexist. We reject the fear-based narrative of capital flight, as a just society where labor and capital are taxed equitably is the most attractive environment for sustainable, long-term economic growth.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The tone remains professional and respectful, using phrases like 'We reject the fear-based narrative' to critique the opposing argument without resorting to personal attacks or inflammatory language.",
+        "relevance": "The turn directly addresses the debate topic of social policy and taxation, specifically responding to the concerns about capital flight and the impact on the Mittelstand raised in previous turns.",
+        "logical_consistency": "The argument is generally coherent but relies on a somewhat tautological conclusion that a 'just society' is inherently the 'most attractive environment for sustainable growth,' which is a value judgment presented as an economic fact without sufficient empirical bridging.",
+        "argument_strength": "The claims are supported by the specific mechanism of the 'Deutschlandfonds' and the narrowing of the tax base, but it lacks concrete evidence or data to substantiate the claim that this specific design prevents capital flight, relying more on assertion than proof.",
+        "document_grounding": "The turn clearly reflects SPD positions, specifically referencing the 'Deutschlandfonds' and the reform of inheritance tax to target large corporate estates, which are key components of their documented platform.",
+        "responsiveness": "The turn acknowledges the opposing view on capital flight and the Mittelstand but responds to a generalized version of the argument rather than engaging with the specific point about 'human capital' and entrepreneurial intent raised by the CDU/CSU in the immediately preceding turn.",
+        "stance_differentiation": "The use of specific SPD terminology like 'Deutschlandfonds' and the framing of 'social responsibility' of property clearly distinguishes the party's social-democratic identity from the liberal and conservative opponents."
+      },
+      "rag_passages_used": [
+        "Kapitalgesellschaften und Bezieher von Kapitalerträgen dazu. Wir stellen sicher, dass der Kreis der\n",
+        "Staat und private Geldgeber gemeinsam und bürokratiearm in Deutschlands Zukunft investieren\nkönnen. ",
+        "privates Kapital mobilisiert werden. Große institutionelle Anleger wie zum Beispiel Versicherungen\no"
+      ],
+      "token_count_input": 7739,
+      "token_count_output": 567,
+      "latency_s": 2.091,
+      "timestamp": "2026-09-04T08:15:02.118208Z"
+    },
+    {
+      "turn_id": "b5b201a1-7c6a-4e4b-a9d6-bea526fd7b2d",
+      "round_number": 3,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "To address the concern of capital flight directly, our proposed wealth tax is deliberately designed to target only extraordinary fortunes while explicitly exempting self-used residential property, thereby protecting the middle class and the Mittelstand from any burden. We mitigate the risk of capital flight by recognizing that the vast majority of high net worth is tied to illiquid assets like real estate and corporate holdings, which cannot be easily moved across borders, and by anchoring these assets in the local economic ecosystem that relies on Germany's stable democratic institutions and infrastructure. We further propose active international cooperation to pursue a global billionaire tax, which prevents the jurisdictional arbitrage that critics fear and ensures that super-rich individuals cannot simply shift their tax residence to escape their fair share. By combining this targeted domestic levy with a comprehensive inheritance tax reform that strips away privileges for large corporate estates, we create a predictable, long-term revenue stream that funds the green transition, proving that social stability and economic attractiveness are not mutually exclusive but mutually reinforcing.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The tone is professional and respectful, focusing on policy design and economic mechanisms rather than attacking opponents. It uses neutral language like 'mitigate the risk' and 'protecting the middle class' without inflammatory rhetoric.",
+        "relevance": "The turn directly addresses the debate topic of social policy and wealth taxation, specifically responding to the capital flight arguments raised by the CDU/CSU and FDP in previous turns.",
+        "logical_consistency": "The argument is internally coherent, linking the design of the tax (targeting illiquid assets) to the mitigation of capital flight risks, and connecting the revenue to specific policy goals (green transition).",
+        "argument_strength": "While the reasoning is sound, it relies on general assertions about asset liquidity and international cooperation without citing specific empirical data or studies to support the claim that capital flight is mitigated in this specific design.",
+        "document_grounding": "The positions align well with the Greens' documented stance on wealth tax, inheritance tax reform, and the green transition, reflecting their core platform priorities accurately.",
+        "responsiveness": "The turn explicitly engages with the 'concern of capital flight' raised by previous speakers, addressing the specific mechanism (illiquid assets) and the counter-argument (global cooperation) to refute the opposition's points.",
+        "stance_differentiation": "The turn clearly identifies as Green through its emphasis on the 'green transition' as the primary beneficiary of the revenue and its focus on ecological modernization, distinguishing it from other left-wing parties that focus more on general social security."
+      },
+      "rag_passages_used": [
+        "möchten endlich etwas erreichen. Deswe-\nFür ein gerechtes Steuersystem gen fokussieren wir uns auf f",
+        "Instruments des Reallabors unkompliziert aufgegangen, dass das reichste Prozent der\nausprobieren und",
+        "Steuererklärung über die Deutschland-App überfällige Reform nicht erfolgreich. Auch\nabzugeben. Zudem"
+      ],
+      "token_count_input": 7983,
+      "token_count_output": 611,
+      "latency_s": 3.0309999999999997,
+      "timestamp": "2026-09-04T08:15:04.897299Z"
+    },
+    {
+      "turn_id": "93444552-2b15-45bc-b1d2-bcc288149cec",
+      "round_number": 3,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "The illiquidity argument is a legal fiction, not an economic reality, because the true capital at stake is the entrepreneur’s intent to invest, which remains perfectly mobile and will simply choose jurisdictions with predictable rules and lower burdens. We reject the notion that taxing existing assets generates sustainable revenue, as it only creates a race to the bottom where the state chases the mind of the innovator rather than the bank account, ultimately shrinking the tax base you hope to exploit. Instead of relying on confiscatory levies that drive our Mittelstand and family businesses abroad, we must focus on dynamic wealth creation by eliminating the bureaucratic burnout and the middle-class trap in our income tax system. A strong, innovation-driven economy that rewards performance and lowers taxes is the only sustainable mechanism to ensure that hard work and entrepreneurship generate prosperity for all, rather than simply raiding the pockets of those who built this country.",
+      "scores": {
+        "civility": 3,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The tone is professional and avoids direct insults, but uses loaded, inflammatory language such as 'legal fiction,' 'confiscatory levies,' and 'raiding the pockets,' which characterizes the opponents' proposals in a dismissive and aggressive manner.",
+        "relevance": "The turn directly addresses the core debate topic of social policy and taxation, specifically engaging with the counter-arguments regarding wealth tax and capital flight presented in the previous round.",
+        "logical_consistency": "The argument is internally coherent but relies on a significant logical leap by equating the mobility of 'entrepreneurial intent' with the mobility of illiquid assets, effectively dismissing the opponents' specific point about asset liquidity without fully addressing it.",
+        "argument_strength": "The turn relies heavily on general assertions about capital flight and the 'middle-class trap' without providing specific empirical evidence, data, or concrete mechanisms to support the claim that the proposed alternatives are superior to the wealth tax.",
+        "document_grounding": "The positions align clearly with the FDP's documented 2025 programme, specifically the focus on reducing bureaucracy, eliminating the middle-class tax trap, and opposing new wealth taxes in favor of growth-oriented policies.",
+        "responsiveness": "The turn explicitly names and engages with the 'illiquidity argument' raised by Die Linke and the Greens in the previous turn, directly countering their specific claim that assets cannot be moved abroad.",
+        "stance_differentiation": "The turn uses distinct FDP vocabulary and framing, such as 'dynamic wealth creation,' 'innovation-driven economy,' and 'bureaucratic burnout,' which clearly distinguishes the party's liberal, pro-growth stance from the social-democratic and left-wing positions."
+      },
+      "rag_passages_used": [
+        "mehr Investitionen und Innovationen in Deutschland möglich macht.\nFür eine faire Besteuerung\nWer von",
+        "Sozial-Taxonomie lehnen wir strikt ab. Auf EU-Ebene braucht es ein System verbindlicher Erfassung\nvo",
+        "1990 ist es noch nicht flächendeckend gelungen, eine mit den westdeutschen Bundesländern\nvergleichba"
+      ],
+      "token_count_input": 8161,
+      "token_count_output": 630,
+      "latency_s": 2.4779999999999998,
+      "timestamp": "2026-09-04T08:15:07.856992Z"
+    },
+    {
+      "turn_id": "01c7334a-700e-4f89-8e15-7f5fd2b1a5f1",
+      "round_number": 3,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "The so-called risk of capital flight is a convenient fiction used by those who profit from inequality to deflect from the fact that the wealth we are discussing is locked into German real estate and corporate shares that cannot be moved overnight. We mitigate this risk not through vague promises of international cooperation, but by demanding a publicly accessible financial register that exposes the true owners of these assets, making evasion and jurisdictional arbitrage impossible. This transparency ensures that the wealth tax is not a tool for the state to chase mobile money, but a structural mechanism to force the richest 2.5 percent to pay for the social infrastructure their fortunes have long ignored. You claim that taxing this illiquid wealth will drive away the entrepreneur, but the truth is that it will finally drive away the complacency that allows a few to hoard sixty percent of our national wealth while the bottom half struggles to survive.",
+      "scores": {
+        "civility": 3,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The tone is professional and argumentative, avoiding direct insults, but uses loaded language like 'convenient fiction' and 'hoard' which characterizes opponents' motives as deceptive rather than merely mistaken.",
+        "relevance": "The turn directly addresses the specific counter-arguments regarding capital flight and illiquidity raised by the CDU/CSU, FDP, and Greens in the previous round, staying strictly within the scope of the wealth tax debate.",
+        "logical_consistency": "The argument is internally coherent, logically connecting the nature of the assets (illiquid) to the proposed mitigation strategy (transparency registers) to refute the capital flight claim.",
+        "argument_strength": "While the core economic argument about illiquidity is sound, the specific proposal of a 'publicly accessible financial register' as a primary mitigation for capital flight is a weak economic mechanism compared to the structural arguments made by other parties, relying more on political transparency than economic deterrence.",
+        "document_grounding": "The stance aligns strongly with Die Linke's documented positions on wealth tax, inheritance tax reform, and the need for financial transparency to combat tax evasion, reflecting their programmatic focus on structural inequality.",
+        "responsiveness": "The turn explicitly engages with the 'illiquidity' and 'entrepreneurial intent' arguments from the preceding turns, specifically countering the idea that assets can be easily moved by emphasizing their fixed nature in Germany.",
+        "stance_differentiation": "The use of terms like 'hoard,' 'complacency,' and the focus on structural power dynamics and transparency registers is distinctly left-wing and unmistakably identifies the speaker as Die Linke, differentiating them from the more moderate SPD/Greens or the right-wing parties."
+      },
+      "rag_passages_used": [
+        "Wirt schaft� Das macht die Reichen reicher – und die Mieter*innen umgelegt werden darf� Wenn die\nmäc",
+        "25 Prozent besteuert (Kapitalertragsteuer). Ein Schlag schuld kann über 20 Jahre gestreckt werden un",
+        "[Wahl-O-Mat] Anhebung des Spitzensteuersatzes: Bei der Besteuerung von Einkommen soll der Spitzenste"
+      ],
+      "token_count_input": 8391,
+      "token_count_output": 628,
+      "latency_s": 2.174,
+      "timestamp": "2026-09-04T08:15:10.575590Z"
+    },
+    {
+      "turn_id": "2def91e2-86dc-448c-b005-607e0062b9f8",
+      "round_number": 3,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "We reject the premise that a wealth tax is a necessary evil to be refined, because the state itself is the primary driver of capital flight through its bloated bureaucracy and ideological spending that crushes the Mittelstand. The argument about illiquid assets is a legal distraction from the fact that the true mobile asset is the entrepreneur's intent, which will simply abandon a jurisdiction that threatens to confiscate their life's work. We do not need to model the failure of a new tax, but rather dismantle the over 30,000 regulations and cut spending to keep capital and competence in Germany. By lowering taxes and restoring a lean, efficient state, we ensure that prosperity is generated for the many through hard work, not redistributed from the few by a predatory political class.",
+      "scores": {
+        "civility": 2,
+        "relevance": 3,
+        "logical_consistency": 3,
+        "argument_strength": 2,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The turn uses inflammatory and dehumanizing language, labeling the political opposition as a 'predatory political class' and describing the state as a 'bloated bureaucracy' that 'crushes' the Mittelstand, which goes beyond neutral policy critique into aggressive character attacks.",
+        "relevance": "While the turn addresses the debate topic of social policy and taxation, it largely repeats the party's standard anti-tax rhetoric without engaging deeply with the specific counter-arguments regarding illiquidity or international cooperation raised by other parties in Round 3.",
+        "logical_consistency": "The argument is internally coherent in its logic (high tax -> flight -> need for cuts), but it relies on a false dichotomy between 'redistribution' and 'prosperity generation' and makes an unjustified leap that the state is the 'primary driver' of capital flight rather than one of several factors.",
+        "argument_strength": "The turn relies heavily on unsupported assertions and rhetorical flourishes (e.g., 'legal distraction', 'predatory political class') rather than providing specific evidence or mechanisms to support the claim that the state is the primary cause of capital flight, making the argument weak.",
+        "document_grounding": "The turn accurately reflects the AfD's documented positions on tax reduction, deregulation (referencing the '30,000 regulations'), and opposition to wealth taxes, aligning well with their 2025 Bundestagswahlprogramm.",
+        "responsiveness": "The turn acknowledges the 'illiquid assets' argument but dismisses it as a 'legal distraction' without engaging with the specific points made by Die Linke or the Greens about real estate ties or international cooperation, resulting in a somewhat strawman-like response.",
+        "stance_differentiation": "The turn clearly identifies the AfD through its specific focus on the 'Mittelstand', 'lean state', and rejection of 'ideological spending', using vocabulary and framing that is distinct from other right-wing or liberal parties in the debate."
+      },
+      "rag_passages_used": [
+        "rungsseitigen steuerfinanzierten Öffentlichkeitsarbeit auf wichtige\nInformationen, die nicht bereits",
+        "18 SOZIALE MARKTWIRTSCHAFT UND GESUNDHEIT\nDie desolate Situation im deutschen Rentensystem\nDas deuts",
+        "54 FINANZEN UND STEUERN\nDer Staat erhebt Steuern auch mit dem Ziel, durch gezielte öffent-\nliche Inv"
+      ],
+      "token_count_input": 8621,
+      "token_count_output": 662,
+      "latency_s": 2.332,
+      "timestamp": "2026-09-04T08:15:12.992553Z"
+    }
+  ],
+  "interventions": [
+    {
+      "intervention_id": "ec37d982-974c-43e9-8a2d-4520a63aee23",
+      "after_turn_id": "",
+      "round_number": 1,
+      "source": "habermas",
+      "strategy": "habermas",
+      "trigger_dimension": null,
+      "trigger_score": null,
+      "trigger_confirmed": true,
+      "silent_control": false,
+      "intervention_text": "Please address the specific economic impact of the proposed wealth tax: Do the parties supporting the tax (SPD, Greens, Linke) have evidence or models showing it will not cause significant capital flight, and do the opposing parties (CDU/CSU, FDP, AfD) have data supporting their claims of stagnation? Focus on the trade-offs between immediate revenue generation and long-term investment incentives.",
+      "moderator_output": null,
+      "habermas_output": {
+        "round_summary": "CDU/CSU, FDP, and AfD aligned in rejecting a new wealth tax, arguing that Germany’s high tax burden stifles competitiveness and that growth should be driven by lower taxes, deregulation, and supporting the Mittelstand. In contrast, SPD, Bündnis 90/Die Grünen, and Die Linke advocated for reintroducing or strengthening asset-based taxation, arguing that current systems disproportionately tax labor over capital and that wealth taxes are necessary to fund social and ecological transitions. While the left-wing parties framed the issue as a moral and structural correction to inequality, the center-right and liberal parties framed it as an economic risk that would trigger capital flight and stagnation.",
+        "areas_of_agreement": "All six parties agreed that the current tax system requires reform and that the economic well-being of the Mittelstand and small businesses is critical to national prosperity. CDU/CSU and AfD specifically agreed on the need to reduce bureaucratic burdens and regulations. SPD, Die Linke, and the Greens agreed that labor income is currently taxed more heavily than capital, creating a distortion that needs correction.",
+        "areas_of_disagreement": "The central disagreement is the mechanism for addressing inequality and funding public needs: CDU/CSU, FDP, and AfD firmly oppose any new wealth tax, viewing it as confiscatory and harmful to investment, while SPD, the Greens, and Die Linke support the reintroduction or expansion of wealth and inheritance taxes to redistribute resources. Additionally, there is a fundamental divergence on the role of the state, with the AfD and FDP emphasizing state reduction and deregulation, whereas the Greens and Die Linke advocate for increased state intervention and public investment funded by higher taxes on the wealthy.",
+        "consensus_statement": "All parties agree that tax reform is necessary to support the Mittelstand and ensure economic competitiveness, but they fundamentally disagree on the direction of this reform: the center-right and liberal parties prioritize tax cuts and deregulation to stimulate growth, while the left-wing parties prioritize increased taxation on wealth and inheritance to fund social and ecological goals.",
+        "instruction_for_next_round": "Please address the specific economic impact of the proposed wealth tax: Do the parties supporting the tax (SPD, Greens, Linke) have evidence or models showing it will not cause significant capital flight, and do the opposing parties (CDU/CSU, FDP, AfD) have data supporting their claims of stagnation? Focus on the trade-offs between immediate revenue generation and long-term investment incentives."
+      },
+      "token_count_input": 1386,
+      "token_count_output": 516,
+      "latency_s": 1.217,
+      "timestamp": "2026-09-04T08:14:43.401342Z"
+    },
+    {
+      "intervention_id": "f4d14267-4319-4862-beb4-cd1ed38f55b4",
+      "after_turn_id": "",
+      "round_number": 2,
+      "source": "habermas",
+      "strategy": "habermas",
+      "trigger_dimension": null,
+      "trigger_score": null,
+      "trigger_confirmed": true,
+      "silent_control": false,
+      "intervention_text": "Please address the specific design parameters of the proposed wealth tax. Specifically, how do the parties proposing the tax (SPD, Bündnis 90/Die Grünen, Die Linke) intend to mitigate the risk of capital flight cited by CDU/CSU, FDP, and AfD, and how do the opposing parties respond to the argument that the targeted wealth is largely illiquid and thus less mobile?",
+      "moderator_output": null,
+      "habermas_output": {
+        "round_summary": "CDU/CSU and FDP argued that wealth taxes trigger capital flight and reduce investment, advocating instead for corporate tax cuts and lower burdens on the Mittelstand to stimulate growth. SPD, Bündnis 90/Die Grünen, and Die Linke defended a targeted wealth tax on top-tier assets, arguing it corrects structural inequality, funds social and green initiatives, and does not significantly impact the economy due to the illiquid nature of the targeted wealth. The AfD rejected the premise of the debate, framing the state itself as the primary economic obstacle through excessive taxation and bureaucracy, and called for a leaner state rather than new levies.",
+        "areas_of_agreement": "CDU/CSU, SPD, and Bündnis 90/Die Grünen all acknowledged the importance of supporting the Mittelstand, though they proposed different mechanisms (tax cuts vs. social stability). SPD, Bündnis 90/Die Grünen, and Die Linke agreed that the current inheritance tax system privileges large corporate estates and requires reform. All parties, including the AfD, implicitly or explicitly agreed that economic stability and the retention of capital/entrepreneurs in Germany are critical national interests.",
+        "areas_of_disagreement": "There is a fundamental disagreement on the efficacy of wealth taxes: CDU/CSU, FDP, and AfD view them as counterproductive drivers of capital flight, while SPD, Bündnis 90/Die Grünen, and Die Linke view them as necessary tools for social justice and fiscal sustainability. CDU/CSU and FDP prioritize dynamic wealth creation through tax reduction, whereas SPD, Bündnis 90/Die Grünen, and Die Linke prioritize static redistribution and social investment. The AfD’s position is distinct, rejecting both the need for new taxes and the efficacy of current state interventions, favoring a drastic reduction in state size.",
+        "consensus_statement": "The parties agree that the Mittelstand is vital to the German economy and that the current inheritance tax system contains privileges for large estates, but they fundamentally disagree on whether a targeted wealth tax is a sustainable revenue source or a counterproductive measure that drives capital flight.",
+        "instruction_for_next_round": "Please address the specific design parameters of the proposed wealth tax. Specifically, how do the parties proposing the tax (SPD, Bündnis 90/Die Grünen, Die Linke) intend to mitigate the risk of capital flight cited by CDU/CSU, FDP, and AfD, and how do the opposing parties respond to the argument that the targeted wealth is largely illiquid and thus less mobile?"
+      },
+      "token_count_input": 1445,
+      "token_count_output": 534,
+      "latency_s": 1.314,
+      "timestamp": "2026-09-04T08:14:58.332565Z"
+    },
+    {
+      "intervention_id": "2ed20de9-f6d7-484b-8791-75638aceb6f9",
+      "after_turn_id": "",
+      "round_number": 3,
+      "source": "habermas",
+      "strategy": "habermas",
+      "trigger_dimension": null,
+      "trigger_score": null,
+      "trigger_confirmed": true,
+      "silent_control": false,
+      "intervention_text": "Please address the specific administrative feasibility and legal challenges of implementing a wealth tax in Germany, focusing on how valuation of illiquid assets would be handled and whether the administrative costs justify the projected revenue.",
+      "moderator_output": null,
+      "habermas_output": {
+        "round_summary": "CDU/CSU, FDP, and AfD argue that the primary risk of a wealth tax is the flight of human capital and entrepreneurial intent, asserting that the state's bureaucracy and tax burden are the true drivers of capital leaving Germany. In contrast, SPD, Bündnis 90/Die Grünen, and Die Linke contend that the targeted wealth is largely illiquid (real estate, corporate holdings) and therefore immobile, with the Greens and Left emphasizing that international cooperation and transparency measures can mitigate any jurisdictional arbitrage. While the left-leaning parties propose using the revenue for social infrastructure and the green transition, the right-leaning parties insist that tax reduction and deregulation are the only sustainable ways to protect the Mittelstand and foster innovation.",
+        "areas_of_agreement": "All parties agree that the protection of the Mittelstand and family businesses is a critical economic priority. Additionally, there is a shared recognition that the current inheritance tax system contains privileges for large corporate estates that require reform, though the parties differ on the specific mechanisms and accompanying fiscal policies.",
+        "areas_of_disagreement": "The fundamental disagreement lies in the nature of capital mobility: CDU/CSU, FDP, and AfD view entrepreneurial intent as the most mobile asset, making a wealth tax counterproductive, whereas SPD, Greens, and Die Linke view the wealth as illiquid and immobile, making a wealth tax a viable and necessary tool for social justice. Furthermore, the parties disagree on the role of the state, with the right advocating for significant deregulation and spending cuts, while the left advocates for increased state intervention and redistribution to fund public goods.",
+        "consensus_statement": "The parties agree that the Mittelstand must be protected and that inheritance tax privileges for large estates should be addressed, but they fundamentally disagree on whether a wealth tax is a viable revenue source, with the right viewing it as a driver of capital flight and the left viewing it as a necessary measure for social equity funded by illiquid assets.",
+        "instruction_for_next_round": "Please address the specific administrative feasibility and legal challenges of implementing a wealth tax in Germany, focusing on how valuation of illiquid assets would be handled and whether the administrative costs justify the projected revenue."
+      },
+      "token_count_input": 1487,
+      "token_count_output": 459,
+      "latency_s": 1.478,
+      "timestamp": "2026-09-04T08:15:15.977559Z"
+    }
+  ],
+  "round_summaries": [],
+  "total_tokens_input": 111935,
+  "total_tokens_output": 11266,
+  "total_latency_s": 37.15,
+  "started_at": "2026-09-04T08:14:30.131435Z",
+  "finished_at": "2026-09-04T08:15:15.978906Z"
+}
