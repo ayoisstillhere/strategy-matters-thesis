@@ -32,6 +32,8 @@ from pathlib import Path
 
 from fastapi import FastAPI, HTTPException, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 
 # Add project root to path
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -71,6 +73,16 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+# ---------------------------------------------------------------------------
+# Health check (used by Railway / load balancers)
+# ---------------------------------------------------------------------------
+
+@app.get("/health")
+def health_check() -> dict:
+    """Health check endpoint."""
+    return {"status": "ok"}
 
 
 # ---------------------------------------------------------------------------
@@ -293,3 +305,27 @@ async def debate_websocket(websocket: WebSocket, debate_id: str):
     finally:
         if websocket in session.ws_clients:
             session.ws_clients.remove(websocket)
+
+
+# ---------------------------------------------------------------------------
+# Static file serving (production: serve frontend build)
+# ---------------------------------------------------------------------------
+
+FRONTEND_DIST = PROJECT_ROOT / "demo" / "frontend" / "dist"
+
+if FRONTEND_DIST.is_dir():
+    # Serve static assets (JS, CSS, images) from /assets/
+    app.mount(
+        "/assets",
+        StaticFiles(directory=FRONTEND_DIST / "assets"),
+        name="static-assets",
+    )
+
+    # Catch-all: serve index.html for any non-API route (SPA routing)
+    @app.get("/{full_path:path}")
+    async def serve_spa(full_path: str):
+        """Serve the React SPA for all non-API routes."""
+        file_path = FRONTEND_DIST / full_path
+        if full_path and file_path.is_file():
+            return FileResponse(file_path)
+        return FileResponse(FRONTEND_DIST / "index.html")

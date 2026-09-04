@@ -155,6 +155,24 @@ export default function DebateView() {
 
           {/* Timeline */}
           <div className="max-w-3xl mx-auto space-y-4">
+            {/* Warm-up indicator: shown when debate is pending/running but no turns yet */}
+            {(info?.status === "pending" || info?.status === "running") && timeline.length === 0 && (
+              <div className="flex flex-col items-center justify-center py-16 text-center">
+                <div className="flex gap-1.5 mb-4">
+                  <span className="w-3 h-3 bg-blue-400 rounded-full animate-bounce" style={{ animationDelay: "0ms" }} />
+                  <span className="w-3 h-3 bg-blue-400 rounded-full animate-bounce" style={{ animationDelay: "150ms" }} />
+                  <span className="w-3 h-3 bg-blue-400 rounded-full animate-bounce" style={{ animationDelay: "300ms" }} />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-200 mb-2">
+                  Initializing Debate
+                </h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400 max-w-md">
+                  Loading language models and retrieving party programme data.
+                  This may take up to 30 seconds on the first run while models are cached.
+                </p>
+              </div>
+            )}
+
             {timeline.map((item, idx) => {
               if (item.type === "round_start") {
                 return (
@@ -185,7 +203,7 @@ export default function DebateView() {
             })}
 
             {/* Streaming indicator */}
-            {info?.status === "running" && (
+            {info?.status === "running" && timeline.length > 0 && (
               <div className="flex items-center gap-2 text-sm text-gray-400 py-2">
                 <div className="flex gap-1">
                   <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: "0ms" }} />

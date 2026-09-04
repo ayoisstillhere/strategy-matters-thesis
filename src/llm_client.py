@@ -5,10 +5,17 @@ Thin wrapper around the Groq SDK with SSL fix (TU Dresden proxy),
 automatic retries on rate-limit errors, and JSON response parsing.
 
 Supports two models:
-  - Agent model (8b): llama-3.1-8b-instant
-  - Judge/Moderator model: llama-3.3-70b-versatile
-    (reverted from meta-llama/llama-4-scout-17b-16e-instruct which was
-     removed from Groq 2026-07-24; original feasibility: 98.8% exact agreement)
+  - Agent model: qwen/qwen3.8-27b
+    (switched from llama-3.1-8b-instant which was removed from Groq ~2026-07)
+  - Judge/Moderator model: qwen/qwen3.8-27b
+    (switched from llama-3.3-70b-versatile which was also removed ~2026-07;
+     original feasibility: 98.8% exact agreement with llama-3.3-70b)
+
+Model history:
+  - llama-3.1-8b-instant (agent) — removed from Groq
+  - llama-3.3-70b-versatile (judge) — removed from Groq
+  - meta-llama/llama-4-scout-17b-16e-instruct — removed from Groq 2026-07-24
+  - qwen/qwen3.8-27b — current; no thinking blocks, valid JSON, fast
 
 If litellm is needed later for multi-provider support, this module
 can be swapped without changing the rest of the codebase.
@@ -37,8 +44,8 @@ logger = logging.getLogger(__name__)
 # Config
 # ---------------------------------------------------------------------------
 
-AGENT_MODEL = "llama-3.1-8b-instant"
-JUDGE_MODEL = "llama-3.3-70b-versatile"
+AGENT_MODEL = "qwen/qwen3.8-27b"
+JUDGE_MODEL = "qwen/qwen3.8-27b"
 
 DEFAULT_MAX_RETRIES = 8
 DEFAULT_RETRY_BASE_DELAY = 2.0  # seconds, exponential backoff
@@ -142,6 +149,8 @@ class LLMClient:
                 latency = time.time() - t0
 
                 text = resp.choices[0].message.content.strip()
+                # Strip <think>...</think> blocks from reasoning models
+                text = re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL).strip()
                 result = LLMResponse(
                     text=text,
                     input_tokens=resp.usage.prompt_tokens,

@@ -215,7 +215,7 @@ export default function SetupScreen() {
             className="btn-primary flex items-center gap-2 px-6 py-3 text-base"
           >
             <Play size={18} />
-            {loading ? "Starting..." : "Start Debate"}
+            {loading ? "Initializing..." : "Start Debate"}
           </button>
           <button
             onClick={() => navigate("/compare")}

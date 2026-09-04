@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[codz]
+.venv/
+*.egg-info/
+
+# Environment
+.env
+.env.*
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# Data not needed for demo
+runs/
+pilots/
+experiments/
+paper/
+data/wahlprogramme/
+data/wahlomat/
+data/chunks/
+
+# Frontend dev files (build happens in Docker)
+demo/frontend/node_modules/
+demo/frontend/dist/
+
+# Thesis and docs
+LatexProject/
+expose.tex
+action_plan.html
+*.md

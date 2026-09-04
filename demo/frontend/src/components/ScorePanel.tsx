@@ -1,6 +1,8 @@
 import type { DebateInfo, RoundSummary } from "../types";
 import { DIMENSIONS, getScoreBarColor } from "../constants";
 import { Download } from "lucide-react";
+import { getTranscript } from "../api";
+import ScoreChart from "./ScoreChart";
 
 interface Props {
   info: DebateInfo | null;
@@ -81,8 +83,38 @@ export default function ScorePanel({ info, roundSummaries }: Props) {
         </div>
       </div>
 
+      {/* Score trajectory chart */}
+      {roundSummaries.length > 0 && (
+        <div>
+          <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">
+            Score Trajectory
+          </h3>
+          <ScoreChart roundSummaries={roundSummaries} height={180} compact />
+        </div>
+      )}
+
       {/* Export button */}
-      <button className="w-full btn-outline flex items-center justify-center gap-2 text-sm mt-4">
+      <button
+        className="w-full btn-outline flex items-center justify-center gap-2 text-sm mt-4"
+        disabled={!info?.debate_id}
+        onClick={async () => {
+          if (!info?.debate_id) return;
+          try {
+            const transcript = await getTranscript(info.debate_id);
+            const blob = new Blob([JSON.stringify(transcript, null, 2)], {
+              type: "application/json",
+            });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = `debate-${info.debate_id.slice(0, 8)}.json`;
+            a.click();
+            URL.revokeObjectURL(url);
+          } catch (e) {
+            console.error("Export failed:", e);
+          }
+        }}
+      >
         <Download size={14} />
         Export Session Data
       </button>

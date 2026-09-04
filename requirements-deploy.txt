@@ -1,0 +1,19 @@
+# Strategy Matters — Demo deployment dependencies
+# Uses CPU-only PyTorch to keep image small (~200MB vs ~2GB)
+
+# ── Backend server ──
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+websockets>=12.0
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+
+# ── LLM API ──
+groq>=0.4.0
+httpx>=0.25.0
+
+# ── RAG pipeline ──
+# PyTorch CPU-only (installed via --extra-index-url in Dockerfile)
+sentence-transformers>=3.0.0
+faiss-cpu>=1.7.0
+numpy>=1.24.0

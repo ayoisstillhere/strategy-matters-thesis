@@ -38,7 +38,7 @@ export const DIMENSIONS = [
   { key: "relevance", abbrev: "REL", label: "Relevance" },
   { key: "logical_consistency", abbrev: "LOG", label: "Logical Consistency" },
   { key: "argument_strength", abbrev: "ARG", label: "Argument Strength" },
-  { key: "document_grounding", abbrev: "GRD", label: "Factual Accuracy" },
+  { key: "document_grounding", abbrev: "GRD", label: "Document-grounding" },
   { key: "responsiveness", abbrev: "RSP", label: "Responsiveness" },
   { key: "stance_differentiation", abbrev: "STD", label: "Stance Differentiation" },
 ] as const;

@@ -8,6 +8,7 @@ import InterventionCard from "./InterventionCard";
 import type { ConditionConfig, TopicConfig } from "../types";
 import { TOPIC_LABELS, DIMENSIONS, getScoreBarColor } from "../constants";
 import { ArrowLeft, Play, Send } from "lucide-react";
+import ScoreChart from "./ScoreChart";
 
 function MiniProgress({ info, roundSummaries }: { info: any; roundSummaries: any[] }) {
   const progress = info
@@ -230,6 +231,11 @@ export default function ComparisonView() {
               </div>
             )}
             <MiniProgress info={debateA.info} roundSummaries={debateA.roundSummaries} />
+            {debateA.roundSummaries.length > 0 && (
+              <div className="px-3 pb-2">
+                <ScoreChart roundSummaries={debateA.roundSummaries} height={160} compact />
+              </div>
+            )}
             <div className="flex-1 overflow-y-auto px-4 pb-4">
               {/* Topic framing */}
               {(topicLabel || debateA.debateConfig) && (
@@ -244,6 +250,16 @@ export default function ComparisonView() {
                 </div>
               )}
               <div className="space-y-3 max-w-xl mx-auto">
+                {(debateA.info?.status === "pending" || debateA.info?.status === "running") && debateA.timeline.length === 0 && (
+                  <div className="flex flex-col items-center justify-center py-10 text-center">
+                    <div className="flex gap-1 mb-3">
+                      <span className="w-2 h-2 bg-blue-400 rounded-full animate-bounce" style={{ animationDelay: "0ms" }} />
+                      <span className="w-2 h-2 bg-blue-400 rounded-full animate-bounce" style={{ animationDelay: "150ms" }} />
+                      <span className="w-2 h-2 bg-blue-400 rounded-full animate-bounce" style={{ animationDelay: "300ms" }} />
+                    </div>
+                    <p className="text-xs text-gray-500">Initializing models...</p>
+                  </div>
+                )}
                 {debateA.timeline.map((item) => {
                   if (item.type === "round_start") {
                     return (
@@ -300,6 +316,11 @@ export default function ComparisonView() {
               </div>
             )}
             <MiniProgress info={debateB.info} roundSummaries={debateB.roundSummaries} />
+            {debateB.roundSummaries.length > 0 && (
+              <div className="px-3 pb-2">
+                <ScoreChart roundSummaries={debateB.roundSummaries} height={160} compact />
+              </div>
+            )}
             <div className="flex-1 overflow-y-auto px-4 pb-4">
               {/* Topic framing */}
               {(topicLabel || debateB.debateConfig) && (
@@ -314,6 +335,16 @@ export default function ComparisonView() {
                 </div>
               )}
               <div className="space-y-3 max-w-xl mx-auto">
+                {(debateB.info?.status === "pending" || debateB.info?.status === "running") && debateB.timeline.length === 0 && (
+                  <div className="flex flex-col items-center justify-center py-10 text-center">
+                    <div className="flex gap-1 mb-3">
+                      <span className="w-2 h-2 bg-green-400 rounded-full animate-bounce" style={{ animationDelay: "0ms" }} />
+                      <span className="w-2 h-2 bg-green-400 rounded-full animate-bounce" style={{ animationDelay: "150ms" }} />
+                      <span className="w-2 h-2 bg-green-400 rounded-full animate-bounce" style={{ animationDelay: "300ms" }} />
+                    </div>
+                    <p className="text-xs text-gray-500">Initializing models...</p>
+                  </div>
+                )}
                 {debateB.timeline.map((item) => {
                   if (item.type === "round_start") {
                     return (
