@@ -1,0 +1,245 @@
+{
+  "run_id": "082f23ba-c7e7-4018-a808-2e0b23121c63",
+  "config": {
+    "topic_id": "mindestlohn",
+    "topic_type": "empirical",
+    "framing_prompt": "The German federal minimum wage currently stands at €12.82 per hour, set by the independent Mindestlohnkommission. Several parties have proposed raising it to €15 per hour by 2026, while others argue the commission's independence must not be overridden by political targets. Discuss whether the minimum wage should be raised to €15, considering the effects on low-wage workers, small and medium-sized businesses, and regional economic differences between western and eastern Germany. Ground your arguments in your party's documented positions.",
+    "condition_id": "baseline_1",
+    "condition_label": "None",
+    "condition_type": "baseline",
+    "run_number": 1,
+    "agent_model": "qwen/qwen3.8-27b",
+    "judge_model": "qwen/qwen3.8-27b",
+    "moderator_model": "",
+    "num_rounds": 1,
+    "num_agents": 6,
+    "max_interventions": 3,
+    "silent_control_rate": 0.2,
+    "turn_order": [
+      "CDU/CSU",
+      "SPD",
+      "Bündnis 90/Die Grünen",
+      "FDP",
+      "Die Linke",
+      "AfD"
+    ],
+    "has_moderator_agent": false,
+    "uses_trigger": false,
+    "trigger_strategy": null,
+    "nudge_text": "",
+    "language": "de"
+  },
+  "turns": [
+    {
+      "turn_id": "bc742083-0e4b-4d5f-89f0-14d533a582bc",
+      "round_number": 1,
+      "turn_in_round": 1,
+      "agent_name": "CDU/CSU",
+      "text": "Sehr geehrte Damen und Herren, die Union hat 2014 den gesetzlichen Mindestlohn eingeführt, weil wir wissen, dass eine faire Lohnuntergrenze ein wesentlicher Baustein unserer sozialen Marktwirtschaft ist. Wir stehen konsequent zum Mindestlohn, aber wir lehnen es entschieden ab, diesen durch politische Vorgaben im Bundestag auf einen bestimmten Betrag wie 15 Euro festzulegen. Die Lohnfindung muss weiterhin Sache der unabhängigen Mindestlohnkommission und der Sozialpartner sein, da sie die realen wirtschaftlichen Rahmenbedingungen am besten einschätzen können. Nur so garantieren wir, dass der Mindestlohn auch in Regionen mit unterschiedlicher Wirtschaftsstruktur tragfähig bleibt und den Mittelstand nicht überfordert.",
+      "scores": {
+        "civility": 5,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 5,
+        "responsiveness": 3,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The tone is exemplary parliamentary, using formal address ('Sehr geehrte Damen und Herren') and respectful language ('konsequent', 'entschieden ab') without any personal attacks or inflammatory rhetoric.",
+        "relevance": "The turn directly addresses the core debate topic of the minimum wage, specifically focusing on the mechanism of its determination and the proposed 15 Euro threshold, staying strictly within scope.",
+        "logical_consistency": "The argument is internally coherent, moving from historical context to current stance to the rationale (regional economic differences) without logical gaps or contradictions.",
+        "argument_strength": "The turn provides specific reasoning (regional economic structures, burden on the Mittelstand) and references the specific mechanism (Mindestlohnkommission), though it relies on general economic principles rather than specific data points.",
+        "document_grounding": "The position is directly anchored in the CDU/CSU's documented stance: acknowledging the 2014 introduction of the minimum wage while opposing a statutory 15 Euro increase, preferring the commission-based model.",
+        "responsiveness": "As this is the first turn with no preceding speakers, the agent cannot engage with specific opposing arguments; it sets the stage by addressing the likely counter-argument (the 15 Euro proposal) proactively, which is adequate for an opening statement.",
+        "stance_differentiation": "The turn is unmistakably CDU/CSU, using specific party markers like 'soziale Marktwirtschaft', 'Mittelstand', and the specific historical reference to the 2014 introduction, which distinguishes it from other parties' positions."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "helfen wir den Berechtigten und vermeiden Mehrfachleistungen.\nTarifpartnerschaft, Mitbestimmung und ",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 3295,
+      "token_count_output": 587,
+      "latency_s": 1.579,
+      "timestamp": "2026-09-04T09:09:27.395777Z"
+    },
+    {
+      "turn_id": "4f8d6bca-4867-4cda-8e63-8a94a6b2f146",
+      "round_number": 1,
+      "turn_in_round": 2,
+      "agent_name": "SPD",
+      "text": "Es ist bemerkenswert, wie schnell vergessen wird, dass die SPD den Mindestlohn eingeführt hat und ihn bereits auf zwölf Euro angehoben hat, was Millionen Menschen mehr Einkommen und Sicherheit gegeben hat. Wir halten an unserem Ziel fest, dass der Mindestlohn spätestens 2026 bei 15 Euro liegen muss, da sich die Höhe an den Empfehlungen der europäischen Richtlinie orientieren und mindestens 60 Prozent des mittleren Einkommens betragen sollte. Gerade in Ostdeutschland, wo viele Regionen nach wie vor mit niedrigeren Durchschnittslöhnen und einer geringen Tarifbindung zu kämpfen haben, sowie in den Berufen, die viele Frauen ausüben, ist dieser Anstieg von enormer Bedeutung, um Armut in der Arbeit zu bekämpfen. Entscheidend bleibt dabei für uns, die Tarifbindung durch ein Bundestariftreuegesetz deutlich zu stärken, um langfristig Löhne oberhalb des Mindestlohns zu sichern und faire Arbeitsbedingungen für alle zu garantieren.",
+      "scores": {
+        "civility": 4,
+        "relevance": 5,
+        "logical_consistency": 4,
+        "argument_strength": 4,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The tone is professional and respectful, using the phrase 'Es ist bemerkenswert' to highlight a perceived historical oversight without resorting to personal attacks or inflammatory language. The critique is directed at the narrative rather than the opponents personally.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage, specifically countering the CDU/CSU's argument against a fixed 15 Euro target by reaffirming the SPD's commitment to this specific figure and timeline.",
+        "logical_consistency": "The argument is internally coherent, linking the 15 Euro target to EU guidelines and the 60% median wage rule, and logically connecting the need for higher wages in specific regions (East Germany) and sectors (female-dominated) to the goal of combating work poverty.",
+        "argument_strength": "Claims are supported by specific mechanisms (EU directive, 60% median wage rule) and concrete policy proposals (Bundestariftreuegesetz), providing a clear rationale for why the 15 Euro target is necessary and how it will be sustained.",
+        "document_grounding": "The turn accurately reflects the SPD's 2025 election program positions, including the specific goal of a 15 Euro minimum wage by 2026, the reference to the EU directive, and the proposal for a federal law on collective agreement adherence (Bundestariftreuegesetz).",
+        "responsiveness": "The turn directly engages with the CDU/CSU's preceding argument by correcting their claim about the introduction of the minimum wage and explicitly rejecting their stance against a politically fixed 15 Euro amount, thereby addressing the core conflict in the previous turn.",
+        "stance_differentiation": "The turn is unmistakably SPD, using distinctive vocabulary and priorities such as 'Armut in der Arbeit bekämpfen' (combating work poverty), focus on gender equality in wages, and the specific legislative proposal for a 'Bundestariftreuegesetz', which are hallmarks of the SPD's social-democratic platform."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "dafür sorgen, dass dieses europäische Recht von der Mindestlohnkommission künftig berücksichtigt\nwir",
+        "Mehr für Dich. Besser für Deutschland.\nRegierungsprogramm der SPD für die Bundestagswahl 2025\nDen Mi"
+      ],
+      "token_count_input": 3647,
+      "token_count_output": 719,
+      "latency_s": 1.842,
+      "timestamp": "2026-09-04T09:09:29.313159Z"
+    },
+    {
+      "turn_id": "39022d57-21f7-4f75-84f7-75e98d19b9c1",
+      "round_number": 1,
+      "turn_in_round": 3,
+      "agent_name": "Bündnis 90/Die Grünen",
+      "text": "Wir müssen die Realität der Inflation in den Mittelpunkt stellen, denn ein Mindestlohn, der nicht Schritt hält, ist faktisch eine Lohnkürzung für die schwächsten Einkommensgruppen. Aus diesem Grund setzen wir darauf, den Mindestlohn bereits ab 2025 auf ein Niveau von 15 Euro zu heben, was auch den Vorgaben der EU-Mindestlohnrichtlinie entspricht und den Referenzwert von 60 Prozent des Medianlohns in unserem Gesetz verankert. Diese Anpassung ist keine politische Willkür, sondern eine notwendige Korrektur, um die Kaufkraftparität wiederherzustellen und sicherzustellen, dass Leistung in Deutschland tatsächlich fair anerkannt wird. Gerade für Menschen in Ostdeutschland und in Branchen mit geringer Tarifbindung ist dieser Schritt das Fundament, um Armut in der Arbeit nachhaltig zu bekämpfen und soziale Gerechtigkeit nicht nur als Prinzip, sondern als gelebte Wirklichkeit zu etablieren.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The tone is professional and respectful, focusing on policy mechanisms and social justice without attacking opponents or using inflammatory language. It critiques the status quo ('faktisch eine Lohnkürzung') but does so within the bounds of standard political discourse.",
+        "relevance": "The turn directly addresses the debate topic of the minimum wage, specifically focusing on the level (15 Euro) and the timing (2025), which are the core points of contention in the previous turns.",
+        "logical_consistency": "The argument follows a clear logical chain: inflation erodes real wages -> minimum wage must rise to maintain purchasing power -> 15 Euro is the target based on EU guidelines and median wage ratios. There are no internal contradictions.",
+        "argument_strength": "While the turn cites the EU directive and the 60% median wage rule, it relies heavily on normative claims ('soziale Gerechtigkeit', 'Leistung fair anerkannt') and lacks specific economic data or counter-arguments to potential job loss concerns raised by the CDU. The claim that 15 Euro is a 'necessary correction' is asserted rather than deeply substantiated with empirical evidence in this specific text.",
+        "document_grounding": "The position aligns well with the Greens' documented stance on raising the minimum wage to 15 Euro and referencing the EU Minimum Wage Directive. The specific mention of the 60% median wage anchor is consistent with their programmatic goals for wage fairness.",
+        "responsiveness": "The turn engages with the general theme but does not directly refute the specific arguments made by the CDU (regional differences, burden on SMEs) or the SPD (tariff binding law). It largely restates the 15 Euro target without explicitly addressing the CDU's objection to political fixation of the amount, treating the opposition's view as a failure to keep up with inflation rather than engaging with their structural arguments.",
+        "stance_differentiation": "The use of terms like 'soziale Gerechtigkeit', 'gelebte Wirklichkeit', and the strong emphasis on combating 'Armut in der Arbeit' reflects the distinct social-liberal and progressive framing typical of the Greens, distinguishing it from the market-oriented CDU or the labor-focused SPD."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "sozialen Umstände abhängen darf. Es Faire Löhne verlangen nach einem fairen\ngilt für Menschen, die u",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 4043,
+      "token_count_output": 756,
+      "latency_s": 1.958,
+      "timestamp": "2026-09-04T09:09:31.478129Z"
+    },
+    {
+      "turn_id": "13102ec0-0633-4cef-8416-31bb03f656ac",
+      "round_number": 1,
+      "turn_in_round": 4,
+      "agent_name": "FDP",
+      "text": "Die Forderung nach einem politischen Mindestlohn von 15 Euro ist das klassische Beispiel für Symbolpolitik, die den mündigen Bürger ausblendet und marktwirtschaftliche Realitäten ignoriert. Löhne werden in einer funktionierenden sozialen Marktwirtschaft zwischen Arbeitnehmern und Arbeitgebern ausgehandelt, weshalb wir politische Eingriffe in die Arbeit der unabhängigen Mindestlohnkommission und die Tarifautonomie konsequent ablehnen. Ein solcher Zwang führt nicht zu mehr Wohlstand, sondern wirkt als Investitionsbremse, die kleine und mittlere Unternehmen, insbesondere in ostdeutschen Regionen mit geringerer Kaufkraft, zusätzlich belastet. Wir setzen stattdessen auf eine Arbeitsmarktpolitik, die den Anreiz zur Arbeit stärkt und sichert, dass Arbeit sich durch höhere Produktivität und weniger Bürokratie für alle Beteiligten besser lohnt.",
+      "scores": {
+        "civility": 3,
+        "relevance": 4,
+        "logical_consistency": 4,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The tone is professional and avoids personal attacks, but uses loaded political labels like 'Symbolpolitik' (symbolic politics) and 'mündigen Bürger ausblendet' (ignores the mature citizen), which are somewhat dismissive of the opponents' motives.",
+        "relevance": "The turn directly addresses the core debate topic of the minimum wage level and the mechanism for its determination, staying strictly within the scope of the discussion.",
+        "logical_consistency": "The argument follows a clear internal logic: rejecting political intervention leads to market-based wage setting, which avoids investment brakes and promotes productivity, creating a coherent chain of reasoning.",
+        "argument_strength": "The turn relies on general economic principles (investment brake, bureaucracy) rather than specific data or concrete evidence to support the claim that a 15 Euro minimum wage would harm SMEs, making the support somewhat generic.",
+        "document_grounding": "The position aligns perfectly with the FDP's documented stance against a statutory minimum wage set by politicians, advocating instead for the independence of the Minimum Wage Commission and the autonomy of collective bargaining.",
+        "responsiveness": "The turn explicitly engages with the specific 15 Euro demand made by the SPD and Greens, directly countering their argument for political fixation with the FDP's counter-argument for commission-based determination.",
+        "stance_differentiation": "The use of terms like 'soziale Marktwirtschaft', 'Tarifautonomie', 'Investitionsbremse', and 'Bürokratie' is unmistakably FDP, clearly distinguishing it from the social-democratic and green positions of the other speakers."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "erst möglich machen.\nArbeit muss sich stärker lohnen\nMillionen Menschen in Deutschland gehen jeden T",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 4426,
+      "token_count_output": 605,
+      "latency_s": 1.681,
+      "timestamp": "2026-09-04T09:09:33.657067Z"
+    },
+    {
+      "turn_id": "968361d1-90db-4f41-9007-2e459284d5de",
+      "round_number": 1,
+      "turn_in_round": 5,
+      "agent_name": "Die Linke",
+      "text": "Wer heute argumentiert, man müsse die unabhängige Kommission schützen, schützt in Wahrheit die Profite der Arbeitgeberverbände, die in diesem Gremium sitzen und die Löhne systematisch drücken. Wir fordern einen Mindestlohn von mindestens 15 Euro, da die EU-Richtlinie eine Untergrenze von 60 Prozent des mittleren Einkommens vorschreibt, was bei unseren aktuellen Werten auf über 15 Euro kommt, und wir wollen, dass Arbeit endlich für ein Leben in Würde reicht. Wer aus Angst vor dem Mittelstand zögert, muss sich an die Realität erinnern: In Ostdeutschland sind die Einkommen immer noch durchschnittlich 17 Prozent niedriger als im Westen, und dort ist der Mindestlohn das einzige, was die Menschen vor der Armut in der Arbeit bewahrt. Deshalb dürfen wir nicht zulassen, dass die Logik des Profits über die Existenzsicherung der Geringverdiener gestellt wird, und wir werden die politische Festlegung dieses Betrages konsequent durchsetzen.",
+      "scores": {
+        "civility": 2,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 4,
+        "stance_differentiation": 5
+      },
+      "justifications": {
+        "civility": "The turn opens with a direct attribution of bad motives to opponents ('schützt in Wahrheit die Profite der Arbeitgeberverbände') and uses aggressive framing ('Logik des Profits'), which fits the anchor for score 2 (dismissive framing; attributes bad motives).",
+        "relevance": "The response directly addresses the core debate topic (minimum wage level and mechanism) and engages with the specific arguments raised by the CDU/CSU and FDP regarding the commission and economic impact, staying strictly within scope.",
+        "logical_consistency": "The argument is generally coherent, but it relies on a somewhat simplified causal link between the commission's composition and the outcome ('systematisch drücken') without fully addressing the counter-argument about regional economic differences, resulting in minor logical gaps.",
+        "argument_strength": "The turn cites the EU directive and a specific statistic (17% income gap in East Germany) to support its claim, but lacks detailed causal mechanisms for why a 15 Euro wage specifically solves the problem compared to other measures, relying on general assertions about 'dignity' and 'poverty'.",
+        "document_grounding": "The position aligns perfectly with Die Linke's documented stance on a statutory minimum wage of at least 15 Euro and their critique of the current commission structure, reflecting their 2025 programme commitments accurately.",
+        "responsiveness": "The turn explicitly identifies and refutes the argument made by the CDU/CSU and FDP about protecting the 'unabhängige Kommission', directly engaging with the specific claim that the commission is the appropriate body for wage setting.",
+        "stance_differentiation": "The language is unmistakably left-wing, using terms like 'Profite', 'Existenzsicherung', and 'Armut in der Arbeit', and firmly rejecting market-based wage setting in favor of political intervention, which is a distinct ideological marker for Die Linke."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "über den Monat kommt – in Ostdeutschland fast jede*r werden wir deutlich enger begrenzen, spätestens",
+        "aufgebaut� Der Ausverkauf durch die Treuhand wirkt aber muss auch zwischen Ost und West gelten! Der "
+      ],
+      "token_count_input": 5000,
+      "token_count_output": 705,
+      "latency_s": 2.0220000000000002,
+      "timestamp": "2026-09-04T09:09:35.695926Z"
+    },
+    {
+      "turn_id": "83f01c7d-ab18-4689-9396-69bd11302ba5",
+      "round_number": 1,
+      "turn_in_round": 6,
+      "agent_name": "AfD",
+      "text": "Wir stehen dem Mindestlohn an sich nicht skeptisch gegenüber, da er in der Tat gegen Ausbeutung schützen kann, aber wir lehnen es entschieden ab, dass der Bundestag sich die Entscheidung über die konkrete Höhe anmaßt. Die Lohnfindung muss in der Hand der unabhängigen Mindestlohnkommission bleiben, denn dort sitzen kompetente Vertreter der Arbeitgeber und der Beschäftigten, die die realen wirtschaftlichen Rahmenbedingungen am besten einschätzen können. Wer politisch einen Mindestlohn von 15 Euro verordnet, überfordert viele kleine und mittlere Unternehmen, was zu weiteren Arbeitsplatzabbau und steigender Inflation führt, sodass den Beschäftigten am Ende schlechter geht als zuvor. Wir streben zwar höhere Löhne an, wissen aber, dass dies nur mit einem wirtschaftlichen Aufschwung nachhaltig funktioniert, nicht durch bürokratische Zwänge, die den Mittelstand erdrücken.",
+      "scores": {
+        "civility": 4,
+        "relevance": 4,
+        "logical_consistency": 3,
+        "argument_strength": 3,
+        "document_grounding": 4,
+        "responsiveness": 3,
+        "stance_differentiation": 4
+      },
+      "justifications": {
+        "civility": "The tone is professional and respectful, using neutral language like 'Wir stehen dem Mindestlohn an sich nicht skeptisch gegenüber' and avoiding personal attacks or inflammatory labels against other parties.",
+        "relevance": "The turn directly addresses the core debate question regarding the level of the minimum wage and the mechanism for its determination, staying strictly within the scope of the topic.",
+        "logical_consistency": "The argument is generally coherent but contains a minor logical leap in claiming that a 15 Euro minimum wage directly leads to 'steigender Inflation' without explaining the transmission mechanism, which is a common but unsubstantiated claim in this context.",
+        "argument_strength": "The turn relies on general assertions about 'small and medium enterprises' being overwhelmed and 'job losses' occurring, without providing specific data, examples, or detailed causal mechanisms to support these claims.",
+        "document_grounding": "The position aligns well with the AfD's documented stance of opposing political interference in wage-setting and emphasizing the role of the independent commission, reflecting their general economic conservatism and skepticism towards state intervention.",
+        "responsiveness": "The turn engages with the general arguments made by others (specifically the 15 Euro demand and the role of the commission) but does not specifically name or directly counter the unique arguments of the preceding speakers (e.g., the EU directive reference by SPD/Greens or the 'profit protection' critique by Die Linke).",
+        "stance_differentiation": "The turn clearly reflects the AfD's distinct ideological position of prioritizing economic freedom, opposing state mandates, and emphasizing the burden on the 'Mittelstand', which differentiates it from the pro-interventionist stances of the left and center-left parties."
+      },
+      "rag_passages_used": [
+        "[Wahl-O-Mat] Erhöhung des Mindestlohns: Der gesetzliche Mindestlohn soll spätestens 2026 auf 15 Euro",
+        "18 SOZIALE MARKTWIRTSCHAFT UND GESUNDHEIT\nDie desolate Situation im deutschen Rentensystem\nDas deuts",
+        "[Wahl-O-Mat] 35-Stunden-Woche: In Deutschland soll die 35-Stunden-Woche als gesetzliche Regelarbeits"
+      ],
+      "token_count_input": 5335,
+      "token_count_output": 641,
+      "latency_s": 1.947,
+      "timestamp": "2026-09-04T09:09:37.932286Z"
+    }
+  ],
+  "interventions": [],
+  "round_summaries": [],
+  "total_tokens_input": 25746,
+  "total_tokens_output": 4013,
+  "total_latency_s": 11.03,
+  "started_at": "2026-09-04T09:09:27.395777Z",
+  "finished_at": "2026-09-04T09:09:39.245922Z"
+}
