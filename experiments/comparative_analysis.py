@@ -182,7 +182,8 @@ def rq1_analysis(df: pd.DataFrame) -> dict:
         for dim in DIMENSIONS:
             s_vals = strategies[dim].dropna()
             b_vals = baseline[dim].dropna()
-            u_stat, p_val = stats.mannwhitneyu(s_vals, b_vals, alternative="two-sided")
+            u_stat, p_val = stats.mannwhitneyu(
+                s_vals, b_vals, alternative="two-sided")
             delta = cliff_delta(s_vals.values, b_vals.values)
             mag = cliff_magnitude(delta)
 
@@ -196,7 +197,8 @@ def rq1_analysis(df: pd.DataFrame) -> dict:
                 "significant": p_val < 0.05,
             }
             sig = "*" if p_val < 0.05 else ""
-            print(f"{DIM_LABELS[dim]:<20} {s_vals.mean():>8.3f} {b_vals.mean():>8.3f} {u_stat:>10.0f} {p_val:>10.4f}{sig} {delta:>+8.3f} {mag:>12}")
+            print(
+                f"{DIM_LABELS[dim]:<20} {s_vals.mean():>8.3f} {b_vals.mean():>8.3f} {u_stat:>10.0f} {p_val:>10.4f}{sig} {delta:>+8.3f} {mag:>12}")
 
         results[baseline_id] = bl_results
 
@@ -206,7 +208,8 @@ def rq1_analysis(df: pd.DataFrame) -> dict:
     print("-" * 50)
     kw_results = {}
     for dim in DIMENSIONS:
-        groups = [df[df["condition_id"] == c][dim].dropna().values for c in CONDITION_ORDER]
+        groups = [df[df["condition_id"] == c]
+                  [dim].dropna().values for c in CONDITION_ORDER]
         h_stat, p_val = stats.kruskal(*groups)
         kw_results[dim] = {"H": float(h_stat), "p": float(p_val)}
         sig = "*" if p_val < 0.05 else ""
@@ -257,13 +260,15 @@ def rq2_analysis(df: pd.DataFrame, interventions_df: pd.DataFrame) -> dict:
             delta = cliff_delta(v1.values, v2.values)
             sig = "*" if p < 0.05 else ""
             if p < 0.05:
-                print(f"    {CONDITION_LABELS[s1]:>15} vs {CONDITION_LABELS[s2]:<15}: Δ={delta:+.3f} p={p:.4f}{sig}")
+                print(
+                    f"    {CONDITION_LABELS[s1]:>15} vs {CONDITION_LABELS[s2]:<15}: Δ={delta:+.3f} p={p:.4f}{sig}")
 
     # Post-intervention quality deltas
     if not interventions_df.empty:
         print(f"\n--- Post-intervention quality deltas (next round - trigger round) ---")
         active_ivs = interventions_df[~interventions_df["silent_control"]]
-        strategy_ivs = active_ivs[active_ivs["condition_id"].str.startswith("strategy_")]
+        strategy_ivs = active_ivs[active_ivs["condition_id"].str.startswith(
+            "strategy_")]
 
         for cid in strategy_ids:
             cond_ivs = strategy_ivs[strategy_ivs["condition_id"] == cid]
@@ -274,7 +279,8 @@ def rq2_analysis(df: pd.DataFrame, interventions_df: pd.DataFrame) -> dict:
             for _, iv in cond_ivs.iterrows():
                 run_data = df[(df["run_id"] == iv["run_id"])]
                 pre = run_data[run_data["round_number"] == iv["round_number"]]
-                post = run_data[run_data["round_number"] == iv["round_number"] + 1]
+                post = run_data[run_data["round_number"]
+                                == iv["round_number"] + 1]
                 if pre.empty or post.empty:
                     continue
                 for dim in DIMENSIONS:
@@ -282,7 +288,8 @@ def rq2_analysis(df: pd.DataFrame, interventions_df: pd.DataFrame) -> dict:
                     deltas_by_dim[dim].append(d)
 
             if deltas_by_dim:
-                print(f"\n  {CONDITION_LABELS[cid]} (n={len(next(iter(deltas_by_dim.values())))} interventions):")
+                print(
+                    f"\n  {CONDITION_LABELS[cid]} (n={len(next(iter(deltas_by_dim.values())))} interventions):")
                 for dim in DIMENSIONS:
                     vals = deltas_by_dim[dim]
                     if vals:
@@ -306,7 +313,8 @@ def rq2_analysis(df: pd.DataFrame, interventions_df: pd.DataFrame) -> dict:
             val = results[cid]["topic_type_values"][dim]
             diff = val - emp
             marker = "▲" if diff > 0.1 else "▼" if diff < -0.1 else "≈"
-            print(f"    {DIM_LABELS[dim]:<20}: emp={emp:.3f} val={val:.3f} ({diff:+.3f}) {marker}")
+            print(
+                f"    {DIM_LABELS[dim]:<20}: emp={emp:.3f} val={val:.3f} ({diff:+.3f}) {marker}")
 
     return results
 
@@ -355,7 +363,8 @@ def rq3_analysis(df: pd.DataFrame) -> dict:
             if len(t) >= 2:
                 trend = t[-1] - t[0]
                 direction = "↑" if trend > 0.1 else "↓" if trend < -0.1 else "→"
-                print(f"    {DIM_LABELS[dim]:<20}: R1={t[0]:.3f} → R{len(t)}={t[-1]:.3f} ({trend:+.3f}) {direction}")
+                print(
+                    f"    {DIM_LABELS[dim]:<20}: R1={t[0]:.3f} → R{len(t)}={t[-1]:.3f} ({trend:+.3f}) {direction}")
 
     return results
 
@@ -381,7 +390,8 @@ def causal_analysis(df: pd.DataFrame, interventions_df: pd.DataFrame) -> dict:
         silent = cond_ivs[cond_ivs["silent_control"]]
 
         if active.empty or silent.empty:
-            print(f"  {CONDITION_LABELS[cid]}: insufficient data (active={len(active)}, silent={len(silent)})")
+            print(
+                f"  {CONDITION_LABELS[cid]}: insufficient data (active={len(active)}, silent={len(silent)})")
             continue
 
         def get_deltas(iv_subset):
@@ -389,7 +399,8 @@ def causal_analysis(df: pd.DataFrame, interventions_df: pd.DataFrame) -> dict:
             for _, iv in iv_subset.iterrows():
                 run_data = df[df["run_id"] == iv["run_id"]]
                 pre = run_data[run_data["round_number"] == iv["round_number"]]
-                post = run_data[run_data["round_number"] == iv["round_number"] + 1]
+                post = run_data[run_data["round_number"]
+                                == iv["round_number"] + 1]
                 if pre.empty or post.empty:
                     continue
                 for dim in DIMENSIONS:
@@ -399,15 +410,18 @@ def causal_analysis(df: pd.DataFrame, interventions_df: pd.DataFrame) -> dict:
         active_deltas = get_deltas(active)
         silent_deltas = get_deltas(silent)
 
-        print(f"\n  {CONDITION_LABELS[cid]} (active={len(active)}, silent={len(silent)}):")
+        print(
+            f"\n  {CONDITION_LABELS[cid]} (active={len(active)}, silent={len(silent)}):")
         cid_results = {}
         for dim in DIMENSIONS:
             a_vals = active_deltas.get(dim, [])
             s_vals = silent_deltas.get(dim, [])
             if len(a_vals) >= 2 and len(s_vals) >= 2:
-                u, p = stats.mannwhitneyu(a_vals, s_vals, alternative="two-sided")
+                u, p = stats.mannwhitneyu(
+                    a_vals, s_vals, alternative="two-sided")
                 sig = "*" if p < 0.05 else ""
-                print(f"    {DIM_LABELS[dim]:<20}: active Δ={np.mean(a_vals):+.3f}, silent Δ={np.mean(s_vals):+.3f}, p={p:.4f}{sig}")
+                print(
+                    f"    {DIM_LABELS[dim]:<20}: active Δ={np.mean(a_vals):+.3f}, silent Δ={np.mean(s_vals):+.3f}, p={p:.4f}{sig}")
                 cid_results[dim] = {
                     "active_delta": float(np.mean(a_vals)),
                     "silent_delta": float(np.mean(s_vals)),
@@ -417,7 +431,8 @@ def causal_analysis(df: pd.DataFrame, interventions_df: pd.DataFrame) -> dict:
             elif a_vals or s_vals:
                 am = np.mean(a_vals) if a_vals else float("nan")
                 sm = np.mean(s_vals) if s_vals else float("nan")
-                print(f"    {DIM_LABELS[dim]:<20}: active Δ={am:+.3f} (n={len(a_vals)}), silent Δ={sm:+.3f} (n={len(s_vals)}) — too few for test")
+                print(
+                    f"    {DIM_LABELS[dim]:<20}: active Δ={am:+.3f} (n={len(a_vals)}), silent Δ={sm:+.3f} (n={len(s_vals)}) — too few for test")
                 cid_results[dim] = {
                     "active_delta": float(am) if a_vals else None,
                     "silent_delta": float(sm) if s_vals else None,
@@ -432,6 +447,36 @@ def causal_analysis(df: pd.DataFrame, interventions_df: pd.DataFrame) -> dict:
 
 # ─── RQ5: Topic Type Interaction ──────────────────────────────────────────────
 
+def interaction_permutation_p(df: pd.DataFrame, dim: str, observed: float,
+                              n_perm: int = 10_000, seed: int = 2026) -> float:
+    """Two-sided permutation p for (strategy - none) x (values - empirical).
+
+    Debate runs are the exchangeable unit: topic-type labels are shuffled among
+    runs within the strategy group and within the no-moderation group.
+    """
+    sub = df[(df["condition_id"] == "baseline_1") |
+             df["is_strategy"]].dropna(subset=[dim])
+    runs = sub.groupby("run_id").agg(
+        is_strategy=("is_strategy", "first"),
+        is_values=("topic_type", lambda s: s.iloc[0] == "values"),
+        total=(dim, "sum"),
+        n=(dim, "size"),
+    )
+    rng = np.random.default_rng(seed)
+
+    def group_delta(g: pd.DataFrame) -> np.ndarray:
+        total, n = g["total"].to_numpy(), g["n"].to_numpy()
+        labels = np.tile(g["is_values"].to_numpy(), (n_perm, 1))
+        labels = rng.permuted(labels, axis=1)
+        val_mean = (labels * total).sum(1) / (labels * n).sum(1)
+        emp_mean = (~labels * total).sum(1) / (~labels * n).sum(1)
+        return val_mean - emp_mean
+
+    perm = group_delta(runs[runs["is_strategy"]]) - \
+        group_delta(runs[~runs["is_strategy"]])
+    return float((np.sum(np.abs(perm) >= abs(observed) - 1e-12) + 1) / (n_perm + 1))
+
+
 def rq5_analysis(df: pd.DataFrame) -> dict:
     """Test if moderation effects differ between empirical and values-driven topics."""
     print("\n" + "=" * 70)
@@ -444,13 +489,15 @@ def rq5_analysis(df: pd.DataFrame) -> dict:
     baseline = df[df["condition_id"] == "baseline_1"]
     strategies = df[df["is_strategy"]]
 
-    print(f"\n{'Dimension':<20} {'Emp Δ':>8} {'Val Δ':>8} {'Interaction':>12} {'p':>10}")
+    print(
+        f"\n{'Dimension':<20} {'Emp Δ':>8} {'Val Δ':>8} {'Interaction':>12} {'p':>10}")
     print("-" * 65)
 
     for dim in DIMENSIONS:
         # Moderation effect for empirical topics
         bl_emp = baseline[baseline["topic_type"] == "empirical"][dim].dropna()
-        st_emp = strategies[strategies["topic_type"] == "empirical"][dim].dropna()
+        st_emp = strategies[strategies["topic_type"]
+                            == "empirical"][dim].dropna()
         delta_emp = float(st_emp.mean() - bl_emp.mean())
 
         # Moderation effect for values topics
@@ -458,12 +505,11 @@ def rq5_analysis(df: pd.DataFrame) -> dict:
         st_val = strategies[strategies["topic_type"] == "values"][dim].dropna()
         delta_val = float(st_val.mean() - bl_val.mean())
 
-        # Test interaction via 2-way comparison
-        # Strategy scores for empirical vs values, controlling for baseline
-        # Simpler: compare strategy-baseline deltas
-        # More robust: Mann-Whitney on strategy scores between topic types
-        u, p = stats.mannwhitneyu(st_emp, st_val, alternative="two-sided")
+        # Topic-type difference in strategy scores only (not an interaction test)
+        _, p_topic = stats.mannwhitneyu(
+            st_emp, st_val, alternative="two-sided")
         interaction = delta_val - delta_emp
+        p = interaction_permutation_p(df, dim, interaction)
         sig = "*" if p < 0.05 else ""
 
         results[dim] = {
@@ -471,9 +517,11 @@ def rq5_analysis(df: pd.DataFrame) -> dict:
             "delta_values": delta_val,
             "interaction": float(interaction),
             "p": float(p),
+            "p_topic_mwu": float(p_topic),
             "significant": p < 0.05,
         }
-        print(f"{DIM_LABELS[dim]:<20} {delta_emp:>+8.3f} {delta_val:>+8.3f} {interaction:>+12.3f} {p:>10.4f}{sig}")
+        print(
+            f"{DIM_LABELS[dim]:<20} {delta_emp:>+8.3f} {delta_val:>+8.3f} {interaction:>+12.3f} {p:>10.4f}{sig}")
 
     return results
 
@@ -490,9 +538,14 @@ def ablation_analysis(df: pd.DataFrame, ablation_df: pd.DataFrame) -> dict:
         print("  No ablation data available.")
         return {}
 
-    # Normal order: baseline_1, mindestlohn from experiment
-    normal = df[(df["condition_id"] == "baseline_1") & (df["topic_id"] == "mindestlohn")]
-    reversed_order = ablation_df
+    # The post-hoc CSV pools the reversed runs into baseline_1, so split them by run ID
+    # and use post-hoc scores for both groups (same judge pass).
+    ablation_ids = set(ablation_df["run_id"])
+    b1_mindestlohn = df[(df["condition_id"] == "baseline_1")
+                        & (df["topic_id"] == "mindestlohn")]
+    normal = b1_mindestlohn[~b1_mindestlohn["run_id"].isin(ablation_ids)]
+    reversed_order = b1_mindestlohn[b1_mindestlohn["run_id"].isin(
+        ablation_ids)]
 
     results = {}
     print(f"\n{'Dimension':<20} {'Normal μ':>10} {'Reversed μ':>12} {'Δ':>8} {'U':>10} {'p':>10}")
@@ -513,7 +566,8 @@ def ablation_analysis(df: pd.DataFrame, ablation_df: pd.DataFrame) -> dict:
             "p": float(p),
             "significant": p < 0.05,
         }
-        print(f"{DIM_LABELS[dim]:<20} {n_vals.mean():>10.3f} {r_vals.mean():>12.3f} {delta:>+8.3f} {u:>10.0f} {p:>10.4f}{sig}")
+        print(
+            f"{DIM_LABELS[dim]:<20} {n_vals.mean():>10.3f} {r_vals.mean():>12.3f} {delta:>+8.3f} {u:>10.0f} {p:>10.4f}{sig}")
 
     return results
 
