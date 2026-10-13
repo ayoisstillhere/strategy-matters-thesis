@@ -1,0 +1,43 @@
+\begin{table}[htbp]
+\centering
+\caption[Silent-control comparison (exploratory)]{Silent-control comparison (exploratory). For each trigger event, $\Delta$ is the change in the debate's mean score from the trigger round to the next round. $p$: two-sided Mann--Whitney $U$ test of active vs.\ silent events; $p_{\text{perm}}$: exact permutation test on the difference in means; $p_{\text{Holm}}$: Holm-adjusted across all 28 tests. About 1.4 raw $p < 0.05$ are expected by chance; 3 were observed.}
+\label{tab:causal}
+\scriptsize
+\begin{tabular}{l c l cc ccc}
+\toprule
+\textbf{Strategy} & $n_{\text{act}}/n_{\text{sil}}$ & \textbf{Dimension} & $\Delta_{\text{active}}$ & $\Delta_{\text{silent}}$ & $p$ & $p_{\text{perm}}$ & $p_{\text{Holm}}$ \\
+\midrule
+De-escalation & 3/2 & Civility & $+0.22$ & $0.00$ & 0.317 & 0.400 & 1.00 \\
+ &  & Relevance & $0.00$ & $0.00$ & 1.000 & 1.000 & 1.00 \\
+ &  & Log.\ Consistency & $0.00$ & $+0.08$ & 0.414 & 0.400 & 1.00 \\
+ &  & Arg.\ Strength & $-0.06$ & $+0.08$ & 0.554 & 0.600 & 1.00 \\
+ &  & Doc.\ Grounding & $-0.06$ & $+0.25$ & 0.224 & 0.300 & 1.00 \\
+ &  & Responsiveness & $0.00$ & $+0.08$ & 0.767 & 0.800 & 1.00 \\
+ &  & Stance Diff. & $-0.33$ & $+0.08$ & 0.139 & 0.100 & 1.00 \\
+\midrule
+Reframing & 38/11 & Civility & $+0.03$ & $0.00$ & 0.233 & 0.388 & 1.00 \\
+ &  & Relevance & $0.00$ & $+0.02$ & 0.241 & 0.532 & 1.00 \\
+ &  & Log.\ Consistency & $-0.03$ & $-0.07$ & 0.532 & 0.676 & 1.00 \\
+ &  & Arg.\ Strength & $-0.03$ & $+0.03$ & 0.298 & 0.463 & 1.00 \\
+ &  & Doc.\ Grounding & $-0.02$ & $-0.02$ & 0.892 & 1.000 & 1.00 \\
+ &  & Responsiveness & $+0.25$ & $+0.33$ & 0.219 & 0.586 & 1.00 \\
+ &  & Stance Diff. & $-0.20$ & $-0.03$ & 0.036 & 0.082 & 0.92 \\
+\midrule
+Fact-reminder & 19/3 & Civility & $+0.04$ & $-0.06$ & 0.147 & 0.253 & 1.00 \\
+ &  & Relevance & $-0.03$ & $0.00$ & 0.791 & 1.000 & 1.00 \\
+ &  & Log.\ Consistency & $+0.03$ & $-0.11$ & 0.171 & 0.156 & 1.00 \\
+ &  & Arg.\ Strength & $+0.01$ & $0.00$ & 0.679 & 1.000 & 1.00 \\
+ &  & Doc.\ Grounding & $+0.60$ & $-0.06$ & 0.011 & 0.003 & 0.30 \\
+ &  & Responsiveness & $-0.05$ & $0.00$ & 0.732 & 0.842 & 1.00 \\
+ &  & Stance Diff. & $-0.14$ & $-0.11$ & 0.802 & 1.000 & 1.00 \\
+\midrule
+Common-ground & 44/11 & Civility & $+0.02$ & $+0.05$ & 0.460 & 0.295 & 1.00 \\
+ &  & Relevance & $0.00$ & $0.00$ & 1.000 & 1.000 & 1.00 \\
+ &  & Log.\ Consistency & $-0.02$ & $-0.06$ & 0.893 & 0.772 & 1.00 \\
+ &  & Arg.\ Strength & $-0.07$ & $-0.05$ & 0.512 & 0.813 & 1.00 \\
+ &  & Doc.\ Grounding & $-0.06$ & $+0.08$ & 0.019 & 0.049 & 0.52 \\
+ &  & Responsiveness & $+0.15$ & $+0.02$ & 0.201 & 0.319 & 1.00 \\
+ &  & Stance Diff. & $-0.22$ & $-0.27$ & 0.748 & 0.622 & 1.00 \\
+\bottomrule
+\end{tabular}
+\end{table}

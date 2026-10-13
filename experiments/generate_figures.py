@@ -124,6 +124,11 @@ def save_fig(fig, name):
 
 def load_data():
     df = pd.read_csv(POSTHOC_CSV)
+    # Match comparative_analysis.py: drop the reversed-order ablation runs and the
+    # opening turn's responsiveness (always 1 by construction).
+    df = df[~df["run_file"].str.contains("ablation_turn_order", regex=False)].copy()
+    opening = (df["round_number"] == 1) & (df["turn_in_round"] == 1)
+    df["responsiveness"] = df["responsiveness"].astype(float).where(~opening)
     df["topic_type"] = df["topic_id"].map(TOPIC_TYPES)
     df["condition_label"] = df["condition_id"].map(CONDITION_LABELS)
     df["is_strategy"] = df["condition_id"].str.startswith("strategy_")

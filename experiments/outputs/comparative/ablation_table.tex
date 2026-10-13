@@ -1,19 +1,19 @@
 \begin{table}[htbp]
 \centering
-\caption{Speaking-order ablation: normal (CDU/CSU$\to$AfD) vs.\ reversed order, Baseline~1, \textit{Mindestlohn}, 5 runs each.}
+\caption[Speaking-order ablation]{Speaking-order ablation: normal (CDU/CSU$\to$AfD) vs.\ reversed order, no moderation, \textit{Mindestlohn}, 5 debates each. $\Delta$ = reversed $-$ normal, with 95\% bootstrap CI over debates; $p$ from an exact permutation test on debate means (252 splits), unadjusted. Responsiveness excludes the opening turn.}
 \label{tab:ablation}
 \small
 \begin{tabular}{l cc c c}
 \toprule
-\textbf{Dimension} & $\mu_{\text{Normal}}$ & $\mu_{\text{Reversed}}$ & $\Delta$ & $p$ \\
+\textbf{Dimension} & $\mu_{\text{Normal}}$ & $\mu_{\text{Reversed}}$ & $\Delta$ [95\% CI] & $p$ \\
 \midrule
-Civility & 3.997 & 4.010 & +0.013 & 0.1569 \\
-Relevance & 4.000 & 4.017 & +0.017 & 0.0585 \\
-Log.\ Consistency & 3.810 & 3.840 & +0.030 & 0.3341 \\
-Arg.\ Strength & 3.533 & 3.497 & -0.037 & 0.3922 \\
-Doc.\ Grounding & 3.683 & 3.687 & +0.003 & 0.8772 \\
-Responsiveness & 2.750 & 2.763 & +0.013 & 0.8393 \\
-Stance Diff. & 4.000 & 4.027 & +0.027 & 0.5340 \\
+Civility & 3.997 & 4.010 & $+0.013$ [$0.00$, $+0.03$] & 0.278 \\
+Relevance & 4.000 & 4.017 & $+0.017$ [$0.00$, $+0.03$] & 0.135 \\
+Log.\ Consistency & 3.810 & 3.840 & $+0.030$ [$-0.08$, $+0.13$] & 0.659 \\
+Arg.\ Strength & 3.533 & 3.497 & $-0.037$ [$-0.11$, $+0.03$] & 0.468 \\
+Doc.\ Grounding & 3.683 & 3.687 & $+0.003$ [$-0.10$, $+0.12$] & 1.000 \\
+Responsiveness & 2.780 & 2.793 & $+0.014$ [$-0.10$, $+0.14$] & 0.897 \\
+Stance Diff. & 4.000 & 4.027 & $+0.027$ [$-0.14$, $+0.20$] & 0.762 \\
 \bottomrule
 \end{tabular}
 \end{table}

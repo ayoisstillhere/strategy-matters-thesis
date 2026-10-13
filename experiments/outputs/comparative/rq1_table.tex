@@ -1,19 +1,22 @@
 \begin{table}[htbp]
 \centering
-\caption{RQ1: Moderated conditions (Strategies A--D) vs.\ No-moderation baseline. Mann-Whitney $U$ test with Cliff's $\delta$ effect size.}
+\caption[RQ1: moderated conditions vs.\ no moderation]{RQ1: Moderated conditions (Strategies A--D, 80 debates) vs.\ no moderation (20 debates). $\Delta$ = difference in mean score; $\delta$ = Cliff's $\delta$ on turn scores. 95\% CIs from a cluster bootstrap over debates (stratified by topic, 2,000 resamples); $p$ from a permutation test on debate means with labels shuffled within topic (10,000 permutations), Holm-adjusted across the seven dimensions. Responsiveness excludes the opening turn of each debate; the last row includes it.}
 \label{tab:rq1}
 \small
-\begin{tabular}{l cc cc c}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{l cc c c c c}
 \toprule
-\textbf{Dimension} & $\mu_{\text{Strat}}$ & $\mu_{\text{None}}$ & $U$ & $p$ & $\delta$ \\
+\textbf{Dimension} & $\mu_{\text{Strat}}$ & $\mu_{\text{None}}$ & $\Delta$ [95\% CI] & $\delta$ [95\% CI] & $p$ & $p_{\text{Holm}}$ \\
 \midrule
-Civility & 3.981 & 3.967 & 3645948 & 0.0220$^{*}$ & +0.013 \\
-Relevance & 4.005 & 4.009 & 3585345 & 0.1733 & -0.004 \\
-Log.\ Consistency & 3.813 & 3.859 & 3433782 & 0.0000$^{*}$ & -0.046 \\
-Arg.\ Strength & 3.636 & 3.664 & 3503417 & 0.0584 & -0.027 \\
-Doc.\ Grounding & 3.756 & 3.684 & 3748852 & 0.0052$^{*}$ & +0.041 \\
-Responsiveness & 3.058 & 2.742 & 4412958 & 0.0000$^{*}$ & +0.226 \\
-Stance Diff. & 3.864 & 3.977 & 3250541 & 0.0000$^{*}$ & -0.097 \\
+Civility & 3.98 & 3.96 & $+0.02$ [$+0.01$, $+0.04$] & $+0.022$ [$+0.01$, $+0.03$] & 0.016 & 0.098 \\
+Relevance & 4.00 & 4.01 & $0.00$ [$-0.01$, $0.00$] & $-0.002$ [$-0.01$, $0.00$] & 0.683 & 0.724 \\
+Log.\ Consistency & 3.81 & 3.86 & $-0.05$ [$-0.09$, $-0.01$] & $-0.051$ [$-0.09$, $-0.01$] & 0.051 & 0.152 \\
+Arg.\ Strength & 3.64 & 3.71 & $-0.07$ [$-0.11$, $-0.03$] & $-0.069$ [$-0.11$, $-0.03$] & 0.017 & 0.098 \\
+Doc.\ Grounding & 3.76 & 3.68 & $+0.07$ [$-0.01$, $+0.16$] & $+0.041$ [$-0.03$, $+0.11$] & 0.362 & 0.724 \\
+Responsiveness & 3.09 & 2.77 & $+0.33$ [$+0.22$, $+0.44$] & $+0.238$ [$+0.16$, $+0.32$] & 0.004 & \textbf{0.026} \\
+Stance Diff. & 3.86 & 3.96 & $-0.10$ [$-0.16$, $-0.04$] & $-0.086$ [$-0.14$, $-0.03$] & 0.034 & 0.137 \\
+\midrule
+Resp.\ (incl.\ opening) & 3.06 & 2.74 & $+0.32$ [$+0.22$, $+0.43$] & $+0.230$ [$+0.15$, $+0.31$] & 0.004 & --- \\
 \bottomrule
 \end{tabular}
 \end{table}
