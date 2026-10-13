@@ -1,0 +1,218 @@
+{
+  "n_turns": 688,
+  "recovery_rate": 1.0,
+  "overall": {
+    "attr_retrieved": 0.5009497512941845,
+    "attr_programme": 0.5812556784817514,
+    "any_retrieved": 0.997093023255814,
+    "any_programme": 0.998546511627907
+  },
+  "spearman_judge": {
+    "attr_retrieved": {
+      "rho": 0.21428871133741295,
+      "p": 1.3740687504519473e-08
+    },
+    "attr_programme": {
+      "rho": 0.1646454840468908,
+      "p": 1.4221554797952282e-05
+    }
+  },
+  "by_judge_score": {
+    "2": {
+      "attr_retrieved": 0.2960129080872115,
+      "attr_programme": 0.418031226885716
+    },
+    "3": {
+      "attr_retrieved": 0.4452335797675101,
+      "attr_programme": 0.5393079732183752
+    },
+    "4": {
+      "attr_retrieved": 0.5387695882711112,
+      "attr_programme": 0.6120465649048695
+    },
+    "5": {
+      "attr_retrieved": 0.49366692695971776,
+      "attr_programme": 0.5562335122983066
+    }
+  },
+  "by_condition": {
+    "baseline_1": {
+      "attr_retrieved": 0.5077110495928757,
+      "attr_programme": 0.5826392826747332,
+      "document_grounding": 3.689655172413793
+    },
+    "baseline_2": {
+      "attr_retrieved": 0.5202683133842027,
+      "attr_programme": 0.5885081917726839,
+      "document_grounding": 3.635294117647059
+    },
+    "baseline_3": {
+      "attr_retrieved": 0.44325385969986225,
+      "attr_programme": 0.5518799687635054,
+      "document_grounding": 3.447058823529412
+    },
+    "baseline_4": {
+      "attr_retrieved": 0.5325455288585668,
+      "attr_programme": 0.6161325376270781,
+      "document_grounding": 3.6588235294117646
+    },
+    "strategy_a": {
+      "attr_retrieved": 0.5219204748589196,
+      "attr_programme": 0.6075379992940546,
+      "document_grounding": 3.6941176470588237
+    },
+    "strategy_b": {
+      "attr_retrieved": 0.4558629491004032,
+      "attr_programme": 0.5229549247522104,
+      "document_grounding": 3.441860465116279
+    },
+    "strategy_c": {
+      "attr_retrieved": 0.48205576517643395,
+      "attr_programme": 0.5437213814086136,
+      "document_grounding": 4.436781609195402
+    },
+    "strategy_d": {
+      "attr_retrieved": 0.5433012199398001,
+      "attr_programme": 0.6362660932685383,
+      "document_grounding": 3.5795454545454546
+    }
+  },
+  "vs_none": {
+    "De-escalation|attr_retrieved": {
+      "a_mean": 0.5237343857409648,
+      "b_mean": 0.510329008314639,
+      "diff": 0.013405377426325749,
+      "diff_ci": [
+        -0.046536537841141035,
+        0.07048394917748459
+      ],
+      "cliff_delta": 0.040432724814063556,
+      "p_perm": 0.6779322067793221,
+      "p_holm": 1.0
+    },
+    "Reframing|attr_retrieved": {
+      "a_mean": 0.45543576839397276,
+      "b_mean": 0.510329008314639,
+      "diff": -0.05489323992066625,
+      "diff_ci": [
+        -0.10625021509573826,
+        -0.005442796029761912
+      ],
+      "cliff_delta": -0.15918203688853247,
+      "p_perm": 0.06229377062293771,
+      "p_holm": 0.4360563943605639
+    },
+    "Fact-reminder|attr_retrieved": {
+      "a_mean": 0.48233470695192493,
+      "b_mean": 0.510329008314639,
+      "diff": -0.02799430136271408,
+      "diff_ci": [
+        -0.07831649826654578,
+        0.024839653404837944
+      ],
+      "cliff_delta": -0.06354868542740125,
+      "p_perm": 0.33666633336666335,
+      "p_holm": 1.0
+    },
+    "Common-ground|attr_retrieved": {
+      "a_mean": 0.5450030218749259,
+      "b_mean": 0.510329008314639,
+      "diff": 0.034674013560286876,
+      "diff_ci": [
+        -0.016027688566787098,
+        0.08590718673378073
+      ],
+      "cliff_delta": 0.10632183908045977,
+      "p_perm": 0.2450754924507549,
+      "p_holm": 0.9803019698030196
+    },
+    "De-escalation|attr_programme": {
+      "a_mean": 0.6104193269285181,
+      "b_mean": 0.5845351189716977,
+      "diff": 0.025884207956820338,
+      "diff_ci": [
+        -0.02158055160236777,
+        0.07267578417084153
+      ],
+      "cliff_delta": 0.07707910750507099,
+      "p_perm": 0.35406459354064596,
+      "p_holm": 1.0
+    },
+    "Reframing|attr_programme": {
+      "a_mean": 0.5231428202752699,
+      "b_mean": 0.5845351189716977,
+      "diff": -0.061392298696427816,
+      "diff_ci": [
+        -0.10777051250963689,
+        -0.01618355313859657
+      ],
+      "cliff_delta": -0.20489174017642342,
+      "p_perm": 0.020997900209979003,
+      "p_holm": 0.16798320167983202
+    },
+    "Fact-reminder|attr_programme": {
+      "a_mean": 0.5443869946553349,
+      "b_mean": 0.5845351189716977,
+      "diff": -0.04014812431636283,
+      "diff_ci": [
+        -0.08943781593542244,
+        0.009242171500368539
+      ],
+      "cliff_delta": -0.13727044523715154,
+      "p_perm": 0.16278372162783722,
+      "p_holm": 0.813918608139186
+    },
+    "Common-ground|attr_programme": {
+      "a_mean": 0.6388665650762206,
+      "b_mean": 0.5845351189716977,
+      "diff": 0.054331446104522896,
+      "diff_ci": [
+        0.0012394225341979012,
+        0.10455813274645388
+      ],
+      "cliff_delta": 0.1722831765935214,
+      "p_perm": 0.06629337066293371,
+      "p_holm": 0.4360563943605639
+    }
+  },
+  "fact_reminder_by_programme_ref": {
+    "0": {
+      "attr_retrieved": 0.5236308854544148,
+      "attr_programme": 0.5767035839977016,
+      "document_grounding": 4.0
+    },
+    "1": {
+      "attr_retrieved": 0.46529160377402223,
+      "attr_programme": 0.5304221061710781,
+      "document_grounding": 4.612903225806452
+    }
+  },
+  "all_by_programme_ref": {
+    "0": {
+      "attr_retrieved": 0.5026304636942717,
+      "attr_programme": 0.584902151216395,
+      "document_grounding": 3.5983050847457627
+    },
+    "1": {
+      "attr_retrieved": 0.49083117664059767,
+      "attr_programme": 0.5593024242629794,
+      "document_grounding": 4.3061224489795915
+    }
+  },
+  "human_sample": {
+    "n": 50,
+    "mean_gap": 0.897,
+    "attr_retrieved": {
+      "rho_human": 0.17118988769164692,
+      "p_human": 0.2345666332435564,
+      "rho_gap": -0.053141942437380615,
+      "p_gap": 0.7139732522917356
+    },
+    "attr_programme": {
+      "rho_human": 0.15648427760798184,
+      "p_human": 0.27782125919417877,
+      "rho_gap": -0.07765769743162595,
+      "p_gap": 0.5919277302115225
+    }
+  }
+}
