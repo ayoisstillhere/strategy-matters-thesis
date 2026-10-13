@@ -105,11 +105,14 @@ def load_posthoc() -> pd.DataFrame:
     df["condition_label"] = df["condition_id"].map(CONDITION_LABELS)
     df["is_strategy"] = df["condition_id"].str.startswith("strategy_")
     df["is_moderated"] = df["condition_id"] != "baseline_1"
-    df["is_ablation"] = df["run_file"].str.contains(ABLATION_MARKER, regex=False)
+    df["is_ablation"] = df["run_file"].str.contains(
+        ABLATION_MARKER, regex=False)
     # The first speaker of a debate has nothing to respond to and always scores 1.
-    df["is_opening_turn"] = (df["round_number"] == 1) & (df["turn_in_round"] == 1)
+    df["is_opening_turn"] = (df["round_number"] == 1) & (
+        df["turn_in_round"] == 1)
     df["responsiveness_all"] = df["responsiveness"].astype(float)
-    df["responsiveness"] = df["responsiveness"].astype(float).where(~df["is_opening_turn"])
+    df["responsiveness"] = df["responsiveness"].astype(
+        float).where(~df["is_opening_turn"])
     return df
 
 
@@ -334,7 +337,8 @@ def rq1_analysis(df: pd.DataFrame) -> dict:
     kw_results = {}
     for dim in DIMENSIONS:
         runs, _ = run_table(df, dim)
-        groups = [runs[runs["condition_id"] == c]["value"].to_numpy() for c in CONDITION_ORDER]
+        groups = [runs[runs["condition_id"] == c]["value"].to_numpy()
+                  for c in CONDITION_ORDER]
         h_stat, p_val = stats.kruskal(*groups)
         kw_results[dim] = {"H": float(h_stat), "p": float(p_val)}
         print(f"{DIM_LABELS[dim]:<20} H={h_stat:>8.2f} p={p_val:.4f}")
@@ -374,7 +378,8 @@ def rq2_analysis(df: pd.DataFrame, interventions_df: pd.DataFrame) -> dict:
 
     # Each strategy vs no moderation (20 vs 20 debates), Holm across all 28 tests
     strategy_ids = [c for c in CONDITION_ORDER if c.startswith("strategy_")]
-    print(f"\n--- Each strategy vs None [unit: debate; Holm across 4 x 7 tests] ---")
+    print(
+        f"\n--- Each strategy vs None [unit: debate; Holm across 4 x 7 tests] ---")
     vs_none = {cid: {dim: compare_groups(df, dim, [cid], ["baseline_1"]) for dim in DIMENSIONS}
                for cid in strategy_ids}
     keys = [(cid, dim) for cid in strategy_ids for dim in DIMENSIONS]
@@ -391,7 +396,8 @@ def rq2_analysis(df: pd.DataFrame, interventions_df: pd.DataFrame) -> dict:
                   f"δ={r['cliff_delta']:+.3f} p_perm={r['p_perm']:.4f} p_Holm={r['p_holm']:.4f}")
 
     # Pairwise strategy comparisons (exploratory, debate-level permutation test)
-    print(f"\n--- Pairwise strategy comparisons [exploratory; raw p < 0.05 shown] ---")
+    print(
+        f"\n--- Pairwise strategy comparisons [exploratory; raw p < 0.05 shown] ---")
     pairwise = {}
     for dim in DIMENSIONS:
         for s1, s2 in combinations(strategy_ids, 2):
@@ -551,7 +557,8 @@ def causal_analysis(df: pd.DataFrame, interventions_df: pd.DataFrame) -> dict:
 
         print(
             f"\n  {CONDITION_LABELS[cid]} (active={len(active)}, silent={len(silent)}):")
-        cid_results = {"n_active": int(len(active)), "n_silent": int(len(silent))}
+        cid_results = {"n_active": int(
+            len(active)), "n_silent": int(len(silent))}
         for dim in DIMENSIONS:
             a_vals = active_deltas.get(dim, [])
             s_vals = silent_deltas.get(dim, [])
@@ -579,7 +586,8 @@ def causal_analysis(df: pd.DataFrame, interventions_df: pd.DataFrame) -> dict:
                     "p_perm": None,
                 }
 
-        tested = [d for d in DIMENSIONS if d in cid_results and cid_results[d]["p"] is not None]
+        tested = [
+            d for d in DIMENSIONS if d in cid_results and cid_results[d]["p"] is not None]
         for d, p_adj in zip(tested, holm([cid_results[d]["p"] for d in tested])):
             cid_results[d]["p_holm_within"] = p_adj
         for dim in DIMENSIONS:
@@ -797,7 +805,8 @@ def mixed_model_analysis(df: pd.DataFrame) -> dict:
     for (d, c), p_adj in zip(keys, holm([results["per_strategy"][d][c]["p"] for d, c in keys])):
         results["per_strategy"][d][c]["p_holm"] = p_adj
 
-    print(f"\n{'Dimension':<20} {'β (mod.)':>9} {'95% CI':>18} {'p':>9} {'p_Holm':>8}")
+    print(
+        f"\n{'Dimension':<20} {'β (mod.)':>9} {'95% CI':>18} {'p':>9} {'p_Holm':>8}")
     for dim in DIMENSIONS:
         r = results["pooled"][dim]
         print(f"{DIM_LABELS[dim]:<20} {r['beta']:>+9.3f} [{r['ci'][0]:+.3f},{r['ci'][1]:+.3f}] "
@@ -938,7 +947,8 @@ def generate_ablation_table(abl: dict) -> str:
 
 def generate_causal_table(causal: dict) -> str:
     """Silent-control comparison: all strategy x dimension tests (exploratory)."""
-    strategy_ids = [c for c in CONDITION_ORDER if c.startswith("strategy_") and c in causal]
+    strategy_ids = [c for c in CONDITION_ORDER if c.startswith(
+        "strategy_") and c in causal]
     s = causal["summary"]
     latex = r"""\begin{table}[htbp]
 \centering
