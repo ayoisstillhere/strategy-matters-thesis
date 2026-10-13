@@ -57,8 +57,10 @@ TURN_MARKER = "---\n\n### Turn to Evaluate:"
 def recover_passages() -> dict:
     maps = {}
     for party, stem in PARTY_STEMS.items():
-        lines = (EMB_DIR / f"{stem}_meta.jsonl").read_text(encoding="utf-8").splitlines()
-        maps[party] = {r["text"][:100]: r["text"] for r in map(json.loads, filter(None, lines))}
+        lines = (
+            EMB_DIR / f"{stem}_meta.jsonl").read_text(encoding="utf-8").splitlines()
+        maps[party] = {r["text"][:100]: r["text"]
+                       for r in map(json.loads, filter(None, lines))}
     return maps
 
 
@@ -70,7 +72,8 @@ def select_sample(df: pd.DataFrame, per_cell: int, seed: int = 2026) -> pd.DataF
 
 
 def build_prompts(row, run_turns: list[Turn], passages: list[str]) -> dict:
-    idx = next(i for i, t in enumerate(run_turns) if t.turn_id == row["turn_id"])
+    idx = next(i for i, t in enumerate(run_turns)
+               if t.turn_id == row["turn_id"])
     turn = run_turns[idx]
     phase = ("opening (rounds 1-3)" if turn.round_number <= 3 else
              "mid-debate (rounds 4-7)" if turn.round_number <= 7 else "closing (rounds 8-10)")
@@ -81,14 +84,16 @@ def build_prompts(row, run_turns: list[Turn], passages: list[str]) -> dict:
     block = "### RAG Grounding Passages (retrieved for this agent before the turn):\n" + "\n".join(
         f"[{i}] {p}" for i, p in enumerate(passages, 1)) + "\n\n"
     if TURN_MARKER not in blind:
-        raise RuntimeError("Judge user template changed; cannot insert passages")
+        raise RuntimeError(
+            "Judge user template changed; cannot insert passages")
     return {"blind": blind, "passages": blind.replace(TURN_MARKER, block + TURN_MARKER, 1)}
 
 
 def run_scoring(per_cell: int):
     df = load_turns()
     sample = select_sample(df, per_cell)
-    done = set(zip(*[pd.read_csv(CACHE)[c] for c in ["turn_id", "variant"]])) if CACHE.exists() else set()
+    done = set(zip(*[pd.read_csv(CACHE)[c]
+               for c in ["turn_id", "variant"]])) if CACHE.exists() else set()
     print(f"{len(sample)} turns x 2 variants; {len(done)} scores cached; judge model {JUDGE_MODEL}")
 
     client = LLMClient()
@@ -100,11 +105,13 @@ def run_scoring(per_cell: int):
     t0, n_new = time.time(), 0
     for _, row in sample.iterrows():
         if row["run_file"] not in run_cache:
-            raw = json.loads((ROOT / row["run_file"]).read_text(encoding="utf-8"))["turns"]
+            raw = json.loads(
+                (ROOT / row["run_file"]).read_text(encoding="utf-8"))["turns"]
             run_cache[row["run_file"]] = [Turn(turn_id=t["turn_id"], round_number=t["round_number"],
                                                turn_in_round=t["turn_in_round"], agent_name=t["agent_name"],
                                                text=t["text"]) for t in raw]
-        passages = [passage_maps[row["agent_name"]].get(p) for p in row["rag_prefixes"]]
+        passages = [passage_maps[row["agent_name"]].get(
+            p) for p in row["rag_prefixes"]]
         passages = [p for p in passages if p]
         prompts = build_prompts(row, run_cache[row["run_file"]], passages)
         for variant, user_prompt in prompts.items():
@@ -122,12 +129,16 @@ def run_scoring(per_cell: int):
             scores = (parsed or {}).get("scores", {})
             for d in DIMENSIONS:
                 v = scores.get(d)
-                rec[d] = max(1, min(5, int(v))) if isinstance(v, (int, float)) else np.nan
-            rec["doc_justification"] = (parsed or {}).get("justifications", {}).get("document_grounding", "")
-            pd.DataFrame([rec]).to_csv(CACHE, mode="a", header=not CACHE.exists(), index=False)
+                rec[d] = max(1, min(5, int(v))) if isinstance(
+                    v, (int, float)) else np.nan
+            rec["doc_justification"] = (parsed or {}).get(
+                "justifications", {}).get("document_grounding", "")
+            pd.DataFrame([rec]).to_csv(CACHE, mode="a",
+                                       header=not CACHE.exists(), index=False)
             n_new += 1
             if n_new % 20 == 0:
-                print(f"  {n_new} new scores ({n_new / (time.time() - t0):.2f}/s)", flush=True)
+                print(
+                    f"  {n_new} new scores ({n_new / (time.time() - t0):.2f}/s)", flush=True)
     print(f"done: {n_new} new scores")
 
 
@@ -152,7 +163,8 @@ def analyse():
     res["orig_vs_qwen_blind"] = agree
 
     # Effect of seeing the passages on document-grounding.
-    dg = d.dropna(subset=["document_grounding_blind", "document_grounding_passages"])
+    dg = d.dropna(subset=["document_grounding_blind",
+                  "document_grounding_passages"])
     diff = dg["document_grounding_passages"] - dg["document_grounding_blind"]
     res["passages_effect"] = {
         "mean_blind": float(dg["document_grounding_blind"].mean()),
@@ -171,11 +183,14 @@ def analyse():
                    "document_grounding_blind", "document_grounding_passages",
                    "stance_differentiation", "stance_differentiation_blind"]:
         for cid in ["strategy_b", "strategy_c", "strategy_d"]:
-            r = compare_groups(d, metric, [cid], ["baseline_1"], bootstrap=True)
-            eff[f"{CONDITIONS[cid]}|{metric}"] = {k: r[k] for k in ["a_mean", "b_mean", "diff", "diff_ci", "p_perm"]}
+            r = compare_groups(d, metric, [cid], [
+                               "baseline_1"], bootstrap=True)
+            eff[f"{CONDITIONS[cid]}|{metric}"] = {k: r[k]
+                                                  for k in ["a_mean", "b_mean", "diff", "diff_ci", "p_perm"]}
     res["vs_none"] = eff
 
-    (OUT_DIR / "cross_judge.json").write_text(json.dumps(res, indent=2, default=float), encoding="utf-8")
+    (OUT_DIR / "cross_judge.json").write_text(json.dumps(res,
+                                                         indent=2, default=float), encoding="utf-8")
     print(json.dumps(res, indent=2, default=lambda x: round(float(x), 3)))
 
 

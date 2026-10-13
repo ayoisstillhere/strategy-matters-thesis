@@ -30,17 +30,21 @@ CODES = {
 
 def main():
     df = load_turns()
-    prev_text = df.sort_values(["run_id", "round_number", "turn_in_round"]).groupby("run_id")["text"].shift(1)
-    prev_agent = df.sort_values(["run_id", "round_number", "turn_in_round"]).groupby("run_id")["agent_name"].shift(1)
+    prev_text = df.sort_values(["run_id", "round_number", "turn_in_round"]).groupby(
+        "run_id")["text"].shift(1)
+    prev_agent = df.sort_values(["run_id", "round_number", "turn_in_round"]).groupby(
+        "run_id")["agent_name"].shift(1)
     df["previous_turn"] = (prev_agent + ": " + prev_text).reindex(df.index)
 
     items = []
     for dim, target in [("responsiveness", "strategy_b"), ("document_grounding", "strategy_c")]:
         for cid in [target, "baseline_1"]:
-            pool = df[(df["condition_id"] == cid) & (df[dim] >= 4) & (df["round_number"] >= 2)]
+            pool = df[(df["condition_id"] == cid) & (
+                df[dim] >= 4) & (df["round_number"] >= 2)]
             s = pool.sample(N, random_state=SEED).assign(dimension=dim)
             items.append(s)
-    sheet = pd.concat(items).sample(frac=1, random_state=SEED).reset_index(drop=True)
+    sheet = pd.concat(items).sample(
+        frac=1, random_state=SEED).reset_index(drop=True)
     sheet["item"] = range(1, len(sheet) + 1)
     sheet["coding_rule"] = sheet["dimension"].map(CODES)
     sheet["code"] = ""

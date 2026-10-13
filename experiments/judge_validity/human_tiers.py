@@ -67,12 +67,16 @@ def tier_metrics(anns: pd.DataFrame, llm: dict, turn_ids: list[str], annotator_i
         }
     out["within1_vs_llm"] = pooled_hits / pooled_n
     out["exact_vs_llm"] = pooled_exact / pooled_n
-    out["mean_alpha_humans"] = float(np.nanmean([v["alpha_humans"] for v in out["per_dimension"].values()]))
-    out["mean_bias"] = float(np.mean([v["bias"] for v in out["per_dimension"].values()]))
+    out["mean_alpha_humans"] = float(np.nanmean(
+        [v["alpha_humans"] for v in out["per_dimension"].values()]))
+    out["mean_bias"] = float(np.mean([v["bias"]
+                             for v in out["per_dimension"].values()]))
 
     # Chance baseline: LLM score vectors shuffled across exchanges within the tier.
-    hum = {t: anns[anns["turn_id"] == t][DIMENSIONS].to_numpy(dtype=float) for t in turn_ids}
-    llm_mat = np.array([[llm[t][d] for d in DIMENSIONS] for t in turn_ids], dtype=float)
+    hum = {t: anns[anns["turn_id"] == t]
+           [DIMENSIONS].to_numpy(dtype=float) for t in turn_ids}
+    llm_mat = np.array([[llm[t][d] for d in DIMENSIONS]
+                       for t in turn_ids], dtype=float)
     rates = []
     for _ in range(N_PERM):
         perm = RNG.permutation(len(turn_ids))
@@ -91,8 +95,10 @@ def main():
     data = json.loads(EXPORT_PATH.read_text(encoding="utf-8"))
     excluded = set(data["excluded_annotator_ids"])
     anns = pd.DataFrame(data["annotations"])
-    anns = pd.concat([anns.drop(columns=["scores"]), pd.json_normalize(anns["scores"])], axis=1)
-    anns = anns[(~anns["annotator_id"].isin(excluded)) & (anns["phase"] == "initial") & (~anns["perceived_bias"])]
+    anns = pd.concat([anns.drop(columns=["scores"]),
+                     pd.json_normalize(anns["scores"])], axis=1)
+    anns = anns[(~anns["annotator_id"].isin(excluded)) & (
+        anns["phase"] == "initial") & (~anns["perceived_bias"])]
     annotator_ids = sorted(anns["annotator_id"].unique())
     llm = {ex["turn_id"]: ex["llm_scores"] for ex in data["exchanges"]}
     all_ids = [ex["turn_id"] for ex in data["exchanges"]]
@@ -100,7 +106,8 @@ def main():
     tier1 = tier1_turn_ids(len(all_ids))
     missing = [t for t in tier1 if t not in llm]
     if missing:
-        sys.exit(f"Tier-1 reconstruction failed: {len(missing)} turns not in the annotated sample")
+        sys.exit(
+            f"Tier-1 reconstruction failed: {len(missing)} turns not in the annotated sample")
     rest = [t for t in all_ids if t not in set(tier1)]
 
     results = {
@@ -120,7 +127,8 @@ def main():
     for d in DIMENSIONS:
         a = results["high_disagreement"]["per_dimension"][d]
         b = results["stratified"]["per_dimension"][d]
-        print(f"  {d:<24} {a['within1_vs_llm']*100:5.1f}% {a['bias']:+.2f} | {b['within1_vs_llm']*100:5.1f}% {b['bias']:+.2f}")
+        print(
+            f"  {d:<24} {a['within1_vs_llm']*100:5.1f}% {a['bias']:+.2f} | {b['within1_vs_llm']*100:5.1f}% {b['bias']:+.2f}")
 
 
 if __name__ == "__main__":

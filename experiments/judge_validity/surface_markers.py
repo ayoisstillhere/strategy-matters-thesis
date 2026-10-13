@@ -63,14 +63,16 @@ def adjusted_effects(df: pd.DataFrame, outcome: str, markers: list[str]) -> dict
     """OLS on turns with debate-clustered SEs: strategy coefficient vs. None, without and with markers."""
     out = {}
     for cid, label in STRATEGIES.items():
-        sub = df[df["condition_id"].isin(["baseline_1", cid])].dropna(subset=[outcome]).copy()
+        sub = df[df["condition_id"].isin(["baseline_1", cid])].dropna(
+            subset=[outcome]).copy()
         sub["treat"] = (sub["condition_id"] == cid).astype(int)
         res = {}
         for name, rhs in [("unadjusted", "treat"), ("adjusted", "treat + " + " + ".join(markers))]:
             m = smf.ols(f"{outcome} ~ {rhs} + C(topic_id) + C(agent_name)", data=sub).fit(
                 cov_type="cluster", cov_kwds={"groups": sub["run_id"]})
             ci = m.conf_int().loc["treat"]
-            res[name] = {"beta": m.params["treat"], "ci": [ci[0], ci[1]], "p": m.pvalues["treat"]}
+            res[name] = {"beta": m.params["treat"], "ci": [
+                ci[0], ci[1]], "p": m.pvalues["treat"]}
             if name == "adjusted":
                 res["marker_betas"] = {k: m.params[k] for k in markers}
         u, a = res["unadjusted"]["beta"], res["adjusted"]["beta"]
@@ -117,7 +119,8 @@ def main():
             "by_programme_ref": stratified_means(df, "document_grounding", "programme_ref"),
         },
     }
-    (OUT_DIR / "surface_markers.json").write_text(json.dumps(results, indent=2, default=float), encoding="utf-8")
+    (OUT_DIR / "surface_markers.json").write_text(json.dumps(results,
+                                                             indent=2, default=float), encoding="utf-8")
     df[["turn_id", "run_id", "condition_id", "topic_id", "agent_name", "round_number", "turn_in_round",
         "n_other_parties", "names_other", "ack_formula", "programme_ref"]].to_csv(
         OUT_DIR / "surface_markers_turns.csv", index=False)
@@ -127,7 +130,8 @@ def main():
     for k, v in results["score_by_marker"].items():
         print(f"  {k}: " + ", ".join(f"{kk}={vv:.2f}" for kk, vv in v.items()))
     for outcome in ["responsiveness", "document_grounding"]:
-        print(f"\n{outcome}: strategy - None (turn OLS, topic+agent FE, debate-clustered SE)")
+        print(
+            f"\n{outcome}: strategy - None (turn OLS, topic+agent FE, debate-clustered SE)")
         for label, r in results[outcome]["adjusted"].items():
             u, a = r["unadjusted"], r["adjusted"]
             se = r["share_explained"]
