@@ -110,7 +110,7 @@
   ],
   "per_annotator": [
     {
-      "name": "Nik K\u00fcnzer",
+      "name": "A1",
       "n_annotations": 46,
       "mean_score": 3.6552795031055902,
       "std_score": 0.9760104253794846,
@@ -118,7 +118,7 @@
       "time_hours": 2.7589469444444448
     },
     {
-      "name": "Yannik Halfer",
+      "name": "A2",
       "n_annotations": 50,
       "mean_score": 3.44,
       "std_score": 0.748789499315872,
@@ -126,7 +126,7 @@
       "time_hours": 2.1180858333333332
     },
     {
-      "name": "Finn Schmid",
+      "name": "A3",
       "n_annotations": 49,
       "mean_score": 3.0932944606413995,
       "std_score": 1.3903190661545126,
@@ -134,7 +134,7 @@
       "time_hours": 1.747808611111111
     },
     {
-      "name": "Anas",
+      "name": "A4",
       "n_annotations": 44,
       "mean_score": 3.24025974025974,
       "std_score": 0.9606220576948057,
@@ -142,7 +142,7 @@
       "time_hours": 2.800708055555556
     },
     {
-      "name": "Dominic Roggi",
+      "name": "A5",
       "n_annotations": 49,
       "mean_score": 3.1253644314868803,
       "std_score": 0.7316448369811931,

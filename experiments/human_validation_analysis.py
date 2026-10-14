@@ -206,7 +206,7 @@ def main():
     included_ids = set(included_annotators["id"])
 
     print(f"\nAnnotators: {len(annotators_df)} total, {len(included_annotators)} included")
-    print(f"Excluded: {[a['name'] for a in data['annotators'] if a['excluded']]}")
+    print(f"Excluded: {sum(a['excluded'] for a in data['annotators'])} annotator(s)")
 
     # Filter annotations to included annotators, initial phase, non-bias
     initial_anns = annotations_df[
@@ -315,14 +315,15 @@ def main():
     print("=" * 60)
 
     annotator_stats = []
-    for ann_id in annotator_ids:
+    # Outputs are public: annotators appear only as pseudonyms (GDPR).
+    for k, ann_id in enumerate(annotator_ids, start=1):
         ann_data = initial_anns[initial_anns["annotator_id"] == ann_id]
         ann_info = included_annotators[included_annotators["id"] == ann_id].iloc[0]
         scores_all = ann_data[DIMENSIONS].values.flatten()
         scores_all = scores_all[~np.isnan(scores_all)]
 
         annotator_stats.append({
-            "name": ann_info["name"],
+            "name": f"A{k}",
             "n_annotations": len(ann_data),
             "mean_score": np.mean(scores_all),
             "std_score": np.std(scores_all),

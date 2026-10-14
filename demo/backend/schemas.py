@@ -90,8 +90,16 @@ class InterventionResponse(BaseModel):
     timestamp: Optional[str] = None
 
 
+DISCLAIMER = (
+    "AI-generated simulation, not actual party statements. All party contributions "
+    "were produced by language models for research purposes and do not represent "
+    "the views of the parties named."
+)
+
+
 class TranscriptResponse(BaseModel):
     """Full transcript for a debate."""
+    disclaimer: str = DISCLAIMER
     debate_id: str
     status: DebateStatus
     config: Optional[dict] = None
