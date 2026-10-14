@@ -4,13 +4,14 @@ Publication-Quality Figure Generation
 Generates all thesis figures from posthoc_scores.csv and analysis results.
 
 Figures produced:
-1. Per-dimension comparison boxplots (RQ1)
+1. Score distributions per condition and dimension (RQ1)
 2. Trade-off heatmap (RQ2)
-3. Radar/spider charts per strategy (RQ2)
-4. Temporal trajectory line plots (RQ3)
+3. Forest plot of strategy effects vs. no moderation (RQ2)
+4. Temporal trajectories with CIs (RQ3)
 5. Judge reliability scatter plots (RQ4)
 6. Intervention frequency chart
 7. Composite score comparison bar chart
+8. Moderation effect by topic type (RQ5)
 
 Usage:
     python experiments/generate_figures.py
@@ -35,17 +36,19 @@ matplotlib.use("Agg")
 # ─── Style ───────────────────────────────────────────────────────────────────
 
 sns.set_theme(style="whitegrid", font_scale=1.0)
+# Figures are drawn at the printed width (about 6.3 in), so these sizes are the printed sizes.
 plt.rcParams.update({
     "figure.dpi": 200,
     "savefig.dpi": 300,
-    "font.size": 10,
-    "axes.titlesize": 11,
-    "axes.labelsize": 10,
+    "font.size": 8,
+    "axes.titlesize": 9,
+    "axes.labelsize": 8,
     "xtick.labelsize": 8,
-    "ytick.labelsize": 9,
+    "ytick.labelsize": 8,
     "legend.fontsize": 8,
-    "figure.figsize": (10, 6),
+    "figure.figsize": (6.3, 4),
     "savefig.bbox": "tight",
+    "pdf.fonttype": 42,
 })
 
 # ─── Paths ───────────────────────────────────────────────────────────────────
@@ -56,6 +59,8 @@ RESULTS_JSON = ROOT / "experiments" / "outputs" / \
     "comparative" / "comparative_results.json"
 HUMAN_RESULTS = ROOT / "experiments" / "outputs" / \
     "human_validation" / "human_validation_results.json"
+HUMAN_TIERS = ROOT / "experiments" / "outputs" / \
+    "judge_validity" / "human_tiers.json"
 FIG_DIR = ROOT / "paper" / "figures"
 FIG_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -68,11 +73,12 @@ DIMENSIONS = [
 DIM_SHORT = {
     "civility": "Civility",
     "relevance": "Relevance",
-    "logical_consistency": "Log. Consist.",
-    "argument_strength": "Arg. Strength",
-    "document_grounding": "Doc. Ground.",
-    "responsiveness": "Responsive.",
-    "stance_differentiation": "Stance Diff.",
+    "logical_consistency": "Log. consistency",
+    "argument_strength": "Arg. strength",
+    "document_grounding": "Doc.-grounding",
+    "responsiveness": "Responsiveness",
+    "stance_differentiation": "Stance diff.",
+    "composite": "Composite",
 }
 
 CONDITION_LABELS = {
@@ -92,17 +98,17 @@ CONDITION_ORDER = [
 ]
 
 BASELINE_COLORS = {
-    "baseline_1": "#94a3b8",
-    "baseline_2": "#a78bfa",
-    "baseline_3": "#fbbf24",
-    "baseline_4": "#fb923c",
+    "baseline_1": "#1e293b",
+    "baseline_2": "#64748b",
+    "baseline_3": "#a16207",
+    "baseline_4": "#c2410c",
 }
 
 STRATEGY_COLORS = {
-    "strategy_a": "#ef4444",
-    "strategy_b": "#3b82f6",
-    "strategy_c": "#22c55e",
-    "strategy_d": "#8b5cf6",
+    "strategy_a": "#dc2626",
+    "strategy_b": "#2563eb",
+    "strategy_c": "#16a34a",
+    "strategy_d": "#7c3aed",
 }
 
 ALL_COLORS = {**BASELINE_COLORS, **STRATEGY_COLORS}
@@ -146,53 +152,97 @@ def load_data():
         with open(HUMAN_RESULTS, encoding="utf-8") as f:
             human = json.load(f)
 
-    return df, results, human
+    tiers = None
+    if HUMAN_TIERS.exists():
+        with open(HUMAN_TIERS, encoding="utf-8") as f:
+            tiers = json.load(f)
+
+    return df, results, human, tiers
 
 
-# ─── Figure 1: Per-dimension boxplots (RQ1) ──────────────────────────────────
+# ─── Debate-level bootstrap helpers ──────────────────────────────────────────
 
-def fig_rq1_boxplots(df):
-    """Boxplots comparing all 8 conditions per dimension."""
-    print("Generating RQ1 boxplots...")
+N_BOOT = 2000
+SEED = 2026
 
-    fig, axes = plt.subplots(2, 4, figsize=(16, 8))
+
+def debate_means(df, metric, by=("run_id",)):
+    """Mean of `metric` per debate (plus any extra grouping keys)."""
+    keys = list(by) + ["condition_id", "topic_id"]
+    return df.dropna(subset=[metric]).groupby(keys, as_index=False)[metric].mean()
+
+
+def boot_mean_ci(runs, metric, rng):
+    """Mean over debates with a 95% CI that resamples debates within topics."""
+    cells = [g[metric].to_numpy() for _, g in runs.groupby("topic_id")]
+    boots = np.empty(N_BOOT)
+    for b in range(N_BOOT):
+        boots[b] = np.concatenate([rng.choice(c, len(c))
+                                  for c in cells]).mean()
+    return runs[metric].mean(), np.percentile(boots, 2.5), np.percentile(boots, 97.5)
+
+
+def boot_diff_ci(runs_a, runs_b, metric, rng):
+    """Difference in debate means (A - B) with a 95% CI resampling debates within topics."""
+    cells_a = [g[metric].to_numpy() for _, g in runs_a.groupby("topic_id")]
+    cells_b = [g[metric].to_numpy() for _, g in runs_b.groupby("topic_id")]
+    boots = np.empty(N_BOOT)
+    for b in range(N_BOOT):
+        a = np.concatenate([rng.choice(c, len(c)) for c in cells_a]).mean()
+        bb = np.concatenate([rng.choice(c, len(c)) for c in cells_b]).mean()
+        boots[b] = a - bb
+    diff = runs_a[metric].mean() - runs_b[metric].mean()
+    return diff, np.percentile(boots, 2.5), np.percentile(boots, 97.5)
+
+
+# ─── Figure 1: Score distributions (RQ1) ─────────────────────────────────────
+
+SCORE_COLORS = {1: "#8c510a", 2: "#d8b365",
+                3: "#d9d9d9", 4: "#5ab4ac", 5: "#01665e"}
+
+
+def fig_rq1_distributions(df):
+    """Diverging stacked bars of the 1-5 score distribution per condition and dimension."""
+    print("Generating RQ1 score distributions...")
+
+    fig, axes = plt.subplots(2, 4, figsize=(6.3, 4.4), sharex=True)
     axes = axes.flatten()
-
-    ordered_labels = [CONDITION_LABELS[c] for c in CONDITION_ORDER]
-    palette = [ALL_COLORS[c] for c in CONDITION_ORDER]
+    ordered = CONDITION_ORDER[::-1]
+    y = np.arange(len(ordered))
 
     for i, dim in enumerate(DIMENSIONS):
         ax = axes[i]
-        data_for_plot = []
-        labels_for_plot = []
-        for cid in CONDITION_ORDER:
-            vals = df[df["condition_id"] == cid][dim].dropna()
-            data_for_plot.append(vals.values)
-            labels_for_plot.append(CONDITION_LABELS[cid])
-
-        bp = ax.boxplot(data_for_plot, tick_labels=labels_for_plot, patch_artist=True,
-                        widths=0.6, showfliers=False,
-                        medianprops=dict(color="black", linewidth=1.5))
-
-        for patch, color in zip(bp["boxes"], palette):
-            patch.set_facecolor(color)
-            patch.set_alpha(0.7)
-
+        for j, cid in enumerate(ordered):
+            vals = df[df["condition_id"] ==
+                      cid][dim].dropna().round().astype(int)
+            share = vals.value_counts(normalize=True).reindex(
+                range(1, 6), fill_value=0) * 100
+            left = -(share[1] + share[2] + share[3] / 2)
+            for s in range(1, 6):
+                ax.barh(j, share[s], left=left, color=SCORE_COLORS[s], height=0.75,
+                        edgecolor="white", linewidth=0.3)
+                left += share[s]
+        ax.axvline(0, color="black", linewidth=0.6)
         ax.set_title(DIM_SHORT[dim], fontweight="bold")
-        ax.set_ylim(0.5, 5.5)
-        ax.set_ylabel("Score" if i % 4 == 0 else "")
-        ax.tick_params(axis="x", rotation=45)
+        ax.set_yticks(y)
+        ax.set_yticklabels([CONDITION_LABELS[c]
+                           for c in ordered] if i % 4 == 0 else [])
+        ax.set_xlim(-100, 100)
+        ax.set_xticks([-100, -50, 0, 50, 100])
+        ax.set_xticklabels(["100", "50", "0", "50", "100"])
+        ax.grid(axis="y", visible=False)
+        if i >= 3:
+            ax.set_xlabel("% of turns")
+            ax.tick_params(labelbottom=True)
 
-    # Use last subplot for legend
     axes[7].axis("off")
-    handles = [mpatches.Patch(color=ALL_COLORS[c], alpha=0.7, label=CONDITION_LABELS[c])
-               for c in CONDITION_ORDER]
-    axes[7].legend(handles=handles, loc="center", fontsize=9, ncol=2)
+    handles = [mpatches.Patch(color=SCORE_COLORS[s],
+                              label=f"Score {s}") for s in range(1, 6)]
+    axes[7].legend(handles=handles, loc="center", frameon=False,
+                   title="Bars centred on\nthe middle of score 3", title_fontsize=8)
 
-    fig.suptitle("Discourse Quality by Condition — Per-Dimension Comparison",
-                 fontsize=13, fontweight="bold")
-    plt.tight_layout(rect=[0, 0, 1, 0.95])
-    save_fig(fig, "rq1_boxplots")
+    plt.tight_layout(w_pad=0.6, h_pad=0.8)
+    save_fig(fig, "rq1_distributions")
 
 
 # ─── Figure 2: Trade-off heatmap (RQ2) ───────────────────────────────────────
@@ -238,115 +288,106 @@ def fig_rq2_heatmap(df):
     save_fig(fig, "rq2_heatmap")
 
 
-# ─── Figure 3: Radar charts per strategy (RQ2) ───────────────────────────────
+# ─── Figure 3: Forest plot of strategy effects (RQ2) ─────────────────────────
 
-def fig_rq2_radar(df):
-    """Spider/radar charts comparing each strategy against baseline_1."""
-    print("Generating RQ2 radar charts...")
+def fig_rq2_forest(results):
+    """Difference from no moderation per dimension, with debate-level 95% CIs."""
+    print("Generating RQ2 forest plot...")
+
+    if results is None:
+        print("  Skipping — no results data.")
+        return
 
     strategy_ids = [c for c in CONDITION_ORDER if c.startswith("strategy_")]
-    n = len(strategy_ids)
-    fig, axes = plt.subplots(1, n, figsize=(
-        4 * n, 4), subplot_kw=dict(polar=True))
+    fig, axes = plt.subplots(2, 2, figsize=(
+        6.3, 4.6), sharex=True, sharey=True)
+    y = np.arange(len(DIMENSIONS))[::-1]
 
-    angles = np.linspace(0, 2 * np.pi, len(DIMENSIONS),
-                         endpoint=False).tolist()
-    angles += angles[:1]
+    for ax, cid in zip(axes.flatten(), strategy_ids):
+        color = STRATEGY_COLORS[cid]
+        for yi, dim in zip(y, DIMENSIONS):
+            r = results["rq2"][cid]["vs_none"][dim]
+            lo, hi = r["diff_ci"]
+            sig = r["p_holm"] < 0.05
+            ax.plot([lo, hi], [yi, yi], color=color,
+                    linewidth=1.6, solid_capstyle="butt")
+            ax.plot(r["diff"], yi, "o", markersize=5, color=color,
+                    markerfacecolor=color if sig else "white", markeredgewidth=1.3)
+        ax.axvline(0, color="black", linewidth=0.7)
+        ax.set_title(CONDITION_LABELS[cid], fontweight="bold", color=color)
+        ax.set_yticks(y)
+        ax.set_yticklabels([DIM_SHORT[d] for d in DIMENSIONS])
+        ax.set_xlim(-0.5, 1.2)
+        ax.set_ylim(-0.6, len(DIMENSIONS) - 0.4)
+        ax.grid(axis="y", visible=False)
 
-    # Baseline reference
-    bl = df[df["condition_id"] == "baseline_1"]
-    bl_vals = [bl[dim].mean() for dim in DIMENSIONS]
-    bl_vals += bl_vals[:1]
+    for ax in axes[1]:
+        ax.set_xlabel("Difference from no moderation (score points)")
 
-    for i, cid in enumerate(strategy_ids):
-        ax = axes[i]
-        cond = df[df["condition_id"] == cid]
-        vals = [cond[dim].mean() for dim in DIMENSIONS]
-        vals += vals[:1]
-
-        ax.plot(angles, bl_vals, "o--", color="#94a3b8",
-                linewidth=1, markersize=3, label="No moderation")
-        ax.fill(angles, bl_vals, color="#94a3b8", alpha=0.1)
-        ax.plot(angles, vals, "o-", color=STRATEGY_COLORS[cid], linewidth=2, markersize=4,
-                label=CONDITION_LABELS[cid])
-        ax.fill(angles, vals, color=STRATEGY_COLORS[cid], alpha=0.15)
-
-        ax.set_xticks(angles[:-1])
-        ax.set_xticklabels([DIM_SHORT[d][:6] for d in DIMENSIONS], fontsize=7)
-        ax.set_ylim(2, 5)
-        ax.set_yticks([2, 3, 4, 5])
-        ax.set_yticklabels(["2", "3", "4", "5"], fontsize=7)
-        ax.set_title(CONDITION_LABELS[cid], fontweight="bold", pad=15)
-        ax.legend(loc="lower right", fontsize=6)
-
-    fig.suptitle("RQ2: Strategy Profiles vs No-Moderation Baseline",
-                 fontsize=12, fontweight="bold")
-    plt.tight_layout(rect=[0, 0, 1, 0.93])
-    save_fig(fig, "rq2_radar")
+    handles = [
+        Line2D([], [], marker="o", color="#374151", markerfacecolor="#374151", linestyle="-",
+               label="$p_{\\mathrm{Holm}} < 0.05$"),
+        Line2D([], [], marker="o", color="#374151", markerfacecolor="white", linestyle="-",
+               label="not significant after correction"),
+    ]
+    fig.legend(handles=handles, loc="lower center", ncol=2, frameon=False,
+               bbox_to_anchor=(0.5, -0.03))
+    plt.tight_layout(rect=[0, 0.04, 1, 1], w_pad=1.0, h_pad=1.0)
+    save_fig(fig, "rq2_forest")
 
 
 # ─── Figure 4: Temporal trajectories (RQ3) ───────────────────────────────────
 
 def fig_rq3_trajectories(df, results):
-    """Line plots of per-round mean scores per condition."""
+    """Per-round means per condition with debate-level 95% CI bands."""
     print("Generating RQ3 trajectory plots...")
 
+    rng = np.random.default_rng(SEED)
     max_round = int(df["round_number"].max())
     rounds = list(range(1, max_round + 1))
-
-    # One figure per key dimension pair
-    key_dims = ["responsiveness", "civility",
+    key_dims = ["responsiveness", "document_grounding",
                 "stance_differentiation", "composite"]
 
-    fig, axes = plt.subplots(2, 2, figsize=(14, 10))
+    fig, axes = plt.subplots(2, 2, figsize=(6.3, 5.4), sharex=True)
     axes = axes.flatten()
 
     for idx, dim in enumerate(key_dims):
         ax = axes[idx]
+        per_round = debate_means(df, dim, by=("run_id", "round_number"))
         for cid in CONDITION_ORDER:
-            cond = df[df["condition_id"] == cid]
-            traj = []
-            for r in rounds:
-                rd = cond[cond["round_number"] == r]
-                if not rd.empty:
-                    traj.append(rd[dim].mean() if dim !=
-                                "composite" else rd["composite"].mean())
-                else:
-                    traj.append(np.nan)
-
+            cond = per_round[per_round["condition_id"] == cid]
+            stats_ = [boot_mean_ci(
+                cond[cond["round_number"] == r], dim, rng) for r in rounds]
+            mean, lo, hi = (np.array(v) for v in zip(*stats_))
             is_strat = cid.startswith("strategy_")
-            ax.plot(rounds, traj,
-                    color=ALL_COLORS[cid],
-                    linewidth=2 if is_strat else 1,
-                    linestyle="-" if is_strat else "--",
-                    alpha=0.9 if is_strat else 0.5,
-                    marker="o" if is_strat else None,
-                    markersize=3,
+            color = ALL_COLORS[cid]
+            ax.fill_between(rounds, lo, hi, color=color,
+                            alpha=0.10, linewidth=0)
+            ax.plot(rounds, mean, color=color,
+                    linewidth=1.5 if is_strat else 1.3,
+                    linestyle="-" if is_strat else (0, (4, 2)),
+                    marker="o" if is_strat else None, markersize=2.5,
                     label=CONDITION_LABELS[cid])
 
-        title = DIM_SHORT.get(dim, "Composite")
-        ax.set_title(title, fontweight="bold")
-        ax.set_xlabel("Round")
-        ax.set_ylabel("Mean Score")
-        ax.set_xlim(0.5, max_round + 0.5)
-        ax.set_ylim(1.5, 5.0)
+        ax.set_title(DIM_SHORT[dim], fontweight="bold")
+        if idx >= 2:
+            ax.set_xlabel("Round")
+        if idx % 2 == 0:
+            ax.set_ylabel("Mean score")
+        ax.set_xlim(0.7, max_round + 0.3)
         ax.set_xticks(rounds)
 
-    # Single legend
     handles, labels = axes[0].get_legend_handles_labels()
-    fig.legend(handles, labels, loc="lower center", ncol=4,
-               fontsize=8, bbox_to_anchor=(0.5, -0.02))
-
-    fig.suptitle("RQ3: Temporal Quality Trajectories per Condition",
-                 fontsize=13, fontweight="bold")
-    plt.tight_layout(rect=[0, 0.04, 1, 0.95])
+    fig.legend(handles, labels, loc="lower center", ncol=4, frameon=False,
+               bbox_to_anchor=(0.5, -0.01))
+    plt.tight_layout(rect=[0, 0.07, 1, 1], w_pad=1.0, h_pad=1.0)
     save_fig(fig, "rq3_trajectories")
 
 
 # ─── Figure 5: Judge reliability scatter (RQ4) ───────────────────────────────
 
-def fig_rq4_scatter(human):
-    """Scatter plots of human vs LLM agreement per dimension."""
+def fig_rq4_scatter(human, tiers):
+    """Per-dimension inter-annotator and human-LLM agreement."""
     print("Generating RQ4 scatter plot...")
 
     if human is None:
@@ -354,51 +395,50 @@ def fig_rq4_scatter(human):
         return
 
     per_dim = human["per_dimension"]
-
-    fig, axes = plt.subplots(1, 2, figsize=(12, 5))
-
-    # Left: alpha vs ±1 agreement
-    ax = axes[0]
     dims_list = [r["dimension"] for r in per_dim]
-    alphas = [r["alpha"] for r in per_dim]
-    within1 = [r["pct_within1"] * 100 for r in per_dim]
+    colors = sns.color_palette("colorblind", len(dims_list))
 
-    colors = sns.color_palette("husl", len(DIMENSIONS))
-    for i, (a, w, d) in enumerate(zip(alphas, within1, dims_list)):
-        ax.scatter(a, w, color=colors[i], s=80, zorder=5)
-        ax.annotate(DIM_SHORT[d], (a, w), textcoords="offset points",
-                    xytext=(5, 5), fontsize=7)
+    fig, axes = plt.subplots(1, 2, figsize=(6.3, 3.0))
 
-    ax.axhline(67, color="#f59e0b", linestyle="--",
-               linewidth=0.8, alpha=0.6, label="67% threshold")
-    ax.axvline(0.67, color="#ef4444", linestyle="--",
-               linewidth=0.8, alpha=0.6, label="α=0.67")
-    ax.set_xlabel("Krippendorff's α")
-    ax.set_ylabel("±1 Agreement (%)")
-    ax.set_title("Inter-Annotator Agreement")
-    ax.legend(fontsize=7)
+    # Label offsets (points, horizontal alignment) chosen to avoid overlaps.
+    left_offsets = {"civility": (0, -11, "center"), "document_grounding": (6, -3, "left"),
+                    "stance_differentiation": (5, 4, "left"), "responsiveness": (6, -3, "left"),
+                    "relevance": (5, -9, "left")}
+    right_offsets = {"argument_strength": (-5, 3, "right"), "logical_consistency": (0, 7, "center"),
+                     "stance_differentiation": (-6, -3, "right"), "document_grounding": (6, -6, "left")}
 
-    # Right: Spearman ρ vs ±1 vs LLM
+    def scatter(ax, xs, ys, offsets):
+        for i, (x, yv, d) in enumerate(zip(xs, ys, dims_list)):
+            dx, dy, ha = offsets.get(d, (5, 3, "left"))
+            ax.scatter(x, yv, color=colors[i], s=28, zorder=5)
+            ax.annotate(DIM_SHORT[d], (x, yv), textcoords="offset points",
+                        xytext=(dx, dy), fontsize=8, ha=ha)
+
+    ax = axes[0]
+    scatter(ax, [r["alpha"] for r in per_dim], [r["pct_within1"] * 100 for r in per_dim],
+            left_offsets)
+    ax.axvline(0.667, color="#b91c1c", linestyle="--", linewidth=0.9,
+               label="$\\alpha = 0.667$\n(tentative conclusions)")
+    ax.set_xlim(-0.15, 0.75)
+    ax.set_xlabel("Krippendorff's $\\alpha$")
+    ax.set_ylabel("$\\pm 1$ agreement (%)")
+    ax.set_title("Between annotators", fontweight="bold")
+    ax.legend(loc="center right", bbox_to_anchor=(1, 0.62), frameon=True)
+
     ax = axes[1]
-    rhos = [r["spearman_rho"] for r in per_dim]
-    within1_llm = [r["within1_vs_llm"] * 100 for r in per_dim]
+    scatter(ax, [r["spearman_rho"] for r in per_dim],
+            [r["within1_vs_llm"] * 100 for r in per_dim], right_offsets)
+    if tiers is not None:
+        chance = tiers["all"]["within1_chance"] * 100
+        ax.axhline(chance, color="#b91c1c", linestyle="--", linewidth=0.9,
+                   label=f"Chance ({chance:.1f}%)")
+        ax.legend(loc="center right", frameon=True)
+    ax.set_xlim(0, 0.8)
+    ax.set_xlabel("Spearman $\\rho$ (human mean vs. judge)")
+    ax.set_ylabel("$\\pm 1$ agreement with judge (%)")
+    ax.set_title("Annotators vs. judge", fontweight="bold")
 
-    for i, (rho, w, d) in enumerate(zip(rhos, within1_llm, dims_list)):
-        ax.scatter(rho, w, color=colors[i], s=80, zorder=5)
-        ax.annotate(DIM_SHORT[d], (rho, w), textcoords="offset points",
-                    xytext=(5, 5), fontsize=7)
-
-    ax.axhline(67, color="#f59e0b", linestyle="--", linewidth=0.8, alpha=0.6)
-    ax.axvline(0.5, color="#ef4444", linestyle="--",
-               linewidth=0.8, alpha=0.6, label="ρ=0.5")
-    ax.set_xlabel("Spearman ρ (Human mean vs LLM)")
-    ax.set_ylabel("±1 Agreement vs LLM (%)")
-    ax.set_title("Human–LLM Agreement")
-    ax.legend(fontsize=7)
-
-    fig.suptitle("RQ4: LLM Judge Reliability — Human Validation",
-                 fontsize=12, fontweight="bold")
-    plt.tight_layout(rect=[0, 0, 1, 0.94])
+    plt.tight_layout(w_pad=1.5)
     save_fig(fig, "rq4_judge_reliability")
 
 
@@ -479,44 +519,40 @@ def fig_composite_bars(df):
 
 # ─── Figure 8: RQ5 topic type interaction ─────────────────────────────────────
 
-def fig_rq5_topic_interaction(df):
-    """Grouped bars: strategy scores for empirical vs values-driven topics."""
+def fig_rq5_topic_interaction(df, results):
+    """Moderation effect (strategies pooled minus no moderation) by topic type, with CIs."""
     print("Generating RQ5 topic interaction chart...")
 
+    rng = np.random.default_rng(SEED)
     strategy_ids = [c for c in CONDITION_ORDER if c.startswith("strategy_")]
-    key_dims = ["civility", "responsiveness",
-                "stance_differentiation", "document_grounding"]
+    types = [("empirical", "Empirical topics", "#0f766e", "o"),
+             ("values", "Values-driven topics", "#b45309", "s")]
 
-    fig, axes = plt.subplots(1, len(key_dims), figsize=(16, 4))
+    fig, ax = plt.subplots(figsize=(6.3, 3.2))
+    y = np.arange(len(DIMENSIONS))[::-1]
 
-    for idx, dim in enumerate(key_dims):
-        ax = axes[idx]
-        x = np.arange(len(strategy_ids))
-        width = 0.35
+    for k, (ttype, label, color, marker) in enumerate(types):
+        offset = 0.17 if k == 0 else -0.17
+        for yi, dim in zip(y, DIMENSIONS):
+            runs = debate_means(df[df["topic_type"] == ttype], dim)
+            diff, lo, hi = boot_diff_ci(runs[runs["condition_id"].isin(strategy_ids)],
+                                        runs[runs["condition_id"] == "baseline_1"], dim, rng)
+            ax.plot([lo, hi], [yi + offset] * 2, color=color, linewidth=1.5)
+            ax.plot(diff, yi + offset, marker, color=color, markersize=4.5,
+                    label=label if yi == y[0] else None)
 
-        emp_vals = [df[(df["condition_id"] == c) & (df["topic_type"] == "empirical")][dim].mean()
-                    for c in strategy_ids]
-        val_vals = [df[(df["condition_id"] == c) & (df["topic_type"] == "values")][dim].mean()
-                    for c in strategy_ids]
+    if results is not None:
+        for yi, dim in zip(y, DIMENSIONS):
+            ax.text(1.02, yi, f"$p = {results['rq5'][dim]['p']:.2f}$",
+                    transform=ax.get_yaxis_transform(), va="center", fontsize=8)
 
-        ax.bar(x - width/2, emp_vals, width,
-               label="Empirical", color="#3b82f6", alpha=0.7)
-        ax.bar(x + width/2, val_vals, width,
-               label="Values-driven", color="#ef4444", alpha=0.7)
-
-        ax.set_xticks(x)
-        ax.set_xticklabels([CONDITION_LABELS[c][:8]
-                           for c in strategy_ids], rotation=30, ha="right")
-        ax.set_title(DIM_SHORT[dim], fontweight="bold")
-        ax.set_ylim(2, 5)
-        if idx == 0:
-            ax.set_ylabel("Mean Score")
-        if idx == len(key_dims) - 1:
-            ax.legend(fontsize=8)
-
-    fig.suptitle("RQ5: Strategy Scores by Topic Type (Empirical vs Values-Driven)",
-                 fontsize=12, fontweight="bold")
-    plt.tight_layout(rect=[0, 0, 1, 0.92])
+    ax.axvline(0, color="black", linewidth=0.7)
+    ax.set_yticks(y)
+    ax.set_yticklabels([DIM_SHORT[d] for d in DIMENSIONS])
+    ax.set_xlabel("Strategies (pooled) minus no moderation (score points)")
+    ax.grid(axis="y", visible=False)
+    ax.legend(loc="lower right", frameon=True)
+    plt.tight_layout()
     save_fig(fig, "rq5_topic_interaction")
 
 
@@ -527,17 +563,17 @@ def main():
     print("GENERATING PUBLICATION FIGURES")
     print("=" * 60)
 
-    df, results, human = load_data()
+    df, results, human, tiers = load_data()
     print(f"Loaded {len(df)} turns\n")
 
-    fig_rq1_boxplots(df)
+    fig_rq1_distributions(df)
     fig_rq2_heatmap(df)
-    fig_rq2_radar(df)
+    fig_rq2_forest(results)
     fig_rq3_trajectories(df, results)
-    fig_rq4_scatter(human)
+    fig_rq4_scatter(human, tiers)
     fig_intervention_frequency(results)
     fig_composite_bars(df)
-    fig_rq5_topic_interaction(df)
+    fig_rq5_topic_interaction(df, results)
 
     print(f"\nAll figures saved to: {FIG_DIR}")
     print("Done!")

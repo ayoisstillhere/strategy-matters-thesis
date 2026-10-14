@@ -99,7 +99,8 @@ class LLMClient:
         self.retry_base_delay = retry_base_delay
 
         # SSL bypass for TU Dresden / corporate proxy
-        http_client = httpx.Client(verify=verify_ssl) if not verify_ssl else None
+        http_client = httpx.Client(
+            verify=verify_ssl) if not verify_ssl else None
         self._client = Groq(
             api_key=self.api_key,
             http_client=http_client,
@@ -150,7 +151,8 @@ class LLMClient:
 
                 text = resp.choices[0].message.content.strip()
                 # Strip <think>...</think> blocks from reasoning models
-                text = re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL).strip()
+                text = re.sub(r"<think>.*?</think>", "",
+                              text, flags=re.DOTALL).strip()
                 result = LLMResponse(
                     text=text,
                     input_tokens=resp.usage.prompt_tokens,
@@ -183,7 +185,8 @@ class LLMClient:
                     )
                     time.sleep(delay)
                 else:
-                    logger.error(f"LLM call failed after {attempt} attempts: {e}")
+                    logger.error(
+                        f"LLM call failed after {attempt} attempts: {e}")
                     raise
 
         # Should not reach here, but just in case
@@ -221,7 +224,8 @@ class LLMClient:
         # Strip <think>...</think> blocks produced by reasoning models
         # (Qwen3, DeepSeek-R1, etc.). Must happen BEFORE fence/brace search
         # because thinking content may itself contain braces.
-        cleaned = re.sub(r"<think>.*?</think>", "", cleaned, flags=re.DOTALL).strip()
+        cleaned = re.sub(r"<think>.*?</think>", "",
+                         cleaned, flags=re.DOTALL).strip()
 
         # Strip markdown code fences (handles both complete and truncated)
         fence_match = re.search(r"```\w*\s*\n(.*?)```", cleaned, re.DOTALL)
@@ -257,7 +261,8 @@ class LLMClient:
                 except json.JSONDecodeError:
                     pass
 
-        logger.warning(f"Failed to parse JSON from LLM response: {text[:200]}...")
+        logger.warning(
+            f"Failed to parse JSON from LLM response: {text[:200]}...")
         return None
 
     @staticmethod
@@ -296,7 +301,8 @@ class LLMClient:
                 break_points.append(i)
 
         # Try candidates: full fragment first, then trim at each comma R-to-L
-        candidates = [fragment] + [fragment[:bp] for bp in reversed(break_points)]
+        candidates = [fragment] + [fragment[:bp]
+                                   for bp in reversed(break_points)]
 
         for candidate in candidates:
             trimmed = candidate.rstrip().rstrip(",").rstrip(":")
@@ -316,10 +322,14 @@ class LLMClient:
                 elif c == '"':
                     in_str = not in_str
                 elif not in_str:
-                    if c == "{": brace += 1
-                    elif c == "}": brace -= 1
-                    elif c == "[": bracket += 1
-                    elif c == "]": bracket -= 1
+                    if c == "{":
+                        brace += 1
+                    elif c == "}":
+                        brace -= 1
+                    elif c == "[":
+                        bracket += 1
+                    elif c == "]":
+                        bracket -= 1
 
             if brace <= 0 and bracket <= 0:
                 continue  # already balanced or over-closed

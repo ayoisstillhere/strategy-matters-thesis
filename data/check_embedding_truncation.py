@@ -42,7 +42,8 @@ for meta in sorted((ROOT / "data" / "embeddings").glob("*_meta.jsonl")):
             wom.append(n)
         else:
             prog.append(n)
-            ids = tok(rec["text"], add_special_tokens=False, truncation=True, max_length=max_len - 2)["input_ids"]
+            ids = tok(rec["text"], add_special_tokens=False,
+                      truncation=True, max_length=max_len - 2)["input_ids"]
             prog_chars.append(len(rec["text"]))
             kept_chars.append(len(tok.decode(ids)))
 

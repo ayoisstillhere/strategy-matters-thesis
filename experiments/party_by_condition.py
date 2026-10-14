@@ -11,7 +11,8 @@ import json
 
 from comparative_analysis import CONDITION_ORDER, OUTPUT_DIR, load_posthoc
 
-PARTY_ORDER = ["CDU/CSU", "SPD", "Bündnis 90/Die Grünen", "FDP", "Die Linke", "AfD"]
+PARTY_ORDER = ["CDU/CSU", "SPD",
+               "Bündnis 90/Die Grünen", "FDP", "Die Linke", "AfD"]
 PARTY_TEX = {"Bündnis 90/Die Grünen": "B90/Gr\\\"{u}ne"}
 STRATEGIES = ["strategy_a", "strategy_b", "strategy_c", "strategy_d"]
 SHORT = {
@@ -28,9 +29,12 @@ def main():
     missing = set(df["agent_name"]) - set(parties)
     assert not missing, f"Unexpected agent names: {missing}"
 
-    comp = df.pivot_table(index="agent_name", columns="condition_id", values="composite", aggfunc="mean")
-    comp["strategies"] = df[df["condition_id"].isin(STRATEGIES)].groupby("agent_name")["composite"].mean()
-    overall = df.groupby("agent_name")[["document_grounding", "stance_differentiation"]].mean()
+    comp = df.pivot_table(
+        index="agent_name", columns="condition_id", values="composite", aggfunc="mean")
+    comp["strategies"] = df[df["condition_id"].isin(
+        STRATEGIES)].groupby("agent_name")["composite"].mean()
+    overall = df.groupby("agent_name")[
+        ["document_grounding", "stance_differentiation"]].mean()
 
     out = {
         p: {
@@ -40,10 +44,12 @@ def main():
         }
         for p in parties
     }
-    (OUTPUT_DIR / "party_by_condition.json").write_text(json.dumps(out, indent=2, ensure_ascii=False), encoding="utf-8")
+    (OUTPUT_DIR / "party_by_condition.json").write_text(json.dumps(out,
+                                                                   indent=2, ensure_ascii=False), encoding="utf-8")
 
     cols = CONDITION_ORDER + ["strategies"]
-    header = " & ".join(["\\textbf{Party}"] + [SHORT[c] for c in cols] + ["Doc.G.", "Sta.D."])
+    header = " & ".join(["\\textbf{Party}"] + [SHORT[c]
+                        for c in cols] + ["Doc.G.", "Sta.D."])
     lines = [
         "\\begin{table}[htb]",
         "\\centering",
@@ -58,7 +64,8 @@ def main():
     ]
     for p in parties:
         row = [PARTY_TEX.get(p, p)] + [f"{comp.loc[p, c]:.2f}" for c in cols]
-        row += [f"{overall.loc[p, 'document_grounding']:.2f}", f"{overall.loc[p, 'stance_differentiation']:.2f}"]
+        row += [f"{overall.loc[p, 'document_grounding']:.2f}",
+                f"{overall.loc[p, 'stance_differentiation']:.2f}"]
         lines.append(" & ".join(row) + " \\\\")
     lines += ["\\bottomrule", "\\end{tabular}", "\\end{table}"]
     tex = "\n".join(lines) + "\n"
