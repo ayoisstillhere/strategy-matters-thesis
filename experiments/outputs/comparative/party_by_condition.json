@@ -1,0 +1,92 @@
+{
+  "CDU/CSU": {
+    "composite": {
+      "baseline_1": 3.672,
+      "baseline_2": 3.673,
+      "baseline_3": 3.62,
+      "baseline_4": 3.603,
+      "strategy_a": 3.678,
+      "strategy_b": 3.703,
+      "strategy_c": 3.729,
+      "strategy_d": 3.62,
+      "strategies": 3.683
+    },
+    "document_grounding_all": 3.797,
+    "stance_differentiation_all": 3.638
+  },
+  "SPD": {
+    "composite": {
+      "baseline_1": 3.791,
+      "baseline_2": 3.8,
+      "baseline_3": 3.746,
+      "baseline_4": 3.726,
+      "strategy_a": 3.803,
+      "strategy_b": 3.917,
+      "strategy_c": 3.856,
+      "strategy_d": 3.755,
+      "strategies": 3.833
+    },
+    "document_grounding_all": 3.908,
+    "stance_differentiation_all": 3.707
+  },
+  "Bündnis 90/Die Grünen": {
+    "composite": {
+      "baseline_1": 3.824,
+      "baseline_2": 3.818,
+      "baseline_3": 3.766,
+      "baseline_4": 3.751,
+      "strategy_a": 3.795,
+      "strategy_b": 3.888,
+      "strategy_c": 3.888,
+      "strategy_d": 3.767,
+      "strategies": 3.834
+    },
+    "document_grounding_all": 3.89,
+    "stance_differentiation_all": 3.86
+  },
+  "FDP": {
+    "composite": {
+      "baseline_1": 3.669,
+      "baseline_2": 3.671,
+      "baseline_3": 3.62,
+      "baseline_4": 3.562,
+      "strategy_a": 3.706,
+      "strategy_b": 3.746,
+      "strategy_c": 3.755,
+      "strategy_d": 3.59,
+      "strategies": 3.699
+    },
+    "document_grounding_all": 3.469,
+    "stance_differentiation_all": 3.804
+  },
+  "Die Linke": {
+    "composite": {
+      "baseline_1": 3.855,
+      "baseline_2": 3.85,
+      "baseline_3": 3.786,
+      "baseline_4": 3.691,
+      "strategy_a": 3.826,
+      "strategy_b": 3.964,
+      "strategy_c": 3.911,
+      "strategy_d": 3.714,
+      "strategies": 3.854
+    },
+    "document_grounding_all": 3.875,
+    "stance_differentiation_all": 4.189
+  },
+  "AfD": {
+    "composite": {
+      "baseline_1": 3.404,
+      "baseline_2": 3.407,
+      "baseline_3": 3.342,
+      "baseline_4": 3.389,
+      "strategy_a": 3.442,
+      "strategy_b": 3.552,
+      "strategy_c": 3.529,
+      "strategy_d": 3.393,
+      "strategies": 3.479
+    },
+    "document_grounding_all": 3.148,
+    "stance_differentiation_all": 3.924
+  }
+}

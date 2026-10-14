@@ -14,7 +14,7 @@ Supports two models:
 Model history:
   - llama-3.1-8b-instant (agent) — removed from Groq
   - llama-3.3-70b-versatile (judge) — removed from Groq
-  - meta-llama/llama-4-scout-17b-16e-instruct — removed from Groq 2026-07-24
+  - meta-llama/llama-4-scout-17b-16e-instruct — Groq shutdown 2026-07-17 (noticed 2026-07-24)
   - qwen/qwen3.8-27b — current; no thinking blocks, valid JSON, fast
 
 If litellm is needed later for multi-provider support, this module
