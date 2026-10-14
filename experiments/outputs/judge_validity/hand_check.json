@@ -1,0 +1,100 @@
+{
+  "responsiveness": {
+    "counts": {
+      "None": {
+        "N": 7,
+        "S": 10,
+        "X": 3
+      },
+      "Reframing": {
+        "N": 10,
+        "S": 10,
+        "X": 0
+      }
+    },
+    "copied_by_condition": {
+      "None": 12,
+      "Reframing": 17
+    },
+    "judge_score_by_code": {
+      "N": 4.12,
+      "S": 4.1,
+      "X": 4.0
+    },
+    "fisher_S": {
+      "table": {
+        "Reframing": [
+          10,
+          10
+        ],
+        "None": [
+          10,
+          10
+        ]
+      },
+      "p": 1.0
+    },
+    "fisher_copied": {
+      "table": {
+        "Reframing": [
+          17,
+          3
+        ],
+        "None": [
+          12,
+          8
+        ]
+      },
+      "p": 0.15518744551002617
+    }
+  },
+  "document_grounding": {
+    "counts": {
+      "Fact-reminder": {
+        "R": 7,
+        "T": 12,
+        "X": 1
+      },
+      "None": {
+        "R": 0,
+        "T": 17,
+        "X": 3
+      }
+    },
+    "source_error_by_condition": {
+      "Fact-reminder": 14,
+      "None": 0
+    },
+    "judge_score_by_code": {
+      "R": 4.57,
+      "T": 4.24,
+      "X": 4.0
+    },
+    "fisher_T": {
+      "table": {
+        "None": [
+          17,
+          3
+        ],
+        "Fact-reminder": [
+          12,
+          8
+        ]
+      },
+      "p": 0.15518744551002617
+    },
+    "fisher_source_error": {
+      "table": {
+        "None": [
+          0,
+          20
+        ],
+        "Fact-reminder": [
+          14,
+          6
+        ]
+      },
+      "p": 3.340381538379314e-06
+    }
+  }
+}

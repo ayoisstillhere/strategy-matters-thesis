@@ -9,6 +9,7 @@ substantive engagement/grounding or surface compliance with the rubric.
 
 Outputs (experiments/outputs/judge_validity/):
   hand_check_sheet.csv  - what the coder sees (fill in the `code` column)
+  hand_check_sheet.txt  - the same items in readable form
   hand_check_key.csv    - condition per item, for unblinding afterwards
 """
 
@@ -19,6 +20,7 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).parent))
 from common import OUT_DIR, load_turns  # noqa: E402
+from cross_judge import recover_passages  # noqa: E402
 
 N = 20
 SEED = 2026
@@ -48,8 +50,22 @@ def main():
     sheet["item"] = range(1, len(sheet) + 1)
     sheet["coding_rule"] = sheet["dimension"].map(CODES)
     sheet["code"] = ""
+    maps = recover_passages()
+    sheet["retrieved_passages"] = [
+        "\n".join(f"[{i}] {maps[a].get(p, p)}" for i, p in enumerate(
+            prefixes, 1)) if dim == "document_grounding" else ""
+        for a, prefixes, dim in zip(sheet["agent_name"], sheet["rag_prefixes"], sheet["dimension"])]
     sheet[["item", "dimension", "agent_name", "topic_id", "round_number", "previous_turn", "text",
-           "coding_rule", "code"]].to_csv(OUT_DIR / "hand_check_sheet.csv", index=False, encoding="utf-8-sig")
+           "retrieved_passages", "coding_rule", "code"]].to_csv(OUT_DIR / "hand_check_sheet.csv", index=False, encoding="utf-8-sig")
+    with open(OUT_DIR / "hand_check_sheet.txt", "w", encoding="utf-8") as f:
+        for _, r in sheet.iterrows():
+            f.write(
+                f"===== ITEM {r['item']} | {r['dimension']} | {r['agent_name']} | {r['topic_id']} | R{r['round_number']}\n")
+            if r["dimension"] == "responsiveness":
+                f.write(f"PREVIOUS: {r['previous_turn']}\n")
+            else:
+                f.write(f"PASSAGES:\n{r['retrieved_passages']}\n")
+            f.write(f"TURN: {r['text']}\n\n")
     sheet[["item", "turn_id", "condition_id", "dimension", "responsiveness", "document_grounding"]].to_csv(
         OUT_DIR / "hand_check_key.csv", index=False)
     print(f"{len(sheet)} items written to {OUT_DIR / 'hand_check_sheet.csv'}")
