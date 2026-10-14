@@ -11,7 +11,9 @@ export default function SetupScreen() {
   const [conditions, setConditions] = useState<ConditionConfig[]>([]);
   const [selectedTopic, setSelectedTopic] = useState("");
   const [selectedCondition, setSelectedCondition] = useState("");
-  const [conditionTab, setConditionTab] = useState<"baseline" | "strategy">("baseline");
+  const [conditionTab, setConditionTab] = useState<"baseline" | "strategy">(
+    "baseline",
+  );
   const [numRounds, setNumRounds] = useState(10);
   const [language, setLanguage] = useState<"de" | "en">("de");
   const [loading, setLoading] = useState(false);
@@ -106,13 +108,17 @@ export default function SetupScreen() {
             Experimental Condition
           </h2>
           <p className="text-xs text-gray-400 mb-4">
-            Choose <strong>one</strong> condition. Baselines and strategies are independent — pick one or the other.
+            Choose <strong>one</strong> condition. Baselines and strategies are
+            independent — pick one or the other.
           </p>
 
           {/* Tab bar */}
           <div className="flex border-b border-gray-200 dark:border-gray-700 mb-4">
             <button
-              onClick={() => { setConditionTab("baseline"); setSelectedCondition(""); }}
+              onClick={() => {
+                setConditionTab("baseline");
+                setSelectedCondition("");
+              }}
               className={`px-4 py-2 text-sm font-medium border-b-2 transition-colors ${
                 conditionTab === "baseline"
                   ? "border-gray-900 dark:border-white text-gray-900 dark:text-white"
@@ -122,7 +128,10 @@ export default function SetupScreen() {
               Baselines ({baselines.length})
             </button>
             <button
-              onClick={() => { setConditionTab("strategy"); setSelectedCondition(""); }}
+              onClick={() => {
+                setConditionTab("strategy");
+                setSelectedCondition("");
+              }}
               className={`px-4 py-2 text-sm font-medium border-b-2 transition-colors ${
                 conditionTab === "strategy"
                   ? "border-gray-900 dark:border-white text-gray-900 dark:text-white"
@@ -149,11 +158,13 @@ export default function SetupScreen() {
               >
                 <div className="flex items-center gap-2">
                   <span className="font-medium text-sm">{c.label}</span>
-                  <span className={`text-[10px] px-1.5 py-0.5 rounded-full font-medium ${
-                    conditionTab === "baseline"
-                      ? "bg-gray-100 text-gray-500"
-                      : "bg-blue-100 text-blue-700"
-                  }`}>
+                  <span
+                    className={`text-[10px] px-1.5 py-0.5 rounded-full font-medium ${
+                      conditionTab === "baseline"
+                        ? "bg-gray-100 text-gray-500"
+                        : "bg-blue-100 text-blue-700"
+                    }`}
+                  >
                     {conditionTab === "baseline" ? "BASELINE" : "STRATEGY"}
                   </span>
                 </div>
@@ -167,8 +178,11 @@ export default function SetupScreen() {
           {/* Selection indicator */}
           {selectedCondition && (
             <div className="mt-3 text-xs text-gray-500">
-              Selected: <span className="font-medium text-gray-900 dark:text-white">{selectedCondition.replace(/_/g, " ")}</span>
-              {" "}({conditionTab})
+              Selected:{" "}
+              <span className="font-medium text-gray-900 dark:text-white">
+                {selectedCondition.replace(/_/g, " ")}
+              </span>{" "}
+              ({conditionTab})
             </div>
           )}
         </section>
@@ -178,7 +192,10 @@ export default function SetupScreen() {
           {/* Rounds slider */}
           <div className="flex-1">
             <label className="text-sm text-gray-600 dark:text-gray-400">
-              Rounds: <span className="font-medium text-gray-900 dark:text-white">{numRounds}</span>
+              Rounds:{" "}
+              <span className="font-medium text-gray-900 dark:text-white">
+                {numRounds}
+              </span>
             </label>
             <input
               type="range"
@@ -203,9 +220,7 @@ export default function SetupScreen() {
         </section>
 
         {/* Error */}
-        {error && (
-          <p className="text-sm text-red-600">{error}</p>
-        )}
+        {error && <p className="text-sm text-red-600">{error}</p>}
 
         {/* Actions */}
         <div className="flex items-center gap-3 pt-2">

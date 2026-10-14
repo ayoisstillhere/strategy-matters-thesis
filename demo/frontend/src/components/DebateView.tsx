@@ -11,7 +11,9 @@ import { ArrowLeft, Send, Wifi, WifiOff } from "lucide-react";
 export default function DebateView() {
   const { debateId } = useParams<{ debateId: string }>();
   const navigate = useNavigate();
-  const { info, timeline, roundSummaries, debateConfig, connected } = useDebate(debateId ?? null);
+  const { info, timeline, roundSummaries, debateConfig, connected } = useDebate(
+    debateId ?? null,
+  );
   const [injectionText, setInjectionText] = useState("");
   const [injecting, setInjecting] = useState(false);
   const transcriptEndRef = useRef<HTMLDivElement>(null);
@@ -74,9 +76,13 @@ export default function DebateView() {
           {/* Connection status */}
           <span className="flex items-center gap-1 text-xs text-gray-500">
             {connected ? (
-              <><Wifi size={14} className="text-green-500" /> Connected</>
+              <>
+                <Wifi size={14} className="text-green-500" /> Connected
+              </>
             ) : (
-              <><WifiOff size={14} className="text-red-500" /> Disconnected</>
+              <>
+                <WifiOff size={14} className="text-red-500" /> Disconnected
+              </>
             )}
           </span>
           {/* Status badge */}
@@ -86,10 +92,10 @@ export default function DebateView() {
                 info.status === "running"
                   ? "bg-green-100 text-green-700 animate-pulse"
                   : info.status === "completed"
-                  ? "bg-gray-100 text-gray-700"
-                  : info.status === "error"
-                  ? "bg-red-100 text-red-700"
-                  : "bg-yellow-100 text-yellow-700"
+                    ? "bg-gray-100 text-gray-700"
+                    : info.status === "error"
+                      ? "bg-red-100 text-red-700"
+                      : "bg-yellow-100 text-yellow-700"
               }`}
             >
               {info.status.toUpperCase()}
@@ -147,7 +153,10 @@ export default function DebateView() {
               ) : null}
               {debateConfig?.language ? (
                 <p className="text-[10px] text-indigo-500 mt-2">
-                  Language: {String(debateConfig.language) === "de" ? "Deutsch" : "English"}
+                  Language:{" "}
+                  {String(debateConfig.language) === "de"
+                    ? "Deutsch"
+                    : "English"}
                 </p>
               ) : null}
             </div>
@@ -156,22 +165,33 @@ export default function DebateView() {
           {/* Timeline */}
           <div className="max-w-3xl mx-auto space-y-4">
             {/* Warm-up indicator: shown when debate is pending/running but no turns yet */}
-            {(info?.status === "pending" || info?.status === "running") && timeline.length === 0 && (
-              <div className="flex flex-col items-center justify-center py-16 text-center">
-                <div className="flex gap-1.5 mb-4">
-                  <span className="w-3 h-3 bg-blue-400 rounded-full animate-bounce" style={{ animationDelay: "0ms" }} />
-                  <span className="w-3 h-3 bg-blue-400 rounded-full animate-bounce" style={{ animationDelay: "150ms" }} />
-                  <span className="w-3 h-3 bg-blue-400 rounded-full animate-bounce" style={{ animationDelay: "300ms" }} />
+            {(info?.status === "pending" || info?.status === "running") &&
+              timeline.length === 0 && (
+                <div className="flex flex-col items-center justify-center py-16 text-center">
+                  <div className="flex gap-1.5 mb-4">
+                    <span
+                      className="w-3 h-3 bg-blue-400 rounded-full animate-bounce"
+                      style={{ animationDelay: "0ms" }}
+                    />
+                    <span
+                      className="w-3 h-3 bg-blue-400 rounded-full animate-bounce"
+                      style={{ animationDelay: "150ms" }}
+                    />
+                    <span
+                      className="w-3 h-3 bg-blue-400 rounded-full animate-bounce"
+                      style={{ animationDelay: "300ms" }}
+                    />
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-200 mb-2">
+                    Initializing Debate
+                  </h3>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 max-w-md">
+                    Loading language models and retrieving party programme data.
+                    This may take up to 30 seconds on the first run while models
+                    are cached.
+                  </p>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-200 mb-2">
-                  Initializing Debate
-                </h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400 max-w-md">
-                  Loading language models and retrieving party programme data.
-                  This may take up to 30 seconds on the first run while models are cached.
-                </p>
-              </div>
-            )}
+              )}
 
             {timeline.map((item, idx) => {
               if (item.type === "round_start") {
@@ -206,9 +226,18 @@ export default function DebateView() {
             {info?.status === "running" && timeline.length > 0 && (
               <div className="flex items-center gap-2 text-sm text-gray-400 py-2">
                 <div className="flex gap-1">
-                  <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: "0ms" }} />
-                  <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: "150ms" }} />
-                  <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: "300ms" }} />
+                  <span
+                    className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"
+                    style={{ animationDelay: "0ms" }}
+                  />
+                  <span
+                    className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"
+                    style={{ animationDelay: "150ms" }}
+                  />
+                  <span
+                    className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"
+                    style={{ animationDelay: "300ms" }}
+                  />
                 </div>
                 <span>Generating next turn...</span>
               </div>
@@ -241,7 +270,9 @@ export default function DebateView() {
           />
           <button
             onClick={handleInject}
-            disabled={injecting || !injectionText.trim() || info?.status !== "running"}
+            disabled={
+              injecting || !injectionText.trim() || info?.status !== "running"
+            }
             className="btn-primary flex items-center gap-2 px-5 py-2.5"
           >
             Send <Send size={16} />

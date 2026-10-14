@@ -41,7 +41,8 @@ except ImportError:
 # ─── Paths ───────────────────────────────────────────────────────────────────
 
 ROOT = Path(__file__).resolve().parent.parent
-EXPORT_PATH = ROOT.parent / "annotation-app" / "exports" / "annotation-export-2026-07-28.json"
+EXPORT_PATH = ROOT.parent / "annotation-app" / \
+    "exports" / "annotation-export-2026-07-28.json"
 OUTPUT_DIR = ROOT / "experiments" / "outputs" / "human_validation"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -77,7 +78,8 @@ def build_dataframes(data: dict) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFra
 
     # Expand scores dict into separate columns
     scores_expanded = pd.json_normalize(annotations_df["scores"])
-    annotations_df = pd.concat([annotations_df.drop(columns=["scores"]), scores_expanded], axis=1)
+    annotations_df = pd.concat([annotations_df.drop(
+        columns=["scores"]), scores_expanded], axis=1)
 
     return annotators_df, annotations_df, exchanges_df
 
@@ -202,11 +204,14 @@ def main():
 
     # Filter to included annotators only
     excluded_ids = set(data["excluded_annotator_ids"])
-    included_annotators = annotators_df[~annotators_df["id"].isin(excluded_ids)]
+    included_annotators = annotators_df[~annotators_df["id"].isin(
+        excluded_ids)]
     included_ids = set(included_annotators["id"])
 
-    print(f"\nAnnotators: {len(annotators_df)} total, {len(included_annotators)} included")
-    print(f"Excluded: {sum(a['excluded'] for a in data['annotators'])} annotator(s)")
+    print(
+        f"\nAnnotators: {len(annotators_df)} total, {len(included_annotators)} included")
+    print(
+        f"Excluded: {sum(a['excluded'] for a in data['annotators'])} annotator(s)")
 
     # Filter annotations to included annotators, initial phase, non-bias
     initial_anns = annotations_df[
@@ -255,7 +260,8 @@ def main():
         human_means = []
         llm_vals = []
         for ex_id in exchange_ids:
-            col_idx = exchange_ids.tolist().index(ex_id) if hasattr(exchange_ids, 'tolist') else list(exchange_ids).index(ex_id)
+            col_idx = exchange_ids.tolist().index(ex_id) if hasattr(
+                exchange_ids, 'tolist') else list(exchange_ids).index(ex_id)
             vals = matrix[:, col_idx]
             vals = vals[~np.isnan(vals)]
             if len(vals) == 0:
@@ -271,8 +277,10 @@ def main():
             rho, p_val = np.nan, np.nan
 
         # Human vs LLM agreement
-        exact_vs_llm = human_vs_llm_agreement(annotations_df[annotations_df["annotator_id"].isin(included_ids)], exchanges_df, dim, tolerance=0)
-        within1_vs_llm = human_vs_llm_agreement(annotations_df[annotations_df["annotator_id"].isin(included_ids)], exchanges_df, dim, tolerance=1)
+        exact_vs_llm = human_vs_llm_agreement(annotations_df[annotations_df["annotator_id"].isin(
+            included_ids)], exchanges_df, dim, tolerance=0)
+        within1_vs_llm = human_vs_llm_agreement(annotations_df[annotations_df["annotator_id"].isin(
+            included_ids)], exchanges_df, dim, tolerance=1)
 
         mean_human = np.nanmean(human_means) if human_means else 0
         mean_llm = np.mean(llm_vals) if llm_vals else 0
@@ -303,9 +311,12 @@ def main():
     print("SUMMARY")
     print("=" * 60)
     print(f"Mean α across dimensions:       {results_df['alpha'].mean():.3f}")
-    print(f"Mean ±1 agreement (inter-ann):  {results_df['pct_within1'].mean()*100:.1f}%")
-    print(f"Mean ±1 agreement (vs LLM):     {results_df['within1_vs_llm'].mean()*100:.1f}%")
-    print(f"Mean Spearman ρ:                {results_df['spearman_rho'].mean():.3f}")
+    print(
+        f"Mean ±1 agreement (inter-ann):  {results_df['pct_within1'].mean()*100:.1f}%")
+    print(
+        f"Mean ±1 agreement (vs LLM):     {results_df['within1_vs_llm'].mean()*100:.1f}%")
+    print(
+        f"Mean Spearman ρ:                {results_df['spearman_rho'].mean():.3f}")
     print(f"Mean LLM bias (LLM - Human):    {results_df['delta'].mean():+.2f}")
 
     # ─── Per-Annotator Analysis ───────────────────────────────────────────────
@@ -318,7 +329,8 @@ def main():
     # Outputs are public: annotators appear only as pseudonyms (GDPR).
     for k, ann_id in enumerate(annotator_ids, start=1):
         ann_data = initial_anns[initial_anns["annotator_id"] == ann_id]
-        ann_info = included_annotators[included_annotators["id"] == ann_id].iloc[0]
+        ann_info = included_annotators[included_annotators["id"]
+                                       == ann_id].iloc[0]
         scores_all = ann_data[DIMENSIONS].values.flatten()
         scores_all = scores_all[~np.isnan(scores_all)]
 
@@ -334,7 +346,8 @@ def main():
         if ann_info["started_at"] and ann_info["finished_at"]:
             start = pd.Timestamp(ann_info["started_at"])
             end = pd.Timestamp(ann_info["finished_at"])
-            annotator_stats[-1]["time_hours"] = (end - start).total_seconds() / 3600
+            annotator_stats[-1]["time_hours"] = (end -
+                                                 start).total_seconds() / 3600
 
     ann_stats_df = pd.DataFrame(annotator_stats)
     print(f"\n{'Name':<20} {'N':>4} {'Mean':>6} {'Std':>6} {'Median':>7} {'Time':>8}")
@@ -358,13 +371,18 @@ def main():
     # Direction of change analysis
     if total_revised > 0:
         # Merge initial and revised on (annotator_id, exchange_id)
-        initial_for_merge = initial_anns[["annotator_id", "exchange_id"] + DIMENSIONS].copy()
-        initial_for_merge.columns = ["annotator_id", "exchange_id"] + [f"{d}_initial" for d in DIMENSIONS]
+        initial_for_merge = initial_anns[[
+            "annotator_id", "exchange_id"] + DIMENSIONS].copy()
+        initial_for_merge.columns = [
+            "annotator_id", "exchange_id"] + [f"{d}_initial" for d in DIMENSIONS]
 
-        revised_for_merge = revised_anns[["annotator_id", "exchange_id"] + DIMENSIONS].copy()
-        revised_for_merge.columns = ["annotator_id", "exchange_id"] + [f"{d}_revised" for d in DIMENSIONS]
+        revised_for_merge = revised_anns[[
+            "annotator_id", "exchange_id"] + DIMENSIONS].copy()
+        revised_for_merge.columns = [
+            "annotator_id", "exchange_id"] + [f"{d}_revised" for d in DIMENSIONS]
 
-        merged = initial_for_merge.merge(revised_for_merge, on=["annotator_id", "exchange_id"])
+        merged = initial_for_merge.merge(
+            revised_for_merge, on=["annotator_id", "exchange_id"])
 
         print(f"\n{'Dimension':<25} {'→LLM':>6} {'←LLM':>6} {'Net':>6}")
         print("-" * 50)
@@ -379,7 +397,8 @@ def main():
                 d = row[revised_col] - row[initial_col]
                 if d == 0:
                     continue
-                ex_row = exchanges_df[exchanges_df["exchange_id"] == row["exchange_id"]]
+                ex_row = exchanges_df[exchanges_df["exchange_id"]
+                                      == row["exchange_id"]]
                 if ex_row.empty:
                     continue
                 llm_score = ex_row.iloc[0]["llm_scores"].get(dim, 0)
@@ -393,7 +412,8 @@ def main():
 
             total_changes = toward_llm + away_llm
             net = toward_llm - away_llm
-            print(f"{DIM_LABELS[dim]:<25} {toward_llm:>6} {away_llm:>6} {net:>+6}")
+            print(
+                f"{DIM_LABELS[dim]:<25} {toward_llm:>6} {away_llm:>6} {net:>+6}")
 
     # ─── Perceived Bias Analysis ──────────────────────────────────────────────
 
@@ -410,8 +430,10 @@ def main():
         (annotations_df["annotator_id"].isin(included_ids)) &
         (annotations_df["phase"] == "initial")
     ]
-    bias_rate = len(bias_anns) / len(total_initial_all) if len(total_initial_all) > 0 else 0
-    print(f"Bias-flagged exchanges: {len(bias_anns)} / {len(total_initial_all)} ({bias_rate*100:.1f}%)")
+    bias_rate = len(bias_anns) / \
+        len(total_initial_all) if len(total_initial_all) > 0 else 0
+    print(
+        f"Bias-flagged exchanges: {len(bias_anns)} / {len(total_initial_all)} ({bias_rate*100:.1f}%)")
 
     if len(bias_anns) > 0:
         # Which exchanges were flagged most
@@ -420,7 +442,8 @@ def main():
         for ex_id, count in bias_counts.items():
             ex_row = exchanges_df[exchanges_df["exchange_id"] == ex_id]
             agent = ex_row.iloc[0]["agent_name"] if not ex_row.empty else "?"
-            print(f"  Exchange {ex_id} ({agent}): {count}/{n_ann} annotators flagged")
+            print(
+                f"  Exchange {ex_id} ({agent}): {count}/{n_ann} annotators flagged")
 
     # ─── LaTeX Table Output ───────────────────────────────────────────────────
 
@@ -490,20 +513,25 @@ def main():
         # 1. Alpha + ±1 agreement
         ax = axes[0]
         x = np.arange(len(DIMENSIONS))
-        ax.bar(x - 0.2, results_df["alpha"], 0.4, label="Krippendorff's α", color="#ef4444", alpha=0.8)
-        ax.bar(x + 0.2, results_df["pct_within1"], 0.4, label="±1 Agreement", color="#22c55e", alpha=0.8)
+        ax.bar(x - 0.2, results_df["alpha"], 0.4,
+               label="Krippendorff's α", color="#ef4444", alpha=0.8)
+        ax.bar(x + 0.2, results_df["pct_within1"], 0.4,
+               label="±1 Agreement", color="#22c55e", alpha=0.8)
         ax.set_xticks(x)
         ax.set_xticklabels(dims_short, fontsize=7)
         ax.set_ylabel("Score")
         ax.set_title("Inter-Annotator Agreement")
         ax.legend(fontsize=8)
-        ax.axhline(0.67, color="#f59e0b", linestyle="--", linewidth=0.8, label="α=0.67")
+        ax.axhline(0.67, color="#f59e0b", linestyle="--",
+                   linewidth=0.8, label="α=0.67")
         ax.set_ylim(-0.2, 1.0)
 
         # 2. Spearman ρ + ±1 vs LLM
         ax = axes[1]
-        ax.bar(x - 0.2, results_df["spearman_rho"], 0.4, label="Spearman ρ", color="#3b82f6", alpha=0.8)
-        ax.bar(x + 0.2, results_df["within1_vs_llm"], 0.4, label="±1 vs LLM", color="#a855f7", alpha=0.8)
+        ax.bar(x - 0.2, results_df["spearman_rho"], 0.4,
+               label="Spearman ρ", color="#3b82f6", alpha=0.8)
+        ax.bar(x + 0.2, results_df["within1_vs_llm"], 0.4,
+               label="±1 vs LLM", color="#a855f7", alpha=0.8)
         ax.set_xticks(x)
         ax.set_xticklabels(dims_short, fontsize=7)
         ax.set_ylabel("Score")
@@ -514,8 +542,10 @@ def main():
 
         # 3. Mean comparison (Human vs LLM)
         ax = axes[2]
-        ax.bar(x - 0.2, results_df["mean_human"], 0.4, label="Human Mean", color="#64748b", alpha=0.8)
-        ax.bar(x + 0.2, results_df["mean_llm"], 0.4, label="LLM Score", color="#f97316", alpha=0.8)
+        ax.bar(x - 0.2, results_df["mean_human"], 0.4,
+               label="Human Mean", color="#64748b", alpha=0.8)
+        ax.bar(x + 0.2, results_df["mean_llm"], 0.4,
+               label="LLM Score", color="#f97316", alpha=0.8)
         ax.set_xticks(x)
         ax.set_xticklabels(dims_short, fontsize=7)
         ax.set_ylabel("Mean Score (1–5)")
@@ -524,8 +554,10 @@ def main():
         ax.set_ylim(1, 5)
 
         plt.tight_layout()
-        fig.savefig(OUTPUT_DIR / "human_validation_overview.png", bbox_inches="tight")
-        fig.savefig(OUTPUT_DIR / "human_validation_overview.pdf", bbox_inches="tight")
+        fig.savefig(OUTPUT_DIR / "human_validation_overview.png",
+                    bbox_inches="tight")
+        fig.savefig(OUTPUT_DIR / "human_validation_overview.pdf",
+                    bbox_inches="tight")
         print(f"\nFigures saved to {OUTPUT_DIR}")
         plt.close()
 

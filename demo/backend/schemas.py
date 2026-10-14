@@ -42,7 +42,8 @@ class StartDebateRequest(BaseModel):
 class InjectInterventionRequest(BaseModel):
     """POST /debate/{id}/inject-intervention body."""
     text: str = Field(description="Custom moderator intervention text")
-    source: str = Field(default="human", description="Source label for logging")
+    source: str = Field(
+        default="human", description="Source label for logging")
 
 
 # ---------------------------------------------------------------------------

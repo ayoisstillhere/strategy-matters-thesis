@@ -128,10 +128,7 @@ export default function HistoryPage() {
             <p className="text-gray-400 dark:text-gray-500 text-sm mt-1">
               Start a new debate from the setup screen
             </p>
-            <button
-              onClick={() => navigate("/")}
-              className="btn-primary mt-6"
-            >
+            <button onClick={() => navigate("/")} className="btn-primary mt-6">
               Start a Debate
             </button>
           </div>
